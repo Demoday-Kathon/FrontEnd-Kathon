@@ -1,4 +1,4 @@
-import seta from '../../../assets/imgs/seta.png'
+import seta from '../../../assets/imgs/seta.svg'
 import styles from '../button/button.module.css'
 
 function button(){
