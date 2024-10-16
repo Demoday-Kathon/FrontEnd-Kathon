@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
-}
-
-
 main {
   background-image: url(./assets/imgs/backgroundhome.png);
   width: 100%;
@@ -18,5 +14,3 @@ main {
   background-size: cover;
   padding: 2em;
 }
-=======
->>>>>>> Stashed changes
