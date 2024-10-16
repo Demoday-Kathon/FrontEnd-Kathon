@@ -4,10 +4,10 @@ function CardPreto({ title, context, mentors, people, job, sponsors, logos }) {
   return (
     <>
       <section className={Styles.card_container}>
-        <div className="hack">
-          <h3 className={title}>{title}</h3>
+        <div className={Styles.hack}>
+          <h3 className={Styles.title}>{title}</h3>
           <p>{context}</p>
-          <h3 className={title}>{mentors}</h3>
+          <h3 className={Styles.title}>{mentors}</h3>
         </div>
         <div>
           <img src={people} alt="" />
