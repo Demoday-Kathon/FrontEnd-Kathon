@@ -1,0 +1,15 @@
+.square{
+    width:  16.48vh;
+    height:  5.0vh;
+    border-radius: 36px;
+    background: #7400B7;
+}
+
+.text{
+    color: #FEFADC;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }

@@ -9,7 +9,7 @@ function Header() {
         <header className={styles.header}>
              <img src={logoKathonCompleta} alt="imagem logo kathon" />
             <Navbar />
-            <Button text="Entrar" seta= {seta} />
+            <Button text="Entrar" seta={seta}/>
         </header>
     )
 }

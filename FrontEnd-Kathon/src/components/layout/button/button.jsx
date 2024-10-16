@@ -1,14 +1,13 @@
 import seta from '../../../assets/imgs/seta.svg'
 import styles from '../button/button.module.css'
 
-function button(){
+function button({text, seta}){
 
     return(
         <div className={styles.button}> 
-            <p> Entrar </p>
+            <p> {text} </p>
             <img className={styles.seta} src={seta} alt="seta"/>
         </div>
-
     )
 }
 
