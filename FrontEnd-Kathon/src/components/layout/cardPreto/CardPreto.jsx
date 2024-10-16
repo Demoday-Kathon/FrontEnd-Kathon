@@ -7,9 +7,9 @@ function CardPreto({ title, context, mentors, people, job, sponsors, logos }) {
         <div className={Styles.hack}>
           <h3 className={Styles.title}>{title}</h3>
           <p>{context}</p>
-          <h3 className={Styles.title}>{mentors}</h3>
         </div>
-        <div>
+        <div className={Styles.mentors}>
+          <h3 className={Styles.title}>{mentors}</h3>
           <img src={people} alt="" />
           <p>{job}</p>
           <img src={people} alt="" />
