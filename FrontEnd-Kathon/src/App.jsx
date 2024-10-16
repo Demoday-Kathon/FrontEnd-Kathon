@@ -15,17 +15,19 @@ function App() {
 
   return (
 
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/hackathons" element={<Hackathons />} />
-        <Route path="/empresas" element={<Empresas />} />
-        <Route path="/comunidades" element={<Comunidades />} />
-        <Route path="/sobre" element={<Sobre />} />
-        <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
-      </Routes>
-    </Router>
+    <main>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/hackathons" element={<Hackathons />} />
+          <Route path="/empresas" element={<Empresas />} />
+          <Route path="/comunidades" element={<Comunidades />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
+        </Routes>
+      </Router>
+    </main>
   )
 }
 

@@ -6,6 +6,6 @@
 
 }
 
-.header .imagemLogoKathon {
-    width: 25%;
+.header img {
+    max-width: 20%;
 }
