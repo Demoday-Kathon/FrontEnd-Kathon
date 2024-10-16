@@ -8,12 +8,13 @@
     padding: 1em;
     justify-content: space-between;
     width: 50%;
-    font-weight: bold;
+    font-weight: 500;
     border-radius: 5em;
+    
 }
 
 ul li {
-    
+    font-size: 1.3em;
 }
 
 ul li Link {

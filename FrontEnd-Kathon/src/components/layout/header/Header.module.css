@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: none;
+
+}
+
+.header .imagemLogoKathon {
+    width: 25%;
+}
