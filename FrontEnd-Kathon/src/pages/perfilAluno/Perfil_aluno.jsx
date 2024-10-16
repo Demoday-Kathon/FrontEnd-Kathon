@@ -1,14 +1,16 @@
 import styles from '../perfilAluno/Perfil_aluno.module.css'
+import CardPreto from '../../components/layout/cardPreto/CardPreto'
 
 function Perfil_aluno(){
     return(
-        <main className={styles.fundo}>
+        <section className={styles.fundo}>
+            <CardPreto />
             <div className={styles.header}>
             </div>
             <section className={styles.conteudo}>
 
             </section>
-        </main>
+        </section>
     )
 }
 
