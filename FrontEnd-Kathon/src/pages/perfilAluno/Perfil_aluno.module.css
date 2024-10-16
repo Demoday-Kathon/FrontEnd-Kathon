@@ -15,14 +15,6 @@
 
 }
 
-.header{
-    width: 90%;
-    height: 80px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-}
-
 .conteudo{
     display: flex;
     justify-content: center;
