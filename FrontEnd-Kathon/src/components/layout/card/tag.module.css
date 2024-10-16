@@ -1,8 +1,9 @@
 .square{
-    width:  16.48vh;
-    height:  5.0vh;
+    width:  30vh;
+    height:  7vh;
     border-radius: 36px;
     background: #7400B7;
+    margin: 20px;
 }
 
 .text{
@@ -13,3 +14,6 @@
     font-weight: 700;
     line-height: normal;
     }
+
+
+    

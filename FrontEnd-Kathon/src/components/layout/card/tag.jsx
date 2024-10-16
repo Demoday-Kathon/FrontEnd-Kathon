@@ -1,6 +1,6 @@
 import styles from './tag.module.css'
 
-function tags ({text }){
+function tags ({text}){
     return(
 
         <>
