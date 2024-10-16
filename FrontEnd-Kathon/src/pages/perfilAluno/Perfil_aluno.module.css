@@ -6,7 +6,7 @@
 .fundo{
     width: 100%;
     height: 3370px;
-    background-image: url('../../assets/imgs/background_perfil.png');
+    /* background-image: url('../../assets/imgs/background_perfil.png'); */
     background-size: cover;
     display: flex;
     flex-direction: column;
