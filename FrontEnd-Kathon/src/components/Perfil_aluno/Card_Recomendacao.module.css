@@ -1,4 +1,4 @@
-.Card{
+.Card {
     width: 55%;
     height: 31vh;
     background-color: aliceblue;
@@ -9,9 +9,27 @@
     backdrop-filter: blur(20px);
 }
 
-.Leticia{
+.Leticia {
     width: 120px;
     height: 120px;
-     margin-top: -60px;
-    margin-left: 50px; 
+    margin-top: -60px;
+    margin-left: 50px;
+}
+
+.Nome {
+    color: rgba(240, 240, 240, 0.90);
+    font-family: "DM Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 25px;
+}
+
+.Sub_titulo{
+    color: rgba(240, 240, 240, 0.80);
+    font-family: "DM Sans";
+    font-size: 18px;
+    line-height: normal;
+    margin-left: 25px;
 }
