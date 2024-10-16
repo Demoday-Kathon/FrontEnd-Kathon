@@ -8,6 +8,7 @@ import Empresas from './pages/empresas/Empresas'
 import Comunidades from './pages/comunidades/Comunidades'
 import Sobre from './pages/sobre/Sobre'
 import Perfil_aluno from './pages/perfilAluno/Perfil_aluno'
+import Button from './components/layout/button/button'
 
 import './App.css'
 

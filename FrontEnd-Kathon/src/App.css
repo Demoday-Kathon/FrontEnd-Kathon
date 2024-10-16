@@ -5,7 +5,9 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+}
 
+<<<<<<< Updated upstream
 }
 
 
@@ -16,3 +18,5 @@ main {
   background-size: cover;
   padding: 2em;
 }
+=======
+>>>>>>> Stashed changes
