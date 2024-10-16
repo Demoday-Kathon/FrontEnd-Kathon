@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fundo{
+    width: 100%;
+    height: 3370px;
+    background-image: url('../../assets/imgs/background_perfil.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.header{
+    width: 90%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    
+    width: 90%;
+    height: 40px;
+    
+}

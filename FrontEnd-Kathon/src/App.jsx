@@ -7,6 +7,7 @@ import Hackathons from './pages/hackathonsDisponiveis/Hackathons'
 import Empresas from './pages/empresas/Empresas'
 import Comunidades from './pages/comunidades/Comunidades'
 import Sobre from './pages/sobre/Sobre'
+import Perfil_aluno from './pages/perfilAluno/Perfil_aluno'
 
 import './App.css'
 
@@ -22,8 +23,7 @@ function App() {
           <Route path="/empresas" element={<Empresas />} />
           <Route path="/comunidades" element={<Comunidades />} />
           <Route path="/sobre" element={<Sobre />} />
-
-
+          <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
         </Routes>
       </Router>
   )
