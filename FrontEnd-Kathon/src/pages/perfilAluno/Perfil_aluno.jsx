@@ -5,10 +5,7 @@ import Card_Recomendacao from '../../components/Perfil_aluno/Card_Recomedacao';
 function Perfil_aluno(){
     return(
         <section className={styles.fundo}>
-            <CardPerfil />
-            <section className={styles.conteudo}>
-
-            </section>
+            
         </section>
     )
 }
