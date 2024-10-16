@@ -1,0 +1,7 @@
+.people{
+    display: flex;
+    flex-direction: row;
+    gap: -15px;
+    width: 10vw;
+    height: 10vh;
+}
