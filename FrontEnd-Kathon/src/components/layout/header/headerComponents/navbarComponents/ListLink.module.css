@@ -1,6 +1,15 @@
-ul {
-    border: 1px solid;
+.listLinks {
+    border: 2px #7400b7 solid;
     list-style-type: none;
+    background-color: #000;
+    opacity: 90%;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: space-between;
+    width: 50%;
+    font-weight: bold;
+    border-radius: 5em;
 }
 
 ul li {

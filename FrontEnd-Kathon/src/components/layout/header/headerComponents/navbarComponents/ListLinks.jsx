@@ -1,10 +1,10 @@
 import styles  from './ListLink.module.css';
 
-import LinkComponent from './Links/LinkComponent'
+import LinkComponent from '../../../link/LinkComponent'
 
 function ListLink() {
     return (
-        <ul>
+        <ul className={styles.listLinks}>
             <li> <LinkComponent linkTo="/" text="Home"/> </li>
             <li> <LinkComponent linkTo="/hackathons" text="Hackathon"/> </li>
             <li> <LinkComponent linkTo="/empresas" text="Empresas"/> </li>
