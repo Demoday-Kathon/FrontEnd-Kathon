@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import Header from "./components/layout/header/Header";
 import Home from "./pages/home/Home";
 import Hackathons from "./pages/hackathonsDisponiveis/Hackathons";
 import Empresas from "./pages/empresas/Empresas";
@@ -16,7 +14,6 @@ function App() {
   return (
     <main>
       <Router>
-        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hackathons" element={<Hackathons />} />
