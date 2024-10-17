@@ -8,6 +8,7 @@ import Adidas from "../../../assets/imgs/adidas.png";
 import Ibm from "../../../assets/imgs/accenture.png";
 import Oracle from "../../../assets/imgs/IBM.png";
 import Accenture from "../../../assets/imgs/Oracle.png";
+import Perguntas from "./Perguntas";
 
 function CardPreto({ title, context, mentors, sponsors }) {
   return (
@@ -65,27 +66,13 @@ function CardPreto({ title, context, mentors, sponsors }) {
               personalizada.
             </p>
           </div>
-          <div className={Styles.caixinha}>
-            <h4>Como é o processo de inscrição?</h4>
-          </div>
-          <div className={Styles.caixinha}>
-            <h4>Quando e onde é o evento?</h4>
-          </div>
-          <div className={Styles.caixinha}>
-            <h4>Quem pode participar?</h4>
-          </div>
-          <div className={Styles.caixinha}>
-            <h4>Quanto custa para se inscrever?</h4>
-          </div>
-          <div className={Styles.caixinha}>
-            <h4>Qual o prêmio do Hackathon?</h4>
-          </div>
-          <div className={Styles.caixinha}>
-            <h4>Preciso ter algum conhecimento técnico para participar?</h4>
-          </div>
-          <div className={Styles.caixinha}>
-            <h4>Ganha algum certificado?</h4>
-          </div>
+          <Perguntas text="Como é o processo de inscrição?" />
+          <Perguntas text="Quando e onde é o evento?" />
+          <Perguntas text="Quem pode participar?" />
+          <Perguntas text="Quanto custa para se inscrever?" />
+          <Perguntas text="Qual o prêmio do Hackathon?" />
+          <Perguntas text="Preciso ter algum conhecimento técnico para participar?" />
+          <Perguntas text="Ganha algum certificado?" />
         </div>
       </section>
     </>

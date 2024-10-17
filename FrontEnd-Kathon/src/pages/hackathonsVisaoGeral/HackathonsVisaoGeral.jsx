@@ -1,3 +1,4 @@
+import CardInscricao from "../../components/cardInscricao/CardInscricao";
 import CardPreto from "../../components/layout/cardPreto/CardPreto";
 
 function HackathonVisaoGeral() {
@@ -10,6 +11,7 @@ function HackathonVisaoGeral() {
         mentors="Mentores"
         sponsors="Patrocinadores"
       />
+      <CardInscricao />
     </>
   );
 }
