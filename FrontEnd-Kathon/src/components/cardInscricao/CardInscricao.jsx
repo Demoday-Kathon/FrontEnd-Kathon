@@ -1,6 +1,5 @@
 import Styles from "../cardInscricao/cardInscricao.module.css";
 import Datas from "./Datas";
-import Linha from "../../assets/imgs/linha_azul.png";
 
 function CardInscricao() {
   return (
@@ -11,6 +10,8 @@ function CardInscricao() {
           dates="27 out, 2024"
           termino="Vencedor"
           expired="30 nov, 2024"
+          subsc="Inscrições acabam em:"
+          dat="14 dias | 15h:13m"
         />
       </div>
     </>
