@@ -2,17 +2,14 @@ import styles from '../card/card.module.css'
 import Tags from './tag.jsx'
 import Person from './person.jsx'
 
-function card ({banner, company, title, acounter, }){
+function card ({banner, company_hackathon, title_hackathon, acounter, }){
     return(
-
         <>
-        <div className={styles.card}>
             <img className={styles.banner} src={banner} alt="" />
-            <img className={styles.company} src={company} alt="" />
+            <img className={styles.company_hackathon} src={company_hackathon} alt="" />
             <div className={styles.container}>
-                <h3 className={styles.title}> {title} </h3>
+                <h3 className={styles.title_hackathon}> {title_hackathon} </h3>
                 <div className={styles.tags}>
-                    <Tags/>
                     <Tags/>
                     <Tags/>
                 </div>
@@ -23,7 +20,6 @@ function card ({banner, company, title, acounter, }){
                     <p> {acounter} </p>
                 </div>
             </div>
-        </div>
         </>
 
 
