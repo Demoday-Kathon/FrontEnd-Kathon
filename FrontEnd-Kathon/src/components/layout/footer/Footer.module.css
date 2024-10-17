@@ -53,7 +53,10 @@
 
 }
 
-.footer hr {
-    height: 5px;
-    color: #fff;
+ hr {
+    color: #fff !important;
+    width: 100%;
+    border: 0.5px solid;
+    background-color: #fff;
+    margin-bottom: 1.5em;
 }

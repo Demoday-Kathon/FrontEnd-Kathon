@@ -2,10 +2,21 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
     background: none;
+    padding: 1em;
+
 
 }
 
 .header img {
     max-width: 20%;
+}
+
+.logoHeader {
+    background-image: url(../../../assets/imgs/logokathoncompleta.png);
+    width:20em;
+    height: 3em;
+    background-repeat: no-repeat;
+
 }

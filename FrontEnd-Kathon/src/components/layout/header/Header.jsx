@@ -2,14 +2,14 @@ import styles from './Header.module.css'
 import seta from '../../../assets/imgs/seta.svg'
 import Button from '../button/button'
 import Navbar from './headerComponents/Navbar'
-import logoKathonCompleta from '../../../../src/assets/imgs/logokathoncompleta.png'
+import LinkComponent from '../link/LinkComponent'
 
 function Header() {
     return (
         <header className={styles.header}>
-             <img src={logoKathonCompleta} alt="imagem logo kathon" />
+            <LinkComponent linkTo="/" text={<div className={styles.logoHeader}></div>}/>
             <Navbar />
-            <Button text="Entrar" seta={seta}/>
+            <Button text="Entrar"/>
         </header>
     )
 }

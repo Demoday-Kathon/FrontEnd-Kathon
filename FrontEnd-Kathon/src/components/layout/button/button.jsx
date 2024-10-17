@@ -1,14 +1,15 @@
-import seta from '../../../assets/imgs/seta.svg'
-import styles from '../button/button.module.css'
 
-function button({text, seta}){
+import styles from '../button/button.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons'; // Certifique-se de importar o ícone corretamente
 
-    return(
+function Button({ text }) {
+    return (
         <div className={styles.button}> 
-            <p> {text} </p>
-            <img className={styles.seta} src={seta} alt="seta"/>
+            <p>{text}</p>
+            <FontAwesomeIcon className={styles.iconSeta} icon={faCircleArrowRight} style={{ transform: 'rotate(-45deg)' }} />
         </div>
-    )
+    );
 }
 
-export default button
+export default Button;

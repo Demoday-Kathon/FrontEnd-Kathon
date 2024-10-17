@@ -1,9 +1,16 @@
-import styles from './LinkComponent.module.css'
+import styles from './LinkComponent.module.css';
+import { Link } from 'react-router-dom';
 
-import { Link } from 'react-router-dom'
-
-function LinkComponent({linkTo, text}) {
-    return <Link className={styles.LinkComponent} to={linkTo}> {text} </Link>
+function LinkComponent({ linkTo, text, isHovered, isActive }) {
+    return (
+        <>
+        
+        {text} {isHovered || isActive ? <span>&lt;</span> : null}
+        <Link className={styles.LinkComponent} to={linkTo}>
+        </Link>
+        
+        </>
+    );
 }
 
 export default LinkComponent;
