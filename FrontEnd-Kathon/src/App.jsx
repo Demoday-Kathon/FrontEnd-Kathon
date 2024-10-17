@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import Hackathons from "./pages/hackathonsDisponiveis/Hackathons";
 import Empresas from "./pages/empresas/Empresas";
 import Comunidades from "./pages/comunidades/Comunidades";
+import ComunidadesEscolha from "./pages/comunidadesEscolha/ComunidadesEscolha";
 import Sobre from "./pages/sobre/Sobre";
 import Perfil_aluno from "./pages/perfilAluno/Perfil_aluno";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/hackathons" element={<Hackathons />} />
           <Route path="/empresas" element={<Empresas />} />
           <Route path="/comunidades" element={<Comunidades />} />
+          <Route path="/comunidadesEscolha" element={<ComunidadesEscolha />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
           <Route

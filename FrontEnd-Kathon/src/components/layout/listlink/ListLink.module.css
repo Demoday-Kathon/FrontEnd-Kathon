@@ -13,6 +13,17 @@
     
 }
 
+.listLinkRow {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listLinkRow li {
+    margin: 0em 0.5em;
+    align-items: center;
+}
 ul li {
     font-size: 1.3em;
 }
