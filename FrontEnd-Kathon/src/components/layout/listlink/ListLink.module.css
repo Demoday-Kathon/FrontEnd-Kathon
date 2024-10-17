@@ -22,10 +22,34 @@
 
 .listLinkRow li {
     margin: 0em 0.5em;
-    align-items: center;
+
 }
+
+.listLinkRowSocial {
+    list-style-type: none;
+    display: flex;
+}
+
+
+.listLinkRowSocial li svg{
+    margin: 5em 2em 2em 0em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.listLinkCollum2 {
+    list-style-type: none;
+}
+
 ul li {
-    font-size: 1.3em;
+    font-size: 1em;
+}
+
+.listLinkCollum{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 ul li Link {

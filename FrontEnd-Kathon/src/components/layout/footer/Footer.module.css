@@ -9,8 +9,24 @@
     padding: 3em;
 }
 
+.footer li {
+    cursor: pointer;
+}
+
 .footer .cimaFooter{
-   margin-bottom: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.direitoFooter1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.direitoFooter1 li{
+    margin: 0.5em;
 }
 
 .footer .cimaFooter, .baixoFooter {
@@ -21,13 +37,12 @@
 
 .footer .esquerdoFooter p{
     font-size: 1.5em;
-
-    width: 60%;
+    width: 55%;
 }
 
 .footer .esquerdoFooter span{
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .logoFooter {
