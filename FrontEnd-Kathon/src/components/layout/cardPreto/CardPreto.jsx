@@ -54,6 +54,39 @@ function CardPreto({ title, context, mentors, sponsors }) {
             Qual Custo? <span>Nenhum</span>
           </div>
         </div>
+
+        <div className={Styles.Caixas2}>
+          <div className={Styles.caixarosa}>
+            <h4>Qual o tema da competição?</h4>
+            <p>
+              Criar uma plataforma de mercado eficiente, reduzindo custos
+              logísticos e fortalecendo a economia regional, ao mesmo tempo em
+              que assegura uma cadeia de suprimentos mais sustentável e
+              personalizada.
+            </p>
+          </div>
+          <div className={Styles.caixinha}>
+            <h4>Como é o processo de inscrição?</h4>
+          </div>
+          <div className={Styles.caixinha}>
+            <h4>Quando e onde é o evento?</h4>
+          </div>
+          <div className={Styles.caixinha}>
+            <h4>Quem pode participar?</h4>
+          </div>
+          <div className={Styles.caixinha}>
+            <h4>Quanto custa para se inscrever?</h4>
+          </div>
+          <div className={Styles.caixinha}>
+            <h4>Qual o prêmio do Hackathon?</h4>
+          </div>
+          <div className={Styles.caixinha}>
+            <h4>Preciso ter algum conhecimento técnico para participar?</h4>
+          </div>
+          <div className={Styles.caixinha}>
+            <h4>Ganha algum certificado?</h4>
+          </div>
+        </div>
       </section>
     </>
   );
