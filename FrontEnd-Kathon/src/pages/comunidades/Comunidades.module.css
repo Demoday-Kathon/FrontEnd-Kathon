@@ -1,0 +1,44 @@
+.containerComunidadeVisao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.Bloco{
+    display: flex;
+    flex-direction: co;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    min-height: 100vh;
+}
+
+.blocoInterno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.BannerIMG{
+    margin-top: 2vh;
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ContainerSecondary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    height: 100vh;
+}
