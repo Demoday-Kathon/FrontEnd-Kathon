@@ -1,0 +1,11 @@
+.containerprincipal {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.containersubprincipal {
+  width: 100%;
+  position: relative;
+  left: 130px;
+}

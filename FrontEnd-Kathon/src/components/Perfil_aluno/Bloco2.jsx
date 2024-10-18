@@ -20,6 +20,15 @@ function Bloco2(){
                 </div>
             </div>
         </div>
+
+            <h1 className={Styles.Titulo_sobre}>Participações</h1>
+        <div className={Styles.Conteudo1}>
+            <div className={Styles.Sobre2}>
+                <div className={Styles.Habilidades}>
+                   
+                </div>
+            </div>
+        </div>
         </section>
     )
 }

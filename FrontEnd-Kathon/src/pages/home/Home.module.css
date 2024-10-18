@@ -7,12 +7,14 @@
     margin: 3em auto 10px auto;
     text-align: center;
     color: #fff;
-    font-size: 2.5em;
-    width: 65%;
+    font-size: 1.8em;
+    width: 55%;
+    padding: 1em;
+    
 }
 /* <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" rotation={90} /> */
 .homeTitulo span {
-    background-color: #3b5871;
+    background-color: #413258;
     padding: 0em 0.1em 0em 0.1em;
 
 }
@@ -24,4 +26,35 @@
     margin: auto;
     font-size: 1.5em;
     font-weight: normal;
+}
+
+.botoesHome {
+    display: flex;
+
+    width: 65%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+
+/*Card preto da home logo no início*/
+
+.cardPretoHome {
+    background-color: black;
+    width: 65%;
+    margin: auto;
+    text-align: left;
+    padding: 1.5em;
+    border-radius: 1.5em;
+    border: 1px solid #FFF;
+    font-size: 1.2em;
+}
+
+.cardPretoHome .tituloCardPreto {
+    text-align: center;
+}
+
+.cardPretoHome .descHackathonHome {
+
 }
