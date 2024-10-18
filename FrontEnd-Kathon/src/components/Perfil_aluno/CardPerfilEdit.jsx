@@ -4,14 +4,14 @@ import leticia from '../../assets/imgs/Leticia.png'
 import cadeirante from '../../assets/imgs/Icone_cadeirante.png'
 import Icone_perfil from '../../assets/imgs/Icone_perfil.png'
 import Bloco1 from './Bloco1'
-import Bloco2 from './Bloco2'
+import Bloco2_edit from './Bloco2_edit'
 
 function CardPerfilEdit() {
     return (
         <section className={Styles.Card_Fundo}>
             <div className={Styles.PerfilDados}>
                 <Bloco1 Foto_perfil={Icone_perfil}  customClass="Foto_perfilEdit"  NomePerfil="Nome Usuario" UserPerfil="@User" />
-                <Bloco2 TextoDesc="Escreva aqui uma breve descrição sobre você e suas áreas de interesse..." />
+                <Bloco2_edit TextoDesc="Escreva aqui uma breve descrição sobre você e suas áreas de interesse..." />
             </div>
             <div className={Styles.Recomendacao_bloco}>
                 <h1 className={Styles.RecomendacaoTi}>Recomendações</h1>
