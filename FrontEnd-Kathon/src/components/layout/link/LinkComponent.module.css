@@ -1,4 +1,10 @@
 .LinkComponent {
     text-decoration: none;
     color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.LinkComponent p {
+    margin-left: 0.8em;
 }
