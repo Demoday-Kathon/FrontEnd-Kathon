@@ -5,7 +5,7 @@ function person ({person }){
 
         <>
                     <div className={styles.people}> 
-                        <img src={person} alt="" />
+                        <img className={styles.img_people} src={person} alt="" />
                     </div>
         </>
 

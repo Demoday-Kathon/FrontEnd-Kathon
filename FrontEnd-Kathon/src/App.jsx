@@ -11,8 +11,8 @@ import Perfil_aluno from "./pages/perfilAluno/Perfil_aluno";
 import Perfil_aluno_edit from "./pages/perfilAluno/Perfil_aluno_edit";
 import Perfil_empresa from "./pages/perfilEmpresa/Perfil_empresa";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
-import Planos from "./pages/planos/Planos"
-import HackathonsPremios from './pages/hackathonsPremios/HackathonsPremios'
+import Planos from "./pages/planos/Planos";
+import HackathonPremios from "./pages/hackathonsPremios/HackathonsPremios";
 
 import "./App.css";
 
@@ -26,7 +26,10 @@ function App() {
           <Route path="/empresas" element={<Empresas />} />
           <Route path="/comunidades" element={<Comunidades />} />
           <Route path="/comunidadesEscolha" element={<ComunidadesEscolha />} />
-          <Route path="/comunidadesVisaoGeral" element={<ComunidadesVisaoGeral />} />
+          <Route
+            path="/comunidadesVisaoGeral"
+            element={<ComunidadesVisaoGeral />}
+          />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
@@ -36,14 +39,12 @@ function App() {
             element={<HackathonVisaoGeral />}
           />
           <Route path="/Planos" element={<Planos />} />
-          
-          <Route path="/HackathonPremios" 
-          element={<HackathonsPremios/>}
-          />
+
+          <Route path="/HackathonPremios" element={<HackathonPremios />} />
         </Routes>
       </Router>
     </main>
-  )
+  );
 }
 
 export default App;

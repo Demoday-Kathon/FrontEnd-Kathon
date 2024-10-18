@@ -1,6 +1,4 @@
-.people{
-    display: flex;
-    align-items: center;
-    width: 10vw;
-    height: 10vh;
-}
+ .people{
+    margin: -10px;
+} 
+
