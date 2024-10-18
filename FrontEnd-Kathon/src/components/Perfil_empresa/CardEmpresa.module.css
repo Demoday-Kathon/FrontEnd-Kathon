@@ -1,4 +1,4 @@
-.Card_Fundo {
+.Card_fundo{
     border-radius: 36px;
     border: 2px solid #fff;
     background: rgba(20, 19, 1, 0.8);
@@ -6,25 +6,10 @@
     backdrop-filter: blur(20px);
     width: 85%;
     margin-top: 50px;
-    height: 220vh;
+    height: 225vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
-}
-
-.Recomendacao{
-    display: flex;
-    justify-content: center;
-    flex-direction: row; 
-    gap: 20px;
-}
-.Recomendacao_bloco{
-    width: 100%;
-    height: auto;
-    border: 2px solid hotpink;
-
-
 }
 
 .PerfilDados{
@@ -36,11 +21,30 @@
     justify-content: center;
 }
 
+.Recomendacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+    gap: 90px;
+}
+
+.Recomendacao_bloco{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid hotpink;
+}
 .RecomendacaoTi{
     color: rgba(240, 240, 240, 0.80);
     font-family: "DM Sans";
     font-size: 40px;
     line-height: normal;
-    margin-left: 20vh;
+    margin-left: 0vh;
     margin-bottom: 100px;
+}
+.RecomendacaoEmpresa{
+    width: 100%;
+    margin-left: 350px;
 }

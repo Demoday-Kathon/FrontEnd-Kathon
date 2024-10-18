@@ -18,14 +18,25 @@
      border: 1px solid #fff; 
 }
 
-.DadosPerfil {
+.DadosPerfil1 {
     width: 70%;
-    height: auto;
     color: rgba(240, 240, 240, 0.90);
     font-family:"DM Sans";
     display:flex;
     margin:10px;
+    flex-direction: row;
+}
+.DadosConta{
+    display: flex;
     flex-direction: column;
+}
+.Pedra{
+    margin-top: 12px;
+    margin-left: 100px;
+}
+.Esmeralda1{
+    width:45px;
+    height: 45px;
 }
 
 .NomePerfil {
@@ -35,6 +46,7 @@
 .UserPerfil {
     color: rgba(240, 240, 240, 0.60);
 }
+
 
 .BottonPerfil {
     width: 300%;
@@ -50,6 +62,7 @@
     text-align: center;
     font-size: 20px;
     transition: 0.5s;
+    display: flex;
 
 }
 
@@ -65,4 +78,42 @@
     font-weight: 600;
     border-radius: 24px;
 
+}
+
+.BottonPerfil1 {
+    width: 224%;
+    height: 54px;
+    border-radius: 36px;
+    background: rgba(240, 240, 240, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(15px);
+    cursor: pointer;
+    color: #FFF;
+    font-family: "DM Sans";
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+
+.BottonPerfil1:hover{
+    width: 150%;
+    background: #c9c9c9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+    color: #141301;
+    font-family: "DM Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 24px;
+}
+
+.BotoesEmpresas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-left: 150px;
+    flex-direction: column;
 }

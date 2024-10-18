@@ -1,0 +1,28 @@
+import Styles from './CardEmpresa.module.css'
+import Bloco1Empresas from './Bloco1Empresas'
+import Bloco2 from '../Perfil_aluno/Bloco2'
+import accenture from '../../assets/imgs/Icone_accenture.png'
+import Recomendacao from '../Perfil_aluno/Card_Recomedacao'
+import cadeirante from '../../assets/imgs/Icone_cadeirante.png'
+function CardEmpresa(){
+    
+    return(
+        <section className={Styles.Card_fundo}>
+            <div className={Styles.PerfilDados}>
+                <Bloco1Empresas Foto_perfil={accenture} NomePerfil="Accenture" UserPerfil="@Accenture"/>
+                <Bloco2 TextoDesc="A Accenture é uma multinacional de consultoria em gestão, tecnologia da informação e outsourcing. É a maior empresa de consultoria do mundo e uma competidora global no setor de tecnologia." Titulo_sobre="Sobre:" Titulo_sobre2="Hackathons Abertos" Titulo_Participacao="Próximos Hackathons:" />
+            </div>
+            <div className={Styles.Recomendacao_bloco}>
+                <div className={Styles.RecomendacaoEmpresa}>
+                <h1 className={Styles.RecomendacaoTi}>Relato dos Participantes</h1>
+                <p></p>                </div>
+                <div className={Styles.Recomendacao} >
+                <Recomendacao Perfil_foto={cadeirante} Nome="Leticia Silva" Sub_titulo="Excelente Profissional,habilidade em UI/UX é impressionante" />
+                <Recomendacao Perfil_foto={cadeirante} Nome="Abel Ferreira" Sub_titulo="Ótima lider, sua capacidade de liderar é impressionante " />
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default CardEmpresa
