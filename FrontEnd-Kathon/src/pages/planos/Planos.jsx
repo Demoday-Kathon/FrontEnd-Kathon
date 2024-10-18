@@ -5,12 +5,14 @@ import Diamante from "../../assets/imgs/diamante.svg"
 import CardsPlanos from "../../components/layout/props.planos/CardsPlanos"
 import CardBeneficios from "../../components/layout/props.planos/CardBeneficios"
 import Botton from "../../components/layout/props.planos/Botton"
-
+import Header from "../../components/layout/header/Header"
+import Footer from "../../components/layout/footer/Footer"
 
 function Planos() {
 
     return (
         <section>
+            <Header/>
             <div className={Styles.fundoplano}>
                 <h1>Planos Empresariais</h1>
                 <div className={Styles.benebox}>
@@ -38,9 +40,9 @@ function Planos() {
                         <h4 className={Styles.preco3}>R$ 59,90</h4>
                         <Botton text="Quero esse plano" customBotton="bottonblue"></Botton> 
                     </CardsPlanos>
-
                 </div>
             </div>
+            <Footer/>
         </section>
     )
 }
