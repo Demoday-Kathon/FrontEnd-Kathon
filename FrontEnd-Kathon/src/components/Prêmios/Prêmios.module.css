@@ -1,0 +1,26 @@
+.title_premios{
+    color:  #F0F0F0;
+    font-family: "DM Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text_premios{
+    color: rgba(240, 240, 240, 0.90);
+    font-family: "DM Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.descri_premios{
+    color: rgba(240, 240, 240, 0.90);
+    font-family: "DM Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

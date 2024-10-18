@@ -6,8 +6,6 @@ function person ({person }){
         <>
                     <div className={styles.people}> 
                         <img src={person} alt="" />
-                        <img src={person} alt="" />
-                        <img src={person} alt="" />
                     </div>
         </>
 

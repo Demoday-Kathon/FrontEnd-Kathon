@@ -13,7 +13,7 @@
 
 .container{
     width: 40%;
-    height: 90vh;
+    height: 110vh;
     border-radius: 36px;
     border: 1px solid #FFF;
     background: rgba(255, 255, 255, 0.20);
@@ -34,4 +34,51 @@
     display: flex;
     flex-direction: row;
     gap: 2px;
+}
+
+.acounter{
+    color: rgba(240, 240, 240, 0.70);
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.timeline{
+    width: 80%;
+    height: 12px;
+    border-radius: 36px;
+    border: 1px solid #000;
+}
+
+.participants{
+    display: flex;
+    position: relative;
+    margin-left: -50px; 
+    margin-top: 80px;
+}
+
+.acounter2{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: rgba(240, 240, 240, 0.70);
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.container2{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button_hackathon{
+    margin-left: 50%;
+    margin-top: 100px;
 }
