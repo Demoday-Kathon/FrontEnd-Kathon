@@ -4,6 +4,13 @@
     border-radius: 36px;
     background: #7400B7;
     margin: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.square:hoover{
+    border-radius: 24px;
+    font-size: 28px;
 }
 
 .text{

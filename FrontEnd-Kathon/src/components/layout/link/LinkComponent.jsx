@@ -1,12 +1,13 @@
 import styles from './LinkComponent.module.css';
 import { Link } from 'react-router-dom';
 
-function LinkComponent({ linkTo, text, isHovered, isActive }) {
+function LinkComponent({ linkTo, text, children}) {
     return (
         <>
         
-        {text} {isHovered || isActive ? <span>&lt;</span> : null}
         <Link className={styles.LinkComponent} to={linkTo}>
+        {children}
+        <p>{text}</p> 
         </Link>
         
         </>
