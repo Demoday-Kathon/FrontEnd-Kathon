@@ -7,7 +7,8 @@ function Button(props) {
     return (
         <div className={`${styles.button} ${styles[props.customClass]}`}> 
             <p>{props.text}</p>
-            <FontAwesomeIcon className={styles.iconSeta} icon={faCircleArrowRight} style={{ transform: 'rotate(-45deg)'}} size="lg"/>
+            <FontAwesomeIcon className={styles.iconSeta} icon={faCircleArrowRight} 
+            style={{ transform: 'rotate(-45deg)'}} size="lg"/>
         </div>
     );
 }
