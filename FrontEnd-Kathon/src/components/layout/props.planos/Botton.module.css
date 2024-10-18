@@ -1,0 +1,29 @@
+.botton {
+    width: 273px;
+    height: 46px;
+    border-radius: 27.794px;
+    background: #13ECAB;
+    margin: auto;
+}
+
+.botton p {
+    font-size: 25px;
+    padding-top: 2px;
+}
+
+
+.bottongreen {
+    background-color:#13ECAB;
+    color: black;
+    
+}
+
+.bottonpink {
+    background-color:#C24361;
+    color: white;
+}
+
+.bottonblue {
+    background-color:#66C2FA;
+    color: black;
+}

@@ -1,0 +1,47 @@
+.fundoplano{
+    border-radius: 36px;
+    border: 2px solid #66C2FA;
+    background: rgba(20, 19, 1, 0.8);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+    width: 80%;
+    margin-top: 50px;
+    height:950px;
+    margin:auto;
+    color:white;
+    text-align: center;
+    font-size:32px;
+}
+
+.benebox{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.fundoplano h1{
+    margin-top:20px;
+}
+
+
+.preco1{
+    color:#13ECAB;
+    margin-top:174px;
+}
+
+.preco2{
+    color:#C24361;
+    margin-top:112px;
+}
+
+.preco3{
+    color:#66C2FA;
+    margin-top:50px;
+}
+
+
+
+

@@ -1,0 +1,31 @@
+.fundobeneficios{
+    width:340px;
+    height:750px;
+    background-color:rgba(240, 240, 240, 0.2);
+    border-radius:20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin-top: 30px;
+}
+
+
+.beneimg{
+    width:65px;
+    margin-top:40px;
+}
+
+.fundobeneficios h4{
+    margin-bottom:30px;
+}
+
+
+.titlegreen{
+    color: #13ECAB;
+ }
+ 
+ .titlepink{
+     color:  #C24361;
+ }
+ 
+ .titleblue{
+     color:  #66C2FA;
+ }

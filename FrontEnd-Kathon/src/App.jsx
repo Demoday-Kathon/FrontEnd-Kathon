@@ -8,6 +8,7 @@ import ComunidadesEscolha from "./pages/comunidadesEscolha/ComunidadesEscolha";
 import Sobre from "./pages/sobre/Sobre";
 import Perfil_aluno from "./pages/perfilAluno/Perfil_aluno";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
+import Planos from "./pages/planos/Planos"
 
 import "./App.css";
 
@@ -26,6 +27,9 @@ function App() {
           <Route
             path="/HackathonVisaoGeral"
             element={<HackathonVisaoGeral />}
+          />
+          <Route path="/Planos" element={<Planos />}
+          
           />
         </Routes>
       </Router>
