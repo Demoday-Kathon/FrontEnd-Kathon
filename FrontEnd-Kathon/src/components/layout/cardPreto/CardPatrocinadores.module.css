@@ -1,3 +1,6 @@
 .card_patrocinadores {
   width: 100%;
+  img:hover {
+    cursor: pointer;
+  }
 }
