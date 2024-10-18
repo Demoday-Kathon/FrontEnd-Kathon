@@ -1,28 +1,55 @@
-.square{
-    width:  30vh;
-    height:  7vh;
+.roxo{
+    width: 149px;
+    height: 50px;
     border-radius: 36px;
-    background: #7400B7;
-    margin: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.square:hoover{
-    border-radius: 24px;
-    font-size: 28px;
-}
-
-.text{
-    color: #FEFADC;
+    background: var(--Primria, #7400B7);
     font-family: "DM Sans";
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
-    text-align: center;
-    justify-content: center;
-    }
+    color: #FFF;
+}
+
+.azul{
+    width: 250px;
+    height: 50px;
+    border-radius: 36px;
+    background: var(--Secundria, #314CE7);
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+
+}
+
+.lilas{
+    width: 400px;
+    height: 50px;
+    border-radius: 36px;
+    background: var(--Terciria-V, #A367EB);
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+}
+
+.lilas_p{
+    width: 250px;
+    height: 50px;
+    border-radius: 36px;
+    background: var(--Terciria-V, #A367EB);
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+}
 
 
     

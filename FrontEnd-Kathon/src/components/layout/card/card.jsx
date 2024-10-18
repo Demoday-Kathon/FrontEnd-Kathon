@@ -8,20 +8,25 @@ import Button from '../button/button.jsx'
 
 function card ({banner, company_hackathon, title_hackathon, acounter, timeline }){
     return(
-        <>
-
+       
         <div className={styles.card}>
             <img className={styles.banner} src={banner} alt="" />
-            <img className={styles.company_hackathon} src={company_hackathon} alt="" />
+            {/* <img className={styles.company_hackathon} src={company_hackathon} alt="" /> */}
             <div className={styles.container}>
                 <h3 className={styles.title_hackathon}> {title_hackathon} </h3>
                 <div className={styles.tags}>
-                    <Tags text='Presencial'/>
+                    <Tags text='Inscrições Abertas' CustomClass='azul'/>
+                    <Tags text= 'Presencial' CustomClass='roxo'/>
+                </div>
+                <div className={styles.tags}>
+                    <Tags text='Impacto Social e Sustentabilidade' CustomClass='lilas'/>
                 </div>
                 <div className={styles.participants}>
+                    <div className={styles.participants_hackathon}>
                     <Person person={person1}/>
                     <Person person={person2}/>
                     <Person person={person3}/>
+                    </div>
                     <p className={styles.acounter}> {acounter} </p>
                 </div>
                 <div className={styles.container2}>
@@ -30,12 +35,11 @@ function card ({banner, company_hackathon, title_hackathon, acounter, timeline }
                     </div>
                 </div>
                 <div className={styles.button_hackathon}>
-                <Button text='Saiba Mais'/>
+                    <Button text='Saiba Mais' customClass='buttonAzul'/>
                 </div>
             </div>
         </div>
-        </>
-
+      
 
     )
 }
