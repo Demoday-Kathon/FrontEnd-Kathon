@@ -11,6 +11,7 @@ function premios (title, img, context, desc_premios ){
             <p className={style.premios}> {context}</p>
             <p className={style.premios}> {desc_premios}</p>
         </div>
+        
     )
 }
 

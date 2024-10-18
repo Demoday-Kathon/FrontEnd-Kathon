@@ -10,7 +10,7 @@ import Sobre from "./pages/sobre/Sobre";
 import Perfil_aluno from "./pages/perfilAluno/Perfil_aluno";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
 import Planos from "./pages/planos/Planos"
-import HackathonPremios from './pages/hackathonsPremios/HackathonsPremios'
+import HackathonsPremios from './pages/hackathonsPremios/HackathonsPremios'
 
 import "./App.css";
 
@@ -33,7 +33,8 @@ function App() {
           />
           <Route path="/Planos" element={<Planos />} />
           
-          <Route path='/HackathonPremios'element={<HackathonPremios/>}
+          <Route path="/HackathonPremios" 
+          element={<HackathonsPremios/>}
           />
         </Routes>
       </Router>
