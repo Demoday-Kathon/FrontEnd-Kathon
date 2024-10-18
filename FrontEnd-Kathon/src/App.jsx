@@ -8,6 +8,7 @@ import ComunidadesEscolha from "./pages/comunidadesEscolha/ComunidadesEscolha";
 import ComunidadesVisaoGeral from "./pages/comunidadesVisaoGeral/ComunidadesVisaoGeral";
 import Sobre from "./pages/sobre/Sobre";
 import Perfil_aluno from "./pages/perfilAluno/Perfil_aluno";
+import Perfil_aluno_edit from "./pages/perfilAluno/Perfil_aluno_edit";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
 import Planos from "./pages/planos/Planos"
 import HackathonPremios from './pages/hackathonsPremios/HackathonsPremios'
@@ -27,6 +28,7 @@ function App() {
           <Route path="/comunidadesVisaoGeral" element={<ComunidadesVisaoGeral />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
+          <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route
             path="/HackathonVisaoGeral"
             element={<HackathonVisaoGeral />}
