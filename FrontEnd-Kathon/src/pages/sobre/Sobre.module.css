@@ -1,0 +1,91 @@
+.colorPurple{
+    color: #A55AFF;
+}
+
+.subtitle{
+    color: #1498ef;
+}
+
+.containerSobreNos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 200vh;
+    color: #fff;
+    margin-top: 5vh;
+}
+
+.containerPrimary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 72vh;
+}
+
+.ImageGlass{
+    width: 40%;
+    height:112vh;
+}
+
+
+.iphone{
+    width: 40%;
+    height: 80vh;
+}
+
+.containerSecondary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 15vh;
+}
+
+.containerTerciary{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 25vh;
+}
+
+.equipeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 2vh;
+}
+
+.titulosSection{
+    font-size: 4rem;
+}
+
+.titulodesenvolvedores{
+    font-size: 2.6rem;
+    color: #A55AFF;
+}
+
+.textDescription{
+    width: 80%;
+    font-size: 3.5rem;
+    margin: 5vh;
+}
+
+.ContainerTitleSobre{
+    width: 50%;
+}
+
+.ContainerTitleSobre p{
+    font-size: 2.4rem;
+}

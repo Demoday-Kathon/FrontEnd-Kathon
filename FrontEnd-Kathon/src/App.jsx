@@ -5,6 +5,7 @@ import Hackathons from "./pages/hackathonsDisponiveis/Hackathons";
 import Empresas from "./pages/empresas/Empresas";
 import Comunidades from "./pages/comunidades/Comunidades";
 import ComunidadesEscolha from "./pages/comunidadesEscolha/ComunidadesEscolha";
+import ComunidadesVisaoGeral from "./pages/comunidadesVisaoGeral/ComunidadesVisaoGeral";
 import Sobre from "./pages/sobre/Sobre";
 import Perfil_aluno from "./pages/perfilAluno/Perfil_aluno";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/empresas" element={<Empresas />} />
           <Route path="/comunidades" element={<Comunidades />} />
           <Route path="/comunidadesEscolha" element={<ComunidadesEscolha />} />
+          <Route path="/comunidadesVisaoGeral" element={<ComunidadesVisaoGeral />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
           <Route
