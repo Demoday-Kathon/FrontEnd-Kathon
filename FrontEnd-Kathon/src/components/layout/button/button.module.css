@@ -43,7 +43,44 @@
 }
 
 .buttonBaixo {
-    width: 100%;
-    margin: 0.5em;
-    border-radius: 0.5em;
+    width: 40%;
+    margin: 0.5em 1em 2em 1em;
+    border-radius: 1.5em;
+    font-size: 0.8em;
+    height: 2em;
+    padding: 1em;
+}
+
+.buttonBaixo2 {
+    width: 40%;
+    margin: 0.5em 1em 2em 1em;
+    border-radius: 1.5em;
+    font-size: 0.8em;
+    height: 2em;
+    padding: 1em;
+    background-color: #a367eb;
+}
+
+.buttonBaixo2:hover {
+    font-size: 0.8em;
+}
+
+.buttonBaixo:hover {
+    font-size: 0.8em;
+}
+
+.buttonRoxo {
+    border-radius: 1em;
+    background-color: #7400B7;
+    width: 30%;
+    height: 2em;
+    font-size: 0.8em;
+    padding: 0.4em;
+
+}
+
+.buttonRoxo:hover {
+    border-radius: 1em;
+    font-size: 0.8em;
+
 }

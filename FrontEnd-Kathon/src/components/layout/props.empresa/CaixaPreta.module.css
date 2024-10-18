@@ -1,0 +1,28 @@
+.CaixaPreta{
+    height:80px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.28);
+    margin-top:40px;
+    margin-left:50px;
+    font-weight:bold;
+}
+
+.CaixaPreta p{
+    color:#A367EB;
+    font-size:34px;
+    padding-left:50px;
+    padding-top:10px;
+}
+
+
+.boxpreto1{
+    width:500px;
+}
+
+.boxpreto2{
+    width:400px;
+}
+
+.boxpreto3{
+    width:300px;
+}
