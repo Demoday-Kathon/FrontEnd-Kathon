@@ -6,7 +6,7 @@
     backdrop-filter: blur(20px);
     width: 85%;
     margin-top: 50px;
-    height: 230vh;
+    height: 220vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -30,8 +30,8 @@
 
 .PerfilDados{
     width: 100%;
-    height: 150vh;
-    border: 2px #ff0000 solid;
+    height: 140vh;
+    border: 2px #00ff15 solid;
     display: flex;
     flex-direction: row;
     justify-content: center;
