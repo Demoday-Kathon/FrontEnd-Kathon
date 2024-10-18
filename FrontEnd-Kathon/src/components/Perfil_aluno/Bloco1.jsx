@@ -1,13 +1,13 @@
 import Styles from './Bloco1.module.css'
-import Joana from '../../assets/imgs/joana.png'
 
-function Bloco1(){
+
+function Bloco1({NomePerfil, UserPerfil, Foto_perfil}){
     return(
         <section className={Styles.Bloco1}>
-            <img className={Styles.Foto_perfil} src={Joana} alt="Foto Perfil" />
+            <img className={Styles.Foto_perfil} src={Foto_perfil} alt="Foto Perfil" />
             <div className={Styles.DadosPerfil}>
-                <h1 className={Styles.NomePerfil}>Joana Perreira</h1>
-                <h2 className={Styles.UserPerfil}>@jopereira</h2>
+                <h1 className={Styles.NomePerfil}>{NomePerfil}</h1>
+                <h2 className={Styles.UserPerfil}>{UserPerfil}</h2>
                 <br />
                 <button className={Styles.BottonPerfil}>Editar Perfil</button>
             </div>

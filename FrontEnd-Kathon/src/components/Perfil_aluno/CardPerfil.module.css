@@ -6,7 +6,7 @@
     backdrop-filter: blur(20px);
     width: 85%;
     margin-top: 50px;
-    height: 200vh;
+    height: 220vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -18,13 +18,30 @@
     justify-content: center;
     flex-direction: row; 
     gap: 20px;
+
+}
+.Recomendacao_bloco{
+    width: 100%;
+    height: auto;
+    border: 2px solid hotpink;
+
+
 }
 
 .PerfilDados{
     width: 100%;
-    height: 150vh;
-    border: 2px #ff0000 solid;
+    height: 140vh;
+    border: 2px #00ff15 solid;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.RecomendacaoTi{
+    color: rgba(240, 240, 240, 0.80);
+    font-family: "DM Sans";
+    font-size: 40px;
+    line-height: normal;
+    margin-left: 20vh;
+    margin-bottom: 100px;
 }

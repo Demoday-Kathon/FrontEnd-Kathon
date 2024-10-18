@@ -1,13 +1,14 @@
 import Styles from './Bloco2.module.css'
+import button1 from '../layout/button/button'
 
-function Bloco2(){
+function Bloco2({TextoDesc}){
     return(
         <section className={Styles.SobreAluno}>
             <h1 className={Styles.Titulo_sobre}>Sobre:</h1>
         <div className={Styles.Conteudo1}>
             <div className={Styles.Sobre}>
                 <div className={Styles.SobreTexto}>
-                <p className={Styles.TextoDesc}>Sou Joana, autodidata de 17 anos, com grande interesse por tecnologia. Passo horas explorando programação e design, sempre buscando novos desafios. Meu sonho é utilizar essas habilidades para criar projetos que possam impactar o mundo ao meu redor.</p>
+                <p className={Styles.TextoDesc}>{TextoDesc}</p>
                 </div>
             </div>
         </div>
