@@ -22,11 +22,11 @@ function Bloco2({TextoDesc}){
             </div>
         </div>
 
-            <h1 className={Styles.Titulo_sobre}>Participações</h1>
+            <h1 className={Styles.Titulo_Participacao}>Participações</h1>
         <div className={Styles.Conteudo1}>
             <div className={Styles.Sobre2}>
-                <div className={Styles.Habilidades}>
-                   
+                <div className={Styles.Participaçoes}>
+                    
                 </div>
             </div>
         </div>

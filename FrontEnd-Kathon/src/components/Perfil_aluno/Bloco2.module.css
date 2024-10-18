@@ -82,3 +82,11 @@
     display: flex;
     justify-content: center;
 }
+
+.Titulo_Participacao{
+    color: rgba(240, 240, 240, 0.80);
+    font-family: "DM Sans";
+    font-size: 40px;
+    line-height: normal;
+    margin-left: 50px;
+}

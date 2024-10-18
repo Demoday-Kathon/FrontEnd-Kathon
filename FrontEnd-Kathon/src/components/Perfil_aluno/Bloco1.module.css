@@ -11,6 +11,11 @@
 .Foto_perfil {
     width: 70%;
     height: 350px;
+    border-radius: 442px;
+}
+
+.Foto_perfilEdit{
+     border: 1px solid #fff; 
 }
 
 .DadosPerfil {
@@ -44,6 +49,7 @@
     font-weight: 700;
     text-align: center;
     font-size: 20px;
+
 }
 
 .BottonPerfil:hover{
