@@ -1,0 +1,22 @@
+.cardPretoBase {
+    background-color: black;
+    border: 1px #A367EB solid;
+    border-radius: 1em;
+    padding: 2.5em;
+    font-size: 0.6em;
+    text-align: left;
+    margin: 0.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+
+.menor {
+    width: 43%;
+}
+
+.maior {
+    width: 55%;
+}

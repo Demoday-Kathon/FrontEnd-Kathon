@@ -32,7 +32,7 @@
 
 .botoesHome {
     display: flex;
-    
+    margin-bottom: 100px;
     width: 50%;
     justify-content: space-evenly;
     margin: auto;
@@ -51,6 +51,8 @@
     border-radius: 1.5em;
     border: 1px solid #FFF;
     font-size: 1.2em;
+    margin-top: 10em;
+
 }
 
 .cardPretoHome .tituloCardPreto {
@@ -89,3 +91,91 @@
     justify-content: end;
     padding-top: 0.5em;
 }
+
+.homeTitulo2 {
+    margin: 3em auto 1em auto;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    width: 75%;
+    padding: 1em;
+    font-weight: bold;
+
+}
+
+.hackathonsDisponiveisHome {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.homeTitulo2 .spanHabilidade {
+    color: #9960dc;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.botoesHome2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 1em;
+    flex-wrap: wrap;
+}
+
+
+.coments {
+    display: flex;
+    margin: auto;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.spanHabilidade2 {
+    color: #66c2fa;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+.caixaCardsPreta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    height: auto;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.tituloCardPretoTalentos {
+    font-size: 1.5em;
+}
+
+.descCardPretoTalentos {
+
+    width: 83%;
+} 
+
+.listCompanyHome {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 5em;
+    align-items: center ;
+    flex-direction: row;
+}
+
+.listCompanyHome li img {
+    width: 125px;
+    height: 125px
+}
+
+
+
+
+

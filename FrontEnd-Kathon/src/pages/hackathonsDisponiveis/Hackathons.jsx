@@ -10,7 +10,10 @@ function Hackathons() {
     return (
         <>
             <Header/>
+            <div className={styles.bg_container}>
              <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos'  acounter='+150 participantes' timeline='20 dias restantes'/>
+             <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos'  acounter='+150 participantes' timeline='20 dias restantes'/>
+            </div>
              <Footer/>
         </>
     )
