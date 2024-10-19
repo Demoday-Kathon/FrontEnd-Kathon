@@ -101,6 +101,12 @@
 
 }
 
+.hackathonsDisponiveisHome {
+    display: flex;
+    flex-direction: row;
+    
+}
+
 
 .homeTitulo2 .spanHabilidade {
     color: #9960dc;
