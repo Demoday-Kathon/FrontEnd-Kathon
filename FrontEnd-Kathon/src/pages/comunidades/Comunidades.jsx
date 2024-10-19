@@ -1,5 +1,8 @@
 import HeaderComunidade from '../../components/HeaderComunidade/HeaderComunidade'
 import DescricaoComunidade from '../../components/DescricaoComunidade/DescricaoComunidade'
+import PhotoProfile from '../../assets/imgs/joana.png';
+import PhotoPost from '../../assets/imgs/rocketseat.png';
+import Post from '../../components/layout/componentePost/ComponentePost';
 import Feed from '../../components/layout/componenteFeed/ComponenteFeed'
 import BannerIMG from '../../assets/imgs/background-comunity.png'
 import User from '../../assets/imgs/joana.png'
@@ -18,7 +21,36 @@ function Comunidades() {
                 <div className={styles.blocoInterno}>
                     <img className={styles.BannerIMG} src={BannerIMG} alt="Banner" />
                     <div className={styles.containeFeedComunity}>
-                        <Feed />
+                        <Feed>
+                            <Post
+                            nameUser={"Joana Pereira"}
+                            profile={PhotoProfile}
+                            hours={"3 Horas atrás"}
+                            description={"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"}
+                            photoPost={PhotoPost}
+                            />
+                            <Post
+                            nameUser={"Joana Pereira"}
+                            profile={PhotoProfile}
+                            hours={"3 Horas atrás"}
+                            description={"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"}
+                            photoPost={PhotoPost}
+                            />
+                            <Post
+                            nameUser={"Joana Pereira"}
+                            profile={PhotoProfile}
+                            hours={"3 Horas atrás"}
+                            description={"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"}
+                            photoPost={PhotoPost}
+                            />
+                            <Post
+                            nameUser={"Joana Pereira"}
+                            profile={PhotoProfile}
+                            hours={"3 Horas atrás"}
+                            description={"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"}
+                            photoPost={PhotoPost}
+                            />
+                        </Feed>
                         <div className={styles.ContentIntern}>
 
                             <DescricaoComunidade className={styles.DescricaoComunidade}>
