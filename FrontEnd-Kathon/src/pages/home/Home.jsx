@@ -4,15 +4,22 @@ import Footer from '../../components/layout/footer/Footer'
 import Button from '../../components/layout/button/button'
 import BotaoHome from '../../components/BotaozinhoHome/BotaoHome'
 import Card_Recomendacao from '../../components/Perfil_aluno/Card_Recomedacao'
+import Card from '../../components/layout/card/card'
+import CardPretoBase from '../../components/CardPretoBase2/CardPretoBase'
+
 
 import banner from '../../assets/imgs/banner.png'
-import accenture from '../../assets/imgs/accenture.png'
-import Card from '../../components/layout/card/card'
-
-
-
 import leticia from '../../assets/imgs/Leticia.png'
 import Abel from '../../assets/imgs/Abel.png'
+import accenture from '../../assets/imgs/accenture.png'
+import oracle  from '../../assets/imgs/oracle.png'
+import ibm from  '../../assets/imgs/ibm.png'
+import adidas from  '../../assets/imgs/adidas.png'
+import pagbank from   '../../assets/imgs/pagbank.png'
+
+
+
+
 
 import { IoIosAlarm } from "react-icons/io";
 import { FaDollarSign } from "react-icons/fa6";
@@ -31,6 +38,11 @@ function Home() {
                     <Button customClass="buttonBaixo" text="Cadastre-se" />
                     <Button customClass="buttonBaixo2" text="Seja parceiro" />
                 </div>
+
+                <hr style={{ width: "75%", height: "1em", margin: "6em 6em ", filter: "blur(25px)", position: "absolute", zIndex: 112, opacity: "25%" }} />
+                <hr style={{ width: "75%", margin: "6em 6em", position: "absolute", zIndex: 111, opacity: "30%" }} />
+
+
 
                 <div className={styles.cardPretoHome}>
                     <h1 className={styles.tituloCardPreto}>O que é hackathon?</h1>
@@ -81,7 +93,73 @@ function Home() {
                     </Card_Recomendacao>
                 </div>
 
-                
+                <h1 className={styles.homeTitulo2}>A conexão entre o <span className={styles.spanHabilidade2}> Talento Jovem </span> e a <span className={styles.spanHabilidade2}> Solução </span> dos seus desafios</h1>
+
+                <div className={styles.caixaCardsPreta}>
+                    <CardPretoBase customClass="menor">
+                        <BotaoHome customClass="iconCardPreto" icon={<IoStatsChart style={{ color: '#A367EB', marginRight: '0.5em' }} />} alt="icone de sifrão" text="Visibilidade" />
+                        <h1 className={styles.tituloCardPretoTalentos}>Visibilidade</h1>
+                        <p className={styles.descCardPretoTalentos}>
+                            Aumente a visibilidade da sua marca e atraia novos clientes e talentos.
+                        </p>
+                    </CardPretoBase>
+
+
+                    <CardPretoBase customClass="maior">
+                        <BotaoHome customClass="iconCardPreto" icon={<TbWorld style={{ color: '#A367EB', marginRight: '0.5em' }} />} alt="icone de alarme" text="Talentos" />
+                        <h1 className={styles.tituloCardPretoTalentos}>Descoberta de novos talentos</h1>
+                        <p className={styles.descCardPretoTalentos}>
+                            Identifique jovens com habilidades excepcionais e potencial para impulsionar seu negócio.
+                        </p>
+                    </CardPretoBase>
+
+
+
+                    <CardPretoBase customClass="maior">
+                        <BotaoHome customClass="iconCardPreto" icon={<MdOutlineLaptopMac style={{ color: '#A367EB', marginRight: '0.5em' }} />} alt="icone de sifrão" text="Inovação" />
+                        <h1 className={styles.tituloCardPretoTalentos}>Cultura de Inovação</h1>
+                        <p className={styles.descCardPretoTalentos}>
+                            Estimule a cultura de inovação dentro da sua empresa e inspire seus colaboradores
+                        </p>
+                    </CardPretoBase>
+
+
+
+                    <CardPretoBase customClass="menor">
+
+                        <BotaoHome customClass="iconCardPreto" icon={<FaUsers style={{ color: '#A367EB', marginRight: '0.5em' }} />} alt="icone de alarme" text="Resolução" />
+                        <h1 className={styles.tituloCardPretoTalentos}>Resolução rápida de problemas</h1>
+                        <p className={styles.descCardPretoTalentos}>
+                            Obtenha soluções inovadoras para seus desafios.
+                        </p>
+                    </CardPretoBase>
+
+
+
+                </div>
+
+                <h1 className={styles.homeTitulo2}> Planos Empresariais</h1>
+
+
+                <h1 className={styles.homeTitulo2}> Empresas Parceiras</h1>
+                <ul className={styles.listCompanyHome}>
+                    <li>
+                        <img src={accenture} alt="" />
+                    </li>
+                    <li>
+                        <img src={pagbank} alt="" />
+                    </li>
+                    <li>
+                        <img src={oracle} alt="" />
+                    </li>
+                    <li>
+                        <img src={ibm} alt="" />
+                    </li>
+                    <li>
+                        <img src={adidas} alt="" />
+                    </li>
+                </ul>
+
 
 
             </container>
