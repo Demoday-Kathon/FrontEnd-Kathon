@@ -39,10 +39,8 @@ function App() {
             element={<HackathonVisaoGeral />}
           />
           <Route path="/Planos" element={<Planos />} />
-          <Route path="/editar" element={<Editar />} />
-          <Route path="/criar" element={<Criar />} />
 
-          <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
+          <Route path="/HackathonsPremios" element={<HackathonPremios />} />
         </Routes>
       </Router>
     </main>
