@@ -1,6 +1,6 @@
-import Styles from "../cardInscricao/cardInscricao.module.css";
+import Styles from "../cardinscricao/cardInscricao.module.css";
 import Datas from "./Datas";
-import BotaoInscricao from "./botaoInscricao";
+
 
 function CardInscricao() {
   return (
