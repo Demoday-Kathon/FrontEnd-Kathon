@@ -1,10 +1,32 @@
-.container_premio {
+.container_p {
     border-radius: 36px;
     border: 2px solid #fff;
     background: rgba(20, 19, 1, 0.8);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     backdrop-filter: blur(20px);
-    width: 60%;
-    margin-top: 50px;
-    height: 400vh;
+    margin: 0 auto;
+    width: 80%;
+    height: 200vh;
+    padding-left: 80px;
   }
+
+.container_premio{
+    display: flex;
+    gap: 35px;
+  }
+
+.text_premio{
+  color:  #F0F0F0;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 30px 0px 30px -100px;
+  }
+
+.premiacao{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0px 30px -50px;
+}
