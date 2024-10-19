@@ -21,18 +21,11 @@ function Bloco2Empresas({ TextoDesc, Titulo_sobre, Titulo_sobre2, Titulo_Partici
 
             <h1 className={Styles.Titulo_sobre2}>{Titulo_sobre2}</h1>
             <div className={Styles.Conteudo1}>
-                <div className={Styles.Sobre}>
+                <div className={Styles.Sobre2}>
                     <div className={Styles.Habilidades}>
-                        <div className={Styles.Habilidades_tag}>
-                            <Button text="Desing" /> <Button text="Comunicação" CustomClass="comunicacao" /> <Button text="ilustação" CustomClass="ilustacao" />
-                        </div>
-                        <div className={Styles.Habilidades_tag}>
-                            <Button text="Marketing" CustomClass="ilustacao" /> <Button text="Pesquisa" CustomClass="pesquisa" />
-                        </div>
-                        <div className={Styles.Habilidades_tag}>
-                            <Button text="Experiência do Usuário" CustomClass="usuario" />
-                        </div>
-
+                    <div className={Styles.Participacoes}>
+                        <CardHacka banner={banner} title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos" Icone_menor={Icone_hacka}/>
+                    </div>
                     </div>
                 </div>
             </div>

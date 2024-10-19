@@ -1,0 +1,22 @@
+.Conteudo1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sobre2{
+    color: rgba(240, 240, 240, 0.70);
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 90%;
+}
+.participacoes{
+    display: flex;
+    width: 100%;
+}

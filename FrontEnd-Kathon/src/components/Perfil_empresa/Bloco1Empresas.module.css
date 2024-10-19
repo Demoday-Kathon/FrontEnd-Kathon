@@ -1,7 +1,6 @@
 .Bloco1 {
     width: 40%;
     height: 90vh;
-    border: 1px solid #FFF;
     display: flex;
     justify-content: center;
     flex-direction: column;
