@@ -10,4 +10,11 @@
     font-size: 0.8em;
 }
 
+.iconCardSecundario {
+    background-color: #000;
+    color: #9960dc;
+    border: 1px solid #fff;
+    width: 35%;
+    padding: 1em;
+}
 

@@ -33,3 +33,9 @@
     line-height: normal;
     margin-left: 25px;
 }
+
+.cardRecomendacaoHome {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
