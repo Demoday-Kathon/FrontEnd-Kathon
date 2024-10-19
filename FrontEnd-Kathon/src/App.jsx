@@ -40,7 +40,7 @@ function App() {
           />
           <Route path="/Planos" element={<Planos />} />
 
-          <Route path="/HackathonsPremios" element={<HackathonPremios />} />
+          <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
         </Routes>
       </Router>
     </main>
