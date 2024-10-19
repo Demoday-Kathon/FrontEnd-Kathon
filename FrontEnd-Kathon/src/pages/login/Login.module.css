@@ -43,7 +43,6 @@
 }
 
 .possuiConta {
-    cursor: pointer;
     align-self: center;
     color: rgba(240, 240, 240, 0.80);
     text-align: center;
@@ -51,10 +50,15 @@
     font-size: 1.7em;
     transition: 0.5s;
     margin-top: 0.8em;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
 }
 
 .possuiConta span {
     font-weight: bold;
+
 }
 
 .possuiConta span:hover {

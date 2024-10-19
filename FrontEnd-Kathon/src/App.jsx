@@ -17,6 +17,8 @@ import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
 import DashboardRecrutamento from "./pages/dashboardRecrutamento/DashboardRecrutamento";
 import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/dashboardAssistenteIA";
 import Login from  "./pages/login/Login";
+import CadastroEscolha from  "./pages/cadastroEscolha/CadastroEscolha";
+
 
 
 import "./App.css";
@@ -51,6 +53,8 @@ function App() {
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
 
           <Route path="/Login" element={<Login />}/>
+
+          <Route path="CadastroEscolha" element={<CadastroEscolha />} />
         </Routes>
       </Router>
     </main>
