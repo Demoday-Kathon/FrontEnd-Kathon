@@ -19,7 +19,7 @@ function Bloco1Empresas({ NomePerfil, UserPerfil, Foto_perfil, customClass }) {
 
                 <LinkComponent linkTo="/Perfil_aluno_edit" text={<button className={Styles.BottonPerfil}>Editar Perfil</button>} />
                 <br />
-                <LinkComponent linkTo="/Perfil_aluno_edit" text={<button className={Styles.BottonPerfil1}>Trocar de Plano</button>} />
+                <LinkComponent linkTo="/Planos" text={<button className={Styles.BottonPerfil1}>Trocar de Plano</button>} />
             </div>
         </section>
     )
