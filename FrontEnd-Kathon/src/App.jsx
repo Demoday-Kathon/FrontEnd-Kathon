@@ -12,7 +12,7 @@ import Perfil_aluno_edit from "./pages/perfilAluno/Perfil_aluno_edit";
 import Perfil_empresa from "./pages/perfilEmpresa/Perfil_empresa";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
 import Planos from "./pages/planos/Planos";
-import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
+import HackathonPremios from "./pages/hackathonsPremios/HackathonsPremios";
 
 import "./App.css";
 
@@ -39,8 +39,10 @@ function App() {
             element={<HackathonVisaoGeral />}
           />
           <Route path="/Planos" element={<Planos />} />
+          <Route path="/editar" element={<Editar />} />
+          <Route path="/criar" element={<Criar />} />
 
-          <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
+          {/* <Route path="/HackathonsPremios" element={<HackathonsPremios />} /> */}
         </Routes>
       </Router>
     </main>
