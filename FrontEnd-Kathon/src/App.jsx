@@ -13,6 +13,8 @@ import Perfil_empresa from "./pages/perfilEmpresa/Perfil_empresa";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
 import Planos from "./pages/planos/Planos";
 import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
+import DashboardRecrutamento from "./pages/dashboardRecrutamento/DashboardRecrutamento";
+import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/dashboardAssistenteIA";
 
 import "./App.css";
 
@@ -39,6 +41,8 @@ function App() {
             element={<HackathonVisaoGeral />}
           />
           <Route path="/Planos" element={<Planos />} />
+          <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
+          <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
 
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
         </Routes>
