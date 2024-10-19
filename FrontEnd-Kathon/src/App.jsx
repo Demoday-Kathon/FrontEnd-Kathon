@@ -12,7 +12,7 @@ import Perfil_aluno_edit from "./pages/perfilAluno/Perfil_aluno_edit";
 import Perfil_empresa from "./pages/perfilEmpresa/Perfil_empresa";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
 import Planos from "./pages/planos/Planos";
-import HackathonPremios from "./pages/hackathonsPremios/HackathonsPremios";
+import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
 
 import "./App.css";
 
