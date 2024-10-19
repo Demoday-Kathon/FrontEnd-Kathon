@@ -11,6 +11,8 @@ import Perfil_aluno from "./pages/perfilAluno/Perfil_aluno";
 import Perfil_aluno_edit from "./pages/perfilAluno/Perfil_aluno_edit";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
 import Planos from "./pages/planos/Planos";
+import Editar from "./components/editarComunidade/EditarComunidade";
+import Criar from "./components/criarComunidade/CriarComunidade";
 import HackathonPremios from "./pages/hackathonsPremios/HackathonsPremios";
 
 import "./App.css";
@@ -37,6 +39,8 @@ function App() {
             element={<HackathonVisaoGeral />}
           />
           <Route path="/Planos" element={<Planos />} />
+          <Route path="/editar" element={<Editar />} />
+          <Route path="/criar" element={<Criar />} />
 
           <Route path="/HackathonPremios" element={<HackathonPremios />} />
         </Routes>
