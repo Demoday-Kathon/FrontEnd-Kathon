@@ -133,6 +133,22 @@
     justify-content: space-between;
 }
 
+.planosEmpresariaisDiv {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planosEmpresariaisDiv img {
+    width: 90%;
+    height: 90%;
+}
+
+
+
+
+
 .spanHabilidade2 {
     color: #66c2fa;
     background-clip: text;

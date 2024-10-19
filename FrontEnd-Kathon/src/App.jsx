@@ -16,6 +16,8 @@ import Planos from "./pages/planos/Planos";
 import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
 import DashboardRecrutamento from "./pages/dashboardRecrutamento/DashboardRecrutamento";
 import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/dashboardAssistenteIA";
+import Login from  "./pages/login/Login";
+
 
 import "./App.css";
 
@@ -47,6 +49,8 @@ function App() {
           <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
 
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
+
+          <Route path="/Login" element={<Login />}/>
         </Routes>
       </Router>
     </main>

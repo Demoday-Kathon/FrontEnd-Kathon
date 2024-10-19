@@ -9,7 +9,7 @@ function Header() {
         <header className={styles.header}>
             <LinkComponent linkTo="/" text={<div className={styles.logoHeader}></div>}/>
             <Navbar />
-            <Button text="Entrar"/>
+            <LinkComponent linkTo="/Login" text={<Button customClass="buttonHeader" text="Entrar"/>}>  </LinkComponent>
         </header>
     )
 }

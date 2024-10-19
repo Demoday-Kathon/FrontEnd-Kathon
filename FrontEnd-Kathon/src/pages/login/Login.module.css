@@ -1,0 +1,64 @@
+.logoKathonLogin {
+    width: 12em;
+    height: 12em;
+
+}
+
+.tituloCardLogin {
+    color: #fff;
+    font-size: 5em;
+}
+
+.divisorLogin {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    color: #FFF;
+    font-size: 1.5em;
+}
+
+.divisorLogin hr {
+    margin-top: 1.5em;
+    margin: 2em;
+}
+
+.esqueceuSenha {
+
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 5em;
+    color: rgba(240, 240, 240, 0.80);
+    text-align: end;
+    font-weight: normal;
+    font-size: 1.7em;
+    transition: 0.5s;
+    margin-top: 0.8em;
+}
+
+.esqueceuSenha:hover {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+.possuiConta {
+    cursor: pointer;
+    align-self: center;
+    color: rgba(240, 240, 240, 0.80);
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.7em;
+    transition: 0.5s;
+    margin-top: 0.8em;
+}
+
+.possuiConta span {
+    font-weight: bold;
+}
+
+.possuiConta span:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.8);
+}

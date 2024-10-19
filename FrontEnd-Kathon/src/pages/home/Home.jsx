@@ -16,9 +16,7 @@ import oracle  from '../../assets/imgs/oracle.png'
 import ibm from  '../../assets/imgs/ibm.png'
 import adidas from  '../../assets/imgs/adidas.png'
 import pagbank from   '../../assets/imgs/pagbank.png'
-
-
-
+import cardPlanosHome from  '../../assets/imgs/cardPlanosHome.png'
 
 
 import { IoIosAlarm } from "react-icons/io";
@@ -139,6 +137,12 @@ function Home() {
                 </div>
 
                 <h1 className={styles.homeTitulo2}> Planos Empresariais</h1>
+
+                <div className={styles.planosEmpresariaisDiv}>
+                    <img src={cardPlanosHome} alt="" />
+                    <Button customClass='buttonPlanosEmpresarias' text="Conheça os planos" />
+
+                </div>
 
 
                 <h1 className={styles.homeTitulo2}> Empresas Parceiras</h1>
