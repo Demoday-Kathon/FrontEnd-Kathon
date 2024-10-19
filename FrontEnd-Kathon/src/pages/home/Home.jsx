@@ -5,6 +5,11 @@ import Button from '../../components/layout/button/button'
 import BotaoHome from '../../components/BotaozinhoHome/BotaoHome'
 import Card_Recomendacao from '../../components/Perfil_aluno/Card_Recomedacao'
 
+import banner from '../../assets/imgs/banner.png'
+import accenture from '../../assets/imgs/accenture.png'
+import Card from '../../components/layout/card/card'
+
+
 
 import leticia from '../../assets/imgs/Leticia.png'
 import Abel from '../../assets/imgs/Abel.png'
@@ -46,19 +51,26 @@ function Home() {
                 <h1 className={styles.homeTitulo2}>Explore suas <span className={styles.spanHabilidade}> habilidades </span></h1>
 
                 <div className={styles.botoesHome2}>
-                    <BotaoHome customClass = "iconCardSecundario" icon={<TbWorld style={{ color: '#ffffff', marginRight: '0.5em' }} />} alt="icone de alarme" text="Experiência" />
-                    <BotaoHome customClass = "iconCardSecundario" icon={<IoStatsChart style={{ color: '#ffffff', marginRight: '0.5em' }} />} alt="icone de sifrão" text="Desenvolvimento de Habilidades" />
-                    <BotaoHome customClass = "iconCardSecundario" icon={<FaUsers style={{ color: '#ffffff', marginRight: '0.5em' }} />} alt="icone de alarme" text="Networking" />
-                    <BotaoHome customClass = "iconCardSecundario" icon={<MdOutlineLaptopMac style={{ color: '#ffffff', marginRight: '0.5em' }} />} alt="icone de sifrão" text="Oportunidades" />
+                    <BotaoHome customClass="iconCardSecundario" icon={<TbWorld style={{ color: '#ffffff', marginRight: '0.5em' }} />} alt="icone de alarme" text="Experiência" />
+                    <BotaoHome customClass="iconCardSecundario" icon={<IoStatsChart style={{ color: '#ffffff', marginRight: '0.5em' }} />} alt="icone de sifrão" text="Desenvolvimento de Habilidades" />
+                    <BotaoHome customClass="iconCardSecundario" icon={<FaUsers style={{ color: '#ffffff', marginRight: '0.5em' }} />} alt="icone de alarme" text="Networking" />
+                    <BotaoHome customClass="iconCardSecundario" icon={<MdOutlineLaptopMac style={{ color: '#ffffff', marginRight: '0.5em' }} />} alt="icone de sifrão" text="Oportunidades" />
                 </div>
 
 
 
                 <h1 className={styles.homeTitulo2}> HACKATHONS DISPONÍVEIS </h1>
+                <div className={styles.hackathonsDisponiveisHome}>
+                    <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos' acounter='+150 participantes' timeline='20 dias restantes' />
+                    <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos' acounter='+150 participantes' timeline='20 dias restantes' />
+
+                </div>
+
+
 
                 <h1 className={styles.homeTitulo2}> QUEM JÁ PARTICIPOU, QUER MAIS</h1>
                 <div className={styles.coments}>
-                    <Card_Recomendacao  customClass="cardRecomendacaoHome" Perfil_foto={leticia} Nome="Accenture " Sub_titulo="“KATHON nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva que já estamos planejando o próximo hackathon.”">
+                    <Card_Recomendacao customClass="cardRecomendacaoHome" Perfil_foto={leticia} Nome="Accenture " Sub_titulo="“KATHON nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva que já estamos planejando o próximo hackathon.”">
 
                         <Button customClass="buttonBaixo3" text="Seja parceiro" />
                     </Card_Recomendacao>
@@ -68,6 +80,8 @@ function Home() {
                         <Button customClass="buttonBaixo3" text="Iniciar" />
                     </Card_Recomendacao>
                 </div>
+
+                
 
 
             </container>
