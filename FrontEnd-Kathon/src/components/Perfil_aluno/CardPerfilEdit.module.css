@@ -1,6 +1,6 @@
 .Card_Fundo {
     border-radius: 36px;
-    border: 2px solid #fff;
+    border: 2px solid #66C2FA;
     background: rgba(20, 19, 1, 0.8);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     backdrop-filter: blur(20px);
@@ -22,7 +22,6 @@
 .Recomendacao_bloco{
     width: 100%;
     height: auto;
-    border: 2px solid hotpink;
 
 
 }
@@ -30,7 +29,6 @@
 .PerfilDados{
     width: 100%;
     height: 140vh;
-    border: 2px #00ff15 solid;
     display: flex;
     flex-direction: row;
     justify-content: center;
