@@ -9,3 +9,14 @@
   position: relative;
   left: 130px;
 }
+
+.hackthonsmais {
+  color: var(--Terciria-II, #f0f0f0);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 68px; /* 94.444% */
+  margin-top: 200px;
+}

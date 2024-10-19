@@ -19,6 +19,9 @@ function HackathonVisaoGeral() {
           sponsors="Patrocinadores"
         />
       </div>
+      <div className={Styles.hackthonsmais}>
+        <h3>Mais Hackathons:</h3>
+      </div>
     </>
   );
 }

@@ -1,0 +1,86 @@
+.cardPubli {
+  border-radius: 40px 100px 40px 40px;
+  border: 3px solid #fff;
+  background: #000;
+  width: 30%;
+  height: 50vh;
+}
+
+.posthead {
+  display: flex;
+  width: 60%;
+  margin-top: 30px;
+  margin-left: 40px;
+  p {
+    color: #fff;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 15px;
+  }
+  img {
+    width: 40%;
+  }
+}
+.publis {
+  color: #8e8e8e;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.escreva {
+  border-radius: 20px;
+  background: #a367eb;
+  width: 80%;
+  display: flex;
+  margin-top: 70px;
+  margin-left: 40px;
+  padding: 10px;
+  gap: 20px;
+  cursor: pointer;
+  p {
+    color: #fff;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  svg {
+    height: 20px;
+  }
+}
+
+.botaoo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 40px;
+  height: 35px;
+  background: #d9d9d9;
+  width: 40%;
+  margin-left: 120px;
+  button {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.botaoo:hover {
+  background: #a367eb;
+  button {
+    color: white;
+  }
+}
