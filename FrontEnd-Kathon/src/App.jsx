@@ -42,7 +42,7 @@ function App() {
           <Route path="/editar" element={<Editar />} />
           <Route path="/criar" element={<Criar />} />
 
-          <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
+          {/* <Route path="/HackathonsPremios" element={<HackathonsPremios />} /> */}
         </Routes>
       </Router>
     </main>
