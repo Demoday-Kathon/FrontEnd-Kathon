@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30vh;
+    margin-top: 10vh;
+}

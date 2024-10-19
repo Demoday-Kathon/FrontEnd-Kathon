@@ -1,0 +1,50 @@
+.Card_fundo{
+    border-radius: 36px;
+    border: 2px solid #fff;
+    background: rgba(20, 19, 1, 0.8);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+    width: 85%;
+    margin-top: 50px;
+    height: 225vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.PerfilDados{
+    width: 100%;
+    height: 140vh;
+    border: 2px #00ff15 solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Recomendacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+    gap: 90px;
+}
+
+.Recomendacao_bloco{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid hotpink;
+}
+.RecomendacaoTi{
+    color: rgba(240, 240, 240, 0.80);
+    font-family: "DM Sans";
+    font-size: 40px;
+    line-height: normal;
+    margin-left: 0vh;
+    margin-bottom: 100px;
+}
+.RecomendacaoEmpresa{
+    width: 100%;
+    margin-left: 350px;
+}

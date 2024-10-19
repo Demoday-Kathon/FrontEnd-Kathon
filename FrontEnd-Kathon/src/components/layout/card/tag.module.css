@@ -51,5 +51,58 @@
     color: #FFF;
 }
 
+.ilustacao{
+    width: 150px;
+    height: 50px;
+    border-radius: 36px;
+    background: var(--Terciria-V, #A367EB);
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+}
+
+.comunicacao{
+    width: 200px;
+    height: 50px;
+    border-radius: 36px;
+    background: var(--Secundria, #314CE7);
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+
+}
+
+.pesquisa{
+    width: 150px;
+    height: 50px;
+    border-radius: 36px;
+    background: var(--Secundria, #314CE7);
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+
+}
+
+.usuario{
+    width: 350px;
+    height: 50px;
+    border-radius: 36px;
+    background: var(--Primria, #7400B7);
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+}
 
     

@@ -9,10 +9,9 @@ import ComunidadesVisaoGeral from "./pages/comunidadesVisaoGeral/ComunidadesVisa
 import Sobre from "./pages/sobre/Sobre";
 import Perfil_aluno from "./pages/perfilAluno/Perfil_aluno";
 import Perfil_aluno_edit from "./pages/perfilAluno/Perfil_aluno_edit";
+import Perfil_empresa from "./pages/perfilEmpresa/Perfil_empresa";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
 import Planos from "./pages/planos/Planos";
-import Editar from "./components/editarComunidade/EditarComunidade";
-import Criar from "./components/criarComunidade/CriarComunidade";
 import HackathonPremios from "./pages/hackathonsPremios/HackathonsPremios";
 
 import "./App.css";
@@ -34,6 +33,7 @@ function App() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
+          <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
           <Route
             path="/HackathonVisaoGeral"
             element={<HackathonVisaoGeral />}
@@ -42,7 +42,7 @@ function App() {
           <Route path="/editar" element={<Editar />} />
           <Route path="/criar" element={<Criar />} />
 
-          <Route path="/HackathonPremios" element={<HackathonPremios />} />
+          <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
         </Routes>
       </Router>
     </main>

@@ -11,10 +11,10 @@ function CardPerfil() {
         <section className={Styles.Card_Fundo}>
             <div className={Styles.PerfilDados}>
                 <Bloco1 Foto_perfil={Joana} NomePerfil="Joana Pereira" UserPerfil="@JoJopereira" />
-                <Bloco2 TextoDesc="Sou Joana, autodidata de 17 anos, com grande interesse por tecnologia. Passo horas explorando programação e design, sempre buscando novos desafios. Meu sonho é utilizar essas  habilidades para criar projetos que possam impactar o mundo ao meu redor." />
+                <Bloco2 TextoDesc="Sou Joana, autodidata de 17 anos, com grande interesse por tecnologia. Passo horas explorando programação e design, sempre buscando novos desafios. Meu sonho é utilizar essas  habilidades para criar projetos que possam impactar o mundo ao meu redor." Titulo_sobre="Sobre:" Titulo_sobre2="Principais Habilidades:" Titulo_Participacao="Participacões:" />
             </div>
             <div className={Styles.Recomendacao_bloco}>
-                <h1 className={Styles.RecomendacaoTi}>Recomendações</h1>
+                <h1 className={Styles.RecomendacaoTi}>Recomendações:</h1>
                 <div className={Styles.Recomendacao} >
                     <Recomendacao Perfil_foto={leticia} Nome="Leticia Silva" Sub_titulo="Excelente Profissional,habilidade em UI/UX é impressionante" />
                     <Recomendacao Perfil_foto={Abel} Nome="Abel Ferreira" Sub_titulo="Ótima lider, sua capacidade de liderar é impressionante " />
