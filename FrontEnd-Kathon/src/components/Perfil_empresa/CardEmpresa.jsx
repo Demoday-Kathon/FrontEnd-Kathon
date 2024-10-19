@@ -1,6 +1,6 @@
 import Styles from './CardEmpresa.module.css'
 import Bloco1Empresas from './Bloco1Empresas'
-import Bloco2 from '../Perfil_aluno/Bloco2'
+import Bloco2Empresas from './Bloco2Empresas'
 import accenture from '../../assets/imgs/Icone_accenture.png'
 import Recomendacao from '../Perfil_aluno/Card_Recomedacao'
 import cadeirante from '../../assets/imgs/Icone_cadeirante.png'
@@ -10,7 +10,7 @@ function CardEmpresa(){
         <section className={Styles.Card_fundo}>
             <div className={Styles.PerfilDados}>
                 <Bloco1Empresas Foto_perfil={accenture} NomePerfil="Accenture" UserPerfil="@Accenture"/>
-                <Bloco2 TextoDesc="A Accenture é uma multinacional de consultoria em gestão, tecnologia da informação e outsourcing. É a maior empresa de consultoria do mundo e uma competidora global no setor de tecnologia." Titulo_sobre="Sobre:" Titulo_sobre2="Hackathons Abertos" Titulo_Participacao="Próximos Hackathons:" />
+                <Bloco2Empresas TextoDesc="A Accenture é uma multinacional de consultoria em gestão, tecnologia da informação e outsourcing. É a maior empresa de consultoria do mundo e uma competidora global no setor de tecnologia." Titulo_sobre="Sobre:" Titulo_sobre2="Hackathons Abertos" Titulo_Participacao="Próximos Hackathons:" />
             </div>
             <div className={Styles.Recomendacao_bloco}>
                 <div className={Styles.RecomendacaoEmpresa}>
