@@ -2,6 +2,7 @@ import CardInscricao from "../../components/cardInscricao/CardInscricao";
 import CardPreto from "../../components/layout/cardPreto/CardPreto";
 import Bann from "../../components/Banner/Bann";
 import Styles from "../hackathonsVisaoGeral/HackathonVisaoGeral.module.css";
+import Card from "../../components/layout/card/card";
 
 function HackathonVisaoGeral() {
   return (
@@ -21,6 +22,10 @@ function HackathonVisaoGeral() {
       </div>
       <div className={Styles.hackthonsmais}>
         <h3>Mais Hackathons:</h3>
+      </div>
+      <div className={Styles.cardHacks}>
+        <Card />
+        <Card />
       </div>
     </>
   );
