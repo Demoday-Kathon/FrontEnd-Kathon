@@ -14,6 +14,7 @@ import Perfil_empresa_edit from "./pages/perfilEmpresa/Perfil_empresa_edit";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
 import Planos from "./pages/planos/Planos";
 import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
+import DashBoardHome from "./pages/dashBoardHome/DashBoardHome";
 import DashboardRecrutamento from "./pages/dashboardRecrutamento/DashboardRecrutamento";
 import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/dashboardAssistenteIA";
 import Login from  "./pages/login/Login";
@@ -40,11 +41,9 @@ function App() {
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
           <Route path="/Perfil_empresa_edit" element={<Perfil_empresa_edit />} />
-          <Route
-            path="/HackathonVisaoGeral"
-            element={<HackathonVisaoGeral />}
-          />
+          <Route path="/HackathonVisaoGeral" element={<HackathonVisaoGeral />} />
           <Route path="/Planos" element={<Planos />} />
+          <Route path="/dashboardhome" element={<DashBoardHome />} />
           <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
           <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
 

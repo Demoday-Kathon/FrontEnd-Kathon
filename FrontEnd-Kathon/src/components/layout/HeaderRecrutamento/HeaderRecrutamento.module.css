@@ -1,42 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 .containerRecrutamento{
-    display: flex;
-    width: 15%;
-    height: 100vh;
-    padding-top: 40px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
+    width: 22%;
+    height: 80vh;
     background-position: center;
     background-size: cover;
-    background-repeat: repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    left: 3%;
     background-image: url(../../../assets/imgs/backgroundPlataform.png);
+}
+
+.logo{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LogoKathon{
+    width: 60%;
+    height: 3.4vh;
 }
 
 .ContainerLinksNav{
     display: flex;
     flex-direction: column;
+    height: 65vh;
     width: 100%;
-    height: 90vh;
     align-items: center;
-    justify-content: flex-start;
-    margin-top: 5vh;
     gap: 4vh;
 }
 
 .ContainerLinksNav a{
-    color: #000000;
-    width: 80%;
-    font-weight: bolder;
+    width: 13rem;
+    height: 3rem;
     background-color: #fff;
-    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: start;
-    border-radius: 2vh;
+    transition: background 0.5s ease;
 }
 
-.LogoKathon{
-    width: 65%;
-    height: 5vh;
+.icons{
+    width: 25px;
+    position: relative;
+    top: 5px;
+    object-fit: cover;
+    object-position: center;
+    height: 25px;
 }
+
+a span{
+    color: #000000;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    width: 65%;
+}
+
+.ContainerLinksNav a:hover{
+    background-color: #A367EB;
+}
+a:hover span{
+    color: #fff;
+}
+
+

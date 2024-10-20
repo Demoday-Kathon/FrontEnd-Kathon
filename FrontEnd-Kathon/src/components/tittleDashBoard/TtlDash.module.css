@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.ctnTtl{
+    width: 300px;
+    height: 75px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctnTtl p{
+    color: #fff;
+    color: #A367EB;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "DM Sans", sans-serif;
+}
