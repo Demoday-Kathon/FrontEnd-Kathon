@@ -9,8 +9,8 @@
 
 .areaCardsBrancos {
     display: flex;
-    border: 2px #fff solid;
+
     padding: 2em;
     justify-content: space-between;
-    width: 60%;   
+    width: 85%;   
 }
