@@ -18,6 +18,9 @@ import DashboardRecrutamento from "./pages/dashboardRecrutamento/DashboardRecrut
 import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/DashboardAssistenteIA";
 import Login from  "./pages/login/Login";
 import CadastroEscolha from  "./pages/cadastroEscolha/CadastroEscolha";
+import CadastroEstudante from   "./pages/cadastroEstudante/CadastroEstudante";
+import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
+
 
 
 
@@ -55,6 +58,9 @@ function App() {
           <Route path="/Login" element={<Login />}/>
 
           <Route path="CadastroEscolha" element={<CadastroEscolha />} />
+
+          <Route path="CadastroEstudante" element={<CadastroEstudante />} />
+          <Route path="CadastroEmpresa" element={<CadastroEmpresa />} />
         </Routes>
       </Router>
     </main>
