@@ -44,6 +44,7 @@
 
 .buttonLoginConta:hover {
     font-size: 2.6em;
-    padding: 0.6em 0.6em 0.6em 1.1em;
+
     background: rgba(71, 70, 70, 0.1);
+    width:80%;
 }

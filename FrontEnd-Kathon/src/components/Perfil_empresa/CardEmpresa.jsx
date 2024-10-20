@@ -15,7 +15,7 @@ function CardEmpresa(){
             </div>
             <div className={Styles.Recomendacao_bloco}>
                 <div className={Styles.RecomendacaoEmpresa}>
-                <h1 className={Styles.RecomendacaoTi}>Relato dos Participantes</h1>
+                <h1 className={Styles.RecomendacaoTi}>Relato dos Participantes:</h1>
                 <p></p>                </div>
                 <div className={Styles.Recomendacao} >
                 <Recomendacao Perfil_foto={cadeirante} Nome="Lautaro Martinez" Sub_titulo=" “Accenture nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva” " />

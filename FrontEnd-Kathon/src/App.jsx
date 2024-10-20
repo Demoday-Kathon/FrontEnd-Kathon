@@ -16,8 +16,10 @@ import Planos from "./pages/planos/Planos";
 import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
 import DashBoardHome from "./pages/dashBoardHome/DashBoardHome";
 import DashboardRecrutamento from "./pages/dashboardRecrutamento/DashboardRecrutamento";
-import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/dashboardAssistenteIA";
+import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/DashboardAssistenteIA";
 import Login from  "./pages/login/Login";
+import CadastroEscolha from  "./pages/cadastroEscolha/CadastroEscolha";
+
 
 
 import "./App.css";
@@ -50,6 +52,8 @@ function App() {
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
 
           <Route path="/Login" element={<Login />}/>
+
+          <Route path="CadastroEscolha" element={<CadastroEscolha />} />
         </Routes>
       </Router>
     </main>

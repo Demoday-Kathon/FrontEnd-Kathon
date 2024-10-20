@@ -1,0 +1,16 @@
+.tituloCadastroEscola {
+    color: #fff;
+    font-size: 5em;
+
+    width: 40%;
+    text-align: center;
+
+}
+
+.areaCardsBrancos {
+    display: flex;
+
+    padding: 2em;
+    justify-content: space-between;
+    width: 85%;   
+}
