@@ -22,11 +22,11 @@
 
 .ContainerHeaderTitle{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     width: 80%;
     height: 15vh;
-    gap: 50vh;
+    gap: 2vh;
 }
 
 .containerTitulo{
@@ -37,6 +37,22 @@
     border-radius: 20px;
     background-color: #000000;
     color: #A367EB;
+}
+
+.ContentKathonIA{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+.ContentKathonIA h2{
+    margin-bottom: 1.5vh;
+    color: #d0d0d0;
+    padding: 1vh 2vh;
+    border-radius: 25px;
+    background-image: linear-gradient(90deg, #01FFA6 0%, #2E0049 51%, #A367EB 100%);
 }
 
 .ContainerTerciaryRecrutamento{
@@ -421,4 +437,12 @@
     margin: 0;
    width: 20px;
    height: 20px;
+}
+.BackSeta{
+    width: 60px;
+    height: 60px;
+    background-color: #d9d9d97d;
+    padding: 8px;
+    border-radius: 28px;
+    cursor: pointer;
 }

@@ -4,6 +4,7 @@ import Estrela from '../../assets/imgs/star.png';
 import ImageProfile from '../../assets/imgs/joana.png';
 import ImageNotification from '../../assets/imgs/notification.png';
 import Seta from '../../assets/imgs/setawhite.png';
+import backSeta from '../../assets/imgs/backSeta.png';
 
 function DashboardAssistenteIA() {
   return (
@@ -12,9 +13,16 @@ function DashboardAssistenteIA() {
       <div className={Styles.ContainerDashboard}>
         <div
         className={Styles.ContainerHeaderTitle}>
+
+          <img className={Styles.BackSeta} src={backSeta} alt="Seta voltar" />
+
           <div className={Styles.containerTitulo}>
             <h1>Recrutamento</h1>
           </div>
+          
+          <div className={Styles.ContentKathonIA}>
+
+            <h2>Kathon IA</h2>
 
             <div className={Styles.ContainerNotification}>
               <div>
@@ -23,6 +31,7 @@ function DashboardAssistenteIA() {
 
               <img className={Styles.ImageProfile} src={ImageProfile} alt="Imagem perfil usuário" />
             </div>
+          </div>
         </div>
 
         <div className={Styles.ContainerTerciaryRecrutamento}>
