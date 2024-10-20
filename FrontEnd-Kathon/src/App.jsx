@@ -15,7 +15,7 @@ import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGer
 import Planos from "./pages/planos/Planos";
 import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
 import DashboardRecrutamento from "./pages/dashboardRecrutamento/DashboardRecrutamento";
-import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/dashboardAssistenteIA";
+import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/DashboardAssistenteIA";
 import Login from  "./pages/login/Login";
 import CadastroEscolha from  "./pages/cadastroEscolha/CadastroEscolha";
 

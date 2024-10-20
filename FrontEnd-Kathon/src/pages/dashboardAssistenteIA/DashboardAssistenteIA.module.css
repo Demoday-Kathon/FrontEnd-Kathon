@@ -4,6 +4,9 @@
     align-items: center;
     width: 100%;
     height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(../../assets/imgs/Dashboard-Recrutamento.png);
 }
 
@@ -11,9 +14,19 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 80vh;
-    justify-content: center;
+    height: 90vh;
+    justify-content: flex-start;
     align-items: center;
+    gap: 2vh;
+}
+
+.ContainerHeaderTitle{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    height: 15vh;
+    gap: 50vh;
 }
 
 .containerTitulo{
@@ -29,25 +42,41 @@
 .ContainerTerciaryRecrutamento{
     display: flex;
     flex-direction: row;
+    background-color: #000;
+    padding: 0 20px;
     margin-top: 5vh;
+    border-radius: 20px;
     width: 80%;
-    height: 80vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
+    gap: 200px;
 }
 
 .containerResolution{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    width: 80%;
-    height: 70vh;
+    width: 40%;
+    height: 60vh;
     border-radius: 20px;
     color: #A367EB;
-    background-color: #000000;
-    padding: 20px 30px;
-    gap: 10px;
+    padding: 10px 30px;
+    gap: 20px;
+}
+
+.containerSearchHacka{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    height: 60vh;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #8F8F8F;
+    padding: 40px 30px;
 }
 
 .ContainerBlocos{
@@ -56,17 +85,340 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    gap: 3.5vh;
+    width: 100%;
+    height: 45vh;
+}
+
+.ContainerBlocosHacka{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 3vh;
     width: 100%;
-    height: 40vh;
+    height: 55vh;
 }
 
 .containerCard{
     display: flex;
-    background-color: rgb(153, 153, 153);
-    width: 80%;
-    height: 20vh;
-    justify-content: center;
+    background-color: #646464;
+    width: 100%;
+    height: 25vh;
+    justify-content: space-between;
+    padding: 0 2vh;
     align-items: center;
     color: #fff;
+    border-radius: 10px;
+}
+
+.containerCardHacka{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    height: 25vh;
+    justify-content: space-between;
+    padding: 2vh 0 0 0;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.TitleContainerResolution{
+    width: 80%;
+}
+
+.ContainerTitleContainerResolution{
+    width: 90%;
+    height: 10vh;
+    margin: 0;
+    padding: o;
+}
+
+.ContainerInfoEquipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 10vh;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.ContainerInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    gap: 10px;
+}
+
+.ImageEquipe{
+    margin-top: 1.5vh;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.ButtomViewEquipe{
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #01FFA6;
+    border-radius: 5px;
+}
+
+.Trofeu{
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+}
+
+.TrofeuPrimary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #CBB353;
+    border-radius: 5px;
+    width: 15%;
+    height: 6vh;
+}
+.TrofeuSecondary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    width: 15%;
+    height: 6vh;
+}
+.TrofeuTerciary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #D09F7C;
+    border-radius: 5px;
+    width: 15%;
+    height: 6vh;
+}
+
+.ContainerNotification{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 13%;
+    height: 10vh;
+    border-radius: 20px;
+    color: #A367EB;
+    gap: 10px;
+}
+
+.ImageNotification{
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    border: 3px solid #D9D9D9;
+    width: 35px;
+    height: 35px;
+}
+
+.ImageProfile{
+    width: 50px;
+    height: 50px;
+}
+
+.SearchHacka{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 26vh;
+    gap: 10px;
+    background-color: #A367EB;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.SearchHacka input{
+    background: none;
+    font-size: 0.8rem;
+    padding: 0 30px;
+    height: 4vh;
+    color: #ededed;
+}
+
+.SearchHacka input:focus{
+    border: none;
+    outline: none;
+}
+
+.SearchHacka input::placeholder{
+    background-color: #A367EB;
+    font-size: 1rem;
+    padding: 0 10px;
+    color: #d7d6d6;
+}
+
+.ImagemSearch{
+    margin: 10px 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.ContainerImagesHacka{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 8vh;
+}
+
+.Imagehackathon:nth-child(1){
+    width: 40px;
+    height: 40px;
+}
+
+.Imagehackathon:nth-child(2){
+    width: 25px;
+    height: 25px;
+}
+
+.DescriptionHacka{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.DescriptionHacka p{
+    text-align: start;
+    font-size: 0.9rem;
+}
+
+.ContainerButtonHacka{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 10vh;
+}
+
+.ButtonOn{
+    background-color: #66C2FA;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.ButtonSelect{
+    background-color: #01FFA6;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.ContainerStars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    gap: 30px;
+}
+
+.ContainerStars img{
+    background-color: #000;
+    border-radius: 5px;
+    border: 5px solid #000;
+    width: 50px;
+    height: 50px;
+}
+
+.ContainerAvaliador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.ContainerAvaliador img{
+    width: 50px;
+    height: 50px;
+}
+
+.ContainerAvaliador p{
+    font-size: 0.8rem;
+}
+
+.ContainerRepository{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border-radius: 20px;
+    gap: 4vh;
+    width: 100%;
+    height: 18vh;
+    padding: 2vh;
+}
+
+.LinkRepository{
+    background-color: #A367EB;
+    border-radius: 20px;
+    width: 60%;
+    height: 15vh;
+}
+
+.CardColab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    color: #fff;
+    background-color: #A367EB;
+    border-radius: 20px;
+    padding: 2vh 4vh;
+}
+
+.CardColab img{
+    margin-top: 2vh;
+}
+
+.CardColab p{
+    text-align: center;
+}
+
+.UserImage{
+   width: 50px;
+   height: 50px;
+}
+
+.Seta{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border: 2px solid #000;
+    border-radius: 40px;
+}
+
+.Seta img{
+    margin: 0;
+   width: 20px;
+   height: 20px;
 }
