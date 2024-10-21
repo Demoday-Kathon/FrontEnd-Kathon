@@ -1,0 +1,26 @@
+.tituloCadastro {
+    color: #fff;
+    font-size: 5em;
+}
+
+.linhaInputs {
+    display: flex;
+    width: 75%;
+}
+
+.linhaInputs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5em;
+
+}
+
+.inputMenor {
+    width: 30%;
+}
+
+.inputMenor2 {
+    width: 25%;
+}
+

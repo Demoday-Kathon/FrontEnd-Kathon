@@ -6,7 +6,7 @@
     padding: 0.5em 0.5em 0.5em 1em;
     width: 75%;
     font-size: 2.5em;
-    margin-top: 1em;
+    margin-bottom: 1em;
     color: #fff;
 }
 
@@ -14,3 +14,16 @@
     color: rgb(255, 255, 255); /* Altere para a cor desejada */
     opacity: 1; /* Define a opacidade se necessário */
   }
+
+  .inputMaior, .inputMenor {
+    width: 100%;
+  }
+
+  .inputMaior {
+    
+    margin-right: 0.5em;
+  }
+
+  /* .inputMenor{
+   
+  } */
