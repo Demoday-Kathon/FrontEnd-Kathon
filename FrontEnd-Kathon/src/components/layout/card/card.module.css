@@ -117,4 +117,9 @@
 }
 .cardHackscustom {
   border: 0px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardHackscustom:hover {
+  transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
 }

@@ -21,8 +21,13 @@
   font-weight: bold;
 }
 
+.faqQuestion:hover {
+  background-color: white;
+  color: black;
+}
+
 .faqAnswer {
-  background-color: #6200ea;
+  background-color: #7400b7;
   color: white;
   padding: 15px;
   border-radius: 10px;

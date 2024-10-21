@@ -84,5 +84,5 @@
 }
 
 .butoncard:hover {
-  background-color: #7400b7;
+  background-color: var(--Terciria, #66c2fa);
 }
