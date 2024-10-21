@@ -94,7 +94,6 @@
 }
 
 .buttonPlanosEmpresarias {
-  position: absolute;
   border-radius: 0.8em;
   border: 1px solid #66c2fa;
   background-color: #000000;
@@ -102,8 +101,8 @@
   height: 1.5em;
   font-size: 0.8em;
   padding: 1.5em;
-  margin-left: 800px;
-  margin-top: 325px;
+  margin-left: -400px;
+  margin-top: 300px;
 }
 
 .buttonPlanosEmpresarias:hover {
