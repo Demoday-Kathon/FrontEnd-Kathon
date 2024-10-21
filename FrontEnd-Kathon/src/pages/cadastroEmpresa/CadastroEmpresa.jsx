@@ -22,7 +22,7 @@ function CadastroEmpresa() {
 
                 <Form customClass="formsLogin">
                     <Label customClass="labelFormsCadastro" text="Nome da Empresa" />
-                    <Input text="" type="text" />
+                    <Input text="Digite o nome da Empresa" type="text" />
                     <Label customClass="labelFormsCadastro" text="Email Corporativo" />
                     <Input text="" type="email" />
                     <Label customClass="labelFormsCadastro" text="Confirme seu email" />
