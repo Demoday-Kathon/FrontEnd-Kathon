@@ -37,6 +37,7 @@
     font-weight: bold;
     gap: 1vh;
     height: 31px;
+    font-family: "DM Sans";
 }
 
 .ContainerLinks{
@@ -74,6 +75,8 @@
     gap: 2.5vh;
     color: #fff;
     width: 100%;
+    background: linear-gradient(to bottom, transparent 20%, rgba(0, 0, 0, 0.8) 100%);
+    border-radius: 0px 0px 50px 0px;
 }
 
 .ProfileNav{
