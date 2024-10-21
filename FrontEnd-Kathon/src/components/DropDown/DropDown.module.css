@@ -1,0 +1,20 @@
+.DropDown{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
