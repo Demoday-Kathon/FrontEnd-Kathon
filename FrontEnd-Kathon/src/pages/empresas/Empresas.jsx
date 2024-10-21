@@ -1,9 +1,12 @@
 import Styles from './Empresas.module.css'
 import CaixaPreta from '../../components/layout/props.empresa/CaixaPreta'
+import Header from "../../components/layout/header/Header"
+
 
 function Empresas() {
     return (
         <section className={Styles.fundoempresa}>
+            <Header/>
             <div className={Styles.textempresa}><h2>Hackathons que Conectam Talentos<br /> e Transformam Negócios</h2></div>
             <div className={Styles.empresa1}></div>
             <div className={Styles.boxtextpai}>
