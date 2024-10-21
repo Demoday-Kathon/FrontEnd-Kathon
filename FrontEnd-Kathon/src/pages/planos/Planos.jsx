@@ -11,7 +11,7 @@ import Footer from "../../components/layout/footer/Footer"
 function Planos() {
 
     return (
-        <section>
+        <section className={Styles.paidoplano}>
             <Header/>
             <div className={Styles.fundoplano}>
                 <h1>Planos Empresariais</h1>
