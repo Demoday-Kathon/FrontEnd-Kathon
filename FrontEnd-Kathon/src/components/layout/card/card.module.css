@@ -1,110 +1,125 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: 140vh;
-    border: 3px solid;
-    margin: auto;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 140vh;
+  border: 3px solid;
+  margin: auto;
 }
 
-.banner{
-    width: 100%;
-    height:  25vh;
-    border-radius: 36px 36px 0px 0px;
-    background: url(../../../assets/imgs/banner.png);
-    margin-bottom: 0;
+.banner {
+  width: 100%;
+  height: 25vh;
+  border-radius: 36px 36px 0px 0px;
+  background: url(../../../assets/imgs/banner.png);
+  margin-bottom: 0;
+  background-size: cover;
 }
 
-
-.container{
-    width: 100%;
-    height: 200vh;
-    border-radius: 12px 12px 36px 36px;
-    border: 1px solid #FFF;
-    background: rgba(255, 255, 255, 0.20);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    backdrop-filter: blur(20px);
-    margin-top: 0;
-    padding-left: 50px;
-    padding-right: 50px;
-    }
-
-.title_hackathon{
-    color: rgba(240, 240, 240);
-    font-family: "DM Sans";
-    font-size: 26px;
-    font-style: normal;
-    padding-top: 50px;
+.container {
+  width: 100%;
+  height: 200vh;
+  border-radius: 12px 12px 36px 36px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
+  margin-top: 0;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.tags{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 30px;
+.title_hackathon {
+  color: rgba(240, 240, 240);
+  font-family: "DM Sans";
+  font-size: 26px;
+  font-style: normal;
+  padding-top: 50px;
 }
 
-.acounter{
-    color: rgba(240, 240, 240, 0.70);
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 30px;
 }
 
-.timeline{
-    width: 100%;
-    height: 12px;
-    border-radius: 36px;
-    border: 1px solid #000;
+.acounter {
+  color: rgba(240, 240, 240, 0.7);
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
 }
 
-.participants{
-    width: 82%;
-    display: flex;
-    flex-direction: row;
-    box-sizing: content-box;
-    margin-top: 100px;
-
+.timeline {
+  width: 100%;
+  height: 12px;
+  border-radius: 36px;
+  border: 1px solid #000;
 }
 
-.participants_hackathon{
-    width: 100%;
-    display: flex;
-    margin:0;
+.participants {
+  width: 82%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: content-box;
+  margin-top: 100px;
 }
 
-.acounter2{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    color: rgba(240, 240, 240, 0.70);
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
+.participants_hackathon {
+  width: 100%;
+  display: flex;
+  margin: 0;
 }
 
-.container2{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.acounter2 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: rgba(240, 240, 240, 0.7);
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
 }
 
-.button_hackathon{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-top: 80px;
+.container2 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button_hackathon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 80px;
+}
+
+.cardHackscustom .banner {
+  height: 10em;
+}
+
+.cardHackscustom .container {
+  height: 45em;
+}
+.cardHackscustom {
+  border: 0px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardHackscustom:hover {
+  transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
 }

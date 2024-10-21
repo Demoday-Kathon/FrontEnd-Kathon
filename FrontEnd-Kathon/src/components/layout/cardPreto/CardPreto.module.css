@@ -6,7 +6,7 @@
   backdrop-filter: blur(20px);
   width: 60%;
   margin-top: 50px;
-  height: 275vh;
+  height: auto;
 }
 
 .hack {
@@ -75,12 +75,13 @@
 }
 
 .patro {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: flex;
   flex-direction: row;
-  text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-left: 110px;
+  gap: 80px;
 }
 
 .faqs {

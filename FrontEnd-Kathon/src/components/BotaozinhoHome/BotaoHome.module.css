@@ -1,50 +1,50 @@
 .botaohome {
-    border: 2px #513375 solid;
-    border-radius: 0.8em;
-    display: flex;
-    justify-content: center;
-    padding: 0.5em;
-    align-items: center;
-    width: 50%;
-    margin: 0.5em;
-    font-size: 0.8em;
+  border: 2px #513375 solid;
+  border-radius: 0.8em;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  align-items: center;
+  width: 50%;
+  margin: 0.5em;
+  font-size: 0.8em;
 }
 
 .iconCardSecundario {
-    background-color: #000;
-    color: #9960dc;
-    border: 1px solid #fff;
-    width: 35%;
-    padding: 1em;
+  background-color: #000;
+  color: #9960dc;
+  border: 1px solid #fff;
+  width: 35%;
+  padding: 1em;
 }
 
 .iconCardPreto {
-    width: 40%;
-    color: #A367EB;
-    border-radius: 36px;
-    background: rgba(240, 240, 240, 0.10);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    backdrop-filter: blur(20px);
+  width: 40%;
+  color: #a367eb;
+  border-radius: 36px;
+  background: rgba(240, 240, 240, 0.1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
 }
 
 .buttonLoginConta {
-    cursor: pointer;
-    border-radius: 15px;
-    background: rgba(240, 240, 240, 0.10);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    backdrop-filter: blur(20px);
-    padding: 0.5em 0.5em 0.5em 1em;
-    width: 75%;
-    font-size: 2.5em;
-    margin-top: 1em;
-    color: #fff;
-    border: none;
-    transition: 0.3s;
+  cursor: pointer;
+  border-radius: 15px;
+  background: rgba(240, 240, 240, 0.1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
+  padding: 0.5em 0.5em 0.5em 1em;
+  width: 75%;
+  font-size: 2.5em;
+  margin-top: 1em;
+  color: #fff;
+  border: none;
+  transition: 0.3s;
 }
 
 .buttonLoginConta:hover {
-    font-size: 2.6em;
+  font-size: 2.6em;
 
-    background: rgba(71, 70, 70, 0.1);
-    width:80%;
+  background: rgba(71, 70, 70, 0.1);
+  width: 80%;
 }

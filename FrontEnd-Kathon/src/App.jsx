@@ -16,14 +16,11 @@ import Planos from "./pages/planos/Planos";
 import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
 import DashboardRecrutamento from "./pages/dashboardRecrutamento/DashboardRecrutamento";
 import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/DashboardAssistenteIA";
-import Login from  "./pages/login/Login";
-import CadastroEscolha from  "./pages/cadastroEscolha/CadastroEscolha";
-import CadastroEstudante from   "./pages/cadastroEstudante/CadastroEstudante";
+import Login from "./pages/login/Login";
+import CadastroEscolha from "./pages/cadastroEscolha/CadastroEscolha";
+import CadastroEstudante from "./pages/cadastroEstudante/CadastroEstudante";
 import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
 import HeaderFeed from "./components/HeaderFeed/HeaderFeed";
-
-
-
 
 import "./App.css";
 
@@ -46,18 +43,27 @@ function App() {
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
           <Route path="/HeaderFeed" element={<HeaderFeed />} />
-          <Route path="/Perfil_empresa_edit" element={<Perfil_empresa_edit />} />
+          <Route
+            path="/Perfil_empresa_edit"
+            element={<Perfil_empresa_edit />}
+          />
           <Route
             path="/HackathonVisaoGeral"
             element={<HackathonVisaoGeral />}
           />
           <Route path="/Planos" element={<Planos />} />
-          <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
-          <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
+          <Route
+            path="/dashboardrecrutamento"
+            element={<DashboardRecrutamento />}
+          />
+          <Route
+            path="/dashboardassistenteia"
+            element={<DashboardAssistenteIA />}
+          />
 
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
 
-          <Route path="/Login" element={<Login />}/>
+          <Route path="/Login" element={<Login />} />
 
           <Route path="CadastroEscolha" element={<CadastroEscolha />} />
 

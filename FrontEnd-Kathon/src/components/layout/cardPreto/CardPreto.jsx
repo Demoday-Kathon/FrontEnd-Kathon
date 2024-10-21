@@ -8,9 +8,41 @@ import Adidas from "../../../assets/imgs/adidas.png";
 import Ibm from "../../../assets/imgs/accenture.png";
 import Oracle from "../../../assets/imgs/IBM.png";
 import Accenture from "../../../assets/imgs/Oracle.png";
-import Perguntas from "./Perguntas";
+// import Perguntas from "./Perguntas";
+import faqStyles from "../cardPreto/FAQItem.module.css"; // Estilos CSS Module do FAQItem
+import FAQItem from "./FAQItem";
 
 function CardPreto({ title, context, mentors, sponsors }) {
+  const faqData = [
+    {
+      duvida: "Qual o tema da competição?",
+      resposta: `Criar uma plataforma de mercado eficiente, reduzindo custos logísticos e fortalecendo a economia regional, ao mesmo tempo em que assegura uma cadeia de suprimentos mais sustentável e personalizada.`,
+    },
+    {
+      duvida: "Como é o processo de inscrição?",
+      resposta: `O processo de inscrição envolve preencher um formulário com seus dados.`,
+    },
+    {
+      duvida: "Quando e onde é o evento?",
+      resposta: `pipipipipipip`,
+    },
+    {
+      duvida: "Preciso de conhecimento técnico para participar?",
+      resposta: `Não, não é necessário conhecimento técnico prévio, mas é recomendável!`,
+    },
+    {
+      duvida: "Qual o prêmio do Hackathon?",
+      resposta: `pipipipipipi`,
+    },
+    {
+      duvida: "Preciso de conhecimento técnico para participar?",
+      resposta: `Não, não é necessário conhecimento técnico prévio, mas é recomendável!`,
+    },
+    {
+      duvida: "Ganha algum certificado?",
+      resposta: `PIPIPIPIPIPI`,
+    },
+  ];
   return (
     <>
       <section className={Styles.card_container}>
@@ -56,23 +88,10 @@ function CardPreto({ title, context, mentors, sponsors }) {
           </div>
         </div>
 
-        <div className={Styles.Caixas2}>
-          <div className={Styles.caixarosa}>
-            <h4>Qual o tema da competição?</h4>
-            <p>
-              Criar uma plataforma de mercado eficiente, reduzindo custos
-              logísticos e fortalecendo a economia regional, ao mesmo tempo em
-              que assegura uma cadeia de suprimentos mais sustentável e
-              personalizada.
-            </p>
-          </div>
-          <Perguntas text="Como é o processo de inscrição?" />
-          <Perguntas text="Quando e onde é o evento?" />
-          <Perguntas text="Quem pode participar?" />
-          <Perguntas text="Quanto custa para se inscrever?" />
-          <Perguntas text="Qual o prêmio do Hackathon?" />
-          <Perguntas text="Preciso ter algum conhecimento técnico para participar?" />
-          <Perguntas text="Ganha algum certificado?" />
+        <div className={faqStyles.faqContainer}>
+          {faqData.map((faq, index) => (
+            <FAQItem key={index} duvida={faq.duvida} resposta={faq.resposta} />
+          ))}
         </div>
       </section>
     </>
@@ -80,3 +99,13 @@ function CardPreto({ title, context, mentors, sponsors }) {
 }
 
 export default CardPreto;
+
+{
+  /* <Perguntas text="Como é o processo de inscrição?" />
+<Perguntas text="Quando e onde é o evento?" />
+<Perguntas text="Quem pode participar?" />
+<Perguntas text="Quanto custa para se inscrever?" />
+<Perguntas text="Qual o prêmio do Hackathon?" />
+<Perguntas text="Preciso ter algum conhecimento técnico para participar?" />
+<Perguntas text="Ganha algum certificado?" /> */
+}

@@ -12,6 +12,9 @@ import Footer from '../../components/layout/footer/Footer';
 import LinkComponent from '../../components/layout/link/LinkComponent';
 
 
+import logoKathon from '../../assets/imgs/logoKathon.png';
+
+
 
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
