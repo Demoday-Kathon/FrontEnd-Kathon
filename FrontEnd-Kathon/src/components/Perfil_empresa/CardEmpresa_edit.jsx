@@ -6,6 +6,7 @@ import Recomendacao from '../Perfil_aluno/Card_Recomedacao'
 import cadeirante from '../../assets/imgs/Icone_cadeirante.png'
 import Emanuelle from '../../assets/imgs/Icone_emanuelle.png'
 import Bloco2_em from './Bloco2_em'
+import mais from '../../assets/imgs/Adicional.png'
 
 function CardEmpresa_edit(){
     return(
@@ -16,12 +17,20 @@ function CardEmpresa_edit(){
         </div>
         <div className={Styles.Recomendacao_bloco}>
             <div className={Styles.RecomendacaoEmpresa}>
-            <h1 className={Styles.RecomendacaoTi}>Veja o que estão falando</h1>
+            <h1 className={Styles.RecomendacaoTi}>Veja o que estão falando:</h1>
 
             </div>
             <div className={Styles.Recomendacao} >
-            <Recomendacao Perfil_foto={cadeirante} Nome="Lautaro Martinez" Sub_titulo=" “Accenture nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva” " />
-            <Recomendacao Perfil_foto={Emanuelle} Nome="Emanuelle Silva" Sub_titulo=" “A Accenture nos impressionou com a excelência das soluções desenvolvidas pelos jovens.” " />
+            <Recomendacao customClass="empresas_Edit" Perfil_foto={cadeirante} Nome="Lautaro Martinez" Sub_titulo=" Aqui aparecera os comentários dos participantes dos seus hackathons. "> 
+                <div >
+                <img className={Styles.BotonMais} src={mais} alt="" />
+                </div>
+            </Recomendacao>
+            <Recomendacao customClass="empresas_Edit" Perfil_foto={Emanuelle} Nome="Emanuelle Silva" Sub_titulo=" Aqui aparecera os comentários dos participantes dos seus hackathons. ">
+                <div customClass={Styles.Adional}>
+            <img className={Styles.BotonMais} src={mais} alt="" />
+                </div>
+            </Recomendacao>
             </div>
         </div>
     </section>
