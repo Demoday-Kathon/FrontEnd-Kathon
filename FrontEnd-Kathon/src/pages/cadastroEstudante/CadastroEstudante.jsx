@@ -1,12 +1,118 @@
-import styles from './CadastroEstudante.module.css'
+import styles from '../cadastroEmpresa/CadastroEmpresa.module.css'
+
+import Header from '../../components/layout/header/Header'
+import CardPretoBase from '../../components/CardPretoBase2/CardPretoBase'
+import Form from '../../components/Form/Form'
+import Label from '../../components/Form/FormComponents/Label'
+import Input from '../../components/Form/FormComponents/Input'
+import Select from '../../components/Form/FormComponents/Select'
+import SubmitButton from '../../components/Form/FormComponents/SubmitButton'
+import Footer from '../../components/layout/footer/Footer'
+
+
+import logoKathon from '../../assets/imgs/logoKathon.png';
 
 function CadastroEstudante() {
     return (
         <>
-            <h1>
-                Cadastro Estudante
-            </h1>
-        
+            <Header />
+            <CardPretoBase customClass="cardPretoForms">
+                <img className={styles.logoKathonLogin} src={logoKathon} alt="logoKathon" />
+                <h1 className={styles.tituloCadastro}> Cadastro Estudante </h1>
+
+                <Form customClass="formsLogin">
+                    <Label customClass="labelFormsCadastro" text="Nome Completo" />
+                    <Input text="" type="text" />
+                    <Label customClass="labelFormsCadastro" text="Documento - Histórico Escolar" />
+                    <Input text="" type="text" />
+                    <Label customClass="labelFormsCadastro" text="Digite seu email" />
+                    <Input text="" type="email" />
+                    <Label customClass="labelFormsCadastro" text="Confirme seu email" />
+                    <Input text="" type="email" />
+                    <Label customClass="labelFormsCadastro" text="CPF" />
+                    <Input text="" type="text" />
+
+
+                    <div className={styles.linhaInputs}>
+
+                        <div className={styles.inputMaior}>
+                            <Label customClass="labelFormsCadastro" text="Data de Nascimento" />
+                            <Input text="" type="text" customClass="inputMaior" />
+                        </div>
+
+                        <div className={styles.inputMaior}>
+                            <Label customClass="labelFormsCadastro" text="Celular" />
+                            <Input text="" type="text" customClass="inputMaior" />
+                        </div>
+                    </div>
+
+                    <div className={styles.linhaInputs}>
+                        <div className={styles.inputMenor}>
+                            <Label customClass="labelFormsCadastro" text="CEP" />
+                            <Input text="" type="text" customClass="inputMenor" />
+                        </div>
+
+                        <div className={styles.inputMaior}>
+                            <Label customClass="labelFormsCadastro" text="Rua" />
+                            <Input text="" type="text" customClass="inputMaior" />
+                        </div>
+                    </div>
+
+                    <div className={styles.linhaInputs}>
+
+                        <div className={styles.inputMenor2}>
+                            <Label customClass="labelFormsCadastro" text="Número" />
+                            <Input text="" type="text" customClass="inputMenor" />
+                        </div>
+
+                        <div className={styles.inputMaior}>
+                            <Label customClass="labelFormsCadastro" text="Cidade" />
+                            <Input text="" type="text" customClass="inputMaior" />
+                        </div>
+
+                        <div className={styles.inputMaior}>
+                            <Label customClass="labelFormsCadastro" text="Bairro" />
+                            <Input text="" type="text" customClass="inputMaior" />
+                        </div>
+
+                        <div className={styles.inputMaior}>
+                            <Label customClass="labelFormsCadastro" text="Estado" />
+                            <Input text="" type="text" customClass="inputMaior" />
+                        </div>
+
+                    </div>
+
+
+                    <Label customClass="labelFormsCadastro" text="Qual é sua área de interesse?" />
+                    <div className="form-group">
+                        <Input type="checkbox" id="html" />
+                        <Label customClass="labelFormsCadastro" text="HTML" />
+                    </div>
+                    <div className="form-group">
+                        <Input type="checkbox" id="html" />
+                        <Label for="html">HTML</Label>
+                    </div>
+                    <div className="form-group">
+                        <Input type="checkbox" id="html" />
+                        <Label for="html">HTML</Label>
+                    </div>
+
+
+
+                    <Label customClass="labelFormsCadastro" text="Senha" />
+                    <Input text="" type="password" />
+                    <Label customClass="labelFormsCadastro" text="Confirme sua Senha" />
+                    <Input text="" type="password" />
+
+
+                    <SubmitButton text="Cadastrar" />
+
+                </Form>
+
+
+            </CardPretoBase>
+            <Footer />
+
         </>
     )
 }
