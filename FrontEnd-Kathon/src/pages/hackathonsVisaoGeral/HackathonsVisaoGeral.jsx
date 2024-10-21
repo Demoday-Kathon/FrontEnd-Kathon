@@ -3,10 +3,13 @@ import CardPreto from "../../components/layout/cardPreto/CardPreto";
 import Bann from "../../components/Banner/Bann";
 import Styles from "../hackathonsVisaoGeral/HackathonVisaoGeral.module.css";
 import Card from "../../components/layout/card/card";
+import Header from "../../components/layout/header/Header";
+import Footer from "../../components/layout/footer/Footer";
 
 function HackathonVisaoGeral() {
   return (
     <>
+      <Header />
       <div className={Styles.containerprincipal}>
         <Bann />
         <CardInscricao />
@@ -24,9 +27,20 @@ function HackathonVisaoGeral() {
         <h3>Mais Hackathons:</h3>
       </div>
       <div className={Styles.cardHacks}>
-        <Card />
-        <Card />
+        <Card
+          title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
+          acounter="+150 participantes"
+          timeline="20 dias restantes"
+          customClass="cardHackscustom"
+        />
+        <Card
+          title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
+          acounter="+150 participantes"
+          timeline="20 dias restantes"
+          customClass="cardHackscustom"
+        />
       </div>
+      <Footer />
     </>
   );
 }

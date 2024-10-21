@@ -18,11 +18,11 @@
   font-style: normal;
   font-weight: 900;
   line-height: 68px; /* 94.444% */
-  margin-top: 200px;
+  margin-top: 120px;
 }
 
 .cardHacks {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
 }
