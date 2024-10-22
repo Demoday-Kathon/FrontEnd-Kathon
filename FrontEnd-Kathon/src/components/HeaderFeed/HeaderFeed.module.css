@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    width: 18%;
+    width: 100%;
     min-height: 80vh;
     flex-direction: column;
     justify-content: space-between;

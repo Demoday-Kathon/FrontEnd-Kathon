@@ -1,4 +1,4 @@
-import HeaderComunidade from '../../components/HeaderComunidade/HeaderComunidade'
+import HeaderComunidade from '../../components/HeaderFeed/HeaderFeed'
 import DescricaoComunidade from '../../components/DescricaoComunidade/DescricaoComunidade'
 import PhotoProfile from '../../assets/imgs/joana.png';
 import PhotoPost from '../../assets/imgs/rocketseat.png';
