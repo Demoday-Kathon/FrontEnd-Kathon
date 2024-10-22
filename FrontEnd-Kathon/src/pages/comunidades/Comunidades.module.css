@@ -159,10 +159,21 @@
 
 .containerFeed {
     width: 80%;
+    height: auto;
+
 }
 
 .feedprincipal {
     display: flex;
     flex-direction: row;
     width: 100%;
+    gap: 100px;
 }
+
+.headerlateral{
+    width: 30%;
+    height: 30vh;
+}
+
+
+
