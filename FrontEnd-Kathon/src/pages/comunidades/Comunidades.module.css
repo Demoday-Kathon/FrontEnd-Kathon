@@ -156,3 +156,13 @@
     height: 5vh;
     border-radius: 5px;
 }
+
+.containerFeed {
+    width: 80%;
+}
+
+.feedprincipal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
