@@ -1,4 +1,5 @@
 import styles from '../cadastroEmpresa/CadastroEmpresa.module.css'
+import styles1 from './CadastroEstudante.module.css'
 
 import Header from '../../components/layout/header/Header'
 import CardPretoBase from '../../components/CardPretoBase2/CardPretoBase'
@@ -7,10 +8,13 @@ import Label from '../../components/Form/FormComponents/Label'
 import Input from '../../components/Form/FormComponents/Input'
 import Select from '../../components/Form/FormComponents/Select'
 import SubmitButton from '../../components/Form/FormComponents/SubmitButton'
+import CardBrancoBase from  '../../components/CardBrancoBase/CardBrancoBase'
 import Footer from '../../components/layout/footer/Footer'
 
 
 import logoKathon from '../../assets/imgs/logoKathon.png';
+
+import { IoIosArrowDown } from "react-icons/io";
 
 function CadastroEstudante() {
     return (
@@ -84,18 +88,31 @@ function CadastroEstudante() {
 
 
                     <Label customClass="labelFormsCadastro" text="Qual é sua área de interesse?" />
-                    <div className="form-group">
-                        <Input type="checkbox" id="html" />
-                        <Label customClass="labelFormsCadastro" text="HTML" />
-                    </div>
-                    <div className="form-group">
-                        <Input type="checkbox" id="html" />
-                        <Label for="html">HTML</Label>
-                    </div>
-                    <div className="form-group">
-                        <Input type="checkbox" id="html" />
-                        <Label for="html">HTML</Label>
-                    </div>
+                    <CardBrancoBase customClass="cardBrancoEscolhaHabilidades">
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Selecione todas que desejar </p>
+                            <IoIosArrowDown />
+                        </div>
+                        <hr />
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Selecione todas que desejar </p>
+                            <IoIosArrowDown />
+                        </div>
+                        <hr />
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Selecione todas que desejar </p>
+                            <IoIosArrowDown />
+                        </div>
+                        <hr />
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Selecione todas que desejar </p>
+                            <IoIosArrowDown />
+                        </div>
+                        <hr />
+
+
+                    </CardBrancoBase>
+
 
 
 

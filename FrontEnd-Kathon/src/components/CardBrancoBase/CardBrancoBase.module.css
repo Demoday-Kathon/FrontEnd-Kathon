@@ -9,7 +9,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 17em;
+    height: auto;
     color: #fff;
     margin: 2em;
     font-size: 1.5em;
@@ -27,8 +27,17 @@
     cursor: pointer;
     transition: 0.5s;
     width: 25em;
+    height: 17em;
 }
 
 .cardBrancoEscolha:hover {
     transform: scale(1.1);
+}
+
+.cardBrancoEscolhaHabilidades {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
