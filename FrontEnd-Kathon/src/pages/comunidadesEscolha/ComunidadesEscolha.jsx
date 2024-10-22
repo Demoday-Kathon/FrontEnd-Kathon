@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import ImageUser from '../../components/layout/ImageUser/ImageUser';
 import UserImage from '../../assets/imgs/imageUser.png';
 import LogoKathon from '../../assets/imgs/LogoKathonCompleta.png';
@@ -19,17 +20,25 @@ function ComunidadesEscolha() {
 
             <section className={Styles.ComunidadesEscolha}>
                 <nav className={Styles.ContainerNav}>
+
+                    <Link to={"/"}>
+                    <a href="#">Home</a>
+                    </Link>
+                    <Link to={"/feed"}>
                     <a href="#">Feeds</a>
+                    </Link>
+
+                    <Link to={"/hackathons"}>
                     <a href="#">Hackathons</a>
-                    <a href="#">Comunidades</a>
+                    </Link>
                 </nav>
                 <section className={Styles.CardsEscolha}>
 
-                    <div className={Styles.Card}>
+                    <Link to={'/hackathons'} className={Styles.Card}>
                         <p>Todas</p>
                         <p>comunidades</p>
                         <img className={Styles.Icones} src={Person} alt="Icones" />
-                    </div>
+                    </Link>
 
                     <div className={Styles.Card}>
                         <p>Criar</p>

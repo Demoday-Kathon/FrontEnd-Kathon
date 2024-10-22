@@ -105,3 +105,16 @@
 .IconPlay{
     margin-top: 5vh;
 }
+
+.FeedNav {
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.FeedNav.hidden {
+    transform: translateX(-88%);
+}
+
+.FeedNav.visible {
+    transform: translateX(0);
+}
