@@ -45,36 +45,14 @@ function App() {
           <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
-<<<<<<< HEAD
           <Route path="/Perfil_empresa_edit" element={<Perfil_empresa_edit />} />
           <Route path="/HackathonVisaoGeral" element={<HackathonVisaoGeral />} />
           <Route path="/Planos" element={<Planos />} />
           <Route path="/dashboardhome" element={<DashBoardHome />} />
           <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
           <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
-=======
-          <Route path="/HeaderFeed" element={<HeaderFeed />} />
-          <Route
-            path="/Perfil_empresa_edit"
-            element={<Perfil_empresa_edit />}
-          />
-          <Route
-            path="/HackathonVisaoGeral"
-            element={<HackathonVisaoGeral />}
-          />
-          <Route path="/Planos" element={<Planos />} />
-          <Route
-            path="/dashboardrecrutamento"
-            element={<DashboardRecrutamento />}
-          />
-          <Route
-            path="/dashboardassistenteia"
-            element={<DashboardAssistenteIA />}
-          />
-
->>>>>>> d6a629662cbe75a7a15f8e1ed981df8e803ce9dd
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
-          <Route path="/HackathonsCalendario" element={<HackCalendario />} />
+          <Route path="/HackCalendario" element={<HackCalendario />} />
 
           <Route path="/Login" element={<Login />} />
 

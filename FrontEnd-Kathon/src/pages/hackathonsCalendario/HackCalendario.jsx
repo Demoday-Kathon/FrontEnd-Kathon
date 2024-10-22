@@ -1,8 +1,6 @@
 import Styles from '../../pages/hackathonsCalendario/HackCalendario.module.css'
 import IconTempo from '../../assets/imgs/backgrounds/iconTempo.png'
 import Header from '../../components/layout/header/Header'
-import Timeline from '../../assets/imgs/backgrounds/timeline.png'
-import CardBrancoBase from '../../components/CardBrancoBase/CardBrancoBase'
 import Footer from '../../components/layout/footer/Footer'
 import TimelineVertical from '../../components/Timeline/TimeLineVertical'
 
