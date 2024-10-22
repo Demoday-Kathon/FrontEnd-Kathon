@@ -6,17 +6,6 @@
     justify-content: center;
 }
 
-.containerCinza{
-    padding: 40px 20px;
-    background-color: #4d4d4d69;
-    width: 90%;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    border-radius: 20px;
-}
-
 .titulo{
     position: relative;
     bottom: 44%;
@@ -24,4 +13,43 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navBar{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ladoDireito{
+    width: 80%;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.empresa{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "DM Sans";
+}
+
+
+.topBarLeft{
+    width: 35%;
+    
+}
+
+.topBarRight{
+    width: 65%;
 }

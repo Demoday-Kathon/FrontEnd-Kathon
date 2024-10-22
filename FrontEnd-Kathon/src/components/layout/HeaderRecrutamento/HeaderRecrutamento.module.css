@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 .containerRecrutamento{
-    width: 22%;
+    width: 16rem;
     height: 80vh;
     background-position: center;
     background-size: cover;
-    position: relative;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
-    left: 3%;
+    border-radius: 25px;
     background-image: url(../../../assets/imgs/backgroundPlataform.png);
 }
 

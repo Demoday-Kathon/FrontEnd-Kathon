@@ -4,7 +4,6 @@ function CardBrancoBase({children, customClass}) {
     return (
         <div className={`${styles.cardBrancoBase} ${styles[customClass]}`}>
             {children}
-
         </div>
 
     )

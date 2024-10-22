@@ -15,7 +15,14 @@
     font-size: 1.5em;
     font-style: normal;
     font-weight: 700;
+}
 
+.cardBrancoDashBoard{
+    padding: 40px 20px;
+    background-color: #4d4d4d69;
+    width: 90%;
+    height: 90vh;
+    border-radius: 20px;
 }
 
 .cardBrancoEscolha {
