@@ -12,9 +12,11 @@ function Feed() {
   return (
     <>
       <div className={styles.feedprincipal}>
+        <div className={styles.headerlateral}>
             <HeaderFeed />
-            <div className={`${styles.containeFeedComunity}, ${styles.containerFeed}`}>
-                        <FeedComponent>
+        </div>
+            <div className={styles.ContaineFeedComunity}>
+                        <FeedComponent ContainerFeedR="Rick">
                             <Post
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}
