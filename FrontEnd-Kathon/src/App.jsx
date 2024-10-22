@@ -21,6 +21,7 @@ import CadastroEscolha from "./pages/cadastroEscolha/CadastroEscolha";
 import CadastroEstudante from "./pages/cadastroEstudante/CadastroEstudante";
 import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
 import HeaderFeed from "./components/HeaderFeed/HeaderFeed";
+import Feed from "./pages/feed/Feed";
 
 import "./App.css";
 
@@ -69,6 +70,7 @@ function App() {
 
           <Route path="CadastroEstudante" element={<CadastroEstudante />} />
           <Route path="CadastroEmpresa" element={<CadastroEmpresa />} />
+          <Route path="feed" element={<Feed />} />
         </Routes>
       </Router>
     </main>
