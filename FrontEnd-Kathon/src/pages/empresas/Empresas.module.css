@@ -1,73 +1,143 @@
-.fundoempresa{
-    width:100%;
-    height:2200px;
+.fundoempresa {
+    width: 100%;
+    height: auto;
+}
+
+.empresapai {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    margin-bottom: 200px;
 }
 
 
-.textempresa{
+
+.textempresa {
     text-align: center;
-    color:white;
-    font-size:34px;
+    margin-top: 80px;
+    color: white;
+    font-size: 34px;
 }
 
-.empresa1{
-    width: 70%;
+.empresa1 {
+    width: 100%;
     height: 600px;
     border-radius: 80px;
-    margin:auto;
-    margin-top:50px;
-    background-image: url("../../assets/imgs/pessoas_empresa.png");
-    background-size:cover ;
+    margin: auto;
+    margin-top: 80px;
+    background-image: url("../../assets/imgs/pessoas_empresas.png");
+    background-size: cover;
 }
 
-.boxtextpai{
+.empresa1 h1 {
+    color: #A367EB;
+    font-family: "DM Sans";
+    font-size: 3.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 100px;
+    padding-left: 200px;
+}
+
+.empresa1 p {
+    color: white;
+    font-family: "DM Sans";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    padding-top: 120px;
+    padding-left: 200px;
+}
+
+.boxtextpai {
     position: relative;
-    width:100%;
-    height:30%;
+    width: 100%;
+    height: 30%;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
 }
 
-.boxtext{
-    width:30%;
-    height:50%;
+.boxtext {
+    width: 55%;
+    height: 25em;
     background: rgba(20, 19, 1, 0.8);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    top:100px;
-    left:100px;
-    margin-top:110px;
-    border-radius: 20px;
+    margin: 1em;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    border-radius: 36px;
+    border: 2px solid #5AC8E4;
+    padding: 3.5em;
+    padding-top: 1em;
 }
 
-.boxtext h5{
+.boxtext h5 {
+    color: #A367EB;
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.boxtext p {
+    color: white;
+    font-size: 25px;
+}
+
+.boxfinal {
+    position: relative;
+    width: 98%;
+    height: 750px;
+    border-radius: 80px;
+    border: 2px solid #FFF;
+    margin: auto;
+    background: rgba(20, 19, 1, 0.8);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.boxfinal h4 {
+    position: relative;
+    color: white;
+    font-size: 68px;
+    margin-left: 80px;
+    top: 40px;
+}
+
+.boxfinalfilho {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filho1 {
+    width: 50%;
+}
+
+.filho2 {
+    width: 45%;
+    border: #A367EB;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+
+.filhoimg {
+    width: 370px;
+    height: 330px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.filhoimg:hover {
+    transform: scale(1.1);
+}
+
+span{
     color:#A367EB;
-    font-size:32px;
-    margin-left:60px;
-    margin-top:20px;
-    font-weight:bold;
-}
-
-.boxtext p{
-    color:white;
-    margin-left:60px;
-    font-size:18px;
-}
-
-.boxfinal{
-    position: relative;
-    width: 70%;
-    height: 600px;
-    border-radius:30px;
-    margin-top:-60px;
-    margin-left:230px;
-    background: rgba(20, 19, 1, 0.8);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-}
-
-.boxfinal h4{
-    position: relative;
-    color:white;
-    font-size:42px;
-    margin-left:50px;
-    top:20px;
 }

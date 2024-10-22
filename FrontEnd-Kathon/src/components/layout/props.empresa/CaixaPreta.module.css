@@ -3,7 +3,7 @@
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.28);
     margin-top:40px;
-    margin-left:50px;
+    margin-left:80px;
     font-weight:bold;
 }
 
@@ -16,13 +16,13 @@
 
 
 .boxpreto1{
-    width:500px;
+    width:600px;
 }
 
 .boxpreto2{
-    width:400px;
+    width:500px;
 }
 
 .boxpreto3{
-    width:300px;
+    width:400px;
 }

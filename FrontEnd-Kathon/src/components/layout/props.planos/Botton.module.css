@@ -8,22 +8,24 @@
 
 .botton p {
     font-size: 25px;
-    padding-top: 2px;
+    padding-top:5px;
 }
 
 
 .bottongreen {
     background-color:#13ECAB;
     color: black;
-    
+    font-weight:700;
 }
 
 .bottonpink {
     background-color:#C24361;
     color: white;
+    font-weight:700;
 }
 
 .bottonblue {
     background-color:#66C2FA;
     color: black;
+    font-weight:700;
 }
