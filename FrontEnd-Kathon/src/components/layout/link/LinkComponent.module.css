@@ -1,10 +1,16 @@
 .LinkComponent {
     text-decoration: none;
     color: #fff;
-    display: flex;
     align-items: center;
+    display: contents;
 }
 
 .LinkComponent p {
     margin-left: 0.8em;
+
+}
+
+
+.escolhaCadastro {
+    display: contents;
 }

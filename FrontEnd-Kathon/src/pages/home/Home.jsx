@@ -141,7 +141,6 @@ function Home() {
                 <div className={styles.planosEmpresariaisDiv}>
                     <img src={cardPlanosHome} alt="" />
                     <Button customClass='buttonPlanosEmpresarias' text="Conheça os planos" />
-
                 </div>
 
 

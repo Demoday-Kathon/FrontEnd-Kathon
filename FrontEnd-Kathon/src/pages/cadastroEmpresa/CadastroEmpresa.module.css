@@ -1,0 +1,31 @@
+.tituloCadastro {
+    color: #fff;
+    font-size: 5em;
+}
+
+.linhaInputs {
+    display: flex;
+    width: 75%;
+}
+
+.linhaInputs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5em;
+
+}
+
+.inputMenor {
+    width: 30%;
+}
+
+.inputMenor2 {
+    width: 25%;
+}
+
+.option {
+    background: rgba(240, 240, 240, 0.10);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #fff;
+}

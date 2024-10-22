@@ -18,10 +18,12 @@ import HackCalendario from "./pages/hackathonsCalendario/HackCalendario";
 import DashBoardHome from "./pages/dashBoardHome/DashBoardHome";
 import DashboardRecrutamento from "./pages/dashboardRecrutamento/DashboardRecrutamento";
 import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/DashboardAssistenteIA";
-import Login from  "./pages/login/Login";
-import CadastroEscolha from  "./pages/cadastroEscolha/CadastroEscolha";
-
-
+import Login from "./pages/login/Login";
+import CadastroEscolha from "./pages/cadastroEscolha/CadastroEscolha";
+import CadastroEstudante from "./pages/cadastroEstudante/CadastroEstudante";
+import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
+import HeaderFeed from "./components/HeaderFeed/HeaderFeed";
+import Feed from "./pages/feed/Feed";
 
 import "./App.css";
 
@@ -43,18 +45,44 @@ function App() {
           <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
+<<<<<<< HEAD
           <Route path="/Perfil_empresa_edit" element={<Perfil_empresa_edit />} />
           <Route path="/HackathonVisaoGeral" element={<HackathonVisaoGeral />} />
           <Route path="/Planos" element={<Planos />} />
           <Route path="/dashboardhome" element={<DashBoardHome />} />
           <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
           <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
+=======
+          <Route path="/HeaderFeed" element={<HeaderFeed />} />
+          <Route
+            path="/Perfil_empresa_edit"
+            element={<Perfil_empresa_edit />}
+          />
+          <Route
+            path="/HackathonVisaoGeral"
+            element={<HackathonVisaoGeral />}
+          />
+          <Route path="/Planos" element={<Planos />} />
+          <Route
+            path="/dashboardrecrutamento"
+            element={<DashboardRecrutamento />}
+          />
+          <Route
+            path="/dashboardassistenteia"
+            element={<DashboardAssistenteIA />}
+          />
+
+>>>>>>> d6a629662cbe75a7a15f8e1ed981df8e803ce9dd
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
           <Route path="/HackathonsCalendario" element={<HackCalendario />} />
 
-          <Route path="/Login" element={<Login />}/>
+          <Route path="/Login" element={<Login />} />
 
           <Route path="CadastroEscolha" element={<CadastroEscolha />} />
+
+          <Route path="CadastroEstudante" element={<CadastroEstudante />} />
+          <Route path="CadastroEmpresa" element={<CadastroEmpresa />} />
+          <Route path="feed" element={<Feed />} />
         </Routes>
       </Router>
     </main>

@@ -9,7 +9,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 15em;
+    height: auto;
     color: #fff;
     margin: 2em;
     font-size: 1.5em;
@@ -17,12 +17,16 @@
     font-weight: 700;
 }
 
+<<<<<<< HEAD
 .cardBrancoDashBoard{
     padding: 40px 20px;
     background-color: #4d4d4d69;
     width: 90%;
     height: 90vh;
     border-radius: 20px;
+=======
+
+>>>>>>> d6a629662cbe75a7a15f8e1ed981df8e803ce9dd
 }
 
 .cardBrancoEscolha {
@@ -32,8 +36,18 @@
     align-items: center;
     cursor: pointer;
     transition: 0.5s;
+    width: 25em;
+    height: 17em;
 }
 
 .cardBrancoEscolha:hover {
     transform: scale(1.1);
+}
+
+.cardBrancoEscolhaHabilidades {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }

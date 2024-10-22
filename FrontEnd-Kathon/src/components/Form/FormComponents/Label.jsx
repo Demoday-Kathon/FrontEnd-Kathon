@@ -1,11 +1,11 @@
 import styles from './Label.module.css'
 
-function Label() {
+function Label({text, customClass}) {
     return (
-        <>
-            <h5> Testando Label</h5>
-        
-        </>
+        <label className={`${styles[customClass]}`}>
+            {text}
+
+        </label>
         
     )
 }

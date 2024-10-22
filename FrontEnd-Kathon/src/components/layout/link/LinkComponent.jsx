@@ -1,13 +1,13 @@
 import styles from './LinkComponent.module.css';
 import { Link } from 'react-router-dom';
 
-function LinkComponent({ linkTo, text, children}) {
+function LinkComponent({ linkTo, text, children, customClass}) {
     return (
         <>
         
         <Link className={styles.LinkComponent} to={linkTo}>
         {children}
-        <p>{text}</p> 
+        <p className={`${styles[customClass]}`}>{text}</p> 
         </Link>
         
         </>

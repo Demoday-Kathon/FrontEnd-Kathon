@@ -46,3 +46,14 @@
     width: 100%;
     margin-left: 350px;
 }
+
+.BotonMais{
+    width: 60px;
+    height: 60px;
+    margin-left: 55vh;
+}
+
+.Adiconal{
+    width: 100%;
+    display: flex;
+}

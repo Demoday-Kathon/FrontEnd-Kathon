@@ -11,7 +11,7 @@ import Footer from "../../components/layout/footer/Footer"
 function Planos() {
 
     return (
-        <section>
+        <section className={Styles.paidoplano}>
             <Header/>
             <div className={Styles.fundoplano}>
                 <h1>Planos Empresariais</h1>
@@ -21,7 +21,7 @@ function Planos() {
                         <CardBeneficios text="Planejamento Hackthon" customClass="bordergreen"></CardBeneficios>
                         <CardBeneficios text="Relatórios simplificados de feedback" customClass="bordergreen"></CardBeneficios>
                         <h4 className={Styles.preco1}>Free</h4>
-                        <Botton text="Contrado" customBotton="bottongreen"></Botton>
+                        <Botton text="Contratado" customBotton="bottongreen"></Botton>
                     </CardsPlanos>
                     <CardsPlanos title="Rubi" img={Rubi} alt="Rubi" customtitle= "titlepink">
                         <CardBeneficios text="Acesso a comunidade" customClass="borderpink"></CardBeneficios>

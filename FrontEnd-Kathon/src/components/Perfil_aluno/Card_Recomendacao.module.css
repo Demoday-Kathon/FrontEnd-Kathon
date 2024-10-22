@@ -29,7 +29,7 @@
 .Sub_titulo{
     color: rgba(240, 240, 240, 0.80);
     font-family: "DM Sans";
-    font-size: 18px;
+    font-size: 20px;
     line-height: normal;
     margin-left: 25px;
 }
@@ -38,4 +38,8 @@
     height: auto;
     display: flex;
     flex-direction: column;
+}
+
+.empresas_Edit{
+    height: auto;
 }

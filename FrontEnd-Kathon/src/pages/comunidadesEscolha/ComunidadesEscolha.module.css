@@ -70,6 +70,8 @@
     font-size: 1.4rem;
     cursor: pointer;
     border: 1px solid #66C2FA;
+    text-decoration: none;
+    color: #fff;
 }
 
 .Card:hover{

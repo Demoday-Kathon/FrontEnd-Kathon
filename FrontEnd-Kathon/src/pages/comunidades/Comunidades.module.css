@@ -1,7 +1,7 @@
 .containerComunidadeVisao{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
     min-height: 100vh;
@@ -156,3 +156,24 @@
     height: 5vh;
     border-radius: 5px;
 }
+
+.containerFeed {
+    width: 80%;
+    height: auto;
+
+}
+
+.feedprincipal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 100px;
+}
+
+.headerlateral{
+    width: 30%;
+    height: 30vh;
+}
+
+
+

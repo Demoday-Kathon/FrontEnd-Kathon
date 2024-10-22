@@ -1,0 +1,14 @@
+.divtextBrancoEscolhaHabilidades {
+    padding: 1.5em 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #Fff;
+    
+}
+
+.textEscolhaHabilidades {
+    opacity: 0.60;
+    font-weight: normal;
+}
