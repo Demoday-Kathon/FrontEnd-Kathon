@@ -7,12 +7,13 @@ import cadeirante from '../../assets/imgs/Icone_cadeirante.png'
 import Emanuelle from '../../assets/imgs/Icone_emanuelle.png'
 import Bloco2_em from './Bloco2_em'
 import mais from '../../assets/imgs/Adicional.png'
+import LinkComponent from '../layout/link/LinkComponent'
 
-function CardEmpresa_edit(){
+function CardEmpresa_edit(){ 
     return(
         <section className={Styles.Card_fundo}>
         <div className={Styles.PerfilDados}>
-            <Bloco1Empresas Foto_perfil={accenture} NomePerfil="Accenture" UserPerfil="@Accenture"/>
+            <Bloco1Empresas Foto_perfil={accenture} NomePerfil="Accenture" UserPerfil="@Accenture"  Salvar="Salvar Alterações"/>
             <Bloco2_em TextoDesc="Escreva aqui uma breve descrição sobre a empresa e suas áreas de atuação..." Titulo_sobre="Sobre:" Titulo_sobre2="Hackatons Abertos:" Titulo_Participacao="Próximos Hackatons:" />
         </div>
         <div className={Styles.Recomendacao_bloco}>

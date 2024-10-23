@@ -32,7 +32,6 @@ function App() {
     <main>
       <Router>
         <Routes>
-          <Route path="Feed" element={<Feed />} />
           <Route path="/" element={<Home />} />
           <Route path="/hackathons" element={<Hackathons />} />
           <Route path="/empresas" element={<Empresas />} />

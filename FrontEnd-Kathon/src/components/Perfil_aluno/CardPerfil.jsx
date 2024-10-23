@@ -10,7 +10,7 @@ function CardPerfil() {
     return (
         <section className={Styles.Card_Fundo}>
             <div className={Styles.PerfilDados}>
-                <Bloco1 Foto_perfil={Joana} NomePerfil="Joana Pereira" UserPerfil="@JoJopereira" />
+                <Bloco1 Foto_perfil={Joana} NomePerfil="Joana Pereira" UserPerfil="@JoJopereira" Salvar="Editar Perfil"/>
                 <Bloco2 TextoDesc="Sou Joana, autodidata de 17 anos, com grande interesse por tecnologia. Passo horas explorando programação e design, sempre buscando novos desafios. Meu sonho é utilizar essas  habilidades para criar projetos que possam impactar o mundo ao meu redor." Titulo_sobre="Sobre:" Titulo_sobre2="Principais Habilidades:" Titulo_Participacao="Participacões:" />
             </div>
             <div className={Styles.Recomendacao_bloco}>

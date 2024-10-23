@@ -11,7 +11,7 @@ function CardEmpresa(){
     return(
         <section className={Styles.Card_fundo}>
             <div className={Styles.PerfilDados}>
-                <Bloco1Empresas Foto_perfil={accenture} NomePerfil="Accenture" UserPerfil="@Accenture"/>
+                <Bloco1Empresas Foto_perfil={accenture} NomePerfil="Accenture" UserPerfil="@Accenture" Salvar="Editar Perfil"/>
                 <Bloco2Empresas TextoDesc="A Accenture é uma multinacional de consultoria em gestão, tecnologia da informação e outsourcing. É a maior empresa de consultoria do mundo e uma competidora global no setor de tecnologia." Titulo_sobre="Sobre:" Titulo_sobre2="Hackathons Abertos:" Titulo_Participacao="Próximos Hackathons:" />
             </div>
             <div className={Styles.Recomendacao_bloco}>
