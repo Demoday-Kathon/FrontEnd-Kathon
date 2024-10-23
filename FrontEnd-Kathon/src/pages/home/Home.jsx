@@ -53,7 +53,6 @@ function Home() {
           soluções que <span>inovam</span>{" "}
         </h1>
         <div className={styles.botoesHome}>
-          
           <Button customClass="buttonBaixo" text="Cadastre-se" />
 
           <Button customClass="buttonBaixo2" text="Seja parceiro" />
@@ -162,17 +161,21 @@ function Home() {
           <Card
             banner={banner}
             company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
+            title_hackathon="Hackathon Desvendando: Uma Explanação em Tópicos"
             acounter="+150 participantes"
             timeline="20 dias restantes"
-          />
+          >
+            <Button text="Saiba Mais" customClass="buttonAzul" />
+          </Card>
           <Card
             banner={banner}
             company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
+            title_hackathon="Hackathon Desvendando: Uma Explanação em Tópicos"
             acounter="+150 participantes"
             timeline="20 dias restantes"
-          />
+          >
+            <Button text="Saiba Mais" customClass="buttonAzul" />
+          </Card>
         </div>
 
         <h1 className={styles.homeTitulo2}> QUEM JÁ PARTICIPOU, QUER MAIS</h1>
@@ -180,7 +183,7 @@ function Home() {
           <Card_Recomendacao
             customClass="cardRecomendacaoHome"
             Perfil_foto={leticia}
-            Nome="Accenture "
+            Nome="Leticia Silva"
             Sub_titulo="“KATHON nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva que já estamos planejando o próximo hackathon.”"
           >
             <Button customClass="buttonBaixo3" text="Seja parceiro" />
@@ -190,7 +193,7 @@ function Home() {
             customClass="cardRecomendacaoHome"
             Perfil_foto={Abel}
             Nome="João Carlos Pereira"
-            Sub_titulo="O KATHON foi uma oportunidade única de colocar em prática tudo o que aprendi e ainda conhecer profissionais incríveis. Recomendo a todos "
+            Sub_titulo="“O KATHON foi uma oportunidade única de colocar em prática tudo o que aprendi e ainda conhecer profissionais incríveis. Recomendo a todos que participem”"
           >
             <Button customClass="buttonBaixo3" text="Iniciar" />
           </Card_Recomendacao>

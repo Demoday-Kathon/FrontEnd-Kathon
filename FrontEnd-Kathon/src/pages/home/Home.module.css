@@ -205,13 +205,14 @@
 
 video {
   min-width: 100%;
-  min-height: 100%;
+  min-height: 200%;
   width: 100%;
   height: auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 .empresinhas {
@@ -224,6 +225,7 @@ video {
 
 .empresinhas:hover {
   transform: rotateY(360deg);
+  transition: 1s;
 }
 
 .caixaplanos {
@@ -284,7 +286,7 @@ video {
 
 .caixinhaplanos2:hover {
   border-radius: 36px;
-  border: 8px solid #9e0033;
+  border: 8px solid #aa2c54;
   background: rgba(240, 240, 240, 0.2);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   backdrop-filter: blur(20px);
