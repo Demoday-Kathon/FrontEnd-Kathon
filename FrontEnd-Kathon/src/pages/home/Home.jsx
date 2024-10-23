@@ -27,6 +27,7 @@ import VideoBack from "../../assets/imgs/video_back.mp4";
 import esmeralda from "../../assets/imgs/Esmeralda.svg";
 import rubi from "../../assets/imgs/rubi.svg";
 import diamante from "../../assets/imgs/diamante.svg";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -52,7 +53,9 @@ function Home() {
           soluções que <span>inovam</span>{" "}
         </h1>
         <div className={styles.botoesHome}>
+          
           <Button customClass="buttonBaixo" text="Cadastre-se" />
+
           <Button customClass="buttonBaixo2" text="Seja parceiro" />
         </div>
 
@@ -162,14 +165,19 @@ function Home() {
             title_hackathon="Hackathon Desvendando: Uma Explanação em Tópicos"
             acounter="+150 participantes"
             timeline="20 dias restantes"
-          />
+          >
+
+            <Button text="Saiba Mais" customClass="buttonAzul" />
+          </Card>
           <Card
             banner={banner}
             company_hackathon={accenture}
             title_hackathon="Hackathon Desvendando: Uma Explanação em Tópicos"
             acounter="+150 participantes"
             timeline="20 dias restantes"
-          />
+          >
+            <Button text="Saiba Mais" customClass="buttonAzul" />
+          </Card>
         </div>
 
         <h1 className={styles.homeTitulo2}> QUEM JÁ PARTICIPOU, QUER MAIS</h1>

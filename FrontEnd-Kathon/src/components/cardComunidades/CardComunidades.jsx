@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import EntrarComunidade from '../../assets/imgs/EntrarComunidade.png';
 import Styles from './CardComunidades.module.css';
 
@@ -12,7 +13,9 @@ function CardComunidades(props) {
                         <p className={Styles.Description}>{props.descricaoComunidade}</p>
                     </div>
 
-                    <button><img className={Styles.imagemEntrarComunidade} src={EntrarComunidade} alt="Botão Entrar"/></button>
+                    <Link to={"/comunidades"}>
+                        <button><img className={Styles.imagemEntrarComunidade} src={EntrarComunidade} alt="Botão Entrar"/></button>
+                    </Link>
                 </div>
             </div>
     )

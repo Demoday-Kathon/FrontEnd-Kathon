@@ -260,10 +260,11 @@ video {
 .caixinhaplanos1:hover {
   border-radius: 36px;
   border: 8px solid #6be62e;
-  background: rgba(240, 240, 240, 0.1);
+  background: rgba(240, 240, 240, 0.2);
   box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.2) inset;
   backdrop-filter: blur(40px);
   cursor: pointer;
+  transition-duration: 1s;
 }
 
 .caixinhaplanos2 {
@@ -284,10 +285,11 @@ video {
 .caixinhaplanos2:hover {
   border-radius: 36px;
   border: 8px solid #9e0033;
-  background: rgba(240, 240, 240, 0.1);
+  background: rgba(240, 240, 240, 0.2);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   backdrop-filter: blur(20px);
   cursor: pointer;
+  transition-duration: 1s;
 }
 .caixinhaplanos3 {
   width: 30%;
@@ -307,10 +309,11 @@ video {
 .caixinhaplanos3:hover {
   border-radius: 36px;
   border: 8px solid #0064e0;
-  background: rgba(240, 240, 240, 0.1);
+  background: rgba(240, 240, 240, 0.2);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   backdrop-filter: blur(20px);
   cursor: pointer;
+  transition-duration: 1s;
 }
 
 .caixinhaplanos3:hover .pedrinhas {

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import ImageUser from '../../components/layout/ImageUser/ImageUser';
 import UserImage from '../../assets/imgs/imageUser.png';
 import backgroundGDG from '../../assets/imgs/backgroundGDG.png';
@@ -19,9 +20,9 @@ function ComunidadesVisaoGeral() {
 
             <section className={Styles.ContainerCardsComunidades}>
                 <nav className={Styles.ContainerNav}>
-                    <a href="#">Todas</a>
-                    <a href="#">Fixadas</a>
-                    <a href="#">Criadas</a>
+                    <a href="#"><Link to={"/"}>Home</Link></a>
+                    <a href="#"><Link to={"/feed"}>Criadas</Link></a>
+                    <a href="#"><Link to={"/hackathons"}>Criar</Link></a>
                 </nav>
 
             <div className={Styles.Cards}>

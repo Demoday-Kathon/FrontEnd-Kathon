@@ -22,18 +22,24 @@
 .ContainerNav{
     background-color: #141301;
     border: 1px solid #7400B7;
-    border-radius: 25px;
+    border-radius: 2px;
     padding: 12px 25px;
     display: flex;
-    width: 25%;
+    width: 45%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
     a{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         text-decoration: none;
         color: #fff;
+    }
+
+    a:hover{
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: #7400B7;
     }
 }
 

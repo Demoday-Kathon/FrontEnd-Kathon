@@ -31,7 +31,7 @@ function Footer() {
                         <li> <LinkComponent linkTo="/" text="Home" /> </li>
                         <li> <LinkComponent linkTo="/hackathons" text="Hackathon" /> </li>
                         <li> <LinkComponent linkTo="/empresas" text="Empresas" /> </li>
-                        <li> <LinkComponent linkTo="/comunidades" text="Comunidades" /> </li>
+                        <li> <LinkComponent linkTo="/comunidadesVisaoGeral" text="Comunidades" /> </li>
                         <li> <LinkComponent linkTo="/sobre" text="Sobre a Kathon" /> </li>
                     </ListLink>
 
