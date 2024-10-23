@@ -47,6 +47,7 @@
     height: 75%;
     display: flex;
     justify-content: center;
+    margin-left: 25px;
 }
 
 .TextoDesc {

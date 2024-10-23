@@ -42,6 +42,9 @@ function App() {
             element={<ComunidadesVisaoGeral />}
           />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/CadastroEscolha" element={<CadastroEscolha />} />
+          <Route path="/CadastroEstudante" element={<CadastroEstudante />} />
           <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
