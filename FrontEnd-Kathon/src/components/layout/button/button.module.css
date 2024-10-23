@@ -45,6 +45,7 @@
   width: 100%;
   padding: 0.2em;
   padding-right: 0.7em;
+  padding-left: 0.7em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,7 +145,7 @@
   margin-bottom: 1em;
 }
 
-.buttonAzul:hover {
+.buttonAzul1:hover {
   width: 55%;
   font-size: 1.6em;
   background: #f0f0f0;

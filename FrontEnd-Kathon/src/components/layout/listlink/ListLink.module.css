@@ -25,6 +25,7 @@
   align-items: center;
 }
 
+
 .listLinkRow li {
   margin: 0em 0.5em;
 }
@@ -40,13 +41,6 @@
   height: 1.5em;
 }
 
-.listLinkCollum2 {
-  list-style-type: none;
-  height: 50%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
 
 ul li {
   font-size: 1em;
@@ -57,7 +51,13 @@ ul li {
   list-style-type: none;
   justify-content: space-between;
   flex-direction: column;
-  align-items: start;
+}
+.listLinkCollum2 {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 50%;
 }
 
 ul li Link {
