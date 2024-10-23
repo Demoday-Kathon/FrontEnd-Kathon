@@ -24,6 +24,10 @@
   cursor: pointer;
 }
 
+.button p {
+  margin-right:0.5em;
+}
+
 .button:hover {
   background: #f0f0f0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -36,9 +40,6 @@
   border-radius: 24px;
 }
 
-.button:hover .iconSeta {
-  color: #7400b7;
-}
 
 .buttonHeader {
   width: 100%;
@@ -53,28 +54,31 @@
   background-color: #7400b7;
   color: #fff;
 }
-
-.buttonHeader p {
-  margin-right:0.5em;
+.buttonHeader:hover .iconSeta {
+  color: #000000;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 50px;
 }
 
 .buttonBaixo {
   width: 40%;
-  margin: 0.5em 1em 2em 1em;
   border-radius: 1.5em;
   font-size: 0.8em;
   height: 2em;
-  padding: 1em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+
 }
 
 .buttonBaixo2 {
   width: 40%;
-  margin: 0.5em 1em 2em 1em;
   border-radius: 1.5em;
   font-size: 0.8em;
   height: 2em;
-  padding: 1em;
   background-color: #a367eb;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
 }
 
 .buttonBaixo2:hover {
@@ -133,9 +137,6 @@
   background: #f0f0f0;
 }
 
-.button:hover .iconSeta {
-  color: #66c2fa;
-}
 .buttonBaixo3 {
   width: 40%;
   font-size: 0.5em;
