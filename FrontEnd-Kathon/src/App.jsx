@@ -30,7 +30,7 @@ import "./App.css";
 function App() {
   return (
     <main>
-      <Router>
+      <Router basename="/FrontEnd-Kathon/FrontEnd-Kathon">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hackathons" element={<Hackathons />} />
