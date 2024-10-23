@@ -17,25 +17,20 @@
   font-weight: 700;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> e5b74cd859a8ce78cd46a41c9adaa85bc4f79209
 .cardBrancoDashBoard{
     padding: 40px 20px;
     background-color: #4d4d4d69;
     width: 90%;
     height: 90vh;
     border-radius: 20px;
-=======
+}
+
 .cardBrancoDashBoard {
   padding: 40px 20px;
   background-color: #4d4d4d69;
   width: 90%;
   height: 90vh;
   border-radius: 20px;
->>>>>>> 4269cc8a934672580d4bf6a354b13dea17160d2b
 }
 
 .cardBrancoEscolha {
