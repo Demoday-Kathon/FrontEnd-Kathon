@@ -1,14 +1,34 @@
-.divtextBrancoEscolhaHabilidades {
-    padding: 1.5em 2em;
+
+.textEscolhaHabilidadesSelect {
+    opacity: 0.60;
+    font-weight: normal;
+}
+.divtextBrancoEscolhaHabilidadesSelect {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    border: 1px solid #Fff;
-    
+    align-items: center;
+    padding: 0.8em 1em 0.3em 1em;    
+}
+.divtextBrancoEscolhaHabilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0.3em 1em 0.3em 1em;    
+    cursor: pointer;
+    transition: 1s;
+    border-top: 2px #fff solid;
+}
+.textEscolhaHabilidades {
+    transition: 1s;
 }
 
-.textEscolhaHabilidades {
-    opacity: 0.60;
-    font-weight: normal;
+.divtextBrancoEscolhaHabilidades:hover .textEscolhaHabilidades {
+    transform: scale(1.1);
+    color: #817c7c;
 }
+
+

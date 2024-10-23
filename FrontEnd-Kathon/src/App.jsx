@@ -60,7 +60,6 @@ function App() {
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
           <Route path="/Planos" element={<Planos />} />
           <Route path="/dashboardhome" element={<DashBoardHome />} />
-<<<<<<< HEAD
           <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
           <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
 
@@ -75,17 +74,6 @@ function App() {
           <Route path="CadastroEmpresa" element={<CadastroEmpresa />} />
           <Route path="feed" element={<Feed />} />
 
-=======
-          <Route
-            path="/dashboardrecrutamento"
-            element={<DashboardRecrutamento />}
-          />
-          <Route
-            path="/dashboardassistenteia"
-            element={<DashboardAssistenteIA />}
-          />
-          <Route path="/cadastroEmpresa" element={<CadastroEmpresa />} />
->>>>>>> 4269cc8a934672580d4bf6a354b13dea17160d2b
         </Routes>
       </Router>
     </main>

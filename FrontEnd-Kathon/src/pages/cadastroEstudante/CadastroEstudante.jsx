@@ -89,27 +89,54 @@ function CadastroEstudante() {
 
                     <Label customClass="labelFormsCadastro" text="Qual é sua área de interesse?" />
                     <CardBrancoBase customClass="cardBrancoEscolhaHabilidades">
-                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
-                            <p className={styles1.textEscolhaHabilidades}> Selecione todas que desejar </p>
+                        <div  className={styles1.divtextBrancoEscolhaHabilidadesSelect}>
+                            <p className={styles1.textEscolhaHabilidadesSelect}> Selecione todas que desejar </p>
                             <IoIosArrowDown />
                         </div>
-                        <hr />
                         <div  className={styles1.divtextBrancoEscolhaHabilidades}>
-                            <p className={styles1.textEscolhaHabilidades}> Selecione todas que desejar </p>
-                            <IoIosArrowDown />
-                        </div>
-                        <hr />
-                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
-                            <p className={styles1.textEscolhaHabilidades}> Selecione todas que desejar </p>
-                            <IoIosArrowDown />
-                        </div>
-                        <hr />
-                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
-                            <p className={styles1.textEscolhaHabilidades}> Selecione todas que desejar </p>
-                            <IoIosArrowDown />
-                        </div>
-                        <hr />
+                            <p className={styles1.textEscolhaHabilidades}> Tecnologia </p>
 
+                        </div>
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Inteligência Artificial </p>
+
+                        </div>
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Diversidade e inclusão </p>
+
+                        </div>
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Sustentabilidade </p>
+                        </div>
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Diversidade e inclusão </p>
+                        </div>
+
+                    </CardBrancoBase>
+
+                    <Label customClass="labelFormsCadastro" text="Quais são seus conhecimentos??" />
+                    <CardBrancoBase customClass="cardBrancoEscolhaHabilidades">
+                        <div  className={styles1.divtextBrancoEscolhaHabilidadesSelect}>
+                            <p className={styles1.textEscolhaHabilidadesSelect}> Selecione todas que desejar </p>
+                        </div>
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Tecnologia </p>
+
+                        </div>
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Inteligência Artificial </p>
+
+                        </div>
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Diversidade e inclusão </p>
+
+                        </div>
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Sustentabilidade </p>
+                        </div>
+                        <div  className={styles1.divtextBrancoEscolhaHabilidades}>
+                            <p className={styles1.textEscolhaHabilidades}> Diversidade e inclusão </p>
+                        </div>
 
                     </CardBrancoBase>
 

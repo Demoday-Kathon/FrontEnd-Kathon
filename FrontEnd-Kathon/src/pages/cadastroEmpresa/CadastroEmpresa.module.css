@@ -6,6 +6,7 @@
 .linhaInputs {
     display: flex;
     width: 75%;
+    margin: auto;
 }
 
 .linhaInputs div {
@@ -14,6 +15,10 @@
     justify-content: center;
     margin: 0.5em;
 
+}
+
+.inputMaior {
+    width: 100%;
 }
 
 .inputMenor {

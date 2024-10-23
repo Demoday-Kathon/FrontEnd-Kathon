@@ -44,7 +44,7 @@ function Login() {
 
                     <BotaoHome customClass="buttonLoginConta" icon={<FcGoogle style={{ marginRight: '0.5em' }} />} alt="icone de alarme" text="Entrar com Google" />
                     <BotaoHome customClass="buttonLoginConta" icon={<FaFacebook style={{ color: '#1877F2', marginRight: '0.5em', backgroundColor:'#FFF', borderRadius:'2em' }} />} alt="icone de sifrão" text="Entrar com Facebook" />
-                    <h5 className={styles.possuiConta}> Não possui conta? <LinkComponent customClass="" linkTo="/CadastroEscolha" text={<span>Cadastre-se</span>} /> </h5>
+                    <h5 className={styles.possuiConta}> Não possui conta?<LinkComponent customClass="" linkTo="/CadastroEscolha" text={<span>Cadastre-se</span>} /> </h5>
                 </Form>
 
 

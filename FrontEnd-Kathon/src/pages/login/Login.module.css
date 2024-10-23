@@ -51,10 +51,10 @@
     font-size: 1.7em;
     transition: 0.5s;
     margin-top: 0.8em;
-    width: 100%;
-
+    width: 39%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .possuiConta span {
