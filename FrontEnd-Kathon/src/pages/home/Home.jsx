@@ -27,6 +27,7 @@ import VideoBack from "../../assets/imgs/video_back.mp4";
 import esmeralda from "../../assets/imgs/Esmeralda.svg";
 import rubi from "../../assets/imgs/rubi.svg";
 import diamante from "../../assets/imgs/diamante.svg";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -52,7 +53,9 @@ function Home() {
           soluções que <span>inovam</span>{" "}
         </h1>
         <div className={styles.botoesHome}>
+          
           <Button customClass="buttonBaixo" text="Cadastre-se" />
+
           <Button customClass="buttonBaixo2" text="Seja parceiro" />
         </div>
 

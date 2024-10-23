@@ -25,7 +25,7 @@ function ComunidadesEscolha() {
                     <a href="#">Home</a>
                     </Link>
                     <Link to={"/feed"}>
-                    <a href="#">Feeds</a>
+                    <a href="#">Feed</a>
                     </Link>
 
                     <Link to={"/hackathons"}>
@@ -34,7 +34,7 @@ function ComunidadesEscolha() {
                 </nav>
                 <section className={Styles.CardsEscolha}>
 
-                    <Link to={'/hackathons'} className={Styles.Card}>
+                    <Link to={'/comunidadesVisaoGeral'} className={Styles.Card}>
                         <p>Todas</p>
                         <p>comunidades</p>
                         <img className={Styles.Icones} src={Person} alt="Icones" />

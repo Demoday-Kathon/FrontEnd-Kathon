@@ -68,3 +68,7 @@
     text-decoration: underline;
     color: rgba(255, 255, 255, 0.8);
 }
+
+.LinkEntry{
+    text-decoration: none;
+}
