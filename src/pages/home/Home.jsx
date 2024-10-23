@@ -118,7 +118,9 @@ function Home() {
         </div>
 
         <div className={styles.areaBotao}>
-          <Button customClass="buttonRoxo" text="Descobrir Hackathons" />
+          <Link to={"/hackathons"} className={styles.BotaoDescobrirHackathons}>
+            <Button customClass="buttonRoxo" text="Descobrir Hackathons" />
+          </Link>
         </div>
 
         <h1 className={styles.homeTitulo2}>

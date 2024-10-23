@@ -8,12 +8,13 @@ import Footer from "../../components/layout/footer/Footer";
 
 function HackathonVisaoGeral() {
   return (
-    <>
+    <div>
       <Header />
       <div className={Styles.containerprincipal}>
         <Bann />
         <CardInscricao />
       </div>
+    
       <div className={Styles.containersubprincipal}>
         <CardPreto
           title="Rede ou Aplicativo para Conectar Fornecedores Locais"
@@ -41,7 +42,7 @@ function HackathonVisaoGeral() {
         />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -9,7 +9,7 @@
 main {
   background-image: url(./assets/imgs/backgroundPlataform.png);
   width: 100%;
-  height: autos;
+  height: auto;
   background-size: cover;
   padding: 0;
 }

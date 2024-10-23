@@ -1,5 +1,5 @@
 import styles from "./CadastroEmpresa.module.css";
-
+import { Link } from "react-router-dom";
 import Header from "../../components/layout/header/Header";
 import CardPretoBase from "../../components/CardPretoBase2/CardPretoBase";
 import Form from "../../components/Form/Form";
@@ -9,6 +9,7 @@ import SubmitButton from "../../components/Form/FormComponents/SubmitButton";
 import Footer from "../../components/layout/footer/Footer";
 
 import logoKathon from "../../assets/imgs/logoKathon.png";
+import { style } from "framer-motion/client";
 
 function CadastroEmpresa() {
   return (
@@ -86,7 +87,9 @@ function CadastroEmpresa() {
           <Label customClass="labelFormsCadastro" text="Confirme sua Senha" />
           <Input text="" type="password" />
 
-          <SubmitButton text="Cadastrar" />
+          <Link className={styles.submitbotao} to={"/Login"}>
+            <SubmitButton text="Cadastrar" />
+          </Link>
         </Form>
       </CardPretoBase>
       <Footer />

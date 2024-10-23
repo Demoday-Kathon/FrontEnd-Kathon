@@ -353,3 +353,8 @@ video {
   transition: transform 1s ease;
   transform-style: preserve-3d;
 }
+
+.BotaoDescobrirHackathons{
+  width: 50vh;
+  text-decoration: none;
+}

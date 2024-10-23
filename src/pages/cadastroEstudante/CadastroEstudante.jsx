@@ -1,6 +1,6 @@
 import styles from '../cadastroEmpresa/CadastroEmpresa.module.css'
 import styles1 from './CadastroEstudante.module.css'
-
+import { Link } from 'react-router-dom'
 import Header from '../../components/layout/header/Header'
 import CardPretoBase from '../../components/CardPretoBase2/CardPretoBase'
 import Form from '../../components/Form/Form'
@@ -148,8 +148,9 @@ function CadastroEstudante() {
                     <Label customClass="labelFormsCadastro" text="Confirme sua Senha" />
                     <Input text="" type="password" />
 
-
-                    <SubmitButton text="Cadastrar" />
+                    <Link className={styles1.submitBotao} to={"/Login"}>
+                        <SubmitButton text="Cadastrar" />
+                    </Link>
 
                 </Form>
 

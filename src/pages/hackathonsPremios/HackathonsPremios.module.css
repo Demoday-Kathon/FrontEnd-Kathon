@@ -6,8 +6,9 @@
     backdrop-filter: blur(20px);
     margin: 0 auto;
     width: 80%;
-    height: 200vh;
+    height: 180vh;
     padding-left: 80px;
+    margin-bottom: 4vh;
   }
 
 .container_premio{

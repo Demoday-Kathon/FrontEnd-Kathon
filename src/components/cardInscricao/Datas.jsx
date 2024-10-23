@@ -1,5 +1,6 @@
 import Styles from "../cardInscricao/Datas.module.css";
 import Setinha from "../../assets/imgs/entrarComunidade.png";
+import { Link } from "react-router-dom";
 
 function Datas({ inicio, dates, termino, expired, subsc, dat }) {
   return (
@@ -14,12 +15,16 @@ function Datas({ inicio, dates, termino, expired, subsc, dat }) {
           <p className={Styles.hours}>{dat}</p>
         </div>
         <div className={Styles.butoesdocard}>
-          <button className={Styles.butoncard}>Inscreva-se</button>
+            <button className={Styles.butoncard}>Inscreva-se</button>
 
           <br />
+          <Link className={Styles.LinksHackaPremiosELinhaTempo} to={"/HackathonsPremios"}>
           <button className={Styles.butoncard}>Premiação</button>
+          </Link>
           <br />
+          <Link className={Styles.LinksHackaPremiosELinhaTempo} to={"/HackCalendario"}>
           <button className={Styles.butoncard}>Linha do tempo</button>
+          </Link>
         </div>
       </div>
     </>

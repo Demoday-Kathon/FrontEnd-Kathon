@@ -23,3 +23,11 @@
     padding: 1em;
     font-weight: bold;
 }
+
+.BotaohackaVisaoGeral{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 55vh;
+    text-decoration: none;
+}
