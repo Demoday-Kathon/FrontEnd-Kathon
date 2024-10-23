@@ -14,7 +14,6 @@ import Perfil_empresa_edit from "./pages/perfilEmpresa/Perfil_empresa_edit";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
 import Planos from "./pages/planos/Planos";
 import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
-import HackCalendario from "./pages/hackathonsCalendario/HackCalendario";
 import DashBoardHome from "./pages/dashBoardHome/DashBoardHome";
 import DashboardRecrutamento from "./pages/dashboardRecrutamento/DashboardRecrutamento";
 import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/DashboardAssistenteIA";
@@ -22,7 +21,7 @@ import Login from "./pages/login/Login";
 import CadastroEscolha from "./pages/cadastroEscolha/CadastroEscolha";
 import CadastroEstudante from "./pages/cadastroEstudante/CadastroEstudante";
 import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
-import HeaderFeed from "./components/HeaderFeed/HeaderFeed";
+import ComunidadeVisaoGeralHome from "./pages/comunidadesVisaoGeralHome/ComunidadesVisaoGeralHome"
 import Feed from "./pages/feed/Feed";
 
 import "./App.css";
@@ -30,7 +29,7 @@ import "./App.css";
 function App() {
   return (
     <main>
-      <Router>
+      <Router basename="/FrontEnd-Kathon/FrontEnd-Kathon/">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hackathons" element={<Hackathons />} />
@@ -42,13 +41,26 @@ function App() {
             element={<ComunidadesVisaoGeral />}
           />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/CadastroEscolha" element={<CadastroEscolha />} />
+          <Route path="/CadastroEstudante" element={<CadastroEstudante />} />
           <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
-          <Route path="/Perfil_empresa_edit" element={<Perfil_empresa_edit />} />
-          <Route path="/HackathonVisaoGeral" element={<HackathonVisaoGeral />} />
+          <Route path="/feed" element={<Feed />} />
+          <Route path="/comunidadeVisaoGeralHome" element={<ComunidadeVisaoGeralHome />} />
+          <Route
+            path="/Perfil_empresa_edit"
+            element={<Perfil_empresa_edit />}
+          />
+          <Route
+            path="/HackathonVisaoGeral"
+            element={<HackathonVisaoGeral />}
+          />
+          <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
           <Route path="/Planos" element={<Planos />} />
           <Route path="/dashboardhome" element={<DashBoardHome />} />
+<<<<<<< HEAD
           <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
           <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
 
@@ -63,6 +75,17 @@ function App() {
           <Route path="CadastroEmpresa" element={<CadastroEmpresa />} />
           <Route path="feed" element={<Feed />} />
 
+=======
+          <Route
+            path="/dashboardrecrutamento"
+            element={<DashboardRecrutamento />}
+          />
+          <Route
+            path="/dashboardassistenteia"
+            element={<DashboardAssistenteIA />}
+          />
+          <Route path="/cadastroEmpresa" element={<CadastroEmpresa />} />
+>>>>>>> 4269cc8a934672580d4bf6a354b13dea17160d2b
         </Routes>
       </Router>
     </main>

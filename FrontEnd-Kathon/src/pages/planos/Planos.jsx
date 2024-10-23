@@ -36,7 +36,7 @@ function Planos() {
                         <CardBeneficios text="Planejamento Hackthon" customClass="borderblue"></CardBeneficios>
                         <CardBeneficios text="Relatórios elaborados de feedback" customClass="borderblue"></CardBeneficios>
                         <CardBeneficios text="Perfis completos Estudantes" customClass="borderblue"></CardBeneficios>
-                        <CardBeneficios text="Assiste de RH por IA" customClass="borderblue"></CardBeneficios>
+                        <CardBeneficios text="Assistencia de RH por IA" customClass="borderblue"></CardBeneficios>
                         <h4 className={Styles.preco3}>R$ 59,90</h4>
                         <Botton text="Quero esse plano" customBotton="bottonblue"></Botton> 
                     </CardsPlanos>

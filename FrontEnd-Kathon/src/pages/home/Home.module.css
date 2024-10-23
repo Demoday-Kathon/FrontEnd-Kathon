@@ -1,240 +1,349 @@
 .home {
-    width: 100%;
-    margin: auto;
-    background-image: url(../../assets/imgs/fundohome.png);
-
+  width: 100%;
+  margin: auto;
+  background-image: url(../../assets/imgs/fundohome.png);
 }
 
 .homeTitulo {
-    margin: 1em auto 10px auto;
-    text-align: center;
-    color: #fff;
-    font-size: 2.2em;
-    width: 75%;
-    padding: 1em;
-    font-weight: bold;
-    
-
+  margin: 1em auto 10px auto;
+  text-align: center;
+  color: #fff;
+  font-size: 2.2em;
+  width: 75%;
+  padding: 1em;
+  font-weight: bold;
 }
 
 /* <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" rotation={90} /> */
 .homeTitulo span {
-color: white;
-
+  color: white;
 }
 
 .descTitulo {
-    color: #fff;
-    text-align: center;
-    width: 85%;
-    margin: auto;
-    font-size: 1.5em;
-    font-weight: normal;
+  color: #fff;
+  text-align: center;
+  width: 85%;
+  margin: auto;
+  font-size: 1.5em;
+  font-weight: normal;
 }
 
 .botoesHome {
-    display: flex;
-    margin-bottom: 100px;
-    width: 50%;
-    justify-content: space-evenly;
-    margin: auto;
+  display: flex;
+  margin-bottom: 100px;
+  width: 50%;
+  justify-content: space-evenly;
+  margin: auto;
 }
-
-
 
 /*Card preto da home logo no início*/
 
 .cardPretoHome {
-    background-color: black;
-    width: 70%;
-    margin: auto;
-    text-align: left;
-    padding: 1.5em;
-    border-radius: 1.5em;
-    border: 1px solid #FFF;
-    font-size: 1.2em;
-    margin-top: 10em;
-
+  background-color: black;
+  width: 70%;
+  margin: auto;
+  text-align: left;
+  padding: 1.5em;
+  border-radius: 1.5em;
+  border: 1px solid #fff;
+  font-size: 1.2em;
+  margin-top: 10em;
+  position: relative;
+  z-index: 1;
 }
 
 .cardPretoHome .tituloCardPreto {
-    text-align: left;
-    background: linear-gradient(90deg, #FFF 21.5%, #A367EB 45%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0em 0em  0.5em 0em;
-    font-size: 1.7em;
-
+  text-align: left;
+  background: linear-gradient(90deg, #fff 21.5%, #a367eb 45%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0em 0em 0.5em 0em;
+  font-size: 1.7em;
 }
 
 .cardPretoHome .descHackathonHome {
-    font-size: 0.7em;
+  font-size: 0.7em;
 }
 
-.cardPretoHome .descHackathonHome span{
-    color: #9960dc;
-    background-clip: text;
-    -webkit-background-clip: text;
+.cardPretoHome .descHackathonHome span {
+  color: #9960dc;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-
 
 .botoesHome1 {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    margin: auto;
-    margin-top: 1em;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 1em;
 }
 
 .areaBotao {
-    width: 85%;
-    display: flex;
-    justify-content: end;
-    padding-top: 0.5em;
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  padding-top: 0.5em;
+  margin-left: 21em;
 }
 
 .homeTitulo2 {
-    margin: 3em auto 1em auto;
-    text-align: center;
-    color: #fff;
-    font-size: 1.5em;
-    width: 75%;
-    padding: 1em;
-    font-weight: bold;
-
+  margin: 3em auto 1em auto;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  width: 75%;
+  padding: 1em;
+  font-weight: bold;
 }
 
 .hackathonsDisponiveisHome {
-    display: flex;
-    flex-direction: row;
-    
+  display: flex;
+  flex-direction: row;
 }
 
-
 .homeTitulo2 .spanHabilidade {
-    color: #9960dc;
-    background-clip: text;
-    -webkit-background-clip: text;
+  color: #9960dc;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .botoesHome2 {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    margin: auto;
-    margin-top: 1em;
-    flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 1em;
+  flex-wrap: wrap;
 }
 
-
 .coments {
-    display: flex;
-    margin: auto;
-    width: 75%;
-    justify-content: space-between;
+  display: flex;
+  margin: auto;
+  width: 75%;
+  justify-content: space-between;
 }
 
 .planosEmpresariaisDiv {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .planosEmpresariaisDiv img {
-    width: 90%;
-    height: 90%;
+  width: 90%;
+  height: 90%;
 }
-
-
-
-
 
 .spanHabilidade2 {
-    color: #66c2fa;
-    background-clip: text;
-    -webkit-background-clip: text;
+  color: #66c2fa;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-
 .caixaCardsPreta {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 75%;
-    height: auto;
-    flex-wrap: wrap;
-    margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  height: auto;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 .tituloCardPretoTalentos {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .descCardPretoTalentos {
-
-    width: 83%;
-} 
+  width: 83%;
+}
 
 .listCompanyHome {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    width: 75%;
-    margin: auto;
-    margin-bottom: 5em;
-    align-items: center ;
-    flex-direction: row;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 5em;
+  align-items: center;
+  flex-direction: row;
 }
 
 .listCompanyHome li img {
-    width: 125px;
-    height: 125px
+  width: 125px;
+  height: 125px;
 }
-
-
-
-
 
 .hometitle {
-    color: #FFF;
-text-align: center;
-font-family: "DM Sans";
-font-size: 100px;
-font-style: normal;
-font-weight: 500;
-line-height: 112px; 
-margin-bottom: 80px;
-margin-top: -120px;
-position: relative;
-z-index: 1; 
-color: white; 
-text-align: center;
-padding: 20px; 
+  color: #fff;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 112px;
+  margin-bottom: 80px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-
 .video-background {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0; 
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
 }
 
 video {
-    min-width: 100%;
-    min-height: 207%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 200%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
 
-    
+.empresinhas {
+  width: 150px; /* Ajuste o tamanho da imagem */
+  height: 150px;
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.empresinhas:hover {
+  transform: rotateY(360deg);
+  transition: 1s;
+}
+
+.caixaplanos {
+  margin: auto;
+  display: flex;
+  width: 85%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: 2px solid #48bfe3;
+  background: black;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
+  gap: 30px;
+  border-radius: 26px;
+}
+
+.caixinhaplanos1 {
+  width: 30%;
+  height: 268px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 36px;
+  background: rgba(240, 240, 240, 0.1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
+  color: #13ecab;
+}
+
+.caixinhaplanos1:hover {
+  border-radius: 36px;
+  border: 8px solid #6be62e;
+  background: rgba(240, 240, 240, 0.2);
+  box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.2) inset;
+  backdrop-filter: blur(40px);
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.caixinhaplanos2 {
+  width: 30%;
+  height: 268px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 36px;
+  background: rgba(240, 240, 240, 0.1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
+  color: #c24361;
+}
+
+.caixinhaplanos2:hover {
+  border-radius: 36px;
+  border: 8px solid #aa2c54;
+  background: rgba(240, 240, 240, 0.2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  transition-duration: 1s;
+}
+.caixinhaplanos3 {
+  width: 30%;
+  height: 268px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 36px;
+  background: rgba(240, 240, 240, 0.1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
+  color: #48bfe3;
+}
+
+.caixinhaplanos3:hover {
+  border-radius: 36px;
+  border: 8px solid #0064e0;
+  background: rgba(240, 240, 240, 0.2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.caixinhaplanos3:hover .pedrinhas {
+  transform: rotateY(360deg);
+}
+
+.pedrinhas {
+  width: 100px; /* Ajuste conforme necessário */
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
+}
+
+.caixinhaplanos2:hover .pedrinhas {
+  transform: rotateY(360deg);
+}
+
+.pedrinhas {
+  width: 100px; /* Ajuste conforme necessário */
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
+}
+
+.caixinhaplanos1:hover .pedrinhas {
+  transform: rotateY(360deg);
+}
+
+.pedrinhas {
+  width: 100px; /* Ajuste conforme necessário */
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
 }

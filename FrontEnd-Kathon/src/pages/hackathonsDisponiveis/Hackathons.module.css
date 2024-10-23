@@ -1,14 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.bg_container{
-    background-image: url(../../assets/imgs/bg_Hackathonsdisponíveis.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+.bg_container {
     display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
+    flex-direction: row;
+}
+
+.hackathons {
+    width: 100%;
+    margin: auto;
+}
+
+.hometitulo {
+    margin: 1em auto 10px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 2.2em;
+    width: 75%;
+    padding: 1em;
+    font-weight: bold;
 }

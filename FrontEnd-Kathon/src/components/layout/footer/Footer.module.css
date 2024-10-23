@@ -1,62 +1,68 @@
 .footer {
-    background-color: #000;
-    color: #ccc;
-    display: flex;
-    flex-direction: column;
-    border-top-left-radius: 3em;
-    border-top-right-radius: 3em;
-    opacity: 70%;
-    padding: 3em;
+  background-color: #000;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+  opacity: 70%;
+  padding: 3em;
+}
+
+.footer li:hover {
+  color: white;
+  transform: scale(1.1);
 }
 
 .footer li {
-    cursor: pointer;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.footer .cimaFooter{
-    margin-top: 1.5em;
-    margin-bottom: 2em;
+.footer .cimaFooter {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
 }
 
 .direitoFooter1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
 }
 
-.direitoFooter1 li{
-    margin: 0.5em;
+.direitoFooter1 li {
+  margin: 0.5em;
 }
 
-.footer .cimaFooter, .baixoFooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.footer .cimaFooter,
+.baixoFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.footer .esquerdoFooter p{
-    font-size: 1.5em;
-    width: 55%;
+.footer .esquerdoFooter p {
+  font-size: 1.5em;
+  width: 55%;
 }
 
-.footer .esquerdoFooter span{
-    width: 100%;
-    font-size: 1em;
+.footer .esquerdoFooter span {
+  width: 100%;
+  font-size: 1em;
 }
 
 .logoFooter {
-    background-image: url(../../../assets/imgs/logokathoncompleta.png);
-    width:20em;
-    height: 3em;
-    background-repeat: no-repeat;
-
+  background-image: url(../../../assets/imgs/logokathoncompleta.png);
+  width: 20em;
+  height: 3em;
+  background-repeat: no-repeat;
 }
 
- hr {
-    color: #fff !important;
-    width: 100%;
-    border: 0.5px solid;
-    background-color: #fff;
-    margin-bottom: 1.5em;
+hr {
+  color: #fff !important;
+  width: 100%;
+  border: 0.5px solid;
+  background-color: #fff;
+  margin-bottom: 1.5em;
 }

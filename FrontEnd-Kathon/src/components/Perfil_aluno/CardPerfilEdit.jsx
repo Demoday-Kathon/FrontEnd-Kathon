@@ -10,7 +10,7 @@ function CardPerfilEdit() {
     return (
         <section className={Styles.Card_Fundo}>
             <div className={Styles.PerfilDados}>
-                <Bloco1 Foto_perfil={Icone_perfil}  customClass="Foto_perfilEdit"  NomePerfil="Nome Usuario" UserPerfil="@User" />
+                <Bloco1 Foto_perfil={Icone_perfil}  customClass="Foto_perfilEdit"  NomePerfil="Nome Usuario" UserPerfil="@User"  Salvar="Salvar Alterações"/>
                 <Bloco2_edit TextoDesc="Escreva aqui uma breve descrição sobre você e suas áreas de interesse..." />
             </div>
             <div className={Styles.Recomendacao_bloco}>

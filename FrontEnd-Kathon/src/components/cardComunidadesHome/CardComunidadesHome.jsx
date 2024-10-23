@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import EntrarComunidade from '../../assets/imgs/EntrarComunidade.png';
-import Styles from './CardComunidades.module.css';
+import Styles from './CardComunidadesHome.module.css';
 
 function CardComunidades(props) {
     return(
@@ -13,7 +13,7 @@ function CardComunidades(props) {
                         <p className={Styles.Description}>{props.descricaoComunidade}</p>
                     </div>
 
-                    <Link to={"/comunidades"}>
+                    <Link to={"/CadastroEscolha"}>
                         <button><img className={Styles.imagemEntrarComunidade} src={EntrarComunidade} alt="Botão Entrar"/></button>
                     </Link>
                 </div>

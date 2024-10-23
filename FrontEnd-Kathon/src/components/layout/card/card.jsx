@@ -5,6 +5,7 @@ import person1 from "../../../assets/imgs/pessoa1.png";
 import person2 from "../../../assets/imgs/pessoa2.png";
 import person3 from "../../../assets/imgs/pessoa3.png";
 import Button from "../button/button.jsx";
+import { Children } from "react";
 
 function card({
   banner,
@@ -13,6 +14,7 @@ function card({
   acounter,
   timeline,
   customClass,
+  children
 }) {
   return (
     <div className={`${styles.card} ${styles[customClass]}`}>
@@ -41,7 +43,7 @@ function card({
           </div>
         </div>
         <div className={styles.button_hackathon}>
-          <Button text="Saiba Mais" customClass="buttonAzul" />
+          {children}
         </div>
       </div>
     </div>

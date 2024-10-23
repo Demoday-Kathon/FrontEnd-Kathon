@@ -10,7 +10,7 @@ import SubmitButton from '../../components/Form/FormComponents/SubmitButton';
 import BotaoHome from '../../components/BotaozinhoHome/BotaoHome';
 import Footer from '../../components/layout/footer/Footer';
 import LinkComponent from '../../components/layout/link/LinkComponent';
-
+import { Link } from 'react-router-dom';
 
 import logoKathon from '../../assets/imgs/logoKathon.png';
 
@@ -33,12 +33,13 @@ function Login() {
                     <Input text="Email" type="email"/>
                     <Input text="Senha" type="password"/>
                     <h2 className={styles.esqueceuSenha}> Esqueceu a senha? </h2>
-                    <SubmitButton text="Entrar"/>
+                    <Link to={"/feed"} className={styles.LinkEntry}>
+                        <SubmitButton text="Entrar"/>
+                    </Link>
 
 
 
                     <div className={styles.divisorLogin}> <hr /> <span> OU </span>  <hr /> </div>
-
 
 
                     <BotaoHome customClass="buttonLoginConta" icon={<FcGoogle style={{ marginRight: '0.5em' }} />} alt="icone de alarme" text="Entrar com Google" />

@@ -2,7 +2,7 @@ import Styles from './Bloco1Empresas.module.css'
 import LinkComponent from '../layout/link/LinkComponent'
 import Esmeralda from '../../assets/imgs/Esmeralda.png'
 
-function Bloco1Empresas({ NomePerfil, UserPerfil, Foto_perfil, customClass }) {
+function Bloco1Empresas({ NomePerfil, UserPerfil, Foto_perfil, customClass, Salvar }) {
     return (
         <section className={Styles.Bloco1}>
             <img className={`${Styles.Foto_perfil} ${Styles[customClass]}`} src={Foto_perfil} alt="Foto Perfil" />  {/* Crinado custom class */}
@@ -17,7 +17,7 @@ function Bloco1Empresas({ NomePerfil, UserPerfil, Foto_perfil, customClass }) {
             </div>
             <div className={Styles.BotoesEmpresas}>
 
-                <LinkComponent linkTo="/Perfil_empresa_edit" text={<button className={Styles.BottonPerfil}>Editar Perfil</button>} />
+                <LinkComponent linkTo="/Perfil_empresa_edit" text={<button className={Styles.BottonPerfil}>{Salvar}</button>} />
                 <br />
                 <LinkComponent linkTo="/Planos" text={<button className={Styles.BottonPerfil1}>Trocar de Plano</button>} />
             </div>

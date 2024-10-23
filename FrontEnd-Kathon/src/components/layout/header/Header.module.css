@@ -1,21 +1,20 @@
 .header {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    background: none;
-    padding: 1em;
-    position: relative;
-    z-index: 1;
-
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  background: none;
+  padding: 1em;
+  position: relative;
+  z-index: 1;
 }
 
 .logoHeader {
-    background-image: url(../../../assets/imgs/logokathoncompleta.png);
-    width:15em;
-    height: 3em;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 1;
-    position: relative;
+  background-image: url(../../../assets/imgs/logokathoncompleta.png);
+  width: 15em;
+  height: 3em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  position: relative;
 }

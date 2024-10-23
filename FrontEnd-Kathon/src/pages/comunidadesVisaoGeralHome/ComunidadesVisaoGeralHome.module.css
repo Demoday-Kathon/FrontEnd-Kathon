@@ -7,7 +7,6 @@
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    padding:  0  0 10vh 0;
 }
 
 .ContainerHeader{
@@ -61,8 +60,10 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 120vh;
     gap: 10vh;
+    padding:  0  0 30vh 0;
+    margin-top: 20vh;
 }
 
 .Cards{

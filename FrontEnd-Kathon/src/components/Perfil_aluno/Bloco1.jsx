@@ -1,7 +1,7 @@
 import Styles from './Bloco1.module.css'
 import LinkComponent from '../layout/link/LinkComponent'
 
-function Bloco1({NomePerfil, UserPerfil, Foto_perfil, customClass}){
+function Bloco1({NomePerfil, UserPerfil, Foto_perfil, customClass, Salvar}){
     return(
         <section className={Styles.Bloco1}>
             <img className={`${Styles.Foto_perfil} ${Styles[customClass]}`} src={Foto_perfil} alt="Foto Perfil" />  {/* Crinado custom class */}
@@ -9,7 +9,7 @@ function Bloco1({NomePerfil, UserPerfil, Foto_perfil, customClass}){
                 <h1 className={Styles.NomePerfil}>{NomePerfil}</h1>
                 <h2 className={Styles.UserPerfil}>{UserPerfil}</h2>
                 <br />
-                <LinkComponent linkTo="/Perfil_aluno_edit" text={<button className={Styles.BottonPerfil}>Editar Perfil</button>}/>
+                <LinkComponent linkTo="/Perfil_aluno_edit" text={<button className={Styles.BottonPerfil}>{Salvar}</button>}/>
             </div>
         </section>
     )

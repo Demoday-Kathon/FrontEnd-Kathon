@@ -9,18 +9,25 @@ import User from '../../assets/imgs/joana.png'
 import Visibilidade from '../../assets/imgs/visibility.png'
 import IconAutor from '../../assets/imgs/PersonCircle.png'
 import styles from './Comunidades.module.css'
+import { useState } from 'react';
 
 function Comunidades() {
-    return (
-        <div className={styles.containerComunidadeVisao}>
+    const [isHeaderCollapsed, setIsHeaderCollapsed] = useState(false);
 
-            <HeaderComunidade />
+    const handleHeaderToggle = () => {
+        setIsHeaderCollapsed(!isHeaderCollapsed);
+    };
+
+    return (
+        <div className={`${styles.containerComunidadeVisao}`}>
+
+            <HeaderComunidade onToggle={handleHeaderToggle} />
 
             <div className={styles.Bloco}>
-                <div className={styles.blocoInterno}>
+                <div className={`${styles.blocoInterno}`}>
                     <img className={styles.BannerIMG} src={BannerIMG} alt="Banner" />
                     <div className={styles.containeFeedComunity}>
-                        <Feed>
+                        <Feed >
                             <Post
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}

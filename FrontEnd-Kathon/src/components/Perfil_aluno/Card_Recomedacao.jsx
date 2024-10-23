@@ -12,7 +12,9 @@ function Card_Recomendacao({ Perfil_foto, Nome, Sub_titulo, children, customClas
                 <br />
                 <p className={Styles.Sub_titulo}>{Sub_titulo}</p>
                 <br />
+                
                 {children}
+
             </div>
         </div>
     )
