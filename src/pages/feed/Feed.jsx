@@ -28,28 +28,28 @@ function Feed() {
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}
                             hours={"3 Horas atrás"}
-                            description={"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"}
+                            description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
                             photoPost={PhotoPost}
                             />
                             <Post
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}
                             hours={"3 Horas atrás"}
-                            description={"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"}
+                            description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
                             photoPost={PhotoPost}
                             />
                             <Post
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}
                             hours={"3 Horas atrás"}
-                            description={"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"}
+                            description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
                             photoPost={PhotoPost}
                             />
                             <Post
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}
                             hours={"3 Horas atrás"}
-                            description={"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"}
+                            description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
                             photoPost={PhotoPost}
                             />
                         </FeedComponent>

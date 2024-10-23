@@ -5,12 +5,15 @@ import LogoKathon from '../../assets/imgs/LogoKathonCompleta.png';
 import Person from  '../../assets/imgs/person.png';
 import Add from  '../../assets/imgs/add.png';
 import Styles from './ComunidadesEscolha.module.css';
+import LinkComponent from '../../components/layout/link/LinkComponent';
 
 function ComunidadesEscolha() {
     return(
         <div className={Styles.ContainerComunidades}>
             <header className={Styles.ContainerHeader}>
-                <img className={Styles.LogoKathon} src={LogoKathon} alt="Logo Kathon" />
+                <LinkComponent  linkTo={"/"}>
+                    <img className={Styles.LogoKathon} src={LogoKathon} alt="Logo Kathon" />
+                </LinkComponent>
                 <h1 className={Styles.tituloComunidades}>Comunidades</h1>
                 <ImageUser 
                     imagemUser={UserImage}

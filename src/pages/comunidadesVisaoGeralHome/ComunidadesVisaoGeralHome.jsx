@@ -6,6 +6,7 @@ import LogoKathon from '../../assets/imgs/LogoKathonCompleta.png';
 import CardComunidades from '../../components/cardComunidadesHome/CardComunidadesHome';
 import Styles from './ComunidadesVisaoGeralHome.module.css';
 import Header from '../../components/layout/header/Header'
+import Footer from '../../components/layout/footer/Footer';
 
 function ComunidadesVisaoGeralHome() {
     return(
@@ -84,6 +85,7 @@ function ComunidadesVisaoGeralHome() {
             </div>
             
             </section>
+            <Footer></Footer>
         </div>
     )
 }

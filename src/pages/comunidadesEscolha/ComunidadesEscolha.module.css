@@ -18,6 +18,11 @@
     padding: 2em;
 }
 
+.ContainerHeader h1{
+    margin-right: 20vh;
+
+}
+
 .ContainerNav{
     background-color: #141301;
     border: 1px solid #7400B7;
@@ -33,6 +38,12 @@
         font-size: 1.4rem;
         text-decoration: none;
         color: #fff;
+    }
+
+    a:hover{
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: #7400B7;
     }
 }
 

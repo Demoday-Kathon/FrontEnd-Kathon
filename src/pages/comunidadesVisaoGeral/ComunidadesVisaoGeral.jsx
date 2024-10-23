@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import LinkComponent from '../../components/layout/link/LinkComponent';
 import ImageUser from '../../components/layout/ImageUser/ImageUser';
 import UserImage from '../../assets/imgs/imageUser.png';
 import backgroundGDG from '../../assets/imgs/backgroundGDG.png';
@@ -11,7 +11,9 @@ function ComunidadesVisaoGeral() {
     return(
         <div className={Styles.ContainerComunidades}>
             <header className={Styles.ContainerHeader}>
+                <LinkComponent  linkTo={"/"}>
                     <img className={Styles.LogoKathon} src={LogoKathon} alt="Logo Kathon" />
+                </LinkComponent>
                 <h1 className={Styles.tituloComunidades}>Comunidades</h1>
                 <ImageUser 
                     imagemUser={UserImage}
@@ -21,9 +23,15 @@ function ComunidadesVisaoGeral() {
 
             <section className={Styles.ContainerCardsComunidades}>
                 <nav className={Styles.ContainerNav}>
-                    <a href="#"><Link to={"/feed"}>Feed</Link></a>
-                    <a href="#"><Link to={"/hackathons"}>Hackathons</Link></a>
-                    <a href="#"><Link to={"/feed"}>Perfil</Link></a>
+                    <LinkComponent linkTo={"/feed"}>
+                        <a href="#">Feed</a>
+                    </LinkComponent>
+                    <LinkComponent linkTo={"/Hackathons"}>
+                        <a href="#">Hackathons</a>
+                    </LinkComponent>
+                    <LinkComponent linkTo={"/Perfil_aluno"}>
+                        <a href="#">Perfil</a>
+                    </LinkComponent>
                 </nav>
 
             <div className={Styles.Cards}>
@@ -96,7 +104,7 @@ function ComunidadesVisaoGeral() {
             </div>
             
             </section>
-            ,<Footer></Footer>
+            <Footer></Footer>
         </div>
     )
 }

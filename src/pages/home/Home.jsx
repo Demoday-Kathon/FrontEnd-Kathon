@@ -27,7 +27,7 @@ import VideoBack from "../../assets/imgs/video_back.mp4";
 import esmeralda from "../../assets/imgs/Esmeralda.svg";
 import rubi from "../../assets/imgs/rubi.svg";
 import diamante from "../../assets/imgs/diamante.svg";
-import { Link } from "react-router-dom";
+import LinkComponent from "../../components/layout/link/LinkComponent";
 
 import { motion } from "framer-motion";
 import { fadein } from "../../variants";
@@ -68,7 +68,9 @@ function Home() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.9 }}
           >
-            <Button customClass="buttonBaixo" text="Cadastre-se" />
+            <LinkComponent linkTo={"/CadastroEscolha"}>
+              <Button customClass="buttonBaixo" text="Cadastre-se" />
+            </LinkComponent>
           </motion.div>
 
           <motion.div
@@ -145,7 +147,9 @@ function Home() {
         </motion.div>
 
         <div className={styles.areaBotao}>
-          <Button customClass="buttonRoxo" text="Descobrir Hackathons" />
+          <LinkComponent linkTo={"/Hackathons"}>
+            <Button customClass="buttonRoxo" text="Descobrir Hackathons" />
+          </LinkComponent>
         </div>
 
         <motion.h1
@@ -217,7 +221,9 @@ function Home() {
             acounter="+150 participantes"
             timeline="20 dias restantes"
           >
-            <Button text="Saiba Mais" customClass="buttonAzul" />
+            <LinkComponent linkTo={"/Hackathons"}>
+              <Button text="Saiba Mais" customClass="buttonAzul" />
+            </LinkComponent>
           </Card>
           <Card
             banner={banner}
@@ -226,7 +232,9 @@ function Home() {
             acounter="+150 participantes"
             timeline="20 dias restantes"
           >
-            <Button text="Saiba Mais" customClass="buttonAzul" />
+            <LinkComponent linkTo={"/Hackathons"}>
+              <Button text="Saiba Mais" customClass="buttonAzul" />
+            </LinkComponent>
           </Card>
         </div>
 
@@ -256,7 +264,9 @@ function Home() {
             Nome="João Carlos Pereira"
             Sub_titulo="“Participar do hackathon com a KATHON foi uma experiência incrível! Trabalhei com uma equipe talentosa, aprendi muito e me senti desafiado. Mal posso esperar pelo próximo!”"
           >
-            <Button customClass="buttonBaixo3" text="Iniciar" />
+            <LinkComponent linkTo={"/Login"}>
+                <Button customClass="buttonBaixo3" text="Iniciar" />
+            </LinkComponent>
           </Card_Recomendacao>
         </div>
 

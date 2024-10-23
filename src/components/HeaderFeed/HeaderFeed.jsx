@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Styles from './HeaderFeed.module.css'
 import LogoKathon from '../../assets/imgs/LogoKathonCompleta.png'
 import PersonalIcon from '../../assets/imgs/Personal-icon.png'
+import HackalIcon from '../../assets/imgs/Objetivo.png'
 import AddIcon from '../../assets/imgs/add-icon.png'
 import CartaIcon from '../../assets/imgs/carta-icon.png'
 import UserProfile from '../../assets/imgs/ImageUser.png'
@@ -25,14 +26,13 @@ function HeaderFeed({onToggle}) {
             <section className={`${Styles.FeedNav} ${isNavVisible ? Styles.visible : Styles.hidden}`}>
                 <NavLateral className={Styles.HeaderComunidade}>
                     <div className={Styles.ContainerLinks}>
-                        <img className={Styles.LogoKathon} src={LogoKathon} alt="Logo Kathon" />
+                        <LinkComponent linkTo={"/"}>
+                            <img className={Styles.LogoKathon} src={LogoKathon} alt="Logo Kathon" />
+                        </LinkComponent>
                         <nav className={Styles.Links}>
-                             <LinkComponent linkTo="/feed"><a href=""><img className={Styles.Icon} src={HomeIcon} alt="" />Home</a></LinkComponent>
-                            <LinkComponent linkTo="/">
-                                <a href=""><img className={Styles.Icon} src={CartaIcon} alt="" />Mensagem</a>
-                            </LinkComponent>
+                             <LinkComponent linkTo="/feed"><a href=""><img className={Styles.Icon} src={HomeIcon} alt="" />Feed</a></LinkComponent>
                             <LinkComponent linkTo="/Hackathons">
-                                <a href=""><img className={Styles.Icon} src={PersonalIcon} alt="" />Hackathons</a>
+                                <a href=""><img className={Styles.Icon} src={HackalIcon} alt="" />Hackathons</a>
                             </LinkComponent>
                             <LinkComponent linkTo="/comunidadesEscolha">
                                 <a href=""><img className={Styles.Icon} src={PersonalIcon} alt="" />Comunidades</a>
