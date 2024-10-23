@@ -92,10 +92,8 @@
 .buttonRoxo {
   border-radius: 1em;
   background-color: #7400b7;
-  width: 30%;
-  height: 2em;
+  width: 100%;
   font-size: 0.8em;
-  padding: 0.4em;
 }
 
 .buttonRoxo:hover {

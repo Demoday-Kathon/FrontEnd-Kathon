@@ -81,10 +81,11 @@
 }
 
 .areaBotao {
-  width: 85%;
+  width: 30%;
   display: flex;
   justify-content: end;
   padding-top: 0.5em;
+  margin-left: 21em;
 }
 
 .homeTitulo2 {
