@@ -22,6 +22,7 @@ import Login from "./pages/login/Login";
 import CadastroEscolha from "./pages/cadastroEscolha/CadastroEscolha";
 import CadastroEstudante from "./pages/cadastroEstudante/CadastroEstudante";
 import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
+import ComunidadeVisaoGeralHome from "./pages/comunidadesVisaoGeralHome/ComunidadesVisaoGeralHome"
 import Feed from "./pages/feed/Feed";
 
 import "./App.css";
@@ -48,6 +49,7 @@ function App() {
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
           <Route path="/feed" element={<Feed />} />
+          <Route path="/comunidadeVisaoGeralHome" element={<ComunidadeVisaoGeralHome />} />
           <Route
             path="/Perfil_empresa_edit"
             element={<Perfil_empresa_edit />}

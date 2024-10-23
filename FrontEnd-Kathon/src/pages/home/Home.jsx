@@ -53,7 +53,6 @@ function Home() {
           soluções que <span>inovam</span>{" "}
         </h1>
         <div className={styles.botoesHome}>
-          
           <Button customClass="buttonBaixo" text="Cadastre-se" />
 
           <Button customClass="buttonBaixo2" text="Seja parceiro" />
@@ -166,7 +165,6 @@ function Home() {
             acounter="+150 participantes"
             timeline="20 dias restantes"
           >
-
             <Button text="Saiba Mais" customClass="buttonAzul" />
           </Card>
           <Card
@@ -195,7 +193,7 @@ function Home() {
             customClass="cardRecomendacaoHome"
             Perfil_foto={Abel}
             Nome="João Carlos Pereira"
-            Sub_titulo="“O KATHON foi uma oportunidade única de colocar em prática tudo o que aprendi e ainda conhecer profissionais incríveis. Recomendo a todo que participem”"
+            Sub_titulo="“O KATHON foi uma oportunidade única de colocar em prática tudo o que aprendi e ainda conhecer profissionais incríveis. Recomendo a todos que participem”"
           >
             <Button customClass="buttonBaixo3" text="Iniciar" />
           </Card_Recomendacao>
