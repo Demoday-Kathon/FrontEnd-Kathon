@@ -137,8 +137,8 @@
 .buttonBaixo3 {
   width: 40%;
   font-size: 0.5em;
-  margin: 1.5em auto 1.5em auto;
-  padding: 1em;
+  margin: auto;
+  margin-bottom: 1.5em;
   height: 2em;
   display: flex;
   justify-content: space-evenly;
@@ -147,8 +147,8 @@
 .buttonBaixo3:hover {
   width: 40%;
   font-size: 0.5em;
-  margin: 1.5em auto 1.5em auto;
+  margin: auto;
+  margin-bottom: 1.5em;
   text-align: center;
-  padding: 0.5em;
   height: 2em;
 }

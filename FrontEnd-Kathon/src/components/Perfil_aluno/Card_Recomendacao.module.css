@@ -1,6 +1,5 @@
 .Card {
     width: 40%;
-    height: 34vh;
     background-color: aliceblue;
     border-radius: 36px;
     border: 1px solid #FFF;
@@ -13,7 +12,7 @@
     width: 120px;
     height: 120px;
     margin-top: -60px;
-    margin-left: 50px;
+
 }
 
 .Nome {
@@ -23,7 +22,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-left: 25px;
+
 }
 
 .Sub_titulo{
@@ -31,13 +30,15 @@
     font-family: "DM Sans";
     font-size: 20px;
     line-height: normal;
-    margin-left: 25px;
+
 }
 
 .cardRecomendacaoHome {
     height: auto;
     display: flex;
     flex-direction: column;
+    width: 50%;
+    margin: 0.5em;
 }
 
 .empresas_Edit{
