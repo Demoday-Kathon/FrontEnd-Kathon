@@ -1,0 +1,12 @@
+.ContaineFeedComunity{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    height: 100vh;
+}
+.feedprincipal{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    height: 100vh;
+}
