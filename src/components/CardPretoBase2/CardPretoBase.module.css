@@ -22,11 +22,11 @@
 } */
 
 .menor {
-  width: 43%;
+  width: 100%;
 }
 
 .maior {
-  width: 55%;
+  width: 100%;
 }
 
 .menor:hover,

@@ -153,7 +153,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 75%;
-  height: auto;
+  height: 80vh;
   flex-wrap: wrap;
   margin: auto;
 }
@@ -352,4 +352,16 @@ video {
   width: 100px; /* Ajuste conforme necessário */
   transition: transform 1s ease;
   transform-style: preserve-3d;
+}
+
+.cardPretoMenor{
+  width: 43%;
+}
+
+.cardPretoMenor4{
+  width: 43%;
+}
+
+.cardPretoMaior{
+  width: 55%;
 }
