@@ -17,7 +17,6 @@ function Comunidades() {
             <HeaderComunidade />
 
             <div className={styles.Bloco}>
-
                 <div className={styles.blocoInterno}>
                     <img className={styles.BannerIMG} src={BannerIMG} alt="Banner" />
                     <div className={styles.containeFeedComunity}>

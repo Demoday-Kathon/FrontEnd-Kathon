@@ -51,6 +51,7 @@ function App() {
           <Route path="/dashboardhome" element={<DashBoardHome />} />
           <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
           <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
+
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
           <Route path="/HackCalendario" element={<HackCalendario />} />
 
@@ -61,6 +62,7 @@ function App() {
           <Route path="CadastroEstudante" element={<CadastroEstudante />} />
           <Route path="CadastroEmpresa" element={<CadastroEmpresa />} />
           <Route path="feed" element={<Feed />} />
+
         </Routes>
       </Router>
     </main>

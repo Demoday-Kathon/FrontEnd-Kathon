@@ -1,6 +1,7 @@
 .home {
     width: 100%;
     margin: auto;
+    background-image: url(../../assets/imgs/fundohome.png);
 
 }
 
@@ -8,16 +9,17 @@
     margin: 1em auto 10px auto;
     text-align: center;
     color: #fff;
-    font-size: 2em;
+    font-size: 2.2em;
     width: 75%;
     padding: 1em;
+    font-weight: bold;
+    
 
 }
 
 /* <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" rotation={90} /> */
 .homeTitulo span {
-    background-color: #413258;
-    padding: 0em 0.1em 0em 0.1em;
+color: white;
 
 }
 
@@ -195,3 +197,44 @@
 
 
 
+.hometitle {
+    color: #FFF;
+text-align: center;
+font-family: "DM Sans";
+font-size: 100px;
+font-style: normal;
+font-weight: 500;
+line-height: 112px; 
+margin-bottom: 80px;
+margin-top: -120px;
+position: relative;
+z-index: 1; 
+color: white; 
+text-align: center;
+padding: 20px; 
+}
+
+
+.video-background {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0; 
+
+}
+
+video {
+    min-width: 100%;
+    min-height: 207%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}

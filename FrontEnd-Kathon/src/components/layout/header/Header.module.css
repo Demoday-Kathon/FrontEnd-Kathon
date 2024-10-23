@@ -5,6 +5,9 @@
     align-items: center;
     background: none;
     padding: 1em;
+    position: relative;
+    z-index: 1;
+
 }
 
 .logoHeader {
@@ -13,4 +16,6 @@
     height: 3em;
     background-repeat: no-repeat;
     background-size: contain;
+    z-index: 1;
+    position: relative;
 }

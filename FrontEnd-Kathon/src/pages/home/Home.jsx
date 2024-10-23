@@ -25,13 +25,28 @@ import { TbWorld } from "react-icons/tb";
 import { IoStatsChart } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa";
 import { MdOutlineLaptopMac } from "react-icons/md";
+import VideoBack from "../../assets/imgs/video_back.mp4"
 
 function Home() {
     return (
+
         <div className={styles.home}>
-            <Header />
+        <Header />  
             <container className={styles.homeTitulo}>
-                <h1 className={styles.homeTitulo}> Desafios que  <span> revelam</span> soluções que <span>inovam</span> </h1>
+                {/* teste do back */}
+                <div className="App">
+      <div className="video-background">
+        <video autoPlay muted loop>
+          <source src={VideoBack} type="video/mp4" />
+        </video>
+      </div>
+      <div className={styles.conteudo}>
+        <h1>Seu Conteúdo Aqui</h1>
+        <p>Mais informações podem ser adicionadas aqui.</p>
+      </div>
+    </div>
+                {/* fim do teste */}
+                <h1 className={styles.hometitle}> Desafios que  <span> revelam <br /></span> soluções que <span>inovam</span> </h1>
                 <div className={styles.botoesHome}>
                     <Button customClass="buttonBaixo" text="Cadastre-se" />
                     <Button customClass="buttonBaixo2" text="Seja parceiro" />

@@ -1,40 +1,69 @@
-.colorPurple{
-    color: #A55AFF;
-}
-
-.subtitle{
-    color: #1498ef;
-}
-
-.containerSobreNos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container{
+    background-image: url(../../assets/imgs/backgrounds/Sobre\ a\ Kathon.png);
+    background-position: center;
+    background-size: cover;
     width: 100%;
-    min-height: 200vh;
-    color: #fff;
-    margin-top: 5vh;
 }
 
 .containerPrimary{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 72vh;
+    height: 120vh;
 }
 
-.ImageGlass{
-    width: 40%;
-    height:112vh;
-}
-
-
-.iphone{
+.images{
     width: 40%;
     height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.images .elipseBlur{
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    top: 85vh;
+    z-index: 1;
+    right: 2rem;
+}
+
+.images .ImageGlass{
+    position: relative;
+    width: 95%;
+    object-fit: cover;
+    height: 85vh;
+    bottom: 70%;
+}
+
+.ContainerTitleSobre{
+    width: 55%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    bottom: 12%;
+}
+
+.titulosSection{
+    color: #fff;
+    font-size: 3.8rem;
+}
+
+.titulosSection span{
+    color: #A55AFF;
+}
+
+.ContainerTitleSobre p{
+    width: 100%;
+    color: #fff;
+    font-size: 2.8rem;
+}
+
+.ContainerTitleSobre .subtitle{
+    color: #66C2FA;
 }
 
 .containerSecondary{
@@ -43,49 +72,90 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    gap: 15vh;
+    height: 120vh;
+}
+
+.iphone{
+    width: 50vw;
+    object-fit: contain;
+    height: 120vh;
+    position: relative;
+    top: 5%;
+    z-index: 1;
+}
+
+.containerSecondary .textDescription{
+    width: 60%;
+    position: relative;
+    font-size: 3.8rem;
+    color: #fff;
+    right: 8rem;
+    z-index: 2;
 }
 
 .containerTerciary{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    gap: 25vh;
+    height: 150vh;
+}
+
+.containerTerciary .textDescription{
+    width: 60%;
+    left: 10%;
+    position: relative;
+    font-size: 3.8rem;
+    color: #fff;
+    z-index: 3;
 }
 
 .equipeContainer{
     display: flex;
+    width: 100%;
+    height: 125vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgEquipe{
+    width: 70vw;
+    object-fit: contain;
+    height: 75vh;
+    position: relative;
+    top: 4%;
+}
+
+.containerDesenvolvedores{
+    height: 80vh;
+    width: 50%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    padding: 2vh;
+    text-align: left;
 }
 
-.titulosSection{
-    font-size: 4rem;
-}
-
-.titulodesenvolvedores{
-    font-size: 2.6rem;
+.containerDesenvolvedores .titulodesenvolvedores{
+    position: relative;
+    font-size: 3.5rem;
     color: #A55AFF;
 }
 
-.textDescription{
-    width: 80%;
-    font-size: 3.5rem;
-    margin: 5vh;
+.containerDesenvolvedores .iphone{
+    width: 75%;
 }
 
-.ContainerTitleSobre{
+.descDesenvolvedores{
     width: 50%;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.ContainerTitleSobre p{
-    font-size: 2.4rem;
+.descDesenvolvedores .textDescription{
+    color: #fff;
+    font-size: 3rem;
+    width: 70%;
 }

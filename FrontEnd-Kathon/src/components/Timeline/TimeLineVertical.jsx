@@ -6,11 +6,8 @@ import { IconBase } from 'react-icons/lib';
 
 const TimelineVertical = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [barHeight, setBarHeight] = useState(0);
   const maxScrollHeight = 2140;
-  const delay = 2000;
-  const incrementDelay = 1500;
-  const incrementStep = 10;
+  const delay = 1400;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,13 +26,6 @@ const TimelineVertical = () => {
     const timeoutId = setTimeout(() => {
       window.addEventListener('scroll', handleScroll);
     }, delay);
-
-    const intervalIf = setInterval(() => {
-      setBarHeight((prevHeight) => {
-        const newHeight = prevHeight + incrementStep;
-        return newHeight > 100 ? 100 : newHeight;
-      });
-    }, incrementDelay);
 
     return () => {
       clearTimeout(timeoutId);
