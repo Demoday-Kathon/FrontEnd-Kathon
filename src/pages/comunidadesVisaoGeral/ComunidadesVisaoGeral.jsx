@@ -5,13 +5,13 @@ import backgroundGDG from '../../assets/imgs/backgroundGDG.png';
 import LogoKathon from '../../assets/imgs/LogoKathonCompleta.png';
 import CardComunidades from '../../components/cardComunidades/CardComunidades';
 import Styles from './ComunidadesVisaoGeral.module.css';
-
+import Footer from '../../components/layout/footer/Footer';
 
 function ComunidadesVisaoGeral() {
     return(
         <div className={Styles.ContainerComunidades}>
             <header className={Styles.ContainerHeader}>
-                <img className={Styles.LogoKathon} src={LogoKathon} alt="Logo Kathon" />
+                    <img className={Styles.LogoKathon} src={LogoKathon} alt="Logo Kathon" />
                 <h1 className={Styles.tituloComunidades}>Comunidades</h1>
                 <ImageUser 
                     imagemUser={UserImage}
@@ -21,9 +21,9 @@ function ComunidadesVisaoGeral() {
 
             <section className={Styles.ContainerCardsComunidades}>
                 <nav className={Styles.ContainerNav}>
-                    <a href="#"><Link to={"/"}>Home</Link></a>
-                    <a href="#"><Link to={"/feed"}>Criadas</Link></a>
-                    <a href="#"><Link to={"/hackathons"}>Criar</Link></a>
+                    <a href="#"><Link to={"/feed"}>Feed</Link></a>
+                    <a href="#"><Link to={"/hackathons"}>Hackathons</Link></a>
+                    <a href="#"><Link to={"/feed"}>Perfil</Link></a>
                 </nav>
 
             <div className={Styles.Cards}>
@@ -96,6 +96,7 @@ function ComunidadesVisaoGeral() {
             </div>
             
             </section>
+            ,<Footer></Footer>
         </div>
     )
 }

@@ -32,28 +32,28 @@ function Comunidades() {
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}
                             hours={"3 Horas atrás"}
-                            description={"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"}
+                            description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
                             photoPost={PhotoPost}
                             />
                             <Post
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}
                             hours={"3 Horas atrás"}
-                            description={"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"}
+                            description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
                             photoPost={PhotoPost}
                             />
                             <Post
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}
                             hours={"3 Horas atrás"}
-                            description={"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"}
+                            description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
                             photoPost={PhotoPost}
                             />
                             <Post
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}
                             hours={"3 Horas atrás"}
-                            description={"loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem"}
+                            description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
                             photoPost={PhotoPost}
                             />
                         </Feed>
@@ -67,7 +67,7 @@ function Comunidades() {
                                 </div>
 
                                 <div className={styles.DescricaoText}>
-                                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum enim neque beatae! Dolore, in commodi."</p>
+                                    <p>"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."</p>
                                 </div>
 
                                 <div className={styles.ContainerAutorVisibilidade}>

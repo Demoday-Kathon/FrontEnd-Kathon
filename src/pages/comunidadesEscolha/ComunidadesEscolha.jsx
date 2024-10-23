@@ -36,7 +36,7 @@ function ComunidadesEscolha() {
 
                     <Link to={'/comunidadesVisaoGeral'} className={Styles.Card}>
                         <p>Todas</p>
-                        <p>comunidades</p>
+                        <p>Comunidades</p>
                         <img className={Styles.Icones} src={Person} alt="Icones" />
                     </Link>
 
