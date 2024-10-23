@@ -6,6 +6,7 @@ import LogoKathon from '../../assets/imgs/LogoKathonCompleta.png';
 import CardComunidades from '../../components/cardComunidades/CardComunidades';
 import Styles from './ComunidadesVisaoGeral.module.css';
 
+
 function ComunidadesVisaoGeral() {
     return(
         <div className={Styles.ContainerComunidades}>
