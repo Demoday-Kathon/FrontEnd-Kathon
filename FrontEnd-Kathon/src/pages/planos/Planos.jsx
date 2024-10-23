@@ -50,8 +50,6 @@ function Planos() {
                 <HomePlano img={Rubi} alt="Rubi"  />
                 <HomePlano img={Diamante} alt="Diamante"/>
            </div>
-            
-
             <Footer/>
         </section>
     )
