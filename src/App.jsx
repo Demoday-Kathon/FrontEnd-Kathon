@@ -12,6 +12,7 @@ import Perfil_aluno_edit from "./pages/perfilAluno/Perfil_aluno_edit";
 import Perfil_empresa from "./pages/perfilEmpresa/Perfil_empresa";
 import Perfil_empresa_edit from "./pages/perfilEmpresa/Perfil_empresa_edit";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
+import HackathonCalendario from "./pages/hackathonsCalendario/HackCalendario";
 import Planos from "./pages/planos/Planos";
 import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
 import DashBoardHome from "./pages/dashBoardHome/DashBoardHome";
@@ -64,7 +65,7 @@ function App() {
           <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
 
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
-          <Route path="/HackCalendario" element={<HackCalendario />} />
+          <Route path="/HackCalendario" element={<HackathonCalendario />} />
 
           <Route path="/Login" element={<Login />} />
 
