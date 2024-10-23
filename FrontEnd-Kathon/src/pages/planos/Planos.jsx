@@ -7,6 +7,7 @@ import CardBeneficios from "../../components/layout/props.planos/CardBeneficios"
 import Botton from "../../components/layout/props.planos/Botton"
 import Header from "../../components/layout/header/Header"
 import Footer from "../../components/layout/footer/Footer"
+import HomePlano from "../../components/layout/planoHome.props/HomePlano"
 
 function Planos() {
 
@@ -42,6 +43,15 @@ function Planos() {
                     </CardsPlanos>
                 </div>
             </div>
+           
+
+           <div className={Styles.homeplanopai}>
+                <HomePlano img={Esmeralda} alt="Esmeralda" />
+                <HomePlano img={Rubi} alt="Rubi"  />
+                <HomePlano img={Diamante} alt="Diamante"/>
+           </div>
+            
+
             <Footer/>
         </section>
     )

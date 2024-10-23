@@ -1,0 +1,25 @@
+.homeplanofilho {
+    width: 422px;
+    height: 268px;
+    flex-shrink: 0;
+    border-radius: 36px;
+    background: rgba(240, 240, 240, 0.10);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+}
+
+.planohomeimg{
+    display: flex;
+    margin:auto;
+    margin-top:70px;
+}
+
+.text1{
+    color: #13ECAB;
+
+}
+
+.text2{
+    color:#C24361;
+
+}
