@@ -224,6 +224,7 @@ video {
 
 .empresinhas:hover {
   transform: rotateY(360deg);
+  transition: 1s;
 }
 
 .caixaplanos {
