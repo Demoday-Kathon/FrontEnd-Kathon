@@ -7,7 +7,6 @@ import CardBeneficios from "../../components/layout/props.planos/CardBeneficios"
 import Botton from "../../components/layout/props.planos/Botton"
 import Header from "../../components/layout/header/Header"
 import Footer from "../../components/layout/footer/Footer"
-import HomePlano from "../../components/layout/planoHome.props/HomePlano"
 
 function Planos() {
 
