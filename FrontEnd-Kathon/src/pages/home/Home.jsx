@@ -185,7 +185,7 @@ function Home() {
           <Card_Recomendacao
             customClass="cardRecomendacaoHome"
             Perfil_foto={leticia}
-            Nome="Accenture "
+            Nome="Leticia Silva"
             Sub_titulo="“KATHON nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva que já estamos planejando o próximo hackathon.”"
           >
             <Button customClass="buttonBaixo3" text="Seja parceiro" />
