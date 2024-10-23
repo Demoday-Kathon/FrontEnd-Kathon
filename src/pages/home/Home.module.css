@@ -32,8 +32,14 @@
   display: flex;
   margin-bottom: 100px;
   width: 50%;
+  position: relative;
+  z-index: 1;
   justify-content: space-evenly;
   margin: auto;
+}
+
+.cadastrarBtn{
+  width: 40%;
 }
 
 /*Card preto da home logo no início*/

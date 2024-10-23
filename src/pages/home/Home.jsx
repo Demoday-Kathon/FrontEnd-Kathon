@@ -29,6 +29,9 @@ import rubi from "../../assets/imgs/rubi.svg";
 import diamante from "../../assets/imgs/diamante.svg";
 import { Link } from "react-router-dom";
 
+import { motion } from 'framer-motion'
+import { fadein } from '../../variants'
+
 function Home() {
   return (
     <div className={styles.home}>
@@ -43,7 +46,11 @@ function Home() {
           </div>
         </div>
         {/* fim do teste */}
-        <h1 className={styles.hometitle}>
+        <motion.h1 className={styles.hometitle}
+        variants={fadein('up', 0.5)}
+        initial='hidden'
+        whileInView={'show'}
+        >
           {" "}
           Desafios que{" "}
           <span>
@@ -51,9 +58,11 @@ function Home() {
             revelam <br />
           </span>{" "}
           soluções que <span>inovam</span>{" "}
-        </h1>
+        </motion.h1>
         <div className={styles.botoesHome}>
+         <div className={styles.cadastrarBtn}>
           <Button customClass="buttonBaixo" text="Cadastre-se" />
+         </div>
 
           <Button customClass="buttonBaixo2" text="Seja parceiro" />
         </div>
