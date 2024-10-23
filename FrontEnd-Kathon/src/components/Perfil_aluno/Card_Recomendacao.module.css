@@ -28,6 +28,8 @@
   font-family: "DM Sans";
   font-size: 20px;
   line-height: normal;
+  padding: 0 4vh;
+  text-align: left;
 }
 
 .cardRecomendacaoHome {
