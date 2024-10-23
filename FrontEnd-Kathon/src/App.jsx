@@ -48,14 +48,26 @@ function App() {
           <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
-          <Route path="/Perfil_empresa_edit" element={<Perfil_empresa_edit />} />
-          <Route path="/HackathonVisaoGeral" element={<HackathonVisaoGeral />} />
+          <Route
+            path="/Perfil_empresa_edit"
+            element={<Perfil_empresa_edit />}
+          />
+          <Route
+            path="/HackathonVisaoGeral"
+            element={<HackathonVisaoGeral />}
+          />
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
           <Route path="/Planos" element={<Planos />} />
           <Route path="/dashboardhome" element={<DashBoardHome />} />
-          <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
-          <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
-
+          <Route
+            path="/dashboardrecrutamento"
+            element={<DashboardRecrutamento />}
+          />
+          <Route
+            path="/dashboardassistenteia"
+            element={<DashboardAssistenteIA />}
+          />
+          <Route path="/cadastroEmpresa" element={<CadastroEmpresa />} />
         </Routes>
       </Router>
     </main>

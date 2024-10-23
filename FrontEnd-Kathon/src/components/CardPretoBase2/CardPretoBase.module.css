@@ -29,17 +29,17 @@
   width: 55%;
 }
 
-.menor:hover,  .maior:hover {
-    background: white;
-    height: auto;
-    margin: 20px auto;
-    transition: 500ms linear;
-    cursor: pointer;
-    color: black;
-    border: 1px solid #a367eb;
-  }
+.menor:hover,
+.maior:hover {
+  background: white;
+  height: auto;
+  margin: 20px auto;
+  transition: 500ms linear;
+  cursor: pointer;
+  color: black;
+  border: 1px solid #a367eb;
+}
 
-  
 .cardPretoForms {
   width: 70%;
   margin: auto;
