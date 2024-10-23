@@ -1,15 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.bg_container{
-    background-size: cover;
-    background-repeat: no-repeat;
+.bg_container {
     display: flex;
-    justify-content: space-evenly;
-    
-    margin-top: 80px;
-    margin-bottom: 100px;
+    flex-direction: row;
+}
+
+.hackathons {
+    width: 100%;
+    margin: auto;
+}
+
+.hometitulo {
+    margin: 1em auto 10px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 2.2em;
+    width: 75%;
+    padding: 1em;
+    font-weight: bold;
 }

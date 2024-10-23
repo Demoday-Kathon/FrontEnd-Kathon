@@ -165,14 +165,19 @@ function Home() {
             title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
             acounter="+150 participantes"
             timeline="20 dias restantes"
-          />
+          >
+
+            <Button text="Saiba Mais" customClass="buttonAzul" />
+          </Card>
           <Card
             banner={banner}
             company_hackathon={accenture}
             title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
             acounter="+150 participantes"
             timeline="20 dias restantes"
-          />
+          >
+            <Button text="Saiba Mais" customClass="buttonAzul" />
+          </Card>
         </div>
 
         <h1 className={styles.homeTitulo2}> QUEM JÁ PARTICIPOU, QUER MAIS</h1>

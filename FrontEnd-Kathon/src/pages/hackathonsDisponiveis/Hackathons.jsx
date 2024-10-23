@@ -6,24 +6,40 @@ import Header from '../../components/layout/header/Header'
 import Footer from '../../components/layout/footer/Footer'
 
 function Hackathons() {
-    
+
     return (
-        <>
-            <Header/>
-            <div className={styles.bg_container}>
-             <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos'  acounter='+150 participantes' timeline='20 dias restantes'/>
-             <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos'  acounter='+150 participantes' timeline='20 dias restantes'/>
-            </div>
-            <div className={styles.bg_container}>
-             <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos'  acounter='+150 participantes' timeline='20 dias restantes'/>
-             <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos'  acounter='+150 participantes' timeline='20 dias restantes'/>
-            </div>
-            <div className={styles.bg_container}>
-             <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos'  acounter='+150 participantes' timeline='20 dias restantes'/>
-             <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos'  acounter='+150 participantes' timeline='20 dias restantes'/>
-            </div>
-             <Footer/>
-        </>
+        <div className={styles.hackathons}>
+            <Header />
+            <container className={styles.homeTitulo}>
+
+                <div className={styles.bg_container}>
+                    <Card
+                        banner={banner}
+                        company_hackathon={accenture}
+                        title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
+                        acounter="+150 participantes"
+                        timeline="20 dias restantes"
+                    />
+                    <Card
+                        banner={banner}
+                        company_hackathon={accenture}
+                        title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
+                        acounter="+150 participantes"
+                        timeline="20 dias restantes"
+                    />
+                </div>
+                <div className={styles.bg_container}>
+                    <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos' acounter='+150 participantes' timeline='20 dias restantes' />
+                    <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos' acounter='+150 participantes' timeline='20 dias restantes' />
+                </div>
+                <div className={styles.bg_container}>
+                    <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos' acounter='+150 participantes' timeline='20 dias restantes' />
+                    <Card banner={banner} company_hackathon={accenture} title_hackathon='Hackathon Desvendado: Uma Explanação em Tópicos' acounter='+150 participantes' timeline='20 dias restantes' />
+                </div>
+            </container>
+
+            <Footer />
+        </div>
     )
 }
 
