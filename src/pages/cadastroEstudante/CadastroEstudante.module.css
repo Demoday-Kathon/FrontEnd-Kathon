@@ -9,8 +9,20 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding: 0.8em 1em 0.3em 1em;    
+    padding: 0.8em 1em 0.3em 1em;
+    flex-wrap: wrap;  
 }
+
+.divtextBrancoEscolhaHabilidadesTags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0.8em 1em 0.3em 1em;  
+
+}
+
 .divtextBrancoEscolhaHabilidades {
     display: flex;
     flex-direction: row;
@@ -34,3 +46,10 @@
 .submitBotao{
     text-decoration: none;
 }
+.tagsCadEstudante{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+

@@ -9,6 +9,7 @@ import Input from '../../components/Form/FormComponents/Input'
 import Select from '../../components/Form/FormComponents/Select'
 import SubmitButton from '../../components/Form/FormComponents/SubmitButton'
 import CardBrancoBase from  '../../components/CardBrancoBase/CardBrancoBase'
+import Tag from '../../components/layout/card/tag'
 import Footer from '../../components/layout/footer/Footer'
 
 
@@ -116,8 +117,16 @@ function CadastroEstudante() {
 
                     <Label customClass="labelFormsCadastro" text="Quais são seus conhecimentos??" />
                     <CardBrancoBase customClass="cardBrancoEscolhaHabilidades">
-                        <div  className={styles1.divtextBrancoEscolhaHabilidadesSelect}>
-                            <p className={styles1.textEscolhaHabilidadesSelect}> Selecione todas que desejar </p>
+                        <div  className={styles1.divtextBrancoEscolhaHabilidadesTags}>
+                            <div className={styles1.tagsCadEstudante}>
+                                <Tag text="Design"/>
+                                <Tag text="Comunicação" CustomClass="azul"/>
+                                <Tag text="Ilustração" CustomClass="lilasCad"/>
+                                <Tag text="Marketing" CustomClass="lilasCad"/>
+                                <Tag text="UI/UX" />
+                                <Tag text="Pesquisa" CustomClass="azul"/>
+                            </div>
+                            
                         </div>
                         <div  className={styles1.divtextBrancoEscolhaHabilidades}>
                             <p className={styles1.textEscolhaHabilidades}> Tecnologia </p>

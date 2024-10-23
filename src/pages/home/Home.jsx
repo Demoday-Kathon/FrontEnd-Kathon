@@ -210,6 +210,7 @@ function Home() {
         </motion.h1>
         <div className={styles.hackathonsDisponiveisHome}>
           <Card
+
             banner={banner}
             company_hackathon={accenture}
             title_hackathon="Hackathon Desvendando: Uma Explanação em Tópicos"

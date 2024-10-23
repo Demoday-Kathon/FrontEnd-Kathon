@@ -9,13 +9,16 @@
     font-weight: 600;
     line-height: normal;
     color: #FFF;
+    transition: 0.5s;
+    margin: 0.5em;
+    padding: 0.9em;
 }
 
 .azul{
     width: 250px;
     height: 50px;
     border-radius: 36px;
-    background: var(--Secundria, #314CE7);
+    background: #314CE7;
     font-family: "DM Sans";
     font-size: 22px;
     font-style: normal;
@@ -27,6 +30,19 @@
 
 .lilas{
     width: 400px;
+    height: 50px;
+    border-radius: 36px;
+    background: var(--Terciria-V, #A367EB);
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #FFF;
+}
+
+.lilasCad {
+    width: auto;
     height: 50px;
     border-radius: 36px;
     background: var(--Terciria-V, #A367EB);
