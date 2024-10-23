@@ -20,7 +20,7 @@ function Comunidades() {
                 <div className={styles.blocoInterno}>
                     <img className={styles.BannerIMG} src={BannerIMG} alt="Banner" />
                     <div className={styles.containeFeedComunity}>
-                        <Feed>
+                        <Feed >
                             <Post
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}

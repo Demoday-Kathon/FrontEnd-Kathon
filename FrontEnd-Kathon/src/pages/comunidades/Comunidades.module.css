@@ -12,7 +12,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 88%;
+    width: 80%;
     min-height: 100vh;
 }
 
@@ -61,7 +61,7 @@
     justify-content: center;
     align-items: flex-end;
     margin-right: 40px;
-    width: 60%;
+    width: 50%;
     gap: 5vh;
     height: 50vh;
 }
@@ -171,9 +171,13 @@
 }
 
 .headerlateral{
-    width: 30%;
+    width: 20%;
     height: 30vh;
 }
 
 
+.ContaineFeedComunity{
+    width: 60%;
+    
+}
 
