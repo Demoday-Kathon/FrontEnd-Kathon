@@ -195,7 +195,7 @@ function Home() {
             customClass="cardRecomendacaoHome"
             Perfil_foto={Abel}
             Nome="João Carlos Pereira"
-            Sub_titulo="O KATHON foi uma oportunidade única de colocar em prática tudo o que aprendi e ainda conhecer profissionais incríveis. Recomendo a todos "
+            Sub_titulo="“O KATHON foi uma oportunidade única de colocar em prática tudo o que aprendi e ainda conhecer profissionais incríveis. Recomendo a todo que participem”"
           >
             <Button customClass="buttonBaixo3" text="Iniciar" />
           </Card_Recomendacao>
