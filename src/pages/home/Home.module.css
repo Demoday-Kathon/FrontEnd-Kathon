@@ -38,7 +38,7 @@
   margin: auto;
 }
 
-.cadastrarBtn{
+.cadastrarBtn {
   width: 40%;
 }
 
@@ -354,14 +354,45 @@ video {
   transform-style: preserve-3d;
 }
 
-.cardPretoMenor{
+.cardPretoMenor {
   width: 43%;
 }
 
-.cardPretoMenor4{
+.cardPretoMenor4 {
   width: 43%;
 }
 
-.cardPretoMaior{
+.cardPretoMaior {
   width: 55%;
+}
+
+.solucoes {
+  position: relative;
+  left: -230px;
+  top: 70px;
+  border: 1px solid #a367eb;
+  width: 42%;
+  font-size: 0.83em;
+  color: #a367eb;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 3;
+  background-color: black;
+  font-weight: normal;
+  padding: 4px;
+}
+
+.jobequip {
+  position: relative;
+  left: 720px;
+  border: 1px solid #a367eb;
+  width: 42%;
+  font-size: 0.83em;
+  color: #a367eb;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 3;
+  background-color: black;
+  font-weight: normal;
+  padding: 4px;
 }
