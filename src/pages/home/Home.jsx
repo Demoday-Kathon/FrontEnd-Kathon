@@ -29,8 +29,8 @@ import rubi from "../../assets/imgs/rubi.svg";
 import diamante from "../../assets/imgs/diamante.svg";
 import { Link } from "react-router-dom";
 
-import { motion } from 'framer-motion'
-import { fadein } from '../../variants'
+import { motion } from "framer-motion";
+import { fadein } from "../../variants";
 
 function Home() {
   return (
@@ -46,10 +46,11 @@ function Home() {
           </div>
         </div>
         {/* fim do teste */}
-        <motion.h1 className={styles.hometitle}
-        variants={fadein('up', 0.5)}
-        initial='hidden'
-        whileInView={'show'}
+        <motion.h1
+          className={styles.hometitle}
+          variants={fadein("up", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
         >
           {" "}
           Desafios que{" "}
@@ -60,11 +61,25 @@ function Home() {
           soluções que <span>inovam</span>{" "}
         </motion.h1>
         <div className={styles.botoesHome}>
-         <div className={styles.cadastrarBtn}>
-          <Button customClass="buttonBaixo" text="Cadastre-se" />
-         </div>
+          <motion.div
+            className={styles.cadastrarBtn}
+            variants={fadein("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.9 }}
+          >
+            <Button customClass="buttonBaixo" text="Cadastre-se" />
+          </motion.div>
 
-          <Button customClass="buttonBaixo2" text="Seja parceiro" />
+          <motion.div
+            className={styles.cadastrarBtn}
+            variants={fadein("left", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.9 }}
+          >
+            <Button customClass="buttonBaixo2" text="Seja parceiro" />
+          </motion.div>
         </div>
 
         <hr
@@ -88,7 +103,16 @@ function Home() {
           }}
         />
 
-        <div className={styles.cardPretoHome}>
+        <motion.div
+          className={styles.cardPretoHome}
+          variants={fadein("right", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.1 }}
+        >
+          <div className={styles.jobequip}>
+            <p>Trabalho em equipe</p>
+          </div>
           <h1 className={styles.tituloCardPreto}>O que é Hackathon?</h1>
           <p className={styles.descHackathonHome}>
             Hackathon é um evento no qual equipes colaboram para criar{" "}
@@ -115,18 +139,25 @@ function Home() {
               text="Premiações"
             />
           </div>
-        </div>
+          <div className={styles.solucoes}>
+            <p>Soluções inovadoras</p>
+          </div>
+        </motion.div>
 
         <div className={styles.areaBotao}>
-          <Link to={"/hackathons"} className={styles.BotaoDescobrirHackathons}>
-            <Button customClass="buttonRoxo" text="Descobrir Hackathons" />
-          </Link>
+          <Button customClass="buttonRoxo" text="Descobrir Hackathons" />
         </div>
 
-        <h1 className={styles.homeTitulo2}>
+        <motion.h1
+          className={styles.homeTitulo2}
+          variants={fadein("up", 0.9)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.1 }}
+        >
           Explore suas{" "}
           <span className={styles.spanHabilidade}> habilidades </span>
-        </h1>
+        </motion.h1>
 
         <div className={styles.botoesHome2}>
           <BotaoHome
@@ -167,7 +198,16 @@ function Home() {
           />
         </div>
 
-        <h1 className={styles.homeTitulo2}> HACKATHONS DISPONÍVEIS </h1>
+        <motion.h1
+          className={styles.homeTitulo2}
+          variants={fadein("up", 0.9)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.1 }}
+        >
+          {" "}
+          HACKATHONS DISPONÍVEIS{" "}
+        </motion.h1>
         <div className={styles.hackathonsDisponiveisHome}>
           <Card
             banner={banner}
@@ -189,7 +229,16 @@ function Home() {
           </Card>
         </div>
 
-        <h1 className={styles.homeTitulo2}> QUEM JÁ PARTICIPOU, QUER MAIS</h1>
+        <motion.h1
+          className={styles.homeTitulo2}
+          variants={fadein("up", 0.9)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.1 }}
+        >
+          {" "}
+          QUEM JÁ PARTICIPOU, QUER MAIS
+        </motion.h1>
         <div className={styles.coments}>
           <Card_Recomendacao
             customClass="cardRecomendacaoHome"
@@ -210,124 +259,234 @@ function Home() {
           </Card_Recomendacao>
         </div>
 
-        <h1 className={styles.homeTitulo2}>
+        <motion.h1
+          className={styles.homeTitulo2}
+          variants={fadein("up", 0.9)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.1 }}
+        >
           A conexão entre o{" "}
           <span className={styles.spanHabilidade2}> Talento Jovem </span> e a{" "}
           <span className={styles.spanHabilidade2}> Solução </span> dos seus
           desafios
-        </h1>
+        </motion.h1>
 
         <div className={styles.caixaCardsPreta}>
-          <CardPretoBase customClass="menor">
-            <BotaoHome
-              customClass="iconCardPreto"
-              icon={
-                <IoStatsChart
-                  style={{ color: "#A367EB", marginRight: "0.5em" }}
-                />
-              }
-              alt="icone de sifrão"
-              text="Visibilidade"
-            />
-            <h1 className={styles.tituloCardPretoTalentos}>Visibilidade</h1>
-            <p className={styles.descCardPretoTalentos}>
-              Aumente a visibilidade da sua marca e atraia novos clientes e
-              talentos.
-            </p>
-          </CardPretoBase>
+          <motion.div
+            className={styles.cardPretoMenor}
+            variants={fadein("right", 0.9)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.1 }}
+          >
+            <CardPretoBase customClass="menor">
+              <BotaoHome
+                customClass="iconCardPreto"
+                icon={
+                  <IoStatsChart
+                    style={{ color: "#A367EB", marginRight: "0.5em" }}
+                  />
+                }
+                alt="icone de sifrão"
+                text="Visibilidade"
+              />
+              <h1 className={styles.tituloCardPretoTalentos}>Visibilidade</h1>
+              <p className={styles.descCardPretoTalentos}>
+                Aumente a visibilidade da sua marca e atraia novos clientes e
+                talentos.
+              </p>
+            </CardPretoBase>
+          </motion.div>
 
-          <CardPretoBase customClass="maior">
-            <BotaoHome
-              customClass="iconCardPreto"
-              icon={
-                <TbWorld style={{ color: "#A367EB", marginRight: "0.5em" }} />
-              }
-              alt="icone de alarme"
-              text="Talentos"
-            />
-            <h1 className={styles.tituloCardPretoTalentos}>
-              Descoberta de novos talentos
-            </h1>
-            <p className={styles.descCardPretoTalentos}>
-              Identifique jovens com habilidades excepcionais e potencial para
-              impulsionar seu negócio.
-            </p>
-          </CardPretoBase>
+          <motion.div
+            className={styles.cardPretoMaior}
+            variants={fadein("right", 0.9)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.1 }}
+          >
+            <CardPretoBase customClass="maior">
+              <BotaoHome
+                customClass="iconCardPreto"
+                icon={
+                  <TbWorld style={{ color: "#A367EB", marginRight: "0.5em" }} />
+                }
+                alt="icone de alarme"
+                text="Talentos"
+              />
+              <h1 className={styles.tituloCardPretoTalentos}>
+                Descoberta de novos talentos
+              </h1>
+              <p className={styles.descCardPretoTalentos}>
+                Identifique jovens com habilidades excepcionais e potencial para
+                impulsionar seu negócio.
+              </p>
+            </CardPretoBase>
+          </motion.div>
 
-          <CardPretoBase customClass="maior">
-            <BotaoHome
-              customClass="iconCardPreto"
-              icon={
-                <MdOutlineLaptopMac
-                  style={{ color: "#A367EB", marginRight: "0.5em" }}
-                />
-              }
-              alt="icone de sifrão"
-              text="Inovação"
-            />
-            <h1 className={styles.tituloCardPretoTalentos}>
-              Cultura de Inovação
-            </h1>
-            <p className={styles.descCardPretoTalentos}>
-              Estimule a cultura de inovação dentro da sua empresa e inspire
-              seus colaboradores
-            </p>
-          </CardPretoBase>
+          <motion.div
+            className={styles.cardPretoMaior}
+            variants={fadein("left", 0.9)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.1 }}
+          >
+            <CardPretoBase customClass="maior">
+              <BotaoHome
+                customClass="iconCardPreto"
+                icon={
+                  <MdOutlineLaptopMac
+                    style={{ color: "#A367EB", marginRight: "0.5em" }}
+                  />
+                }
+                alt="icone de sifrão"
+                text="Inovação"
+              />
+              <h1 className={styles.tituloCardPretoTalentos}>
+                Cultura de Inovação
+              </h1>
+              <p className={styles.descCardPretoTalentos}>
+                Estimule a cultura de inovação dentro da sua empresa e inspire
+                seus colaboradores
+              </p>
+            </CardPretoBase>
+          </motion.div>
 
-          <CardPretoBase customClass="menor">
-            <BotaoHome
-              customClass="iconCardPreto"
-              icon={
-                <FaUsers style={{ color: "#A367EB", marginRight: "0.5em" }} />
-              }
-              alt="icone de alarme"
-              text="Resolução"
-            />
-            <h1 className={styles.tituloCardPretoTalentos}>
-              Resolução rápida de problemas
-            </h1>
-            <p className={styles.descCardPretoTalentos}>
-              Obtenha soluções inovadoras para seus desafios.
-            </p>
-          </CardPretoBase>
+          <motion.div
+            className={styles.cardPretoMenor4}
+            variants={fadein("left", 0.9)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.1 }}
+          >
+            <CardPretoBase customClass="menor">
+              <BotaoHome
+                customClass="iconCardPreto"
+                icon={
+                  <FaUsers style={{ color: "#A367EB", marginRight: "0.5em" }} />
+                }
+                alt="icone de alarme"
+                text="Resolução"
+              />
+              <h1 className={styles.tituloCardPretoTalentos}>
+                Resolução de problemas
+              </h1>
+              <p className={styles.descCardPretoTalentos}>
+                Obtenha soluções inovadoras para seus desafios.
+              </p>
+            </CardPretoBase>
+          </motion.div>
         </div>
 
-        <h1 className={styles.homeTitulo2}> Planos Empresariais</h1>
+        <motion.h1
+          className={styles.homeTitulo2}
+          variants={fadein("up", 0.9)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.1 }}
+        >
+          {" "}
+          Planos Empresariais
+        </motion.h1>
 
-        <div className={styles.caixaplanos}>
-          <div className={styles.caixinhaplanos1}>
+        <motion.div
+          className={styles.caixaplanos}
+          variants={fadein("right", 0.9)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.1 }}
+        >
+          <motion.div
+            className={styles.caixinhaplanos1}
+            variants={fadein("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+          >
             {" "}
             <img src={esmeralda} alt="" className={styles.pedrinhas} />{" "}
             <p>Esmeralda</p>
-          </div>
-          <div className={styles.caixinhaplanos2}>
+          </motion.div>
+          <motion.div
+            className={styles.caixinhaplanos2}
+            variants={fadein("up", 0.6)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.8 }}
+          >
             <img src={rubi} alt="" className={styles.pedrinhas} />
             <p>Rubi</p>
-          </div>
-          <div className={styles.caixinhaplanos3}>
+          </motion.div>
+          <motion.div
+            className={styles.caixinhaplanos3}
+            variants={fadein("up", 0.9)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.9 }}
+          >
             <img src={diamante} alt="" className={styles.pedrinhas} />
             <p>Diamante</p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <h1 className={styles.homeTitulo2}> Empresas Parceiras</h1>
+        <motion.h1
+          className={styles.homeTitulo2}
+          variants={fadein("up", 0.9)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.1 }}
+        >
+          {" "}
+          Empresas Parceiras
+        </motion.h1>
 
         <ul className={styles.listCompanyHome}>
-          <li className={styles.patrociEmpresas}>
+          <motion.li
+            className={styles.patrociEmpresas}
+            variants={fadein("right", 0.9)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.1 }}
+          >
             <img src={accenture} alt="" className={styles.empresinhas} />
-          </li>
-          <li className={styles.patrociEmpresas}>
+          </motion.li>
+          <motion.li
+            className={styles.patrociEmpresas}
+            variants={fadein("right", 0.9)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.1 }}
+          >
             <img src={pagbank} alt="" className={styles.empresinhas} />
-          </li>
-          <li className={styles.patrociEmpresas}>
+          </motion.li>
+          <motion.li
+            className={styles.patrociEmpresas}
+            variants={fadein("right", 0.9)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.1 }}
+          >
             <img src={oracle} alt="" className={styles.empresinhas} />
-          </li>
-          <li className={styles.patrociEmpresas}>
+          </motion.li>
+          <motion.li
+            className={styles.patrociEmpresas}
+            variants={fadein("right", 0.9)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.1 }}
+          >
             <img src={ibm} alt="" className={styles.empresinhas} />
-          </li>
-          <li className={styles.patrociEmpresas}>
+          </motion.li>
+          <motion.li
+            className={styles.patrociEmpresas}
+            variants={fadein("right", 0.9)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.1 }}
+          >
             <img src={adidas} alt="" className={styles.empresinhas} />
-          </li>
+          </motion.li>
         </ul>
       </container>
       <Footer />
