@@ -162,7 +162,7 @@ function Home() {
           <Card
             banner={banner}
             company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
+            title_hackathon="Hackathon Desvendando: Uma Explanação em Tópicos"
             acounter="+150 participantes"
             timeline="20 dias restantes"
           >
@@ -172,7 +172,7 @@ function Home() {
           <Card
             banner={banner}
             company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
+            title_hackathon="Hackathon Desvendando: Uma Explanação em Tópicos"
             acounter="+150 participantes"
             timeline="20 dias restantes"
           >
@@ -185,7 +185,7 @@ function Home() {
           <Card_Recomendacao
             customClass="cardRecomendacaoHome"
             Perfil_foto={leticia}
-            Nome="Accenture "
+            Nome="Leticia Silva"
             Sub_titulo="“KATHON nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva que já estamos planejando o próximo hackathon.”"
           >
             <Button customClass="buttonBaixo3" text="Seja parceiro" />
