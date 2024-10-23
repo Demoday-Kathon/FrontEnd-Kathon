@@ -56,7 +56,6 @@ function Home() {
                 <hr style={{ width: "75%", margin: "6em 6em", position: "absolute", zIndex: 111, opacity: "30%" }} />
 
 
-
                 <div className={styles.cardPretoHome}>
                     <h1 className={styles.tituloCardPreto}>O que é hackathon?</h1>
                     <p className={styles.descHackathonHome}>
