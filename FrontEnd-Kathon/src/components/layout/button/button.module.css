@@ -42,14 +42,20 @@
 
 .buttonHeader {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.2em;
+  padding-right: 0.7em;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
-.buttonHeader text {
-  margin: 0.5em;
+.buttonHeader:hover {
+  background-color: #7400b7;
+  color: #fff;
+}
+
+.buttonHeader p {
+  margin-right:0.5em;
 }
 
 .buttonBaixo {
