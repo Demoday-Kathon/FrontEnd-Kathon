@@ -24,7 +24,7 @@ function CardPreto({ title, context, mentors, sponsors }) {
     },
     {
       duvida: "Quando e onde é o evento?",
-      resposta: `pipipipipipip`,
+      resposta: `No Senac localizado na Lapa Tito, 54, no dia 2 de novembro de 2024. `,
     },
     {
       duvida: "Preciso de conhecimento técnico para participar?",
@@ -32,7 +32,7 @@ function CardPreto({ title, context, mentors, sponsors }) {
     },
     {
       duvida: "Qual o prêmio do Hackathon?",
-      resposta: `pipipipipipi`,
+      resposta: `Hackathon de inovaTI terá R$ 52,5 mil em prêmios.`,
     },
     {
       duvida: "Preciso de conhecimento técnico para participar?",
@@ -40,7 +40,7 @@ function CardPreto({ title, context, mentors, sponsors }) {
     },
     {
       duvida: "Ganha algum certificado?",
-      resposta: `PIPIPIPIPIPI`,
+      resposta: `Sim, o vencedor terá uma certificado de conclusão junto com o prêmio.`,
     },
   ];
   return (

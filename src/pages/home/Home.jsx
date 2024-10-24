@@ -83,7 +83,6 @@ function Home() {
             <Button customClass="buttonBaixo2" text="Seja parceiro" />
           </motion.div>
         </div>
-
         <hr
           style={{
             width: "75%",
@@ -104,7 +103,6 @@ function Home() {
             opacity: "30%",
           }}
         />
-
         <motion.div
           className={styles.cardPretoHome}
           variants={fadein("right", 0.3)}
@@ -145,13 +143,11 @@ function Home() {
             <p>Soluções inovadoras</p>
           </div>
         </motion.div>
-
         <div className={styles.areaBotao}>
           <LinkComponent linkTo={"/Hackathons"}>
             <Button customClass="buttonRoxo" text="Descobrir Hackathons" />
           </LinkComponent>
         </div>
-
         <motion.h1
           className={styles.homeTitulo2}
           variants={fadein("up", 0.9)}
@@ -162,7 +158,6 @@ function Home() {
           Explore suas{" "}
           <span className={styles.spanHabilidade}> habilidades </span>
         </motion.h1>
-
         <div className={styles.botoesHome2}>
           <BotaoHome
             customClass="iconCardSecundario"
@@ -201,7 +196,6 @@ function Home() {
             text="Oportunidades"
           />
         </div>
-
         <motion.h1
           className={styles.homeTitulo2}
           variants={fadein("up", 0.9)}
@@ -214,7 +208,6 @@ function Home() {
         </motion.h1>
         <div className={styles.hackathonsDisponiveisHome}>
           <Card
-
             banner={banner}
             company_hackathon={accenture}
             title_hackathon="Hackathon Desvendando: Uma Explanação em Tópicos"
@@ -237,7 +230,7 @@ function Home() {
             </LinkComponent>
           </Card>
         </div>
-
+        <Button text="Veja mais" customClass="vejahackahton" />
         <motion.h1
           className={styles.homeTitulo2}
           variants={fadein("up", 0.9)}
@@ -265,11 +258,10 @@ function Home() {
             Sub_titulo="“Participar do hackathon com a KATHON foi uma experiência incrível! Trabalhei com uma equipe talentosa, aprendi muito e me senti desafiado. Mal posso esperar pelo próximo!”"
           >
             <LinkComponent linkTo={"/Login"}>
-                <Button customClass="buttonBaixo3" text="Iniciar" />
+              <Button customClass="buttonBaixo3" text="Iniciar" />
             </LinkComponent>
           </Card_Recomendacao>
         </div>
-
         <motion.h1
           className={styles.homeTitulo2}
           variants={fadein("up", 0.9)}
@@ -282,7 +274,6 @@ function Home() {
           <span className={styles.spanHabilidade2}> Solução </span> dos seus
           desafios
         </motion.h1>
-
         <div className={styles.caixaCardsPreta}>
           <motion.div
             className={styles.cardPretoMenor}
@@ -389,7 +380,6 @@ function Home() {
             </CardPretoBase>
           </motion.div>
         </div>
-
         <motion.h1
           className={styles.homeTitulo2}
           variants={fadein("up", 0.9)}
@@ -400,7 +390,6 @@ function Home() {
           {" "}
           Planos Empresariais
         </motion.h1>
-
         <motion.div
           className={styles.caixaplanos}
           variants={fadein("right", 0.9)}
@@ -440,7 +429,7 @@ function Home() {
             <p>Diamante</p>
           </motion.div>
         </motion.div>
-
+        <Button text="Conheça os planos" customClass="buttonPlaninhos" />
         <motion.h1
           className={styles.homeTitulo2}
           variants={fadein("up", 0.9)}
@@ -451,7 +440,6 @@ function Home() {
           {" "}
           Empresas Parceiras
         </motion.h1>
-
         <ul className={styles.listCompanyHome}>
           <motion.li
             className={styles.patrociEmpresas}
