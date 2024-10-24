@@ -33,7 +33,7 @@
     gap: 4vh;
 }
 
-.ContainerLinksNav a{
+.ContainerLinksNav .a{
     width: 13rem;
     height: 3rem;
     background-color: #fff;
@@ -54,7 +54,7 @@
     height: 25px;
 }
 
-a span{
+.a span{
     color: #000000;
     font-family: "DM Sans", sans-serif;
     font-weight: bold;
@@ -63,11 +63,15 @@ a span{
     width: 65%;
 }
 
-.ContainerLinksNav a:hover{
+.ContainerLinksNav .a:hover{
     background-color: #A367EB;
 }
 a:hover span{
     color: #fff;
+}
+
+.ContainerLinksNav .active{
+    background-color: #A367EB;
 }
 
 

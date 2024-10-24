@@ -6,6 +6,9 @@ import logoAnalise from '../../../assets/imgs/icones/chart.png'
 import logoRecruit from '../../../assets/imgs/icones/group.png'
 import logoComunidades from '../../../assets/imgs/icones/HouseDoorFill.png'
 
+import { Link } from 'react-router-dom'
+import { style } from 'framer-motion/client';
+
 function HeaderRecrutamento (){
     return (
         <>
@@ -14,26 +17,26 @@ function HeaderRecrutamento (){
                     <img src={LogoKathon} alt="logoKathon" className={Styles.LogoKathon}/>
                 </div>
                 <nav className={Styles.ContainerLinksNav}>
-                    <a href="#">
+                    <Link to='/dashboardhome' className={Styles.a}>
                         <img src={logoDashboard} alt="icone"className={Styles.icons}/>
                         <span>Dashboard</span>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to='#' className={Styles.a}>
                         <img src={logoHack} alt="icone"className={Styles.icons}/>
                         <span>Hackathons</span>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to='#' className={Styles.a}>
                         <img src={logoAnalise} alt="icone"className={Styles.icons}/>
                         <span>Análise Geral</span>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to='/dashboardassistenteia' className={Styles.a}>
                         <img src={logoRecruit} alt="icone"className={Styles.icons}/>
                         <span>Recrutamento</span>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to='#' className={Styles.a}>
                         <img src={logoComunidades} alt="icone"className={Styles.icons}/>
                         <span>Feeds</span>
-                    </a>
+                    </Link>
                 </nav>
             </div>
         </>
