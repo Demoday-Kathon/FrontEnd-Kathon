@@ -8,7 +8,8 @@
     width: 80%;
     height: 180vh;
     padding-left: 80px;
-    margin-bottom: 4vh;
+    margin-bottom: 20vh;
+    margin-top: 13vh;
   }
 
 .container_premio{
@@ -27,7 +28,43 @@
   }
 
 .premiacao{
+  width: 90%;
+  height: 30vh;
   display: flex;
-  justify-content: space-evenly;
-  margin: 10px 0px 30px -50px;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.premio{
+  width: 25%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  color: rgba(240, 240, 240, 0.90);
+
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+}
+
+.desc_grande{
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+.desc_grande2{
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
 }
