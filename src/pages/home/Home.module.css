@@ -372,34 +372,39 @@ video {
   position: relative;
   left: -230px;
   top: 70px;
-  border: 1px solid #a367eb;
+  border: 1px solid white;
   width: 42%;
   font-size: 0.83em;
-  color: #a367eb;
+  color: white;
   border-radius: 30px;
   text-align: center;
   z-index: 3;
   background-color: black;
   font-weight: normal;
   padding: 4px;
+  border-radius: 0.8em;
+  font-size: 0.8em;
+  padding: 0.4em;
 }
 
 .jobequip {
   position: relative;
   left: 720px;
-  border: 1px solid #a367eb;
+  border: 2px solid white;
   width: 42%;
-  font-size: 0.83em;
-  color: #a367eb;
-  border-radius: 30px;
+  color: white;
   text-align: center;
   z-index: 3;
   background-color: black;
   font-weight: normal;
-  padding: 4px;
+  border-radius: 0.8em;
+  font-size: 0.8em;
+  padding: 0.4em;
+  
 }
 
 .BotaoDescobrirHackathons{
   width: 50vh;
   text-decoration: none;
 }
+

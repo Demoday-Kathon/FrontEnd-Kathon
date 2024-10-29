@@ -123,16 +123,16 @@ function Home() {
             <BotaoHome
               icon={
                 <IoIosAlarm
-                  style={{ color: "#553375", marginRight: "0.5em" }}
+                  style={{ color: "white", marginRight: "0.5em" }}
                 />
               }
               alt="icone de alarme"
               text="Duração de 24h a 72h"
             />
-            <BotaoHome
+            <BotaoHome 
               icon={
                 <FaDollarSign
-                  style={{ color: "#553375", marginRight: "0.5em" }}
+                  style={{ color: "white", marginRight: "0.5em" }}
                 />
               }
               alt="icone de sifrão"

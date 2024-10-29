@@ -48,7 +48,7 @@
 .menor:hover, 
 .maior:hover {
   background-color: black;
-  border: 2px white;
+  border: 1px #a367eb solid;
   border-radius: 1em;
   padding: 2.3em;
   font-size: 0.6em;
