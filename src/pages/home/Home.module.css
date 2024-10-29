@@ -408,3 +408,6 @@ video {
   text-decoration: none;
 }
 
+.home {
+  background-image: url(../../assets/imgs/home_fundo.png);
+}
