@@ -120,4 +120,6 @@
 
 .cardHackscustom:hover {
   transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
+  transition: 1s;
+  cursor: pointer;
 }
