@@ -65,7 +65,7 @@ function App() {
           <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
 
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
-          <Route path="/HackCalendario" element={<HackathonCalendario />} />
+          <Route path="/hackathonsCalendario" element={<HackathonCalendario />} />
 
           <Route path="/Login" element={<Login />} />
 
