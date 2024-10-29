@@ -366,16 +366,16 @@ function Home() {
               <BotaoHome
                 customClass="iconCardPreto"
                 icon={
-                  <FaUsers style={{ color: "#A367EB", marginRight: "0.5em" }} />
+                  <IoStatsChart
+                    style={{ color: "#A367EB", marginRight: "0.5em" }}
+                  />
                 }
-                alt="icone de alarme"
-                text="Resolução"
+                alt="icone de sifrão"
+                text="Visibilidade"
               />
-              <h1 className={styles.tituloCardPretoTalentos}>
-                Resolução de problemas
-              </h1>
+              <h1 className={styles.tituloCardPretoTalentos}>Resolução de problemas</h1>
               <p className={styles.descCardPretoTalentos}>
-                Obtenha soluções inovadoras para seus desafios.
+              Obtenha soluções inovadoras para seus desafios.
               </p>
             </CardPretoBase>
           </motion.div>

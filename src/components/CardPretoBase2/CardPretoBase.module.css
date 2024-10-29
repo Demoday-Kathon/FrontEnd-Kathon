@@ -1,6 +1,7 @@
+ /* MEXER NOS CARD CORRETAMENTE PARA ARRUMAR ALINHAMENTO */
 .cardPretoBase {
-  background-color: black;
-  border: 1px #a367eb solid;
+  background-color: white;
+  border: 1px blue;
   border-radius: 1em;
   padding: 2.3em;
   font-size: 0.6em;
@@ -9,6 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
+  color: black;
 }
 
 /* .cardPretoBase:hover {
@@ -23,13 +25,15 @@
 
 .menor {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .maior {
   width: 100%;
+  margin: 0%;
 }
 
-.menor:hover,
+/* .menor:hover,
 .maior:hover {
   background: white;
   height: auto;
@@ -38,6 +42,25 @@
   cursor: pointer;
   color: black;
   border: 1px solid #a367eb;
+} */
+
+ /* MEXER NOS CARD CORRETAMENTE PARA ARRUMAR ALINHAMENTO */
+.menor:hover, 
+.maior:hover {
+  background-color: black;
+  border: 2px white;
+  border-radius: 1em;
+  padding: 2.3em;
+  font-size: 0.6em;
+  text-align: left;
+  margin: 0.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+
 }
 
 .cardPretoForms {
