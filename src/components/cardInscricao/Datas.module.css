@@ -52,7 +52,7 @@
   line-height: 18px; /* 100% */
 }
 .hours {
-  color: var(--Terciria, #66c2fa);
+  color: var(--Terciria, #06F8FA);
   font-family: "DM Sans";
   font-size: 18px;
   font-style: normal;
@@ -86,7 +86,7 @@
 }
 
 .butoncard:hover {
-  background-color: var(--Terciria, #66c2fa);
+  background-color: var(--Terciria, #06F8FA);
 }
 
 

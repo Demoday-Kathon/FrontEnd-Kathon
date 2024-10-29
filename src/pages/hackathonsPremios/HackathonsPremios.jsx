@@ -1,5 +1,5 @@
 import Premio from '../../components/Prêmios/Prêmios'
-import trofeu from '../../assets/imgs/trofeu.png'
+import trofeus from '../../assets/imgs/trofeus.png'
 import styles from '../hackathonsPremios/HackathonsPremios.module.css'
 import Premios from '../../components/layout/cardPreto/CardPessoas'
 import Oculus from '../../assets/imgs/oculus_quest.png'
@@ -20,13 +20,13 @@ function premios (){
         <div className={styles.container_p}>
             <h1 className={styles.text_premio}> Total de Prêmios</h1>
             <div className={styles.container_premio}>
-            <Premio img={trofeu} title='1° Lugar' context='Para todos os participantes da equipe: (até 5 pessoas)' desc_premios='- 1 Oculus Quest 2 Advanced All-in-One VR 128 GB (Branco)- 1 Accenture Cloud Fast Academy (1 semana, 100% remoto)- 4 encontros de mentoria com a Aliança Empreendedora (100% remoto)'/>
+            <Premio img={trofeus} title='1° Lugar' context='Para todos os participantes da equipe: (até 5 pessoas)' desc_premios='- 1 Oculus Quest 2 Advanced All-in-One VR 128 GB (Branco)- 1 Accenture Cloud Fast Academy (1 semana, 100% remoto)- 4 encontros de mentoria com a Aliança Empreendedora (100% remoto)'/>
             <br />
-            <Premio img={trofeu} title='2° Lugar' context='Para todos os participantes da equipe: (até 5 pessoas)' desc_premios='- 1 Galaxy Buds2 Pro da Samsung 
+            <Premio img={trofeus} title='2° Lugar' context='Para todos os participantes da equipe: (até 5 pessoas)' desc_premios='- 1 Galaxy Buds2 Pro da Samsung 
             - 1 Accenture Cloud Fast Academy (1 semana, 100% remoto) 
             - 4 encontros de mentoria com a Aliança Empreendedora (100% remoto)'/>
             <br />
-            <Premio img={trofeu} title='3° Lugar' context='Para todos os participantes da equipe: (até 5 pessoas)' desc_premios='- 1 Alexa - Echo Dot (4ª Geração) - 1 Smart Speaker com Alexa | Música, informação e Casa Inteligente 
+            <Premio img={trofeus} title='3° Lugar' context='Para todos os participantes da equipe: (até 5 pessoas)' desc_premios='- 1 Alexa - Echo Dot (4ª Geração) - 1 Smart Speaker com Alexa | Música, informação e Casa Inteligente 
             - 1 Accenture Cloud Fast Academy (1 semana, 100% remoto) - 4 encontros de mentoria com a Aliança Empreendedora (100% remoto)'/>
             </div>
             <div className={styles.premiacao}>

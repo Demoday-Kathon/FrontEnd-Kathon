@@ -7,6 +7,7 @@
   width: 60%;
   margin-top: 50px;
   height: auto;
+  margin-left: 16px;
 }
 
 .hack {
@@ -75,13 +76,13 @@
 }
 
 .patro {
-  width: 80%;
+  width: 60%;
   height: auto;
   display: flex;
   flex-direction: row;
   margin-top: 40px;
   margin-left: 110px;
-  gap: 80px;
+  gap: 50px;
 }
 
 .faqs {
