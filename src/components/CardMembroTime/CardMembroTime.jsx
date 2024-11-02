@@ -7,17 +7,17 @@ function CardMembroTime({ photo, linkedin, github, description, name }) {
         <div className={Styles.CardMember}>
             <img className={Styles.ImageMember} src={photo} alt="Foto do membro" />
             <h3 className={Styles.TitlesNameMember}>{name}</h3>
-            <p className='Styles.'>{description}</p>
+            <p className={Styles.descriptionMember}>{description}</p>
 
-            <div>
+            <div className={Styles.ContainerImageLogo}>
 
                 <a target='_blank' href={linkedin}>
-                <img src={LinkedinImage} alt="Logo Linkedin" />
+                <img className={Styles.ImageLogo} src={LinkedinImage} alt="Logo Linkedin" />
                 </a>
             
 
                 <a target='_blank' href={github}>
-                <img src={GithubImage} alt="Logo Linkedin" />
+                <img className={Styles.ImageLogo} src={GithubImage} alt="Logo Linkedin" />
                 </a>
             </div>
         </div>
