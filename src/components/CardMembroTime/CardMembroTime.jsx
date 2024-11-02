@@ -6,8 +6,8 @@ function CardMembroTime({ photo, linkedin, github, description, name }) {
     return(
         <div className={Styles.CardMember}>
             <img className={Styles.ImageMember} src={photo} alt="Foto do membro" />
-            <h3>{name}</h3>
-            <p>{description}</p>
+            <h3 className={Styles.TitlesNameMember}>{name}</h3>
+            <p className='Styles.'>{description}</p>
 
             <div>
 
