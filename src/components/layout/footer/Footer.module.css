@@ -66,3 +66,22 @@ hr {
   background-color: #fff;
   margin-bottom: 1.5em;
 }
+
+.listLinkCollum2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.titlesLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

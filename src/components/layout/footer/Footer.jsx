@@ -27,7 +27,7 @@ function Footer() {
                 </div>
                 <div className={styles.direitoFooter1}>
                     <ListLink customClass="listLinkCollum">
-                        <li><h3>Kathon</h3></li>
+                        <li><h3 className={styles.titlesLinks}>Kathon</h3></li>
                         <li> <LinkComponent linkTo="/" text="Home" /> </li>
                         <li> <LinkComponent linkTo="/hackathons" text="Hackathon" /> </li>
                         <li> <LinkComponent linkTo="/empresas" text="Empresas" /> </li>
@@ -36,7 +36,7 @@ function Footer() {
                     </ListLink>
 
                     <ListLink customClass="listLinkCollum2">
-                        <li><h3>Contato</h3></li>
+                        <li><h3 className={styles.titlesLinks}>Contato</h3></li>
                         <li> (11) 2632-4489 </li>
                         <li> kathon@outlook.com </li>
                     </ListLink>
