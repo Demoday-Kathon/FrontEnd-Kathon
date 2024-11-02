@@ -16,7 +16,7 @@ function Navbar({isHovered, isActive }) {
         { path: '/', name: 'Home' },
         { path: '/hackathons', name: 'Hackathons' },
         { path: '/empresas', name: 'Empresas' },
-        { path: '/comunidadeVisaoGeralHome', name: 'Comunidades' },
+        { path: '/comunidadeVisaoGeralHome', name: 'Desafios' },
         { path: '/sobre', name: 'Sobre Nós' },
 
     ] 

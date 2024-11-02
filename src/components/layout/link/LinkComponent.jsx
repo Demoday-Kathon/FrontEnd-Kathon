@@ -6,8 +6,10 @@ function LinkComponent({ linkTo, text, children, customClass}) {
         <>
         
         <Link className={styles.LinkComponent} to={linkTo}>
-        {children}
-        <p className={`${styles[customClass]}`}>{text}</p> 
+            <div className={styles.ContainerLink}>
+                {children}
+                <p className={`${styles[customClass]}`}>{text}</p> 
+            </div>
         </Link>
         
         </>

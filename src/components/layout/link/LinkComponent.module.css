@@ -3,8 +3,19 @@
     color: #fff;
     align-items: center;
     display: contents;
+    padding: 0;
+    margin: 0;
 }
 
 .escolhaCadastro {
     display: contents;
+}
+
+.ContainerLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    gap: 0.5em;
 }
