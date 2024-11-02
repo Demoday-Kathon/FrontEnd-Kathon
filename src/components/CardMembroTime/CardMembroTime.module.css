@@ -3,33 +3,50 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5em;
+    gap:0;
+    margin: 0;
+    padding: 0;
+    height: auto;
 }
 
 .ImageMember{
-    width: 50%;
-    height: 20vh;
+    width: 70%;
+    height: 40vh;
+}
+
+.ContainerInformationMember{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 25vh;
+    background-color: #f0f0f05a;
+    border-radius: 0 0 30px 30px;
+    padding: 0.5rem;
+    margin: 0;
 }
 
 .TitlesNameMember{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #F0F0F0;
-    width: 50%;
+    width: 85%;
+    text-align: center;
 }
 
 .descriptionMember{
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #f0f0f0e4;
     text-align: center;
-    width: 50%;
+    width: 100%;
 }
 
 .ContainerImageLogo{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 35%;
+    width: 50%;
 }
 
 .ImageLogo{

@@ -76,9 +76,30 @@ function Sobre({ children }) {
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{once: false, amount: 0.4}}
-                    className={styles.titulodesenvolvedores}>Nosso time</motion.h3>
+                    className={styles.tituloNossoTime}>Nosso time</motion.h3>
 
                     <div className={styles.containerCardMembroTime}>
+                        <CardMembroTime 
+                            name={"Beatriz Marques"}
+                            description={"P.O, Designer e Desenvolvedora Front-End"}
+                            photo={BeatrizImage}
+                            github={"https://github.com/beatrizimarques"}
+                            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+                        />
+                        <CardMembroTime 
+                            name={"Beatriz Marques"}
+                            description={"P.O, Designer e Desenvolvedora Front-End"}
+                            photo={BeatrizImage}
+                            github={"https://github.com/beatrizimarques"}
+                            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+                        />
+                        <CardMembroTime 
+                            name={"Beatriz Marques"}
+                            description={"P.O, Designer e Desenvolvedora Front-End"}
+                            photo={BeatrizImage}
+                            github={"https://github.com/beatrizimarques"}
+                            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+                        />
                         <CardMembroTime 
                             name={"Beatriz Marques"}
                             description={"P.O, Designer e Desenvolvedora Front-End"}
