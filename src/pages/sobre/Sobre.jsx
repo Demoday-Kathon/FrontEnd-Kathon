@@ -1,11 +1,13 @@
 import Header from '../../components/layout/header/Header'
 import Footer from '../../components/layout/footer/Footer'
+import CardMembroTime from '../../components/CardMembroTime/CardMembroTime'
 import ImageGlass from '../../assets/imgs/sobre-image-female-glass.png'
 import Iphone15pro from '../../assets/imgs/iPhone16Pro.png'
 import Equipe from '../../assets/imgs/equipedesenvolvedora.png'
 import Macbook from '../../assets/imgs/macbook.png'
 import styles from './Sobre.module.css'
 import blur from '../../assets/imgs/backgrounds/elipse.png'
+import BeatrizImage from  '../../assets/imgs/bia.png'
 import { motion } from 'framer-motion'
 
 import { fadein } from '../../variants'
@@ -68,6 +70,25 @@ function Sobre({ children }) {
                     className={styles.textDescription}>“Coisas incríveis nunca são feitas por uma única pessoa, são feitas por um time.”</motion.p>
                 </div>
             </div>
+            <div className={styles.containerNossoTime}>
+                <motion.h3
+                    variants={fadein('down', 0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.4}}
+                    className={styles.titulodesenvolvedores}>Nosso time</motion.h3>
+
+                    <div className={styles.containerCardMembroTime}>
+                        <CardMembroTime 
+                            name={"Beatriz Marques"}
+                            description={"P.O, Designer e Desenvolvedora Front-End"}
+                            photo={BeatrizImage}
+                            github={"https://github.com/beatrizimarques"}
+                            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+                        />
+                    </div>
+            </div>
+
             <Footer />
         </div>
     )

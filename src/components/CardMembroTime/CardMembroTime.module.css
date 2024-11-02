@@ -1,0 +1,11 @@
+.CardMember{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageMember{
+    width: 35%;
+    height: 20vh;
+}
