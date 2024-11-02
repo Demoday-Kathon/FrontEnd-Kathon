@@ -104,9 +104,19 @@
   font-weight: bold;
 }
 
+
+
 .hackathonsDisponiveisHome {
   display: flex;
   flex-direction: row;
+}
+
+.BotaohackaVisaoGeral{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 55vh;
+  text-decoration: none;
 }
 
 .homeTitulo2 .spanHabilidade {

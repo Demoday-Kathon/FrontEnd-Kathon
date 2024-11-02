@@ -14,7 +14,8 @@ function card({
   acounter,
   timeline,
   customClass,
-  children
+  children,
+  customClassPersons
 }) {
   return (
     <div className={`${styles.card} ${styles[customClass]}`}>
@@ -31,9 +32,9 @@ function card({
         </div>
         <div className={styles.participants}>
           <div className={styles.participants_hackathon}>
-            <Person person={person1} />
-            <Person person={person2} />
-            <Person person={person3} />
+            <Person person={person1} customClass={customClassPersons}/>
+            <Person person={person2} customClass={customClassPersons}/>
+            <Person person={person3} customClass={customClassPersons}/>
           </div>
           <p className={styles.acounter}> {acounter} </p>
         </div>
