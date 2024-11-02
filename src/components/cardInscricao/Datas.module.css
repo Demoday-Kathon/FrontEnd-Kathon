@@ -89,6 +89,11 @@
   background-color: var(--Terciria, #06F8FA);
 }
 
+.butoncardLink{
+  text-decoration: none;
+  color: #141301;
+}
+
 
 .LinksHackaPremiosELinhaTempo{
   display: flex;

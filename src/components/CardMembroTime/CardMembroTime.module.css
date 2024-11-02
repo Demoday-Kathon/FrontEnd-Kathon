@@ -9,3 +9,9 @@
     width: 35%;
     height: 20vh;
 }
+
+.TitlesNameMember{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F0F0F0;
+}
