@@ -6,6 +6,7 @@ import BotaoHome from "../../components/BotaozinhoHome/BotaoHome";
 import Card_Recomendacao from "../../components/Perfil_aluno/Card_Recomedacao";
 import Card from "../../components/layout/card/card";
 import CardPretoBase from "../../components/CardPretoBase2/CardPretoBase";
+import { Link } from 'react-router-dom';
 
 import banner from "../../assets/imgs/banner.png";
 import leticia from "../../assets/imgs/Leticia.png";
@@ -129,7 +130,7 @@ function Home() {
               alt="icone de alarme"
               text="Duração de 24h a 72h"
             />
-            <BotaoHome 
+            <BotaoHome
               icon={
                 <FaDollarSign
                   style={{ color: "white", marginRight: "0.5em" }}
@@ -206,28 +207,32 @@ function Home() {
           {" "}
           HACKATHONS DISPONÍVEIS{" "}
         </motion.h1>
+
+        
         <div className={styles.hackathonsDisponiveisHome}>
           <Card
             banner={banner}
             company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendando: Uma Explanação em Tópicos"
+            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
             acounter="+150 participantes"
             timeline="20 dias restantes"
+            customClassPersons="cardHackathonHome"
           >
-            <LinkComponent linkTo={"/Hackathons"}>
-              <Button text="Saiba Mais" customClass="buttonAzul" />
-            </LinkComponent>
+            <Link className={styles.BotaohackaVisaoGeral} to={"/HackathonVisaoGeral"}>
+              <Button text="Saiba Mais" customClass="buttonAzulHome" />
+            </Link>
           </Card>
           <Card
             banner={banner}
             company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendando: Uma Explanação em Tópicos"
+            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
             acounter="+150 participantes"
             timeline="20 dias restantes"
+            customClassPersons="cardHackathonHome"
           >
-            <LinkComponent linkTo={"/Hackathons"}>
-              <Button text="Saiba Mais" customClass="buttonAzul" />
-            </LinkComponent>
+            <Link className={styles.BotaohackaVisaoGeral} to={"/HackathonVisaoGeral"}>
+              <Button text="Saiba Mais" customClass="buttonAzulHome" />
+            </Link>
           </Card>
         </div>
         <Button text="Veja mais" customClass="vejahackahton" />
@@ -375,7 +380,7 @@ function Home() {
               />
               <h1 className={styles.tituloCardPretoTalentos}>Resolução de problemas</h1>
               <p className={styles.descCardPretoTalentos}>
-              Obtenha soluções inovadoras para seus desafios.
+                Obtenha soluções inovadoras para seus desafios.
               </p>
             </CardPretoBase>
           </motion.div>
