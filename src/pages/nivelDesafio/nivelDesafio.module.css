@@ -1,0 +1,112 @@
+.nivelDesafio {
+  display: flex;
+  justify-content: center;
+  gap: 7%;
+  width: 100%;
+}
+
+.nivels {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  width: 100%;
+}
+
+.caixaDesafio {
+  border-radius: 36px;
+  border: 2px solid #66c2fa;
+  background: rgba(20, 19, 1, 0.8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.titleDesafio {
+  h1 {
+    color: #fff;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+  }
+  span {
+    color: #06f8fa;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px; /* 80% */
+  }
+  text-align: center;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.desafio1 {
+  background-image: url(../../assets/imgs/mountains.png);
+  background-size: cover;
+  width: 25%;
+  border-radius: 36px;
+  height: 46vh;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  margin-top: 50px;
+  p {
+    color: white;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 0.8em;
+    width: 10%;
+    margin-bottom: 15px;
+  }
+}
+
+.desafio2 {
+  background-image: url(../../assets/imgs/place.png);
+  background-size: cover;
+  width: 25%;
+  border-radius: 36px;
+  height: 46vh;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  margin-top: 50px;
+  p {
+    color: white;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 0.8em;
+    width: 10%;
+    margin-bottom: 15px;
+  }
+}
+
+.desafio3 {
+  background-image: url(../../assets/imgs/celeste.png);
+  background-size: cover;
+  width: 25%;
+  border-radius: 36px;
+  height: 46vh;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  margin-top: 50px;
+  p {
+    color: white;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 0.8em;
+    width: 10%;
+    margin-bottom: 15px;
+  }
+}

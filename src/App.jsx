@@ -22,8 +22,9 @@ import Login from "./pages/login/Login";
 import CadastroEscolha from "./pages/cadastroEscolha/CadastroEscolha";
 import CadastroEstudante from "./pages/cadastroEstudante/CadastroEstudante";
 import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
-import ComunidadeVisaoGeralHome from "./pages/comunidadesVisaoGeralHome/ComunidadesVisaoGeralHome"
+import ComunidadeVisaoGeralHome from "./pages/comunidadesVisaoGeralHome/ComunidadesVisaoGeralHome";
 import Feed from "./pages/feed/Feed";
+import NivelDesafio from "./pages/nivelDesafio/nivelDesafio";
 
 import "./App.css";
 
@@ -49,7 +50,10 @@ function App() {
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
           <Route path="/feed" element={<Feed />} />
-          <Route path="/comunidadeVisaoGeralHome" element={<ComunidadeVisaoGeralHome />} />
+          <Route
+            path="/comunidadeVisaoGeralHome"
+            element={<ComunidadeVisaoGeralHome />}
+          />
           <Route
             path="/Perfil_empresa_edit"
             element={<Perfil_empresa_edit />}
@@ -61,11 +65,20 @@ function App() {
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
           <Route path="/Planos" element={<Planos />} />
           <Route path="/dashboardhome" element={<DashBoardHome />} />
-          <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
-          <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />} />
+          <Route
+            path="/dashboardrecrutamento"
+            element={<DashboardRecrutamento />}
+          />
+          <Route
+            path="/dashboardassistenteia"
+            element={<DashboardAssistenteIA />}
+          />
 
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
-          <Route path="/hackathonsCalendario" element={<HackathonCalendario />} />
+          <Route
+            path="/hackathonsCalendario"
+            element={<HackathonCalendario />}
+          />
 
           <Route path="/Login" element={<Login />} />
 
@@ -74,7 +87,7 @@ function App() {
           <Route path="/CadastroEstudante" element={<CadastroEstudante />} />
           <Route path="/CadastroEmpresa" element={<CadastroEmpresa />} />
           <Route path="/feed" element={<Feed />} />
-
+          <Route path="/nivelDesafio" element={<NivelDesafio />} />
         </Routes>
       </Router>
     </main>
