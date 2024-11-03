@@ -24,6 +24,7 @@ import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
 import ComunidadeVisaoGeralHome from "./pages/comunidadesVisaoGeralHome/ComunidadesVisaoGeralHome";
 import Feed from "./pages/feed/Feed";
 import NivelDesafio from "./pages/nivelDesafio/nivelDesafio";
+import DesafiosCode from "./pages/DesafiosCode/DesafiosCode";
 
 import "./App.css";
 
@@ -48,6 +49,7 @@ function App() {
           <Route path="/Perfil_aluno" element={<Perfil_aluno />} />
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
+          <Route path="/desafioscode" element={<DesafiosCode />} />
           <Route path="/feed" element={<Feed />} />
           <Route
             path="/comunidadeVisaoGeralHome"
