@@ -1,4 +1,4 @@
-import CardInscricao from "../../components/cardInscricao/CardInscricao";
+import CardInscricaoInterno from "../../components/cardInscricao/CardInscricaoInterno";
 import CardPreto from "../../components/layout/cardPreto/CardPreto";
 import Bann from "../../components/Banner/Bann";
 import Styles from "../hackathonsVisaoGeralInterno/HackathonVisaoGeralInterno.module.css";
@@ -12,7 +12,7 @@ function HackathonVisaoGeral() {
       <HeaderInterno />
       <div className={Styles.containerprincipal}>
         <Bann />
-        <CardInscricao />
+        <CardInscricaoInterno />
       </div>
     
       <div className={Styles.containersubprincipal}>

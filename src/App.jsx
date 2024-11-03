@@ -11,8 +11,10 @@ import Perfil_empresa_edit from "./pages/perfilEmpresa/Perfil_empresa_edit";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
 import HackathonVisaoGeralInterno from "./pages/hackathonsVisaoGeralInterno/HackathonsVisaoGeralInterno";
 import HackathonCalendario from "./pages/hackathonsCalendario/HackCalendario";
+import HackathonCalendarioInterno from "./pages/hackathonsCalendarioInterno/HackCalendarioInterno";
 import Planos from "./pages/planos/Planos";
 import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
+import HackathonsPremiosInterno from "./pages/hackathonsPremiosInterno/HackathonsPremiosInterno";
 import DashBoardHome from "./pages/dashBoardHome/DashBoardHome";
 import DashboardRecrutamento from "./pages/dashboardRecrutamento/DashboardRecrutamento";
 import DashboardAssistenteIA from "./pages/dashboardAssistenteIA/DashboardAssistenteIA";
@@ -53,7 +55,9 @@ function App() {
           <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
           <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />}/>
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
+          <Route path="/HackathonsPremiosInterno" element={<HackathonsPremiosInterno />} />
           <Route path="/hackathonsCalendario" element={<HackathonCalendario />}/>
+          <Route path="/hackathonsCalendarioInterno" element={<HackathonCalendarioInterno />}/>
           <Route path="/Login" element={<Login />} />
           <Route path="/CadastroEscolha" element={<CadastroEscolha />} />
           <Route path="/CadastroEstudante" element={<CadastroEstudante />} />
