@@ -2,9 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Hackathons from "./pages/hackathonsDisponiveis/Hackathons";
 import Empresas from "./pages/empresas/Empresas";
-import Comunidades from "./pages/comunidades/Comunidades";
-import ComunidadesEscolha from "./pages/comunidadesEscolha/ComunidadesEscolha";
-import ComunidadesVisaoGeral from "./pages/comunidadesVisaoGeral/ComunidadesVisaoGeral";
 import Sobre from "./pages/sobre/Sobre";
 import Perfil_aluno from "./pages/perfilAluno/Perfil_aluno";
 import Perfil_aluno_edit from "./pages/perfilAluno/Perfil_aluno_edit";
@@ -21,11 +18,9 @@ import Login from "./pages/login/Login";
 import CadastroEscolha from "./pages/cadastroEscolha/CadastroEscolha";
 import CadastroEstudante from "./pages/cadastroEstudante/CadastroEstudante";
 import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
-import ComunidadeVisaoGeralHome from "./pages/comunidadesVisaoGeralHome/ComunidadesVisaoGeralHome";
-import Feed from "./pages/feed/Feed";
+import Feed from "./pages/Feed/Feed";
 import NivelDesafio from "./pages/nivelDesafio/nivelDesafio";
 import DesafiosCode from "./pages/DesafiosCode/DesafiosCode";
-
 import "./App.css";
 
 function App() {
@@ -36,12 +31,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/hackathons" element={<Hackathons />} />
           <Route path="/empresas" element={<Empresas />} />
-          <Route path="/comunidades" element={<Comunidades />} />
-          <Route path="/comunidadesEscolha" element={<ComunidadesEscolha />} />
-          <Route
-            path="/comunidadesVisaoGeral"
-            element={<ComunidadesVisaoGeral />}
-          />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/CadastroEscolha" element={<CadastroEscolha />} />
@@ -51,40 +40,17 @@ function App() {
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
           <Route path="/desafioscode" element={<DesafiosCode />} />
           <Route path="/feed" element={<Feed />} />
-          <Route
-            path="/comunidadeVisaoGeralHome"
-            element={<ComunidadeVisaoGeralHome />}
-          />
-          <Route
-            path="/Perfil_empresa_edit"
-            element={<Perfil_empresa_edit />}
-          />
-          <Route
-            path="/HackathonVisaoGeral"
-            element={<HackathonVisaoGeral />}
-          />
+          <Route path="/Perfil_empresa_edit" element={<Perfil_empresa_edit />} />
+          <Route path="/HackathonVisaoGeral" element={<HackathonVisaoGeral />} />
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
           <Route path="/Planos" element={<Planos />} />
           <Route path="/dashboardhome" element={<DashBoardHome />} />
-          <Route
-            path="/dashboardrecrutamento"
-            element={<DashboardRecrutamento />}
-          />
-          <Route
-            path="/dashboardassistenteia"
-            element={<DashboardAssistenteIA />}
-          />
-
+          <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
+          <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />}/>
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
-          <Route
-            path="/hackathonsCalendario"
-            element={<HackathonCalendario />}
-          />
-
+          <Route path="/hackathonsCalendario" element={<HackathonCalendario />}/>
           <Route path="/Login" element={<Login />} />
-
           <Route path="/CadastroEscolha" element={<CadastroEscolha />} />
-
           <Route path="/CadastroEstudante" element={<CadastroEstudante />} />
           <Route path="/CadastroEmpresa" element={<CadastroEmpresa />} />
           <Route path="/feed" element={<Feed />} />

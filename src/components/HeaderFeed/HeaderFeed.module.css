@@ -1,15 +1,20 @@
-.HeaderComunidade{
+.HeaderComunidade {
     background-image: url(../../assets/imgs/BackgroundHeaderComunidade.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    width: 100%;
-    min-height: 92vh;
     flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 18em;
+    height: 80vh;
     justify-content: space-between;
     align-items: center;
     border-radius: 0px 0px 50px 0px;
+    z-index: 9999;
 }
 
 .LogoKathon{
@@ -24,7 +29,7 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
-    gap: 4vh;
+    gap: 5vh;
 }
 
 .Links a {
@@ -47,7 +52,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 2.5vh;
+    gap: 3vh;
     padding-left: 5vh;
     border-radius: 0px 0px 30px 0px;
     border-bottom: 2px solid #FFF;
@@ -58,7 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-bottom: 0.5vh;
     width: 20px; 
     height: 20px;
 }
@@ -66,6 +71,7 @@
 .BarraBottom{
     width: 65%;
     height: 0.5vh;
+    margin-bottom: 2vh;
 }
 .containerProfile{
     display: flex;
@@ -103,8 +109,21 @@
     display: flex;
 }
 
-.IconPlay{
-    margin-top: 5vh;
+.IconPlay {
+    position: absolute;
+    z-index: 9999;
+    top: 20%;
+    transform: translateY(-50%);
+    left: 18em;
+}
+
+button{
+    background: none;
+}
+
+.ButtonIconPlay:hover{
+    cursor: pointer;
+    transform: scale(1);
 }
 
 .FeedNav {
@@ -113,10 +132,12 @@
 }
 
 .FeedNav.hidden {
-    transform: translateX(-91%);
+    position: absolute;
+    transform: translateX(-100%);
 }
 
 .FeedNav.visible {
+    position: relative;
     transform: translateX(0);
 }
 

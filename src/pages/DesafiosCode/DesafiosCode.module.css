@@ -70,15 +70,19 @@
 .ButtonEnviar{
     background-color: #13ECAB;
     color: #000000;
-    width: 25%;
+    width: 20%;
     height: 5vh;
     border-radius: 8px;
     font-weight: bold;
     font-size: 1.2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 0.5em;
+}
+
+.ButtonEnviar:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .ImageEnviar{

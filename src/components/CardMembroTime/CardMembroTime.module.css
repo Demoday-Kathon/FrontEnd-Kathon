@@ -10,7 +10,7 @@
 }
 
 .ImageMember{
-    width: 70%;
+    width: 75%;
     height: 40vh;
     margin: 0;
 }
@@ -20,9 +20,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 75%;
     height: 25vh;
-    background-color: #f0f0f05a;
+    background-color: #a3a3a35a;
     border-radius: 0 0 30px 30px;
     padding: 0.5rem;
     margin: 0;
@@ -55,5 +55,10 @@
 
 .ImageLogo{
     width: 100%;
-    height: 5vh;
+    height: 6vh;
+}
+
+.ImageLogo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }

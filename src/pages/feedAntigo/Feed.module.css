@@ -1,0 +1,22 @@
+.content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 250vh;
+    flex-direction: column;
+}
+
+.feedPrincipal{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.titleFeed{
+    color: #fff;
+}
+
+.containerFeed{
+    width: 80%;
+}
