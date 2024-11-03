@@ -3,6 +3,7 @@ import styles from "../nivelDesafio/nivelDesafio.module.css";
 import largatixa from "../../assets/imgs/largatixa.svg";
 import crocodilo from "../../assets/imgs/crocodilo.svg";
 import dinossauro from "../../assets/imgs/dinossauro.svg";
+import Footer from "../../components/layout/footer/Footer";
 
 function NivelDesafio() {
   return (
@@ -55,6 +56,8 @@ function NivelDesafio() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
