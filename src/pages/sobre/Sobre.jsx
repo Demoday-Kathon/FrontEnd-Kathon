@@ -100,6 +100,30 @@ function Sobre({ children }) {
                             github={"https://github.com/beatrizimarques"}
                             linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
                         />
+                    </div>
+
+                    <div className={styles.containerCardMembroTime}>
+                        <CardMembroTime 
+                            name={"Beatriz Marques"}
+                            description={"P.O, Designer e Desenvolvedora Front-End"}
+                            photo={BeatrizImage}
+                            github={"https://github.com/beatrizimarques"}
+                            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+                        />
+                        <CardMembroTime 
+                            name={"Beatriz Marques"}
+                            description={"P.O, Designer e Desenvolvedora Front-End"}
+                            photo={BeatrizImage}
+                            github={"https://github.com/beatrizimarques"}
+                            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+                        />
+                        <CardMembroTime 
+                            name={"Beatriz Marques"}
+                            description={"P.O, Designer e Desenvolvedora Front-End"}
+                            photo={BeatrizImage}
+                            github={"https://github.com/beatrizimarques"}
+                            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+                        />
                         <CardMembroTime 
                             name={"Beatriz Marques"}
                             description={"P.O, Designer e Desenvolvedora Front-End"}
@@ -108,6 +132,7 @@ function Sobre({ children }) {
                             linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
                         />
                     </div>
+
             </div>
 
             <Footer />
