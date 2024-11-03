@@ -12,9 +12,6 @@ function HeaderInterno() {
             <Navbar />
             <div className={styles.containerProfile}>
                         <Link to={"/Perfil_aluno"}>
-                            <button>
-                                <img className={styles.AdiconalButton} src={Mais} alt="Adicional" />
-                            </button>
                         </Link>
                         <img className={styles.ProfileNav} src={UserProfile} alt="Imagem Perfil" />
                         <div className={styles.Dadosnav}>

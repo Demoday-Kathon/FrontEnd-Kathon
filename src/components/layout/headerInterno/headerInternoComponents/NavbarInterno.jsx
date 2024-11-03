@@ -15,7 +15,8 @@ function Navbar({isHovered, isActive }) {
     const link = [
         { path: '/feed', name: 'Feed' },
         { path: '/hackathonsinterno', name: 'Hackathons' },
-        { path: '/nivelDesafioInterno', name: 'Desafios' }
+        { path: '/nivelDesafioInterno', name: 'Desafios' },
+        { path: '/Perfil_aluno', name: 'Perfil' }
     ] 
 
 
