@@ -29,10 +29,10 @@ function HeaderFeed({onToggle}) {
                         </LinkComponent>
                         <nav className={Styles.Links}>
                              <LinkComponent linkTo="/feed"><a href=""><img className={Styles.Icon} src={HomeIcon} alt="" />Feed</a></LinkComponent>
-                            <LinkComponent linkTo="/Hackathons">
+                            <LinkComponent linkTo="/hackathonsinterno">
                                 <a href=""><img className={Styles.Icon} src={HackalIcon} alt="" />Hackathons</a>
                             </LinkComponent>
-                            <LinkComponent linkTo="/nivelDesafio">
+                            <LinkComponent linkTo="/nivelDesafioInterno">
                                 <a href=""><img className={Styles.Icon} src={PersonalIcon} alt="" />Desafios</a>
                             </LinkComponent>
                         </nav>

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Hackathons from "./pages/hackathonsDisponiveis/Hackathons";
+import HackathonsInterno from "./pages/hackathonsDisponiveisInterno/HackathonsInterno";
 import Empresas from "./pages/empresas/Empresas";
 import Sobre from "./pages/sobre/Sobre";
 import Perfil_aluno from "./pages/perfilAluno/Perfil_aluno";
@@ -20,6 +21,7 @@ import CadastroEstudante from "./pages/cadastroEstudante/CadastroEstudante";
 import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
 import Feed from "./pages/Feed/Feed";
 import NivelDesafio from "./pages/nivelDesafio/nivelDesafio";
+import NivelDesafioInterno from "./pages/nivelDesafioInterno/nivelDesafioInterno";
 import DesafiosCode from "./pages/DesafiosCode/DesafiosCode";
 import "./App.css";
 
@@ -30,6 +32,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hackathons" element={<Hackathons />} />
+          <Route path="/hackathonsinterno" element={<HackathonsInterno />} />
           <Route path="/empresas" element={<Empresas />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/Login" element={<Login />} />
@@ -55,6 +58,7 @@ function App() {
           <Route path="/CadastroEmpresa" element={<CadastroEmpresa />} />
           <Route path="/feed" element={<Feed />} />
           <Route path="/nivelDesafio" element={<NivelDesafio />} />
+          <Route path="/nivelDesafioInterno" element={<NivelDesafioInterno />} />
         </Routes>
       </Router>
     </main>

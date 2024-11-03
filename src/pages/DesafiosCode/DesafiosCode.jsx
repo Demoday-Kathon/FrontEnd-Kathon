@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Styles from './DesafiosCode.module.css';
 import ImageNivelIniciante from '../../assets/imgs/niveliniciante.png';
-import Header from '../../components/layout/header/Header';
+import HeaderInterno from '../../components/layout/headerInterno/HeaderInterno';
 import Setawhite from '../../assets/imgs/seta.svg';
 
 const API_KEY = "AIzaSyBfJrzeRAPn1aJOsHJyhdfNcxkOaKJJgOk";
@@ -108,7 +108,7 @@ function DesafiosCode() {
 
     return (
         <div className={Styles.DesafiosCode}>
-            <Header />
+            <HeaderInterno />
             <div className={Styles.ContainerPrincipalSpaceCode}>
                 <div className={Styles.ContainerSpaceCode}>
                     <div className={Styles.ContainerIMageNivelDesafio}>

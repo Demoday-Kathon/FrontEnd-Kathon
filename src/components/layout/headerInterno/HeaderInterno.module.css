@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  background: none;
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.logoHeader {
+  background-image: url(../../../assets/imgs/logokathoncompleta.png);
+  width: 15em;
+  height: 3em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  position: relative;
+}
+
+.containerProfile{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vh;
+  color: #fff;
+  width: 20%;
+  background: none;
+  border-radius: 0px 0px 50px 0px;
+}
+
+.ProfileNav{
+  width: 52px;
+  height: 51px;
+}
+
+.AdiconalButton{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-right: 1vh;
+}

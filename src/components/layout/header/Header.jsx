@@ -1,5 +1,4 @@
 import styles from './Header.module.css'
-import seta from '../../../assets/imgs/seta.svg'
 import Button from '../button/button'
 import Navbar from './headerComponents/Navbar'
 import LinkComponent from '../link/LinkComponent'

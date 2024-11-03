@@ -105,10 +105,6 @@
   }
 }
 
-.desafio1, .desafio2, .desafio3 {
-  text-decoration: none;
-}
-
 .nivels {
   display: flex;
   justify-content: space-around;
