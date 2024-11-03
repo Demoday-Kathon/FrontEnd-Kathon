@@ -31,17 +31,27 @@ function NivelDesafio() {
         <div className={styles.nivels}>
           <div className={styles.nivelIniciante}>
             {" "}
-            <img src={largatixa} alt="" /> <br /> <p>Nivel Iniciante</p> <br />{" "}
-            <p>
+            <img src={largatixa} alt="" /> <br />{" "}
+            <p className={styles.titleIniciante}>Nivel Iniciante</p>{" "}
+            <p className={styles.infosDesafios}>
               Para você que ainda <br />
               não sabe muito
             </p>
           </div>
           <div className={styles.nivelIntermediario}>
             <img src={crocodilo} alt="" />
+            <p className={styles.titleIntermediario}>Nivel Intermediário</p>
+            <p className={styles.infosDesafios}>
+              {" "}
+              Para você que já tem <br /> uma certa experiência
+            </p>
           </div>
-          <div className={styles.nivelAvançado}>
+          <div className={styles.nivelAvancado}>
             <img src={dinossauro} alt="" />
+            <p className={styles.titleAvancado}>Nivel Avançado</p>
+            <p className={styles.infosDesafios}>
+              Para você que sabe muito <br /> e quer se aprimorar
+            </p>
           </div>
         </div>
       </div>

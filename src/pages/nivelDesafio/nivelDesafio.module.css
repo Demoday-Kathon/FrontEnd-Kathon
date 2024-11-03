@@ -5,20 +5,13 @@
   width: 100%;
 }
 
-.nivels {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2em;
-  width: 100%;
-}
-
 .caixaDesafio {
   border-radius: 36px;
   border: 2px solid #66c2fa;
   background: rgba(20, 19, 1, 0.8);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   backdrop-filter: blur(20px);
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-top: 80px;
 }
@@ -48,7 +41,7 @@
 .desafio1 {
   background-image: url(../../assets/imgs/mountains.png);
   background-size: cover;
-  width: 25%;
+  width: 26%;
   border-radius: 36px;
   height: 46vh;
   background-position: center;
@@ -70,7 +63,7 @@
 .desafio2 {
   background-image: url(../../assets/imgs/place.png);
   background-size: cover;
-  width: 25%;
+  width: 26%;
   border-radius: 36px;
   height: 46vh;
   background-position: center;
@@ -92,7 +85,7 @@
 .desafio3 {
   background-image: url(../../assets/imgs/celeste.png);
   background-size: cover;
-  width: 25%;
+  width: 26%;
   border-radius: 36px;
   height: 46vh;
   background-position: center;
@@ -109,4 +102,56 @@
     width: 10%;
     margin-bottom: 15px;
   }
+}
+
+.nivels {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  width: 100%;
+}
+
+.infosDesafios {
+  color: #fff;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 0.5em;
+  margin-bottom: 20vh;
+}
+
+.titleIniciante {
+  color: #13ecab;
+  font-size: 40px;
+  width: 0.1%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.titleIntermediario {
+  color: #48bfe3;
+  font-size: 40px;
+  width: 0.1%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.titleAvancado {
+  color: #c24361;
+  font-size: 40px;
+  width: 0.1%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.nivelIntermediario {
+  margin-left: 60px;
+}
+
+.nivelIniciante {
+  margin-left: 30px;
 }

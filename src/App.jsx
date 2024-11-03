@@ -24,7 +24,7 @@ import CadastroEstudante from "./pages/cadastroEstudante/CadastroEstudante";
 import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
 import ComunidadeVisaoGeralHome from "./pages/comunidadesVisaoGeralHome/ComunidadesVisaoGeralHome";
 import Feed from "./pages/feed/Feed";
-import NivelDesafio from "./pages/nivelDesafio/nivelDesafio";
+import nivelDesafio from "./pages/nivelDesafio/nivelDesafio";
 
 import "./App.css";
 
@@ -87,7 +87,7 @@ function App() {
           <Route path="/CadastroEstudante" element={<CadastroEstudante />} />
           <Route path="/CadastroEmpresa" element={<CadastroEmpresa />} />
           <Route path="/feed" element={<Feed />} />
-          <Route path="/nivelDesafio" element={<NivelDesafio />} />
+          <Route path="/nivelDesafio" element={<nivelDesafio />} />
         </Routes>
       </Router>
     </main>
