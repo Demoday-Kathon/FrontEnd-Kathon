@@ -1,5 +1,3 @@
-
-import styles from './NavbarInterno.module.css';
 import ListLink from '../../listlink/ListLinks.jsx';
 import LinkComponent from '../../link/LinkComponent.jsx';
 import { FaLessThan } from "react-icons/fa";

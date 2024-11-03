@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "../../components/layout/header/Header";
 import styles from "../nivelDesafio/nivelDesafio.module.css";
 import largatixa from "../../assets/imgs/largatixa.svg";
@@ -17,17 +18,17 @@ function NivelDesafio() {
           </h1>
         </div>
         <div className={styles.nivelDesafio}>
-          <div className={styles.desafio1}>
+          <Link className={styles.desafio1} to="/Login">
             <p>Modo Largatixa</p>
-          </div>
-          <div className={styles.desafio2}>
+          </Link>
+          <Link className={styles.desafio2} to="/Login">
             {" "}
             <p>Modo Jacaré</p>{" "}
-          </div>
-          <div className={styles.desafio3}>
+          </Link>
+          <Link className={styles.desafio3} to="/Login">
             {" "}
             <p>Modo Dinossauro</p>{" "}
-          </div>
+          </Link>
         </div>
         <div className={styles.nivels}>
           <div className={styles.nivelIniciante}>

@@ -1,15 +1,15 @@
 import CardInscricao from "../../components/cardInscricao/CardInscricao";
 import CardPreto from "../../components/layout/cardPreto/CardPreto";
 import Bann from "../../components/Banner/Bann";
-import Styles from "../hackathonsVisaoGeral/HackathonVisaoGeral.module.css";
+import Styles from "../hackathonsVisaoGeralInterno/HackathonVisaoGeralInterno.module.css";
 import Card from "../../components/layout/card/card";
-import Header from "../../components/layout/header/Header";
+import HeaderInterno from "../../components/layout/headerInterno/HeaderInterno";
 import Footer from "../../components/layout/footer/Footer";
 
 function HackathonVisaoGeral() {
   return (
     <div className={Styles.ContentPrincipal}>
-      <Header />
+      <HeaderInterno />
       <div className={Styles.containerprincipal}>
         <Bann />
         <CardInscricao />

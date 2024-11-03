@@ -22,7 +22,7 @@ function NivelDesafio() {
             {" "}
               <p>Modo Largatixa</p>
           </Link>
-          <Link className={styles.desafio2} to="/desafiscode">
+          <Link className={styles.desafio2} to="/desafioscode">
             {" "}
             <p>Modo Jacaré</p>{" "}
           </Link>
