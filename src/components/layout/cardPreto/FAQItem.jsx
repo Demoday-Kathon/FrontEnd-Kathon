@@ -1,11 +1,11 @@
-import { useState } from "react"; // Adiciona o import do useState
+import { useState } from "react";
 import styles from "../cardPreto/FAQItem.module.css";
 
 function FAQItem({ duvida, resposta }) {
   const [isActive, setIsActive] = useState(false);
 
   const toggleFAQ = () => {
-    setIsActive(!isActive); // Alterna entre mostrar e esconder a resposta
+    setIsActive(!isActive);
   };
 
   return (

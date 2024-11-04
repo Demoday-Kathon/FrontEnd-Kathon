@@ -8,8 +8,7 @@ import Adidas from "../../../assets/imgs/adidas.png";
 import Ibm from "../../../assets/imgs/accenture.png";
 import Oracle from "../../../assets/imgs/IBM.png";
 import Accenture from "../../../assets/imgs/Oracle.png";
-// import Perguntas from "./Perguntas";
-import faqStyles from "../cardPreto/FAQItem.module.css"; // Estilos CSS Module do FAQItem
+import faqStyles from "../cardPreto/FAQItem.module.css"; //
 import FAQItem from "./FAQItem";
 
 function CardPreto({ title, context, mentors, sponsors }) {

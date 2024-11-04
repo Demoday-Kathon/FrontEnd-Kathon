@@ -1,189 +1,193 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container{
-    background-position: center;
-    background-size: cover;
-    width: 100%;
+.container {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
 }
 
-.containerPrimary{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 120vh;
+.containerPrimary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120vh;
 }
 
-.images{
-    width: 40%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.images {
+  width: 40%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.images .elipseBlur{
-    width: 50vw;
-    height: 100vh;
-    position: relative;
-    top: 85vh;
-    z-index: 1;
-    right: 2rem;
+.images .elipseBlur {
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  top: 85vh;
+  z-index: 1;
+  right: 2rem;
 }
 
-.images .ImageGlass{
-    position: relative;
-    width: 95%;
-    object-fit: cover;
-    height: 85vh;
-    bottom: 70%;
+.images .ImageGlass {
+  position: relative;
+  width: 95%;
+  object-fit: cover;
+  height: 85vh;
+  bottom: 70%;
 }
 
-.ContainerTitleSobre{
-    width: 55%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    bottom: 12%;
+.ContainerTitleSobre {
+  width: 55%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  bottom: 12%;
 }
 
-.titulosSection{
-    color: #fff;
-    font-size: 3.8rem;
+.titulosSection {
+  color: #fff;
+  font-size: 3.8rem;
 }
 
-.titulosSection span{
-    color: #A55AFF;
+.titulosSection span {
+  color: #a55aff;
 }
 
-.ContainerTitleSobre p{
-    width: 100%;
-    color: #fff;
-    font-size: 2.8rem;
+.ContainerTitleSobre p {
+  width: 100%;
+  color: #fff;
+  font-size: 2.8rem;
 }
 
-.ContainerTitleSobre .subtitle{
-    color: #66C2FA;
+.ContainerTitleSobre .subtitle {
+  color: #66c2fa;
 }
 
-.containerSecondary{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 120vh;
+.containerSecondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120vh;
 }
 
-.iphone{
-    width: 50vw;
-    object-fit: contain;
-    height: 120vh;
-    position: relative;
-    top: 5%;
-    z-index: 1;
+.iphone {
+  width: 50vw;
+  object-fit: contain;
+  height: 120vh;
+  position: relative;
+  top: 5%;
+  z-index: 1;
 }
 
-.containerSecondary .textDescription{
-    width: 60%;
-    position: relative;
-    font-size: 3.8rem;
-    color: #fff;
-    right: 8rem;
-    z-index: 2;
+.containerSecondary .textDescription {
+  width: 60%;
+  position: relative;
+  font-size: 3.8rem;
+  color: #fff;
+  right: 8rem;
+  z-index: 2;
 }
 
-.containerTerciary{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 150vh;
+.containerTerciary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150vh;
 }
 
-.containerTerciary .textDescription{
-    width: 60%;
-    left: 10%;
-    position: relative;
-    font-size: 3.8rem;
-    color: #fff;
-    z-index: 3;
+.containerTerciary .textDescription {
+  width: 60%;
+  left: 10%;
+  position: relative;
+  font-size: 3.8rem;
+  color: #fff;
+  z-index: 3;
 }
 
-.equipeContainer{
-    display: flex;
-    width: 100%;
-    height: 125vh;
-    justify-content: center;
-    align-items: center;
+.equipeContainer {
+  display: flex;
+  width: 100%;
+  height: 125vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.imgEquipe{
-    width: 70vw;
-    object-fit: contain;
-    height: 75vh;
-    position: relative;
-    top: 4%;
+.imgEquipe {
+  width: 70vw;
+  object-fit: contain;
+  height: 75vh;
+  position: relative;
+  top: 4%;
 }
 
-.containerDesenvolvedores{
-    height: 80vh;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+.containerDesenvolvedores {
+  height: 80vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
 }
 
-.containerDesenvolvedores .titulodesenvolvedores{
-    position: relative;
-    font-size: 3.5rem;
-    color: #A55AFF;
+.containerDesenvolvedores .titulodesenvolvedores {
+  position: relative;
+  font-size: 3.5rem;
+  color: #a55aff;
+}
+.titulodesenvolvedores {
+  margin-left: 25px;
 }
 
-.containerDesenvolvedores .iphone{
-    width: 75%;
+.containerDesenvolvedores .iphone {
+  width: 75%;
 }
 
-.descDesenvolvedores{
-    width: 50%;
-    height: 140vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.descDesenvolvedores {
+  width: 50%;
+  height: 140vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.descDesenvolvedores .textDescription{
-    color: #fff;
-    font-size: 3rem;
-    width: 70%;
+.descDesenvolvedores .textDescription {
+  color: #fff;
+  font-size: 3rem;
+  width: 100%;
+  margin-top: 2.5em;
 }
 
-.containerNossoTime{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
+.containerNossoTime {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
 
-.containerCardMembroTime{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80vh;
+.containerCardMembroTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
 }
 
-.tituloNossoTime{
-    position: relative;
-    font-size: 3.5rem;
-    color: #A55AFF;
+.tituloNossoTime {
+  position: relative;
+  font-size: 3.5rem;
+  color: #a55aff;
 }

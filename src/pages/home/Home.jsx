@@ -6,7 +6,7 @@ import BotaoHome from "../../components/BotaozinhoHome/BotaoHome";
 import Card_Recomendacao from "../../components/Perfil_aluno/Card_Recomedacao";
 import Card from "../../components/layout/card/card";
 import CardPretoBase from "../../components/CardPretoBase2/CardPretoBase";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import banner from "../../assets/imgs/banner.png";
 import leticia from "../../assets/imgs/Leticia.png";
@@ -123,9 +123,7 @@ function Home() {
           <div className={styles.botoesHome1}>
             <BotaoHome
               icon={
-                <IoIosAlarm
-                  style={{ color: "white", marginRight: "0.5em" }}
-                />
+                <IoIosAlarm style={{ color: "white", marginRight: "0.5em" }} />
               }
               alt="icone de alarme"
               text="Duração de 24h a 72h"
@@ -208,7 +206,6 @@ function Home() {
           HACKATHONS DISPONÍVEIS{" "}
         </motion.h1>
 
-        
         <div className={styles.hackathonsDisponiveisHome}>
           <Card
             banner={banner}
@@ -218,7 +215,10 @@ function Home() {
             timeline="20 dias restantes"
             customClassPersons="cardHackathonHome"
           >
-            <Link className={styles.BotaohackaVisaoGeral} to={"/HackathonVisaoGeral"}>
+            <Link
+              className={styles.BotaohackaVisaoGeral}
+              to={"/HackathonVisaoGeral"}
+            >
               <Button text="Saiba Mais" customClass="buttonAzulHome" />
             </Link>
           </Card>
@@ -230,7 +230,10 @@ function Home() {
             timeline="20 dias restantes"
             customClassPersons="cardHackathonHome"
           >
-            <Link className={styles.BotaohackaVisaoGeral} to={"/HackathonVisaoGeral"}>
+            <Link
+              className={styles.BotaohackaVisaoGeral}
+              to={"/HackathonVisaoGeral"}
+            >
               <Button text="Saiba Mais" customClass="buttonAzulHome" />
             </Link>
           </Card>
@@ -378,7 +381,9 @@ function Home() {
                 alt="icone de sifrão"
                 text="Visibilidade"
               />
-              <h1 className={styles.tituloCardPretoTalentos}>Resolução de problemas</h1>
+              <h1 className={styles.tituloCardPretoTalentos}>
+                Resolução de problemas
+              </h1>
               <p className={styles.descCardPretoTalentos}>
                 Obtenha soluções inovadoras para seus desafios.
               </p>

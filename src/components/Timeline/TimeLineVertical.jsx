@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import '../../components/Timeline/TimelineVertical.css';
-import iconClock from '../../assets/imgs/icones/clock.png'
-import iconCalendar from '../../assets/imgs/icones/calendar.png'
-import { IconBase } from 'react-icons/lib';
+import React, { useEffect, useState } from "react";
+import "../../components/Timeline/TimelineVertical.css";
+import iconClock from "../../assets/imgs/icones/clock.png";
+import iconCalendar from "../../assets/imgs/icones/calendar.png";
+import { IconBase } from "react-icons/lib";
 
 const TimelineVertical = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -12,11 +12,12 @@ const TimelineVertical = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const documentHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
 
       let progress = (scrollTop / documentHeight) * 100;
 
-      if (scrollTop >= maxScrollHeight){
+      if (scrollTop >= maxScrollHeight) {
         progress = (maxScrollHeight / documentHeight) * 100;
       }
 
@@ -24,22 +25,23 @@ const TimelineVertical = () => {
     };
 
     const timeoutId = setTimeout(() => {
-      window.addEventListener('scroll', handleScroll);
+      window.addEventListener("scroll", handleScroll);
     }, delay);
 
     return () => {
       clearTimeout(timeoutId);
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-    }, []);
-
+  }, []);
 
   return (
     <div className="timeline-container">
-      <div className="progress-bar" style={{ height: `${scrollProgress}%` }}></div>
+      <div
+        className="progress-bar"
+        style={{ height: `${scrollProgress}%` }}
+      ></div>
 
       <div className="timeline">
-
         <div className="event">
           <div className="event-content">
             <h3>Inicio das Inscrições</h3>
@@ -56,7 +58,7 @@ const TimelineVertical = () => {
 
         <div className="event">
           <div className="event-content">
-            <h3>Inicio das Inscrições</h3>
+            <h3>Confirmação dos times</h3>
             <div className="icon-content">
               <img src={iconCalendar} alt="" srcset="" />
               <p>27 de setembro de 2024</p>
@@ -70,7 +72,7 @@ const TimelineVertical = () => {
 
         <div className="event">
           <div className="event-content">
-            <h3>Inicio das Inscrições</h3>
+            <h3>Inicio do Hackathon</h3>
             <div className="icon-content">
               <img src={iconCalendar} alt="" srcset="" />
               <p>27 de setembro de 2024</p>
@@ -84,7 +86,7 @@ const TimelineVertical = () => {
 
         <div className="event">
           <div className="event-content">
-            <h3>Inicio das Inscrições</h3>
+            <h3>Liberação do tema</h3>
             <div className="icon-content">
               <img src={iconCalendar} alt="" srcset="" />
               <p>27 de setembro de 2024</p>
@@ -98,7 +100,7 @@ const TimelineVertical = () => {
 
         <div className="event">
           <div className="event-content">
-            <h3>Inicio das Inscrições</h3>
+            <h3>Desenvolvimento</h3>
             <div className="icon-content">
               <img src={iconCalendar} alt="" srcset="" />
               <p>27 de setembro de 2024</p>
@@ -112,7 +114,7 @@ const TimelineVertical = () => {
 
         <div className="event">
           <div className="event-content">
-            <h3>Inicio das Inscrições</h3>
+            <h3>Prazo para envio</h3>
             <div className="icon-content">
               <img src={iconCalendar} alt="" srcset="" />
               <p>27 de setembro de 2024</p>
@@ -126,7 +128,7 @@ const TimelineVertical = () => {
 
         <div className="event">
           <div className="event-content">
-            <h3>Inicio das Inscrições</h3>
+            <h3>Resultado</h3>
             <div className="icon-content">
               <img src={iconCalendar} alt="" srcset="" />
               <p>27 de setembro de 2024</p>
