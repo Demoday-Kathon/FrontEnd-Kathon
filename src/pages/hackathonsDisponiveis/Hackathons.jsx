@@ -19,7 +19,7 @@ function Hackathons() {
             <source src={VideoBack2} type="video/mp4" />
           </video>
           <h1 className={styles.hometitle}>
-            Desafios para <br /> alavancar a sua carreira
+            Oportunidades para <br/> impulsionar sua carreira
           </h1>
           <div className={styles.caixadescricao}>
             <p className={styles.descricaodohack}>
@@ -33,7 +33,7 @@ function Hackathons() {
 
       <div className={styles.verificacao}>
         <h1>
-          Verifique os disponíveis <br /> e se desenvolva
+          Verifique os hackathons disponíveis <br />
         </h1>
       </div>
       <container className={styles.homeTitulo}>
