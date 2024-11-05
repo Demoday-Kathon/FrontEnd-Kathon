@@ -47,7 +47,7 @@ function Footer() {
 
             <div className={styles.baixoFooter}>
                 <div className={styles.esquerdoFooter}>
-                    <span> © 2024 Kathon Inc. Todos os direitos reservados.</span>
+                    <span className={styles.spanfooter}> © 2024 Kathon Inc. Todos os direitos reservados.</span>
                 </div>
 
 
