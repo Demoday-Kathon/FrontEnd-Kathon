@@ -5,7 +5,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 2px solid blue;
 }
 
 .Foto_perfil {
@@ -26,7 +25,6 @@
     display:flex;
     margin:10px;
     flex-direction: column;
-    border: 2px solid red;
 }
 
 .NomePerfil {
@@ -38,7 +36,7 @@
 }
 
 .BottonPerfil2 {
-    width: 100%;
+    width: 150%;
     height: 48px;
     border-radius: 36px;
     background: rgba(240, 240, 240, 0.50);
@@ -51,6 +49,9 @@
     text-align: center;
     font-size: 25px;
     transition: 0.5s;
+    margin-left: -13px;
+    
+
 
 
 }

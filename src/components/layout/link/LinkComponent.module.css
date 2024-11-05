@@ -18,5 +18,13 @@
     width: auto;
     height: auto;
     gap: 0.5em;
-    
+}
+
+.ContainerLink2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    gap: 0.5em;
 }
