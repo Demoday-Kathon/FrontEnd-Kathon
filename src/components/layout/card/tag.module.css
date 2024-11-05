@@ -10,8 +10,8 @@
     line-height: normal;
     color: #FFF;
     transition: 0.5s;
-    margin: 0.5em;
-    padding: 0.9em;
+    /* margin: 0.5em;
+    padding: 0.9em; */    /* Botão que pode dar b.o*/
 }
 
 .azul{
