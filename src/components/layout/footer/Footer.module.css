@@ -85,3 +85,93 @@ li{
   align-items: center;
   justify-content: center;
 }
+
+.spanfooter{
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2em;
+    flex-direction: column;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+  }
+
+  .footer .cimaFooter, .footer .baixoFooter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .direitoFooter1 {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  .direitoFooter1 li {
+    margin: 0.3em;
+  }
+
+  .footer .esquerdoFooter p {
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer .esquerdoFooter span {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .logoFooter {
+    width: 15em;
+    height: 2.5em;
+    background-size: contain;
+  }
+
+  .listLinkCollum2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titlesLinks {
+    align-items: center;
+    text-align: center;
+  }
+
+  hr {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5em;
+  }
+
+  .footer .esquerdoFooter p {
+    font-size: 1em;
+  }
+
+  .logoFooter {
+    width: 12em;
+    height: 2em;
+  }
+
+  .direitoFooter1 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .direitoFooter1 li {
+    margin: 0.2em;
+  }
+}

@@ -62,3 +62,51 @@ ul li {
 
 ul li Link {
 }
+
+@media (max-width: 768px) {
+  .listLinks {
+    width: 70%;
+    font-size: 1em;
+    padding: 1em;
+  }
+  
+  .listLinkRow li,
+  .listLinkRowSocial li svg {
+    margin: 0.5em;
+  }
+
+  .listLinkRow {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .listLinks {
+    flex-direction: column;
+    width: 90%;
+    padding: 0.8em;
+    border-radius: 1em;
+  }
+
+  .listLinkRow,
+  .listLinkRowSocial,
+  .listLinkCollum,
+  .listLinkCollum2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .listLinks li {
+    font-size: 0.9em;
+    margin: 0.2em 0;
+  }
+
+  .listLinkRowSocial li svg {
+    margin: 0.5em;
+    width: 1.2em;
+    height: 1.2em;
+  }
+}

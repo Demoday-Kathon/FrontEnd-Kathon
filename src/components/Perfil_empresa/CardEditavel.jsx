@@ -8,7 +8,7 @@ function CardEditavel( {Participacoes}) {
                 <div className={Styles.Participacoes}>
                     <h1>{Participacoes}</h1>
                     <br />
-                    <img src={mais} alt="Mais" />
+                 <img className={Styles.fotomais} src={mais} alt="Mais" />
                 </div>
             </div>
         </div>

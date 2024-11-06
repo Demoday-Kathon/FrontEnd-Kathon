@@ -9,7 +9,7 @@ function Bloco1({NomePerfil, UserPerfil, Foto_perfil, customClass, Salvar}){
                 <h1 className={Styles.NomePerfil}>{NomePerfil}</h1>
                 <h2 className={Styles.UserPerfil}>{UserPerfil}</h2>
                 <br />
-                <LinkComponent linkTo="/Perfil_aluno_edit" text={<button className={Styles.BottonPerfil}>{Salvar}</button>}/>
+                <LinkComponent linkTo="/Perfil_aluno_edit" text={<button className={Styles.BottonPerfil2}>{Salvar}</button>}/>
             </div>
         </section>
     )

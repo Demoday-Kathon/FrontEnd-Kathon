@@ -12,6 +12,7 @@
   width: 120px;
   height: 120px;
   margin-top: -60px;
+  margin-right: 40vh;
 }
 
 .Nome {
@@ -21,6 +22,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-left: 5vh;
+  text-align: start;
 }
 
 .Sub_titulo {
@@ -32,20 +35,20 @@
   text-align: left;
 }
 
-.cardRecomendacaoHome {
+/* .cardRecomendacaoHome {
   height: auto;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   margin: 0.5em;
   transition: 1s;
-}
+} */
 
-.cardRecomendacaoHome:hover {
+/* .cardRecomendacaoHome:hover {
   transform: scale(1.1);
   border: 2px solid white;
-}
+} */
 
-.empresas_Edit {
+/* .empresas_Edit {
   height: auto;
-}
+} */

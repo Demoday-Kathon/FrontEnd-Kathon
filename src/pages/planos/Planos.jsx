@@ -11,21 +11,19 @@ import Footer from "../../components/layout/footer/Footer"
 function Planos() {
 
     return (
-        <section className={Styles.paidoplano}>
+        <section className={Styles.paidoplano}> 
             <Header/>
             <div className={Styles.fundoplano}>
                 <h1>Planos Empresariais</h1>
                 <div className={Styles.benebox}>
                     <CardsPlanos title="Esmeralda" img={Esmeralda} alt="Esmeralda" customtitle= "titlegreen">
                         <CardBeneficios text="Acesso a comunidade" customClass="bordergreen"></CardBeneficios>
-                        <CardBeneficios text="Planejamento Hackthon" customClass="bordergreen"></CardBeneficios>
                         <CardBeneficios text="Relatórios simplificados de feedback" customClass="bordergreen"></CardBeneficios>
                         <h4 className={Styles.preco1}>Free</h4>
                         <Botton text="Contratado" customBotton="bottongreen"></Botton>
                     </CardsPlanos>
                     <CardsPlanos title="Rubi" img={Rubi} alt="Rubi" customtitle= "titlepink">
                         <CardBeneficios text="Acesso a comunidade" customClass="borderpink"></CardBeneficios>
-                        <CardBeneficios text="Planejamento Hackthon" customClass="borderpink"></CardBeneficios>
                         <CardBeneficios text="Relatórios simplificados de feedback" customClass="borderpink"></CardBeneficios>
                         <CardBeneficios text="Perfis Básicos Estudantes" customClass="borderpink"></CardBeneficios>
                         <h4 className={Styles.preco2}>R$ 49,90</h4>
@@ -33,7 +31,6 @@ function Planos() {
                     </CardsPlanos>
                     <CardsPlanos title="Diamante" img={Diamante} alt="Diamante" customtitle= "titleblue">
                         <CardBeneficios text="Destaque a comunidade" customClass="borderblue"></CardBeneficios>
-                        <CardBeneficios text="Planejamento Hackthon" customClass="borderblue"></CardBeneficios>
                         <CardBeneficios text="Relatórios elaborados de feedback" customClass="borderblue"></CardBeneficios>
                         <CardBeneficios text="Perfis completos Estudantes" customClass="borderblue"></CardBeneficios>
                         <CardBeneficios text="Assistencia de RH por IA" customClass="borderblue"></CardBeneficios>

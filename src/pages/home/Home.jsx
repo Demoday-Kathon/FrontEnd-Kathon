@@ -34,6 +34,15 @@ import { motion } from "framer-motion";
 import { fadein } from "../../variants";
 
 function Home() {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className={styles.home}>
       <Header />
@@ -69,7 +78,7 @@ function Home() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.9 }}
           >
-            <LinkComponent linkTo={"/CadastroEscolha"}>
+            <LinkComponent customClass="botaohome" linkTo={"/CadastroEscolha"}>
               <Button customClass="buttonBaixo" text="Cadastre-se" />
             </LinkComponent>
           </motion.div>
@@ -250,25 +259,17 @@ function Home() {
           QUEM JÁ PARTICIPOU, QUER MAIS
         </motion.h1>
         <div className={styles.coments}>
-          <Card_Recomendacao
-            customClass="cardRecomendacaoHome"
-            Perfil_foto={leticia}
-            Nome="Leticia Silva"
-            Sub_titulo="“KATHON nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva que já estamos planejando o próximo hackathon.”"
-          >
-            <Button customClass="buttonBaixo3" text="Seja parceiro" />
-          </Card_Recomendacao>
-
-          <Card_Recomendacao
-            customClass="cardRecomendacaoHome"
-            Perfil_foto={Abel}
-            Nome="João Carlos Pereira"
-            Sub_titulo="“Participar do hackathon com a KATHON foi uma experiência incrível! Trabalhei com uma equipe talentosa, aprendi muito e me senti desafiado. Mal posso esperar pelo próximo!”"
-          >
-            <LinkComponent linkTo={"/Login"}>
-              <Button customClass="buttonBaixo3" text="Iniciar" />
-            </LinkComponent>
-          </Card_Recomendacao>
+            <Card_Recomendacao
+              Perfil_foto={leticia}
+              Nome="Leticia Silva"
+              Sub_titulo="“KATHON nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva que já estamos planejando o próximo hackathon.”"
+            />
+            <Card_Recomendacao
+              Perfil_foto={Abel}
+              Nome="João Carlos Pereira"
+              Sub_titulo="“Participar do hackathon com a KATHON foi uma experiência incrível! Trabalhei com uma equipe talentosa, aprendi muito e me senti desafiado. Mal posso esperar pelo próximo!”"
+            />
+            {/* Adicione mais Cards aqui, se necessário */}
         </div>
         <motion.h1
           className={styles.homeTitulo2}

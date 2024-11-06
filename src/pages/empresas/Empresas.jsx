@@ -18,12 +18,12 @@ function Empresas() {
                     <div className={Styles.boxtext}>
                         <h5>Resolução de<br /> problemas rápida</h5>
                         <br />
-                        <p>Hackathons promovem a geração de ideias<br /> e soluções criativas em um curto período,<br /> ajudando a empresa a inovar de forma ágil<br /> e eficiente.</p>
+                        <p className={Styles.boxtextp1}>Hackathons promovem a geração de ideias<br /> e soluções criativas em um curto período,<br /> ajudando a empresa a inovar de forma ágil<br /> e eficiente.</p>
                     </div>
                     <div className={Styles.boxtext}>
-                        <h5>Descoberta de novos talentos</h5>
+                        <h5 className={Styles.boxtexth5}>Descoberta de novos talentos</h5>
                         <br />
-                        <p>Identifique jovens com habilidades<br /> excepcionais e potencial para
+                        <p className={Styles.boxtextp2}>Identifique jovens com habilidades<br /> excepcionais e potencial para
                             <br />impulsionar seu negócio.</p>
                     </div>
                 </div>

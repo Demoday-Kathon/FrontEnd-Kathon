@@ -35,9 +35,9 @@
     color: rgba(240, 240, 240, 0.60);
 }
 
-.BottonPerfil {
-    width: 90%;
-    height: 54px;
+.BottonPerfil2 {
+    width: 150%;
+    height: 48px;
     border-radius: 36px;
     background: rgba(240, 240, 240, 0.50);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -49,10 +49,14 @@
     text-align: center;
     font-size: 25px;
     transition: 0.5s;
+    margin-left: -13px;
+    
+
+
 
 }
 
-.BottonPerfil:hover{
+.BottonPerfil2:hover{
     background: #c9c9c9;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     backdrop-filter: blur(15px);
