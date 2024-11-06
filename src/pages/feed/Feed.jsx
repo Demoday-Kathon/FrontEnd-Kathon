@@ -5,6 +5,11 @@ import PhotoPost from '../../assets/imgs/rocketseat.png';
 import Post from '../../components/layout/componentePost/ComponentePost';
 import Feed from '../../components/layout/componenteFeed/ComponenteFeed'
 import User from '../../assets/imgs/joana.png'
+import Abel from '../../assets/imgs/Abel.png'
+import IBM from '../../assets/imgs/IBM.png'
+import IBM_desafios from '../../assets/imgs/ibm_desafios.jpg'
+import py_data from '../../assets/imgs/pydata.png'
+import proa from '../../assets/imgs/instituto_proa.jpg'
 import styles from './Feed.module.css'
 import { useState } from 'react';
 
@@ -27,30 +32,30 @@ function Feeds() {
                             <Post
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}
-                            hours={"3 Horas atrás"}
+                            hours={"6 Horas atrás"}
+                            description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
+                            photoPost={proa}
+                            />
+                            <Post
+                            nameUser={"Abel Ferreira"}
+                            profile={Abel}
+                            hours={"2 Horas atrás"}
                             description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
                             photoPost={PhotoPost}
+                            />
+                            <Post
+                            nameUser={"IBM"}
+                            profile={IBM}
+                            hours={"12 Horas atrás"}
+                            description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
+                            photoPost={IBM_desafios}
                             />
                             <Post
                             nameUser={"Joana Pereira"}
                             profile={PhotoProfile}
                             hours={"3 Horas atrás"}
                             description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
-                            photoPost={PhotoPost}
-                            />
-                            <Post
-                            nameUser={"Joana Pereira"}
-                            profile={PhotoProfile}
-                            hours={"3 Horas atrás"}
-                            description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
-                            photoPost={PhotoPost}
-                            />
-                            <Post
-                            nameUser={"Joana Pereira"}
-                            profile={PhotoProfile}
-                            hours={"3 Horas atrás"}
-                            description={"Hackathons são eventos intensivos para criar soluções inovadoras e aprender colaborativamente."}
-                            photoPost={PhotoPost}
+                            photoPost={py_data}
                             />
                         </Feed>
                         <div className={styles.ContentIntern}>
