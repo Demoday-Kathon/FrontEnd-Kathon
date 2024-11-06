@@ -42,3 +42,45 @@
   cursor: pointer;
   margin-right: 1vh;
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .containerProfile {
+    width: 100%;
+    justify-content: space-around;
+    gap: 2vw;
+    margin-top: 2vh;
+  }
+
+  .ProfileNav {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .AdiconalButton {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerProfile {
+    width: 100%;
+    flex-direction: column;
+    gap: 1vw;
+  }
+
+  .ProfileNav {
+    width: 9vw;
+    height: 9vw;
+  }
+
+  .AdiconalButton {
+    width: 9vw;
+    height: 9vw;
+  }
+}
