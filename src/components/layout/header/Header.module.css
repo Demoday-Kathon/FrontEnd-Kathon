@@ -19,3 +19,30 @@
   position: relative;
   margin-left: -55px;
 }
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+  }
+
+  .logoHeader {
+    width: 12em;
+    height: 2.5em;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1em;
+  }
+
+  .logoHeader {
+    width: 10em;
+    height: 2em;
+  }
+}
