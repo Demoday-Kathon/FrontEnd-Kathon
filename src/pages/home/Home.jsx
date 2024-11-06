@@ -78,7 +78,7 @@ function Home() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.9 }}
           >
-            <LinkComponent linkTo={"/CadastroEscolha"}>
+            <LinkComponent customClass="botaohome" linkTo={"/CadastroEscolha"}>
               <Button customClass="buttonBaixo" text="Cadastre-se" />
             </LinkComponent>
           </motion.div>
