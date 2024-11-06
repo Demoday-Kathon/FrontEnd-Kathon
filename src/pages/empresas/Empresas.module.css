@@ -81,9 +81,22 @@
     font-weight: bold;
 }
 
-.boxtext p {
+.boxtextp1{
     color: white;
-    font-size: 25px;
+    font-size: 27px;
+}
+
+.boxtexth5{
+    position: relative;
+    padding-top: 25px;
+}
+
+
+.boxtextp2{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    padding-top: 28px;
 }
 
 .boxfinal {
