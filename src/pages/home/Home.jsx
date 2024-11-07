@@ -247,7 +247,6 @@ function Home() {
             </Link>
           </Card>
         </div>
-        <Button text="Veja mais" customClass="vejahackahton" />
         <motion.h1
           className={styles.homeTitulo2}
           variants={fadein("up", 0.9)}

@@ -102,6 +102,9 @@
   width: 75%;
   padding: 1em;
   font-weight: bold;
+  span {
+    color: var(--Terciria-V, #06f8fa);;
+  }
 }
 
 
