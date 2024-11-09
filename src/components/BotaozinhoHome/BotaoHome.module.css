@@ -8,14 +8,11 @@
   width: 100%;
   margin: 0.5em;
   font-size: 0.8em;
-
 }
-
-
 
 .iconCardSecundario {
   background-color: #000;
-  color: #9960dc;
+  color: #06f8fa;
   border: 1px solid #fff;
   width: 35%;
   height: 2.5em;
@@ -51,4 +48,30 @@
 
   background: rgba(71, 70, 70, 0.1);
   width: 80%;
+}
+
+/* TESTE */
+
+.carrossel {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.carrossel h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.carrosselImagemContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Ajuste conforme necessário */
+  overflow: hidden;
+}
+
+.carrosselImagem {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ajusta a imagem para caber no contêiner */
 }

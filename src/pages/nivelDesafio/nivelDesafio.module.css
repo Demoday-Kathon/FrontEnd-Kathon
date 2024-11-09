@@ -105,7 +105,9 @@
   }
 }
 
-.desafio1, .desafio2, .desafio3 {
+.desafio1,
+.desafio2,
+.desafio3 {
   text-decoration: none;
 }
 
@@ -167,4 +169,13 @@
   transition: 1s;
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.abadebotoes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -100px;
+  margin-bottom: 10vh;
 }

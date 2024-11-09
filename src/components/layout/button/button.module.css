@@ -160,7 +160,6 @@
   margin-bottom: 1em;
 }
 
-
 .buttonAzulHome:hover {
   width: 75%;
   font-size: 0.9em;
@@ -214,13 +213,11 @@
   font-size: 0.8em;
   color: #000;
   border-color: #a367eb;
-
-
 }
 
 .vejahackahton:hover {
   font-size: 0.9em;
-  background-color: #024A4B;
+  background-color: #024a4b;
   color: white;
   transition: 1.2s;
 }

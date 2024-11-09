@@ -5,6 +5,7 @@ import largatixa from "../../assets/imgs/largatixa.svg";
 import crocodilo from "../../assets/imgs/crocodilo.svg";
 import dinossauro from "../../assets/imgs/dinossauro.svg";
 import Footer from "../../components/layout/footer/Footer";
+import Button from "../../components/layout/button/button";
 
 function NivelDesafio() {
   return (
@@ -55,6 +56,11 @@ function NivelDesafio() {
               Para você que sabe muito <br /> e quer se aprimorar
             </p>
           </div>
+        </div>
+        <div className={styles.abadebotoes}>
+          <Button customClass={styles.botaodesafio} text="Entrar" />
+          <Button customClass={styles.botaodesafio} text="Entrar" />
+          <Button customClass={styles.botaodesafio} text="Entrar" />
         </div>
       </div>
 

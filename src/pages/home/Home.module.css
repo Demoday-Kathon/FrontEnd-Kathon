@@ -60,7 +60,7 @@
 
 .cardPretoHome .tituloCardPreto {
   text-align: left;
-  background: linear-gradient(90deg, #fff 21.5%, #a367eb 45%);
+  background: linear-gradient(90deg, #fff 21.5%, #06f8fa 45%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -73,7 +73,7 @@
 }
 
 .cardPretoHome .descHackathonHome span {
-  color: #9960dc;
+  color: #06f8fa;
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -103,18 +103,16 @@
   padding: 1em;
   font-weight: bold;
   span {
-    color: var(--Terciria-V, #06f8fa);;
+    color: var(--Terciria-V, #06f8fa);
   }
 }
-
-
 
 .hackathonsDisponiveisHome {
   display: flex;
   flex-direction: row;
 }
 
-.BotaohackaVisaoGeral{
+.BotaohackaVisaoGeral {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -123,7 +121,7 @@
 }
 
 .homeTitulo2 .spanHabilidade {
-  color: #9960dc;
+  color: #06f8fa;
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -171,8 +169,6 @@
   flex-wrap: wrap;
   margin: auto;
 }
-
-
 
 .tituloCardPretoTalentos {
   font-size: 1.5em;
@@ -414,10 +410,9 @@ video {
   border-radius: 0.8em;
   font-size: 0.8em;
   padding: 0.4em;
-  
 }
 
-.BotaoDescobrirHackathons{
+.BotaoDescobrirHackathons {
   width: 50vh;
   text-decoration: none;
 }
@@ -426,10 +421,6 @@ video {
   background-image: url(../../assets/imgs/home_fundo.png);
 }
 
-
-
-
-
 @media (max-width: 768px) {
   .hometitle {
     font-size: 1.4em;
@@ -437,5 +428,4 @@ video {
 }
 
 @media (max-width: 480px) {
-
 }

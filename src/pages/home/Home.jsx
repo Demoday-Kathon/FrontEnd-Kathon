@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from "react";
+
 import styles from "./Home.module.css";
 import Header from "../../components/layout/header/Header";
 import Footer from "../../components/layout/footer/Footer";
@@ -34,7 +36,6 @@ import { motion } from "framer-motion";
 import { fadein } from "../../variants";
 
 function Home() {
-
   const settings = {
     dots: true,
     infinite: true,
@@ -258,17 +259,17 @@ function Home() {
           QUEM JÁ PARTICIPOU, QUER MAIS
         </motion.h1>
         <div className={styles.coments}>
-            <Card_Recomendacao
-              Perfil_foto={leticia}
-              Nome="Leticia Silva"
-              Sub_titulo="“KATHON nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva que já estamos planejando o próximo hackathon.”"
-            />
-            <Card_Recomendacao
-              Perfil_foto={Abel}
-              Nome="João Carlos Pereira"
-              Sub_titulo="“Participar do hackathon com a KATHON foi uma experiência incrível! Trabalhei com uma equipe talentosa, aprendi muito e me senti desafiado. Mal posso esperar pelo próximo!”"
-            />
-            {/* Adicione mais Cards aqui, se necessário */}
+          <Card_Recomendacao
+            Perfil_foto={leticia}
+            Nome="Leticia Silva"
+            Sub_titulo="“KATHON nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva que já estamos planejando o próximo hackathon.”"
+          />
+          <Card_Recomendacao
+            Perfil_foto={Abel}
+            Nome="João Carlos Pereira"
+            Sub_titulo="“Participar do hackathon com a KATHON foi uma experiência incrível! Trabalhei com uma equipe talentosa, aprendi muito e me senti desafiado. Mal posso esperar pelo próximo!”"
+          />
+          {/* Adicione mais Cards aqui, se necessário */}
         </div>
         <motion.h1
           className={styles.homeTitulo2}
