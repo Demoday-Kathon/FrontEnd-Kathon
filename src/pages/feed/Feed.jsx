@@ -1,4 +1,4 @@
-import HeaderComunidade from '../../components/HeaderFeed/HeaderFeed'
+import HeaderInterno from '../../components/layout/headerInterno/HeaderInterno'
 import DescricaoComunidade from '../../components/DescricaoComunidade/DescricaoComunidade'
 import PhotoProfile from '../../assets/imgs/joana.png';
 import PhotoPost from '../../assets/imgs/rocketseat.png';
@@ -11,20 +11,12 @@ import IBM_desafios from '../../assets/imgs/ibm_desafios.jpg'
 import py_data from '../../assets/imgs/pydata.png'
 import proa from '../../assets/imgs/instituto_proa.jpg'
 import styles from './Feed.module.css'
-import { useState } from 'react';
 
 function Feeds() {
-    const [isHeaderCollapsed, setIsHeaderCollapsed] = useState(false);
-
-    const handleHeaderToggle = () => {
-        setIsHeaderCollapsed(!isHeaderCollapsed);
-    };
 
     return (
         <div className={`${styles.containerComunidadeVisao}`}>
-
-            <HeaderComunidade onToggle={handleHeaderToggle} />
-
+            <HeaderInterno />
             <div className={styles.Bloco}>
                 <div className={`${styles.blocoInterno}`}>
                     <div className={styles.containeFeedComunity}>
