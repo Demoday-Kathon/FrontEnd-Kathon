@@ -15,7 +15,7 @@ function card({
   timeline,
   customClass,
   children,
-  customClassPersons
+  customClassPersons,
 }) {
   return (
     <div className={`${styles.card} ${styles[customClass]}`}>
@@ -32,20 +32,22 @@ function card({
         </div>
         <div className={styles.participants}>
           <div className={styles.participants_hackathon}>
-            <Person person={person1} customClass={customClassPersons}/>
-            <Person person={person2} customClass={customClassPersons}/>
-            <Person person={person3} customClass={customClassPersons}/>
+            <Person person={person1} customClass={customClassPersons} />
+            <Person person={person2} customClass={customClassPersons} />
+            <Person person={person3} customClass={customClassPersons} />
           </div>
           <p className={styles.acounter}> {acounter} </p>
         </div>
         <div className={styles.container2}>
-          <div className={styles.timeline}>
+          {/* <div className={styles.timeline}>
             <p className={styles.acounter2}> {timeline} </p>
+          </div> */}
+          <div className={styles.progressbarcontainer}>
+            <div className={styles.progressbar}></div>
           </div>
+          <p className={styles.diasRestantes}> 20 dias restantes</p>
         </div>
-        <div className={styles.button_hackathon}>
-          {children}
-        </div>
+        <div className={styles.button_hackathon}>{children}</div>
       </div>
     </div>
   );
