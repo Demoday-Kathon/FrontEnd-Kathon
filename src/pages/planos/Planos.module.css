@@ -75,3 +75,66 @@
     margin:auto;
     color:white;
 }
+
+/* Celulares */
+
+@media (max-width: 450px){
+    
+    .fundoplano{
+        width:95%;
+        height:2600px;
+    }
+
+    .benebox{
+        position: relative;
+        flex-direction: column;
+    }
+}
+
+/* Tablets */
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .fundoplano{
+        width:95%;
+        height:270vh;
+    }
+
+    .benebox{
+        position: relative;
+        flex-direction: column;
+    }
+
+
+    .preco1 {
+        color: #13ECAB;
+        margin-top: 174px;
+    }
+    
+    .preco2 {
+        color: #C24361;
+        margin-top: 108px;
+    }
+    
+    .preco3 {
+        color: #66C2FA;
+        margin-top: 20px;
+    }
+ }
+
+ @media(width:1100px){
+
+    .fundoplano{
+        width:95%;
+        height:440vh;
+    }
+
+    .benebox{
+        position: relative;
+        flex-direction: column;
+    }
+
+ }
+
+
+

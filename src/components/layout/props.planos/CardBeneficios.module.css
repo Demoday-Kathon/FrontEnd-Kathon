@@ -28,3 +28,33 @@
 .borderblue{
     border: 2px solid #66C2FA;
 }
+
+/* Tablets */
+
+@media (min-width:768px) and (max-width:1024px){
+    .beneficios{
+        width:50vh;
+        height:8vh;
+    }
+
+    .beneficios p{
+        font-size: 30px;
+        line-height:1;
+    }
+
+}
+
+
+@media(width:1100px){
+
+    .beneficios{
+        width:90vh;
+        height:11vh;
+    }
+
+    .beneficios p{
+        font-size: 30px;
+        line-height:1;
+    }
+
+ }
