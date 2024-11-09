@@ -13,3 +13,15 @@
     line-height: normal;
   }
 }
+
+@media (max-width: 450px) {
+  .card_pessoas {
+    display: flex;
+    flex-direction: column;
+    p {
+      text-align: center;
+      width: 68%;
+      margin-bottom: 10px;
+    }
+  }
+}

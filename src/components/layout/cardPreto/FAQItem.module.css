@@ -24,6 +24,7 @@
 .faqQuestion:hover {
   background-color: white;
   color: black;
+  transition: 1.5s;
 }
 
 .faqAnswer {
@@ -35,7 +36,8 @@
 }
 
 .active .faqAnswer {
-  display: block; /* Mostra a resposta quando a classe 'active' estiver presente */
+  display: block;
+  transition: 1s;
 }
 
 .faqContainer {

@@ -52,7 +52,7 @@
   line-height: 18px; /* 100% */
 }
 .hours {
-  color: var(--Terciria, #06F8FA);
+  color: var(--Terciria, #06f8fa);
   font-family: "DM Sans";
   font-size: 18px;
   font-style: normal;
@@ -86,19 +86,28 @@
 }
 
 .butoncard:hover {
-  background-color: var(--Terciria, #06F8FA);
+  background-color: var(--Terciria, #06f8fa);
 }
 
-.butoncardLink{
+.butoncardLink {
   text-decoration: none;
   color: #141301;
 }
 
-
-.LinksHackaPremiosELinhaTempo{
+.LinksHackaPremiosELinhaTempo {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   text-decoration: none;
+}
+
+@media (max-width: 450px) {
+  .cardData {
+    height: 88vh;
+  }
+  .butoncard {
+    margin-top: -20px;
+    margin-bottom: 8px;
+  }
 }

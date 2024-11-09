@@ -1,4 +1,4 @@
-.ContentPrincipal{
+.ContentPrincipal {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -11,12 +11,12 @@
   gap: 50px;
   justify-content: center;
 }
-  .containersubprincipal {
-    width: calc(100% - 130px); /* Calcula a largura subtraindo 130px da largura total */
-    position: relative;
-    display: flex;
-    margin-left: 130px;
-  }
+.containersubprincipal {
+  width: calc(100% - 130px);
+  position: relative;
+  display: flex;
+  margin-left: 130px;
+}
 
 .hackthonsmais {
   color: var(--Terciria-II, #f0f0f0);
@@ -33,4 +33,57 @@
   margin-top: 50px;
   display: flex;
   flex-direction: row;
+}
+
+/* @media (max-width: 450px) {
+  .containerprincipal {
+    display: flex;
+    flex-direction: column;
+  }
+  .containersubprincipal {
+    width: 100%;
+    margin: auto;
+  }
+  .hackthonsmais {
+    h3 {
+      font-size: 0.8em;
+    }
+  }
+  .cardHacks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+} */
+
+@media (max-width: 450px) {
+  .ContentPrincipal {
+    padding: 10px;
+    /* Ajuste de espaçamento para dispositivos menores */
+  }
+
+  .containerprincipal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containersubprincipal {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hackthonsmais h3 {
+    font-size: 1.2em; /* Ajuste do tamanho da fonte */
+    text-align: center;
+  }
+
+  .cardHacks {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Estilos para ajustar os componentes internos, como CardPreto e Card */
+  .cardHackscustom {
+    width: 100%; /* Expande o card para ocupar a largura total */
+  }
 }

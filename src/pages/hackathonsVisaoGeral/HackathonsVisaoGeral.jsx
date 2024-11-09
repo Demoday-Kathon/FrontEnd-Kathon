@@ -14,7 +14,7 @@ function HackathonVisaoGeral() {
         <Bann />
         <CardInscricao />
       </div>
-    
+
       <div className={Styles.containersubprincipal}>
         <CardPreto
           title="Rede ou Aplicativo para Conectar Fornecedores Locais"

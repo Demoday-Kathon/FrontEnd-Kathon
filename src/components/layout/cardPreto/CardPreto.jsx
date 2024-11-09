@@ -100,11 +100,4 @@ function CardPreto({ title, context, mentors, sponsors }) {
 export default CardPreto;
 
 {
-  /* <Perguntas text="Como é o processo de inscrição?" />
-<Perguntas text="Quando e onde é o evento?" />
-<Perguntas text="Quem pode participar?" />
-<Perguntas text="Quanto custa para se inscrever?" />
-<Perguntas text="Qual o prêmio do Hackathon?" />
-<Perguntas text="Preciso ter algum conhecimento técnico para participar?" />
-<Perguntas text="Ganha algum certificado?" /> */
 }

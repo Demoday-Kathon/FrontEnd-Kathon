@@ -1,124 +1,129 @@
-.roxo{
-    width: 149px;
-    height: 50px;
-    border-radius: 36px;
-    background: var(--Primria, #7400B7);
-    font-family: "DM Sans";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: #FFF;
-    transition: 0.5s;
-    /* margin: 0.5em;
-    padding: 0.9em; */    /* Botão que pode dar b.o*/
+.roxo {
+  width: 149px;
+  height: 50px;
+  border-radius: 36px;
+  background: var(--Primria, #7400b7);
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
+  transition: 0.5s;
+  /* margin: 0.5em;
+    padding: 0.9em; */ /* Botão que pode dar b.o*/
 }
 
-.azul{
-    width: 250px;
-    height: 50px;
-    border-radius: 36px;
-    background: #314CE7;
-    font-family: "DM Sans";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: #FFF;
-
+.azul {
+  width: 250px;
+  height: 50px;
+  border-radius: 36px;
+  background: #314ce7;
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
 }
 
-.lilas{
-    width: 400px;
-    height: 50px;
-    border-radius: 36px;
-    background: var(--Terciria-V, #A367EB);
-    font-family: "DM Sans";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: #FFF;
+.lilas {
+  width: 400px;
+  height: 50px;
+  border-radius: 36px;
+  background: var(--Terciria-V, #a367eb);
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
 }
 
 .lilasCad {
-    width: auto;
-    height: 50px;
-    border-radius: 36px;
-    background: var(--Terciria-V, #A367EB);
-    font-family: "DM Sans";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: #FFF;
+  width: auto;
+  height: 50px;
+  border-radius: 36px;
+  background: var(--Terciria-V, #a367eb);
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
 }
 
-.lilas_p{
-    width: 250px;
-    height: 50px;
-    border-radius: 36px;
-    background: var(--Terciria-V, #A367EB);
-    font-family: "DM Sans";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: #FFF;
+.lilas_p {
+  width: 250px;
+  height: 50px;
+  border-radius: 36px;
+  background: var(--Terciria-V, #a367eb);
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
 }
 
-.ilustacao{
-    width: 150px;
-    height: 50px;
-    border-radius: 36px;
-    background: var(--Terciria-V, #A367EB);
-    font-family: "DM Sans";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: #FFF;
+.ilustacao {
+  width: 150px;
+  height: 50px;
+  border-radius: 36px;
+  background: var(--Terciria-V, #a367eb);
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
 }
 
-.comunicacao{
-    width: 200px;
-    height: 50px;
-    border-radius: 36px;
-    background: var(--Secundria, #314CE7);
-    font-family: "DM Sans";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: #FFF;
-
+.comunicacao {
+  width: 200px;
+  height: 50px;
+  border-radius: 36px;
+  background: var(--Secundria, #314ce7);
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
 }
 
-.pesquisa{
-    width: 150px;
-    height: 50px;
-    border-radius: 36px;
-    background: var(--Secundria, #314CE7);
-    font-family: "DM Sans";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: #FFF;
-
+.pesquisa {
+  width: 150px;
+  height: 50px;
+  border-radius: 36px;
+  background: var(--Secundria, #314ce7);
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
 }
 
-.usuario{
-    width: 350px;
-    height: 50px;
-    border-radius: 36px;
-    background: var(--Primria, #7400B7);
-    font-family: "DM Sans";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: #FFF;
+.usuario {
+  width: 350px;
+  height: 50px;
+  border-radius: 36px;
+  background: var(--Primria, #7400b7);
+  font-family: "DM Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
 }
 
-    
+@media (max-width: 450px) {
+  .roxo,
+  .lilas,
+  .azul {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+}
