@@ -5,6 +5,7 @@ import Card from '../../components/layout/card/card'
 import Button from "../../components/layout/button/button";
 import HeaderInterno from '../../components/layout/headerInterno/HeaderInterno'
 import Footer from '../../components/layout/footer/Footer'
+import VideoBack2 from "../../assets/imgs/video_back2.mp4";
 import { Link } from 'react-router-dom';
 
 function Hackathons() {
@@ -12,8 +13,24 @@ function Hackathons() {
     return (
         <div className={styles.hackathons}>
             <HeaderInterno />
-            <container className={styles.homeTitulo}>
+            <div className="App">
+                <div className="video-background">
+                <video autoPlay muted loop className={styles.video2}>
+                    <source src={VideoBack2} type="video/mp4" />
+                </video>
+                <h1 className={styles.hometitle}>
+                    Oportunidades para <br/> impulsionar sua carreira
+                </h1>
+                <div className={styles.caixadescricao}>
+                    <p className={styles.descricaodohack}>
+                    Os Hackathons ajudam a desenvolver suas habilidades técnicas e
+                    comportamentais{" "}
+                    </p>
+                </div>
+                </div>
+            </div>
 
+            <container className={styles.homeTitulo}>
                 <div className={styles.bg_container}>
                     <Card
                         banner={banner}
