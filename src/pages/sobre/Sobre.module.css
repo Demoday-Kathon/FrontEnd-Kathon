@@ -117,7 +117,7 @@
 
 .equipeContainer {
   display: flex;
-  width: 100%;
+  width: 98%;
   height: 125vh;
   justify-content: center;
   align-items: center;
@@ -164,7 +164,7 @@
 
 .descDesenvolvedores .textDescription {
   color: #fff;
-  font-size: 3rem;
+  font-size: 3.5rem;
   width: 100%;
   margin-top: 2.5em;
 }
