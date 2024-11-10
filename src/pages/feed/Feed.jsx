@@ -4,15 +4,27 @@ import PhotoProfile from '../../assets/imgs/joana.png';
 import PhotoPost from '../../assets/imgs/rocketseat.png';
 import Post from '../../components/layout/componentePost/ComponentePost';
 import Feed from '../../components/layout/componenteFeed/ComponenteFeed'
+import ModalPublicacao from '../../components/modalPublicacao/Publicacao'
 import User from '../../assets/imgs/joana.png'
 import Abel from '../../assets/imgs/Abel.png'
 import IBM from '../../assets/imgs/IBM.png'
 import IBM_desafios from '../../assets/imgs/ibm_desafios.jpg'
 import py_data from '../../assets/imgs/pydata.png'
 import proa from '../../assets/imgs/instituto_proa.jpg'
+import { useState } from 'react'
 import styles from './Feed.module.css'
 
 function Feeds() {
+
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    function handlePostClick() {
+        setIsModalVisible(true);
+    }
+
+    function closeModal() {
+        setIsModalVisible(false);
+    }
 
     return (
         <div className={`${styles.containerComunidadeVisao}`}>
@@ -83,7 +95,7 @@ function Feeds() {
                                 </div>
                             </DescricaoComunidade>
 
-                            <div className={styles.ComponentePost}>
+                            <div className={styles.ComponentePost} onClick={handlePostClick}>
                                 <img src={User} alt="" />
                                 <p>Escreva algo...</p>
                             </div>
@@ -93,6 +105,11 @@ function Feeds() {
                 </div>
 
             </div>
+            {isModalVisible && (
+                <div className={styles.ContainerModalPublicacao}>
+                    <ModalPublicacao closeModal={closeModal} />
+                </div>
+            )}
         </div>
     )
 }
