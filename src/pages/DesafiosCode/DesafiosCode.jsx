@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Styles from './DesafiosCode.module.css';
 import ImageNivelIniciante from '../../assets/imgs/niveliniciante.png';
 import HeaderInterno from '../../components/layout/headerInterno/HeaderInterno';
+import ModalGame from '../../components/ModalGame/ModalGame';
 import Setawhite from '../../assets/imgs/seta.svg';
 
 const API_KEY = "AIzaSyBfJrzeRAPn1aJOsHJyhdfNcxkOaKJJgOk";
@@ -11,6 +12,11 @@ function DesafiosCode() {
     const [genAI, setGenAI] = useState(null);
     const [exercise, setExercise] = useState("Carregando exercício...");
     const [time, setTime] = useState(15 * 60);
+    const [modalVisible, setModalVisible] = useState(false);
+    const [modalTitle, setModalTitle] = useState("");
+    const [modalText, setModalText] = useState("");
+    const [modalTitleColor, setModalTitleColor] = useState("");
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         const loadMonacoAndAI = async () => {
@@ -64,7 +70,7 @@ function DesafiosCode() {
     }, [genAI]);
 
     const generateExercise = async (genAIInstance) => {
-        const prompt = "Crie um exercício de programação para o aluno praticar com JavaScript ou Python. O exercício deve ser algo de iniciante. texto curto de no maximo 80 caracteres";
+        const prompt = "Crie um exercício de programação para o aluno praticar com JavaScript ou Python. O exercício deve ser algo de intermediário. texto curto de no maximo 80 caracteres";
 
         try {
             const result = await genAIInstance.getGenerativeModel({ model: "gemini-1.5-flash" }).generateContent(prompt);
@@ -82,28 +88,43 @@ function DesafiosCode() {
     };
 
     const submitCode = async () => {
+        setLoading(true); // Set loading to true before starting the async operation
         const userCode = editorRef.current.getValue();
         const exercisePrompt = exercise;
-        const feedbackPrompt = `Verifique se o código abaixo resolve o seguinte exercício: ${exercisePrompt}. \n\nCódigo do usuário:\n${userCode}`;
+        const feedbackPrompt = `Verifique se o código abaixo resolve o seguinte exercício: ${exercisePrompt}. \n\nCódigo do usuário:\n${userCode}. Não passe a resposta, nem faça código somente escreva o comentário do que esta errado. a resposta deve ter 150 caracteres e não ultrapasse. Passe um comentário detalhado.`;
         
         try {
             const result = await genAI.getGenerativeModel({ model: "gemini-1.5-flash" }).generateContent(feedbackPrompt);
             if (result && result.response && result.response.candidates.length > 0) {
                 const feedback = result.response.candidates[0].content.parts[0].text;
+                setModalText(feedback);
                 if (feedback.includes("correto")) {
-                    alert("Parabéns! Você completou o exercício corretamente.");
-                    editorRef.current.setValue("// Escreva seu código aqui\n");
-                    generateExercise(genAI);
+                    setModalTitle("Parabéns! Você acertou");
+                    setModalTitleColor("green");
                 } else {
-                    alert("Tente novamente. Feedback: " + feedback);
+                    setModalTitle("Tente novamente");
+                    setModalTitleColor("red");
                 }
+                setModalVisible(true);
             } else {
                 throw new Error("Estrutura de resposta inválida ao avaliar o código.");
             }
         } catch (error) {
             console.error("Erro ao avaliar o código:", error);
             alert("Erro ao avaliar o código. Tente novamente.");
+        } finally {
+            setLoading(false); // Set loading to false after the async operation completes
         }
+    };
+
+    const handleModalButton1 = () => {
+        setModalVisible(false);
+    };
+
+    const handleModalButton2 = () => {
+        setModalVisible(false);
+        editorRef.current.setValue("// Escreva seu código aqui\n");
+        generateExercise(genAI);
     };
 
     return (
@@ -127,6 +148,25 @@ function DesafiosCode() {
                     </div>
                 </div>
             </div>
+            {loading && (
+                <div className={Styles.LoadingContainer}>
+                    <p>Carregando...</p>
+                </div>
+            )}
+            {modalVisible && !loading && (
+                <div className={Styles.ContainerModalgame}>
+                    <ModalGame
+                        button1={"Tentar Novamente"}
+                        button2={"Avançar"}
+                        text={modalText}
+                        title={modalTitle}
+                        titleColor={modalTitleColor}
+                        onButton1Click={handleModalButton1}
+                        onButton2Click={handleModalButton2}
+                        key={"1"}
+                    />
+                </div>
+            )}
         </div>
     );
 }
