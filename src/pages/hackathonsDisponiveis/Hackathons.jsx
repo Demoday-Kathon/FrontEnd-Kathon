@@ -6,7 +6,7 @@ import Button from "../../components/layout/button/button";
 import Header from "../../components/layout/header/Header";
 import Footer from "../../components/layout/footer/Footer";
 import { Link } from "react-router-dom";
-import VideoBack2 from "../../assets/imgs/video_back2.mp4";
+import VideoBack2 from "../../assets/imgs/video_back - kathon.mp4";
 
 function Hackathons() {
   return (
@@ -19,7 +19,7 @@ function Hackathons() {
             <source src={VideoBack2} type="video/mp4" />
           </video>
           <h1 className={styles.hometitle}>
-            Oportunidades para <br/> impulsionar sua carreira
+            Oportunidades para <br /> impulsionar sua carreira
           </h1>
           <div className={styles.caixadescricao}>
             <p className={styles.descricaodohack}>
@@ -33,7 +33,7 @@ function Hackathons() {
 
       <div className={styles.verificacao}>
         <h1>
-          Verifique os hackathons disponíveis <br />
+          Verifique os Hackathons <br /> disponíveis e se desenvolve
         </h1>
       </div>
       <container className={styles.homeTitulo}>
