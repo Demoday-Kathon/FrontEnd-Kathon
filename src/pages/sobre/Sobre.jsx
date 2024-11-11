@@ -7,7 +7,12 @@ import Equipe from "../../assets/imgs/equipedesenvolvedora.png";
 import Macbook from "../../assets/imgs/macbook.png";
 import styles from "./Sobre.module.css";
 import blur from "../../assets/imgs/elipseblue.png";
-import BeatrizImage from "../../assets/imgs/bia.png";
+import BeatrizImage from "../../assets/imgs/imgmembros/beatriz.jpg";
+import Gustavo from "../../assets/imgs/imgmembros/gustavo.jpg";
+import Ricardo from "../../assets/imgs/imgmembros/ricardo.jpeg";
+import Weslley from "../../assets/imgs/imgmembros/weslley.jpg";
+import Paulo from "../../assets/imgs/imgmembros/paulo.jpg";
+import Raphael from "../../assets/imgs/imgmembros/Raphael.jpg";
 import { motion } from "framer-motion";
 
 import { fadein } from "../../variants";
@@ -119,16 +124,16 @@ function Sobre({ children }) {
             linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
           />
           <CardMembroTime
-            name={"Beatriz Marques"}
-            description={"P.O, Designer e Desenvolvedora Front-End"}
-            photo={BeatrizImage}
-            github={"https://github.com/beatrizimarques"}
-            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+            name={"Gustavo Sousa"}
+            description={"Scrum Master e Desenvolvedor Full-Stack"}
+            photo={Gustavo}
+            github={"https://github.com/gustavodesousalima"}
+            linkedin={"https://www.linkedin.com/in/gustavo-developer/"}
           />
           <CardMembroTime
-            name={"Beatriz Marques"}
-            description={"P.O, Designer e Desenvolvedora Front-End"}
-            photo={BeatrizImage}
+            name={"Weslley Campos"}
+            description={"Financeiro e Desenvolvedor Full-Stack"}
+            photo={Weslley}
             github={"https://github.com/beatrizimarques"}
             linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
           />
@@ -136,29 +141,29 @@ function Sobre({ children }) {
 
         <div className={styles.containerCardMembroTime}>
           <CardMembroTime
-            name={"Beatriz Marques"}
-            description={"P.O, Designer e Desenvolvedora Front-End"}
-            photo={BeatrizImage}
+            name={"Ricardo Matos"}
+            description={"Desenvolvedor Full-Stack"}
+            photo={Ricardo}
             github={"https://github.com/beatrizimarques"}
             linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
           />
           <CardMembroTime
-            name={"Beatriz Marques"}
-            description={"P.O, Designer e Desenvolvedora Front-End"}
-            photo={BeatrizImage}
+            name={"Raphael Pereira"}
+            description={"Desenvolvedor Full-Stack"}
+            photo={Raphael}
             github={"https://github.com/beatrizimarques"}
             linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
           />
           <CardMembroTime
-            name={"Beatriz Marques"}
-            description={"P.O, Designer e Desenvolvedora Front-End"}
-            photo={BeatrizImage}
+            name={"Paulo Nalcino"}
+            description={"Desenvolvedor Back-End e Banco de dados"}
+            photo={Paulo}
             github={"https://github.com/beatrizimarques"}
             linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
           />
           <CardMembroTime
-            name={"Beatriz Marques"}
-            description={"P.O, Designer e Desenvolvedora Front-End"}
+            name={"Lucas Carvalho"}
+            description={"UI/UX Designer e Desenvolvedor Full-Stack"}
             photo={BeatrizImage}
             github={"https://github.com/beatrizimarques"}
             linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}

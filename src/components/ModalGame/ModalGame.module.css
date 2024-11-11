@@ -1,10 +1,21 @@
 .modal {
   display: flex;
   justify-content: center;
-  flex-shrink: 0;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 999;
+  color: #fff;
 }
 
 .modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 36px;
   border: 2px solid #66c2fa;
   background: rgba(20, 19, 1, 0.8);
@@ -12,9 +23,49 @@
   backdrop-filter: blur(20px);
   width: 40%;
   height: 500px;
+  padding: 20px;
 }
 
 .modalContent:hover {
   border: 2px solid #a367eb;
   transition: 1s;
+}
+
+.modalTitle {
+  margin-bottom: auto;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.modalText {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.4rem;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.modalButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3e93c8;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+.modalButton:hover {
+  background-color: #a367eb;
 }
