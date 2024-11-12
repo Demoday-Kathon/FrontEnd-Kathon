@@ -25,3 +25,17 @@
     }
   }
 }
+@media (min-width: 451px) {
+  @media (max-width: 800px) {
+    .card_pessoas {
+      display: flex;
+      flex-direction: column;
+      margin-left: 200px;
+      p {
+        text-align: center;
+        width: 60%;
+        margin-bottom: 10px;
+      }
+    }
+}
+}

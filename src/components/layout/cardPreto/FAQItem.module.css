@@ -46,3 +46,17 @@
   align-items: center;
   margin-bottom: 50px;
 }
+
+@media (max-width: 450px) {
+  .faqItem {
+    width: 90%;
+  }
+}
+
+@media (min-width: 451px) {
+  @media (max-width: 800px) {
+    .faqItem {
+      width: 90%;
+    }
+}
+}
