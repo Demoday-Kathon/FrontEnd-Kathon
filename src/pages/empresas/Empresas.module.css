@@ -62,7 +62,7 @@
 
 .boxtext {
     width: 55%;
-    height: 25em;
+    height: auto;
     background: rgba(20, 19, 1, 0.8);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     margin: 1em;
@@ -103,7 +103,7 @@
 .boxfinal {
     position: relative;
     width: 98%;
-    height: 750px;
+    height: auto;
     border-radius: 80px;
     border: 2px solid #FFF;
     margin: auto;
@@ -162,7 +162,7 @@ span{
 @media (width<=450px){
 
     .empresapai{
-        height:470vh;
+        height:420vh;
         padding-bottom:100px;
     }
    
@@ -175,10 +175,10 @@ span{
 
     .empresa1 {
         width:100%;
-        height:650px;
+        height:90vh;
         border-radius: 80px;
-        margin-top: 80px;
-        background:none;
+        margin-top: 100px;
+        
     }
 
 
@@ -186,16 +186,16 @@ span{
         color: #A367EB;
         font-family: "DM Sans";
         font-size: 2.9em;
-        text-align: center;
-        margin-left:-200px;
-        margin-top:-50px;
+        text-align: left;
+        margin-left:-150px;
+        padding-top:40px;
     }
     
     .empresa1 p {
         color: white;
         font-family: "DM Sans";
         font-size: 25px;
-        margin-top:30px;
+        margin-top:20px;
         margin-left:-150px;
         padding-top:0px;
         padding-left: 200px;
@@ -216,32 +216,34 @@ span{
     }
 
     .boxtext h5{
-        font-size:28px;
-        text-align: center;
+        font-size:32px;
+        text-align: left;
     }
 
     .boxtext p{
-        font-size:26px;
+        font-size:23px;
         text-align: left;
     }
 
     .boxfinal{
         width:100%;
-        margin-top:450px;
-        height:125vh;
+        margin-top:300px;
+        height:120vh;
     }
 
     .boxfinal h4{
-        font-size:29px;
+        font-size:36px;
+        text-align: left;
+        margin-left:50px;
     }
 
 
     .filhoimg {
-        width: 190px;
-        height: 200px;
+        width: 170px;
+        height: 170px;
         cursor: pointer;
         transition: 0.5s;
-        margin-top: 360px;
+        margin-top: 340px;
         margin-left:-100px;
     }
 

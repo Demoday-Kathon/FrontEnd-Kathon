@@ -9,7 +9,7 @@ function Empresas() {
         <section className={Styles.fundoempresa}>
             <Header />
             <div className={Styles.empresapai}>
-                <div className={Styles.textempresa}><h2>Hackathons que Conectam <span>Talentos</span><br /> e <span>Transformam Negócios</span> </h2></div>
+                <div className={Styles.textempresa}><h2>Hackathons que Conectam <span>Talentos</span> e <span>Transformam Negócios</span> </h2></div>
                 <div className={Styles.empresa1}>
                     <h1>Busca por inovação</h1>
                     <p>Patrocinar ou organizar hackathons coloca a<br /> sua empresa em evidência, melhorando sua<br />imagem de marca como uma organização<br />inovadora e comprometida com a tecnologia.</p>
