@@ -12,7 +12,6 @@ function LinkComponent({ linkTo, text, children, onMouseEnter, onMouseLeave }) {
             <Link 
                 to={linkTo} 
                 className={styles.linkText}
-                style={{ textDecoration: 'none', color: '#fff' }}
             >
             {children}
                 {text}

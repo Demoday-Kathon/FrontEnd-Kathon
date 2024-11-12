@@ -199,6 +199,9 @@
       font-size: 1em;
       margin-top: 2vh;
     }
+    h3 {
+      width: 99%;
+    }
   }
   .title_hack {
     width: 100%;
@@ -213,6 +216,8 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
+    position: relative;
+    left: -30px;
     img {
       cursor: pointer;
     }
@@ -226,11 +231,11 @@
 
   .patro {
     width: 100%;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     margin-left: -2px;
     img {
-      width: 40%;
+      display: none;
     }
   }
 

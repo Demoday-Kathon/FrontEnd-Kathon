@@ -29,7 +29,7 @@ function Navbar() {
                 >
                     <FaLessThan
                         className={`${styles.icon} ${(hoveredLink === link.path || (hoveredLink === null && location.pathname === link.path)) ? styles.iconVisible : ''}`}
-                        style={{ color: '#66c2fa' }}
+                        style={{ color: '#66c2fa', marginRight:'0.5em'}}
                     />
                 </LinkComponent>
             ))}

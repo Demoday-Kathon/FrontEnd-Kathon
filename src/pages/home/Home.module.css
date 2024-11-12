@@ -476,7 +476,7 @@ video {
   padding: 22px;
   width: 450px;
   position: relative;
-  left: 180px;
+  left: 200px;
   margin-top: -20px;
 }
 .segundacaixa {
@@ -510,7 +510,7 @@ video {
   width: 400px;
   position: relative;
   margin-top: -100px;
-  margin-left: 1080px;
+  margin-left: 1180px;
 }
 
 .primeiracaixa:hover,
