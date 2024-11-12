@@ -1,18 +1,23 @@
-import styles from './LinkComponent.module.css';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from './LinkComponent.module.css';
 
-function LinkComponent({ linkTo, text, children, customClass}) {
+function LinkComponent({ linkTo, text, children, onMouseEnter, onMouseLeave }) {
     return (
-        <>
-        
-        <Link className={styles.LinkComponent} to={linkTo}>
-        <div className={`${styles.ContainerLink} ${styles.ContainerLink}`}>
-                {children}
-                <p className={`${styles[customClass]}`}>{text}</p> 
-            </div>
-        </Link>
-        
-        </>
+        <div 
+            className={styles.containerLink}
+            onMouseEnter={onMouseEnter} 
+            onMouseLeave={onMouseLeave}
+        >
+            <Link 
+                to={linkTo} 
+                className={styles.linkText}
+                style={{ textDecoration: 'none', color: '#fff' }}
+            >
+            {children}
+                {text}
+            </Link>
+        </div>
     );
 }
 

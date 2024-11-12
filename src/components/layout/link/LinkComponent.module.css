@@ -11,13 +11,28 @@
     display: contents;
 }
 
-.ContainerLink{
+.containerLink {
     display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.linkText {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: auto;
-    gap: 0.5em;
+    gap: 0.1vh;
+}
+
+.linkText:hover {
+    color: #ffffff21;
+}
+
+.containerLink:hover {
+    color: #0c0c0c;
 }
 
 .ContainerLink2{

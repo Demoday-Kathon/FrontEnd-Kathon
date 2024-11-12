@@ -1,42 +1,38 @@
-
-import styles from './Navbar.module.css';
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { FaLessThan } from "react-icons/fa";
+import styles from './Navbar.module.css'; // Importe os estilos
 import ListLink from '../../listlink/ListLinks.jsx';
 import LinkComponent from '../../link/LinkComponent.jsx';
-import { FaLessThan } from "react-icons/fa";
 
-import  { Link, useLocation } from 'react-router-dom'
+function Navbar() {
+    const location = useLocation();
+    const [hoveredLink, setHoveredLink] = useState(null);
 
-
-
-
-function Navbar({isHovered, isActive }) {
-
-    const location =  useLocation();
-    const link = [
+    const links = [
         { path: '/', name: 'Home' },
         { path: '/hackathons', name: 'Hackathons' },
         { path: '/empresas', name: 'Empresas' },
         { path: '/nivelDesafio', name: 'Desafios' },
         { path: '/sobre', name: 'Sobre Nós' },
-    ] 
-
+    ];
 
     return (
         <ListLink customClass="listLinks">
-            {
-                link.map((link) => (
-                    <LinkComponent linkTo={link.path} text={link.name}>
-                        {location.pathname ===  link.path && <FaLessThan style={{color:'#66c2fa'}} />}
-                    </LinkComponent>
-
+            {links.map((link) => (
+                <LinkComponent
+                    key={link.path}
+                    linkTo={link.path}
+                    text={link.name}
+                    onMouseEnter={() => setHoveredLink(link.path)}
+                    onMouseLeave={() => setHoveredLink(null)}
+                >
+                    <FaLessThan
+                        className={`${styles.icon} ${(hoveredLink === link.path || (hoveredLink === null && location.pathname === link.path)) ? styles.iconVisible : ''}`}
+                        style={{ color: '#66c2fa' }}
+                    />
+                </LinkComponent>
             ))}
-            {/* <FaLessThan style={{color:'#66c2fa', marginRight:'0.1em'}}/> <LinkComponent linkTo="/" text="Home" />
-            <FaLessThan style={{color:'#66c2fa', marginRight:'0.1em'}}/> <LinkComponent linkTo="/hackathons" text="Hackathons" />
-            <FaLessThan style={{color:'#66c2fa', marginRight:'0.1em'}}/> <LinkComponent linkTo="/empresas" text="Empresas" />
-            <FaLessThan style={{color:'#66c2fa', marginRight:'0.1em'}}/> <LinkComponent linkTo="/comunidades" text="Comunidades" />
-            <FaLessThan style={{color:'#66c2fa', marginRight:'0.1em'}}/> <LinkComponent linkTo="/sobre" text="Sobre" /> */}
-
-
         </ListLink>
     );
 }

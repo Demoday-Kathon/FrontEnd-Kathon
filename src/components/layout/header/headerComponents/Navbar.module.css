@@ -1,21 +1,8 @@
-@media (max-width: 768px) {
-    .listLinks {
-      gap: 0.5em;
-    }
-  
-    .listLinks a {
-      font-size: 1rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .listLinks {
-      flex-direction: column;
-      padding: 0.5em;
-    }
-  
-    .listLinks a {
-      font-size: 1rem;
-      padding: 0.5em 0;
-    }
-  }
+.icon {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.iconVisible {
+  opacity: 1;
+}
