@@ -45,6 +45,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
+  overflow: hidden;
 }
 
 .video-background {
@@ -105,4 +106,13 @@
   z-index: 1;
   padding: 10px;
   margin-top: 8em;
+}
+
+.blurdovideo {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+  backdrop-filter: blur(10px); /* Ajuste o valor para mais ou menos blur */
+  top: 700px;
 }

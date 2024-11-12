@@ -224,6 +224,7 @@ function Home() {
             <div className={styles.icons}>
               {" "}
               <FaUsers
+                className={styles.testezinho}
                 style={{
                   color: "#06F8FA",
                   marginRight: "-1em",

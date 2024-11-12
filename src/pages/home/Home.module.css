@@ -435,7 +435,7 @@ video {
 
 .setameio {
   width: 700px;
-  left: -390px;
+  left: -345px;
   position: relative;
 }
 
@@ -485,6 +485,7 @@ video {
   left: 350px;
   height: 110px;
   top: 50px;
+  padding-top: 5px;
 }
 
 .icons {
@@ -510,4 +511,15 @@ video {
   position: relative;
   margin-top: -100px;
   margin-left: 1080px;
+}
+
+.primeiracaixa:hover,
+.segundacaixa:hover,
+.terceiracaixa:hover,
+.quartacaixa:hover {
+  border: 1px solid #06f8fa;
+  background-color: #141301;
+  color: white;
+  cursor: pointer;
+  transition: 1s;
 }

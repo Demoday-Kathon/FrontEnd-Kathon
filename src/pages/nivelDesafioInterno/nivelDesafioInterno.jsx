@@ -20,7 +20,7 @@ function NivelDesafio() {
         <div className={styles.nivelDesafio}>
           <Link className={styles.desafio1} to="/desafioscode">
             {" "}
-              <p>Modo Largatixa</p>
+            <p>Modo Largatixa</p>
           </Link>
           <Link className={styles.desafio2} to="/desafioscode">
             {" "}

@@ -30,6 +30,7 @@ function Hackathons() {
         </div>
       </div>
       {/* FIM DO TESTE */}
+      <div className={styles.blurdovideo}></div>
 
       <div className={styles.verificacao}>
         <h1>

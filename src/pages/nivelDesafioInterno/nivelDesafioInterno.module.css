@@ -164,3 +164,22 @@
   transform: scale(1.05);
   cursor: pointer;
 }
+
+.desafio1:hover {
+  background-image: url(../../assets/imgs/larga.png);
+  p {
+    opacity: 0; /* Torna o texto invisível */
+  }
+}
+.desafio2:hover {
+  background-image: url(../../assets/imgs/jaca.png);
+  p {
+    opacity: 0; /* Torna o texto invisível */
+  }
+}
+.desafio3:hover {
+  background-image: url(../../assets/imgs/dino.png);
+  p {
+    opacity: 0; /* Torna o texto invisível */
+  }
+}
