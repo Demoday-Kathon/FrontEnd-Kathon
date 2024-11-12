@@ -55,13 +55,7 @@ function CardPreto({ title, context, mentors, sponsors }) {
           <CardPessoa people={Mulher} job="Software Enginner at Nubank" />
           <CardPessoa people={Mulher2} job="Software Enginner at Nubank" />
         </div>
-        <h3 className={Styles.title_img}>{sponsors}</h3>
-        <div className={Styles.patro}>
-          <CardPatrocinadores sponsor={Adidas} />
-          <CardPatrocinadores sponsor={Accenture} />
-          <CardPatrocinadores sponsor={Ibm} />
-          <CardPatrocinadores sponsor={Oracle} />
-        </div>
+
 
         <div className={Styles.hack}>
           <h3 className={Styles.title_hack}>Regras</h3>

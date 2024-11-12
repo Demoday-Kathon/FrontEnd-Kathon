@@ -10,10 +10,10 @@
 
 @media (max-width: 450px) {
   .imgbanner {
-    width: 100%;
+    display: none;
   }
   .bannerzinho {
-    width: 100%;
+    display: none;
     height: 300px;
     margin-bottom: -70px;
   }
