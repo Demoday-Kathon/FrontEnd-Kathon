@@ -29,3 +29,20 @@
     color: black;
     font-weight:700;
 }
+
+/* Tablet */
+
+@media (min-width:768px) and (max-width:1024px){
+    
+    .botton {
+        width: 275px;
+        height: 55px;
+        border-radius: 27.794px;
+        margin: auto;
+    }
+    
+    .botton p {
+        font-size: 30px;
+        padding-top:5px;
+    }
+}

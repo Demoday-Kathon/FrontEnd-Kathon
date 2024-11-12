@@ -18,7 +18,7 @@ function Empresas() {
                     <div className={Styles.boxtext}>
                         <h5>Resolução de<br /> problemas rápida</h5>
                         <br />
-                        <p className={Styles.boxtextp1}>Hackathons promovem a geração de ideias<br /> e soluções criativas em um curto período,<br /> ajudando a empresa a inovar de forma ágil<br /> e eficiente.</p>
+                        <p className={Styles.boxtextp1}>Hackathons promovem a geração de ideias e soluções criativas em um curto período, ajudando a empresa a inovar de forma ágil e eficiente.</p>
                     </div>
                     <div className={Styles.boxtext}>
                         <h5 className={Styles.boxtexth5}>Descoberta de novos talentos</h5>

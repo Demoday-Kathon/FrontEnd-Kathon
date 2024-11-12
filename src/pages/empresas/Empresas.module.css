@@ -89,15 +89,15 @@
 
 .boxtexth5{
     position: relative;
-    padding-top: 25px;
+    
 }
 
 
 .boxtextp2{
     position: relative;
     color: white;
-    font-size: 36px;
-    padding-top: -28px;
+    font-size: 30px;
+    margin-top:-20px;
 }
 
 .boxfinal {
@@ -243,7 +243,7 @@ span{
         height: 170px;
         cursor: pointer;
         transition: 0.5s;
-        margin-top: 340px;
+        margin-top: 360px;
         margin-left:-100px;
     }
 
@@ -282,17 +282,18 @@ span{
     .boxtext{
         position: relative;
         width:100%;
-        height:59vh;
+        height:48vh;
         margin:auto;
     }
 
     .boxtext h5{
         font-size:49px;
-        text-align: center;
+        text-align:left;
     }
 
     .boxtextp1{
         font-size:41px;
+        padding-top:30px;
         text-align: left;
     }
 
@@ -303,7 +304,7 @@ span{
 
     .boxtextp2{
         font-size:42px;
-        padding-top:80px;
+        padding-top:40px;
         text-align: left;
     }
 

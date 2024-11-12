@@ -2,7 +2,8 @@
   padding: 15px;
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.28);
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom:70px;
   margin-left: 80px;
   font-weight: bold;
   transition: transform 0.3s ease, text-decoration 0.3s ease;
@@ -57,13 +58,21 @@
 /* Celulares */
 
 @media (width<=450px){
+
+  .CaixaPreta {
+    margin-bottom:30px;
+  }
+
+
+
+
   .filho1{
     width: 100%;
   }
 
   .boxpreto1 {
     width: 280px;
-    margin-top:-210px;
+    margin-top:-150px;
     margin-left:20px;
   }
 

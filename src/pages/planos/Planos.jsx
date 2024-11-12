@@ -19,14 +19,14 @@ function Planos() {
                     <CardsPlanos title="Esmeralda" img={Esmeralda} alt="Esmeralda" customtitle= "titlegreen">
                         <CardBeneficios text="Acesso a comunidade" customClass="bordergreen"></CardBeneficios>
                         <CardBeneficios text="Relatórios simplificados de feedback" customClass="bordergreen"></CardBeneficios>
-                        <h4 className={Styles.preco1}>Free</h4>
+                        <h3 className={Styles.preco1}>Free</h3>
                         <Botton text="Contratado" customBotton="bottongreen"></Botton>
                     </CardsPlanos>
                     <CardsPlanos title="Rubi" img={Rubi} alt="Rubi" customtitle= "titlepink">
                         <CardBeneficios text="Acesso a comunidade" customClass="borderpink"></CardBeneficios>
                         <CardBeneficios text="Relatórios simplificados de feedback" customClass="borderpink"></CardBeneficios>
                         <CardBeneficios text="Perfis Básicos Estudantes" customClass="borderpink"></CardBeneficios>
-                        <h4 className={Styles.preco2}>R$ 49,90</h4>
+                        <h3 className={Styles.preco2}>R$ 49,90</h3>
                         <Botton text="Quero esse plano" customBotton="bottonpink"></Botton>
                     </CardsPlanos>
                     <CardsPlanos title="Diamante" img={Diamante} alt="Diamante" customtitle= "titleblue">
@@ -34,7 +34,7 @@ function Planos() {
                         <CardBeneficios text="Relatórios elaborados de feedback" customClass="borderblue"></CardBeneficios>
                         <CardBeneficios text="Perfis completos Estudantes" customClass="borderblue"></CardBeneficios>
                         <CardBeneficios text="Assistencia de RH por IA" customClass="borderblue"></CardBeneficios>
-                        <h4 className={Styles.preco3}>R$ 59,90</h4>
+                        <h3 className={Styles.preco3}>R$ 59,90</h3>
                         <Botton text="Quero esse plano" customBotton="bottonblue"></Botton> 
                     </CardsPlanos>
                 </div>
