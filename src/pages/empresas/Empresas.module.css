@@ -16,7 +16,7 @@
     text-align: center;
     margin-top: 80px;
     color: white;
-    font-size: 34px;
+    font-size: 45px;
 }
 
 .empresa1 {
@@ -32,7 +32,7 @@
 .empresa1 h1 {
     color: #A367EB;
     font-family: "DM Sans";
-    font-size: 3.5em;
+    font-size: 3.9em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -43,11 +43,11 @@
 .empresa1 p {
     color: white;
     font-family: "DM Sans";
-    font-size: 35px;
+    font-size: 45px;
     font-style: normal;
     font-weight: normal;
     line-height: normal;
-    padding-top: 120px;
+    padding-top: 60px;
     padding-left: 200px;
 }
 
@@ -76,14 +76,15 @@
 
 .boxtext h5 {
     color: #A367EB;
-    font-size: 40px;
+    font-size: 45px;
     margin-top: 20px;
     font-weight: bold;
 }
 
 .boxtextp1{
     color: white;
-    font-size: 27px;
+    margin-top:-20px;
+    font-size: 30px;
 }
 
 .boxtexth5{
@@ -95,8 +96,8 @@
 .boxtextp2{
     position: relative;
     color: white;
-    font-size: 32px;
-    padding-top: 28px;
+    font-size: 36px;
+    padding-top: -28px;
 }
 
 .boxfinal {
