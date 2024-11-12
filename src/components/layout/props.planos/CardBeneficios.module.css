@@ -13,8 +13,9 @@
 }
 
 .beneficios p{
-    font-size: 19px;
+    font-size: 20px;
     line-height:1;
+    
 }
 
 .bordergreen{
@@ -28,6 +29,38 @@
 .borderblue{
     border: 2px solid #66C2FA;
 }
+
+
+/*Celular*/
+
+@media (max-width: 450px){
+.beneficios {
+    width: 90%;
+    height: 64px;
+    border-radius: 36px;
+    background: rgba(20, 19, 1, 0.80);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+    margin:auto;
+    margin-top:12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beneficios p{
+    font-size: 21px;
+    line-height:1;
+    
+}
+
+
+
+}
+
+
+
+
 
 /* Tablets */
 
