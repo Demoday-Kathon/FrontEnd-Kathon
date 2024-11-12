@@ -126,15 +126,6 @@
   -webkit-background-clip: text;
 }
 
-.botoesHome2 {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  margin: auto;
-  margin-top: 1em;
-  flex-wrap: wrap;
-}
-
 .coments {
   display: flex;
   margin: auto;
@@ -428,4 +419,95 @@ video {
 }
 
 @media (max-width: 480px) {
+}
+
+/* HABILIDADES */
+
+/* PAI */
+.botoesHome2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+
+.setameio {
+  width: 700px;
+  left: -390px;
+  position: relative;
+}
+
+.setadireita {
+  width: 600px;
+  position: relative;
+  left: -262px;
+}
+
+.caixasparte2,
+.caixaparte1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.primeiracaixa,
+.segundacaixa,
+.terceiracaixa,
+.quartacaixa {
+  height: 100.575px;
+  flex-shrink: 0;
+  border-radius: 26.36px;
+  border: 3.654px solid var(--Terciria-III, #141301);
+  background: var(--Terciria-II, #f0f0f0);
+  color: var(--Terciria-III, #141301);
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  display: flex;
+  flex-direction: row;
+}
+
+.primeiracaixa,
+.terceiracaixa,
+.quartacaixa {
+  padding: 22px;
+  width: 450px;
+  position: relative;
+  left: 180px;
+  margin-top: -20px;
+}
+.segundacaixa {
+  width: 500px;
+  position: relative;
+  left: 350px;
+  height: 110px;
+  top: 50px;
+}
+
+.icons {
+  width: 20%;
+}
+
+.textos {
+  width: 80%;
+}
+
+.terceiracaixa {
+  margin-top: -30px;
+  margin-left: 10px;
+}
+
+.quartacaixa {
+  margin-left: 150px;
+  margin-top: 5px;
+}
+
+.setaparacima {
+  width: 400px;
+  position: relative;
+  margin-top: -100px;
+  margin-left: 1080px;
 }

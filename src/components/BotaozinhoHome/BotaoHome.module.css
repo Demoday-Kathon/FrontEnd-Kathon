@@ -11,9 +11,10 @@
 }
 
 .iconCardSecundario {
-  background-color: #000;
-  color: #06f8fa;
-  border: 1px solid #fff;
+  border-radius: 24.36px;
+  border: 3.654px solid var(--Terciria-III, #141301);
+  background: var(--Terciria-II, #f0f0f0);
+  color: #000000;
   width: 35%;
   height: 2.5em;
 }

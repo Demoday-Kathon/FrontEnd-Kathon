@@ -34,6 +34,9 @@ import LinkComponent from "../../components/layout/link/LinkComponent";
 
 import { motion } from "framer-motion";
 import { fadein } from "../../variants";
+import novasetameio from "../../assets/imgs/novasetameio2.svg";
+import setinhadireita from "../../assets/imgs/setinhadireita.svg";
+import setaparacima from "../../assets/imgs/setaparacima.svg";
 
 function Home() {
   const settings = {
@@ -130,6 +133,8 @@ function Home() {
             <span>soluções inovadoras</span> e criativas, para problemas reais
             ou fictícios de empresas, com <span>prêmios</span> aos vencedores.
           </p>
+          {/* TESTE DO SVG */}
+
           <div className={styles.botoesHome1}>
             <BotaoHome
               icon={
@@ -167,44 +172,85 @@ function Home() {
           Explore suas{" "}
           <span className={styles.spanHabilidade}> habilidades </span>
         </motion.h1>
+
+        {/* COMEÇO DO TESTE */}
+
         <div className={styles.botoesHome2}>
-          <BotaoHome
-            customClass="iconCardSecundario"
-            icon={
-              <TbWorld style={{ color: "#ffffff", marginRight: "0.5em" }} />
-            }
-            alt="icone de alarme"
-            text="Experiência"
+          <div className={styles.caixaparte1}>
+            <div className={styles.primeiracaixa}>
+              <div className={styles.icons}>
+                {" "}
+                <TbWorld
+                  style={{
+                    color: "#06F8FA",
+                    marginRight: "-1em",
+                    fontSize: "70px",
+                    marginTop: "-10px",
+                  }}
+                />
+              </div>
+              <div className={styles.textos}>Experiência</div>
+            </div>
+            <div className={styles.segundacaixa}>
+              <div className={styles.icons}>
+                <IoStatsChart
+                  style={{
+                    color: "#06F8FA",
+                    marginRight: "-1em",
+                    fontSize: "70px",
+                    marginTop: "15px",
+                  }}
+                />
+              </div>
+              <div className={styles.textos}>
+                Desenvolvimento <br /> de habilidades{" "}
+              </div>
+            </div>
+          </div>
+          <img
+            src={setinhadireita}
+            alt="seta azul vindo da direito"
+            className={styles.setadireita}
           />
-          <BotaoHome
-            customClass="iconCardSecundario"
-            icon={
-              <IoStatsChart
-                style={{ color: "#ffffff", marginRight: "0.5em" }}
-              />
-            }
-            alt="icone de sifrão"
-            text="Desenvolvimento de Habilidades"
+          <img
+            src={novasetameio}
+            alt="seta conectada no meio"
+            className={styles.setameio}
           />
-          <BotaoHome
-            customClass="iconCardSecundario"
-            icon={
-              <FaUsers style={{ color: "#ffffff", marginRight: "0.5em" }} />
-            }
-            alt="icone de alarme"
-            text="Networking"
-          />
-          <BotaoHome
-            customClass="iconCardSecundario"
-            icon={
-              <MdOutlineLaptopMac
-                style={{ color: "#ffffff", marginRight: "0.5em" }}
-              />
-            }
-            alt="icone de sifrão"
-            text="Oportunidades"
-          />
+          <img src={setaparacima} alt="" className={styles.setaparacima} />
         </div>
+        <div className={styles.caixasparte2}>
+          <div className={styles.terceiracaixa}>
+            <div className={styles.icons}>
+              {" "}
+              <FaUsers
+                style={{
+                  color: "#06F8FA",
+                  marginRight: "-1em",
+                  fontSize: "70px",
+                  marginTop: "-9px",
+                }}
+              />
+            </div>
+            <div className={styles.textos}>Networking</div>
+          </div>
+          <div className={styles.quartacaixa}>
+            <div className={styles.icons}>
+              <MdOutlineLaptopMac
+                style={{
+                  color: "#06F8FA",
+                  marginRight: "-0.5em",
+                  fontSize: "70px",
+                  marginTop: "-9px",
+                }}
+              />
+            </div>
+            <div className={styles.textos}>Oportunidades</div>
+          </div>
+        </div>
+
+        {/* FIM DO TESTE */}
+
         <motion.h1
           className={styles.homeTitulo2}
           variants={fadein("up", 0.9)}
