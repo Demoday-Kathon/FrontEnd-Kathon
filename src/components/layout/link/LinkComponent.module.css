@@ -25,11 +25,12 @@
     justify-content: center;
     align-items: center;
     gap: 0.1vh;
+    color: #fff;
+    text-decoration: none;
 }
 
-.linkText:hover {
-    color: #ffffff21;
-}
+
+
 
 .containerLink:hover {
     color: #0c0c0c;
