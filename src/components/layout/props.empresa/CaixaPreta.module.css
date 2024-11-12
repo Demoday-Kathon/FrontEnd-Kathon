@@ -57,6 +57,48 @@
 /* Celulares */
 
 @media (width<=450px){
+  .filho1{
+    width: 100%;
+  }
 
-  
+  .boxpreto1 {
+    width: 280px;
+    margin-top:-250px;
+    margin-left:20px;
+  }
+
+  .boxpreto2 {
+    width: 250px;
+    margin-left:20px;
+  }
+
+  .boxpreto3 {
+    width: 200px;
+    margin-left:20px;
+  }
+
+
+}
+
+/*tablets*/
+
+@media (min-width:768px) and (max-width:1024px){
+
+  .boxpreto1 {
+    width: 600px;
+    margin-top:-300px;
+    margin-left:40px;
+  }
+
+  .boxpreto2 {
+    width: 500px;
+    margin-left:40px;
+  }
+
+  .boxpreto3 {
+    width: 400px;
+    margin-left:40px;
+  }
+
+
 }
