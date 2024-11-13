@@ -183,3 +183,13 @@
     opacity: 0; /* Torna o texto invisível */
   }
 }
+.sumariodesafio {
+  color: white;
+  text-align: center;
+  width: 100%;
+  p {
+    font-size: 2em;
+    padding: 2em;
+    margin-bottom: -5vh;
+  }
+}

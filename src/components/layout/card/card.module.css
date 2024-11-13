@@ -10,7 +10,6 @@
   align-items: center;
   width: 35%;
   height: auto;
-
 }
 
 .banner {
@@ -145,8 +144,6 @@
     align-items: center;
     width: 40%;
     height: 140vh;
-
-
   }
 
   .banner {
@@ -274,7 +271,6 @@
     padding: 5px;
   }
   .banner {
-
     img {
       margin-left: -50px;
     }

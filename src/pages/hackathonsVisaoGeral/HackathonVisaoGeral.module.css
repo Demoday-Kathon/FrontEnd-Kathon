@@ -35,28 +35,8 @@
   flex-direction: row;
 }
 
-/* @media (max-width: 450px) {
-  .containerprincipal {
-    display: flex;
-    flex-direction: column;
-  }
-  .containersubprincipal {
-    width: 100%;
-    margin: auto;
-  }
-  .hackthonsmais {
-    h3 {
-      font-size: 0.8em;
-    }
-  }
-  .cardHacks {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-} */
-
-@media (max-width: 30em) { /* 480px / 16 = 30em */
+@media (max-width: 30em) {
+  /* 480px / 16 = 30em */
   .ContentPrincipal {
     padding: 0.625em; /* 10px / 16 = 0.625em */
     /* Ajuste de espaçamento para dispositivos menores */
@@ -88,5 +68,14 @@
   /* Estilos para ajustar os componentes internos, como CardPreto e Card */
   .cardHackscustom {
     width: 100%; /* A largura ainda é 100%, sem necessidade de conversão */
+  }
+}
+
+@media (min-width: 451px) {
+  @media (max-width: 800px) {
+    .containerprincipal {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

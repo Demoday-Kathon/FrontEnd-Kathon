@@ -5,6 +5,7 @@ import largatixa from "../../assets/imgs/largatixa.svg";
 import crocodilo from "../../assets/imgs/crocodilo.svg";
 import dinossauro from "../../assets/imgs/dinossauro.svg";
 import Footer from "../../components/layout/footer/Footer";
+import Button from "../../components/layout/button/button";
 
 function NivelDesafio() {
   return (
@@ -16,6 +17,14 @@ function NivelDesafio() {
             <span>Desafios</span> para você <br></br> desenvolver suas{" "}
             <span>habilidades</span>
           </h1>
+        </div>
+        <div className={styles.sumariodesafio}>
+          <p>
+            Pensando em você que quer colocar em prática suas habilidades,
+            criamos a IAthon, uma Inteligência Artificial que cria desafios
+            práticos baseado no seu nível de conhecimento. Clique, explore e
+            pratique!
+          </p>
         </div>
         <div className={styles.nivelDesafio}>
           <Link className={styles.desafio1} to="/desafioscode">
@@ -57,6 +66,11 @@ function NivelDesafio() {
               Para você que sabe muito <br /> e quer se aprimorar
             </p>
           </div>
+        </div>
+        <div className={styles.abadebotoes}>
+          <Button customClass="botaodesafio1" text="Iniciar" />
+          <Button customClass="botaodesafio2" text="Iniciar" />
+          <Button customClass="botaodesafio3" text="Iniciar" />
         </div>
       </div>
 

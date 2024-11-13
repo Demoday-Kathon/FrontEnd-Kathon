@@ -103,7 +103,7 @@
   padding: 1em;
   font-weight: bold;
   span {
-    color: var(--Terciria-V, #06f8fa);
+    color: var(--Terciria-V, #a367eb);
   }
 }
 
@@ -512,7 +512,7 @@ video {
   width: 400px;
   position: relative;
   margin-top: -100px;
-  margin-left: 1180px;
+  margin-left: 1075px;
 }
 
 .primeiracaixa:hover,

@@ -227,7 +227,6 @@
     width: 100%;
     text-align: center;
     margin-left: -70px;
-
   }
 
   .patro {
@@ -249,76 +248,84 @@
   .caixa2 {
     width: 40%;
   }
-
 }
 
 @media (min-width: 451px) {
   @media (max-width: 800px) {
-  .card_container {
-    width: 100%;
-    margin: auto;
-    margin-top: 10vh;
-    margin-left: -4em;
-    p {
+    .card_container {
+      width: 100%;
+      margin: auto;
+      margin-top: 10vh;
+      margin-left: -4em;
+      p {
+        text-align: left;
+        width: 90%;
+        padding: 1px;
+        margin-left: -40px;
+        font-size: 1.8em;
+        margin-top: 2vh;
+      }
+      h3 {
+        width: 99%;
+        font-size: 2em;
+      }
+    }
+    .title_hack {
+      width: 100%;
       text-align: left;
-      width: 90%;
-      padding: 1px;
-      margin-left: -40px;
-      font-size: 1.8em;
-      margin-top: 2vh;
+      padding-left: 1px;
+      padding-right: 1px;
+      margin-left: -45px;
     }
-    h3 {
-      width: 99%;
-      font-size: 2em;
+    .mentors {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 20px;
+      position: relative;
+      left: -30px;
+      img {
+        cursor: pointer;
+      }
     }
-  }
-  .title_hack {
-    width: 100%;
-    text-align: left;
-    padding-left: 1px;
-    padding-right: 1px;
-    margin-left: -45px;
-  }
-  .mentors {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 20px;
-    position: relative;
-    left: -30px;
-    img {
-      cursor: pointer;
+
+    .title_img {
+      width: 100%;
+      text-align: left;
+      margin-left: -30px;
     }
-  }
 
-  .title_img {
-    width: 100%;
-    text-align: left;
-    margin-left: -30px;
-    
-
-  }
-
-  .patro {
-    width: 100%;
-    display: none;
-    flex-wrap: wrap;
-    margin-left: -2px;
-    img {
+    .patro {
+      width: 100%;
       display: none;
+      flex-wrap: wrap;
+      margin-left: -2px;
+      img {
+        display: none;
+      }
     }
-  }
 
-  .pesquisa {
-    margin-left: -50px;
-    width: 115%;
-  }
+    .pesquisa {
+      margin-left: -50px;
+      width: 115%;
+    }
 
-  .caixa1,
-  .caixa2 {
-    width: 40%;
+    .caixa1,
+    .caixa2 {
+      width: 40%;
+    }
   }
 }
+@media (min-width: 451px) {
+  @media (max-width: 800px) {
+    .caixa1 {
+      width: 45%;
+      margin-left: -1px;
+    }
+    .caixa2 {
+      width: 40%;
+    }
+  }
 }

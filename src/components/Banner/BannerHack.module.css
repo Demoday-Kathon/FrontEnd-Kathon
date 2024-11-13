@@ -18,3 +18,11 @@
     margin-bottom: -70px;
   }
 }
+
+@media (min-width: 451px) {
+  @media (max-width: 800px) {
+    .bannerzinho {
+      width: 100%;
+    }
+  }
+}

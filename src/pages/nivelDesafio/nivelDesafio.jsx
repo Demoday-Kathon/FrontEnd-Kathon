@@ -18,6 +18,14 @@ function NivelDesafio() {
             <span>habilidades</span>
           </h1>
         </div>
+        <div className={styles.sumariodesafio}>
+          <p>
+            Pensando em você que quer colocar em prática suas habilidades,
+            criamos a IAthon, uma Inteligência Artificial que cria desafios
+            práticos baseado no seu nível de conhecimento. Clique, explore e
+            pratique!
+          </p>
+        </div>
         <div className={styles.nivelDesafio}>
           <Link className={styles.desafio1} to="/Login">
             <p>Modo Largatixa</p>
@@ -56,11 +64,6 @@ function NivelDesafio() {
               Para você que sabe muito <br /> e quer se aprimorar
             </p>
           </div>
-        </div>
-        <div className={styles.abadebotoes}>
-          <Button customClass={styles.botaodesafio} text="Entrar" />
-          <Button customClass={styles.botaodesafio} text="Entrar" />
-          <Button customClass={styles.botaodesafio} text="Entrar" />
         </div>
       </div>
 

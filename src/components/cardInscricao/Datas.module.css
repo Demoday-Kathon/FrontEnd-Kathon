@@ -111,3 +111,13 @@
     margin-bottom: 8px;
   }
 }
+
+@media (min-width: 451px) {
+  @media (max-width: 800px) {
+    .cardData {
+      width: 50%;
+      margin: auto;
+      height: 60vh;
+    }
+  }
+}

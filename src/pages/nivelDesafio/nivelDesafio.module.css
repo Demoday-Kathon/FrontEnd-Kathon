@@ -198,3 +198,14 @@
   margin-top: -100px;
   margin-bottom: 10vh;
 }
+
+.sumariodesafio {
+  color: white;
+  text-align: center;
+  width: 100%;
+  p {
+    font-size: 2em;
+    padding: 2em;
+    margin-bottom: -5vh;
+  }
+}
