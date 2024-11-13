@@ -32,9 +32,8 @@
   align-items: center;
   cursor: pointer;
   transition: 0.5s;
-  width: 18em;
-  height: 10em;
-  margin: 1em;
+  width: 100%;
+  padding: 2em 5em 2em 5em;
 }
 
 .cardBrancoEscolha:hover {
