@@ -9,7 +9,7 @@ import Card_Recomendacao from "../../components/Perfil_aluno/Card_Recomedacao";
 import Card from "../../components/layout/card/card";
 import CardPretoBase from "../../components/CardPretoBase2/CardPretoBase";
 import { Link } from "react-router-dom";
-import Tag from "../../components/layout/card/tag"
+import Tag from "../../components/layout/card/tag";
 
 import Person from "../../components/layout/card/person";
 import person1 from "../../assets/imgs/pessoa1.png";
@@ -271,64 +271,59 @@ function Home() {
 
         <div className={styles.hackathonsDisponiveisHome}>
           <div className={styles.rowHackathonsDisp}>
+            <Card
+              bannerHacka={banner}
+              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
+              qtdparticipants="+150 participantes"
+              timeline="20 dias restantes"
+              children1={
+                <div className={styles.tagsHacka}>
+                  <Tag text="Presencial" customClass="roxoHome" />
+                  <Tag text="Inscrições Abertas" customClass="azulHome" />
+                  <Tag
+                    text="Impacto Social e Sustentabilidade"
+                    customClass="lilasHome"
+                  />
+                </div>
+              }
+              children3={
+                <div className={styles.people}>
+                  <Person person={person1} customClass="fotosHome" />
+                  <Person person={person2} customClass="fotosHome" />
+                  <Person person={person3} customClass="fotosHome" />
+                </div>
+              }
+              children2={
+                <Button text="Saiba Mais" customClass="buttonAzulHome" />
+              }
+            ></Card>
 
-          <Card
-            bannerHacka={banner}
-            titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
-            qtdparticipants="+150 participantes"
-            timeline="20 dias restantes"
-            children1={
-              <div className={styles.tagsHacka}>
-                <Tag text="Presencial" customClass="roxoHome" />
-                <Tag text="Inscrições Abertas" customClass="azulHome" />
-                <Tag text="Impacto Social e Sustentabilidade" customClass="lilasHome" />
-
-              </div>
-            }
-
-            children3={
-              <div className={styles.people}>
-                <Person person={person1} customClass="fotosHome"/>
-                <Person person={person2} customClass="fotosHome"/>
-                <Person person={person3} customClass="fotosHome"/>
-              </div>
-            }
-
-            children2={<Button text="Saiba Mais" customClass="buttonAzulHome" />}
-          >
-
-            
-          </Card>
-
-            
-          <Card
-            bannerHacka={banner}
-            titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
-            qtdparticipants="+150 participantes"
-            timeline="20 dias restantes"
-            children1={
-              <div className={styles.tagsHacka}>
-                <Tag text="Presencial" customClass="roxoHome" />
-                <Tag text="Inscrições Abertas" customClass="azulHome" />
-                <Tag text="Impacto Social e Sustentabilidade" customClass="lilasHome" />
-
-              </div>
-            }
-
-            children3={
-              <div className={styles.people}>
-                <Person person={person1} customClass="fotosHome"/>
-                <Person person={person2} customClass="fotosHome"/>
-                <Person person={person3} customClass="fotosHome"/>
-              </div>
-            }
-
-            children2={<Button text="Saiba Mais" customClass="buttonAzulHome" />}
-          >
-
-          </Card>
-
-
+            <Card
+              bannerHacka={banner}
+              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
+              qtdparticipants="+150 participantes"
+              timeline="20 dias restantes"
+              children1={
+                <div className={styles.tagsHacka}>
+                  <Tag text="Presencial" customClass="roxoHome" />
+                  <Tag text="Inscrições Abertas" customClass="azulHome" />
+                  <Tag
+                    text="Impacto Social e Sustentabilidade"
+                    customClass="lilasHome"
+                  />
+                </div>
+              }
+              children3={
+                <div className={styles.people}>
+                  <Person person={person1} customClass="fotosHome" />
+                  <Person person={person2} customClass="fotosHome" />
+                  <Person person={person3} customClass="fotosHome" />
+                </div>
+              }
+              children2={
+                <Button text="Saiba Mais" customClass="buttonAzulHome" />
+              }
+            ></Card>
           </div>
         </div>
         <motion.h1
@@ -534,53 +529,29 @@ function Home() {
           {" "}
           Empresas Parceiras
         </motion.h1>
-        <ul className={styles.listCompanyHome}>
-          <motion.li
-            className={styles.patrociEmpresas}
-            variants={fadein("right", 0.9)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.1 }}
-          >
-            <img src={accenture} alt="" className={styles.empresinhas} />
-          </motion.li>
-          <motion.li
-            className={styles.patrociEmpresas}
-            variants={fadein("right", 0.9)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.1 }}
-          >
-            <img src={pagbank} alt="" className={styles.empresinhas} />
-          </motion.li>
-          <motion.li
-            className={styles.patrociEmpresas}
-            variants={fadein("right", 0.9)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.1 }}
-          >
-            <img src={oracle} alt="" className={styles.empresinhas} />
-          </motion.li>
-          <motion.li
-            className={styles.patrociEmpresas}
-            variants={fadein("right", 0.9)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.1 }}
-          >
-            <img src={ibm} alt="" className={styles.empresinhas} />
-          </motion.li>
-          <motion.li
-            className={styles.patrociEmpresas}
-            variants={fadein("right", 0.9)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.1 }}
-          >
-            <img src={adidas} alt="" className={styles.empresinhas} />
-          </motion.li>
-        </ul>
+        <div className={styles.logos}>
+          <div className={styles.logos_slide}>
+            <img src={adidas} />
+            <img src={ibm} />
+            <img src={accenture} />
+            <img src={oracle} />
+            <img src={pagbank} />
+          </div>
+          <div className={styles.logos_slide}>
+            <img src={adidas} />
+            <img src={ibm} />
+            <img src={accenture} />
+            <img src={oracle} />
+            <img src={pagbank} />
+          </div>
+          <div className={styles.logos_slide}>
+            <img src={adidas} />
+            <img src={ibm} />
+            <img src={accenture} />
+            <img src={oracle} />
+            <img src={pagbank} />
+          </div>
+        </div>
       </container>
       <Footer />
     </div>
