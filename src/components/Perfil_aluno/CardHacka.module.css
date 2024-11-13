@@ -49,3 +49,16 @@
 
 
 }
+
+
+@media (max-width: 480px){
+    .card{
+        width: 100%;
+    }
+    .banner{
+        width: 75%;
+    }
+    .container{
+        width: 75%;
+    }
+}

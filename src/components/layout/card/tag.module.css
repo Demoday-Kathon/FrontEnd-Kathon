@@ -63,3 +63,32 @@
   font-size: 0.6em;
 }
 
+.comunicacao{
+  background-color: #314ce7ff;
+  font-size: 27px;
+  padding: 4%;
+}
+
+.ilustacao{
+  background-color: #a367ebff;
+  font-size: 27px;
+  padding: 4%;
+}
+
+.desing{
+  background-color: #7400b7ff;
+  font-size: 27px;
+  padding: 4%;
+}
+
+.pesquisa{
+  background-color: #314ce7ff;
+  font-size: 27px;
+  padding: 4%;
+}
+
+.usuario{
+  background-color: #7400b7ff;
+  font-size: 27px;
+  padding: 4%;
+}

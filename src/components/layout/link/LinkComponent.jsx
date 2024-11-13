@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './LinkComponent.module.css';
 
-function LinkComponent({ linkTo, text, children, onMouseEnter, onMouseLeave }) {
+function LinkComponent({ linkTo, text, children, onMouseEnter, onMouseLeave}) {
     return (
         <div 
             className={styles.containerLink}

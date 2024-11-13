@@ -24,13 +24,13 @@ function Bloco2({ TextoDesc, Titulo_sobre, Titulo_sobre2, Titulo_Participacao })
                 <div className={Styles.Sobre}>
                     <div className={Styles.Habilidades}>
                         <div className={Styles.Habilidades_tag}>
-                            <Button text="Desing" /> <Button text="Comunicação" CustomClass="comunicacao" /> <Button text="ilustação" CustomClass="ilustacao" />
+                            <Button text="Desing" customClass="desing" /> <Button text="Comunicação" customClass="comunicacao" /> <Button text="ilustação" customClass="ilustacao" />
                         </div>
                         <div className={Styles.Habilidades_tag}>
-                            <Button text="Marketing" CustomClass="ilustacao" /> <Button text="Pesquisa" CustomClass="pesquisa" />
+                            <Button text="Marketing" customClass="ilustacao" /> <Button text="Pesquisa" customClass="pesquisa" />
                         </div>
                         <div className={Styles.Habilidades_tag}>
-                            <Button text="Experiência do Usuário" CustomClass="usuario" />
+                            <Button text="Experiência do Usuário" customClass="usuario" />
                         </div>
 
                     </div>

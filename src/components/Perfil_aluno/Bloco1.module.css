@@ -49,7 +49,7 @@
     text-align: center;
     font-size: 25px;
     transition: 0.5s;
-    margin-left: -13px;
+    
     
 
 
@@ -66,4 +66,16 @@
     font-style: 700;
     font-weight: 600;
 
+}
+
+@media (max-width: 480px){
+    .Bloco1{
+        width: 95%;
+    }
+    .Foto_perfil {
+        width: 80%;
+        height: 300px;
+        border-radius: 442px;
+    }
+    
 }

@@ -123,7 +123,7 @@
 .Habilidades_tag{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0px;
     flex-direction: row;
 }
 
@@ -131,5 +131,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+@media (max-width: 480px){
+    .SobreAluno{
+       width: 100%;
+    }
+    .Sobre{
+        height: 40vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .SobreTexto{
+        display: flex;
+    }
+    .Habilidades{
+        width: 100%;
+
+    }
+
+    .Habilidades_tag{
+        width: 100%;
+        border: 2px solid;
+        display: flex;
+    }
+    .Sobre2{
+        height: 47vh;
+    }
+
     
 }
