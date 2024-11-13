@@ -532,21 +532,21 @@ function Home() {
         <div className={styles.logos}>
           <div className={styles.logos_slide}>
             <img src={adidas} />
-            <img src={ibm} />
+            <img src={adidas} />
             <img src={accenture} />
             <img src={oracle} />
             <img src={pagbank} />
           </div>
           <div className={styles.logos_slide}>
             <img src={adidas} />
-            <img src={ibm} />
+            <img src={adidas} />
             <img src={accenture} />
             <img src={oracle} />
             <img src={pagbank} />
           </div>
           <div className={styles.logos_slide}>
             <img src={adidas} />
-            <img src={ibm} />
+            <img src={adidas} />
             <img src={accenture} />
             <img src={oracle} />
             <img src={pagbank} />
