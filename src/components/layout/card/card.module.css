@@ -1,92 +1,128 @@
 .cardHacka {
-    width: 40%;
-    height: 100%;
+  width: 40%;
+  height: 100%;
 }
+
 .bannerHacka {
-    width: 100%;
-    height: 3.8em;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+  width: 100%;
+  height: 3.8em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
 
 .bannerHackaIMG {
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
 
 .titleHacka {
-    font-size: 0.35em;
-    text-align: left;
-    margin-top: 1em;
-    width: 90%;
+  font-size: 0.35em;
+  text-align: left;
+  margin-top: 1em;
+  width: 90%;
 }
 
 
 
 
 .rowPeople {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-    width: 90%;
+  width: 90%;
 }
 
 
 .people {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
 }
 
 .participants {
-    font-size: 0.25em;
-    width: 100%;
+  font-size: 0.25em;
+  width: 100%;
 }
 
 
 .container2 {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-  }
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
 
-  .progressbarcontainer {
-    width: 100%;
-    background-color: #e0e0e0;
-    border-radius: 2em;
-    overflow: hidden;
-    height: 20px;
-  }
-  
-  .progressbar {
-    height: 100%;
-    background-color: #66c2fa;
-    width: 0;
-    transition: width 0.4s ease;
-    border-radius: 8px 0 0 8px;
-    width: 70%;
-  }
-  
-  .diasRestantes {
-    font-size: 18px;
-    margin-top: 10px;
-    width: 100%;
-  
-    text-align: left;
-  }
+.progressbarcontainer {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 2em;
+  overflow: hidden;
+  height: 20px;
+}
 
-  .button_hackathon {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-top: 20px;
-    width: 90%;
-    height: auto;
-  }
+.progressbar {
+  height: 100%;
+  background-color: #66c2fa;
+  width: 0;
+  transition: width 0.4s ease;
+  border-radius: 8px 0 0 8px;
+  width: 70%;
+}
+
+.diasRestantes {
+  font-size: 18px;
+  margin-top: 10px;
+  width: 100%;
+
+  text-align: left;
+}
+
+.button_hackathon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 20px;
+  width: 90%;
+  height: auto;
+}
+
+.cardHackathonDisponiveis {
+  width: 40%;
+
+}
+
+
+.cardHackathonDisponiveis .bannerHacka {
+  width: 100%;
+  height: 8em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+
+}
+
+.cardHackathonDisponiveis .titleHacka {
+  font-size: 0.8em;
+  text-align: left;
+  margin-top: 1em;
+  width: 90%;
+
+}
+
+.cardHackathonDisponiveis .participants {
+  font-size: 0.5em;
+  width: 100%;
+
+}
+
+
+.cardHackathonDisponiveis .participants {
+    font-size: 0.5em;
+    width: 100%;
+
+}

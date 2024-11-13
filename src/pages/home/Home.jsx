@@ -11,6 +11,11 @@ import CardPretoBase from "../../components/CardPretoBase2/CardPretoBase";
 import { Link } from "react-router-dom";
 import Tag from "../../components/layout/card/tag"
 
+import Person from "../../components/layout/card/person";
+import person1 from "../../assets/imgs/pessoa1.png";
+import person2 from "../../assets/imgs/pessoa2.png";
+import person3 from "../../assets/imgs/pessoa3.png";
+
 import banner from "../../assets/imgs/banner.png";
 import leticia from "../../assets/imgs/Leticia.png";
 import Abel from "../../assets/imgs/Abel.png";
@@ -266,6 +271,7 @@ function Home() {
 
         <div className={styles.hackathonsDisponiveisHome}>
           <div className={styles.rowHackathonsDisp}>
+
           <Card
             bannerHacka={banner}
             titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
@@ -280,6 +286,14 @@ function Home() {
               </div>
             }
 
+            children3={
+              <div className={styles.people}>
+                <Person person={person1} customClass="fotosHome"/>
+                <Person person={person2} customClass="fotosHome"/>
+                <Person person={person3} customClass="fotosHome"/>
+              </div>
+            }
+
             children2={<Button text="Saiba Mais" customClass="buttonAzulHome" />}
           >
 
@@ -287,7 +301,32 @@ function Home() {
           </Card>
 
             
-            <Card />
+          <Card
+            bannerHacka={banner}
+            titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
+            qtdparticipants="+150 participantes"
+            timeline="20 dias restantes"
+            children1={
+              <div className={styles.tagsHacka}>
+                <Tag text="Presencial" customClass="roxoHome" />
+                <Tag text="Inscrições Abertas" customClass="azulHome" />
+                <Tag text="Impacto Social e Sustentabilidade" customClass="lilasHome" />
+
+              </div>
+            }
+
+            children3={
+              <div className={styles.people}>
+                <Person person={person1} customClass="fotosHome"/>
+                <Person person={person2} customClass="fotosHome"/>
+                <Person person={person3} customClass="fotosHome"/>
+              </div>
+            }
+
+            children2={<Button text="Saiba Mais" customClass="buttonAzulHome" />}
+          >
+
+          </Card>
 
 
           </div>

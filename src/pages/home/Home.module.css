@@ -110,7 +110,7 @@
 .rowHackathonsDisp {
   display: flex;
   flex-direction: row;
-  border: 1px solid;
+
   justify-content: space-around;
   width: 100%;
 }
@@ -122,6 +122,15 @@
   margin: auto;
   width: 90%;
   margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+
+.people {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
 }
 
 

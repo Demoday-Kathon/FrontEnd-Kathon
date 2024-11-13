@@ -167,6 +167,23 @@
   color: #fff;
 }
 
+.buttonAzulHacka {
+  border-radius: 1em;
+  background: #7400b7ff;
+  backdrop-filter: blur(20px);
+  width: 50%;
+  font-size: 0.6em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.buttonAzulHacka:hover {
+  width: 50%;
+  font-size: 0.6em;
+  background: rgb(86, 3, 134);
+  color: #fff;
+}
+
 .buttonBaixo3 {
   width: 40%;
   font-size: 0.5em;

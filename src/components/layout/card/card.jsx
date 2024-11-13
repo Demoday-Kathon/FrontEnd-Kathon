@@ -8,9 +8,9 @@ import Button from "../button/button.jsx";
 import CardBrancoBrase from "../../../components/CardBrancoBase/CardBrancoBase.jsx";
 import { Children } from "react";
 
-function card({ titleHacka, bannerHacka, children1, qtdparticipants, timeline, children2 }) {
+function card({ titleHacka, bannerHacka, children1, qtdparticipants, timeline, children2, children3, customClass, customClassPerson }) {
   return (
-    <div className={styles.cardHacka}>
+    <div className={`${styles.cardHacka} ${styles[customClass]}`}>
       <div className={styles.bannerHacka}>
         <img className={styles.bannerHackaIMG} src={bannerHacka} alt="" />
       </div>
@@ -21,9 +21,7 @@ function card({ titleHacka, bannerHacka, children1, qtdparticipants, timeline, c
         </div>
         <div className={styles.rowPeople}>
           <div className={styles.people}>
-            <Person person={person1} />
-            <Person person={person2} />
-            <Person person={person3} />
+            {children3}
           </div>
 
           <p className={styles.participants}>
