@@ -125,14 +125,11 @@
   margin-bottom: 0.5em;
 }
 
-
 .people {
   display: flex;
   flex-direction: row;
   width: 100%;
-
 }
-
 
 .BotaohackaVisaoGeral {
   display: flex;
@@ -544,4 +541,47 @@ video {
   color: white;
   cursor: pointer;
   transition: 1s;
+}
+
+/* TESTES  */
+
+.logos {
+  overflow: hidden; /* Isto está correto */
+  padding: 60px 0; /* Corrigido para 'padding' ao invés de 'pad' */
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos::before,
+.logos::after {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  content: "";
+  z-index: 2;
+}
+
+.logos_slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos_slide img {
+  width: 150px;
+  height: 150px;
+  margin: 0 40px;
+}
+
+.logos:hover .logos_slide {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
