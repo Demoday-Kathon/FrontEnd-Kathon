@@ -1,10 +1,10 @@
 import styles from './tag.module.css'
 
-function tags ({text , CustomClass }){
+function tags ({text , customClass }){
     return(
 
         <>
-               <button className={`${styles[CustomClass]} ${styles.roxo}`}> {text} </button>
+               <button className={`${styles.base} ${styles[customClass]} `}> {text} </button>
         </>
 
     )

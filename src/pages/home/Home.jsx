@@ -9,6 +9,7 @@ import Card_Recomendacao from "../../components/Perfil_aluno/Card_Recomedacao";
 import Card from "../../components/layout/card/card";
 import CardPretoBase from "../../components/CardPretoBase2/CardPretoBase";
 import { Link } from "react-router-dom";
+import Tag from "../../components/layout/card/tag"
 
 import banner from "../../assets/imgs/banner.png";
 import leticia from "../../assets/imgs/Leticia.png";
@@ -264,36 +265,32 @@ function Home() {
         </motion.h1>
 
         <div className={styles.hackathonsDisponiveisHome}>
+          <div className={styles.rowHackathonsDisp}>
           <Card
-            banner={banner}
-            company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
-            acounter="+150 participantes"
+            bannerHacka={banner}
+            titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
+            qtdparticipants="+150 participantes"
             timeline="20 dias restantes"
-            customClassPersons="cardHackathonHome"
+            children1={
+              <div className={styles.tagsHacka}>
+                <Tag text="Presencial" customClass="roxoHome" />
+                <Tag text="Inscrições Abertas" customClass="azulHome" />
+                <Tag text="Impacto Social e Sustentabilidade" customClass="lilasHome" />
+
+              </div>
+            }
+
+            children2={<Button text="Saiba Mais" customClass="buttonAzulHome" />}
           >
-            <Link
-              className={styles.BotaohackaVisaoGeral}
-              to={"/HackathonVisaoGeral"}
-            >
-              <Button text="Saiba Mais" customClass="buttonAzulHome" />
-            </Link>
+
+            
           </Card>
-          <Card
-            banner={banner}
-            company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
-            acounter="+150 participantes"
-            timeline="20 dias restantes"
-            customClassPersons="cardHackathonHome"
-          >
-            <Link
-              className={styles.BotaohackaVisaoGeral}
-              to={"/HackathonVisaoGeral"}
-            >
-              <Button text="Saiba Mais" customClass="buttonAzulHome" />
-            </Link>
-          </Card>
+
+            
+            <Card />
+
+
+          </div>
         </div>
         <motion.h1
           className={styles.homeTitulo2}

@@ -1,133 +1,50 @@
-.roxo {
+.base {
+  font-family: "DM Sans";
   width: auto;
   height: 40px;
   border-radius: 36px;
-  background: var(--Primria, #7400b7);
-  font-family: "DM Sans";
-  font-size: 0.6em;
+  font-size: 0.8em;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   color: #fff;
   transition: 0.5s;
   margin:0.3em;
+  margin:0.3em;
   padding: 0.8em;
   display: flex;
   align-items: center;
-  /* margin: 0.5em;
-    padding: 0.9em; */ /* Botão que pode dar b.o*/
+}
+
+.base:hover {
+  transform:scale(1.1);
+}
+
+.roxo {
+  background-color: #7400b7ff;
 }
 
 .azul {
-  width: auto;
-  height: 40px;
-  border-radius: 36px;
-  background: #314ce7;
-  font-family: "DM Sans";
-  font-size: 0.6em;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  color: #fff;
+  background-color: #314ce7ff;
 }
 
-.lilas {
-  width: auto;
-  height: 40px;
-  border-radius: 36px;
-  background: var(--Terciria-V, #a367eb);
-  font-family: "DM Sans";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  color: #fff;
+.lilas{
+  background-color: #a367ebff;
 }
 
-.lilasCad {
-  width: auto;
-  height: 50px;
-  border-radius: 36px;
-  background: var(--Terciria-V, #a367eb);
-  font-family: "DM Sans";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  color: #fff;
+
+.roxoHome {
+  background-color: #7400b7ff;
+  font-size: 0.3em;
 }
 
-.lilas_p {
-  width: 250px;
-  height: 50px;
-  border-radius: 36px;
-  background: var(--Terciria-V, #a367eb);
-  font-family: "DM Sans";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  color: #fff;
+.azulHome {
+  background-color: #314ce7ff;
+  font-size: 0.3em;
 }
 
-.ilustacao {
-  width: 150px;
-  height: 50px;
-  border-radius: 36px;
-  background: var(--Terciria-V, #a367eb);
-  font-family: "DM Sans";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  color: #fff;
+.lilasHome{
+  background-color: #a367ebff;
+  font-size: 0.3em;
 }
 
-.comunicacao {
-  width: 200px;
-  height: 50px;
-  border-radius: 36px;
-  background: var(--Secundria, #314ce7);
-  font-family: "DM Sans";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  color: #fff;
-}
-
-.pesquisa {
-  width: 150px;
-  height: 50px;
-  border-radius: 36px;
-  background: var(--Secundria, #314ce7);
-  font-family: "DM Sans";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  color: #fff;
-}
-
-.usuario {
-  width: 350px;
-  height: 50px;
-  border-radius: 36px;
-  background: var(--Primria, #7400b7);
-  font-family: "DM Sans";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  color: #fff;
-}
-
-@media (max-width: 450px) {
-  .roxo,
-  .lilas,
-  .azul {
-    width: 100%;
-    height: auto;
-    padding: 5px;
-  }
-}

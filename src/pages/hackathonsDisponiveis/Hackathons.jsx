@@ -34,99 +34,21 @@ function Hackathons() {
 
       <div className={styles.verificacao}>
         <h1>
-          Verifique os Hackathons <br /> disponíveis e se desenvolve
+          Verifique os Hackathons <br /> disponíveis e se desenvolva
         </h1>
       </div>
       <container className={styles.homeTitulo}>
         <div className={styles.bg_container}>
-          <Card
-            banner={banner}
-            company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
-            acounter="+150 participantes"
-            timeline="20 dias restantes"
-          >
-            <Link
-              className={styles.BotaohackaVisaoGeral}
-              to={"/HackathonVisaoGeral"}
-            >
-              <Button text="Saiba Mais" customClass="buttonAzul1" />
-            </Link>
-          </Card>
-          <Card
-            banner={banner}
-            company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
-            acounter="+150 participantes"
-            timeline="20 dias restantes"
-          >
-            <Link
-              className={styles.BotaohackaVisaoGeral}
-              to={"/HackathonVisaoGeral"}
-            >
-              <Button text="Saiba Mais" customClass="buttonAzul1" />
-            </Link>
-          </Card>
+          
+          
         </div>
         <div className={styles.bg_container}>
-          <Card
-            banner={banner}
-            company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
-            acounter="+150 participantes"
-            timeline="20 dias restantes"
-          >
-            <Link
-              className={styles.BotaohackaVisaoGeral}
-              to={"/HackathonVisaoGeral"}
-            >
-              <Button text="Saiba Mais" customClass="buttonAzul1" />
-            </Link>
-          </Card>
-          <Card
-            banner={banner}
-            company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
-            acounter="+150 participantes"
-            timeline="20 dias restantes"
-          >
-            <Link
-              className={styles.BotaohackaVisaoGeral}
-              to={"/HackathonVisaoGeral"}
-            >
-              <Button text="Saiba Mais" customClass="buttonAzul1" />
-            </Link>
-          </Card>
+          
+          
         </div>
         <div className={styles.bg_container}>
-          <Card
-            banner={banner}
-            company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
-            acounter="+150 participantes"
-            timeline="20 dias restantes"
-          >
-            <Link
-              className={styles.BotaohackaVisaoGeral}
-              to={"/HackathonVisaoGeral"}
-            >
-              <Button text="Saiba Mais" customClass="buttonAzul1" />
-            </Link>
-          </Card>
-          <Card
-            banner={banner}
-            company_hackathon={accenture}
-            title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos"
-            acounter="+150 participantes"
-            timeline="20 dias restantes"
-          >
-            <Link
-              className={styles.BotaohackaVisaoGeral}
-              to={"/HackathonVisaoGeral"}
-            >
-              <Button text="Saiba Mais" customClass="buttonAzul1" />
-            </Link>
-          </Card>
+          
+          
         </div>
       </container>
 

@@ -119,12 +119,12 @@ function CadastroEstudante() {
                     <CardBrancoBase customClass="cardBrancoEscolhaHabilidades">
                         <div  className={styles1.divtextBrancoEscolhaHabilidadesTags}>
                             <div className={styles1.tagsCadEstudante}>
-                                <Tag text="Design"/>
-                                <Tag text="Comunicação" CustomClass="azul"/>
-                                <Tag text="Ilustração" CustomClass="lilasCad"/>
-                                <Tag text="Marketing" CustomClass="lilasCad"/>
-                                <Tag text="UI/UX" />
-                                <Tag text="Pesquisa" CustomClass="azul"/>
+                                <Tag text="Design" customClass="roxo"/>
+                                <Tag text="Comunicação" customClass="azul"/>
+                                <Tag text="Ilustração" customClass="roxo"/>
+                                <Tag text="Marketing" customClass="lilas"/>
+                                <Tag text="UI/UX" customClass="roxo"/>
+                                <Tag text="Pesquisa" customClass="azul"/>
                             </div>
                             
                         </div>

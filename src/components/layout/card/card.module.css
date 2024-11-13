@@ -1,234 +1,85 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.cardHacka {
+    width: 40%;
+    height: 100%;
+}
+.bannerHacka {
+    width: 100%;
+    height: 3.8em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 35%;
-  height: auto;
+.bannerHackaIMG {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
-.banner {
-  width: 100%;
-  height: 4em;
-  border-radius: 36px 36px 0px 0px;
-  background: url(../../../assets/imgs/banner.png);
-  margin-bottom: 0;
-  background-size: cover;
-  border-top: 1px solid #fff;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
+.titleHacka {
+    font-size: 0.35em;
+    text-align: left;
+    margin-top: 1em;
+    width: 90%;
 }
 
-.container {
-  width: 100%;
-  height: auto;
-  border-radius: 0px 0px 36px 36px;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-  backdrop-filter: blur(20px);
-  margin-top: 0;
-  padding-left: 50px;
-  padding-right: 50px;
+
+
+
+.rowPeople {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
 }
 
-.title_hackathon {
-  color: rgba(240, 240, 240);
-  font-family: "DM Sans";
-  font-size: 0.8em;
-  font-style: normal;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  text-align: left;
-}
 
-.tags {
-  display: flex;
-  flex-direction: row;
-}
-
-.acounter {
-  color: rgba(240, 240, 240, 0.7);
-  font-family: "DM Sans";
-  font-size: 0.5em;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.timeline {
-  width: 100%;
-  height: 12px;
-  border-radius: 36px;
-  border: 1px solid #000;
+.people {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
 }
 
 .participants {
-  width: 100%;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  box-sizing: content-box;
-  margin-top: 50px;
-  align-items: center;
+    font-size: 0.25em;
+    width: 100%;
 }
 
-.participants_hackathon {
-  width: 100%;
-  display: flex;
-  margin: 0;
-}
-
-.acounter2 {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  color: rgba(240, 240, 240, 0.7);
-  font-family: "DM Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-}
 
 .container2 {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.button_hackathon {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-top: 40px;
-}
-
-.cardHackscustom .banner {
-  height: 10em;
-}
-
-.cardHackscustom .container {
-  height: 45em;
-}
-.cardHackscustom {
-  border: 0px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.cardHackscustom:hover {
-  transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
-  transition: 1s;
-  cursor: pointer;
-}
-
-.cardHackathonHome {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    width: 40%;
-    height: 140vh;
-  }
-
-  .banner {
-    width: 100%;
-    height: 25vh;
-    border-radius: 36px 36px 0px 0px;
-    background: url(../../../assets/imgs/banner.png);
-    margin-bottom: 0;
-    background-size: cover;
-  }
-
-  .container {
-    width: 100%;
-    height: auto;
-    border-radius: 0px 0px 36px 36px;
-    border: 1px solid #fff;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    backdrop-filter: blur(20px);
-    margin-top: 0;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .title_hackathon {
-    color: rgba(240, 240, 240);
-    font-family: "DM Sans";
-    font-size: 26px;
-    font-style: normal;
-    padding-top: 50px;
-  }
-
-  .tags {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .acounter {
-    color: rgba(240, 240, 240, 0.7);
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-  }
-
-  .timeline {
-    width: 100%;
-    height: 12px;
-    border-radius: 36px;
-    border: 1px solid #000;
-  }
-
-  .participants {
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    box-sizing: content-box;
-    margin-top: 100px;
-  }
-
-  .participants_hackathon {
-    width: 100%;
-    display: flex;
-    margin: 0;
-  }
-
-  .acounter2 {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    color: rgba(240, 240, 240, 0.7);
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-  }
-
-  .container2 {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+  }
+
+  .progressbarcontainer {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 2em;
+    overflow: hidden;
+    height: 20px;
+  }
+  
+  .progressbar {
+    height: 100%;
+    background-color: #66c2fa;
+    width: 0;
+    transition: width 0.4s ease;
+    border-radius: 8px 0 0 8px;
+    width: 70%;
+  }
+  
+  .diasRestantes {
+    font-size: 18px;
+    margin-top: 10px;
+    width: 100%;
+  
+    text-align: left;
   }
 
   .button_hackathon {
@@ -236,68 +87,6 @@
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 20px;
-  }
-
-  .cardHackscustom .banner {
-    height: 10em;
-  }
-
-  .cardHackscustom .container {
-    height: 45em;
-  }
-  .cardHackscustom {
-    border: 0px;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .cardHackscustom:hover {
-    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
-    transition: 1s;
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 450px) {
-  .cardHackscustom {
     width: 90%;
     height: auto;
-    margin-bottom: 2em;
   }
-  .cardHackscustom:hover {
-    transform: none;
-  }
-  .tags {
-    width: 100%;
-    padding: 5px;
-  }
-  .banner {
-    img {
-      margin-left: -50px;
-    }
-  }
-}
-
-.progressbarcontainer {
-  width: 100%;
-  background-color: #e0e0e0;
-  border-radius: 8px;
-  overflow: hidden;
-  height: 20px;
-}
-
-.progressbar {
-  height: 100%;
-  background-color: #66c2fa;
-  width: 0;
-  transition: width 0.4s ease;
-  border-radius: 8px 0 0 8px;
-  width: 70%;
-}
-
-.diasRestantes {
-  font-size: 18px;
-  margin-top: 10px;
-  width: 100%;
-
-  text-align: left;
-}

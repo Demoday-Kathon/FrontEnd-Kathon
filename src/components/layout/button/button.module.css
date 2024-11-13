@@ -152,20 +152,19 @@
 
 .buttonAzulHome {
   border-radius: 1em;
-  background: rgba(240, 240, 240, 0.1);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  background: #7400b7ff;
   backdrop-filter: blur(20px);
-  width: 60%;
-  font-size: 0.8em;
+  width: 50%;
+  font-size: 0.3em;
   margin-bottom: 1em;
+  padding: 1em;
 }
 
 .buttonAzulHome:hover {
-  width: 60%;
-  font-size: 0.8em;
-  background: white;
-  color: black;
-  transition: 1s;
+  width: 50%;
+  font-size: 0.3em;
+  background: rgb(86, 3, 134);
+  color: #fff;
 }
 
 .buttonBaixo3 {

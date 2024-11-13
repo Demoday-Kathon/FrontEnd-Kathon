@@ -5,50 +5,45 @@ import person1 from "../../../assets/imgs/pessoa1.png";
 import person2 from "../../../assets/imgs/pessoa2.png";
 import person3 from "../../../assets/imgs/pessoa3.png";
 import Button from "../button/button.jsx";
+import CardBrancoBrase from "../../../components/CardBrancoBase/CardBrancoBase.jsx";
 import { Children } from "react";
 
-function card({
-  banner,
-  company_hackathon,
-  title_hackathon,
-  acounter,
-  timeline,
-  customClass,
-  children,
-  customClassPersons,
-}) {
+function card({ titleHacka, bannerHacka, children1, qtdparticipants, timeline, children2 }) {
   return (
-    <div className={`${styles.card} ${styles[customClass]}`}>
-      <img className={styles.banner} src={banner} alt="" />
-      {/* <img className={styles.company_hackathon} src={company_hackathon} alt="" /> */}
-      <div className={styles.container}>
-        <h3 className={styles.title_hackathon}> {title_hackathon} </h3>
-        <div className={styles.tags}>
-          <Tags text="Inscrições Abertas" CustomClass="azul" />
-          <Tags text="Presencial" CustomClass="roxo" />
+    <div className={styles.cardHacka}>
+      <div className={styles.bannerHacka}>
+        <img className={styles.bannerHackaIMG} src={bannerHacka} alt="" />
+      </div>
+      <CardBrancoBrase customClass="cardHacka">
+        <h3 className={styles.titleHacka}> {titleHacka} </h3>
+        <div className={styles.tagsHacka}>
+          {children1}
         </div>
-        <div className={styles.tags}>
-          <Tags text="Impacto Social e Sustentabilidade" CustomClass="lilas" />
-        </div>
-        <div className={styles.participants}>
-          <div className={styles.participants_hackathon}>
-            <Person person={person1} customClass={customClassPersons} />
-            <Person person={person2} customClass={customClassPersons} />
-            <Person person={person3} customClass={customClassPersons} />
+        <div className={styles.rowPeople}>
+          <div className={styles.people}>
+            <Person person={person1} />
+            <Person person={person2} />
+            <Person person={person3} />
           </div>
-          <p className={styles.acounter}> {acounter} </p>
+
+          <p className={styles.participants}>
+            {qtdparticipants}
+          </p>
+
         </div>
         <div className={styles.container2}>
-          {/* <div className={styles.timeline}>
-            <p className={styles.acounter2}> {timeline} </p>
-          </div> */}
+
           <div className={styles.progressbarcontainer}>
             <div className={styles.progressbar}></div>
           </div>
-          <p className={styles.diasRestantes}> 20 dias restantes</p>
+          <p className={styles.diasRestantes}> { timeline } </p>
         </div>
-        <div className={styles.button_hackathon}>{children}</div>
-      </div>
+
+        <div className={styles.button_hackathon}>{children2}</div>
+
+
+
+      </CardBrancoBrase>
     </div>
   );
 }
