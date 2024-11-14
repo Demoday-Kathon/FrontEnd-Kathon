@@ -12,6 +12,8 @@
     max-height: 100vh;
     overflow-y: auto;
     gap: 4vh;
+    border-radius: 5px;
+    padding-bottom: 1vh;
 }
 
 .ContainerFeed::-webkit-scrollbar {

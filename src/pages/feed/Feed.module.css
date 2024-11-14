@@ -63,6 +63,7 @@
     width: 50%;
     gap: 5vh;
     height: 80vh;
+    border-radius: 5px;
 }
 
 .DescricaoComunidade{

@@ -1,111 +1,141 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .bg_container {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .hackathons {
-    width: 100%;
-    margin: auto;
-    height: 600vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .hometitulo {
-    margin: 1em auto 10px auto;
-    text-align: center;
-    color: #fff;
-    font-size: 2.2em;
-    width: 75%;
-    padding: 1em;
-    font-weight: bold;
-  }
-  
-  .BotaohackaVisaoGeral {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 55vh;
-    text-decoration: none;
-  }
-  
-  /* VIDEO */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .video2 {
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-  }
+
+
+.rowHackathonsDisp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 2em;
+  margin: auto;
+}
+
+.tagsHacka {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90%;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+}
+
+.people {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   
-  .video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0;
-  }
-  
-  .hometitle {
-    color: #fff;
-    text-align: center;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 112px;
-    margin-bottom: 10px;
-    margin-top: 80px;
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-  }
-  
-  .descricaodohack {
-    color: #fff;
-    text-align: center;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 300;
-  
-    position: relative;
-    z-index: 1;
-    padding: 10px;
-  }
-  
-  .caixadescricao {
-    position: relative;
-    z-index: 1;
-    border-radius: 36px;
-    border: 1px solid #fff;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    backdrop-filter: blur(20px);
-    margin: auto;
-    width: 60%;
-  }
-  
-  .verificacao {
-    color: #fff;
-    text-align: center;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 300;
-    position: relative;
-    z-index: 1;
-    padding: 10px;
-    margin-top: 8em;
-  }
+}
+
+.hackathons {
+  width: 100%;
+  margin: auto;
+  background-image: url(../../assets/imgs/hackathondisponiveis.png);
+}
+
+.hometitulo {
+  margin: 1em auto 10px auto;
+  text-align: center;
+  color: #fff;
+  font-size: 2.2em;
+  width: 75%;
+  padding: 1em;
+  font-weight: bold;
+}
+
+.BotaohackaVisaoGeral {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 55vh;
+  text-decoration: none;
+}
+
+/* VIDEO */
+
+.video2 {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hometitle {
+  color: #fff;
+  text-align: center;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 112px;
+  margin-bottom: 10px;
+  margin-top: 80px;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.descricaodohack {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+}
+
+.caixadescricao {
+  position: relative;
+  z-index: 1;
+  border-radius: 36px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
+  margin: auto;
+  width: 60%;
+}
+
+.verificacao {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+  margin-top: 8em;
+}
+
+.blurdovideo {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+  backdrop-filter: blur(10px); /* Ajuste o valor para mais ou menos blur */
+  top: 700px;
+}
