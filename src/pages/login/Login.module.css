@@ -69,6 +69,60 @@
     color: #7400b7;
 }
 
-.LinkEntry{
+.LinkEntry {
     text-decoration: none;
+}
+
+/*Medida Mobile*/
+@media (max-width: 420px) {
+    .logoKathonLogin {
+        width: 5em;
+        height: 5em;
+    }
+
+
+    .tituloCardLogin {
+        color: #ffffff;
+        font-size: 3em;
+    }
+
+    .esqueceuSenha {
+        color: rgba(240, 240, 240, 0.80);
+        font-weight: normal;
+        font-size: 1.5em;
+        transition: 0.5s;
+        color: #FFF;
+        font-weight: bold;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 0.7em;
+        margin-top: 0.1em;
+
+    }
+
+
+    .divisorLogin {        
+        width: 100%;
+    }
+
+    .possuiConta {
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+}
+
+/* Medida Tablet */
+@media only screen and (min-width: 421px) {
+    @media only screen and (max-width: 800px) {
+        .esqueceuSenha {
+            margin-bottom: 2em;
+        }
+
+
+
+        .possuiConta {
+            width: 50%;
+        }
+    }
 }

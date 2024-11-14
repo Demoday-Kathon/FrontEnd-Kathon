@@ -78,3 +78,20 @@
   backdrop-filter: blur(20px);
   margin-bottom: 20em;
 }
+
+/*Medida Mobile*/
+@media (max-width: 420px) {
+  .cardPretoForms {
+    width: 90%;
+    margin-bottom: 10em;
+  }
+}
+
+/* Medida Tablet */
+@media only screen and (min-width: 420px) {
+  @media only screen and (max-width: 800px) {
+    .cardPretoForms {
+      width: 90%;
+    }
+  }
+}
