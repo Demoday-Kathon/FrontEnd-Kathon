@@ -32,7 +32,7 @@
     font-size: 60px;
     font-style: normal;
     font-weight: 500;
-    line-height: 50px; /* 80% */
+    line-height: 50px;
   }
   text-align: center;
   width: 100%;
@@ -108,19 +108,19 @@
 .desafio1:hover {
   background-image: url(../../assets/imgs/larga.png);
   p {
-    opacity: 0; /* Torna o texto invisível */
+    opacity: 0;
   }
 }
 .desafio2:hover {
   background-image: url(../../assets/imgs/jaca.png);
   p {
-    opacity: 0; /* Torna o texto invisível */
+    opacity: 0;
   }
 }
 .desafio3:hover {
   background-image: url(../../assets/imgs/dino.png);
   p {
-    opacity: 0; /* Torna o texto invisível */
+    opacity: 0;
   }
 }
 
@@ -208,4 +208,47 @@
     padding: 2em;
     margin-bottom: -5vh;
   }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 999;
+  color: #fff;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 36px;
+  border: 2px solid #66c2fa;
+  background: rgba(20, 19, 1, 0.8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
+  width: 75%;
+  height: 250px;
+  padding: 20px;
+}
+
+.modalContent:hover {
+  border: 2px solid #a367eb;
+  transition: 1s;
+}
+
+.modalText {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.4rem;
 }

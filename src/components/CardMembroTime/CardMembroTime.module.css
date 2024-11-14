@@ -64,3 +64,9 @@
     transform: scale(1.1);
     cursor: pointer;
 }
+
+@media  (max-width: 768px) {
+    .CardMember{
+        width: 85%;
+    }
+}
