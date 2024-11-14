@@ -1,8 +1,146 @@
 .container{
     width: 100%;
-    height: 140vh;
+    height: 100vh;
+}
+
+.conteudo{
+    height: 84vh;
     display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding-top: 3%;
+    z-index: 0;
+}
+
+.conteudoLeft{
+    width: 55%;
+    height: 72vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.cardsMenores{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 5%;
+}
+
+.cardUm{
+    width: 49%;
+    height: 28vh;
+    background-color: #000000;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    padding-top: 10px;
+}
+
+.cardDois{
+    width: 48%;
+    height: 28vh;
+    background-color: #000000;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+
+.info{
+    width: 63%;
+    height: 6rem;
+    display: flex;
+    gap: 10px;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.8s ease;
+}
+
+.info .Arrow{
+    width: 3rem;
+    height: 3rem;
+    transform: rotate(320deg);
+    color: rgb(255, 255, 255);
+}
+
+.info:hover{
+    background-color: #A367EB;
+}
+
+.cardDois img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.cardDois h1{
+    color: #fff;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.cardMaior{
+    width: 100%;
+    height: 42vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7272722c;
+    border-radius: 20px;
+    position: relative;
+    left: 5%;
+}
+
+
+.conteudoRight{
+    width: 33%;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    right: 1%;
+    border-radius: 12px;
+    background-color: black;
+}
+
+.graficoPizza{
+    width: 85%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 2%;
+}
+
+.percentual{
+    height: 20vh;
+    width: 80%;
+    border-radius: 12px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    background-color: #7300ff;
+}
+
+.percentual h1{
+    width: 15%;
+}
+
+.percentual .iconAnl{
+    width: 5rem;
+    height: 5rem;
 }
 
 .containerBranco{
@@ -11,7 +149,7 @@
     top: 5%;
     background-color: #4d4d4d69;
     width: 90%;
-    height: 120vh;
+    height: 100vh;
     border-radius: 20px;
 }
 
@@ -23,7 +161,7 @@
 
 .navBar{
     width: 20%;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +169,7 @@
 
 .ladoDireito{
     width: 80%;
-    height: 80vh;
+    height: 85vh;
 }
 
 .top{
