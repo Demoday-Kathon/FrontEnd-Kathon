@@ -1,31 +1,53 @@
 .inputFormsLogin {
-    border-radius: 10px;
-    background: rgba(240, 240, 240, 0.10);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    backdrop-filter: blur(20px);
-    padding: 0.5em 0.5em 0.5em 1em;
-    width: 75%;
-    font-size: 2.5em;
-    margin-bottom: 1em;
-    color: #fff;
-    display: flex;
-    align-items: center;
+  border-radius: 10px;
+  background: rgba(240, 240, 240, 0.10);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(20px);
+  padding: 0.5em 0.5em 0.5em 1em;
+  width: 75%;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .inputFormsLogin::placeholder {
-    color: rgb(255, 255, 255); /* Altere para a cor desejada */
-    opacity: 0.5; /* Define a opacidade se necessário */
-  }
+  color: rgb(255, 255, 255);
+  /* Altere para a cor desejada */
+  opacity: 0.5;
+  /* Define a opacidade se necessário */
+}
 
-  .inputMaior, .inputMenor {
+.inputMaior,
+.inputMenor {
+  width: 100%;
+}
+
+.inputMaior {
+
+  margin-right: 0.5em;
+}
+
+@media (max-width: 420px) {
+  .inputFormsLogin {
     width: 100%;
+    font-size: 0.5em;
+    display: flex;
+    padding: 4.5em 2em 2em 2em;
+    margin-bottom: 2em;
   }
 
-  .inputMaior {
-    
-    margin-right: 0.5em;
-  }
 
-  /* .inputMenor{
-   
-  } */
+}
+
+
+
+/* Medida Tablet */
+@media only screen and (min-width: 420px) {
+  @media only screen and (max-width: 800px) {
+    .inputFormsLogin {
+      width: 90%;
+    }
+  }
+}
