@@ -58,7 +58,7 @@
 }
 
 .possuiConta span {
-    color: #7400b7;
+    color: #06F8FA;
     font-weight: bold;
 
 }
@@ -66,7 +66,7 @@
 .possuiConta span:hover {
     font-weight: bold;
     text-decoration: underline;
-    color: #7400b7;
+    color: #06F8FA;
 }
 
 .LinkEntry {
@@ -114,7 +114,7 @@
 
 /* Medida Tablet */
 @media only screen and (min-width: 421px) {
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 930px) {
         .esqueceuSenha {
             margin-bottom: 2em;
         }

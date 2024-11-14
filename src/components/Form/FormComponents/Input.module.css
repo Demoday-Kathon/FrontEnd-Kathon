@@ -32,10 +32,10 @@
 @media (max-width: 420px) {
   .inputFormsLogin {
     width: 100%;
-    font-size: 0.5em;
+    font-size: 2em;
     display: flex;
-    padding: 4.5em 2em 2em 2em;
-    margin-bottom: 2em;
+    padding: 0.3em 0em 0.2em 0.2em;
+    margin-bottom: 1em;
   }
 
 
@@ -45,7 +45,7 @@
 
 /* Medida Tablet */
 @media only screen and (min-width: 420px) {
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 930px) {
     .inputFormsLogin {
       width: 90%;
     }

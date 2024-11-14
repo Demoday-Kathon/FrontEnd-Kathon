@@ -282,7 +282,7 @@ function Home() {
                   <Tag text="Inscrições Abertas" customClass="azulHome" />
                   <Tag
                     text="Impacto Social e Sustentabilidade"
-                    customClass="lilasHome"
+                    customClass="verdeAguaHome"
                   />
                 </div>
               }
@@ -309,7 +309,7 @@ function Home() {
                   <Tag text="Inscrições Abertas" customClass="azulHome" />
                   <Tag
                     text="Impacto Social e Sustentabilidade"
-                    customClass="lilasHome"
+                    customClass="verdeAguaHome"
                   />
                 </div>
               }
