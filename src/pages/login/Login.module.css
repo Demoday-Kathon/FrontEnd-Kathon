@@ -74,7 +74,7 @@
 }
 
 /*Medida Mobile*/
-@media (max-width: 420px) {
+@media (max-width: 430px) {
     .logoKathonLogin {
         width: 5em;
         height: 5em;
@@ -113,7 +113,7 @@
 }
 
 /* Medida Tablet */
-@media only screen and (min-width: 421px) {
+@media only screen and (min-width: 431px) {
     @media only screen and (max-width: 930px) {
         .esqueceuSenha {
             margin-bottom: 2em;

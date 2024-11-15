@@ -53,3 +53,37 @@
 }
 
 
+/* Medida Mobile */
+@media only screen and (max-width:430px) {
+    .textEscolhaHabilidadesSelect {
+        font-size: 0.6em;
+    }
+
+    .textEscolhaHabilidades {
+        font-size: 0.6em;
+    }
+    .divtextBrancoEscolhaHabilidades {
+        width: 100%;
+        padding: 0.3em 0.5em 0.3em 0.5em;    
+    }
+
+    .divtextBrancoEscolhaHabilidadesTags {
+        padding: 0.3em 0.3em 0.3em 0.3em;    
+    }
+
+    .submitBotao {
+        margin-top: 1em;
+    }
+}
+  
+  
+  /*Medida Tablet*/
+@media only screen and (min-width:431px) {
+    @media only screen and (max-width: 900px) {
+        .logoKathonLogin {
+            
+        }
+    }
+}
+
+

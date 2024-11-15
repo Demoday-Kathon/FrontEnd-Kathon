@@ -95,3 +95,23 @@
   font-size: 27px;
   padding: 4%;
 }
+
+/*Medida Mobile*/
+@media only screen and (max-width:430px) {
+  .base {
+    height: 1.5em;
+    border-radius: 1em;
+    font-size: 0.5em;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+/*Medida Tablet*/
+@media only screen and (min-width:431px) {
+  @media only screen and (max-width: 900px) {
+      
+  }
+}

@@ -3,3 +3,22 @@
     color: #fff;
     font-size: 2em;
 }
+
+/*Medida Mobile*/
+@media only screen and (max-width:430px) {
+    .labelFormsCadastro {
+        width: 100%;
+        font-size: 1.3em;
+    }
+}
+  
+  
+  /*Medida Tablet*/
+@media only screen and (min-width:431px) {
+    @media only screen and (max-width: 900px) {
+        .labelFormsCadastro {
+            width: 90%;
+        }
+
+    }
+}

@@ -25,17 +25,17 @@
 }
 
 .inputMaior {
-
   margin-right: 0.5em;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .inputFormsLogin {
     width: 100%;
-    font-size: 2em;
+    font-size: 1em;
     display: flex;
-    padding: 0.3em 0em 0.2em 0.2em;
+    padding: 0.5em 0em 0.5em 0.5em;
     margin-bottom: 1em;
+    border-radius: 7px;
   }
 
 
@@ -44,10 +44,21 @@
 
 
 /* Medida Tablet */
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 430px) {
   @media only screen and (max-width: 930px) {
     .inputFormsLogin {
       width: 90%;
+      padding: 0.5em 0.5em 0.5em 0.5em;
+      
+    }
+
+    .inputMaior {
+      width: 100%;
+      margin-right: 5em;
+      
+    }
+
+    .inputMenor {
     }
   }
 }
