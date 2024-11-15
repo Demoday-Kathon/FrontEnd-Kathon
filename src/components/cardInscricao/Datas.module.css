@@ -113,7 +113,7 @@
 }
 
 @media (min-width: 451px) {
-  @media (max-width: 800px) {
+  @media (max-width: 840px) {
     .cardData {
       width: 50%;
       margin: auto;

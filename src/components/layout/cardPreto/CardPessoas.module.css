@@ -26,7 +26,7 @@
   }
 }
 @media (min-width: 451px) {
-  @media (max-width: 800px) {
+  @media (max-width: 840px) {
     .card_pessoas {
       display: flex;
       flex-direction: column;
@@ -37,5 +37,5 @@
         margin-bottom: 10px;
       }
     }
-}
+  }
 }

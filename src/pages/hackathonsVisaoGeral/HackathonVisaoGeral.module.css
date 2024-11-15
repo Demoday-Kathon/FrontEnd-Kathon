@@ -36,10 +36,8 @@
 }
 
 @media (max-width: 30em) {
-  /* 480px / 16 = 30em */
   .ContentPrincipal {
-    padding: 0.625em; /* 10px / 16 = 0.625em */
-    /* Ajuste de espaçamento para dispositivos menores */
+    padding: 0.625em;
   }
 
   .containerprincipal {
@@ -48,7 +46,7 @@
   }
 
   .containersubprincipal {
-    padding: 0.625em; /* 10px / 16 = 0.625em */
+    padding: 0.625em;
     text-align: center;
     p {
       width: 82%;
@@ -56,23 +54,22 @@
   }
 
   .hackthonsmais h3 {
-    font-size: 1.2em; /* Ajuste do tamanho da fonte */
+    font-size: 1.2em;
     text-align: center;
   }
 
   .cardHacks {
     flex-direction: column;
-    gap: 0.9375em; /* 15px / 16 = 0.9375em */
+    gap: 0.9375em;
   }
 
-  /* Estilos para ajustar os componentes internos, como CardPreto e Card */
   .cardHackscustom {
-    width: 100%; /* A largura ainda é 100%, sem necessidade de conversão */
+    width: 100%;
   }
 }
 
 @media (min-width: 451px) {
-  @media (max-width: 800px) {
+  @media (max-width: 840px) {
     .containerprincipal {
       display: flex;
       flex-direction: column;

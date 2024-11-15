@@ -185,7 +185,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .card_container {
     width: 400px;
     margin: auto;
@@ -251,7 +251,7 @@
 }
 
 @media (min-width: 451px) {
-  @media (max-width: 800px) {
+  @media (max-width: 840px) {
     .card_container {
       width: 100%;
       margin: auto;

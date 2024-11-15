@@ -54,9 +54,9 @@
 }
 
 @media (min-width: 451px) {
-  @media (max-width: 800px) {
+  @media (max-width: 840px) {
     .faqItem {
       width: 90%;
     }
-}
+  }
 }

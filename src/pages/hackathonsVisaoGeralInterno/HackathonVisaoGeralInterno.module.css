@@ -1,4 +1,4 @@
-.ContentPrincipal{
+.ContentPrincipal {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -11,12 +11,14 @@
   gap: 50px;
   justify-content: center;
 }
-  .containersubprincipal {
-    width: calc(100% - 130px); /* Calcula a largura subtraindo 130px da largura total */
-    position: relative;
-    display: flex;
-    margin-left: 130px;
-  }
+.containersubprincipal {
+  width: calc(
+    100% - 130px
+  ); /* Calcula a largura subtraindo 130px da largura total */
+  position: relative;
+  display: flex;
+  margin-left: 130px;
+}
 
 .hackthonsmais {
   color: var(--Terciria-II, #f0f0f0);
@@ -33,4 +35,45 @@
   margin-top: 50px;
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 30em) {
+  .ContentPrincipal {
+    padding: 0.625em;
+  }
+
+  .containerprincipal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containersubprincipal {
+    padding: 0.625em;
+    text-align: center;
+    p {
+      width: 82%;
+    }
+  }
+
+  .hackthonsmais h3 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .cardHacks {
+    flex-direction: column;
+    gap: 0.9375em;
+  }
+
+  .cardHackscustom {
+    width: 100%;
+  }
+}
+
+@media (min-width: 451px) {
+  @media (max-width: 840px) {
+    .containerprincipal {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
