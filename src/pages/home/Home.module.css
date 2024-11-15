@@ -102,9 +102,88 @@
   width: 75%;
   padding: 1em;
   font-weight: bold;
+
   span {
     color: var(--Terciria-V, #a367eb);
   }
+}
+
+.homeTitulo3 {
+  margin: 3em auto 0em auto;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  width: 75%;
+  padding: 1em;
+  font-weight: bold;
+
+  span {
+    color: var(--Terciria-V, #a367eb);
+  }
+}
+
+.homeTitulo4 {
+  margin: 0em auto 1em auto;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  width: 75%;
+  padding: 1em;
+  font-weight: bold;
+
+  span {
+    color: var(--Terciria-V, #a367eb);
+  }
+}
+
+.homeTitulo5 {
+  margin: 3em auto 0em auto;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  width: 75%;
+  padding: 1em;
+  font-weight: bold;
+
+  span {
+    color: var(--Terciria-V, #a367eb);
+  }
+}
+
+
+.homeTitulo6 {
+  margin: 3em auto 0em auto;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  width: 75%;
+  padding: 1em;
+  font-weight: bold;
+
+  span {
+    color: var(--Terciria-V, #a367eb);
+  }
+}
+
+.homeTitulo7 {
+  margin: 3em auto 0em auto;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  width: 75%;
+  padding: 1em;
+  font-weight: bold;
+
+  span {
+    color: var(--Terciria-V, #a367eb);
+  }
+}
+
+.iconsCardsCaixas{
+  color: #06F8FA;
+  margin-right: -1em;
+  font-size: 70px;
+  margin-top: -10px;
 }
 
 .rowHackathonsDisp {
@@ -244,7 +323,8 @@ video {
 }
 
 .empresinhas {
-  width: 150px; /* Ajuste o tamanho da imagem */
+  width: 150px;
+  /* Ajuste o tamanho da imagem */
   height: 150px;
   transition: transform 1s ease;
   transform-style: preserve-3d;
@@ -321,6 +401,7 @@ video {
   cursor: pointer;
   transition-duration: 1s;
 }
+
 .caixinhaplanos3 {
   width: 30%;
   height: 268px;
@@ -351,7 +432,8 @@ video {
 }
 
 .pedrinhas {
-  width: 100px; /* Ajuste conforme necessário */
+  width: 100px;
+  /* Ajuste conforme necessário */
   transition: transform 1s ease;
   transform-style: preserve-3d;
 }
@@ -361,7 +443,8 @@ video {
 }
 
 .pedrinhas {
-  width: 100px; /* Ajuste conforme necessário */
+  width: 100px;
+  /* Ajuste conforme necessário */
   transition: transform 1s ease;
   transform-style: preserve-3d;
 }
@@ -371,7 +454,8 @@ video {
 }
 
 .pedrinhas {
-  width: 100px; /* Ajuste conforme necessário */
+  width: 100px;
+  /* Ajuste conforme necessário */
   transition: transform 1s ease;
   transform-style: preserve-3d;
 }
@@ -437,8 +521,7 @@ video {
   }
 }
 
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
 
 /* HABILIDADES */
 
@@ -487,6 +570,8 @@ video {
   line-height: normal;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .primeiracaixa,
@@ -498,6 +583,7 @@ video {
   left: 200px;
   margin-top: -20px;
 }
+
 .segundacaixa {
   width: 500px;
   position: relative;
@@ -505,14 +591,23 @@ video {
   height: 110px;
   top: 50px;
   padding-top: 5px;
+  font-size: 1em;
 }
 
 .icons {
   width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
 }
 
 .textos {
   width: 80%;
+}
+.textos1 {
+  width: 80%;
+
 }
 
 .terceiracaixa {
@@ -546,8 +641,10 @@ video {
 /* TESTES  */
 
 .logos {
-  overflow: hidden; /* Isto está correto */
-  padding: 60px 0; /* Corrigido para 'padding' ao invés de 'pad' */
+  overflow: hidden;
+  /* Isto está correto */
+  padding: 60px 0;
+  /* Corrigido para 'padding' ao invés de 'pad' */
   white-space: nowrap;
   position: relative;
 }
@@ -581,7 +678,560 @@ video {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
+  }
+}
+
+
+
+/*Medida Mobile*/
+@media only screen and (max-width: 430px) {
+  /* .video-background {
+    height: 75%;
+
+  } */
+
+  .hometitle {
+    font-size: 1em;
+    line-height: 1em;
+  }
+
+  .botoesHome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cardPretoHome {
+    width: 90%;
+    margin-top: 3em;
+    font-size: 0.6em;
+  }
+
+  .cardPretoHome span {
+    margin: 0em;
+  }
+
+  .jobequip,
+  .solucoes,
+  hr,
+  .setameio,
+  .setadireita,
+  .setaparacima {
+    display: none;
+  }
+
+  .cardPretoHome .tituloCardPreto {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .homeTitulo2 {
+    margin: 6em auto -1em auto;
+    font-size: 1em;
+  }
+
+  .botoesHome2 {
+    width: 100%;
+  }
+
+  .caixasparte2,
+  .caixaparte1 {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .caixasparte1 {
+    width: 100%;
+  }
+
+
+  .caixasparte2 {
+    width: 100%;
+    font-size: 0.8em;
+
+  }
+
+  .primeiracaixa,
+  .segundacaixa,
+  .terceiracaixa,
+  .quartacaixa {
+    
+    width: 90%;
+    align-items: center;
+    height: 4em;
+    font-size: 0.6em;
+    margin: auto;
+    margin: 0.8em;
+  }
+
+  .primeiracaixa {
+    left: -2px;
+    margin-bottom: -3px;
+
+  }
+
+
+  .terceiracaixa,
+  .quartacaixa {
+    left: 15px;
+    font-size: 0.8em;
+    margin-top: 0px;
+  }
+
+  .segundacaixa {
+    left: 0px;
+    height: 110px;
+    top: 0px;
+    align-items: center;
+  }
+
+  .icons {
+    width: 20%;
+  }
+
+  .textos {
+    width: 80%;
+  }
+
+  .terceiracaixa {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .quartacaixa {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .primeiracaixa:hover,
+  .segundacaixa:hover,
+  .terceiracaixa:hover,
+  .quartacaixa:hover {
+    border: 1px solid #06f8fa;
+    background-color: #141301;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .iconsCardsCaixas{
+    color: #06F8FA;
+    font-size: 50px;
+  }
+
+  
+  .homeTitulo3 {
+    margin: 1em auto 0em auto;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+
+    span {
+      color: var(--Terciria-V, #a367eb);
+    }
+
+  }
+
+  .hackathonsDisponiveisHome {
+    width: 90%;
+    margin: auto;
+    
+  }
+
+  .rowHackathonsDisp {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .homeTitulo4 {
+    margin: 1em auto 1em auto;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+
+    span {
+      color: var(--Terciria-V, #a367eb);
+    }
+
+  }
+
+  .tagsHacka {
+    margin-bottom: 0em;
+  }
+
+  .homeTitulo4 {
+    margin: -3em auto 2em auto;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1em;
+
+    span {
+      color: var(--Terciria-V, #a367eb);
+    }
+
+  }
+
+  .coments {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    gap: 8vh;
+  }
+
+  .homeTitulo5 {
+    margin: 1em auto 0em auto;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 0.8em;
+
+    span {
+      margin: 0;
+      color: var(--Terciria-V, #a367eb);
+    }
+  }
+
+  .caixaCardsPreta {
+    width: 90%;
+    height: auto;
+  }
+
+  .cardPretoMenor,
+  .cardPretoMenor4,
+  .cardPretoMaior {
+    margin-bottom: 0.5em;
+    font-size: 0.8em;
+  }
+
+  .cardPretoMenor {
+    width: 100%;
+  }
+
+  .cardPretoMenor4 {
+    width: 100%;
+  }
+
+  .cardPretoMaior {
+    width: 100%;
+  }
+
+  .homeTitulo6 {
+    margin: 1em auto 1em auto;
+  }
+
+  .homeTitulo6 {
+    margin: 1em auto 0em auto;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1em;
+
+    span {
+      margin: 0;
+      color: var(--Terciria-V, #a367eb);
+    }
+  }
+
+  .caixaplanos {
+    height: 25vh;
+    padding: 0em 3em 0em 3em;
+    
+  }
+
+  .caixinhaplanos1,
+  .caixinhaplanos2,
+  .caixinhaplanos3 {
+    font-size: 0.4em;
+    width: 66%;
+    height: auto;
+    border-radius: 10px;
+    justify-content: space-evenly;
+  }
+
+  .caixinhaplanos1:hover {
+    border-radius: 10px;
+    border: 1px solid #6be62e;
+    background: rgba(240, 240, 240, 0.2);
+    box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.2) inset;
+    backdrop-filter: blur(40px);
+    cursor: pointer;
+    transition-duration: 1s;
+  }
+  .caixinhaplanos2:hover {
+    border-radius: 10px;
+    border: 1px solid #aa2c54;
+    background: rgba(240, 240, 240, 0.2);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    transition-duration: 1s;
+  }
+  .caixinhaplanos3:hover {
+    border-radius: 10px;
+    border: 1px solid #0064e0;
+    background: rgba(240, 240, 240, 0.2);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    transition-duration: 1s;
+  }
+
+  
+
+  .pedrinhas {
+    width: 35px;
+  }
+
+  .homeTitulo7 {
+    margin: 1em auto 0em auto;
+    width: 100%;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1em;
+    span {
+      color: var(--Terciria-V, #a367eb);
+    }
+  }
+}
+
+/*Medida Tablet*/
+@media only screen and (min-width:431px) {
+  @media only screen and (max-width: 930px) {
+    .hometitle {
+      font-size: 2em;
+      line-height: 1em;
+    }
+
+    .botoesHome {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cardPretoHome {
+      width: 90%;
+      margin-top: 3em;
+
+    }
+
+    .jobequip,
+    .solucoes,
+    hr,
+    .setameio,
+    .setadireita,
+    .setaparacima {
+      display: none;
+    }
+
+    .cardPretoHome .tituloCardPreto {
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .areaBotao {
+      width: 100%;
+      justify-content: center;
+      margin-top: 1em;
+      margin-left: 0px;
+    }
+
+    .homeTitulo2 {
+      margin: 5em auto -1em auto;
+      width: 100%;
+      font-size: 1.7em;
+    }
+
+    .botoesHome2 {
+      width: 80%;
+    }
+
+
+    .caixasparte2,
+    .caixaparte1 {
+      flex-direction: column;
+      margin: auto;
+    }
+
+    .caixasparte2 {
+      width: 80%;
+    }
+
+    .primeiracaixa,
+    .segundacaixa,
+    .terceiracaixa,
+    .quartacaixa {
+      margin: 0.5em;
+      width: 100%;
+    }
+
+    .primeiracaixa {
+      left: -2px;
+      margin-bottom: -3px;
+    }
+
+
+    .terceiracaixa,
+    .quartacaixa {
+      left: 15px;
+      margin-top: 0px;
+    }
+
+    .segundacaixa {
+      left: 0px;
+      height: 110px;
+      top: 0px;
+    }
+
+    .segundacaixa .textos br {
+      display: none;
+    }
+
+    .icons {
+      width: 20%;
+    }
+
+    .textos {
+      width: 80%;
+    }
+
+    .terceiracaixa {
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+
+    .quartacaixa {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+
+    .primeiracaixa:hover,
+    .segundacaixa:hover,
+    .terceiracaixa:hover,
+    .quartacaixa:hover {
+      border: 1px solid #06f8fa;
+      background-color: #141301;
+      color: white;
+      cursor: pointer;
+      transition: 1s;
+    }
+
+    .homeTitulo3 {
+      margin: 1em auto 0em auto;
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+
+      span {
+        color: var(--Terciria-V, #a367eb);
+      }
+
+    }
+
+    .hackathonsDisponiveisHome {
+      width: 90%;
+      margin: auto;
+    }
+
+    .rowHackathonsDisp {
+      flex-direction: column;
+      margin: auto;
+    }
+
+    .homeTitulo4 {
+      margin: 1em auto 1em auto;
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+
+      span {
+        color: var(--Terciria-V, #a367eb);
+      }
+
+    }
+
+    .coments {
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      width: 80%;
+      justify-content: center;
+      gap: 8vh;
+    }
+
+    .homeTitulo5 {
+      margin: 1em auto 1em auto;
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+      font-size: 1.5em;
+
+      span {
+        color: var(--Terciria-V, #a367eb);
+      }
+
+    }
+
+    .caixaCardsPreta {
+      width: 90%;
+      height: auto;
+    }
+
+    .cardPretoMenor,
+    .cardPretoMenor4,
+    .cardPretoMaior {
+      margin: 0.5em;
+      font-size: 1.5em;
+    }
+
+    .cardPretoMenor {
+      width: 100%;
+    }
+
+    .cardPretoMenor4 {
+      width: 100%;
+    }
+
+    .cardPretoMaior {
+      width: 100%;
+    }
+
+    .homeTitulo6 {
+      margin: 1em auto 1em auto;
+    }
+
+    .caixaplanos {
+      height: 25vh;
+      padding: 0em 2em 0em 2em;
+    }
+
+    .caixinhaplanos1,
+    .caixinhaplanos2,
+    .caixinhaplanos3 {
+      font-size: 0.8em;
+      width: 35%;
+      height: 200px;
+    }
+
+    .pedrinhas {
+      width: 75px;
+    }
+
+    .homeTitulo7 {
+      margin: 2em auto 0em auto;
+      width: 75%;
+      padding: 1em;
+      font-weight: bold;
+
+      span {
+        color: var(--Terciria-V, #a367eb);
+      }
+    }
   }
 }

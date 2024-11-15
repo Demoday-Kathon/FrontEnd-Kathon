@@ -106,6 +106,22 @@
     display: flex;
     align-items: center;
   }
+
+  .roxoHome {
+    background-color: #7400b7ff;
+    font-size: 0.2em;
+  }
+  
+  .azulHome {
+    background-color: #314ce7ff;
+    font-size: 0.2em;
+  }
+  
+  .verdeAguaHome{
+    background-color: #06F8FA;
+    font-size: 0.2em;
+    color: #000;
+  }
 }
 
 

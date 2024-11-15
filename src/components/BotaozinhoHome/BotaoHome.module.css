@@ -85,6 +85,11 @@
     margin-top: 0.5em;
   }
 
+  .botaohome {
+    font-size: 0.5em;
+    
+  }
+
 }
 
 /* Medida Tablet */
@@ -92,6 +97,11 @@
   @media only screen and (max-width: 930px) {
     .buttonLoginConta {
       width: 90%;
+    }
+
+    .botaohome {
+      font-size: 0.6em;
+      
     }
   }
 }

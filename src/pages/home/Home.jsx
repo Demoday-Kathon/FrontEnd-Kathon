@@ -187,12 +187,7 @@ function Home() {
               <div className={styles.icons}>
                 {" "}
                 <TbWorld
-                  style={{
-                    color: "#06F8FA",
-                    marginRight: "-1em",
-                    fontSize: "70px",
-                    marginTop: "-10px",
-                  }}
+                  className={styles.iconsCardsCaixas}
                 />
               </div>
               <div className={styles.textos}>Experiência</div>
@@ -200,16 +195,11 @@ function Home() {
             <div className={styles.segundacaixa}>
               <div className={styles.icons}>
                 <IoStatsChart
-                  style={{
-                    color: "#06F8FA",
-                    marginRight: "-1em",
-                    fontSize: "70px",
-                    marginTop: "15px",
-                  }}
+                  className={styles.iconsCardsCaixas}
                 />
               </div>
-              <div className={styles.textos}>
-                Desenvolvimento <br /> de habilidades{" "}
+              <div className={styles.textos1}>
+                Desenvolvimento de habilidades{" "}
               </div>
             </div>
           </div>
@@ -230,13 +220,7 @@ function Home() {
             <div className={styles.icons}>
               {" "}
               <FaUsers
-                className={styles.testezinho}
-                style={{
-                  color: "#06F8FA",
-                  marginRight: "-1em",
-                  fontSize: "70px",
-                  marginTop: "-9px",
-                }}
+                className={styles.iconsCardsCaixas}
               />
             </div>
             <div className={styles.textos}>Networking</div>
@@ -244,12 +228,7 @@ function Home() {
           <div className={styles.quartacaixa}>
             <div className={styles.icons}>
               <MdOutlineLaptopMac
-                style={{
-                  color: "#06F8FA",
-                  marginRight: "-0.5em",
-                  fontSize: "70px",
-                  marginTop: "-9px",
-                }}
+                className={styles.iconsCardsCaixas}
               />
             </div>
             <div className={styles.textos}>Oportunidades</div>
@@ -259,7 +238,7 @@ function Home() {
         {/* FIM DO TESTE */}
 
         <motion.h1
-          className={styles.homeTitulo2}
+          className={styles.homeTitulo3}
           variants={fadein("up", 0.9)}
           initial="hidden"
           whileInView={"show"}
@@ -327,7 +306,7 @@ function Home() {
           </div>
         </div>
         <motion.h1
-          className={styles.homeTitulo2}
+          className={styles.homeTitulo4}
           variants={fadein("up", 0.9)}
           initial="hidden"
           whileInView={"show"}
@@ -350,7 +329,7 @@ function Home() {
           {/* Adicione mais Cards aqui, se necessário */}
         </div>
         <motion.h1
-          className={styles.homeTitulo2}
+          className={styles.homeTitulo5}
           variants={fadein("up", 0.9)}
           initial="hidden"
           whileInView={"show"}
@@ -470,7 +449,7 @@ function Home() {
           </motion.div>
         </div>
         <motion.h1
-          className={styles.homeTitulo2}
+          className={styles.homeTitulo6}
           variants={fadein("up", 0.9)}
           initial="hidden"
           whileInView={"show"}
@@ -520,7 +499,7 @@ function Home() {
         </motion.div>
         <Button text="Conheça os planos" customClass="buttonPlaninhos" />
         <motion.h1
-          className={styles.homeTitulo2}
+          className={styles.homeTitulo7}
           variants={fadein("up", 0.9)}
           initial="hidden"
           whileInView={"show"}

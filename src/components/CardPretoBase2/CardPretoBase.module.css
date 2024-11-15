@@ -93,5 +93,15 @@
     .cardPretoForms {
       width: 90%;
     }
+
+    .menor {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .maior {
+      width: 100%;
+      margin: 0%;
+    }
   }
 }

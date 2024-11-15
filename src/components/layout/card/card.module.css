@@ -126,3 +126,39 @@
     width: 100%;
 
 }
+
+/*Medida Mobile */
+@media only screen and (max-width: 430px) {
+  .cardHacka {
+    width: 100%;
+  }
+
+  .titleHacka {
+    font-size: 0.25em;
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  .rowPeople {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .participants {
+    font-size: 0.2em;
+  }
+
+  .button_hackathon {
+    justify-content: center;
+  }
+}
+
+/*Medidas Tablet*/
+@media only screen and (min-width:431px) {
+  @media only screen and (max-width: 930px) {
+    .cardHacka {
+      width: 100%;
+    }
+  }
+}

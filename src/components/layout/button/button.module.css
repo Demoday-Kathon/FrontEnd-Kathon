@@ -273,3 +273,70 @@
   color: white;
   transition: 1s;
 }
+
+/*Medida Mobile*/
+@media only screen and (max-width: 430px) {
+  .buttonBaixo {
+    font-size: 1em;
+  }
+  .buttonBaixo:hover {
+    font-size: 1em;
+    border-radius: 36px;
+  }
+
+  .buttonBaixo2 {
+    font-size: 1em;
+  }
+  .buttonBaixo2:hover {
+    font-size: 1em;
+    border-radius: 36px;
+  }
+
+  .buttonAzulHome {
+    
+    width: 50%;
+    font-size: 0.2em;
+    margin-bottom: 1em;
+    padding: 1em;
+  
+    
+  }
+
+  .buttonPlaninhos {
+    width: 55%;
+    margin-top: 40px;
+    font-size: 0.5em;
+  }
+  .buttonPlaninhos:hover {
+    width: 55%;
+    margin-top: 40px;
+    font-size: 0.5em;
+  }
+}
+
+/*Medida Tablet*/
+@media only screen and (min-width:431px) {
+  @media only screen and (max-width: 930px) {
+    .buttonBaixo {
+      font-size: 1em;
+    }
+    .buttonBaixo:hover {
+      font-size: 1em;
+      border-radius: 36px;
+    }
+
+    .buttonBaixo2 {
+      font-size: 1em;
+    }
+    .buttonBaixo2:hover {
+      font-size: 1em;
+      border-radius: 36px;
+    }
+
+    .buttonPlaninhos {
+      width: 45%;
+      margin-top: 40px;
+      font-size: 0.8em;
+    }
+  }
+}
