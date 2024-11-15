@@ -80,7 +80,7 @@
 }
 
 /*Medida Mobile*/
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .cardPretoForms {
     width: 90%;
     margin-bottom: 10em;
@@ -88,8 +88,8 @@
 }
 
 /* Medida Tablet */
-@media only screen and (min-width: 420px) {
-  @media only screen and (max-width: 800px) {
+@media only screen and (min-width: 431px) {
+  @media only screen and (max-width: 900px) {
     .cardPretoForms {
       width: 90%;
     }

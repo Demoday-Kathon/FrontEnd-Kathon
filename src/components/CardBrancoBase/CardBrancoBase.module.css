@@ -33,7 +33,9 @@
   cursor: pointer;
   transition: 0.5s;
   width: 100%;
-  padding: 2em 5em 2em 5em;
+  height: 100%;
+  padding: 2em 4em;
+  margin: 1em;
 }
 
 .cardBrancoEscolha:hover {
@@ -53,4 +55,25 @@
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
   height: auto;
+}
+
+@media only screen and (max-width:430px) {
+  .cardBrancoEscolha {
+    padding: 1em 2.5em;
+    margin: 0.5em;
+    font-size: 1.5em;
+    border-radius: 1em;
+  }
+}
+
+/*Medida Tablet*/
+@media only screen and (min-width:431px) {
+  @media only screen and (max-width: 900px) {
+   
+    .cardBrancoEscolha {
+      padding: 0em 2em;
+      margin: 0.5em;
+      font-size: 2em;
+    }
+  }
 }

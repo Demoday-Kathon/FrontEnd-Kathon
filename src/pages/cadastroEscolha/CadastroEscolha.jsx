@@ -22,7 +22,7 @@ function CadastroEscolha() {
                     customClass='escolhaCadastro'
                     text={<CardBrancoBase 
                         customClass="cardBrancoEscolha">
-                        <img src={iconeEstudante} alt="iconeEstudante" />
+                        <img src={iconeEstudante} alt="iconeEstudante" className={styles.imgIconEscolha}/>
                         Estudante
 
                     </CardBrancoBase>} />
@@ -32,7 +32,7 @@ function CadastroEscolha() {
                     linkTo="/CadastroEmpresa"
                     customClass='escolhaCadastro'
                     text={<CardBrancoBase customClass="cardBrancoEscolha">
-                        <img src={iconeEmpresa} alt="iconeEstudante" />
+                        <img src={iconeEmpresa} alt="iconeEstudante" className={styles.imgIconEscolha}/>
                         Empresa
 
                     </CardBrancoBase>} />

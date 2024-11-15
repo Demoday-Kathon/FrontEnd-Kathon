@@ -11,3 +11,37 @@
   justify-content: space-around;
   width: 100%;
 }
+
+
+/* Medida Mobile */
+@media only screen and (max-width:430px) {
+  .tituloCadastroEscola {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  .areaCardsBrancos {
+    padding: 0em;
+  }
+
+  .imgIconEscolha {
+    height: 5em;
+    width: 5em;
+  }
+}
+
+
+/*Medida Tablet*/
+@media only screen and (min-width:431px) {
+  @media only screen and (max-width: 900px) {
+    .tituloCadastroEscola {
+      font-size: 3em;
+      margin-bottom: 1em;
+    }
+
+    .areaCardsBrancos {
+      padding: 0em;
+    }
+  }
+}
