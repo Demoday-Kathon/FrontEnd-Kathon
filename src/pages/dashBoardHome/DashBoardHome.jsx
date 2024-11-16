@@ -10,7 +10,7 @@ import { fadein } from '../../variants'
 import { Link } from 'react-router-dom'
 
 function DashBoardHome() {
-   
+
     return (
         <div className={Styles.container}>
             <NavBar />

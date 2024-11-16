@@ -4,7 +4,7 @@ import GraficoMenor from "./graficos/GraficoMenor"
 
 function HackathonDashboard(){
     return(
-        <div className="container">
+        <div className="content">
             <NavBar />
             <div className="conteudo">
                 <div className="top">

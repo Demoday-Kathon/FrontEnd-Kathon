@@ -1,128 +1,63 @@
 import Styles from  './DashboardAssistenteIA.module.css';
-import HeaderRecrutamento from '../../components/layout/HeaderRecrutamento/HeaderRecrutamento';
-import Estrela from '../../assets/imgs/star.png';
-import ImageProfile from '../../assets/imgs/joana.png';
-import ImageNotification from '../../assets/imgs/notification.png';
-import Seta from '../../assets/imgs/setawhite.png';
-import backSeta from '../../assets/imgs/backSeta.png';
+import NavBar from '../dashBoardHome/components/navBar';
+import imgPerfil from '../../assets/imgs/perfil_menina1.png'
+import { Link } from 'react-router-dom';
+import * as FaIcons from 'react-icons/fa'
+import iconAnalytics from '../../assets/imgs/icones/bar-chart.png'
+import Hackas from './Components/Hackas';
+import img from '../../assets/imgs/Leonardo_Phoenix_A_futuristic_hightech_illustration_of_a_citys_2.jpg'
+
 
 function DashboardAssistenteIA() {
   return (
     <div className={Styles.ContainerPrincipal}>
-      <HeaderRecrutamento />
-      <div className={Styles.ContainerDashboard}>
-        <div
-        className={Styles.ContainerHeaderTitle}>
+      <div className={Styles.nav}>
+        <NavBar />
+      </div>
+      <div className={Styles.conteudo}>
+        <div className={Styles.conteudoLeft}>
+          <div className={Styles.hackasSwipper}>
 
-          <img className={Styles.BackSeta} src={backSeta} alt="Seta voltar" />
-
-          <div className={Styles.containerTitulo}>
-            <h1>Recrutamento</h1>
           </div>
-          
-          <div className={Styles.ContentKathonIA}>
-
-            <h2>Kathon IA</h2>
-
-            <div className={Styles.ContainerNotification}>
-              <div>
-                <img className={Styles.ImageNotification} src={ImageNotification} alt="Imagem Notificação" />
+          <div className={Styles.toppics}>
+            <div className={Styles.comentarios}>
+              <div className={Styles.leftPerfil}>
+                <div className={Styles.perfil}>
+                  <img src={imgPerfil} alt="foto_perfil" className={Styles.foto_perfil}/>
+                  <div className={Styles.text}>
+                    <span>Nome</span>
+                    <p>@estudante</p>
+                  </div>
+                </div>
+                <Link to='/Perfil_aluno' className={Styles.contatar}>Perfil</Link>
               </div>
-
-              <img className={Styles.ImageProfile} src={ImageProfile} alt="Imagem perfil usuário" />
+              <div className={Styles.performance}>
+                <div className={Styles.total}>
+                  <span>+8000XP</span>
+                  <span className={Styles.curtidas}>+10K</span>
+                </div>
+                <img src={iconAnalytics} alt="performance"/>
+              </div>
             </div>
           </div>
         </div>
-
-        <div className={Styles.ContainerTerciaryRecrutamento}>
-            <div  className={Styles.containerResolution}>
-              <h1>Equipe 1</h1>
-
-              <div className={Styles.CardColab}>
-                  <img className={Styles.UserImage} src={ImageProfile} alt="Imagem  perfil usuário" />
-
-                <div>
-                  <p>Joana Pereira</p>
-                  <p>@joanapereira</p>
-                </div>
-
-
-                <div className={Styles.Seta}>
-
-                <img src={Seta} alt="Seta" />
-                </div>
-              </div>
-              <div className={Styles.CardColab}>
-                  <img className={Styles.UserImage} src={ImageProfile} alt="Imagem  perfil usuário" />
-
-                <div>
-                  <p>Joana Pereira</p>
-                  <p>@joanapereira</p>
-                </div>
-
-
-                <div className={Styles.Seta}>
-
-                <img src={Seta} alt="Seta" />
-                </div>
-              </div>
-              <div className={Styles.CardColab}>
-                  <img className={Styles.UserImage} src={ImageProfile} alt="Imagem  perfil usuário" />
-
-                <div>
-                  <p>Joana Pereira</p>
-                  <p>@joanapereira</p>
-                </div>
-
-
-                <div className={Styles.Seta}>
-
-                <img src={Seta} alt="Seta" />
-                </div>
-              </div>
-              <div className={Styles.CardColab}>
-                  <img className={Styles.UserImage} src={ImageProfile} alt="Imagem  perfil usuário" />
-
-                <div>
-                  <p>Joana Pereira</p>
-                  <p>@joanapereira</p>
-                </div>
-
-
-                <div className={Styles.Seta}>
-
-                <img src={Seta} alt="Seta" />
-                </div>
-              </div>
-  
+        <div className={Styles.conteudoRight}>
+          <div className={Styles.todosHackas}>
+            <div className={Styles.search}>
+              <input type="text" placeholder='Procurar Hackathon' size="20"/>
+              <FaIcons.FaSearch className={Styles.icon}/>
             </div>
-
-            <div  className={Styles.containerSearchHacka}>
-                <div className={Styles.ContainerBlocosHacka}>
-                  <h2>Avaliação e Comentário</h2>
-
-                  <div className={Styles.ContainerStars}>
-                    <img src={Estrela} alt="Estrela" />
-                    <img src={Estrela} alt="Estrela" />
-                    <img src={Estrela} alt="Estrela" />
-                  </div>
-
-                  <div className={Styles.ContainerAvaliador}>
-                    <img src={ImageProfile} alt="Imagem avaliador" />
-                    <p>
-                      Como avaliador técnico, posso dizer que essa equipe propôs uma resolução, completa e eficaz para determinada demanda.
-                    </p>
-                  </div>
-
-                  <div className={Styles.ContainerRepository}>
-                    <h3>Repositório do Projeto</h3>
-
-                    <div className={Styles.LinkRepository}>
-
-                    </div>
-                  </div>
-                </div>
+            <div className={Styles.hackathons}>
+              <Hackas 
+              logo={img}
+              desc='Testando testando pipipipipipipipipipipipi'
+              />
+              <Hackas 
+              logo={img}
+              desc='Testando testando pipipipipipipipipipipipi'
+              />
             </div>
+          </div>
         </div>
       </div>
     </div>
