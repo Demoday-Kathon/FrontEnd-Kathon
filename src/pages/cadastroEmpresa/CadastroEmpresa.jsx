@@ -28,8 +28,8 @@ function CadastroEmpresa() {
           <Input type="text" />
           <Label customClass="labelFormsCadastro" text="Email Corporativo" />
           <Input text="" type="email" />
-          <Label customClass="labelFormsCadastro" text="Confirme seu email" />
-          <Input text="" type="email" />
+          <Label customClass="labelFormsCadastro" text="Foto de perfil" />
+          <Input text="" type="file" />
           <Label customClass="labelFormsCadastro" text="CNPJ" />
           <Input text="" type="text" />
 

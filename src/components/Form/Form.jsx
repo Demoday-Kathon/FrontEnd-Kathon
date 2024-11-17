@@ -1,11 +1,11 @@
-import styles from './Form.module.css'
+import styles from './Form.module.css';
 
-function Form ({children, customClass}) {
+function Form({ children, customClass, onSubmit }) {
     return (
-        <div className={`${styles.formBase} ${styles[customClass]}`}>
+        <form className={`${styles.formBase} ${styles[customClass]}`} onSubmit={onSubmit}>
             {children}
-        </div>
-    )
+        </form>
+    );
 }
 
 export default Form;
