@@ -1,6 +1,6 @@
 import Styles from '../../pages/dashBoardHome/DashBoardHome.module.css'
 import iconAnalytics from '../../assets/imgs/icones/bar-chart.png'
-import NavBar from './components/navBar'
+import NavBar from './components/NavBar'
 import GraficoGeral from './components/graficos/GraficoGeral'
 import GraficoPizza from './components/graficos/GraficoPizza'
 import GraficoInscritos from './components/graficos/GraficoInscritos'

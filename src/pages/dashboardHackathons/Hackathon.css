@@ -16,7 +16,6 @@
 .top{
     width: 85%;
     height: 44vh;
-    background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,7 +24,8 @@
 .hackas{
     width: 50%;
     height: 40vh;
-    background-color: #fff;
+    background-color: #000000;
+    border-radius: 12px;
 }
 
 .criar{
@@ -37,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .btn-criar{

@@ -28,6 +28,7 @@ import NivelDesafio from "./pages/nivelDesafio/nivelDesafio";
 import NivelDesafioInterno from "./pages/nivelDesafioInterno/nivelDesafioInterno";
 import DesafiosCode from "./pages/DesafiosCode/DesafiosCode";
 import ModalGame from "./components/ModalGame/ModalGame";
+import AnaliseGeral from "./pages/dashboardVisaoGeral/AnaliseGeral";
 import "./App.css";
 
 
@@ -58,6 +59,7 @@ function App() {
           <Route path="/dashboardhackathon" element={<HackathonDashboard />} />
           <Route path="/dashboardrecrutamento" element={<DashboardRecrutamento />} />
           <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />}/>
+          <Route path="/dashboardanalisegeral" element={<AnaliseGeral />} />
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
           <Route path="/HackathonsPremiosInterno" element={<HackathonsPremiosInterno />} />
           <Route path="/hackathonsCalendario" element={<HackathonCalendario />}/>
