@@ -49,7 +49,7 @@ function CadastroEstudante() {
         formData.append("fotoPerfil", fotoPerfil);
 
         try {
-            const response = await fetch("http://localhost:8080/api/jovens/cadastrar", {
+            const response = await fetch("https://backend-kathon.onrender.com/api/jovens/cadastrar", {
                 method: "POST",
                 body: formData,
             });

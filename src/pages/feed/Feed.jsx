@@ -14,7 +14,7 @@ function Feeds() {
     const [posts, setPosts] = useState([]); 
 
     const listarPosts = () => {
-        fetch('http://localhost:8080/api/posts/listar')
+        fetch('https://backend-kathon.onrender.com/api/posts/listar')
             .then(response => response.json())
             .then(data => {
                 
