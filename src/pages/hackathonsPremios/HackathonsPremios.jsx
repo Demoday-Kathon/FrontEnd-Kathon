@@ -20,7 +20,7 @@ function premios (){
         <div className={styles.container_p}>
             <h1 className={styles.text_premio}> Total de Prêmios</h1>
             <div className={styles.container_premio}>
-            <Premio img={trofeus} title='1° Lugar' context='Para todos os participantes da equipe: (até 5 pessoas)' desc_premios='- 1 Oculus Quest 2 Advanced All-in-One VR 128 GB (Branco)- 1 Accenture Cloud Fast Academy (1 semana, 100% remoto)- 4 encontros de mentoria com a Aliança Empreendedora (100% remoto)'/>
+            <Premio img={trofeus} title='1° Lugar' context='Para todos os participantes da equipe: (até 5 pessoas)' desc_premios='- 1 Oculus Quest 2 Advanced All-in-One VR 128 GB (Branco)  1 Accenture Cloud Fast Academy (1 semana, 100% remoto)- 4 encontros de mentoria com a Aliança Empreendedora (100% remoto)'/>
             <br />
             <Premio img={trofeus} title='2° Lugar' context='Para todos os participantes da equipe: (até 5 pessoas)' desc_premios='- 1 Galaxy Buds2 Pro da Samsung 
             - 1 Accenture Cloud Fast Academy (1 semana, 100% remoto) 

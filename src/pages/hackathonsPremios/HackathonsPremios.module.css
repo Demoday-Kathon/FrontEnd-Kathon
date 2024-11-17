@@ -68,3 +68,45 @@ img{
   font-weight: bold;
   line-height: normal;
 }
+
+@media (max-width: 480px){
+  .container_p{
+    height: 350vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .text_premio{
+    font-size: 35px;
+    width: 100%;
+    margin-left: -80px;
+    
+
+  }
+
+  .container_premio{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    
+  }
+  .premiacao{
+    /* display: flex;
+    flex-direction: column;
+    
+    margin-top: 150px;
+    border: 2px solid green;
+    width: 100%;
+    margin-left: -40px; */
+    display: none;
+  }
+
+  .premio{
+    border: 2px solid red;
+    width: 100%;
+  }
+
+
+}

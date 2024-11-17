@@ -71,6 +71,7 @@
 @media (max-width: 480px){
     .Bloco1{
         width: 95%;
+        margin-top: 640px;
     }
     .Foto_perfil {
         width: 80%;

@@ -42,3 +42,38 @@
     margin-left: 20vh;
     margin-bottom: 100px;
 }
+
+@media (max-width: 480px) {
+    .Card_Fundo{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: 450vh;
+        
+    }
+    .PerfilDados{
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+    .RecomendacaoTi{
+        width: 98%;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .Recomendacao_bloco{
+        display: flex;
+        flex-direction: column;
+        margin-top: 770px;
+    }
+    .Recomendacao{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
+}

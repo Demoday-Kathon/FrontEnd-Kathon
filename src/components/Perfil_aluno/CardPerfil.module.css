@@ -50,7 +50,7 @@
         display: flex;
         flex-direction: column;
         width: 85%;
-        height: 300vh;
+        height: 430vh;
         
     }
     .PerfilDados{
@@ -69,13 +69,13 @@
     .Recomendacao_bloco{
         display: flex;
         flex-direction: column;
-        display: none;
-        
+        margin-top: 770px;
     }
     .Recomendacao{
         width: 100%;
         display: flex;
         flex-direction: column;
-        
+        gap: 100px;
+        align-items: center;
     }
 }
