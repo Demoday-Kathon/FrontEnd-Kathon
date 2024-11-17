@@ -78,6 +78,12 @@
   padding: 4%;
 }
 
+.marketing{
+  background-color: #a367ebff;
+  font-size: 27px;
+  padding: 4%;
+}
+
 .desing{
   background-color: #7400b7ff;
   font-size: 27px;
@@ -126,8 +132,31 @@
 
 
 /*Medida Tablet*/
-@media only screen and (min-width:431px) {
+/* @media only screen and (min-width:431px) 
   @media only screen and (max-width: 900px) {
       
+  } */
+@media (max-width: 480px){
+  .ilustacao{
+    display: none;
   }
+  .desing {
+    font-size: 23px;
+  }
+
+  .comunicacao{
+    font-size: 23px;
+  }
+  .marketing{
+    font-size: 23px;
+  }
+  
+  .pesquisa{
+    font-size: 23px;
+  }
+  .usuario{
+    font-size: 24px;
+  }
+
+  
 }
