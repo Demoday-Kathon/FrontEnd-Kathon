@@ -35,3 +35,17 @@
     font-weight: 400;
     line-height: normal;
 }
+
+@media (max-width: 480px){
+    .container_premios{
+        width: 100%;
+        margin-left: -40px;
+    }
+
+    .title_premios{
+
+
+    }
+
+
+}

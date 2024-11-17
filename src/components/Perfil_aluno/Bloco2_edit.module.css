@@ -96,3 +96,32 @@
     align-items: center;
     gap: 20px;
 }
+
+@media (max-width: 480px){
+    .SobreAluno{
+       width: 100%;
+    }
+    .Sobre{
+        height: 40vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .SobreTexto{
+        display: flex;
+    }
+    .Habilidades{
+        width: 100%;
+
+    }
+    .Habilidades_tag{
+        width: 100%;
+        display: flex;
+    }
+    .Sobre2{
+        height: 47vh;
+    }
+    .TextoDesc{
+        font-size: 18px;
+    }
+}
