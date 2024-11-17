@@ -1,41 +1,56 @@
-.ContainerPost{
+.ContainerPost {
+    width: 75%; 
+    height: 80vh;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px auto; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ContainerProfile {
     display: flex;
-    color: #fff;
-    flex-direction: column;
-    border-radius: 20px;
-    border: 1px solid #fff;
-    justify-content: flex-start;
     align-items: center;
-    width: 80%;
-    height: 55vh;
-    padding: 20px 40px;
-    gap: 2vh;
+    margin-bottom: 12px;
 }
 
-.ContainerProfile{
+.ContainerProfile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.Hours {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.DescriptionPost {
+    margin: 12px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.IMGPost {
+    display: block;
+    margin: 0 auto;
+    width: 85%; 
+    height: 40vh;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    object-fit: cover;
+}
+
+.ActionIcons {
+    background-color: black; 
     display: flex;
-    justify-content: center;
-    align-self: start;
-    gap: 10px;
+    justify-content: space-around;
+    padding: 10px;
 }
 
-.ContainerProfile img{
-    width: 40px;
-    height: 40px;
-}
-
-.Hours{
-    color: #A367EB;
-}
-
-.DescriptionPost{
-    max-width: 80%;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        white-space: pre-wrap;
-}
-
-.IMGPost{
-    width: 450px;
-    height: 30vh;
+.ActionIcons svg {
+    color: white;
+    font-size: 24px; 
 }

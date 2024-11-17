@@ -27,6 +27,7 @@
   }
   img {
     width: 45%;
+    border-radius: 100px;
   }
 }
 .publis {
@@ -43,7 +44,22 @@
 
 .entradatxt{
   width: 100%;
+  height: 10vh;
   color: #fff;
+  background: none;
+  font-size: 1.6rem;
+}
+
+.entradatxt::placeholder{
+  width: 100%;
+  height: 10vh;
+  color: #979595;
+  background: none;
+  font-size: 1rem;
+}
+
+.entradatxt:focus {
+  outline: none;
 }
 
 .containerEscreva{
@@ -85,6 +101,7 @@
 
 .botaoo {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-top: 20px;
   border-radius: 40px;
@@ -92,23 +109,16 @@
   background: #d9d9d9;
   width: 40%;
   margin-left: 160px;
-  button {
-    color: #000;
+  color: #000;
     font-family: "DM Sans";
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    background: #d9d9d9;
-  }
 }
 
 .botaoo:hover {
   background: #a367eb;
+  color: white;
   cursor: pointer;
-  button {
-    color: white;
-    background-color: #a367eb;
-    cursor: pointer;
-  }
 }

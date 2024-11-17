@@ -1,4 +1,4 @@
-import styles from "./Hackathonsinterno.module.css";
+import styles from "./HackathonsInterno.module.css";
 import banner from "../../assets/imgs/banner.png";
 import accenture from "../../assets/imgs/accenture.png";
 import Card from "../../components/layout/card/card";
@@ -19,7 +19,7 @@ function Hackathons() {
   return (
     <div className={styles.hackathons}>
       <Header />
-      {/* TESTE DO VIDEO */}
+     
       <div className="App">
         <div className="video-background">
           <video autoPlay muted loop className={styles.video2}>
@@ -36,7 +36,7 @@ function Hackathons() {
           </div>
         </div>
       </div>
-      {/* FIM DO TESTE */}
+      
       <div className={styles.blurdovideo}></div>
 
       <div className={styles.verificacao}>
@@ -58,7 +58,7 @@ function Hackathons() {
                 <div className={styles.tagsHacka}>
                   <Tag text="Presencial" customClass="roxoHacka" />
                   <Tag text="Inscrições Abertas" customClass="azulHacka" />
-                  <Tag text="Impacto Social e Sustentabilidade" customClass="lilasHacka" />
+                  <Tag text="Impacto Social e Sustentabilidade" customClass="verdeAguaHacka" />
 
                 </div>
               }
@@ -89,74 +89,7 @@ function Hackathons() {
                 <div className={styles.tagsHacka}>
                   <Tag text="Presencial" customClass="roxoHacka" />
                   <Tag text="Inscrições Abertas" customClass="azulHacka" />
-                  <Tag text="Impacto Social e Sustentabilidade" customClass="lilasHacka" />
-
-                </div>
-              }
-
-
-              children3={
-                <div className={styles.people}>
-                  <Person person={person1} customClass="fotosHacka"/>
-                  <Person person={person2} customClass="fotosHacka"/>
-                  <Person person={person3} customClass="fotosHacka"/>
-                </div>
-              }
-
-              children2={<Button text="Saiba Mais" customClass="buttonAzulHacka" />}
-            >
-
-            </Card>
-
-
-          </div>
-        </div>
-
-        <div className={styles.hackathonsDisponiveisHome}>
-          <div className={styles.rowHackathonsDisp}>
-
-            <Card
-              customClass="cardHackathonDisponiveis"
-              bannerHacka={banner}
-              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
-              qtdparticipants="+150 participantes"
-              timeline="20 dias restantes"
-              children1={
-                <div className={styles.tagsHacka}>
-                  <Tag text="Presencial" customClass="roxoHacka" />
-                  <Tag text="Inscrições Abertas" customClass="azulHacka" />
-                  <Tag text="Impacto Social e Sustentabilidade" customClass="lilasHacka" />
-
-                </div>
-              }
-
-
-              children3={
-                <div className={styles.people}>
-                  <Person person={person1} customClass="fotosHacka"/>
-                  <Person person={person2} customClass="fotosHacka"/>
-                  <Person person={person3} customClass="fotosHacka"/>
-                </div>
-              }
-
-              children2={<Button text="Saiba Mais" customClass="buttonAzulHacka" />}
-            >
-
-
-            </Card>
-
-
-            <Card
-              customClass="cardHackathonDisponiveis"
-              bannerHacka={banner}
-              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
-              qtdparticipants="+150 participantes"
-              timeline="20 dias restantes"
-              children1={
-                <div className={styles.tagsHacka}>
-                  <Tag text="Presencial" customClass="roxoHacka" />
-                  <Tag text="Inscrições Abertas" customClass="azulHacka" />
-                  <Tag text="Impacto Social e Sustentabilidade" customClass="lilasHacka" />
+                  <Tag text="Impacto Social e Sustentabilidade" customClass="verdeAguaHacka" />
 
                 </div>
               }
@@ -192,7 +125,74 @@ function Hackathons() {
                 <div className={styles.tagsHacka}>
                   <Tag text="Presencial" customClass="roxoHacka" />
                   <Tag text="Inscrições Abertas" customClass="azulHacka" />
-                  <Tag text="Impacto Social e Sustentabilidade" customClass="lilasHacka" />
+                  <Tag text="Impacto Social e Sustentabilidade" customClass="verdeAguaHacka" />
+
+                </div>
+              }
+
+
+              children3={
+                <div className={styles.people}>
+                  <Person person={person1} customClass="fotosHacka"/>
+                  <Person person={person2} customClass="fotosHacka"/>
+                  <Person person={person3} customClass="fotosHacka"/>
+                </div>
+              }
+
+              children2={<Button text="Saiba Mais" customClass="buttonAzulHacka" />}
+            >
+
+
+            </Card>
+
+
+            <Card
+              customClass="cardHackathonDisponiveis"
+              bannerHacka={banner}
+              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
+              qtdparticipants="+150 participantes"
+              timeline="20 dias restantes"
+              children1={
+                <div className={styles.tagsHacka}>
+                  <Tag text="Presencial" customClass="roxoHacka" />
+                  <Tag text="Inscrições Abertas" customClass="azulHacka" />
+                  <Tag text="Impacto Social e Sustentabilidade" customClass="verdeAguaHacka" />
+
+                </div>
+              }
+
+
+              children3={
+                <div className={styles.people}>
+                  <Person person={person1} customClass="fotosHacka"/>
+                  <Person person={person2} customClass="fotosHacka"/>
+                  <Person person={person3} customClass="fotosHacka"/>
+                </div>
+              }
+
+              children2={<Button text="Saiba Mais" customClass="buttonAzulHacka" />}
+            >
+
+            </Card>
+
+
+          </div>
+        </div>
+
+        <div className={styles.hackathonsDisponiveisHome}>
+          <div className={styles.rowHackathonsDisp}>
+
+            <Card
+              customClass="cardHackathonDisponiveis"
+              bannerHacka={banner}
+              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
+              qtdparticipants="+150 participantes"
+              timeline="20 dias restantes"
+              children1={
+                <div className={styles.tagsHacka}>
+                  <Tag text="Presencial" customClass="roxoHacka" />
+                  <Tag text="Inscrições Abertas" customClass="azulHacka" />
+                  <Tag text="Impacto Social e Sustentabilidade" customClass="verdeAguaHacka" />
 
                 </div>
               }
@@ -224,7 +224,7 @@ function Hackathons() {
                 <div className={styles.tagsHacka}>
                   <Tag text="Presencial" customClass="roxoHacka" />
                   <Tag text="Inscrições Abertas" customClass="azulHacka" />
-                  <Tag text="Impacto Social e Sustentabilidade" customClass="lilasHacka" />
+                  <Tag text="Impacto Social e Sustentabilidade" customClass="verdeAguaHacka" />
 
                 </div>
               }

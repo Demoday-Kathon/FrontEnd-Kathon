@@ -1,27 +1,30 @@
-import { Link } from 'react-router-dom'
-import styles from './HeaderInterno.module.css'
-import Navbar from './headerInternoComponents/NavbarInterno'
-import LinkComponent from '../link/LinkComponent'
-import UserProfile from '../../../assets/imgs/ImageUser.png'
-import Mais from '../../../assets/imgs/Adicional.png'
+import { Link } from 'react-router-dom';
+import styles from './HeaderInterno.module.css';
+import Navbar from './headerInternoComponents/NavbarInterno';
+import LinkComponent from '../link/LinkComponent';
+import UserProfile from '../../../assets/imgs/ImageUser.png';  
+import { useUser } from '../../contexts/UserContext'; 
 
 function HeaderInterno() {
+
+    const { user } = useUser();
+
     return (
         <header className={styles.header}>
-            <LinkComponent linkTo="/" text={<div className={styles.logoHeader}></div>}/>
+            <LinkComponent linkTo="/" text={<div className={styles.logoHeader}></div>} />
             <Navbar />
             <div className={styles.containerProfile}>
-                        <Link to={"/Perfil_aluno"}>
-                        </Link>
-                        <img className={styles.ProfileNav} src={UserProfile} alt="Imagem Perfil" />
-                        <div className={styles.Dadosnav}>
-                            <h3>Joana Pereira</h3>
-                            <p>@Joana Pereira</p>
-                        </div>
-
-                    </div>
+                <Link to="/Perfil_aluno">
+                    <img className={styles.ProfileNav} src={"data:image/jpeg;base64," + user?.fotoPerfil || UserProfile} alt="Imagem Perfil" />
+                </Link>
+                <div className={styles.Dadosnav}>
+                  
+                    <h3>{user?.nomeCompleto || 'Nome do Usuário'}</h3>
+                    <p>@{user?.nomeCompleto || 'Username'}</p>
+                </div>
+            </div>
         </header>
-    )
+    );
 }
 
 export default HeaderInterno;

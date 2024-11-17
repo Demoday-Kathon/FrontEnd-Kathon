@@ -2,14 +2,14 @@
     width: 40%;
     height: 90vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
 }
 
 .Foto_perfil {
     width: 70%;
-    height: 350px;
+    height: 360px;
     border-radius: 442px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .BottonPerfil2 {
-    width: 150%;
+    width: 100%;
     height: 48px;
     border-radius: 36px;
     background: rgba(240, 240, 240, 0.50);
@@ -49,6 +49,7 @@
     text-align: center;
     font-size: 25px;
     transition: 0.5s;
+    padding: 10px 20px;
     
     
 
