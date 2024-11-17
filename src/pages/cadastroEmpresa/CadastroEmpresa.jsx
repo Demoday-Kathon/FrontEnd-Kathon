@@ -1,100 +1,141 @@
-import styles from "./CadastroEmpresa.module.css";
-import { Link } from "react-router-dom";
-import Header from "../../components/layout/header/Header";
-import CardPretoBase from "../../components/CardPretoBase2/CardPretoBase";
-import Form from "../../components/Form/Form";
-import Label from "../../components/Form/FormComponents/Label";
-import Input from "../../components/Form/FormComponents/Input";
-import SubmitButton from "../../components/Form/FormComponents/SubmitButton";
-import Footer from "../../components/layout/footer/Footer";
-
-import logoKathon from "../../assets/imgs/logoKathon.png";
-import { style } from "framer-motion/client";
+import React, { useState } from 'react';
+import styles from '../cadastroEmpresa/CadastroEmpresa.module.css';
+import styles1 from './CadastroEmpresa.module.css';
+import { Link } from 'react-router-dom';
+import Header from '../../components/layout/header/Header';
+import CardPretoBase from '../../components/CardPretoBase2/CardPretoBase';
+import Form from '../../components/Form/Form';
+import Label from '../../components/Form/FormComponents/Label';
+import Input from '../../components/Form/FormComponents/Input';
+import SubmitButton from '../../components/Form/FormComponents/SubmitButton';
+import logoKathon from '../../assets/imgs/logoKathon.png';
 
 function CadastroEmpresa() {
-  return (
-    <>
-      <Header />
-      <CardPretoBase customClass="cardPretoForms">
-        <img
-          className={styles.logoKathonLogin}
-          src={logoKathon}
-          alt="logoKathon"
-        />
-        <h1 className={styles.tituloCadastro}> Cadastro de Empresa </h1>
+    // Estados para armazenar os dados do formulário
+    const [nomeEmpresa, setNomeEmpresa] = useState('');
+    const [cnpj, setCnpj] = useState('');
+    const [emailEmpresa, setEmailEmpresa] = useState('');
+    const [telefone, setTelefone] = useState('');
+    const [cep, setCep] = useState('');
+    const [rua, setRua] = useState('');
+    const [numero, setNumero] = useState('');
+    const [cidade, setCidade] = useState('');
+    const [bairro, setBairro] = useState('');
+    const [estado, setEstado] = useState('');
+    const [senha, setSenha] = useState('');
+    const [logoEmpresa, setLogoEmpresa] = useState(null);
 
-        <Form customClass="formsLogin">
-          <Label customClass="labelFormsCadastro" text="Nome da Empresa" />
-          <Input type="text" />
-          <Label customClass="labelFormsCadastro" text="Email Corporativo" />
-          <Input text="" type="email" />
-          <Label customClass="labelFormsCadastro" text="Foto de perfil" />
-          <Input text="" type="file" />
-          <Label customClass="labelFormsCadastro" text="CNPJ" />
-          <Input text="" type="text" />
+    // Função para lidar com o envio do formulário
+    const handleSubmit = async (event) => {
+        event.preventDefault();
 
-          <div className={styles.linhaInputs}>
-            <div className={styles.inputMaior}>
-              <Label
-                customClass="labelFormsCadastro"
-                text="Inscrição Estadual"
-              />
-              <Input text="" type="text" customClass="inputMaior" />
-            </div>
+        // Validação do arquivo de logo (somente imagens PNG, JPEG e JPG)
+        if (logoEmpresa) {
+            const validImageTypes = ['image/jpeg', 'image/png', 'image/jpg'];
+            if (!validImageTypes.includes(logoEmpresa.type)) {
+                alert('Apenas imagens PNG, JPG e JPEG são permitidas.');
+                return;
+            }
+        }
 
-            <div className={styles.inputMaior}>
-              <Label customClass="labelFormsCadastro" text="Celular" />
-              <Input text="" type="text" customClass="inputMaior" />
-            </div>
-          </div>
+        // Criando um FormData para enviar os dados com arquivos
+        const formData = new FormData();
+        formData.append("nomeEmpresa", nomeEmpresa);
+        formData.append("cnpj", cnpj);
+        formData.append("emailCorporativo", emailEmpresa);
+        formData.append("telefone", telefone);
+        formData.append("cep", cep);
+        formData.append("rua", rua);
+        formData.append("numero", numero);
+        formData.append("cidade", cidade);
+        formData.append("bairro", bairro);
+        formData.append("estado", estado);
+        formData.append("senha", senha);
+        formData.append("fotoPerfil", logoEmpresa);
 
-          <div className={styles.linhaInputs}>
-            <div className={styles.inputMenor}>
-              <Label customClass="labelFormsCadastro" text="CEP" />
-              <Input text="" type="text" customClass="inputMenor" />
-            </div>
+        try {
+            const response = await fetch("http://localhost:8080/api/empresas/cadastrar", {
+                method: "POST",
+                body: formData,
+            });
 
-            <div className={styles.inputMaior}>
-              <Label customClass="labelFormsCadastro" text="Rua" />
-              <Input text="" type="text" customClass="inputMaior" />
-            </div>
-          </div>
+            if (response.ok) {
+                alert("Empresa cadastrada com sucesso!");
+            } else {
+                alert("Erro ao cadastrar a empresa.");
+            }
+        } catch (error) {
+            alert("Erro ao comunicar com o servidor.");
+        }
+    };
 
-          <div className={styles.linhaInputs}>
-            <div className={styles.inputMenor2}>
-              <Label customClass="labelFormsCadastro" text="Número" />
-              <Input text="" type="text" customClass="inputMenor" />
-            </div>
+    return (
+        <>
+            <Header />
+            <CardPretoBase customClass="cardPretoForms">
+                <img className={styles.logoKathonLogin} src={logoKathon} alt="logoKathon" />
+                <h1 className={styles.tituloCadastro}>Cadastro Empresa</h1>
 
-            <div className={styles.inputMaior}>
-              <Label customClass="labelFormsCadastro" text="Cidade" />
-              <Input text="" type="text" customClass="inputMaior" />
-            </div>
+                <Form customClass="formsLogin" onSubmit={handleSubmit}>
+                    <Label customClass="labelFormsCadastro" text="Nome da Empresa" />
+                    <Input text="" type="text" value={nomeEmpresa} onChange={(e) => setNomeEmpresa(e.target.value)} />
 
-            <div className={styles.inputMaior}>
-              <Label customClass="labelFormsCadastro" text="Bairro" />
-              <Input text="" type="text" customClass="inputMaior" />
-            </div>
+                    <Label customClass="labelFormsCadastro" text="CNPJ" />
+                    <Input text="" type="text" value={cnpj} onChange={(e) => setCnpj(e.target.value)} />
 
-            <div className={styles.inputMaior}>
-              <Label customClass="labelFormsCadastro" text="Estado" />
-              <Input text="" type="text" customClass="inputMaior" />
-            </div>
-          </div>
+                    <Label customClass="labelFormsCadastro" text="Email da Empresa" />
+                    <Input text="" type="email" value={emailEmpresa} onChange={(e) => setEmailEmpresa(e.target.value)} />
 
-          <Label customClass="labelFormsCadastro" text="Senha" />
-          <Input text="" type="password" />
-          <Label customClass="labelFormsCadastro" text="Confirme sua Senha" />
-          <Input text="" type="password" />
+                    <Label customClass="labelFormsCadastro" text="Telefone" />
+                    <Input text="" type="text" value={telefone} onChange={(e) => setTelefone(e.target.value)} />
 
-          <Link className={styles.submitbotao} to={"/Login"}>
-            <SubmitButton text="Cadastrar" />
-          </Link>
-        </Form>
-      </CardPretoBase>
-      <Footer />
-    </>
-  );
+                    <Label customClass="labelFormsCadastro" text="Logo da Empresa (Imagem)" />
+                    <Input text="" type="file" onChange={(e) => setLogoEmpresa(e.target.files[0])} />
+
+                    <div className={styles.linhaInputs}>
+                        <div className={styles.inputMaior}>
+                            <Label customClass="labelFormsCadastro" text="CEP" />
+                            <Input text="" type="text" value={cep} onChange={(e) => setCep(e.target.value)} />
+                        </div>
+
+                        <div className={styles.inputMaior}>
+                            <Label customClass="labelFormsCadastro" text="Rua" />
+                            <Input text="" type="text" value={rua} onChange={(e) => setRua(e.target.value)} />
+                        </div>
+                    </div>
+
+                    <div className={styles.linhaInputs}>
+                        <div className={styles.inputMenor2}>
+                            <Label customClass="labelFormsCadastro" text="Número" />
+                            <Input text="" type="text" value={numero} onChange={(e) => setNumero(e.target.value)} />
+                        </div>
+
+                        <div className={styles.inputMaior}>
+                            <Label customClass="labelFormsCadastro" text="Cidade" />
+                            <Input text="" type="text" value={cidade} onChange={(e) => setCidade(e.target.value)} />
+                        </div>
+                    </div>
+
+                    <div className={styles.linhaInputs}>
+                        <div className={styles.inputMaior}>
+                            <Label customClass="labelFormsCadastro" text="Bairro" />
+                            <Input text="" type="text" value={bairro} onChange={(e) => setBairro(e.target.value)} />
+                        </div>
+
+                        <div className={styles.inputMaior}>
+                            <Label customClass="labelFormsCadastro" text="Estado" />
+                            <Input text="" type="text" value={estado} onChange={(e) => setEstado(e.target.value)} />
+                        </div>
+                    </div>
+
+                    <Label customClass="labelFormsCadastro" text="Senha" />
+                    <Input text="" type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
+
+                    <SubmitButton text="Cadastrar Empresa" />
+                </Form>
+            </CardPretoBase>
+        </>
+    );
 }
 
 export default CadastroEmpresa;
