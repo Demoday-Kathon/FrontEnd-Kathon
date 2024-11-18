@@ -1,0 +1,60 @@
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.conteudo{
+    width: 100%;
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.ladoEsquerdo{
+    width: 35%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.graficoPizza{
+    width: 100%;
+    height: 42vh;
+    background-color: black;
+    border-radius: 12px;
+}
+
+.graficoGeral{
+    width: 100%;
+    height: 34.5vh;
+    background-color: black;
+    border-radius: 12px;
+}
+
+.ladoDireito{
+    width: 35%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.equipes{
+    width: 100%;
+    height: 34.5vh;
+    background-color: black;
+    border-radius: 12px;
+}
+
+.projetos{
+    width: 100%;
+    height: 34.5vh;
+    background-color: black;
+    border-radius: 12px;
+}
