@@ -1,5 +1,5 @@
 import Styles from  './DashboardAssistenteIA.module.css';
-import NavBar from '../dashBoardHome/components/navBar';
+import NavBar from '../dashBoardHome/components/NavBar';
 import imgPerfil from '../../assets/imgs/perfil_menina1.png'
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa'

@@ -13,26 +13,27 @@
 }
 
 .ladoEsquerdo{
-    width: 35%;
-    height: 80vh;
+    width:38%;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
 }
 
-.graficoPizza{
+.pizzaGrafico{
     width: 100%;
-    height: 42vh;
-    background-color: black;
+    height: 40vh;
     border-radius: 12px;
+    display: flex;
 }
 
 .graficoGeral{
     width: 100%;
-    height: 34.5vh;
-    background-color: black;
+    height: 28vh;
     border-radius: 12px;
+    background-color: rgba(100, 100, 100, 0.253);
+    padding: 20px 30px;
 }
 
 .ladoDireito{
@@ -49,12 +50,67 @@
     width: 100%;
     height: 34.5vh;
     background-color: black;
-    border-radius: 12px;
+    border-radius: 25px;
+    display: flex;
+    padding: 20px 30px;
+}
+
+.total{
+    position: relative;
+    top: 5%;
+}
+
+
+.total h1{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.totalEquipes{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 40%;
+}
+
+.btnEquipe{
+    background-color: aquamarine;
+    height: 3rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+    left: 65%;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.btnEquipe p{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btnEquipe:hover{
+    background-color: #fff;
+    color: black;
 }
 
 .projetos{
     width: 100%;
     height: 34.5vh;
-    background-color: black;
-    border-radius: 12px;
+    background-color: #A367EB;
+    border-radius: 25px;
+    display: flex;
+    padding: 20px 30px;
+}
+
+.projetos img{
+    width: 100%;
+    height: 34.5vh;
+    background-size: cover;
 }

@@ -66,7 +66,7 @@ const data = [
 
 const GraficoGeral = () => {
   return (
-    <ResponsiveContainer width="100%" height="85%">
+    <ResponsiveContainer width="100%" height="100%">
         <LineChart
           width={500}
           height={300}

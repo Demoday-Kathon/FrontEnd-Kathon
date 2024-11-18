@@ -6,7 +6,7 @@ function Hackas({ logo, desc }){
         <div className="container">
             <div className="logo">
                 <img src={logo} alt="" srcset="" />
-                <Link to='/' className='btn-view'>Selecionar</Link>
+                <Link to='/dashboardanalisegeral' className='btn-view'>Selecionar</Link>
             </div>
             <div className="desc">
                 <p>{desc}</p>
