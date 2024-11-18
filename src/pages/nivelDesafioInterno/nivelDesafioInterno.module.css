@@ -279,6 +279,49 @@
     }
   }
 }
+@media (max-width: 450px) {
+  .nivels {
+    display: none;
+  }
+  .nivelDesafio {
+    display: flex;
+    flex-direction: column;
+  }
+  .desafio1 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+  }
+  .desafio2 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+  .desafio3 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+  .sumariodesafio {
+    text-align: center;
+    width: 100%;
+    p {
+      font-size: 1.2em;
+      /* padding: 2em; */
+      margin-bottom: -5vh;
+    }
+  }
+  .titleDesafio {
+    width: 100%;
+    h1 {
+      font-size: 35px;
+    }
+    span {
+      font-size: 35px;
+    }
+  }
+}
 @media (min-width: 451px) {
   @media (max-width: 840px) {
     .nivels {
@@ -308,18 +351,19 @@
       text-align: center;
       width: 100%;
       p {
-        font-size: 1em;
+        font-size: 1.5em;
         /* padding: 2em; */
         margin-bottom: -5vh;
       }
     }
     .titleDesafio {
       width: 100%;
+      margin-top: 30px;
       h1 {
-        font-size: 50px;
+        font-size: 55px;
       }
       span {
-        font-size: 50px;
+        font-size: 55px;
       }
     }
   }
