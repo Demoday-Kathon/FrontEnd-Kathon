@@ -15,7 +15,7 @@ function Footer() {
             <div className={styles.cimaFooter}>
                 <div className={styles.esquerdoFooter}>
                     <div className={styles.logoFooter}></div>
-                    <p> Desafios que revelam talentos, Soluções que moldam o futuro</p>
+                    <p> Desafios que revelam, soluções que inovam</p>
 
                     <ListLink customClass="listLinkRowSocial">
                         <li><FaGoogle /></li>

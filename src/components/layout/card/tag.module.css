@@ -33,6 +33,10 @@
   color: #000;
 }
 
+.azulClaro {
+  background-color: #66c2faff;
+}
+
 
 .roxoHome {
   background-color: #7400b7ff;
@@ -50,6 +54,11 @@
   color: #000;
 }
 
+.azulClaroHome {
+  background-color: #66c2faff;
+  font-size: 0.3em;
+}
+
 .roxoHacka {
   background-color: #7400b7ff;
   font-size: 0.6em;
@@ -64,6 +73,11 @@
   background-color: #06F8FA;
   font-size: 0.6em;
   color: #000;
+}
+
+.azulClaroHacka {
+  background-color: #66c2faff;
+  font-size: 0.6em;
 }
 
 .comunicacao{
@@ -128,15 +142,11 @@
     font-size: 0.2em;
     color: #000;
   }
-}
+  .azulClaroHome {
+    background-color: #66c2faff;
+    font-size: 0.2em;
+  }
 
-
-/*Medida Tablet*/
-/* @media only screen and (min-width:431px) 
-  @media only screen and (max-width: 900px) {
-      
-  } */
-@media (max-width: 480px){
   .ilustacao{
     display: none;
   }
@@ -157,6 +167,16 @@
   .usuario{
     font-size: 24px;
   }
+}
+
+
+/*Medida Tablet*/
+/* @media only screen and (min-width:431px) 
+  @media only screen and (max-width: 900px) {
+      
+  } */
+@media (max-width: 480px){
+  
 
   
 }

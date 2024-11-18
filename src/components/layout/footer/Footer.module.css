@@ -43,8 +43,8 @@
 }
 
 .footer .esquerdoFooter p {
-  font-size: 1.5em;
-  width: 55%;
+  font-size: 1.2em;
+  width: 100%;
 }
 
 .footer .esquerdoFooter span {
@@ -90,8 +90,8 @@ li{
   color: #ccc;
 }
 
-@media (max-width: 768px) {
-  .footer {
+@media (max-width: 430px) {
+   .footer {
     padding: 2em;
     flex-direction: column;
     border-top-left-radius: 2em;
@@ -102,17 +102,38 @@ li{
     flex-direction: column;
     align-items: center;
   }
-
+  
   .direitoFooter1 {
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 1em;
   }
 
+
+  
   .direitoFooter1 li {
     margin: 0.3em;
   }
 
+  .baixoFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  .baixoFooter .esquerdoFooter {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .baixoFooter .direitoFooter {
+    margin-top: 1em;
+    flex-direction: column;
+  }
+
+/*
   .footer .esquerdoFooter p {
     font-size: 1.2em;
     width: 100%;
@@ -148,30 +169,61 @@ li{
   hr {
     width: 80%;
     margin-bottom: 1em;
-  }
+  } */
 }
 
-@media (max-width: 480px) {
-  .footer {
-    padding: 1.5em;
-  }
+@media only screen and (min-width: 431px) {
+  @media only screen and (max-width: 930px) {
+    .footer .esquerdoFooter p {
+      font-size: 1em;
+      width: 100%;
+    }
 
-  .footer .esquerdoFooter p {
-    font-size: 1em;
-  }
+    .direitoFooter1 {
+      width: 45%;
+    }
 
-  .logoFooter {
-    width: 12em;
-    height: 2em;
-  }
+    .baixoFooter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
 
-  .direitoFooter1 {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
+    }
 
-  .direitoFooter1 li {
-    margin: 0.2em;
+    .baixoFooter .esquerdoFooter {
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    .baixoFooter .direitoFooter {
+      margin-top: 1em;
+    }
+
+    
+
+    /* .footer {
+      padding: 1.5em;
+    }
+  
+    .footer .esquerdoFooter p {
+      font-size: 1em;
+    }
+  
+    .logoFooter {
+      width: 20em;
+      height: 4em;
+    }
+  
+    .direitoFooter1 {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    
+    .direitoFooter1 li {
+      margin: 0.2em;
+    } */
   }
 }

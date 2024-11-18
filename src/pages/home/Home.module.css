@@ -109,12 +109,12 @@
 }
 
 .homeTitulo3 {
-  margin: 3em auto 0em auto;
+  margin: 4em auto 0em auto;
   text-align: center;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.2em;
   width: 75%;
-  padding: 1em;
+
   font-weight: bold;
 
   span {
@@ -604,9 +604,11 @@ video {
 
 .textos {
   width: 80%;
+  font-size: 0.8em;
 }
 .textos1 {
   width: 80%;
+  font-size: 0.8em;
 
 }
 
@@ -694,20 +696,23 @@ video {
   } */
 
   .hometitle {
-    font-size: 1em;
+    font-size: 1.4em;
     line-height: 1em;
+    width: 100%;
   }
 
   .botoesHome {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
   }
 
   .cardPretoHome {
     width: 90%;
     margin-top: 3em;
-    font-size: 0.6em;
+    font-size: 0.7em;
+    padding: 0.5em;
   }
 
   .cardPretoHome span {
@@ -729,8 +734,9 @@ video {
   }
 
   .homeTitulo2 {
-    margin: 6em auto -1em auto;
+    margin: 1em auto -1em auto;
     font-size: 1em;
+    width: 100%;
   }
 
   .botoesHome2 {
@@ -838,6 +844,7 @@ video {
   .hackathonsDisponiveisHome {
     width: 90%;
     margin: auto;
+    margin-top: 2em;
     
   }
 
@@ -940,19 +947,20 @@ video {
   }
 
   .caixaplanos {
-    height: 25vh;
-    padding: 0em 3em 0em 3em;
+    height: auto;
+    padding: 0.5em 0em 0.5em 0em;
     
   }
 
   .caixinhaplanos1,
   .caixinhaplanos2,
   .caixinhaplanos3 {
-    font-size: 0.4em;
-    width: 66%;
+    font-size: 0.3em;
+    width: 4.5em;
     height: auto;
     border-radius: 10px;
     justify-content: space-evenly;
+    padding: 5em;
   }
 
   .caixinhaplanos1:hover {

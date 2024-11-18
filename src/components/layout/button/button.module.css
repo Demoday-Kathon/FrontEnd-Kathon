@@ -154,7 +154,7 @@
   border-radius: 1em;
   background: #7400b7ff;
   backdrop-filter: blur(20px);
-  width: 50%;
+  width: 60%;
   font-size: 0.3em;
   margin-bottom: 1em;
   padding: 1em;
@@ -163,7 +163,7 @@
 }
 
 .buttonAzulHome:hover {
-  width: 50%;
+  width: 60%;
   font-size: 0.3em;
   background: rgb(86, 3, 134);
   color: #fff;
@@ -276,30 +276,40 @@
 
 /*Medida Mobile*/
 @media only screen and (max-width: 430px) {
+  
   .buttonBaixo {
-    font-size: 1em;
+    width: 100%;
+
   }
-  .buttonBaixo:hover {
-    font-size: 1em;
+  
+  .buttonBaixo2{
+    width: 50%;
+
+  } 
+
+  .buttonBaixo:hover , .buttonBaixo2:hover {
+    font-size: 0.4em;
     border-radius: 36px;
   }
 
-  .buttonBaixo2 {
-    font-size: 1em;
-  }
-  .buttonBaixo2:hover {
-    font-size: 1em;
-    border-radius: 36px;
+  .buttonBaixo, .buttonBaixo2 {
+    margin: 0.5em;
+    font-size: 0.4em;
+   
   }
 
   .buttonAzulHome {
-    
-    width: 50%;
+    width: 60%;
     font-size: 0.2em;
     margin-bottom: 1em;
     padding: 1em;
-  
-    
+  }
+
+  .buttonAzulHome:hover {
+    width: 60%;
+    font-size: 0.2em;
+    background: rgb(86, 3, 134);
+    color: #fff;
   }
 
   .buttonPlaninhos {

@@ -81,27 +81,11 @@ function Home() {
           soluções que <span>inovam</span>{" "}
         </motion.h1>
         <div className={styles.botoesHome}>
-          <motion.div
-            className={styles.cadastrarBtn}
-            variants={fadein("right", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.9 }}
-          >
             <LinkComponent customClass="botaohome" linkTo={"/CadastroEscolha"}>
               <Button customClass="buttonBaixo" text="Cadastre-se" />
             </LinkComponent>
-          </motion.div>
 
-          <motion.div
-            className={styles.cadastrarBtn}
-            variants={fadein("left", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.9 }}
-          >
             <Button customClass="buttonBaixo2" text="Seja parceiro" />
-          </motion.div>
         </div>
         <hr
           style={{
@@ -147,7 +131,7 @@ function Home() {
                 <IoIosAlarm style={{ color: "white", marginRight: "0.5em" }} />
               }
               alt="icone de alarme"
-              text="Duração de 24h a 72h"
+              text="Duração: 24h a 72h"
             />
             <BotaoHome
               icon={
@@ -260,8 +244,12 @@ function Home() {
                   <Tag text="Presencial" customClass="roxoHome" />
                   <Tag text="Inscrições Abertas" customClass="azulHome" />
                   <Tag
-                    text="Impacto Social e Sustentabilidade"
+                    text="Impacto Social"
                     customClass="verdeAguaHome"
+                  />
+                  <Tag
+                    text="Sustentabilidade"
+                    customClass="azulClaroHome"
                   />
                 </div>
               }
@@ -287,8 +275,12 @@ function Home() {
                   <Tag text="Presencial" customClass="roxoHome" />
                   <Tag text="Inscrições Abertas" customClass="azulHome" />
                   <Tag
-                    text="Impacto Social e Sustentabilidade"
+                    text="Impacto Social"
                     customClass="verdeAguaHome"
+                  />
+                  <Tag
+                    text="Sustentabilidade"
+                    customClass="azulClaroHome"
                   />
                 </div>
               }
