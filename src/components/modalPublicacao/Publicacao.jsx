@@ -34,7 +34,7 @@ function Publicacao({ closeModal, refreshFeed }) {
           formData.append("imagemPost", file);
       }
 
-      fetch("https://backend-kathon.onrender.com/api/posts/criar", {
+      fetch("http://localhost:8080/api/posts/criar", {
           method: "POST",
           body: formData,
       })
@@ -64,7 +64,7 @@ function Publicacao({ closeModal, refreshFeed }) {
                         className={Styles.entradatxt} 
                         type="text" 
                         placeholder="Escreva algo..." 
-                        maxLength={10} 
+                        maxLength={20} 
                         value={text}
                         onChange={handleTextChange}
                     />
