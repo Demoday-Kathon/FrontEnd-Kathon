@@ -29,6 +29,7 @@ import NivelDesafioInterno from "./pages/nivelDesafioInterno/nivelDesafioInterno
 import DesafiosCode from "./pages/DesafiosCode/DesafiosCode";
 import ModalGame from "./components/ModalGame/ModalGame";
 import AnaliseGeral from "./pages/dashboardVisaoGeral/AnaliseGeral";
+import HeaderFeed from "./components/HeaderFeed/HeaderFeed";
 import "./App.css";
 
 
@@ -72,6 +73,7 @@ function App() {
           <Route path="/nivelDesafio" element={<NivelDesafio />} />
           <Route path="/nivelDesafioInterno" element={<NivelDesafioInterno />} />
           <Route path="/modalgame" element={<ModalGame />} />
+          <Route path="/HeaderFeed" element={<HeaderFeed />} />
         </Routes>
       </Router>
     </main>

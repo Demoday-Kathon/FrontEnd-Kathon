@@ -28,15 +28,21 @@ function HeaderFeed({onToggle}) {
                             <img className={Styles.LogoKathon} src={LogoKathon} alt="Logo Kathon" />
                         </LinkComponent>
                         <nav className={Styles.Links}>
-                             <LinkComponent linkTo="/feed"><a href=""><img className={Styles.Icon} src={HomeIcon} alt="" />Feed</a></LinkComponent>
-                            <LinkComponent linkTo="/hackathonsinterno">
-                                <a href=""><img className={Styles.Icon} src={HackalIcon} alt="" />Hackathons</a>
+                             <LinkComponent linkTo="/"><a href=""><img className={Styles.Icon} src={HomeIcon} alt="" />Home</a></LinkComponent>
+                            <LinkComponent linkTo="/hackathons">
+                                <a href="">Hackathons</a>
                             </LinkComponent>
-                            <LinkComponent linkTo="/nivelDesafioInterno">
-                                <a href=""><img className={Styles.Icon} src={PersonalIcon} alt="" />Desafios</a>
+                            <LinkComponent linkTo="/empresas">
+                                <a href="">Empresas</a>
+                            </LinkComponent>
+                            <LinkComponent linkTo="/nivelDesafio">
+                                <a href="">Desafios</a>
+                            </LinkComponent>
+                            <LinkComponent linkTo="/sobre">
+                                <a href="">Sobre Nós</a>
                             </LinkComponent>
                         </nav>
-                        <img className={Styles.BarraBottom} src={Barra_grupo} alt="Barra Grupo" />
+                        
                     </div>
 
                     <div className={Styles.containerProfile}>
