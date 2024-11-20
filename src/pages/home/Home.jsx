@@ -131,7 +131,7 @@ function Home() {
                 <IoIosAlarm style={{ color: "white", marginRight: "0.5em" }} />
               }
               alt="icone de alarme"
-              text="Duração: 24h a 72h"
+              text="Duração: 24h à 72h"
             />
             <BotaoHome
               icon={

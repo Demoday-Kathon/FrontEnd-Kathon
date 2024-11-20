@@ -1,19 +1,19 @@
  /* MEXER NOS CARD CORRETAMENTE PARA ARRUMAR ALINHAMENTO */
-.cardPretoBase {
-  background-color: white;
-  border: 1px blue;
-  border-radius: 1em;
-  padding: 2.3em;
-  font-size: 0.6em;
-  text-align: left;
-  margin: 0.1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  color: black;
-}
+ .cardPretoBase {
+   background-color: white;
+   border: 1px blue;
+   border-radius: 1em;
+   padding: 2.3em;
+   font-size: 0.6em;
+   text-align: left;
+   margin: 0.1em;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   color: black;
+ }
 
-/* .cardPretoBase:hover {
+ /* .cardPretoBase:hover {
   background: white;
   height: auto;
   margin: 20px auto;
@@ -23,17 +23,17 @@
   border: 1px solid #a367eb;
 } */
 
-.menor {
-  width: 100%;
-  margin-bottom: 10px;
-}
+ .menor {
+   width: 100%;
+   margin-bottom: 10px;
+ }
 
-.maior {
-  width: 100%;
-  margin: 0%;
-}
+ .maior {
+   width: 100%;
+   margin: 0%;
+ }
 
-/* .menor:hover,
+ /* .menor:hover,
 .maior:hover {
   background: white;
   height: auto;
@@ -45,63 +45,77 @@
 } */
 
  /* MEXER NOS CARD CORRETAMENTE PARA ARRUMAR ALINHAMENTO */
-.menor:hover, 
-.maior:hover {
-  background-color: black;
-  border: 1px #a367eb solid;
-  border-radius: 1em;
-  padding: 2.3em;
-  font-size: 0.6em;
-  text-align: left;
-  margin: 0.1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  color: white;
-  cursor: pointer;
-  transition: 1s;
+ .menor:hover,
+ .maior:hover {
+   background-color: black;
+   border: 1px #a367eb solid;
+   border-radius: 1em;
+   padding: 2.3em;
+   font-size: 0.6em;
+   text-align: left;
+   margin: 0.1em;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   color: white;
+   cursor: pointer;
+   transition: 1s;
 
-}
+ }
 
-.cardPretoForms {
-  width: 65%;
-  margin: auto;
-  margin-top: 5em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 36px;
-  border: 2px solid #66c2fa;
-  background: rgba(20, 19, 1, 0.8);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-  backdrop-filter: blur(20px);
-  margin-bottom: 20em;
-}
+ .cardPretoForms {
+   width: 65%;
+   margin: auto;
+   margin-top: 5em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 36px;
+   border: 2px solid #66c2fa;
+   background: rgba(20, 19, 1, 0.8);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+   backdrop-filter: blur(20px);
+   margin-bottom: 20em;
+ }
 
-/*Medida Mobile*/
-@media (max-width: 430px) {
-  .cardPretoForms {
-    width: 90%;
-    margin-bottom: 10em;
-  }
-}
+ /*Medida Mobile*/
 
-/* Medida Tablet */
-@media only screen and (min-width: 431px) {
-  @media only screen and (max-width: 900px) {
-    .cardPretoForms {
-      width: 90%;
-    }
+ @media only screen and (max-width: 320px) {
+  
 
-    .menor {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-    
-    .maior {
-      width: 100%;
-      margin: 0%;
-    }
-  }
-}
+
+
+ }
+   @media only screen and (min-width:321px) {
+     @media only screen and (max-width:360px) {}
+   }
+
+
+   @media only screen and (min-width: 361px) {
+     @media only screen and (max-width: 430px) {
+       .cardPretoForms {
+         width: 90%;
+         margin-bottom: 10em;
+       }
+     }
+   }
+
+   /* Medida Tablet */
+   @media only screen and (min-width: 431px) {
+     @media only screen and (max-width: 900px) {
+       .cardPretoForms {
+         width: 90%;
+       }
+
+       .menor {
+         width: 100%;
+         margin-bottom: 10px;
+       }
+
+       .maior {
+         width: 100%;
+         margin: 0%;
+       }
+     }
+   }

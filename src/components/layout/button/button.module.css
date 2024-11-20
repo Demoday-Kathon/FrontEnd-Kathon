@@ -71,7 +71,7 @@
 }
 
 .buttonBaixo2 {
-  width: 100%;
+  width: 50%;
   border-radius: 1.5em;
   font-size: 0.8em;
   height: 2em;
@@ -274,9 +274,64 @@
   transition: 1s;
 }
 
-/*Medida Mobile*/
-@media only screen and (max-width: 430px) {
+
+@media only screen and (max-width: 320px) {
+  .buttonBaixo {
+    width: 100%;
+    font-size: 0.4em;
+
+  }
   
+  .buttonBaixo2{
+    width: 50%;
+    font-size: 0.4em;
+  }
+
+  .buttonBaixo:hover {
+    width: 100%;
+    font-size: 0.4em;
+
+  }
+  
+  .buttonBaixo2:hover {
+    width: 50%;
+    font-size: 0.4em;
+  }
+
+  .buttonAzulHome {
+    width: 60%;
+    font-size: 0.2em;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
+
+  .buttonAzulHome:hover {
+    width: 60%;
+    font-size: 0.2em;
+    background: rgb(86, 3, 134);
+    color: #fff;
+  }
+
+  .buttonPlaninhos {
+    width: 70%;
+    font-size: 0.5em;
+  }
+
+  .buttonPlaninhos:hover {
+    width: 70%;
+    font-size: 0.5em;
+  }
+
+}
+@media only screen and (min-width:321px) {
+  @media only screen and (max-width:360px) {
+
+  }
+}
+
+/*Medida Mobile*/
+@media only screen and (min-width: 361px) {
+  @media only screen and (max-width: 430px) {
   .buttonBaixo {
     width: 100%;
 
@@ -323,6 +378,7 @@
     font-size: 0.5em;
   }
 }
+}
 
 /*Medida Tablet*/
 @media only screen and (min-width:431px) {
@@ -344,6 +400,12 @@
     }
 
     .buttonPlaninhos {
+      width: 45%;
+      margin-top: 40px;
+      font-size: 0.8em;
+    }
+
+    .buttonPlaninhos:hover {
       width: 45%;
       margin-top: 40px;
       font-size: 0.8em;

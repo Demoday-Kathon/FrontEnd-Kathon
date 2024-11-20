@@ -40,23 +40,23 @@
 
 .roxoHome {
   background-color: #7400b7ff;
-  font-size: 0.3em;
+  font-size: 0.25em;
 }
 
 .azulHome {
   background-color: #314ce7ff;
-  font-size: 0.3em;
+  font-size: 0.25em;
 }
 
 .verdeAguaHome{
   background-color: #06F8FA;
-  font-size: 0.3em;
+  font-size: 0.25em;
   color: #000;
 }
 
 .azulClaroHome {
   background-color: #66c2faff;
-  font-size: 0.3em;
+  font-size: 0.25em;
 }
 
 .roxoHacka {
@@ -115,9 +115,23 @@
   font-size: 27px;
   padding: 4%;
 }
+@media only screen and (max-width: 320px) {
+  .base {
+    height: 1.5em;
+    border-radius: 1em;
+    font-size: 0.157em;
+  }
+
+}
+  @media only screen and (min-width:321px) {
+    @media only screen and (max-width:360px) {
+  
+    }
+  }
 
 /*Medida Mobile*/
-@media only screen and (max-width:430px) {
+@media only screen and (min-width: 361px) {
+  @media only screen and (max-width: 430px) {
   .base {
     height: 1.5em;
     border-radius: 1em;
@@ -167,6 +181,8 @@
   .usuario{
     font-size: 24px;
   }
+
+}
 }
 
 
