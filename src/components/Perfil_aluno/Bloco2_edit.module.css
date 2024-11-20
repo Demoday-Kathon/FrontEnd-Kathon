@@ -106,6 +106,20 @@
         align-items: center;
         justify-content: center;
     }
+    .Titulo_sobre{
+        font-size: 20px;
+    }
+    .Titulo_Participacao{
+        font-size: 30px;
+    }
+    .Titulo_caixa{
+        font-size: 30px;
+    }
+    .Titulo_caixa{
+        gap: 10px;
+        display: flex;
+        align-items: left;
+    }
 
     .SobreTexto{
         display: flex;

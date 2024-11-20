@@ -24,10 +24,10 @@ function Bloco2({ TextoDesc, Titulo_sobre, Titulo_sobre2, Titulo_Participacao })
                 <div className={Styles.Sobre}>
                     <div className={Styles.Habilidades}>
                         <div className={Styles.Habilidades_tag}>
-                            <Button text="Desing" customClass="desing" /> <Button text="Comunicação" customClass="comunicacao" />  <Button text="ilustação" customClass="ilustacao" />
+                            <Button text="Desing" customClass="desing" /> <Button text="Comunicação" customClass="comunicacao" />  <Button text="Cloud" customClass="ilustacao" />
                         </div>
                         <div className={Styles.Habilidades_tag}>
-                            <Button text="Marketing" customClass="marketing" /> <Button text="Pesquisa" customClass="pesquisa" />
+                            <Button text="Front-End" customClass="marketing" /> <Button text="Banco de dados" customClass="pesquisa" />
                         </div>
                         <div className={Styles.Habilidades_tag}>
                             <Button text="Experiência do Usuário" customClass="usuario" />
@@ -41,7 +41,7 @@ function Bloco2({ TextoDesc, Titulo_sobre, Titulo_sobre2, Titulo_Participacao })
             <div className={Styles.Conteudo1}>
                 <div className={Styles.Sobre2}>
                     <div className={Styles.Participacoes}>
-                        <CardHacka banner={banner} title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos" Icone_menor={Icone_hacka}/>
+                        <CardHacka banner={banner} title_hackathon="Hackathon Desvendado: Uma Explanação em Tópicos." Icone_menor={Icone_hacka}/>
                     </div>
                 </div>
             </div>

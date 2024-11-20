@@ -2,6 +2,7 @@ import Styles from './Bloco2.module.css'
 import button1 from '../layout/button/button'
 import CardEditavel from '../Perfil_empresa/CardEditavel'
 import DropDown from '../DropDown/DropDown'
+import Button from '../layout/card/tag'
 
 function Bloco2({ TextoDesc }) {
     return (
@@ -33,8 +34,8 @@ function Bloco2({ TextoDesc }) {
             </div>
             <div className={Styles.Conteudo1}>
                 <div className={Styles.Sobre}>
-                    <div className={Styles.Habilidades}>
-                        <button className={Styles.ButtonAlunos}>Desing</button>
+                    <div className={Styles.Habilidades_tag}>
+                    <Button text="Desing" customClass="desing" />
                     </div>
                 </div>
             </div>

@@ -70,14 +70,55 @@
 }
 
 @media (max-width: 480px){
-    .Bloco1{
-        width: 95%;
-        margin-top: 640px;
+    .Bloco1 {
+        width: 90%;
+        height: 90vh;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
     }
     .Foto_perfil {
-        width: 80%;
-        height: 300px;
+        width: 70%;
+        height: 240px;
         border-radius: 442px;
     }
-    
+    .UserPerfil{
+        font-size: 15px;
+    }
+    .NomePerfil{
+        font-size: 25px;
+    }
+    .BottonPerfil2{
+        font-size: 20px;
+    }
+    .BottonPerfil2:hover{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+    .Bloco1{
+        width: 50%;
+        flex-direction: row;
+        gap: 30px;
+        margin-left: -30%;
+    }
+    .NomePerfil{
+        width: 165%;
+    }
+    .Foto_perfil {
+        width: 70%;
+        height: 250px;
+        border-radius: 442px;
+    }
+    .UserPerfil{
+        font-size:17px;
+    }
+    .NomePerfil{
+        font-size: 25px;
+    }
+    .BottonPerfil2{
+        width: 180px;
+    }
 }

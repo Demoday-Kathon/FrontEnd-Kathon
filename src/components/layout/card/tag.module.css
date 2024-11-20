@@ -147,26 +147,7 @@
     font-size: 0.2em;
   }
 
-  .ilustacao{
-    display: none;
-  }
-  .desing {
-    font-size: 23px;
-  }
-
-  .comunicacao{
-    font-size: 23px;
-  }
-  .marketing{
-    font-size: 23px;
-  }
   
-  .pesquisa{
-    font-size: 23px;
-  }
-  .usuario{
-    font-size: 24px;
-  }
 }
 
 
@@ -176,7 +157,48 @@
       
   } */
 @media (max-width: 480px){
-  
+  .ilustacao{
+    display: none;
+  }
+  .desing {
+    font-size: 18px;
+  }
 
+  .comunicacao{
+    font-size: 18px;
+  }
+  .marketing{
+    font-size: 18px;
+  }
   
+  .pesquisa{
+    font-size: 18px;
+  }
+  .usuario{
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+  .ilustacao{
+    font-size: 30px;
+  }
+  .desing {
+    font-size: 30px;
+  }
+
+  .comunicacao{
+    font-size: 30px;
+  }
+  .marketing{
+    font-size: 30px;
+  }
+  
+  .pesquisa{
+    font-size: 30px;
+  }
+  .usuario{
+    font-size: 30px;
+  }
 }

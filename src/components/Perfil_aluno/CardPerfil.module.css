@@ -47,13 +47,13 @@
         display: flex;
         flex-direction: column;
         width: 85%;
-        height: 430vh;
+        height: 390vh;
         
     }
     .PerfilDados{
         display: flex;
         flex-direction: column;
-        gap: 55px;
+        gap: 40px;
     }
     .RecomendacaoTi{
         width: 98%;
@@ -62,11 +62,12 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        font-size: 30px;
     }
     .Recomendacao_bloco{
         display: flex;
         flex-direction: column;
-        margin-top: 770px;
+        margin-top: 370px;
     }
     .Recomendacao{
         width: 100%;
@@ -75,4 +76,38 @@
         gap: 100px;
         align-items: center;
     }
+    .RecomendacaoTi{
+        margin-left: -30px;
+    }
+
 }
+
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+    .Card_Fundo{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: 290vh;
+    }
+    
+    .PerfilDados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .Recomendacao{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      align-items: center;
+    }
+
+    .Recomendacao_bloco{
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+    }
+  }

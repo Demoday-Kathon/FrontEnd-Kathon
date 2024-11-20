@@ -6,7 +6,7 @@ function CardEditavel( {Participacoes}) {
         <div className={Styles.Conteudo1}>
             <div className={Styles.Sobre2}>
                 <div className={Styles.Participacoes}>
-                    <h1>{Participacoes}</h1>
+                    <h1 className={Styles.Participacoes1}>{Participacoes}</h1>
                     <br />
                  <img className={Styles.fotomais} src={mais} alt="Mais" />
                 </div>

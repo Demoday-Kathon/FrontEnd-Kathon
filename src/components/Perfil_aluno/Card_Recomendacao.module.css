@@ -86,4 +86,48 @@
 }
 
 
+@media only screen and (max-width: 480px) {
+  .Card {
+    width: 90%;
+  }
+
+  .Leticia {
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: 20px;
+  }
+
+  .Nome{
+    font-size: 20px;
+  }
+
+  .Sub_titulo{
+    font-size: 16px;
+    padding: 0 2vh;
+  }
+  
+}
+
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+  .Card {
+    width: 90%;
+  }
+
+  .Leticia {
+    width: 100px;
+    height: 100px;
+    margin-top: -40px;
+    margin-left: 20px;
+  }
+
+  .Nome{
+    font-size: 35px;
+  }
+
+  .Sub_titulo{
+    font-size: 25px;
+    padding: 0 2vh;
+  }
+}
 

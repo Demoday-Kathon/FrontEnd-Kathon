@@ -20,9 +20,22 @@
     display: flex;
     width: 100%;
 }
+.Participacoes1{
+    font-size: 25px;
+}
 
 .fotomais{
     width: 100px;
     height: 100px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .Participacoes1 {
+        font-size: 20px;
+    }
+    .fotomais{
+        width: 70px;
+        height: 70px;
+    }
 }

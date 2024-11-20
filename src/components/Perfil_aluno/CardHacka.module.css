@@ -14,7 +14,7 @@
 }
 
 .banner{
-    width: 50%;
+    width: 60%;
     height: 15vh;
     border-radius: 36px 36px 0px 0px;
     background: url(../../assets/imgs/banner.png);
@@ -23,7 +23,7 @@
 
 
 .container{ 
-    width: 50%;
+    width: 60%;
     height: 50vh;
     border-radius: 12px 12px 36px 36px;
     border: 1px solid #FFF;
@@ -60,5 +60,35 @@
     }
     .container{
         width: 75%;
+        height: 25vh;
     }
+    .title_hackathon{
+        font-size: 17px;
+    }
+    .Icone_menor{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+    .card{
+        width: 100%;
+    }
+    .banner{
+        width: 85%;
+    }
+    .container{
+        width: 85%;
+        height: 25vh;
+    }
+    .title_hackathon{
+        font-size: 30px;
+    }
+    .Icone_menor{
+        width: 100px;
+        height: 100px;
+        margin-top: -40px;
+    }
+    
 }

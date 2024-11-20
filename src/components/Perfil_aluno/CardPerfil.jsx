@@ -20,8 +20,8 @@ function CardPerfil() {
             <div className={Styles.Recomendacao_bloco}>
                 <h1 className={Styles.RecomendacaoTi}>Recomendações:</h1>
                 <div className={Styles.Recomendacao} >
-                    <Recomendacao Perfil_foto={leticia} Nome="Leticia Silva" Sub_titulo="Excelente Profissional, com habilidades em UI/UX é impressionante" />
-                    <Recomendacao Perfil_foto={Abel} Nome="Abel Ferreira" Sub_titulo="Sua capacidade de liderar é impressionante " />
+                    <Recomendacao Perfil_foto={leticia} Nome="Leticia Silva" Sub_titulo="Excelente Profissional, com habilidades em UI/UX é impressionante." />
+                    <Recomendacao Perfil_foto={Abel} Nome="Abel Ferreira" Sub_titulo="Sua capacidade de liderar é impressionante. " />
                 </div>
             </div>
         </section>

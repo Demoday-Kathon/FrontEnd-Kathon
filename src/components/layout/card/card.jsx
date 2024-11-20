@@ -37,6 +37,7 @@ function card({ titleHacka, bannerHacka, children1, qtdparticipants, timeline, c
           <p className={styles.diasRestantes}> { timeline } </p>
         </div>
 
+        
         <div className={styles.button_hackathon}>{children2}</div>
 
 
