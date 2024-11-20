@@ -172,8 +172,35 @@ li{
   } */
 }
 
-@media only screen and (min-width: 431px) {
-  @media only screen and (max-width: 930px) {
+
+@media only screen and (max-width: 320px) {
+
+  .logoFooter {
+    background-image: url(../../../assets/imgs/logokathoncompleta.png);
+    background-size: contain;
+    width: 90%;
+    align-self: center;
+    background-repeat: no-repeat;
+  }
+
+  .footer .esquerdoFooter p {
+    font-size: 0.8em;
+    width: 100%;
+  }
+
+
+}
+  @media only screen and (min-width:321px) {
+    @media only screen and (max-width:360px) {
+  
+    }
+  }
+
+
+
+
+  @media only screen and (min-width: 361px) {
+    @media only screen and (max-width: 430px) {
     .footer .esquerdoFooter p {
       font-size: 1em;
       width: 100%;
@@ -226,4 +253,5 @@ li{
       margin: 0.2em;
     } */
   }
+  
 }

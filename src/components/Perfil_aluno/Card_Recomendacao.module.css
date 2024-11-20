@@ -22,7 +22,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-left: 5vh;
+  margin-left: 3vh;
+  padding: 0 4vh;
   text-align: start;
 }
 
@@ -57,11 +58,22 @@
   .Card{
     width: 100%;
   }
+
+  .Nome {
+    font-size: 0.65em;
+
+  }
+
+  .Sub_titulo {
+    font-size: 0.4em;
+  }
 }
 
 
 /*Medida Mobile*/
-@media only screen and (max-width: 430px) {
+
+
+@media only screen and (max-width: 320px) {
   .Card {
     width: 100%;
     margin-top: 0.5em;
@@ -73,7 +85,31 @@
     margin-top: -60px;
     margin-right: 40vh;
   }
+
+
+}
+  @media only screen and (min-width:321px) {
+    @media only screen and (max-width:360px) {
   
+    }
+  }
+
+
+
+  @media only screen and (min-width: 361px) {
+    @media only screen and (max-width: 430px) {
+  .Card {
+    width: 100%;
+    margin-top: 0.5em;
+  }
+
+  .Leticia {
+    width: 80px;
+    height: 80px;
+    margin-top: -60px;
+    margin-right: 40vh;
+  }
+}
 }
 
 /*Medida Tablet*/
