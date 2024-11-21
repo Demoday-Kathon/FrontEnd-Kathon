@@ -125,7 +125,34 @@
 }
   @media only screen and (min-width:321px) {
     @media only screen and (max-width:360px) {
-  
+      .base {
+        height: 1.5em;
+        border-radius: 1em;
+        font-size: 0.4em;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+      }
+    
+      .roxoHome {
+        background-color: #7400b7ff;
+        font-size: 0.16em;
+      }
+      
+      .azulHome {
+        background-color: #314ce7ff;
+        font-size: 0.16em;
+      }
+      
+      .verdeAguaHome{
+        background-color: #06F8FA;
+        font-size: 0.16em;
+        color: #000;
+      }
+      .azulClaroHome {
+        background-color: #66c2faff;
+        font-size: 0.16em;
+      }
     }
   }
 
@@ -143,22 +170,22 @@
 
   .roxoHome {
     background-color: #7400b7ff;
-    font-size: 0.2em;
+    font-size: 0.15em;
   }
   
   .azulHome {
     background-color: #314ce7ff;
-    font-size: 0.2em;
+    font-size: 0.15em;
   }
   
   .verdeAguaHome{
     background-color: #06F8FA;
-    font-size: 0.2em;
+    font-size: 0.15em;
     color: #000;
   }
   .azulClaroHome {
     background-color: #66c2faff;
-    font-size: 0.2em;
+    font-size: 0.15em;
   }
 
   

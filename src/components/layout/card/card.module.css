@@ -163,7 +163,42 @@
 }
 
 @media only screen and (min-width:321px) {
-  @media only screen and (max-width:360px) {}
+  @media only screen and (max-width:360px) {
+    .cardHacka {
+      width: 100%;
+      height: 100%;
+    }
+
+    .titleHacka {
+      font-size: 0.25em;
+      width: 100%;
+      padding: 0.5em;
+    }
+
+    .rowPeople {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .participants {
+      font-size: 0.18em;
+    }
+  
+    .button_hackathon {
+      justify-content: center;
+    }
+  
+    .diasRestantes {
+      font-size: 0.18em;
+  
+    }
+
+
+
+
+  }
 }
 
 

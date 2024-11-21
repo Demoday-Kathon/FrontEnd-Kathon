@@ -96,14 +96,40 @@
 }
   @media only screen and (min-width:321px) {
     @media only screen and (max-width:360px) {
-  
+      .botaohome {
+        border: 2px white solid;
+        border-radius: 0.8em;
+        display: flex;
+        justify-content: center;
+        padding: 0.4em;
+        align-items: center;
+        width: 100%;
+        margin: 0.5em;
+        font-size: 0.50em;
+      }
+    }
+  }
+
+  @media only screen and (min-width:361px) {
+    @media only screen and (max-width:391px) {
+
+      .iconCardPreto {
+        width: 65%;
+        color: #a367eb;
+        border-radius: 36px;
+        background: rgba(240, 240, 240, 0.1);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        backdrop-filter: blur(20px);
+        font-size: 20px;
+        align-self: center;
+      }
     }
   }
   
 
 
 /*Medida Mobile*/
-@media only screen and (min-width: 361px) {
+@media only screen and (min-width: 392px) {
   @media only screen and (max-width: 430px) {
   .buttonLoginConta {
     width: 100%;
