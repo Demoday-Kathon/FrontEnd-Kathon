@@ -70,7 +70,7 @@ function DesafiosCode() {
     }, [genAI]);
 
     const generateExercise = async (genAIInstance) => {
-        const prompt = "Crie um exercício de programação para o aluno praticar com JavaScript ou Python. O exercício deve ser algo de intermediário. texto curto de no maximo 80 caracteres";
+        const prompt = "Crie um exercício de programação para o aluno praticar com JavaScript ou Python. O exercício deve ser algo de iniciante. texto curto de no maximo 80 caracteres";
 
         try {
             const result = await genAIInstance.getGenerativeModel({ model: "gemini-1.5-flash" }).generateContent(prompt);
