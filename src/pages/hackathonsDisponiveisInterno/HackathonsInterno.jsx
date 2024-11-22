@@ -13,6 +13,7 @@ import Person from "../../components/layout/card/person";
 import person1 from "../../assets/imgs/pessoa1.png";
 import person2 from "../../assets/imgs/pessoa2.png";
 import person3 from "../../assets/imgs/pessoa3.png";
+import { style } from "framer-motion/client";
 
 
 function Hackathons() {
@@ -72,7 +73,7 @@ function Hackathons() {
                 </div>
               }
 
-              children2={<Button text="Saiba Mais" customClass="buttonAzulHacka" />}
+              children2={<Link className={styles.buttonAzulHacka} to={"/"}><Button text="Saiba Mais" customClass="buttonAzulHacka" /></Link>}
             >
 
 

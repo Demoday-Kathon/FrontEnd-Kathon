@@ -4,7 +4,14 @@
   box-sizing: border-box;
 }
 
-
+.buttonAzulHacka {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  height: auto;
+  width: 100%;
+  text-decoration: none;
+}
 
 .rowHackathonsDisp {
   display: flex;
