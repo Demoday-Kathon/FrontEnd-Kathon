@@ -45,6 +45,7 @@ import { fadein } from "../../variants";
 import novasetameio from "../../assets/imgs/novasetameio2.svg";
 import setinhadireita from "../../assets/imgs/setinhadireita.svg";
 import setaparacima from "../../assets/imgs/setaparacima.svg";
+import Typewriter from "typewriter-effect";
 
 function Home() {
   const settings = {
@@ -74,20 +75,23 @@ function Home() {
           initial="hidden"
           whileInView={"show"}
         >
-          {" "}
-          Desafios que{" "}
-          <span>
-            {" "}
-            revelam <br />
-          </span>{" "}
-          soluções que <span>inovam</span>{" "}
+          <Typewriter
+            options={{
+              strings: ["Desafios que revelam, <br/> soluções que inovam."],
+              autoStart: true,
+              loop: true, // Para digitar apenas uma vez
+              delay: 100, // Velocidade da digitação
+              deleteSpeed: 0, // Não apagar o texto
+              cursor: "",
+            }}
+          />
         </motion.h1>
         <div className={styles.botoesHome}>
-            <LinkComponent customClass="botaohome" linkTo={"/CadastroEscolha"}>
-              <Button customClass="buttonBaixo" text="Cadastre-se" />
-            </LinkComponent>
+          <LinkComponent customClass="botaohome" linkTo={"/CadastroEscolha"}>
+            <Button customClass="buttonBaixo" text="Cadastre-se" />
+          </LinkComponent>
 
-            <Button customClass="buttonBaixo2" text="Seja parceiro" />
+          <Button customClass="buttonBaixo2" text="Seja parceiro" />
         </div>
         <hr
           style={{
@@ -172,20 +176,16 @@ function Home() {
             <div className={styles.primeiracaixa}>
               <div className={styles.icons}>
                 {" "}
-                <TbWorld
-                  className={styles.iconsCardsCaixas}
-                />
+                <TbWorld className={styles.iconsCardsCaixas} />
               </div>
               <div className={styles.textos}>Experiência</div>
             </div>
             <div className={styles.segundacaixa}>
               <div className={styles.icons}>
-                <IoStatsChart
-                  className={styles.iconsCardsCaixas}
-                />
+                <IoStatsChart className={styles.iconsCardsCaixas} />
               </div>
               <div className={styles.textos1}>
-                Desenvolvimento de <br />  habilidades{" "}
+                Desenvolvimento de <br /> habilidades{" "}
               </div>
             </div>
           </div>
@@ -205,17 +205,13 @@ function Home() {
           <div className={styles.terceiracaixa}>
             <div className={styles.icons}>
               {" "}
-              <FaUsers
-                className={styles.iconsCardsCaixas}
-              />
+              <FaUsers className={styles.iconsCardsCaixas} />
             </div>
             <div className={styles.textos}>Networking</div>
           </div>
           <div className={styles.quartacaixa}>
             <div className={styles.icons}>
-              <MdOutlineLaptopMac
-                className={styles.iconsCardsCaixas}
-              />
+              <MdOutlineLaptopMac className={styles.iconsCardsCaixas} />
             </div>
             <div className={styles.textos}>Oportunidades</div>
           </div>
@@ -239,21 +235,15 @@ function Home() {
             <Card
               bannerHacka={banner}
               titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
-              locationHacka= "São Paulo, SP"
+              locationHacka="São Paulo, SP"
               qtdparticipants="+150 participantes"
               timeline="20 dias restantes"
               children1={
                 <div className={styles.tagsHacka}>
                   <Tag text="Presencial" customClass="roxoHome" />
                   <Tag text="Inscrições Abertas" customClass="azulHome" />
-                  <Tag
-                    text="Impacto Social"
-                    customClass="verdeAguaHome"
-                  />
-                  <Tag
-                    text="Sustentabilidade"
-                    customClass="azulClaroHome"
-                  />
+                  <Tag text="Impacto Social" customClass="verdeAguaHome" />
+                  <Tag text="Sustentabilidade" customClass="azulClaroHome" />
                 </div>
               }
               children3={
@@ -271,21 +261,15 @@ function Home() {
             <Card
               bannerHacka={banner}
               titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
-              locationHacka= "São Paulo, SP"
+              locationHacka="São Paulo, SP"
               qtdparticipants="+150 participantes"
               timeline="20 dias restantes"
               children1={
                 <div className={styles.tagsHacka}>
                   <Tag text="Presencial" customClass="roxoHome" />
                   <Tag text="Inscrições Abertas" customClass="azulHome" />
-                  <Tag
-                    text="Impacto Social"
-                    customClass="verdeAguaHome"
-                  />
-                  <Tag
-                    text="Sustentabilidade"
-                    customClass="azulClaroHome"
-                  />
+                  <Tag text="Impacto Social" customClass="verdeAguaHome" />
+                  <Tag text="Sustentabilidade" customClass="azulClaroHome" />
                 </div>
               }
               children3={
@@ -348,7 +332,8 @@ function Home() {
               <BotaoHome
                 customClass="iconCardPreto"
                 icon={
-                  <IoStatsChart size={20}
+                  <IoStatsChart
+                    size={20}
                     style={{ color: "#A367EB", marginRight: "0.5em" }}
                   />
                 }
@@ -374,7 +359,10 @@ function Home() {
               <BotaoHome
                 customClass="iconCardPreto"
                 icon={
-                  <TbWorld size={20} style={{ color: "#A367EB", marginRight: "0.5em" }} />
+                  <TbWorld
+                    size={20}
+                    style={{ color: "#A367EB", marginRight: "0.5em" }}
+                  />
                 }
                 alt="icone de alarme"
                 text="Talentos"
@@ -429,9 +417,7 @@ function Home() {
               <BotaoHome
                 customClass="iconCardPreto"
                 icon={
-                  <GiBrain 
-                    style={{ color: "#A367EB", marginRight: "0.5em" }}
-                  />
+                  <GiBrain style={{ color: "#A367EB", marginRight: "0.5em" }} />
                 }
                 alt="icone de sifrão"
                 text="Resolução"

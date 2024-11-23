@@ -150,7 +150,6 @@
   }
 }
 
-
 .homeTitulo6 {
   margin: 3em auto 0em auto;
   text-align: center;
@@ -179,8 +178,8 @@
   }
 }
 
-.iconsCardsCaixas{
-  color: #06F8FA;
+.iconsCardsCaixas {
+  color: #06f8fa;
   margin-right: -1em;
   font-size: 70px;
   margin-top: -10px;
@@ -521,7 +520,8 @@ video {
   }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+}
 
 /* HABILIDADES */
 
@@ -587,7 +587,7 @@ video {
 .segundacaixa {
   width: 500px;
   position: relative;
-  left: 350px;
+  left: 400px;
   height: 110px;
   top: 50px;
   padding-top: 5px;
@@ -609,7 +609,6 @@ video {
 .textos1 {
   width: 80%;
   font-size: 0.8em;
-
 }
 
 .terceiracaixa {
@@ -626,7 +625,8 @@ video {
   width: 400px;
   position: relative;
   margin-top: -100px;
-  margin-left: 1075px;
+  margin-left: 1120px;
+  overflow: hidden;
 }
 
 .primeiracaixa:hover,
@@ -696,7 +696,6 @@ video {
     width: 95%;
     display: flex;
     justify-content: space-between;
-
   }
 
   .jobequip,
@@ -742,18 +741,15 @@ video {
     width: 100%;
   }
 
-
   .caixasparte2 {
     width: 100%;
     font-size: 0.8em;
-
   }
 
   .primeiracaixa,
   .segundacaixa,
   .terceiracaixa,
   .quartacaixa {
-    
     width: 90%;
     align-items: center;
     height: 4em;
@@ -765,9 +761,7 @@ video {
   .primeiracaixa {
     left: -2px;
     margin-bottom: -3px;
-
   }
-
 
   .terceiracaixa,
   .quartacaixa {
@@ -812,12 +806,11 @@ video {
     transition: 1s;
   }
 
-  .iconsCardsCaixas{
-    color: #06F8FA;
+  .iconsCardsCaixas {
+    color: #06f8fa;
     font-size: 50px;
   }
 
-  
   .homeTitulo3 {
     margin: 1em auto 0em auto;
     width: 100%;
@@ -828,7 +821,6 @@ video {
     width: 90%;
     margin: auto;
     margin-top: 2em;
-    
   }
 
   .rowHackathonsDisp {
@@ -846,7 +838,6 @@ video {
     span {
       color: var(--Terciria-V, #a367eb);
     }
-
   }
 
   .tagsHacka {
@@ -863,7 +854,6 @@ video {
     span {
       color: var(--Terciria-V, #a367eb);
     }
-
   }
 
   .coments {
@@ -893,10 +883,6 @@ video {
     width: 90%;
     height: auto;
   }
-
-  
-
-
 
   .cardPretoMenor,
   .cardPretoMenor4,
@@ -983,8 +969,6 @@ video {
     transition-duration: 1s;
   }
 
-  
-
   .pedrinhas {
     width: 35px;
     height: 35px;
@@ -1012,39 +996,36 @@ video {
   .logos {
     padding: 30px 0;
   }
-
 }
-@media only screen and (min-width:321px) {
-  @media only screen and (max-width:360px) {
+@media only screen and (min-width: 321px) {
+  @media only screen and (max-width: 360px) {
     .hometitle {
       font-size: 1.4em;
       line-height: 1em;
       width: 100%;
     }
-  
+
     .botoesHome {
       width: 90%;
       display: flex;
       justify-content: space-between;
-  
     }
-  
+
     .cardPretoHome {
       width: 90%;
       margin-top: 3em;
       font-size: 0.7em;
       padding: 0.5em;
     }
-  
+
     .cardPretoHome span {
       margin: 0em;
     }
-  
+
     .descCardPretoTalentos {
       width: 100%;
     }
-  
-  
+
     .jobequip,
     .solucoes,
     hr,
@@ -1053,44 +1034,41 @@ video {
     .setaparacima {
       display: none;
     }
-  
+
     .cardPretoHome .tituloCardPreto {
       text-align: center;
       font-size: 1em;
     }
-  
+
     .homeTitulo2 {
       margin: 1em auto -1em auto;
       font-size: 1em;
       width: 100%;
     }
-  
+
     .botoesHome2 {
       width: 100%;
     }
-  
+
     .caixasparte2,
     .caixaparte1 {
       flex-direction: column;
       margin: auto;
     }
-  
+
     .caixasparte1 {
       width: 100%;
     }
-  
-  
+
     .caixasparte2 {
       width: 100%;
       font-size: 0.8em;
-  
     }
-  
+
     .primeiracaixa,
     .segundacaixa,
     .terceiracaixa,
     .quartacaixa {
-      
       width: 90%;
       align-items: center;
       height: 4em;
@@ -1098,46 +1076,44 @@ video {
       margin: auto;
       margin: 0.8em;
     }
-  
+
     .primeiracaixa {
       left: -2px;
       margin-bottom: -3px;
-  
     }
-  
-  
+
     .terceiracaixa,
     .quartacaixa {
       left: 15px;
       font-size: 0.8em;
       margin-top: 0px;
     }
-  
+
     .segundacaixa {
       left: 0px;
       height: 110px;
       top: 0px;
       align-items: center;
     }
-  
+
     .icons {
       width: 20%;
     }
-  
+
     .textos {
       width: 80%;
     }
-  
+
     .terceiracaixa {
       margin-top: 0px;
       margin-left: 0px;
     }
-  
+
     .quartacaixa {
       margin-left: 0px;
       margin-top: 0px;
     }
-  
+
     .primeiracaixa:hover,
     .segundacaixa:hover,
     .terceiracaixa:hover,
@@ -1148,67 +1124,62 @@ video {
       cursor: pointer;
       transition: 1s;
     }
-  
-    .iconsCardsCaixas{
-      color: #06F8FA;
+
+    .iconsCardsCaixas {
+      color: #06f8fa;
       font-size: 50px;
     }
-  
-    
+
     .homeTitulo3 {
       margin: 1em auto 0em auto;
       text-align: center;
       width: 100%;
       font-weight: bold;
-  
+
       span {
         color: var(--Terciria-V, #a367eb);
       }
-  
     }
-  
+
     .hackathonsDisponiveisHome {
       width: 90%;
       margin: auto;
       margin-top: 2em;
-      
     }
-  
+
     .rowHackathonsDisp {
       display: flex;
       flex-direction: column;
       margin: auto;
     }
-  
+
     .homeTitulo4 {
       margin: 1em auto 1em auto;
       text-align: center;
       width: 100%;
       font-weight: bold;
-  
+
       span {
         color: var(--Terciria-V, #a367eb);
       }
-  
     }
-  
+
     .tagsHacka {
       margin-bottom: 0em;
     }
-  
+
     .homeTitulo4 {
       margin: -3em auto 2em auto;
       text-align: center;
       width: 100%;
       font-weight: bold;
       font-size: 1em;
-  
+
       span {
         color: var(--Terciria-V, #a367eb);
       }
-  
     }
-  
+
     .coments {
       display: flex;
       margin: auto;
@@ -1218,68 +1189,67 @@ video {
       gap: 8vh;
       align-items: center;
     }
-  
+
     .homeTitulo5 {
       margin: 1em auto 0em auto;
       text-align: center;
       width: 100%;
       font-weight: bold;
       font-size: 0.8em;
-  
+
       span {
         margin: 0;
         color: var(--Terciria-V, #a367eb);
       }
     }
-  
+
     .caixaCardsPreta {
       width: 90%;
       height: auto;
     }
-  
+
     .cardPretoMenor,
     .cardPretoMenor4,
     .cardPretoMaior {
       margin-bottom: 0.5em;
       font-size: 0.8em;
     }
-  
+
     .cardPretoMenor {
       width: 100%;
     }
-  
+
     .cardPretoMenor4 {
       width: 100%;
     }
-  
+
     .cardPretoMaior {
       width: 100%;
     }
-  
+
     .homeTitulo6 {
       margin: 1em auto 1em auto;
     }
-  
+
     .homeTitulo6 {
       margin: 1em auto 0em auto;
       text-align: center;
       width: 100%;
       font-weight: bold;
       font-size: 1em;
-  
+
       span {
         margin: 0;
         color: var(--Terciria-V, #a367eb);
       }
     }
-  
+
     .caixaplanos {
       height: auto;
       padding: 0.5em 0em 0.5em 0em;
       flex-wrap: wrap;
-      
     }
-  
+
     .caixinhaplanos1,
     .caixinhaplanos2,
     .caixinhaplanos3 {
@@ -1290,7 +1260,7 @@ video {
       justify-content: space-evenly;
       width: 90%;
     }
-  
+
     .caixinhaplanos1:hover {
       border-radius: 10px;
       border: 1px solid #6be62e;
@@ -1318,16 +1288,14 @@ video {
       cursor: pointer;
       transition-duration: 1s;
     }
-  
-    
-  
+
     .pedrinhas {
       width: 35px;
       height: 35px;
       margin-top: 1em;
       margin-bottom: 1em;
     }
-  
+
     .homeTitulo7 {
       margin: 1em auto 0em auto;
       width: 100%;
@@ -1344,11 +1312,10 @@ video {
       height: 80px;
       margin: 0 30px;
     }
-  
+
     .logos {
       padding: 30px 0;
     }
-  
   }
 }
 
@@ -1359,30 +1326,28 @@ video {
       line-height: 1em;
       width: 100%;
     }
-  
+
     .botoesHome {
       width: 90%;
       display: flex;
       justify-content: space-between;
-  
     }
-  
+
     .cardPretoHome {
       width: 90%;
       margin-top: 3em;
       font-size: 0.7em;
       padding: 0.5em;
     }
-  
+
     .cardPretoHome span {
       margin: 0em;
     }
-  
+
     .descCardPretoTalentos {
       width: 100%;
     }
-  
-  
+
     .jobequip,
     .solucoes,
     hr,
@@ -1391,44 +1356,41 @@ video {
     .setaparacima {
       display: none;
     }
-  
+
     .cardPretoHome .tituloCardPreto {
       text-align: center;
       font-size: 1em;
     }
-  
+
     .homeTitulo2 {
       margin: 1em auto -1em auto;
       font-size: 1em;
       width: 100%;
     }
-  
+
     .botoesHome2 {
       width: 100%;
     }
-  
+
     .caixasparte2,
     .caixaparte1 {
       flex-direction: column;
       margin: auto;
     }
-  
+
     .caixasparte1 {
       width: 100%;
     }
-  
-  
+
     .caixasparte2 {
       width: 100%;
       font-size: 0.8em;
-  
     }
-  
+
     .primeiracaixa,
     .segundacaixa,
     .terceiracaixa,
     .quartacaixa {
-      
       width: 90%;
       align-items: center;
       height: 4em;
@@ -1436,46 +1398,44 @@ video {
       margin: auto;
       margin: 0.8em;
     }
-  
+
     .primeiracaixa {
       left: -2px;
       margin-bottom: -3px;
-  
     }
-  
-  
+
     .terceiracaixa,
     .quartacaixa {
       left: 15px;
       font-size: 0.8em;
       margin-top: 0px;
     }
-  
+
     .segundacaixa {
       left: 0px;
       height: 110px;
       top: 0px;
       align-items: center;
     }
-  
+
     .icons {
       width: 20%;
     }
-  
+
     .textos {
       width: 80%;
     }
-  
+
     .terceiracaixa {
       margin-top: 0px;
       margin-left: 0px;
     }
-  
+
     .quartacaixa {
       margin-left: 0px;
       margin-top: 0px;
     }
-  
+
     .primeiracaixa:hover,
     .segundacaixa:hover,
     .terceiracaixa:hover,
@@ -1486,67 +1446,62 @@ video {
       cursor: pointer;
       transition: 1s;
     }
-  
-    .iconsCardsCaixas{
-      color: #06F8FA;
+
+    .iconsCardsCaixas {
+      color: #06f8fa;
       font-size: 50px;
     }
-  
-    
+
     .homeTitulo3 {
       margin: 1em auto 0em auto;
       text-align: center;
       width: 100%;
       font-weight: bold;
-  
+
       span {
         color: var(--Terciria-V, #a367eb);
       }
-  
     }
-  
+
     .hackathonsDisponiveisHome {
       width: 90%;
       margin: auto;
       margin-top: 2em;
-      
     }
-  
+
     .rowHackathonsDisp {
       display: flex;
       flex-direction: column;
       margin: auto;
     }
-  
+
     .homeTitulo4 {
       margin: 1em auto 1em auto;
       text-align: center;
       width: 100%;
       font-weight: bold;
-  
+
       span {
         color: var(--Terciria-V, #a367eb);
       }
-  
     }
-  
+
     .tagsHacka {
       margin-bottom: 0em;
     }
-  
+
     .homeTitulo4 {
       margin: -3em auto 2em auto;
       text-align: center;
       width: 100%;
       font-weight: bold;
       font-size: 1em;
-  
+
       span {
         color: var(--Terciria-V, #a367eb);
       }
-  
     }
-  
+
     .coments {
       display: flex;
       margin: auto;
@@ -1556,402 +1511,67 @@ video {
       gap: 8vh;
       align-items: center;
     }
-  
+
     .homeTitulo5 {
       margin: 1em auto 0em auto;
       text-align: center;
       width: 100%;
       font-weight: bold;
       font-size: 0.8em;
-  
+
       span {
         margin: 0;
         color: var(--Terciria-V, #a367eb);
       }
     }
-  
+
     .caixaCardsPreta {
       width: 90%;
       height: auto;
     }
-  
+
     .cardPretoMenor,
     .cardPretoMenor4,
     .cardPretoMaior {
       margin-bottom: 0.5em;
       font-size: 0.8em;
     }
-  
+
     .cardPretoMenor {
       width: 100%;
     }
-  
+
     .cardPretoMenor4 {
       width: 100%;
     }
-  
+
     .cardPretoMaior {
       width: 100%;
     }
-  
+
     .homeTitulo6 {
       margin: 1em auto 1em auto;
     }
-  
+
     .homeTitulo6 {
       margin: 1em auto 0em auto;
       text-align: center;
       width: 100%;
       font-weight: bold;
       font-size: 1em;
-  
+
       span {
         margin: 0;
         color: var(--Terciria-V, #a367eb);
       }
     }
-  
-        .caixaplanos {
-        height: auto;
-        padding: 0.5em 0em 0.5em 0em;
-        flex-wrap: wrap;
-        
-      }
-    
-      .caixinhaplanos1,
-      .caixinhaplanos2,
-      .caixinhaplanos3 {
-        font-size: 0.3em;
-        width: 4.5em;
-        height: auto;
-        border-radius: 10px;
-        justify-content: space-evenly;
-        width: 90%;
-      }
-    
-      .caixinhaplanos1:hover {
-        border-radius: 10px;
-        border: 1px solid #6be62e;
-        background: rgba(240, 240, 240, 0.2);
-        box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.2) inset;
-        backdrop-filter: blur(40px);
-        cursor: pointer;
-        transition-duration: 1s;
-      }
-      .caixinhaplanos2:hover {
-        border-radius: 10px;
-        border: 1px solid #aa2c54;
-        background: rgba(240, 240, 240, 0.2);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-        backdrop-filter: blur(20px);
-        cursor: pointer;
-        transition-duration: 1s;
-      }
-      .caixinhaplanos3:hover {
-        border-radius: 10px;
-        border: 1px solid #0064e0;
-        background: rgba(240, 240, 240, 0.2);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-        backdrop-filter: blur(20px);
-        cursor: pointer;
-        transition-duration: 1s;
-      }
-    
-      
-    
-      .pedrinhas {
-        width: 35px;
-        height: 35px;
-        margin-top: 1em;
-        margin-bottom: 1em;
-      }
-  
-    .homeTitulo7 {
-      margin: 1em auto 0em auto;
-      width: 100%;
-      padding: 1em;
-      font-weight: bold;
-      font-size: 1em;
-      span {
-        color: var(--Terciria-V, #a367eb);
-      }
-    }
-  }
-}
 
-
-/*Medida Mobile Comum*/
-@media only screen and (min-width: 392px) {
-  @media only screen and (max-width: 440px) {
-  /* .video-background {
-    height: 75%;
-
-  } */
-
-  .hometitle {
-    font-size: 1.4em;
-    line-height: 1em;
-    width: 100%;
-  }
-
-  .botoesHome {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-
-  }
-
-  .cardPretoHome {
-    width: 90%;
-    margin-top: 3em;
-    font-size: 0.7em;
-    padding: 0.5em;
-  }
-
-  .cardPretoHome span {
-    margin: 0em;
-  }
-
-  .descCardPretoTalentos {
-    width: 100%;
-  }
-
-
-  .jobequip,
-  .solucoes,
-  hr,
-  .setameio,
-  .setadireita,
-  .setaparacima {
-    display: none;
-  }
-
-  .cardPretoHome .tituloCardPreto {
-    text-align: center;
-    font-size: 1em;
-  }
-
-  .homeTitulo2 {
-    margin: 1em auto -1em auto;
-    font-size: 1em;
-    width: 100%;
-  }
-
-  .botoesHome2 {
-    width: 100%;
-  }
-
-  .caixasparte2,
-  .caixaparte1 {
-    flex-direction: column;
-    margin: auto;
-  }
-
-  .caixasparte1 {
-    width: 100%;
-  }
-
-
-  .caixasparte2 {
-    width: 100%;
-    font-size: 0.8em;
-
-  }
-
-  .primeiracaixa,
-  .segundacaixa,
-  .terceiracaixa,
-  .quartacaixa {
-    
-    width: 90%;
-    align-items: center;
-    height: 4em;
-    font-size: 0.6em;
-    margin: auto;
-    margin: 0.8em;
-  }
-
-  .primeiracaixa {
-    left: -2px;
-    margin-bottom: -3px;
-
-  }
-
-
-  .terceiracaixa,
-  .quartacaixa {
-    left: 15px;
-    font-size: 0.8em;
-    margin-top: 0px;
-  }
-
-  .segundacaixa {
-    left: 0px;
-    height: 110px;
-    top: 0px;
-    align-items: center;
-  }
-
-  .icons {
-    width: 20%;
-  }
-
-  .textos {
-    width: 80%;
-  }
-
-  .terceiracaixa {
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-
-  .quartacaixa {
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-
-  .primeiracaixa:hover,
-  .segundacaixa:hover,
-  .terceiracaixa:hover,
-  .quartacaixa:hover {
-    border: 1px solid #06f8fa;
-    background-color: #141301;
-    color: white;
-    cursor: pointer;
-    transition: 1s;
-  }
-
-  .iconsCardsCaixas{
-    color: #06F8FA;
-    font-size: 50px;
-  }
-
-  
-  .homeTitulo3 {
-    margin: 1em auto 0em auto;
-    text-align: center;
-    width: 100%;
-    font-weight: bold;
-
-    span {
-      color: var(--Terciria-V, #a367eb);
-    }
-
-  }
-
-  .hackathonsDisponiveisHome {
-    width: 90%;
-    margin: auto;
-    margin-top: 2em;
-    
-  }
-
-  .rowHackathonsDisp {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-
-  .homeTitulo4 {
-    margin: 1em auto 1em auto;
-    text-align: center;
-    width: 100%;
-    font-weight: bold;
-
-    span {
-      color: var(--Terciria-V, #a367eb);
-    }
-
-  }
-
-  .tagsHacka {
-    margin-bottom: 0em;
-  }
-
-  .homeTitulo4 {
-    margin: -3em auto 2em auto;
-    text-align: center;
-    width: 100%;
-    font-weight: bold;
-    font-size: 1em;
-
-    span {
-      color: var(--Terciria-V, #a367eb);
-    }
-
-  }
-
-  .coments {
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    width: 80%;
-    justify-content: center;
-    gap: 8vh;
-    align-items: center;
-  }
-
-  .homeTitulo5 {
-    margin: 1em auto 0em auto;
-    text-align: center;
-    width: 100%;
-    font-weight: bold;
-    font-size: 0.8em;
-
-    span {
-      margin: 0;
-      color: var(--Terciria-V, #a367eb);
-    }
-  }
-
-  .caixaCardsPreta {
-    width: 90%;
-    height: auto;
-  }
-
-  .cardPretoMenor,
-  .cardPretoMenor4,
-  .cardPretoMaior {
-    margin-bottom: 0.5em;
-    font-size: 0.8em;
-  }
-
-  .cardPretoMenor {
-    width: 100%;
-  }
-
-  .cardPretoMenor4 {
-    width: 100%;
-  }
-
-  .cardPretoMaior {
-    width: 100%;
-  }
-
-  .homeTitulo6 {
-    margin: 1em auto 1em auto;
-  }
-
-  .homeTitulo6 {
-    margin: 1em auto 0em auto;
-    text-align: center;
-    width: 100%;
-    font-weight: bold;
-    font-size: 1em;
-
-    span {
-      margin: 0;
-      color: var(--Terciria-V, #a367eb);
-    }
-  }
-
-      .caixaplanos {
+    .caixaplanos {
       height: auto;
       padding: 0.5em 0em 0.5em 0em;
       flex-wrap: wrap;
-      
     }
-  
+
     .caixinhaplanos1,
     .caixinhaplanos2,
     .caixinhaplanos3 {
@@ -1962,7 +1582,7 @@ video {
       justify-content: space-evenly;
       width: 90%;
     }
-  
+
     .caixinhaplanos1:hover {
       border-radius: 10px;
       border: 1px solid #6be62e;
@@ -1990,9 +1610,7 @@ video {
       cursor: pointer;
       transition-duration: 1s;
     }
-  
-    
-  
+
     .pedrinhas {
       width: 35px;
       height: 35px;
@@ -2000,22 +1618,339 @@ video {
       margin-bottom: 1em;
     }
 
-  .homeTitulo7 {
-    margin: 1em auto 0em auto;
-    width: 100%;
-    padding: 1em;
-    font-weight: bold;
-    font-size: 1em;
-    span {
-      color: var(--Terciria-V, #a367eb);
+    .homeTitulo7 {
+      margin: 1em auto 0em auto;
+      width: 100%;
+      padding: 1em;
+      font-weight: bold;
+      font-size: 1em;
+      span {
+        color: var(--Terciria-V, #a367eb);
+      }
     }
   }
+}
 
+/*Medida Mobile Comum*/
+@media only screen and (min-width: 392px) {
+  @media only screen and (max-width: 440px) {
+    /* .video-background {
+    height: 75%;
+
+  } */
+
+    .hometitle {
+      font-size: 1.4em;
+      line-height: 1em;
+      width: 100%;
+    }
+
+    .botoesHome {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .cardPretoHome {
+      width: 90%;
+      margin-top: 3em;
+      font-size: 0.7em;
+      padding: 0.5em;
+    }
+
+    .cardPretoHome span {
+      margin: 0em;
+    }
+
+    .descCardPretoTalentos {
+      width: 100%;
+    }
+
+    .jobequip,
+    .solucoes,
+    hr,
+    .setameio,
+    .setadireita,
+    .setaparacima {
+      display: none;
+    }
+
+    .cardPretoHome .tituloCardPreto {
+      text-align: center;
+      font-size: 1em;
+    }
+
+    .homeTitulo2 {
+      margin: 1em auto -1em auto;
+      font-size: 1em;
+      width: 100%;
+    }
+
+    .botoesHome2 {
+      width: 100%;
+    }
+
+    .caixasparte2,
+    .caixaparte1 {
+      flex-direction: column;
+      margin: auto;
+    }
+
+    .caixasparte1 {
+      width: 100%;
+    }
+
+    .caixasparte2 {
+      width: 100%;
+      font-size: 0.8em;
+    }
+
+    .primeiracaixa,
+    .segundacaixa,
+    .terceiracaixa,
+    .quartacaixa {
+      width: 90%;
+      align-items: center;
+      height: 4em;
+      font-size: 0.6em;
+      margin: auto;
+      margin: 0.8em;
+    }
+
+    .primeiracaixa {
+      left: -2px;
+      margin-bottom: -3px;
+    }
+
+    .terceiracaixa,
+    .quartacaixa {
+      left: 15px;
+      font-size: 0.8em;
+      margin-top: 0px;
+    }
+
+    .segundacaixa {
+      left: 0px;
+      height: 110px;
+      top: 0px;
+      align-items: center;
+    }
+
+    .icons {
+      width: 20%;
+    }
+
+    .textos {
+      width: 80%;
+    }
+
+    .terceiracaixa {
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+
+    .quartacaixa {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+
+    .primeiracaixa:hover,
+    .segundacaixa:hover,
+    .terceiracaixa:hover,
+    .quartacaixa:hover {
+      border: 1px solid #06f8fa;
+      background-color: #141301;
+      color: white;
+      cursor: pointer;
+      transition: 1s;
+    }
+
+    .iconsCardsCaixas {
+      color: #06f8fa;
+      font-size: 50px;
+    }
+
+    .homeTitulo3 {
+      margin: 1em auto 0em auto;
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+
+      span {
+        color: var(--Terciria-V, #a367eb);
+      }
+    }
+
+    .hackathonsDisponiveisHome {
+      width: 90%;
+      margin: auto;
+      margin-top: 2em;
+    }
+
+    .rowHackathonsDisp {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+
+    .homeTitulo4 {
+      margin: 1em auto 1em auto;
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+
+      span {
+        color: var(--Terciria-V, #a367eb);
+      }
+    }
+
+    .tagsHacka {
+      margin-bottom: 0em;
+    }
+
+    .homeTitulo4 {
+      margin: -3em auto 2em auto;
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+      font-size: 1em;
+
+      span {
+        color: var(--Terciria-V, #a367eb);
+      }
+    }
+
+    .coments {
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      width: 80%;
+      justify-content: center;
+      gap: 8vh;
+      align-items: center;
+    }
+
+    .homeTitulo5 {
+      margin: 1em auto 0em auto;
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+      font-size: 0.8em;
+
+      span {
+        margin: 0;
+        color: var(--Terciria-V, #a367eb);
+      }
+    }
+
+    .caixaCardsPreta {
+      width: 90%;
+      height: auto;
+    }
+
+    .cardPretoMenor,
+    .cardPretoMenor4,
+    .cardPretoMaior {
+      margin-bottom: 0.5em;
+      font-size: 0.8em;
+    }
+
+    .cardPretoMenor {
+      width: 100%;
+    }
+
+    .cardPretoMenor4 {
+      width: 100%;
+    }
+
+    .cardPretoMaior {
+      width: 100%;
+    }
+
+    .homeTitulo6 {
+      margin: 1em auto 1em auto;
+    }
+
+    .homeTitulo6 {
+      margin: 1em auto 0em auto;
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+      font-size: 1em;
+
+      span {
+        margin: 0;
+        color: var(--Terciria-V, #a367eb);
+      }
+    }
+
+    .caixaplanos {
+      height: auto;
+      padding: 0.5em 0em 0.5em 0em;
+      flex-wrap: wrap;
+    }
+
+    .caixinhaplanos1,
+    .caixinhaplanos2,
+    .caixinhaplanos3 {
+      font-size: 0.3em;
+      width: 4.5em;
+      height: auto;
+      border-radius: 10px;
+      justify-content: space-evenly;
+      width: 90%;
+    }
+
+    .caixinhaplanos1:hover {
+      border-radius: 10px;
+      border: 1px solid #6be62e;
+      background: rgba(240, 240, 240, 0.2);
+      box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.2) inset;
+      backdrop-filter: blur(40px);
+      cursor: pointer;
+      transition-duration: 1s;
+    }
+    .caixinhaplanos2:hover {
+      border-radius: 10px;
+      border: 1px solid #aa2c54;
+      background: rgba(240, 240, 240, 0.2);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+      backdrop-filter: blur(20px);
+      cursor: pointer;
+      transition-duration: 1s;
+    }
+    .caixinhaplanos3:hover {
+      border-radius: 10px;
+      border: 1px solid #0064e0;
+      background: rgba(240, 240, 240, 0.2);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+      backdrop-filter: blur(20px);
+      cursor: pointer;
+      transition-duration: 1s;
+    }
+
+    .pedrinhas {
+      width: 35px;
+      height: 35px;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    .homeTitulo7 {
+      margin: 1em auto 0em auto;
+      width: 100%;
+      padding: 1em;
+      font-weight: bold;
+      font-size: 1em;
+      span {
+        color: var(--Terciria-V, #a367eb);
+      }
+    }
   }
 }
 
 /*Medida Tablet*/
-@media only screen and (min-width:441px) {
+@media only screen and (min-width: 441px) {
   @media only screen and (max-width: 930px) {
     .hometitle {
       font-size: 2em;
@@ -2031,7 +1966,6 @@ video {
     .cardPretoHome {
       width: 90%;
       margin-top: 3em;
-
     }
 
     .jobequip,
@@ -2065,7 +1999,6 @@ video {
       width: 80%;
     }
 
-
     .caixasparte2,
     .caixaparte1 {
       flex-direction: column;
@@ -2088,7 +2021,6 @@ video {
       left: -2px;
       margin-bottom: -3px;
     }
-
 
     .terceiracaixa,
     .quartacaixa {
@@ -2144,7 +2076,6 @@ video {
       span {
         color: var(--Terciria-V, #a367eb);
       }
-
     }
 
     .hackathonsDisponiveisHome {
@@ -2166,7 +2097,6 @@ video {
       span {
         color: var(--Terciria-V, #a367eb);
       }
-
     }
 
     .coments {
@@ -2190,7 +2120,6 @@ video {
       span {
         color: var(--Terciria-V, #a367eb);
       }
-
     }
 
     .caixaCardsPreta {
