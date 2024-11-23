@@ -54,14 +54,14 @@ main {
 
 /*Medidas para Tablets: */
 /* @media only screen and (min-width: 441px) {
-    @media only screen and (max-width: 834px) {
+    @media only screen and (max-width: 800px) {
       estilizações aqui dentro
     }
   } */
 
 /*Medidas para Tablets: */
-/* @media only screen and (min-width: 441px) {
-    @media only screen and (max-width: 834px) {
+/* @media only screen and (min-width: 801px) {
+    @media only screen and (max-width: 930px) {
       estilizações aqui dentro
     }
   } */

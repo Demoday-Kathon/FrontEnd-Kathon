@@ -12,18 +12,18 @@ function Empresas() {
                 <div className={Styles.textempresa}><h2>Hackathons que Conectam <span>Talentos</span> e <span>Transformam Negócios</span> </h2></div>
                 <div className={Styles.empresa1}>
                     <h1>Busca por inovação</h1>
-                    <p>Patrocinar ou organizar hackathons coloca a<br /> sua empresa em evidência, melhorando sua<br />imagem de marca como uma organização<br />inovadora e comprometida com a tecnologia.</p>
+                    <p>Patrocinar ou organizar hackathons coloca a sua empresa em evidência, melhorando sua imagem de marca como uma organizaçãoinovadora e comprometida com a tecnologia.</p>
                 </div>
                 <div className={Styles.boxtextpai}>
                     <div className={Styles.boxtext}>
-                        <h5>Resolução de<br /> problemas rápida</h5>
+                        <h5>Resolução rápida de problemas </h5>
                         <br />
                         <p className={Styles.boxtextp1}>Hackathons promovem a geração de ideias e soluções criativas em um curto período, ajudando a empresa a inovar de forma ágil e eficiente.</p>
                     </div>
                     <div className={Styles.boxtext}>
                         <h5 className={Styles.boxtexth5}>Descoberta de novos talentos</h5>
                         <br />
-                        <p className={Styles.boxtextp2}>Identifique jovens com habilidades<br /> excepcionais e potencial para
+                        <p className={Styles.boxtextp2}>Identifique jovens com habilidades excepcionais e potencial para
                             <br />impulsionar seu negócio.</p>
                     </div>
                 </div>

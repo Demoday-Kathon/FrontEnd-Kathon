@@ -27,6 +27,7 @@
     margin-top: 80px;
     background-image: url("../../assets/imgs/pessoas_empresas.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .empresa1 h1 {
@@ -156,11 +157,756 @@ span{
     color:#A367EB;
 }
 
+/*Disp Mobile*/
+/*Medidas para dispositivos pequenos, com a largura de no máximo 320px (iPhone 5; iPhone SE 2016.)*/
+
+  @media only screen and (max-width: 320px) {
+    .empresapai{
+        height:auto;
+        padding:0;
+    }
+   
+
+
+    .textempresa{
+        font-size:1.2em;
+    }
+
+    .textempresa span {
+        margin: 0;
+        color: #A367EB;
+    }
+
+
+    .empresa1 {
+        width:100%;
+        height:auto;
+        margin-top: 100px;
+        padding: 1.5em;
+
+    }
+
+
+    .empresa1 h1 {
+        font-size: 1.6em;
+        padding: 0;
+    }
+    
+    .empresa1 p {
+        font-size: 1.2em;
+        padding-top:0;
+        padding-left: 0;
+
+        width: 100%;
+    }
+
+    .boxtextpai{
+        width:100%;
+        flex-direction: column;
+        margin-top:30px;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    .boxtext {
+        position: relative;
+        width:100%;
+        height:100%;
+        margin:auto;
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+
+    .boxtext h5{
+        font-size:1.5em;
+        text-align: left;
+    }
+
+    .boxtext p{
+        font-size:1em;
+        text-align: left;
+        width: 100%;
+    }
+
+    
+    .boxfinal{
+        width:100%;
+        margin-top:5em;
+        height:auto;
+        padding: 0.8em;
+    }
+    
+    .boxfinal h4{
+        font-size:2em;
+        text-align: center;
+        margin:0;
+        width: 100%;
+        
+    }
+    
+    .boxfinal h4 span{
+        margin:0;
+    }
+    .boxfinalfilho {
+        width: 100%;
+        display: flex;
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    
+    .filho1 {
+        width: 100%;
+
+        padding: 0;
+    }
+    
+    .filhoimg {
+        width: 170px;
+        height: 170px;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-top: 1em;
+        margin-left:0;
+    }
+} 
+
+
+/*Medidas para dispositivos médios, com a largura entre 321px e 360px (Samsung Galaxy S5; Xiaomi Mi 11i; Huawei P30; Galaxy Z Flip3; OPPO Find X3 PRO; Galaxy A12; Galaxy S21 Ultra; Google Pixel 6 PRO; Xiaomi 12; Galaxy S22; Galaxy S22 +; Galaxy S22 ULTRA; Samsung Galaxy S24; iPhone 12 Mini)*/
+ 
+@media only screen and (min-width:321px) {
+    @media only screen and (max-width:360px) { 
+        .empresapai{
+            height:auto;
+            padding:0;
+        }
+       
+    
+    
+        .textempresa{
+            font-size:1.2em;
+        }
+    
+        .textempresa span {
+            margin: 0;
+            color: #A367EB;
+        }
+    
+    
+        .empresa1 {
+            width:100%;
+            height:auto;
+            margin-top: 100px;
+            padding: 1.5em;
+    
+        }
+    
+    
+        .empresa1 h1 {
+            font-size: 1.6em;
+            padding: 0;
+        }
+        
+        .empresa1 p {
+            font-size: 1.2em;
+            padding-top:0;
+            padding-left: 0;
+    
+            width: 100%;
+        }
+    
+        .boxtextpai{
+            width:100%;
+            flex-direction: column;
+            margin-top:30px;
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+        }
+    
+        .boxtext {
+            position: relative;
+            width:100%;
+            height:100%;
+            margin:auto;
+            padding: 1em;
+            margin-bottom: 2em;
+        }
+    
+        .boxtext h5{
+            font-size:1.5em;
+            text-align: left;
+        }
+    
+        .boxtext p{
+            font-size:1em;
+            text-align: left;
+            width: 100%;
+        }
+    
+        
+        .boxfinal{
+            width:100%;
+            margin-top:5em;
+            height:auto;
+            padding: 0.8em;
+        }
+        
+        .boxfinal h4{
+            font-size:2em;
+            text-align: center;
+            margin:0;
+            width: 100%;
+            
+        }
+        
+        .boxfinal h4 span{
+            margin:0;
+        }
+        .boxfinalfilho {
+            width: 100%;
+            display: flex;
+            margin-top: 60px;
+            flex-direction: column;
+        }
+        
+        .filho1 {
+            width: 100%;
+    
+            padding: 0;
+        }
+        
+        .filhoimg {
+            width: 170px;
+            height: 170px;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-top: 1em;
+            margin-left:0;
+        }
+    }
+  }
+
+
+/*Medidas para dispositivos médios para grandes, com largura entre 361px e 391px (Galaxy S24 ULTRA; iPhone X; iPhone 12P PRO; iPhone 13 PRO; iPhone 14; iPhone 14 PRO)*/
+
+  @media only screen and (min-width:361px) {
+    @media only screen and (max-width:391px) {
+        .empresapai{
+            height:420vh;
+            padding-bottom:2em;
+        }
+       
+    
+    
+        .textempresa{
+            font-size:25px;
+        }
+    
+    
+        .empresa1 {
+            width:100%;
+            height:90vh;
+            border-radius: 80px;
+            margin-top: 100px;
+            
+        }
+    
+    
+        .empresa1 h1 {
+            color: #A367EB;
+            font-family: "DM Sans";
+            font-size: 2.9em;
+            text-align: left;
+            margin-left:-150px;
+            padding-top:40px;
+        }
+        
+        .empresa1 p {
+            color: white;
+            font-family: "DM Sans";
+            font-size: 25px;
+            margin-top:20px;
+            margin-left:-150px;
+            padding-top:0px;
+            padding-left: 200px;
+        }
+    
+        .boxtextpai{
+            width:100%;
+            flex-direction: column;
+            margin-top:30px;
+            gap:100px;
+        }
+    
+        .boxtext{
+            position: relative;
+            width:100%;
+            height:100vh;
+            margin:auto;
+        }
+    
+        .boxtext h5{
+            font-size:32px;
+            text-align: left;
+        }
+    
+        .boxtext p{
+            font-size:23px;
+            text-align: left;
+        }
+    
+        .boxfinal{
+            width:100%;
+            margin-top:300px;
+            height:auto;
+        }
+    
+        .boxfinal h4{
+            font-size:36px;
+            text-align: left;
+            margin-left:50px;
+        }
+    
+    
+        .filhoimg {
+            width: 170px;
+            height: 170px;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-top: 360px;
+            margin-left:-100px;
+            margin-bottom: 1em;
+        }
+    }
+  }
+
+
+
+/*Medidas para dispositivos médios para grandes, com largura entre 391px 430px (Galaxy Note 20; Google Pixel 8; iPhone XR 2018; Iphone 11; iPhone 11 Pro Max; iPhone 12 Pro Max, iPhone 13 Pro Max, iPhone 14 Plus, iPhone 14 Pro Max, Iphone 15, Iphone 15 Plus, Iphone 15 PRO, Iphone 15 PRO MAX, iPhone 16, Iphone 16 Plus, iPhone 16 PRO, iPhone 16 PRO MAX)*/
+
+  @media only screen and (min-width: 392px) {
+    @media only screen and (max-width: 440px) {
+        .empresapai{
+            height:auto;
+            padding:0;
+        }
+       
+    
+    
+        .textempresa{
+            font-size:1.2em;
+        }
+    
+        .textempresa span {
+            margin: 0;
+            color: #A367EB;
+        }
+    
+    
+        .empresa1 {
+            width:100%;
+            height:auto;
+            margin-top: 100px;
+            padding: 1.5em;
+    
+        }
+    
+    
+        .empresa1 h1 {
+            font-size: 1.6em;
+            padding: 0;
+        }
+        
+        .empresa1 p {
+            font-size: 1.2em;
+            padding-top:0;
+            padding-left: 0;
+    
+            width: 100%;
+        }
+    
+        .boxtextpai{
+            width:100%;
+            flex-direction: column;
+            margin-top:30px;
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+        }
+    
+        .boxtext {
+            position: relative;
+            width:100%;
+            height:100%;
+            margin:auto;
+            padding: 1em;
+            margin-bottom: 2em;
+        }
+    
+        .boxtext h5{
+            font-size:1.5em;
+            text-align: left;
+        }
+    
+        .boxtext p{
+            font-size:1em;
+            text-align: left;
+            width: 100%;
+        }
+    
+        
+        .boxfinal{
+            width:100%;
+            margin-top:5em;
+            height:auto;
+            padding: 0.8em;
+        }
+        
+        .boxfinal h4{
+            font-size:2em;
+            text-align: center;
+            margin:0;
+            width: 100%;
+            
+        }
+        
+        .boxfinal h4 span{
+            margin:0;
+        }
+        .boxfinalfilho {
+            width: 100%;
+            display: flex;
+            margin-top: 60px;
+            flex-direction: column;
+        }
+        
+        .filho1 {
+            width: 100%;
+    
+            padding: 0;
+        }
+        
+        .filhoimg {
+            width: 170px;
+            height: 170px;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-top: 1em;
+            margin-left:0;
+        }
+    }
+  } 
+
+
+
+/*Medidas para Tablets: */
+@media only screen and (min-width: 441px) {
+    @media only screen and (max-width: 800px) {
+        
+        .empresapai{
+            height:auto;
+            padding:0;
+        }
+       
+    
+    
+        .textempresa{
+            font-size:2em;
+        }
+    
+        .textempresa span {
+            margin: 0;
+            color: #A367EB;
+        }
+    
+    
+        .empresa1 {
+            width:100%;
+            height:auto;
+            margin-top: 100px;
+            padding: 2em;
+    
+        }
+    
+    
+        .empresa1 h1 {
+            font-size: 2em;
+            padding: 0;
+        }
+        
+        .empresa1 p {
+            font-size: 1.5em;
+            padding-top:0;
+            padding-left: 0;
+    
+            width: 100%;
+        }
+    
+        .boxtextpai{
+            width:100%;
+            flex-direction: column;
+            margin-top:30px;
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+        }
+    
+        .boxtext {
+            position: relative;
+            width:100%;
+            height:100%;
+            margin:auto;
+            padding: 1em;
+            margin-bottom: 2em;
+        }
+    
+        .boxtext h5{
+            font-size:2em;
+            text-align: left;
+        }
+    
+        .boxtext p{
+            font-size:1.5em;
+            text-align: left;
+            width: 100%;
+        }
+    
+        
+        .boxfinal{
+            width:100%;
+            margin-top:5em;
+            height:auto;
+            padding: 0.8em;
+        }
+        
+        .boxfinal h4{
+            font-size:2em;
+            text-align: center;
+            margin:0;
+            width: 100%;
+            
+        }
+        
+        .boxfinal h4 span{
+            margin:0;
+        }
+        .boxfinalfilho {
+            width: 100%;
+            display: flex;
+            margin-top: 60px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .filho1 {
+            width: 100%;
+    
+            padding: 0;
+        }
+        
+        .filhoimg {
+            width: 230px;
+            height: 230px;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-top: 1em;
+            margin-left:0;
+        }
+        
+        
+        /* .empresa1 h1 {
+            color: #A367EB;
+            font-family: "DM Sans";
+            font-size: 3.2em;
+            text-align: center;
+            margin-left:-400px;
+            margin-top:-10px;
+        }
+    
+        .empresa1 p {
+            color: white;
+            font-family: "DM Sans";
+            font-size: 34px;
+            margin-top:50px;
+            margin-left:-170px;
+            padding-top:0px;
+            padding-left: 200px;
+        }
+    
+        .boxtextpai{
+            width:100%;
+            flex-direction: column;
+            margin-top:150px;
+            gap:100px;
+        }
+    
+        .boxtext{
+            position: relative;
+            width:100%;
+            height:48vh;
+            margin:auto;
+        }
+    
+        .boxtext h5{
+            font-size:49px;
+            text-align:left;
+        }
+    
+        .boxtextp1{
+            font-size:41px;
+            padding-top:30px;
+            text-align: left;
+        }
+    
+        .boxtexth5{
+            font-size:28px;
+            text-align: center;
+        }
+    
+        .boxtextp2{
+            font-size:42px;
+            padding-top:40px;
+            text-align: left;
+        }
+    
+        .boxfinal{
+            width:100%;
+            margin-top:250px;
+            height:100vh;
+        }
+    
+        .filhoimg {
+            cursor: pointer;
+            transition: 0.5s;
+            margin-top: 450px;
+            margin-left:-100px;
+        } */
+    }
+  }
+
+/*Medidas para Tablets: */
+@media only screen and (min-width: 801px) {
+    @media only screen and (max-width: 930px) {
+        .empresapai{
+            height:auto;
+            padding:0;
+        }
+       
+    
+    
+        .textempresa{
+            font-size:2em;
+        }
+    
+        .textempresa span {
+            margin: 0;
+            color: #A367EB;
+        }
+    
+    
+        .empresa1 {
+            width:100%;
+            height:auto;
+            margin-top: 100px;
+            padding: 2em;
+    
+        }
+    
+    
+        .empresa1 h1 {
+            font-size: 2em;
+            padding: 0;
+        }
+        
+        .empresa1 p {
+            font-size: 1.5em;
+            padding-top:0;
+            padding-left: 0;
+    
+            width: 100%;
+        }
+    
+        .boxtextpai{
+            width:100%;
+            flex-direction: column;
+            margin-top:30px;
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+        }
+    
+        .boxtext {
+            position: relative;
+            width:100%;
+            height:100%;
+            margin:auto;
+            padding: 1em;
+            margin-bottom: 2em;
+        }
+    
+        .boxtext h5{
+            font-size:2em;
+            text-align: left;
+        }
+    
+        .boxtext p{
+            font-size:1.5em;
+            text-align: left;
+            width: 100%;
+        }
+    
+        
+        .boxfinal{
+            width:100%;
+            margin-top:5em;
+            height:auto;
+            padding: 0.8em;
+        }
+        
+        .boxfinal h4{
+            font-size:2em;
+            text-align: center;
+            margin:0;
+            width: 100%;
+            
+        }
+        
+        .boxfinal h4 span{
+            margin:0;
+        }
+        .boxfinalfilho {
+            width: 100%;
+            display: flex;
+            margin-top: 60px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .filho1 {
+            width: 100%;
+    
+            padding: 0;
+        }
+        
+        .filhoimg {
+            width: 230px;
+            height: 230px;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-top: 1em;
+            margin-left:0;
+        }
+    }
+  }
+
+
+
+
 
 /* Celulares */
 
-@media (width<=450px){
-
+/* @media (width<=450px){
     .empresapai{
         height:420vh;
         padding-bottom:100px;
@@ -247,11 +993,12 @@ span{
         margin-left:-100px;
     }
 
-}
+
+} */
 
 /* Tablet */
 
-@media (min-width:768px) and (max-width:1024px){
+/* @media (min-width:768px) and (max-width:1024px){
 
 .empresa1 h1 {
         color: #A367EB;
@@ -321,4 +1068,4 @@ span{
         margin-left:-100px;
     }
 
-}
+} */
