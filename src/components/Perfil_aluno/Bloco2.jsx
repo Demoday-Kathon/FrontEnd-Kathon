@@ -24,7 +24,7 @@ function Bloco2({ TextoDesc, Titulo_sobre, Titulo_sobre2, Titulo_Participacao })
                 <div className={Styles.Sobre}>
                     <div className={Styles.Habilidades}>
                         <div className={Styles.Habilidades_tag}>
-                            <Button text="Desing" customClass="desing" /> <Button text="Comunicação" customClass="comunicacao" />  <Button text="Cloud" customClass="ilustacao" />
+                            <Button text="Design" customClass="desing" /> <Button text="Comunicação" customClass="comunicacao" />  <Button text="Cloud" customClass="ilustacao" />
                         </div>
                         <div className={Styles.Habilidades_tag}>
                             <Button text="Front-End" customClass="marketing" /> <Button text="Banco de dados" customClass="pesquisa" />
