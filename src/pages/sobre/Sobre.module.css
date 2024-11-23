@@ -186,6 +186,154 @@
   color: #a55aff;
 }
 
+@media screen and (max-width: 968px){
+  .containerPrimary {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0vh;
+    height: auto;
+    margin-top: 40vh;
+    margin-bottom: 20vh;
+  }
+
+  .containerSecondary, .containerTerciary {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    height: 10vh;
+  }
+
+
+  .ContainerTitleSobre {
+    width: 95%;
+    bottom: 0;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .ContainerTitleSobre p {
+    font-size: 1.8rem;
+  }
+
+  .titulosSection {
+    font-size: 3rem;
+  }
+
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .elipseBlur {
+    display: none;
+  }
+
+  .images .ImageGlass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    bottom: 50%;
+    padding-left: 1vh;
+  }
+
+
+  .containerSecondary {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .containerSecondary .textDescription {
+    width: 90%;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 auto; 
+  }
+
+  .containerTerciary {
+    display: none;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: auto;
+    gap: 0vh;
+    margin-bottom: 10vh;
+  }
+  
+  .containerTerciary .textDescription {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 80%; 
+    font-size: 2rem;
+    text-align: left; 
+    margin: 0 auto;
+  }
+
+  .equipeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130vh;
+    margin-bottom: 20vh;
+  }
+
+  .titulodesenvolvedores{
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .descDesenvolvedores {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+
+  .descDesenvolvedores .textDescription {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .imgEquipe {
+    width: 90vw;
+    height: auto;
+  }
+
+  .containerNossoTime{
+    justify-content: space-between;
+    height: auto;
+    gap: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  .containerCardMembroTime {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 3rem;
+    width: 100%;
+    gap: 15vh;
+  }
+
+  .tituloNossoTime {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .containerPrimary {
     flex-direction: column;

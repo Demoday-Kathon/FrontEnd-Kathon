@@ -294,6 +294,10 @@
       font-size: 35px;
     }
   }
+
+  .abadebotoes{
+    display: none;
+  }
 }
 @media (min-width: 451px) {
   @media (max-width: 840px) {
@@ -339,5 +343,9 @@
         font-size: 55px;
       }
     }
+  }
+
+  .abadebotoes{
+    display: none;
   }
 }

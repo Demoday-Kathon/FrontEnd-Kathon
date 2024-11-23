@@ -66,7 +66,21 @@
     cursor: pointer;
 }
 
-@media  (max-width: 768px) {
+@media (max-width: 968px) {
+    .CardMember{
+        width: 75%;
+        height: 65vh;
+    }
+}
+
+@media (max-width: 769px) {
+    .CardMember{
+        width: 65%;
+        height: 65vh;
+    }
+}
+
+@media (max-width: 468px) {
     .CardMember{
         width: 95%;
         height: 65vh;
