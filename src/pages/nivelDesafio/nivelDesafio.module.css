@@ -343,9 +343,9 @@
         font-size: 55px;
       }
     }
+    .abadebotoes{
+      display: none;
+    }
   }
 
-  .abadebotoes{
-    display: none;
-  }
 }
