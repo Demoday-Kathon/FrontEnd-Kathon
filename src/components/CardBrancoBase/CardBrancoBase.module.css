@@ -55,6 +55,8 @@
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
   height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width:430px) {

@@ -109,7 +109,7 @@
 }
 
 .homeTitulo3 {
-  margin: 4em auto 0em auto;
+  margin: 4em auto 2em auto;
   text-align: center;
   color: #fff;
   font-size: 1.2em;
@@ -1682,7 +1682,7 @@ video {
 
 /*Medida Mobile Comum*/
 @media only screen and (min-width: 392px) {
-  @media only screen and (max-width: 430px) {
+  @media only screen and (max-width: 440px) {
   /* .video-background {
     height: 75%;
 
@@ -1695,7 +1695,7 @@ video {
   }
 
   .botoesHome {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 
@@ -2015,7 +2015,7 @@ video {
 }
 
 /*Medida Tablet*/
-@media only screen and (min-width:431px) {
+@media only screen and (min-width:441px) {
   @media only screen and (max-width: 930px) {
     .hometitle {
       font-size: 2em;
@@ -2023,7 +2023,7 @@ video {
     }
 
     .botoesHome {
-      width: 100%;
+      width: 98%;
       display: flex;
       justify-content: center;
     }
@@ -2176,6 +2176,8 @@ video {
       width: 80%;
       justify-content: center;
       gap: 8vh;
+
+      align-items: center;
     }
 
     .homeTitulo5 {

@@ -20,10 +20,10 @@
 }
 
 .iconCardPreto {
-  width: 40%;
+  width: 50%;
   color: #a367eb;
   border-radius: 36px;
-  background: rgba(240, 240, 240, 0.1);
+  background: rgb(46, 45, 45);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   backdrop-filter: blur(20px);
   font-size: 20px;
@@ -87,74 +87,134 @@
     align-items: center;
     width: 100%;
     margin: 0.19em;
+    font-size: 0.7em;
+  }
+
+  .iconCardPreto {
+    width: 75%;
+    color: #a367eb;
+    border-radius: 36px;
+    background: rgba(240, 240, 240, 0.1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
     font-size: 0.8em;
+    align-self: center;
   }
 
 
 
 
 }
-  @media only screen and (min-width:321px) {
-    @media only screen and (max-width:360px) {
-      .botaohome {
-        border: 2px white solid;
-        border-radius: 0.8em;
-        display: flex;
-        justify-content: center;
-        padding: 0.4em;
-        align-items: center;
-        width: 100%;
-        margin: 0.5em;
-        font-size: 0.50em;
-      }
+
+@media only screen and (min-width:321px) {
+  @media only screen and (max-width:360px) {
+    .botaohome {
+      border: 2px white solid;
+      border-radius: 0.8em;
+      display: flex;
+      justify-content: center;
+      padding: 0.4em;
+      align-items: center;
+      width: 100%;
+      margin: 0.5em;
+      font-size: 0.50em;
+    }
+
+    .iconCardPreto {
+      width: 65%;
+      color: #a367eb;
+      border-radius: 36px;
+      background: rgba(240, 240, 240, 0.1);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+      backdrop-filter: blur(20px);
+      font-size: 0.8em;
+      align-self: center;
     }
   }
+}
 
-  @media only screen and (min-width:361px) {
-    @media only screen and (max-width:391px) {
-
-      .iconCardPreto {
-        width: 65%;
-        color: #a367eb;
-        border-radius: 36px;
-        background: rgba(240, 240, 240, 0.1);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-        backdrop-filter: blur(20px);
-        font-size: 20px;
-        align-self: center;
-      }
+@media only screen and (min-width:361px) {
+  @media only screen and (max-width:391px) {
+    .botaohome {
+      border: 2px white solid;
+      border-radius: 0.8em;
+      display: flex;
+      justify-content: center;
+      padding: 0.4em;
+      align-items: center;
+      width: 100%;
+      margin: 0.5em;
+      font-size: 0.50em;
     }
+
+    .iconCardPreto {
+      width: 65%;
+      color: #a367eb;
+      border-radius: 36px;
+      background: rgba(240, 240, 240, 0.1);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+      backdrop-filter: blur(20px);
+      font-size: 20px;
+      align-self: center;
+    }
+
+    
   }
-  
+}
+
 
 
 /*Medida Mobile*/
 @media only screen and (min-width: 392px) {
-  @media only screen and (max-width: 430px) {
-  .buttonLoginConta {
-    width: 100%;
-    padding: 0.3em 0em 0.3em 0em;
-    font-size: 2em;
-    margin-top: 0.5em;
-  }
+  @media only screen and (max-width: 440px) {
+    .buttonLoginConta {
+      width: 100%;
+      padding: 0.3em 0em 0.3em 0em;
+      font-size: 2em;
+      margin-top: 0.5em;
+    }
 
-  .botaohome {
-    font-size: 0.45em;
-    width: 100%;
-  }
+    .botaohome {
+      font-size: 0.45em;
+      width: 100%;
+    }
+
+    .iconCardPreto {
+      width: 65%;
+      color: #a367eb;
+      border-radius: 36px;
+      background: rgba(240, 240, 240, 0.1);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+      backdrop-filter: blur(20px);
+      font-size: 20px;
+      align-self: center;
+    }
   }
 }
 
 /* Medida Tablet */
-@media only screen and (min-width: 431px) {
+@media only screen and (min-width: 441px) {
   @media only screen and (max-width: 930px) {
+
+    
+    .iconCardPreto {
+      width: 65%;
+      color: #a367eb;
+      border-radius: 36px;
+      background: rgba(240, 240, 240, 0.1);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+      backdrop-filter: blur(20px);
+      font-size: 20px;
+      align-self: center;
+    }
+
     .buttonLoginConta {
       width: 90%;
     }
 
     .botaohome {
       font-size: 0.6em;
-      
+
     }
   }
 }

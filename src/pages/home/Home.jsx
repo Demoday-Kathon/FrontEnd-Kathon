@@ -32,6 +32,8 @@ import { TbWorld } from "react-icons/tb";
 import { IoStatsChart } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa";
 import { MdOutlineLaptopMac } from "react-icons/md";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { GiBrain } from "react-icons/gi";
 import VideoBack from "../../assets/imgs/video_back.mp4";
 import esmeralda from "../../assets/imgs/Esmeralda.svg";
 import rubi from "../../assets/imgs/rubi.svg";
@@ -183,7 +185,7 @@ function Home() {
                 />
               </div>
               <div className={styles.textos1}>
-                Desenvolvimento de habilidades{" "}
+                Desenvolvimento de <br />  habilidades{" "}
               </div>
             </div>
           </div>
@@ -237,6 +239,7 @@ function Home() {
             <Card
               bannerHacka={banner}
               titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
+              locationHacka= "São Paulo, SP"
               qtdparticipants="+150 participantes"
               timeline="20 dias restantes"
               children1={
@@ -268,6 +271,7 @@ function Home() {
             <Card
               bannerHacka={banner}
               titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
+              locationHacka= "São Paulo, SP"
               qtdparticipants="+150 participantes"
               timeline="20 dias restantes"
               children1={
@@ -344,7 +348,7 @@ function Home() {
               <BotaoHome
                 customClass="iconCardPreto"
                 icon={
-                  <IoStatsChart
+                  <IoStatsChart size={20}
                     style={{ color: "#A367EB", marginRight: "0.5em" }}
                   />
                 }
@@ -370,7 +374,7 @@ function Home() {
               <BotaoHome
                 customClass="iconCardPreto"
                 icon={
-                  <TbWorld style={{ color: "#A367EB", marginRight: "0.5em" }} />
+                  <TbWorld size={20} style={{ color: "#A367EB", marginRight: "0.5em" }} />
                 }
                 alt="icone de alarme"
                 text="Talentos"
@@ -397,6 +401,7 @@ function Home() {
                 customClass="iconCardPreto"
                 icon={
                   <MdOutlineLaptopMac
+                    size={20}
                     style={{ color: "#A367EB", marginRight: "0.5em" }}
                   />
                 }
@@ -424,12 +429,12 @@ function Home() {
               <BotaoHome
                 customClass="iconCardPreto"
                 icon={
-                  <IoStatsChart
+                  <GiBrain 
                     style={{ color: "#A367EB", marginRight: "0.5em" }}
                   />
                 }
                 alt="icone de sifrão"
-                text="Visibilidade"
+                text="Resolução"
               />
               <h1 className={styles.tituloCardPretoTalentos}>
                 Resolução de problemas

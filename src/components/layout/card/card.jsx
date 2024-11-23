@@ -6,9 +6,11 @@ import person2 from "../../../assets/imgs/pessoa2.png";
 import person3 from "../../../assets/imgs/pessoa3.png";
 import Button from "../button/button.jsx";
 import CardBrancoBrase from "../../../components/CardBrancoBase/CardBrancoBase.jsx";
+
+import { FaLocationDot } from "react-icons/fa6";
 import { Children } from "react";
 
-function card({ titleHacka, bannerHacka, children1, qtdparticipants, timeline, children2, children3, customClass, customClassPerson }) {
+function card({ titleHacka, bannerHacka, locationHacka, children1, qtdparticipants, timeline, children2, children3, customClass, customClassPerson }) {
   return (
     <div className={`${styles.cardHacka} ${styles[customClass]}`}>
       <div className={styles.bannerHacka}>
@@ -16,6 +18,7 @@ function card({ titleHacka, bannerHacka, children1, qtdparticipants, timeline, c
       </div>
       <CardBrancoBrase customClass="cardHacka">
         <h3 className={styles.titleHacka}> {titleHacka} </h3>
+        <p className={styles.locationHacka}> <FaLocationDot /> {locationHacka} </p>
         <div className={styles.tagsHacka}>
           {children1}
         </div>
