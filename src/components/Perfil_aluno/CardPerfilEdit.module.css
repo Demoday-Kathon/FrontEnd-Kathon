@@ -43,7 +43,195 @@
     margin-bottom: 100px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 320px) {
+    .Card_Fundo{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: 490vh;
+        
+    }
+    .PerfilDados{
+        display: flex;
+        flex-direction: column;
+        gap: 15%;
+        margin-top: 70vh;
+    }
+    .RecomendacaoTi{
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 28px;
+    }
+    .Recomendacao_bloco{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100vh;
+    }
+    .Recomendacao{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
+
+} 
+@media only screen and (min-width:321px) {
+    @media only screen and (max-width:360px) {
+        .Card_Fundo{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            height: 385vh;
+            
+        }
+        .PerfilDados{
+            display: flex;
+            flex-direction: column;
+            gap: 10%;
+            margin-top: 55vh;
+        }
+        .RecomendacaoTi{
+            width: 2%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 28px;
+        }
+        .Recomendacao_bloco{
+            display: flex;
+            flex-direction: column;
+            margin-top: 70vh;
+        }
+        .Recomendacao{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            align-items: center;
+        }
+ }
+}
+
+@media only screen and (min-width: 361px) {
+    @media only screen and (max-width: 430px){
+        .Card_Fundo{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            height: 370vh;
+            
+        }
+        .PerfilDados{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 30%;
+        }
+        .RecomendacaoTi{
+            width: 98%;
+            margin-left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 30px;
+        }
+        .Recomendacao_bloco{
+            display: flex;
+            flex-direction: column;
+            margin-top: 370px;
+        }
+        .Recomendacao{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            align-items: center;
+        }
+        .RecomendacaoTi{
+            margin-left: -30px;
+        }
+    
+    }
+}
+
+
+/* @media (max-width: 480px) {
+    .Card_Fundo{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: 350vh;
+        
+    }
+    .PerfilDados{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .RecomendacaoTi{
+        width: 98%;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+    }
+    .Recomendacao_bloco{
+        display: flex;
+        flex-direction: column;
+        margin-top: 370px;
+    }
+    .Recomendacao{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
+    .RecomendacaoTi{
+        margin-left: -30px;
+    }
+
+} */
+
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+    .Card_Fundo{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: 290vh;
+    }
+    
+    .PerfilDados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .Recomendacao{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      align-items: center;
+    }
+
+    .Recomendacao_bloco{
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+    }
+  }
+
+/* @media (max-width: 480px) {
     .Card_Fundo{
         display: flex;
         flex-direction: column;
@@ -77,4 +265,4 @@
         gap: 100px;
         align-items: center;
     }
-}
+} */

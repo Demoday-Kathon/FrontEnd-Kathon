@@ -1,3 +1,16 @@
+/* Exemplo de estilos para o ícone */
+.icon {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-10px);
+}
+
+.iconVisible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
 .HeaderComunidade {
     display: flex;
     flex-direction: column;
@@ -108,14 +121,46 @@
 .IconPlay {
     position: absolute;
     z-index: 9999;
-    top: 20%;
+    top: 10%;
     transform: translateY(-50%);
     left: 18em;
 }
 
-button{
+.ButtonIconPlay{
     background: none;
 }
+.Loginb{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 25px;
+    border-radius: 36px;
+    background: rgba(240, 240, 240, 0.1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+    color: #f0f0f0;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 1.5em;
+    transition: 0.5s;
+    cursor: pointer;
+    gap: 0.5em;
+}
+
+.Loginb:hover {
+    background: #f0f0f0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+    color: #141301;
+    font-family: "DM Sans";
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 24px;
+  }
 
 .ButtonIconPlay:hover{
     cursor: pointer;
@@ -148,3 +193,93 @@ button{
     transition: transform 0.3s ease;
     transform-origin: center;
 }
+
+/* Header */
+.header {
+    position: relative;
+    z-index: 9999;
+  }
+  
+  /* Ícone do hambúrguer */
+  .hamburgerButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .hamburgerButton:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Barra lateral */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 18em;
+    height: 100vh;
+    background-color: #0c0c0c;
+    border-right: 2px solid #7400b7;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 999;
+  }
+  
+  .sidebar.visible {
+    transform: translateX(0);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Logo */
+  .logo {
+    width: 70%;
+    margin: 20px auto;
+  }
+  
+  /* Links */
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  .link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .link:hover {
+    color: #66c2fa;
+  }
+  
+  .icon {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .iconVisible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Estado ativo */
+  .active {
+    font-weight: bold;
+    color: #66c2fa;
+  }
+  

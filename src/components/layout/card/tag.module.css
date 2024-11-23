@@ -122,6 +122,27 @@
     font-size: 0.157em;
   }
 
+  .roxoHacka {
+  background-color: #7400b7ff;
+  font-size: 0.35em;
+}
+
+.azulHacka {
+  background-color: #314ce7ff;
+  font-size: 0.35em;
+}
+
+.verdeAguaHacka {
+  background-color: #06F8FA;
+  font-size: 0.35em;
+  color: #000;
+}
+
+.azulClaroHacka {
+  background-color: #66c2faff;
+  font-size: 0.35em;
+}
+
 }
   @media only screen and (min-width:321px) {
     @media only screen and (max-width:360px) {
@@ -153,12 +174,84 @@
         background-color: #66c2faff;
         font-size: 0.16em;
       }
+
+
+      .roxoHacka {
+        background-color: #7400b7ff;
+        font-size: 0.35em;
+      }
+      
+      .azulHacka {
+        background-color: #314ce7ff;
+        font-size: 0.35em;
+      }
+      
+      .verdeAguaHacka {
+        background-color: #06F8FA;
+        font-size: 0.35em;
+        color: #000;
+      }
+      
+      .azulClaroHacka {
+        background-color: #66c2faff;
+        font-size: 0.35em;
+      }
+
+      
+    }
+  }
+
+  
+  @media only screen and (min-width:361px) {
+    @media only screen and (max-width:391px) {
+
+      .roxoHome {
+        background-color: #7400b7ff;
+        font-size: 0.17em;
+      }
+      
+      .azulHome {
+        background-color: #314ce7ff;
+        font-size: 0.17em;
+      }
+      
+      .verdeAguaHome{
+        background-color: #06F8FA;
+        font-size: 0.17em;
+        color: #000;
+      }
+      .azulClaroHome {
+        background-color: #66c2faff;
+        font-size: 0.17em;
+      }
+
+
+      .roxoHacka {
+        background-color: #7400b7ff;
+        font-size: 0.38em;
+      }
+      
+      .azulHacka {
+        background-color: #314ce7ff;
+        font-size: 0.38em;
+      }
+      
+      .verdeAguaHacka {
+        background-color: #06F8FA;
+        font-size: 0.38em;
+        color: #000;
+      }
+      
+      .azulClaroHacka {
+        background-color: #66c2faff;
+        font-size: 0.38em;
+      }
     }
   }
 
 /*Medida Mobile*/
-@media only screen and (min-width: 361px) {
-  @media only screen and (max-width: 430px) {
+@media only screen and (min-width: 391px) {
+  @media only screen and (max-width: 440px) {
   .base {
     height: 1.5em;
     border-radius: 1em;
@@ -170,22 +263,43 @@
 
   .roxoHome {
     background-color: #7400b7ff;
-    font-size: 0.15em;
+    font-size: 0.2em;
   }
   
   .azulHome {
     background-color: #314ce7ff;
-    font-size: 0.15em;
+    font-size: 0.2em;
   }
   
   .verdeAguaHome{
     background-color: #06F8FA;
-    font-size: 0.15em;
+    font-size: 0.2em;
     color: #000;
   }
   .azulClaroHome {
     background-color: #66c2faff;
-    font-size: 0.15em;
+    font-size: 0.2em;
+  }
+
+  .roxoHacka {
+    background-color: #7400b7ff;
+    font-size: 0.38em;
+  }
+  
+  .azulHacka {
+    background-color: #314ce7ff;
+    font-size: 0.38em;
+  }
+  
+  .verdeAguaHacka {
+    background-color: #06F8FA;
+    font-size: 0.38em;
+    color: #000;
+  }
+  
+  .azulClaroHacka {
+    background-color: #66c2faff;
+    font-size: 0.38em;
   }
 
   
@@ -193,7 +307,7 @@
 }
 
 /*Medida Tablet*/
-/* @media only screen and (min-width:431px) 
+/* @media only screen and (min-width:441px) 
   @media only screen and (max-width: 900px) {
       
   } */
@@ -241,5 +355,40 @@
   }
   .usuario{
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 320px)  {
+  .marketing{
+    font-size:17px;
+  }
+  
+  .pesquisa{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width:321px) {
+  @media only screen and (max-width:360px) {
+    .ilustacao{
+      display: none;
+    }
+    .desing {
+      font-size: 18px;
+    }
+  
+    .comunicacao{
+      font-size: 18px;
+    }
+    .marketing{
+      font-size: 16px;
+    }
+    
+    .pesquisa{
+      font-size: 15px;
+    }
+    .usuario{
+      font-size: 18px;
+    }
   }
 }
