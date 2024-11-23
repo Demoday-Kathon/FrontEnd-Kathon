@@ -134,8 +134,173 @@
     align-items: center;
     
 }
+@media screen and (max-width: 320px) {
+    .SobreAluno{
+        width: 100%;
+     }
+     .Sobre{
+         height: 40vh;
+         align-items: center;
+         justify-content: center;
+     }
+ 
+     .SobreTexto{
+         display: flex;
+     }
+     .Habilidades{
+         width: 100%;
+ 
+     }
+     .Habilidades_tag{
+         width: 100%;
+         display: flex;
+        margin-top: 5px;
+     }
+     .Sobre{
+         height: 50vh;
+     }
+     .Sobre2{
+        width: 90%;
+         height: 50vh;
+     }
+     .TextoDesc{
+         font-size: 15px;
+     }
+     .Titulo_sobre{
+         font-size: 30px;
+         margin-left: 20px;
+     }
+     .Titulo_sobre2{
+         font-size: 30px;
+         margin-left: 20px;
+     }
+     .Titulo_Participacao{
+         font-size: 30px;
+         margin-left: 20px;
+     }
+ 
+     .Titulo_caixa{
+         font-size: 30px;
+         gap: 10px;
+     }
+     .Titulo_sobre{
+         font-size: 25px;
+     }
 
-@media (max-width: 480px){
+}
+
+@media only screen and (min-width:321px) {
+    @media only screen and (max-width:360px) {
+        .SobreAluno{
+            width: 100%;
+         }
+         .Sobre{
+             height: 40vh;
+             align-items: center;
+             justify-content: center;
+         }
+     
+         .SobreTexto{
+             display: flex;
+         }
+         .Habilidades{
+             width: 100%;
+     
+         }
+         .Habilidades_tag{
+             width: 100%;
+             display: flex;
+            margin-top: 20px;
+         }
+         .Sobre{
+             height: 50vh;
+         }
+         .Sobre2{
+            width: 90%;
+             height: 50vh;
+         }
+         .TextoDesc{
+             font-size: 20px;
+         }
+         .Titulo_sobre{
+             font-size: 30px;
+             margin-left: 20px;
+         }
+         .Titulo_sobre2{
+             font-size: 30px;
+             margin-left: 20px;
+         }
+         .Titulo_Participacao{
+             font-size: 30px;
+             margin-left: 20px;
+         }
+     
+         .Titulo_caixa{
+             font-size: 30px;
+             gap: 10px;
+         }
+         .Titulo_sobre{
+             font-size: 34px;
+         }
+    
+    }
+}
+
+@media only screen and (min-width: 361px) {
+    @media only screen and (max-width: 430px){
+        .SobreAluno{
+            width: 100%;
+         }
+         .Sobre{
+             height: 40vh;
+             align-items: center;
+             justify-content: center;
+         }
+     
+         .SobreTexto{
+             display: flex;
+         }
+         .Habilidades{
+             width: 100%;
+     
+         }
+         .Habilidades_tag{
+             width: 100%;
+             display: flex;
+         }
+         .Sobre{
+             height: 35vh;
+         }
+         .Sobre2{
+             height: 47vh;
+         }
+         .TextoDesc{
+             font-size: 16px;
+         }
+         .Titulo_sobre{
+             font-size: 30px;
+             margin-left: 30px;
+         }
+         .Titulo_sobre2{
+             font-size: 30px;
+             margin-left: 30px;
+         }
+         .Titulo_Participacao{
+             font-size: 30px;
+             margin-left: 30px;
+         }
+     
+         .Titulo_caixa{
+             font-size: 30px;
+             gap: 10px;
+         }
+         .Titulo_sobre{
+             font-size: 25px;
+         }
+    }
+}
+
+/* @media (min-width: 480px){
     .SobreAluno{
        width: 100%;
     }
@@ -186,7 +351,7 @@
         font-size: 25px;
     }
 
-}
+} */
 @media only screen and (min-width: 481px) and (max-width: 900px) {
     .SobreAluno{
         width: 90%;

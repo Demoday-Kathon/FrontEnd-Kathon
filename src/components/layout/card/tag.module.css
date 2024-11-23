@@ -243,3 +243,38 @@
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 320px)  {
+  .marketing{
+    font-size:17px;
+  }
+  
+  .pesquisa{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width:321px) {
+  @media only screen and (max-width:360px) {
+    .ilustacao{
+      display: none;
+    }
+    .desing {
+      font-size: 18px;
+    }
+  
+    .comunicacao{
+      font-size: 18px;
+    }
+    .marketing{
+      font-size: 16px;
+    }
+    
+    .pesquisa{
+      font-size: 15px;
+    }
+    .usuario{
+      font-size: 18px;
+    }
+  }
+}

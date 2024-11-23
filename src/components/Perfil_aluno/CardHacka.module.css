@@ -92,3 +92,17 @@
     }
     
 }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .title_hackathon{
+        font-size:17px;
+    }
+    .banner{
+        width: 90%;
+    }
+
+    .container{
+        width: 90%;
+        height: 50vh;
+    }
+}

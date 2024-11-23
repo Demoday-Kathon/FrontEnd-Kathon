@@ -1,3 +1,16 @@
+/* Exemplo de estilos para o ícone */
+.icon {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-10px);
+}
+
+.iconVisible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
 .HeaderComunidade {
     display: flex;
     flex-direction: column;
@@ -108,14 +121,46 @@
 .IconPlay {
     position: absolute;
     z-index: 9999;
-    top: 20%;
+    top: 10%;
     transform: translateY(-50%);
     left: 18em;
 }
 
-button{
+.ButtonIconPlay{
     background: none;
 }
+.Loginb{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 25px;
+    border-radius: 36px;
+    background: rgba(240, 240, 240, 0.1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+    color: #f0f0f0;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 1.5em;
+    transition: 0.5s;
+    cursor: pointer;
+    gap: 0.5em;
+}
+
+.Loginb:hover {
+    background: #f0f0f0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+    color: #141301;
+    font-family: "DM Sans";
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 24px;
+  }
 
 .ButtonIconPlay:hover{
     cursor: pointer;
