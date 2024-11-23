@@ -8,6 +8,7 @@ import Macbook from "../../assets/imgs/macbook.png";
 import styles from "./Sobre.module.css";
 import blur from "../../assets/imgs/elipseblue.png";
 import BeatrizImage from "../../assets/imgs/imgmembros/beatriz.jpg";
+import LucasImage from "../../assets/imgs/imgmembros/Lucas.png";
 import Gustavo from "../../assets/imgs/imgmembros/gustavo.jpg";
 import Ricardo from "../../assets/imgs/imgmembros/ricardo.jpeg";
 import Weslley from "../../assets/imgs/imgmembros/weslley.jpg";
@@ -164,7 +165,7 @@ function Sobre({ children }) {
           <CardMembroTime
             name={"Lucas Carvalho"}
             description={"UI/UX Designer e Desenvolvedor Full-Stack"}
-            photo={BeatrizImage}
+            photo={LucasImage}
             github={"https://github.com/beatrizimarques"}
             linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
           />

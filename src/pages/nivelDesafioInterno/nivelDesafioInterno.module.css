@@ -32,7 +32,7 @@
     font-size: 60px;
     font-style: normal;
     font-weight: 500;
-    line-height: 50px; /* 80% */
+    line-height: 50px;
   }
   text-align: center;
   width: 100%;
@@ -105,6 +105,31 @@
   }
 }
 
+.desafio1:hover {
+  background-image: url(../../assets/imgs/larga.png);
+  p {
+    opacity: 0;
+  }
+}
+.desafio2:hover {
+  background-image: url(../../assets/imgs/jaca.png);
+  p {
+    opacity: 0;
+  }
+}
+.desafio3:hover {
+  background-image: url(../../assets/imgs/dino.png);
+  p {
+    opacity: 0;
+  }
+}
+
+.desafio1,
+.desafio2,
+.desafio3 {
+  text-decoration: none;
+}
+
 .nivels {
   display: flex;
   justify-content: space-around;
@@ -165,24 +190,15 @@
   cursor: pointer;
 }
 
-.desafio1:hover {
-  background-image: url(../../assets/imgs/larga.png);
-  p {
-    opacity: 0; /* Torna o texto invisível */
-  }
+.abadebotoes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -100px;
+  margin-bottom: 10vh;
 }
-.desafio2:hover {
-  background-image: url(../../assets/imgs/jaca.png);
-  p {
-    opacity: 0; /* Torna o texto invisível */
-  }
-}
-.desafio3:hover {
-  background-image: url(../../assets/imgs/dino.png);
-  p {
-    opacity: 0; /* Torna o texto invisível */
-  }
-}
+
 .sumariodesafio {
   color: white;
   text-align: center;
@@ -217,8 +233,8 @@
   background: rgba(20, 19, 1, 0.8);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   backdrop-filter: blur(20px);
-  width: 40%;
-  height: 500px;
+  width: 75%;
+  height: 250px;
   padding: 20px;
 }
 
@@ -235,49 +251,6 @@
   text-align: center;
   margin: 20px 0;
   font-size: 1.4rem;
-}
-@media (max-width: 450px) {
-  .nivels {
-    display: none;
-  }
-  .nivelDesafio {
-    display: flex;
-    flex-direction: column;
-  }
-  .desafio1 {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
-  }
-  .desafio2 {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 5vh;
-  }
-  .desafio3 {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 5vh;
-  }
-  .sumariodesafio {
-    text-align: center;
-    width: 100%;
-    p {
-      font-size: 1em;
-      /* padding: 2em; */
-      margin-bottom: -5vh;
-    }
-  }
-  .titleDesafio {
-    width: 100%;
-    h1 {
-      font-size: 50px;
-    }
-    span {
-      font-size: 50px;
-    }
-  }
 }
 @media (max-width: 450px) {
   .nivels {

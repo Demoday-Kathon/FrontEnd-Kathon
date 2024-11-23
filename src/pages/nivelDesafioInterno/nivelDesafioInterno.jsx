@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import HeaderInterno from "../../components/layout/headerInterno/HeaderInterno";
-import styles from "../nivelDesafio/nivelDesafio.module.css";
+import styles from "../nivelDesafioInterno/nivelDesafioInterno.module.css";
 import largatixa from "../../assets/imgs/largatixa.svg";
 import crocodilo from "../../assets/imgs/crocodilo.svg";
 import dinossauro from "../../assets/imgs/dinossauro.svg";

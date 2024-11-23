@@ -5,7 +5,7 @@ import HeaderInterno from '../../components/layout/headerInterno/HeaderInterno';
 import ModalGame from '../../components/ModalGame/ModalGame';
 import Setawhite from '../../assets/imgs/seta.svg';
 
-const API_KEY = "AIzaSyBfJrzeRAPn1aJOsHJyhdfNcxkOaKJJgOk";
+const API_KEY = "AIzaSyDAHoBgttyRPpF3THz5sET7ub6qURsqQrw";
 
 function DesafiosCode() {
     const editorRef = useRef(null);
@@ -73,7 +73,7 @@ function DesafiosCode() {
         const prompt = "Crie um exercício de programação para o aluno praticar com JavaScript ou Python. O exercício deve ser algo de iniciante. texto curto de no maximo 30 caracteres";
 
         try {
-            const result = await genAIInstance.getGenerativeModel({ model: "gemini-1.5-flash" }).generateContent(prompt);
+            const result = await genAIInstance.getGenerativeModel({ model: "gemini-1.5-flash-latest" }).generateContent(prompt);
             if (result && result.response && result.response.candidates.length > 0) {
                 const exerciseText = result.response.candidates[0].content.parts[0].text;
                 setExercise(exerciseText);
@@ -94,7 +94,7 @@ function DesafiosCode() {
         const feedbackPrompt = `Verifique se o código abaixo resolve o seguinte exercício: ${exercisePrompt}. \n\nCódigo do usuário:\n${userCode}. Não passe a resposta, nem faça código somente escreva o comentário do que esta errado. Nunca diga incorreto, somente correto. a resposta deve ter 80 caracteres e não ultrapasse. Passe um comentário detalhado.`;
         
         try {
-            const result = await genAI.getGenerativeModel({ model: "gemini-1.5-flash" }).generateContent(feedbackPrompt);
+            const result = await genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" }).generateContent(feedbackPrompt);
             if (result && result.response && result.response.candidates.length > 0) {
                 const feedback = result.response.candidates[0].content.parts[0].text;
                 setModalText(feedback);
