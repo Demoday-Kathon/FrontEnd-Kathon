@@ -9,8 +9,22 @@ import Label from '../../components/Form/FormComponents/Label';
 import Input from '../../components/Form/FormComponents/Input';
 import SubmitButton from '../../components/Form/FormComponents/SubmitButton';
 import logoKathon from '../../assets/imgs/logoKathon.png';
+import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function CadastroEmpresa() {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
+
     // Estados para armazenar os dados do formulário
     const [nomeEmpresa, setNomeEmpresa] = useState('');
     const [cnpj, setCnpj] = useState('');
@@ -71,7 +85,7 @@ function CadastroEmpresa() {
 
     return (
         <>
-            <Header />
+            {isMobile? <HeaderMobile /> : <Header />}
             <CardPretoBase customClass="cardPretoForms">
                 <img className={styles.logoKathonLogin} src={logoKathon} alt="logoKathon" />
                 <h1 className={styles.tituloCadastro}>Cadastro Empresa</h1>

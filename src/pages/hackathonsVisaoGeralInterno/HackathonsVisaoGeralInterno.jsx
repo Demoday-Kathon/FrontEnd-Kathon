@@ -1,3 +1,4 @@
+import {React, useEffect, useState} from "react";
 import CardInscricaoInterno from "../../components/cardInscricao/CardInscricaoInterno";
 import CardPreto from "../../components/layout/cardPreto/CardPreto";
 import Bann from "../../components/Banner/Bann";
@@ -5,11 +6,25 @@ import Styles from "../hackathonsVisaoGeralInterno/HackathonVisaoGeralInterno.mo
 import Card from "../../components/layout/card/card";
 import HeaderInterno from "../../components/layout/headerInterno/HeaderInterno";
 import Footer from "../../components/layout/footer/Footer";
+import HeaderMobile from "../../components/HeaderFeedInterno/HeaderFeedInterno";
 
 function HackathonVisaoGeral() {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
+
   return (
     <div className={Styles.ContentPrincipal}>
-      <HeaderInterno />
+      {isMobile? <HeaderMobile /> : <HeaderInterno />}
       <div className={Styles.containerprincipal}>
         <Bann />
         <CardInscricaoInterno />

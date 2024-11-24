@@ -1,13 +1,28 @@
+import React, { useEffect, useState } from 'react'
 import Styles from './Empresas.module.css'
 import CaixaPreta from '../../components/layout/props.empresa/CaixaPreta'
 import Header from "../../components/layout/header/Header"
 import Empresa from "../../assets/imgs/botaoDiferente.png"
 import Footer from "../../components/layout/footer/Footer"
+import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function Empresas() {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
+
     return (
         <section className={Styles.fundoempresa}>
-            <Header />
+            {isMobile? <HeaderMobile /> : <Header />}
             <div className={Styles.empresapai}>
                 <div className={Styles.textempresa}><h2>Hackathons que Conectam <span>Talentos</span> e <span>Transformam Negócios</span> </h2></div>
                 <div className={Styles.empresa1}>

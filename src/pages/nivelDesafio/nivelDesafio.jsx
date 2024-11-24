@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 import HeaderInterno from "../../components/layout/header/Header";
 import styles from "../nivelDesafio/nivelDesafio.module.css";
 import largatixa from "../../assets/imgs/largatixa.svg";
@@ -10,6 +11,19 @@ import Button from "../../components/layout/button/button";
 import { FaExclamationTriangle } from "react-icons/fa";
 
 function NivelDesafio() {
+
+  const [isMobiles, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
+
   const [showPopup, setShowPopup] = useState(false);
 
   const isMobile = () => {
@@ -26,7 +40,7 @@ function NivelDesafio() {
 
   return (
     <>
-      <HeaderInterno />
+      {isMobiles? <HeaderMobile /> : <HeaderInterno />}
       <div className={styles.caixaDesafio}>
         <div className={styles.titleDesafio}>
           <h1>

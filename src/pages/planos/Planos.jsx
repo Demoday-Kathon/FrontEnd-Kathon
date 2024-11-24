@@ -7,12 +7,26 @@ import CardBeneficios from "../../components/layout/props.planos/CardBeneficios"
 import Botton from "../../components/layout/props.planos/Botton"
 import Header from "../../components/layout/header/Header"
 import Footer from "../../components/layout/footer/Footer"
+import {React, useEffect, useState} from "react";
+import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function Planos() {
 
+    const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
+
     return (
         <section className={Styles.paidoplano}> 
-            <Header/>
+            {isMobile? <HeaderMobile /> : <Header />}
             <div className={Styles.fundoplano}>
                 <h1>Planos Empresariais</h1>
                 <div className={Styles.benebox}>

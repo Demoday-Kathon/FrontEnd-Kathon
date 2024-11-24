@@ -15,13 +15,27 @@ import Weslley from "../../assets/imgs/imgmembros/weslley.jpg";
 import Paulo from "../../assets/imgs/imgmembros/paulo.jpg";
 import Raphael from "../../assets/imgs/imgmembros/Raphael.jpg";
 import { motion } from "framer-motion";
-
 import { fadein } from "../../variants";
+import {React, useEffect, useState} from "react";
+import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function Sobre({ children }) {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
+
   return (
     <div className={styles.container}>
-      <Header />
+      {isMobile? <HeaderMobile /> : <Header />}
       <div className={styles.containerPrimary}>
         <div className={styles.images}>
           <img className={styles.elipseBlur} src={blur} alt="blur roxo" />

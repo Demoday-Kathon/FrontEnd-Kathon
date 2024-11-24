@@ -1,25 +1,34 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './Login.module.css';
-
+import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 import Header from '../../components/layout/header/Header';
 import CardPretoBase from '../../components/CardPretoBase2/CardPretoBase';
 import Form from '../../components/Form/Form';
-
 import Input from '../../components/Form/FormComponents/Input';
 import SubmitButton from '../../components/Form/FormComponents/SubmitButton';
 import BotaoHome from '../../components/BotaozinhoHome/BotaoHome';
 import Footer from '../../components/layout/footer/Footer';
 import LinkComponent from '../../components/layout/link/LinkComponent';
-
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '../../components/contexts/UserContext';
-
 import logoKathon from '../../assets/imgs/logoKathon.png';
-
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 
 function Login() {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
+
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const navigate = useNavigate();
@@ -95,7 +104,7 @@ function Login() {
     
     return (
         <>
-            <Header />
+            {isMobile? <HeaderMobile /> : <Header />}
             <CardPretoBase customClass="cardPretoForms">
                 <img className={styles.logoKathonLogin} src={logoKathon} alt="logoKathon" />
                 <h1 className={styles.tituloCardLogin}> Entrar </h1>

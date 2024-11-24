@@ -7,8 +7,22 @@ import ModalPublicacao from '../../components/modalPublicacao/Publicacao';
 import User from '../../assets/imgs/joana.png';
 import styles from './Feed.module.css';
 import { useUser } from '../../components/contexts/UserContext';
+import HeaderMobileInterno from "../../components/HeaderFeedInterno/HeaderFeedInterno";
 
 function Feeds() {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
+
     const { user } = useUser();
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [posts, setPosts] = useState([]); 
@@ -39,7 +53,7 @@ function Feeds() {
 
     return (
         <div className={`${styles.containerComunidadeVisao}`}>
-            <HeaderInterno />
+            {isMobile? <HeaderMobileInterno /> : <HeaderInterno />}
             <div className={styles.Bloco}>
                 <div className={`${styles.blocoInterno}`}>
                     <div className={styles.containeFeedComunity}>

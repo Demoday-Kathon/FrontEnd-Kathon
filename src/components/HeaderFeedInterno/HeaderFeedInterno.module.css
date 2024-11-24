@@ -1,0 +1,89 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  border-left: 1px solid #7400b7;
+  border-right: 1px solid #7400b7;
+  border-bottom: 1px solid #7400b7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  z-index: 100;
+}
+
+.containerButtonHamburguer{
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.hamburgerButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburgerButton svg {
+  fill: #7400b7;
+}
+
+.sidebar {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.visible {
+  opacity: 1;
+  max-height: 500px;
+}
+
+.hidden {
+  opacity: 0;
+  max-height: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 20vh;
+  height: 6vh;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: color 0.3s;
+  padding-bottom: 10px;
+}
+
+.link:hover {
+  color: #7400b7;
+}
+
+.icon {
+  visibility: hidden;
+}
+
+.iconVisible {
+  visibility: visible;
+}

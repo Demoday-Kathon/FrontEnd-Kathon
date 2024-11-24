@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import HeaderInterno from "../../components/layout/headerInterno/HeaderInterno";
 import styles from "../nivelDesafioInterno/nivelDesafioInterno.module.css";
@@ -8,8 +8,22 @@ import dinossauro from "../../assets/imgs/dinossauro.svg";
 import Footer from "../../components/layout/footer/Footer";
 import Button from "../../components/layout/button/button";
 import { FaExclamationTriangle } from "react-icons/fa";
+import HeaderMobile from "../../components/HeaderFeedInterno/HeaderFeedInterno";
 
 function NivelDesafio() {
+
+  const [isMobiles, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
+
   const [showPopup, setShowPopup] = useState(false);
 
   const isMobile = () => {
@@ -26,7 +40,7 @@ function NivelDesafio() {
 
   return (
     <>
-      <HeaderInterno />
+      {isMobiles? <HeaderMobile /> : <HeaderInterno />}
       <div className={styles.caixaDesafio}>
         <div className={styles.titleDesafio}>
           <h1>

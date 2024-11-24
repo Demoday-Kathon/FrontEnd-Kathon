@@ -10,13 +10,26 @@ import Cloud from '../../assets/imgs/Cloud_Fast.png'
 import Smart from '../../assets/imgs/Smart_Speaker.png'
 import HeaderInterno from '../../components/layout/headerInterno/HeaderInterno'
 import Footer from '../../components/layout/footer/Footer'
+import HeaderMobile from "../../components/HeaderFeedInterno/HeaderFeedInterno";
 
 function premios (){
+
+    const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
 
     return(
 
         <>
-        <HeaderInterno/>
+        {isMobile? <HeaderMobile /> : <HeaderInterno />}
         <div className={styles.container_p}>
             <h1 className={styles.text_premio}> Total de Prêmios</h1>
             <div className={styles.container_premio}>

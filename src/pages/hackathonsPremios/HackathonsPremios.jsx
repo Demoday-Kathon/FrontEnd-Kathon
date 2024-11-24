@@ -1,3 +1,4 @@
+import React, {  useEffect, useState } from 'react'
 import Premio from '../../components/Prêmios/Prêmios'
 import trofeus from '../../assets/imgs/trofeus.png'
 import styles from '../hackathonsPremios/HackathonsPremios.module.css'
@@ -10,13 +11,26 @@ import Cloud from '../../assets/imgs/Cloud_Fast.png'
 import Smart from '../../assets/imgs/Smart_Speaker.png'
 import Header from '../../components/layout/header/Header'
 import Footer from '../../components/layout/footer/Footer'
+import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function premios (){
+
+    const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
 
     return(
 
         <>
-        <Header/>
+        {isMobile? <HeaderMobile /> : <Header />}
         <div className={styles.container_p}>
             <h1 className={styles.text_premio}> Total de Prêmios</h1>
             <div className={styles.container_premio}>

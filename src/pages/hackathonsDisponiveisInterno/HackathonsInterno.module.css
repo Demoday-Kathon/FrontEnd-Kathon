@@ -4,14 +4,7 @@
   box-sizing: border-box;
 }
 
-.buttonAzulHacka {
-  display: flex;
-  justify-content: flex-end;
-  width: auto;
-  height: auto;
-  width: 100%;
-  text-decoration: none;
-}
+
 
 .rowHackathonsDisp {
   display: flex;
@@ -146,3 +139,198 @@
   backdrop-filter: blur(10px); /* Ajuste o valor para mais ou menos blur */
   top: 700px;
 }
+/*Disp Mobile*/
+/*Medidas para dispositivos pequenos, com a largura de no máximo 320px (iPhone 5; iPhone SE 2016.)*/
+
+  @media only screen and (max-width: 320px) {
+    .hometitle {
+      font-size: 2.5em;
+      line-height: 1em;
+      margin-bottom: 2em;
+      margin-top: 2em;  
+      width: 100%;
+      padding: 0;
+    }
+
+    .caixadescricao {
+      width: 80%;
+      padding: 0.8em;
+    }
+
+    .descricaodohack {
+      color: #fff;
+      text-align: center;
+      font-size:1.2em;
+      padding: 0;
+    }
+
+    .verificacao {
+      font-size: 1.2em;
+      line-height: 2.5em;
+      margin-top: 4em;
+      margin-bottom: 4em;
+      padding: 0;
+    }
+
+    .rowHackathonsDisp {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 90%;
+      margin: 2em;
+      margin: auto;
+    }
+  } 
+
+
+/*Medidas para dispositivos médios, com a largura entre 321px e 360px (Samsung Galaxy S5; Xiaomi Mi 11i; Huawei P30; Galaxy Z Flip3; OPPO Find X3 PRO; Galaxy A12; Galaxy S21 Ultra; Google Pixel 6 PRO; Xiaomi 12; Galaxy S22; Galaxy S22 +; Galaxy S22 ULTRA; Samsung Galaxy S24; iPhone 12 Mini)*/
+  @media only screen and (min-width:321px) {
+    @media only screen and (max-width:360px) { 
+      .hometitle {
+        font-size: 2.5em;
+        line-height: 1em;
+        margin: auto;
+        margin-bottom: 2em;
+        margin-top: 2em;  
+        width: 90%;
+        padding: 0;
+      }
+  
+      .caixadescricao {
+        width: 80%;
+        padding: 0.8em;
+      }
+  
+      .descricaodohack {
+        color: #fff;
+        text-align: center;
+        font-size:1.2em;
+        padding: 0;
+      }
+  
+      .verificacao {
+        font-size: 1.2em;
+        line-height: 2.5em;
+        margin-top: 4em;
+        margin-bottom: 4em;
+        padding: 0;
+      }
+  
+      .rowHackathonsDisp {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        margin: 2em;
+        margin: auto;
+      }
+    }
+  }
+
+
+/*Medidas para dispositivos médios para grandes, com largura entre 361px e 391px (Galaxy S24 ULTRA; iPhone X; iPhone 12P PRO; iPhone 13 PRO; iPhone 14; iPhone 14 PRO)*/
+
+  @media only screen and (min-width:361px) {
+    @media only screen and (max-width:391px) {
+      .hometitle {
+        font-size: 2.5em;
+        line-height: 1em;
+        margin: auto;
+        margin-bottom: 2em;
+        margin-top: 2em;  
+        width: 90%;
+        padding: 0;
+      }
+  
+      .caixadescricao {
+        width: 80%;
+        padding: 0.8em;
+      }
+  
+      .descricaodohack {
+        color: #fff;
+        text-align: center;
+        font-size:1.2em;
+        padding: 0;
+      }
+  
+      .verificacao {
+        font-size: 1.2em;
+        line-height: 2.5em;
+        margin-top: 4em;
+        margin-bottom: 4em;
+        padding: 0;
+      }
+  
+      .rowHackathonsDisp {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        margin: 2em;
+        margin: auto;
+      }
+    }
+  }
+
+
+
+/*Medidas para dispositivos médios para grandes, com largura entre 391px 430px (Galaxy Note 20; Google Pixel 8; iPhone XR 2018; Iphone 11; iPhone 11 Pro Max; iPhone 12 Pro Max, iPhone 13 Pro Max, iPhone 14 Plus, iPhone 14 Pro Max, Iphone 15, Iphone 15 Plus, Iphone 15 PRO, Iphone 15 PRO MAX, iPhone 16, Iphone 16 Plus, iPhone 16 PRO, iPhone 16 PRO MAX)*/
+
+  @media only screen and (min-width: 392px) {
+    @media only screen and (max-width: 440px) {
+      .hometitle {
+        font-size: 2.5em;
+        line-height: 1em;
+        margin: auto;
+        margin-bottom: 2em;
+        margin-top: 2em;  
+        width: 90%;
+        padding: 0;
+      }
+  
+      .caixadescricao {
+        width: 80%;
+        padding: 0.8em;
+      }
+  
+      .descricaodohack {
+        color: #fff;
+        text-align: center;
+        font-size:1.2em;
+        padding: 0;
+      }
+  
+      .verificacao {
+        font-size: 1.2em;
+        line-height: 2.5em;
+        margin-top: 4em;
+        margin-bottom: 4em;
+        padding: 0;
+      }
+  
+      .rowHackathonsDisp {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        margin: 2em;
+        margin: auto;
+      }
+    }
+  } 
+
+
+/*Medidas para Tablets: */
+@media only screen and (min-width: 441px) {
+    @media only screen and (max-width: 930px) {
+      .rowHackathonsDisp {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        margin: 2em;
+        margin: auto;
+      }
+    }
+  }

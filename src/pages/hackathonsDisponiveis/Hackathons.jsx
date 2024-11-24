@@ -1,3 +1,4 @@
+import {React, useEffect, useState} from "react";
 import styles from "./Hackathons.module.css";
 import banner from "../../assets/imgs/banner.png";
 import accenture from "../../assets/imgs/accenture.png";
@@ -8,16 +9,29 @@ import Footer from "../../components/layout/footer/Footer";
 import { Link } from "react-router-dom";
 import VideoBack2 from "../../assets/imgs/video_back - kathon.mp4";
 import Tag from "../../components/layout/card/tag";
-
+import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 import Person from "../../components/layout/card/person";
 import person1 from "../../assets/imgs/pessoa1.png";
 import person2 from "../../assets/imgs/pessoa2.png";
 import person3 from "../../assets/imgs/pessoa3.png";
 
 function Hackathons() {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
+
   return (
     <div className={styles.hackathons}>
-      <Header />
+      {isMobile? <HeaderMobile /> : <Header />}
       {/* TESTE DO VIDEO */}
       <div className="App">
         <div className="video-background">
