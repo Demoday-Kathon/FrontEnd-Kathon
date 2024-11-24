@@ -307,7 +307,7 @@
   }
   
   .buttonBaixo2{
-    width: 50%;
+    width: 100%;
     font-size: 0.4em;
   }
 
@@ -318,19 +318,19 @@
   }
   
   .buttonBaixo2:hover {
-    width: 50%;
+    width: 100%;
     font-size: 0.4em;
   }
 
   .buttonAzulHome {
-    width: 65%;
+    width: 100%;
     font-size: 0.2em;
     margin-bottom: 1em;
     padding: 1em;
   }
 
   .buttonAzulHome:hover {
-    width: 65%;
+    width: 100%;
     font-size: 0.2em;
     background: rgb(86, 3, 134);
     color: #fff;
@@ -369,7 +369,7 @@
   }
   
   .buttonBaixo2{
-    width: 50%;
+    width: 100%;
     font-size: 0.4em;
   } 
 
@@ -379,7 +379,7 @@
   }
 
   .buttonAzulHome {
-    width: 60%;
+    width: 100%;
     font-size: 0.2em;
     margin-bottom: 1em;
     padding: 1em;
@@ -431,6 +431,11 @@
       font-size: 0.4em;
     }
 
+    .buttonBaixo:hover , .buttonBaixo2:hover {
+      font-size: 0.4em;
+      border-radius: 36px;
+    }
+
     .buttonAzulHome {
       width: 100%;
       font-size: 0.2em;
@@ -443,6 +448,18 @@
       font-size: 0.2em;
       background: rgb(86, 3, 134);
       color: #fff;
+    }
+
+
+    .buttonPlaninhos {
+      width: 65%;
+      margin-top: 40px;
+      font-size: 0.5em;
+    }
+    .buttonPlaninhos:hover {
+      width: 65%;
+      margin-top: 40px;
+      font-size: 0.5em;
     }
 
 
@@ -471,11 +488,12 @@
   }
   
   .buttonBaixo2{
-    width: 50%;
+    width: 100%;
     font-size: 0.4em;
   } 
 
   .buttonBaixo:hover , .buttonBaixo2:hover {
+    
     font-size: 0.4em;
     border-radius: 36px;
   }
@@ -487,14 +505,14 @@
   }
 
   .buttonAzulHome {
-    width: 65%;
+    width: 100%;
     font-size: 0.2em;
     margin-bottom: 1em;
     padding: 1em;
   }
 
   .buttonAzulHome:hover {
-    width: 65%;
+    width: 100%;
     font-size: 0.2em;
     background: rgb(86, 3, 134);
     color: #fff;
