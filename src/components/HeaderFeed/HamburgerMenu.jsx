@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaLessThan } from "react-icons/fa";
-import Styles from "./HeaderFeed.module.css"; // Certifique-se de que este CSS está correto
+import Styles from "./HeaderFeed.module.css";
 
 function HamburgerMenu({ links, logo }) {
-  const location = useLocation(); // Para verificar a rota ativa
+  const location = useLocation();
   const [isNavVisible, setIsNavVisible] = useState(false);
   const [hoveredLink, setHoveredLink] = useState(null);
 
@@ -12,28 +12,35 @@ function HamburgerMenu({ links, logo }) {
 
   return (
     <header className={Styles.header}>
-      {/* Ícone de menu */}
-      <button className={Styles.hamburgerButton} onClick={toggleNav}>
-        <svg viewBox="0 0 100 80" width="40" height="40">
-          <rect width="100" height="20" rx="10"></rect>
-          <rect y="30" width="100" height="20" rx="10"></rect>
-          <rect y="60" width="100" height="20" rx="10"></rect>
-        </svg>
-      </button>
+      <div className={Styles.containerButtonHamburguer}>
 
-      {/* Barra lateral */}
+      <Link to="/">
+            <img className={Styles.logo} src={logo} alt="Logo" />
+      </Link>
+
+      <button className={Styles.hamburgerButton} onClick={toggleNav}>
+        {isNavVisible ? (
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <line x1="10" y1="10" x2="90" y2="70" stroke="white" strokeWidth="10" />
+            <line x1="10" y1="70" x2="90" y2="10" stroke="white" strokeWidth="10" />
+          </svg>
+        ) : (
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20" rx="10"></rect>
+            <rect y="30" width="100" height="20" rx="10"></rect>
+            <rect y="60" width="100" height="20" rx="10"></rect>
+          </svg>
+        )}
+      </button>
+      </div>
+
       <aside
         className={`${Styles.sidebar} ${
           isNavVisible ? Styles.visible : Styles.hidden
         }`}
       >
         <div className={Styles.container}>
-          {/* Logo */}
-          <Link to="/">
-            <img className={Styles.logo} src={logo} alt="Logo" />
-          </Link>
 
-          {/* Links */}
           <nav className={Styles.navLinks}>
             {links.map((link) => (
               <Link

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import HeaderFeed from "../../components/HeaderFeed/HeaderFeed";
 import styles from "./Home.module.css";
 import Header from "../../components/layout/header/Header";
 import Footer from "../../components/layout/footer/Footer";
@@ -48,6 +48,19 @@ import setaparacima from "../../assets/imgs/setaparacima.svg";
 import Typewriter from "typewriter-effect";
 
 function Home() {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+
+    handleMediaQueryChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -58,7 +71,7 @@ function Home() {
 
   return (
     <div className={styles.home}>
-      <Header />
+      {isMobile? <HeaderFeed /> : <Header />}
       <container className={styles.homeTitulo}>
         {/* teste do back */}
         <div className="App">
