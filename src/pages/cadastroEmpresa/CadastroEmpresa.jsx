@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../cadastroEmpresa/CadastroEmpresa.module.css';
 import styles1 from './CadastroEmpresa.module.css';
 import { Link } from 'react-router-dom';
@@ -16,7 +16,7 @@ function CadastroEmpresa() {
     const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const mediaQuery = window.matchMedia("(max-width: 868px)");
     const handleMediaQueryChange = (e) => setIsMobile(e.matches);
 
     handleMediaQueryChange(mediaQuery);

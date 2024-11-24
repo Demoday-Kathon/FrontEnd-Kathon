@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaLessThan } from "react-icons/fa";
 import Styles from "./HeaderFeed.module.css";
+import LinkComponent from '../layout/link/LinkComponent';
+import Button from '../layout/button/button';
 
 function HamburgerMenu({ links, logo }) {
   const location = useLocation();
@@ -63,6 +65,7 @@ function HamburgerMenu({ links, logo }) {
                 {link.name}
               </Link>
             ))}
+            <LinkComponent customClass="buttonEntrarNav" linkTo="/Login" text={<Button customClass="buttonHeaderMobile" text="Entrar"/>}>  </LinkComponent>
           </nav>
         </div>
       </aside>

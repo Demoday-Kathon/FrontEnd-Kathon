@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-
-
 .rowHackathonsDisp {
   display: flex;
   flex-direction: row;

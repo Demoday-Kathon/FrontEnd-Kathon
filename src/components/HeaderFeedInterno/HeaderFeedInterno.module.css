@@ -1,5 +1,6 @@
 .header {
-  position: fixed;
+  position: relative;
+  top: 0;
   width: 100%;
   background-color: black;
   border-left: 1px solid #7400b7;
@@ -23,6 +24,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  padding-right: 2vh;
 }
 
 .hamburgerButton svg {
@@ -55,8 +57,17 @@
 }
 
 .logo {
-  width: 20vh;
-  height: 6vh;
+  width: 15vh;
+  height: 4vh;
+}
+
+
+@media screen and (min-width: 568px) {
+  .logo {
+    width: 35vh;
+    height: 6vh;
+  }
+  
 }
 
 .navLinks {

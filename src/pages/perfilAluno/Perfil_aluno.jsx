@@ -9,7 +9,7 @@ function Perfil_aluno(){
     const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const mediaQuery = window.matchMedia("(max-width: 868px)");
     const handleMediaQueryChange = (e) => setIsMobile(e.matches);
 
     handleMediaQueryChange(mediaQuery);

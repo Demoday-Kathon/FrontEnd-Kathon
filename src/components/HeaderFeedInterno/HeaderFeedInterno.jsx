@@ -6,8 +6,8 @@ function HeaderFeed() {
   const links = [
     { path: "/feed", name: "feed" },
     { path: "/hackathonsinterno", name: "Hackathons" },
-    { path: "/nivelDesafioInterno", name: "Empresas" },
-    { path: "/Perfil_aluno", name: "Desafios" },
+    { path: "/nivelDesafioInterno", name: "Desafios" },
+    { path: "/Perfil_aluno", name: "Perfil" },
   ];
 
   return <HamburgerMenu links={links} logo={LogoKathon} />;

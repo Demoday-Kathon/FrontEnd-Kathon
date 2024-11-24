@@ -1,5 +1,6 @@
 .header {
-  position: fixed;
+  position: relative;
+  top: 0;
   width: 100%;
   background-color: black;
   border-left: 1px solid #7400b7;
@@ -23,6 +24,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  padding-right: 2vh;
 }
 
 .hamburgerButton svg {
@@ -52,17 +54,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
-  width: 20vh;
-  height: 6vh;
+  width: 15vh;
+  height: 4vh;
+}
+
+@media screen and (min-width: 568px) {
+  .logo {
+    width: 35vh;
+    height: 6vh;
+  }
 }
 
 .navLinks {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-right: 2.5vh;
 }
 
 .link {
@@ -71,9 +83,10 @@
   align-items: center;
   color: white;
   text-decoration: none;
-  margin: 10px 0;
+  margin: 10px 0px;
   transition: color 0.3s;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .link:hover {

@@ -15,7 +15,7 @@ function NivelDesafio() {
   const [isMobiles, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const mediaQuery = window.matchMedia("(max-width: 868px)");
     const handleMediaQueryChange = (e) => setIsMobile(e.matches);
 
     handleMediaQueryChange(mediaQuery);
@@ -23,20 +23,6 @@ function NivelDesafio() {
 
     return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
   }, []);
-
-  const [showPopup, setShowPopup] = useState(false);
-
-  const isMobile = () => {
-    return /Mobi|Android/i.test(navigator.userAgent);
-  };
-
-  const handleLinkClick = (e) => {
-    if (isMobile()) {
-      e.preventDefault();
-      setShowPopup(true);
-      setTimeout(() => setShowPopup(false), 5000);
-    }
-  };
 
   return (
     <>
@@ -57,13 +43,13 @@ function NivelDesafio() {
           </p>
         </div>
         <div className={styles.nivelDesafio}>
-          <Link className={styles.desafio1} to="/login" onClick={handleLinkClick}>
+          <Link className={styles.desafio1} to="/login">
             <p>Modo Largatixa</p>
           </Link>
-          <Link className={styles.desafio2} to="/login" onClick={handleLinkClick}>
+          <Link className={styles.desafio2} to="/login" >
             <p>Modo Jacaré</p>
           </Link>
-          <Link className={styles.desafio3} to="/login" onClick={handleLinkClick}>
+          <Link className={styles.desafio3} to="/login">
             <p>Modo Dinossauro</p>
           </Link>
         </div>
@@ -97,17 +83,6 @@ function NivelDesafio() {
           <Button customClass="botaodesafio3" text="Iniciar" />
         </div>
       </div>
-
-      {showPopup && (
-        <div className={styles.modal}>
-          <div className={styles.modalContent}>
-            <FaExclamationTriangle size={48} />
-            <div className={styles.modalText}>
-              <p>Esta funcionalidade não está disponível para mobile.</p>
-            </div>
-          </div>
-        </div>
-      )}
 
       <Footer />
     </>
