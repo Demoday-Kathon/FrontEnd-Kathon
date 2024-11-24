@@ -14,6 +14,7 @@ import person3 from "../../assets/imgs/pessoa3.png";
 import Tag from "../../components/layout/card/tag";
 import Button from "../../components/layout/button/button";
 import Banner from "../../assets/imgs/banner.png";
+import LinkComponent from "../../components/layout/link/LinkComponent";
 
 function HackathonVisaoGeral() {
 
@@ -74,7 +75,9 @@ function HackathonVisaoGeral() {
                 </div>
               }
               children2={
-                <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                <LinkComponent linkTo={"/Login"}>
+                    <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                   </LinkComponent>
               }
             ></Card>
       <Card
@@ -100,7 +103,9 @@ function HackathonVisaoGeral() {
                 </div>
               }
               children2={
-                <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                <LinkComponent linkTo={"/Login"}>
+                    <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                   </LinkComponent>
               }
             ></Card>
         

@@ -178,7 +178,7 @@
   border-radius: 1em;
   background: #7400b7ff;
   backdrop-filter: blur(20px);
-  width: 60%;
+  width: 100%;
   font-size: 0.3em;
   margin-bottom: 1em;
   padding: 1em;
@@ -187,7 +187,7 @@
 }
 
 .buttonAzulHome:hover {
-  width: 60%;
+  width: 100%;
   font-size: 0.3em;
   background: rgb(86, 3, 134);
   color: #fff;
@@ -197,14 +197,14 @@
   border-radius: 1em;
   background: #7400b7ff;
   backdrop-filter: blur(20px);
-  width: 50%;
+  width: 100%;
   font-size: 0.6em;
   margin-bottom: 1em;
   padding: 1em;
 }
 
 .buttonAzulHacka:hover {
-  width: 50%;
+  width: 100%;
   font-size: 0.6em;
   background: rgb(86, 3, 134);
   color: #fff;
@@ -347,14 +347,14 @@
   }
 
   .buttonAzulHacka {
-    width: 60%;
+    width: 100%;
     font-size: 0.4em;
     margin-bottom: 1em;
     padding: 1em;
   }
   
   .buttonAzulHacka:hover {
-    width: 60%;
+    width: 100%;
     font-size: 0.4em;
     background: rgb(86, 3, 134);
     color: #fff;
@@ -403,14 +403,14 @@
   }
 
   .buttonAzulHacka {
-    width: 60%;
+    width: 100%;
     font-size: 0.4em;
     margin-bottom: 1em;
     padding: 1em;
   }
   
   .buttonAzulHacka:hover {
-    width: 60%;
+    width: 100%;
     font-size: 0.4em;
     background: rgb(86, 3, 134);
     color: #fff;
@@ -427,19 +427,19 @@
     }
     
     .buttonBaixo2{
-      width: 50%;
+      width: 100%;
       font-size: 0.4em;
     }
 
     .buttonAzulHome {
-      width: 60%;
+      width: 100%;
       font-size: 0.2em;
       margin-bottom: 1em;
       padding: 1em;
     }
   
     .buttonAzulHome:hover {
-      width: 60%;
+      width: 100%;
       font-size: 0.2em;
       background: rgb(86, 3, 134);
       color: #fff;
@@ -447,14 +447,14 @@
 
 
     .buttonAzulHacka {
-      width: 70%;
+      width: 100%;
       font-size: 0.4em;
       margin-bottom: 1em;
       padding: 1em;
     }
     
     .buttonAzulHacka:hover {
-      width: 0%;
+      width: 100%;
       font-size: 0.4em;
       background: rgb(86, 3, 134);
       color: #fff;
@@ -512,14 +512,14 @@
   }
 
   .buttonAzulHacka {
-    width: 60%;
+    width: 100%;
     font-size: 0.5em;
     margin-bottom: 1em;
     padding: 1em;
   }
   
   .buttonAzulHacka:hover {
-    width: 60%;
+    width: 100%;
     font-size: 0.5em;
     background: rgb(86, 3, 134);
     color: #fff;

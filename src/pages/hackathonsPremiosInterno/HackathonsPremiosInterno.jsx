@@ -11,6 +11,7 @@ import Smart from '../../assets/imgs/Smart_Speaker.png'
 import HeaderInterno from '../../components/layout/headerInterno/HeaderInterno'
 import Footer from '../../components/layout/footer/Footer'
 import HeaderMobile from "../../components/HeaderFeedInterno/HeaderFeedInterno";
+import React, { useEffect, useState } from 'react';
 
 function premios (){
 

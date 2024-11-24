@@ -269,7 +269,9 @@ function Home() {
                 </div>
               }
               children2={
-                <Button text="Saiba Mais" customClass="buttonAzulHome" />
+                <LinkComponent linkTo={"/Hackathons"}>
+                  <Button text="Saiba Mais" customClass="buttonAzulHome" />
+                </LinkComponent>
               }
             ></Card>
 
@@ -295,7 +297,9 @@ function Home() {
                 </div>
               }
               children2={
-                <Button text="Saiba Mais" customClass="buttonAzulHome" />
+                <LinkComponent linkTo={"/Hackathons"}>
+                  <Button text="Saiba Mais" customClass="buttonAzulHome" />
+                </LinkComponent>
               }
             ></Card>
           </div>

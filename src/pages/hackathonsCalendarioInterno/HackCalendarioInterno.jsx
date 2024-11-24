@@ -1,10 +1,10 @@
-import Styles from '../hackathonsCalendarioInterno/HackCalendarioInterno.module.css'
+import Styles from '../../pages/hackathonsCalendario/HackCalendario.module.css'
 import IconTempo from '../../assets/imgs/backgrounds/iconTempo.png'
-import HeaderInterno from '../../components/layout/headerInterno/HeaderInterno'
+import Header from '../../components/layout/header/Header'
 import Footer from '../../components/layout/footer/Footer'
 import TimelineVertical from '../../components/Timeline/TimeLineVertical'
 import {React, useEffect, useState} from "react";
-import HeaderMobile from "../../components/HeaderFeedInterno/HeaderFeedInterno";
+import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function HackCalendario(){
 
@@ -22,7 +22,7 @@ function HackCalendario(){
 
     return(
         <>
-            {isMobile? <HeaderMobile /> : <HeaderInterno />}
+            {isMobile? <HeaderMobile /> : <Header />}
                 <div className={Styles.container}>
                     <div className={Styles.content}>
                         <div className="navBar">

@@ -1,10 +1,10 @@
 import {React, useEffect, useState} from "react";
-import CardInscricao from "../../components/cardInscricao/CardInscricao";
+import CardInscricao from "../../components/cardInscricao/CardInscricaoInterno";
 import CardPreto from "../../components/layout/cardPreto/CardPreto";
 import Bann from "../../components/Banner/Bann";
 import Styles from "../hackathonsVisaoGeralInterno/HackathonVisaoGeralInterno.module.css";
 import Card from "../../components/layout/card/card";
-import Header from "../../components/layout/header/Header";
+import Header from "../../components/layout/headerInterno/HeaderInterno";
 import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 import Footer from "../../components/layout/footer/Footer";
 import Person from "../../components/layout/card/person";
@@ -14,6 +14,7 @@ import person3 from "../../assets/imgs/pessoa3.png";
 import Tag from "../../components/layout/card/tag";
 import Button from "../../components/layout/button/button";
 import Banner from "../../assets/imgs/banner.png";
+import LinkComponent from "../../components/layout/link/LinkComponent";
 
 function HackathonVisaoGeral() {
 
@@ -74,7 +75,9 @@ function HackathonVisaoGeral() {
                 </div>
               }
               children2={
-                <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                <LinkComponent linkTo={"/HackathonVisaoGeralInterno"}>
+                    <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                   </LinkComponent>
               }
             ></Card>
       <Card
@@ -100,7 +103,9 @@ function HackathonVisaoGeral() {
                 </div>
               }
               children2={
-                <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                <LinkComponent linkTo={"/HackathonVisaoGeralInterno"}>
+                    <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                   </LinkComponent>
               }
             ></Card>
         
