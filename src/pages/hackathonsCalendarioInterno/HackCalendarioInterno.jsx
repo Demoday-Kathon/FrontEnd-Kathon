@@ -1,10 +1,10 @@
 import Styles from '../../pages/hackathonsCalendario/HackCalendario.module.css'
 import IconTempo from '../../assets/imgs/backgrounds/iconTempo.png'
-import Header from '../../components/layout/header/Header'
+import Header from '../../components/layout/headerInterno/HeaderInterno'
 import Footer from '../../components/layout/footer/Footer'
 import TimelineVertical from '../../components/Timeline/TimeLineVertical'
 import {React, useEffect, useState} from "react";
-import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
+import HeaderMobile from "../../components/HeaderFeedInterno/HeaderFeedInterno";
 
 function HackCalendario(){
 
