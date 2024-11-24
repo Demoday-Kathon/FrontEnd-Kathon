@@ -104,7 +104,9 @@ function Home() {
             <Button customClass="buttonBaixo" text="Cadastre-se" />
           </LinkComponent>
 
-          <Button customClass="buttonBaixo2" text="Seja parceiro" />
+          <LinkComponent customClass="botaohome" linkTo={"/CadastroEmpresa"}> 
+            <Button customClass="buttonBaixo2" text="Seja parceiro" />
+          </LinkComponent>
         </div>
         <hr
           style={{
@@ -493,7 +495,9 @@ function Home() {
             <p>Diamante</p>
           </motion.div>
         </motion.div>
-        <Button text="Conheça os planos" customClass="buttonPlaninhos" />
+        <Link className={styles.LinksPlanos} to="/planos">
+          <Button text="Conheça os planos" customClass="buttonPlaninhos" />
+        </Link>
         <motion.h1
           className={styles.homeTitulo7}
           variants={fadein("up", 0.9)}

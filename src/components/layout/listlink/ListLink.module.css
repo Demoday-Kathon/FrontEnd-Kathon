@@ -139,20 +139,20 @@ ul li Link {
   .listLinkRowSocial,
   .listLinkCollum,
   .listLinkCollum2 {
+    .listLinks li {
+      font-size: 0.9em;
+      margin: 0.2em 0;
+    }
     flex-direction: column;
     align-items: center;
     gap: 0.5em;
   }
 
-  .listLinks li {
-    font-size: 0.9em;
-    margin: 0.2em 0;
-  }
-
+  
   .listLinkRowSocial li svg {
     margin: 0.5em;
     width: 1.2em;
     height: 1.2em;
-  } */
+    } */
   }
 }

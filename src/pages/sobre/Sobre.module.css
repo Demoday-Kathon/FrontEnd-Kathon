@@ -337,12 +337,12 @@
 
 @media screen and (max-width: 768px) {
   .containerPrimary {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: 0vh;
     height: auto;
-    margin-top: 30vh;
+    margin-top: 5vh;
     margin-bottom: 20vh;
   }
 
@@ -371,7 +371,7 @@
   }
 
   .images {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100%;

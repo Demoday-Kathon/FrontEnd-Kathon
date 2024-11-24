@@ -12,9 +12,7 @@
   justify-content: center;
 }
 .containersubprincipal {
-  width: calc(
-    100% - 130px
-  ); /* Calcula a largura subtraindo 130px da largura total */
+  width: calc(100% - 130px);
   position: relative;
   display: flex;
   margin-left: 130px;
@@ -32,10 +30,13 @@
 }
 
 .cardHacks {
-  margin-top: 50px;
   display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20vh;
   flex-direction: row;
 }
+
 @media (max-width: 30em) {
   .ContentPrincipal {
     padding: 0.625em;
@@ -76,4 +77,22 @@
       flex-direction: column;
     }
   }
+}
+
+
+.tagsHacka {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90%;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+}
+
+.people {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  
 }
