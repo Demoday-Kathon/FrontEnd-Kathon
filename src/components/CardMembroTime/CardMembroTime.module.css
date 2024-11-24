@@ -80,9 +80,41 @@
     }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 440px) {
     .CardMember{
         width: 95%;
-        height: 65vh;
+        height: 50vh;
+        margin-top: 3em;
+    }
+
+    .ContainerInformationMember {
+        height: 10em;
+    }
+
+    .ContainerImageLogo {
+        margin-top: 1em;
+    }
+
+    .ImageMember {
+        height: 25em;
+    }
+}
+@media (max-width: 389px) {
+    .CardMember{
+        width: 95%;
+        height: 75vh;
+        margin-bottom: 7em;
+    }
+
+    .ContainerInformationMember {
+        height: 20em;
+    }
+
+    .ContainerImageLogo {
+        margin-top: 1em;
+    }
+
+    .ImageMember {
+        height: 20em;
     }
 }
