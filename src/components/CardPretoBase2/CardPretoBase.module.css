@@ -82,18 +82,43 @@
  /*Medida Mobile*/
 
  @media only screen and (max-width: 320px) {
-  
+  .cardPretoForms {
+    width: 90%;
+    padding: 0;
+    padding-top: 2em;
+  }
 
 
 
  }
    @media only screen and (min-width:321px) {
-     @media only screen and (max-width:360px) {}
+     @media only screen and (max-width:360px) {
+      .cardPretoForms {
+        width: 90%;
+        padding: 0;
+        padding-top: 2em;
+      }
+      
+     }
    }
 
 
-   @media only screen and (min-width: 361px) {
-     @media only screen and (max-width: 430px) {
+
+
+  @media only screen and (min-width: 361px) {
+    @media only screen and (max-width: 391px) {
+      .cardPretoForms {
+        width: 90%;
+        padding: 0;
+        padding-top: 2em;
+      }
+
+    }
+  }
+
+
+   @media only screen and (min-width: 392px) {
+     @media only screen and (max-width: 440px) {
        .cardPretoForms {
          width: 90%;
          margin-bottom: 10em;
@@ -102,10 +127,10 @@
    }
 
    /* Medida Tablet */
-   @media only screen and (min-width: 431px) {
+   @media only screen and (min-width: 441px) {
      @media only screen and (max-width: 900px) {
        .cardPretoForms {
-         width: 90%;
+         width: 80%;
        }
 
        .menor {

@@ -1,5 +1,4 @@
 .formBase {
-
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -13,10 +12,3 @@
 
 }
 
-
-/* Medida Tablet */
-@media only screen and (min-width: 420px) {
-    @media only screen and (max-width: 800px) {
-      
-    }
-  }

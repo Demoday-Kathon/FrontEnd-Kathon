@@ -73,8 +73,11 @@
     text-decoration: none;
 }
 
-/*Medida Mobile*/
-@media (max-width: 430px) {
+
+/*Disp Mobile*/
+/*Medidas para dispositivos pequenos, com a largura de no máximo 320px (iPhone 5; iPhone SE 2016.)*/
+
+  @media only screen and (max-width: 320px) {
     .logoKathonLogin {
         width: 5em;
         height: 5em;
@@ -102,27 +105,239 @@
 
 
     .divisorLogin {        
-        width: 100%;
+        display: none;
     }
 
     .possuiConta {
         width: 100%;
         font-size: 1.5em;
     }
+  } 
 
-}
 
-/* Medida Tablet */
-@media only screen and (min-width: 431px) {
-    @media only screen and (max-width: 930px) {
-        .esqueceuSenha {
-            margin-bottom: 2em;
+/*Medidas para dispositivos médios, com a largura entre 321px e 360px (Samsung Galaxy S5; Xiaomi Mi 11i; Huawei P30; Galaxy Z Flip3; OPPO Find X3 PRO; Galaxy A12; Galaxy S21 Ultra; Google Pixel 6 PRO; Xiaomi 12; Galaxy S22; Galaxy S22 +; Galaxy S22 ULTRA; Samsung Galaxy S24; iPhone 12 Mini)*/
+ 
+  @media only screen and (min-width:321px) {
+    @media only screen and (max-width:360px) { 
+        .logoKathonLogin {
+            width: 5em;
+            height: 5em;
         }
-
-
-
+    
+    
+        .tituloCardLogin {
+            color: #ffffff;
+            font-size: 3em;
+        }
+    
+        .esqueceuSenha {
+            color: rgba(240, 240, 240, 0.80);
+            font-weight: normal;
+            font-size: 1.5em;
+            transition: 0.5s;
+            color: #FFF;
+            font-weight: bold;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 0.7em;
+            margin-top: 0.1em;
+    
+        }
+    
+    
+        .divisorLogin {        
+            display: none;
+        }
+    
         .possuiConta {
-            width: 50%;
+            width: 100%;
+            font-size: 1.5em;
         }
     }
-}
+  }
+
+
+/*Medidas para dispositivos médios para grandes, com largura entre 361px e 391px (Galaxy S24 ULTRA; iPhone X; iPhone 12P PRO; iPhone 13 PRO; iPhone 14; iPhone 14 PRO)*/
+
+  @media only screen and (min-width:361px) {
+    @media only screen and (max-width:391px) {
+        .logoKathonLogin {
+            width: 5em;
+            height: 5em;
+        }
+    
+    
+        .tituloCardLogin {
+            color: #ffffff;
+            font-size: 3em;
+        }
+    
+        .esqueceuSenha {
+            color: rgba(240, 240, 240, 0.80);
+            font-weight: normal;
+            font-size: 1.5em;
+            transition: 0.5s;
+            color: #FFF;
+            font-weight: bold;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 0.7em;
+            margin-top: 0.1em;
+    
+        }
+    
+    
+        .divisorLogin {        
+            width: 100%;
+        }
+    
+        .possuiConta {
+            width: 100%;
+            font-size: 1.5em;
+        }
+
+        .divisorLogin {        
+            display: none;
+        }
+    }
+  }
+
+
+
+/*Medidas para dispositivos médios para grandes, com largura entre 391px 430px (Galaxy Note 20; Google Pixel 8; iPhone XR 2018; Iphone 11; iPhone 11 Pro Max; iPhone 12 Pro Max, iPhone 13 Pro Max, iPhone 14 Plus, iPhone 14 Pro Max, Iphone 15, Iphone 15 Plus, Iphone 15 PRO, Iphone 15 PRO MAX, iPhone 16, Iphone 16 Plus, iPhone 16 PRO, iPhone 16 PRO MAX)*/
+
+  @media only screen and (min-width: 392px) {
+    @media only screen and (max-width: 440px) {
+        .logoKathonLogin {
+            width: 5em;
+            height: 5em;
+        }
+    
+    
+        .tituloCardLogin {
+            color: #ffffff;
+            font-size: 3em;
+        }
+    
+        .esqueceuSenha {
+            color: rgba(240, 240, 240, 0.80);
+            font-weight: normal;
+            font-size: 1.5em;
+            transition: 0.5s;
+            color: #FFF;
+            font-weight: bold;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 0.7em;
+            margin-top: 0.1em;
+    
+        }
+    
+    
+        .divisorLogin {        
+            width: 100%;
+        }
+    
+        .possuiConta {
+            width: 100%;
+            font-size: 1.5em;
+        }
+
+        .divisorLogin {        
+            display: none;
+        }
+    }
+  } 
+
+
+
+/*Medidas para Tablets: */
+@media only screen and (min-width: 441px) {
+    @media only screen and (max-width: 800px) {
+        .logoKathonLogin {
+            width: 5em;
+            height: 5em;
+        }
+    
+    
+        .tituloCardLogin {
+            color: #ffffff;
+            font-size: 3em;
+        }
+    
+        .esqueceuSenha {
+            color: rgba(240, 240, 240, 0.80);
+            font-weight: normal;
+            font-size: 2.5em;
+            transition: 0.5s;
+            color: #FFF;
+            font-weight: bold;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 0.7em;
+            margin-top: 0.1em;
+    
+        }
+    
+    
+        .divisorLogin {        
+            width: 100%;
+        }
+    
+        .possuiConta {
+            width: 100%;
+            font-size: 2.5em;
+        }
+
+        .divisorLogin {        
+            display: none;
+        }
+    }
+  }
+
+/*Medidas para Tablets: */
+@media only screen and (min-width: 801px) {
+    @media only screen and (max-width: 930px) {
+        .logoKathonLogin {
+            width: 5em;
+            height: 5em;
+        }
+    
+    
+        .tituloCardLogin {
+            color: #ffffff;
+            font-size: 3em;
+        }
+    
+        .esqueceuSenha {
+            color: rgba(240, 240, 240, 0.80);
+            font-weight: normal;
+            font-size: 2.5em;
+            transition: 0.5s;
+            color: #FFF;
+            font-weight: bold;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 0.7em;
+            margin-top: 0.1em;
+    
+        }
+    
+    
+        .divisorLogin {        
+            width: 100%;
+        }
+    
+        .possuiConta {
+            width: 100%;
+            font-size: 1.5em;
+        }
+
+        .divisorLogin {        
+            display: none;
+        }
+    }
+  }
+
+
+

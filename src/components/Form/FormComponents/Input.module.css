@@ -28,10 +28,13 @@
   margin-right: 0.5em;
 }
 
-@media (max-width: 430px) {
+
+/*Medida Mobile*/
+
+@media only screen and (max-width: 320px) {
   .inputFormsLogin {
     width: 100%;
-    font-size: 1em;
+    font-size: 1.8em;
     display: flex;
     padding: 0.5em 0em 0.5em 0.8em;
     margin-bottom: 1em;
@@ -39,26 +42,83 @@
   }
 
 
-}
+
+ }
+   @media only screen and (min-width:321px) {
+     @media only screen and (max-width:360px) {
+
+      .inputFormsLogin {
+        width: 100%;
+        font-size: 1.8em;
+        display: flex;
+        padding: 0.5em 0em 0.5em 0.8em;
+        margin-bottom: 1em;
+        border-radius: 7px;
+      }
+     }
+   }
 
 
 
-/* Medida Tablet */
-@media only screen and (min-width: 430px) {
-  @media only screen and (max-width: 930px) {
-    .inputFormsLogin {
-      width: 90%;
-      padding: 0.5em 0.5em 0.5em 0.5em;
-      
-    }
 
-    .inputMaior {
-      width: 100%;
-      margin-right: 5em;
-      
-    }
+  @media only screen and (min-width: 361px) {
+    @media only screen and (max-width: 391px) {
+      .inputFormsLogin {
+        width: 100%;
+        font-size: 1.8em;
+        display: flex;
+        padding: 0.5em 0em 0.5em 0.8em;
+        margin-bottom: 1em;
+        border-radius: 7px;
+      }
 
-    .inputMenor {
     }
   }
-}
+
+
+   @media only screen and (min-width: 392px) {
+     @media only screen and (max-width: 440px) {
+      .inputFormsLogin {
+        width: 100%;
+        font-size: 1.8em;
+        display: flex;
+        padding: 0.5em 0em 0.5em 0.8em;
+        margin-bottom: 1em;
+        border-radius: 7px;
+      }
+  
+      .inputMaior {
+        width: 100%;
+        margin-right: 5em;
+        
+      }
+  
+      .inputMenor {
+      }
+     }
+   }
+
+   /* Medida Tablet */
+   @media only screen and (min-width: 441px) {
+     @media only screen and (max-width: 900px) {
+      .inputFormsLogin {
+        width: 100%;
+        font-size: 2.5em;
+        display: flex;
+        padding: 0.5em 0em 0.5em 0.8em;
+        margin-bottom: 1em;
+        border-radius: 7px;
+      }
+  
+      .inputMaior {
+        width: 100%;
+        margin-right: 5em;
+        
+      }
+  
+      .inputMenor {
+      }
+     }
+   }
+
+
