@@ -171,7 +171,7 @@ function Sobre({ children }) {
           />
           <CardMembroTime
             name={"Paulo Nalcino"}
-            description={"Desenvolvedor Back-End e Banco de dados"}
+            description={"Desenvolvedor Full-Stack e Banco de dados"}
             photo={Paulo}
             github={"https://github.com/beatrizimarques"}
             linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
