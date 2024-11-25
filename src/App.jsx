@@ -24,7 +24,7 @@ import CadastroEscolha from "./pages/cadastroEscolha/CadastroEscolha";
 import CadastroEstudante from "./pages/cadastroEstudante/CadastroEstudante";
 import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
 import InscricaoHackathon from "./pages/inscricaoHackathon/InscricaoHackathon";
-import Feed from "./pages/Feed/Feed";
+import Feed from "./pages/feed/Feed";
 import NivelDesafio from "./pages/nivelDesafio/nivelDesafio";
 import NivelDesafioInterno from "./pages/nivelDesafioInterno/nivelDesafioInterno";
 import DesafiosCode from "./pages/DesafiosCode/DesafiosCode";
