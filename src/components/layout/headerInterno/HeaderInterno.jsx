@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styles from './HeaderInterno.module.css';
 import Navbar from './headerInternoComponents/NavbarInterno';
 import LinkComponent from '../link/LinkComponent';
-import UserProfile from '../../../assets/imgs/ImageUser.png';  
+import UserProfile from '../../../assets/imgs/imageUser.png';  
 import { useUser } from '../../contexts/UserContext'; 
 
 function HeaderInterno() {
