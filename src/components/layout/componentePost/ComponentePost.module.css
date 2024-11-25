@@ -1,11 +1,11 @@
 .ContainerPost {
-    width: 75%; 
+    width: 100%; 
     height: 80vh;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 16px;
-    margin: 16px auto; 
-    background-color: #fff;
+    margin: 16px auto;
+    background-color: #ffffff30;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -23,28 +23,31 @@
 }
 
 .Hours {
-    color: #888;
+    color: #a206fd;
     font-size: 0.9em;
 }
 
 .DescriptionPost {
     margin: 12px 0;
-    font-size: 1em;
-    color: #333;
+    font-size: 2em;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 74px;
+    padding-right: 74px;
 }
 
 .IMGPost {
     display: block;
     margin: 0 auto;
-    width: 85%; 
-    height: 40vh;
-    border-radius: 8px;
+    width: 95%; 
+    height: 50vh;
+    border-radius: 20px;
     margin-bottom: 12px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .ActionIcons {
-    background-color: black; 
+    background-color: #7400b7; 
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -53,4 +56,81 @@
 .ActionIcons svg {
     color: white;
     font-size: 24px; 
+    cursor: pointer;
+}
+
+.NameUser {
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+@media (max-width: 968px) {
+    .ContainerPost {
+        height: auto;
+        padding: 5px;
+        border-radius: 8px;
+        padding-bottom: 1vh;
+    }
+
+    .DescriptionPost {
+        font-size: 1em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .IMGPost {
+        width: 90%;
+        height: 40vh;
+    }
+
+    .ActionIcons svg {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ContainerPost {
+        padding: 8px;
+        margin: 8px auto;
+        border-radius: 8px;
+    }
+
+    .ContainerProfile {
+        align-items: flex-start;
+        gap: 1vh;
+    }
+    
+    .ContainerProfile img {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .DescriptionPost {
+        font-size: 1em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .IMGPost {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .ActionIcons {
+        align-items: center;
+    }
+
+    .ActionIcons svg {
+        font-size: 18px;
+    }
+
+    .NameUser {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px){
+    .DescriptionPost{
+        font-size: 0.7rem;
+    }
 }

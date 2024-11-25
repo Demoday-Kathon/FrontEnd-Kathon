@@ -1,68 +1,64 @@
+/* Estilos gerais para desktop */
 .cardPubli {
-  border-radius: 40px 100px 40px 40px;
+  border-radius: 40px;
   border: 3px solid #fff;
   background: #000;
-  width: 35%;
-  height: 65vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  width: 100%;
+  height: 30vh;
+  position: relative; 
   z-index: 999;
 }
 
 .posthead {
   display: flex;
-  width: 60%;
+  width: 90%;
   margin-top: 30px;
   margin-left: 40px;
-  p {
-    color: #fff;
-    font-family: "DM Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding: 15px;
-  }
-  img {
-    width: 45%;
-    border-radius: 100px;
-  }
 }
+
+.posthead p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 15px;
+}
+
+.imgUser {
+  width: 10%;
+  height: 11vh;
+  border-radius: 100px;
+}
+
 .publis {
   color: #8e8e8e;
   font-family: "DM Sans";
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin-left: 40px;
-  margin-top: 20px;
-  width: 85%;
+  width: 100%;
 }
 
-.entradatxt{
-  width: 100%;
+.entradatxt {
+  width: 95%;
   height: 10vh;
   color: #fff;
   background: none;
   font-size: 1.6rem;
 }
 
-.entradatxt::placeholder{
-  width: 100%;
-  height: 10vh;
+.entradatxt::placeholder {
   color: #979595;
-  background: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .entradatxt:focus {
   outline: none;
 }
 
-.containerEscreva{
+.containerEscreva {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -70,30 +66,30 @@
 }
 
 .escreva {
-  border-radius: 20px;
+  border-radius: 10px;
   background: #a367eb;
-  width: 50%;
+  width: 55%;
+  margin-top: 3vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
-  padding: 10px;
-  gap: 20px;
-  cursor: pointer;
-  p {
-    color: #fff;
-    font-family: "DM Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  svg {
-    height: 20px;
-  }
+  padding: 2px;
+  gap: 30px;
 }
 
-.labelfileinput{
+.escreva p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.escreva svg {
+  height: 40px;
+}
+
+.labelfileinput {
   margin-top: 0.5vh;
   padding-top: 0.8vh;
   cursor: pointer;
@@ -103,22 +99,105 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  border-radius: 40px;
-  height: 35px;
+  border-radius: 8px;
+  height: 45px;
   background: #d9d9d9;
-  width: 40%;
+  width: 35%;
   margin-left: 160px;
   color: #000;
-    font-family: "DM Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .botaoo:hover {
-  background: #a367eb;
+  background: #2b1b3f;
   color: white;
   cursor: pointer;
+}
+
+.imgPreview {
+  width: 10%;
+  height: 11vh;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+/* Estilos para tablets */
+@media (max-width: 968px) {
+  .cardPubli{
+    height: auto;
+  }
+
+  .posthead {
+    align-items: center;
+  }
+
+  .imgUser {
+    width: 20%;
+    height: 12vh;
+  }
+
+  .botaoo {
+    width: 40%;
+    margin-left: 0;
+  }
+
+  .escreva {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    gap: 65px;
+  }
+
+  .entradatxt::placeholder {
+    color: #979595;
+    font-size: 1.4rem;
+  }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 480px) {
+
+  .cardPubli{
+    height: auto;
+  }
+
+  .posthead p {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .imgUser {
+    width: 20%;
+    height: 10vh;
+  }
+
+  .publis {
+    font-size: 1rem;
+    margin-left: 1%;
+  }
+
+  .posthead{
+    gap: 10px;
+    margin-left: 20px;
+  }
+
+  .escreva {
+    width: 90%;
+    gap: 45px;
+    margin-bottom: 3vh;
+  }
+
+  .botaoo {
+    width: 60%;
+  }
+
+  .entradatxt::placeholder {
+    color: #979595;
+    font-size: 1.2rem;
+  }
 }

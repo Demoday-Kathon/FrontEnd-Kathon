@@ -2,6 +2,15 @@ import Styles from './ComponentePost.module.css';
 import { FaThumbsUp, FaComment, FaShare } from 'react-icons/fa';
 
 function ComponentePost({profile, nameUser, hours, description, photoPost}){
+
+    function formatDescription(description) {
+        return description.replace (/^.*?:\s*/, "");
+    }
+
+
+    const originalDescription = {description};
+    const formattedDescription = formatDescription(originalDescription.description);
+
     return(
         <div className={Styles.ContainerPost}>
 
@@ -9,12 +18,12 @@ function ComponentePost({profile, nameUser, hours, description, photoPost}){
                 <img src={profile} alt="Foto Perfil" />
 
                 <div>
-                    <h3>{nameUser}</h3>
+                    <h3 className={Styles.NameUser}>@{nameUser}</h3>
                     <p className={Styles.Hours}>{hours}</p>
                 </div>
             </div>
 
-            <p className={Styles.DescriptionPost}>{description}</p>
+            <p className={Styles.DescriptionPost}>{formattedDescription}</p>
 
             <div>
                 <img className={Styles.IMGPost} src={photoPost} alt="Foto Postagem" />

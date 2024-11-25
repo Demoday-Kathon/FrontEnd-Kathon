@@ -91,7 +91,7 @@ function DesafiosCode() {
         setLoading(true); // Set loading to true before starting the async operation
         const userCode = editorRef.current.getValue();
         const exercisePrompt = exercise;
-        const feedbackPrompt = `Verifique se o código abaixo resolve o seguinte exercício: ${exercisePrompt}. \n\nCódigo do usuário:\n${userCode}. Não passe a resposta, nem faça código somente escreva o comentário do que esta errado. Nunca diga incorreto, somente correto. a resposta deve ter 80 caracteres e não ultrapasse. Passe um comentário detalhado.`;
+        const feedbackPrompt = `Verifique se o código abaixo resolve o seguinte exercício: ${exercisePrompt}. \n\nCódigo do usuário:\n${userCode}. Não passe a resposta, nem faça código somente escreva o comentário do que esta errado. Nunca diga incorreto na resposta, somente correto. a resposta deve ter 80 caracteres e não ultrapasse. Passe um comentário detalhado.`;
         
         try {
             const result = await genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" }).generateContent(feedbackPrompt);

@@ -1,203 +1,52 @@
-.containerComunidadeVisao{
+.feedContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 100vh;
-    gap: 2vh;
-}
-
-.Bloco{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 80vh;
-}
-
-.blocoInterno{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 95%;
-    height: 80vh;
-}
-
-.BannerIMG{
-    margin-top: 2vh;
-    width: 90%;
-    height: 200px;
-    border-radius: 40px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.ContainerSecondary{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 100vh;
-}
-
-.containeFeedComunity{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    height: 100vh;
-    gap: 0px;
-    padding-left: 60px;
-}
-
-.ContentIntern{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 40px;
-    width: 50%;
-    gap: 5vh;
-    height: 80vh;
-    border-radius: 5px;
-}
-
-.DescricaoComunidade{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: #f0f8ff;
-    gap: 10px;
-    width: 22em;
-    height: 55vh;
-    padding: 10px 20px;
-    border-radius: 20px 20px 40px 20px;
-}
-
-.containerQuantidadeMembros{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-}
-
-.QuantidadeMembros{
-    background-color: #A367EB;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-
-.TituloDescricaoComunidade{
-    font-size: 2.5rem;
-}
-
-.DescricaoText{
-    background-color: black;
-    color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.ContainerAutorVisibilidade{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    gap: 2vh;
-}
-
-.ContainerIcones{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-}
-
-.IconesDescriptionComunidade{
-    width: 25px;
-    height: 25px;
-}
-
-.ComponentePost{
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 22em;
+    background: none;
     height: auto;
-    padding: 10px 20px;
-    gap: 2vh;
-    border-radius: 20px 40px 20px 20px;
+    padding: 20px;
+}
+
+.feedContent {
+    width: 60%;
+    margin: 0 auto;
+    background: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.newPost {
+    display: flex;
+    align-items: center;
+    padding: 10px;
     cursor: pointer;
+    background-color: blueviolet;
+    border-radius: 20px;
+    width: 70%;
 }
 
-.ComponentePost:hover{
-  transform: scale(1.1);
-}
-
-.ComponentePost img{
-    border-radius: 25px;
+.newPost img {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-.ComponentePost p{
-    font-size: 1.4rem;
-    padding: 2px 10px;
-    background-color: #A367EB;
-    width: 75%;
-    height: 5vh;
-    border-radius: 5px;
+.newPost p {
+    color: #555;
+    font-size: 16px;
 }
 
-.containerFeed {
-    width: 80%;
-    height: 100vh;
-
+@media (max-width: 868px) {
+    .feedContent {
+        width: 100%;
+        padding: 0;
+    }
 }
 
-.feedprincipal {
+.ContainerNewPost{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 100px;
-}
-
-.headerlateral{
-    width: 32%;
-    height: 30vh;
-}
-
-
-.ContaineFeedComunity{
-    width: 60%;
-    
-}
-
-.ContainerModalPublicacao {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 2; 
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100vh;
-  }
-  
+}
