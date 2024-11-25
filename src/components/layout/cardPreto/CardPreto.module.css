@@ -185,69 +185,139 @@
   }
 }
 
-@media (max-width: 500px) {
-  .card_container {
-    width: 400px;
-    margin: auto;
-    margin-left: -135px;
-    margin-top: 3vh;
-    p {
+@media only screen and (min-width: 320px) {
+  @media only screen and (max-width: 359px) {
+    .card_container {
+      width: 19em;
+      margin: auto;
+      margin-left: -142px;
+      margin-top: 3vh;
+      p {
+        text-align: left;
+        width: 90%;
+        padding: 1px;
+        margin-left: -40px;
+        font-size: 1em;
+        margin-top: 2vh;
+      }
+      h3 {
+        width: 95%;
+      }
+    }
+    .title_hack {
+      width: 100%;
       text-align: left;
-      width: 90%;
-      padding: 1px;
+      padding-left: 1px;
+      padding-right: 1px;
+      margin-left: -45px;
+      font-size: 1.6rem;
+    }
+    .mentors {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      position: relative;
+      left: -50px;
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .title_img {
+      width: 100%;
+      text-align: center;
       margin-left: -40px;
-      font-size: 1em;
-      margin-top: 2vh;
     }
-    h3 {
-      width: 99%;
-    }
-  }
-  .title_hack {
-    width: 100%;
-    text-align: left;
-    padding-left: 1px;
-    padding-right: 1px;
-    margin-left: -45px;
-    font-size: 1.6rem;
-  }
-  .mentors {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    position: relative;
-    left: -30px;
-    img {
-      cursor: pointer;
-    }
-  }
 
-  .title_img {
-    width: 100%;
-    text-align: center;
-    margin-left: -70px;
-  }
-
-  .patro {
-    width: 100%;
-    display: none;
-    flex-wrap: wrap;
-    margin-left: -2px;
-    img {
+    .patro {
+      width: 100%;
       display: none;
+      flex-wrap: wrap;
+      margin-left: -2px;
+      img {
+        display: none;
+      }
+    }
+
+    .pesquisa {
+      margin-left: -50px;
+      width: 115%;
+    }
+
+    .caixa1,
+    .caixa2 {
+      width: 40%;
     }
   }
+}
 
-  .pesquisa {
-    margin-left: -50px;
-    width: 115%;
-  }
+@media (min-width: 360px) {
+  @media (max-width: 450px) {
+    .card_container {
+      width: 400px;
+      margin: auto;
+      margin-left: -135px;
+      margin-top: 3vh;
+      p {
+        text-align: left;
+        width: 90%;
+        padding: 1px;
+        margin-left: -40px;
+        font-size: 1em;
+        margin-top: 2vh;
+      }
+      h3 {
+        width: 95%;
+      }
+    }
+    .title_hack {
+      width: 100%;
+      text-align: left;
+      padding-left: 1px;
+      padding-right: 1px;
+      margin-left: -45px;
+      font-size: 1.6rem;
+    }
+    .mentors {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      position: relative;
+      left: -20px;
+      img {
+        cursor: pointer;
+      }
+    }
 
-  .caixa1,
-  .caixa2 {
-    width: 40%;
+    .title_img {
+      width: 100%;
+      text-align: center;
+      margin-left: -70px;
+    }
+
+    .patro {
+      width: 100%;
+      display: none;
+      flex-wrap: wrap;
+      margin-left: -2px;
+      img {
+        display: none;
+      }
+    }
+
+    .pesquisa {
+      margin-left: -50px;
+      width: 115%;
+    }
+
+    .caixa1,
+    .caixa2 {
+      width: 40%;
+    }
   }
 }
 

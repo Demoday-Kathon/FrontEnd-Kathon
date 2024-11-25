@@ -48,7 +48,6 @@ import setaparacima from "../../assets/imgs/setaparacima.svg";
 import Typewriter from "typewriter-effect";
 
 function Home() {
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -58,7 +57,8 @@ function Home() {
     handleMediaQueryChange(mediaQuery);
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    return () =>
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
   }, []);
 
   const settings = {
@@ -71,7 +71,7 @@ function Home() {
 
   return (
     <div className={styles.home}>
-      {isMobile? <HeaderFeed /> : <Header />}
+      {isMobile ? <HeaderFeed /> : <Header />}
       <container className={styles.homeTitulo}>
         {/* teste do back */}
         <div className="App">
@@ -90,7 +90,7 @@ function Home() {
         >
           <Typewriter
             options={{
-              strings: ["Desafios que revelam, <br/> soluções que inovam."],
+              strings: ["Desafios que revelam <br/> soluções que inovam."],
               autoStart: true,
               loop: true, // Para digitar apenas uma vez
               delay: 100, // Velocidade da digitação
@@ -104,7 +104,7 @@ function Home() {
             <Button customClass="buttonBaixo" text="Cadastre-se" />
           </LinkComponent>
 
-          <LinkComponent customClass="botaohome" linkTo={"/CadastroEmpresa"}> 
+          <LinkComponent customClass="botaohome" linkTo={"/CadastroEmpresa"}>
             <Button customClass="buttonBaixo2" text="Seja parceiro" />
           </LinkComponent>
         </div>

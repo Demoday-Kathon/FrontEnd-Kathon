@@ -101,14 +101,26 @@
   width: 100%;
   text-decoration: none;
 }
-
-@media (max-width: 450px) {
-  .cardData {
-    height: 78vh;
+@media only screen and (min-width: 320px) {
+  @media only screen and (max-width: 359px) {
+    .cardData {
+      height: 110vh;
+    }
+    .butoncard {
+      margin-top: -20px;
+      margin-bottom: 8px;
+    }
   }
-  .butoncard {
-    margin-top: -20px;
-    margin-bottom: 8px;
+}
+@media (min-width: 360px) {
+  @media (max-width: 450px) {
+    .cardData {
+      height: 78vh;
+    }
+    .butoncard {
+      margin-top: -20px;
+      margin-bottom: 8px;
+    }
   }
 }
 
