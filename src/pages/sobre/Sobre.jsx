@@ -13,7 +13,7 @@ import Gustavo from "../../assets/imgs/imgmembros/gustavo.jpg";
 import Ricardo from "../../assets/imgs/imgmembros/ricardo.jpeg";
 import Weslley from "../../assets/imgs/imgmembros/weslley.jpg";
 import Paulo from "../../assets/imgs/imgmembros/paulo.jpg";
-import Raphael from "../../assets/imgs/imgmembros/Raphael.jpg";
+import Raphael from "../../assets/imgs/imgmembros/raphael.jpg";
 import { motion } from "framer-motion";
 import { fadein } from "../../variants";
 import {React, useEffect, useState} from "react";
