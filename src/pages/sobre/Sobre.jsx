@@ -149,8 +149,8 @@ function Sobre({ children }) {
             name={"Weslley Campos"}
             description={"Financeiro e Desenvolvedor Full-Stack"}
             photo={Weslley}
-            github={"https://github.com/beatrizimarques"}
-            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+            github={"https://github.com/weslleycamposc2p1"}
+            linkedin={"http://www.linkedin.com/in/weslley-campos-c2p1"}
           />
         </div>
 
@@ -166,15 +166,15 @@ function Sobre({ children }) {
             name={"Raphael Pereira"}
             description={"Desenvolvedor Full-Stack"}
             photo={Raphael}
-            github={"https://github.com/beatrizimarques"}
-            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+            github={"https://github.com/raphaelpereirarps03"}
+            linkedin={"https://www.linkedin.com/in/raphaelrps23/"}
           />
           <CardMembroTime
             name={"Paulo Nalcino"}
             description={"Desenvolvedor Full-Stack e Banco de dados"}
             photo={Paulo}
-            github={"https://github.com/beatrizimarques"}
-            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+            github={"https://github.com/Nalcino"}
+            linkedin={"https://www.linkedin.com/in/paulo-nalcino/"}
           />
           <CardMembroTime
             name={"Lucas Carvalho"}
