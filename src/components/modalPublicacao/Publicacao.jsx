@@ -72,7 +72,7 @@ function Publicacao({ closeModal, refreshFeed }) {
                             className={Styles.entradatxt} 
                             type="text" 
                             placeholder="Escreva algo..." 
-                            maxLength={40} 
+                            maxLength={35} 
                             value={text}
                             onChange={handleTextChange}
                         />
