@@ -32,7 +32,7 @@ import { MdOutlineLaptopMac } from "react-icons/md";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { GiBrain } from "react-icons/gi";
 import VideoBack from "../../assets/imgs/video_back.mp4";
-import esmeralda from "../../assets/imgs/Esmeralda.svg";
+import esmeralda from "../../assets/imgs/esmeralda.svg";
 import rubi from "../../assets/imgs/rubi.svg";
 import diamante from "../../assets/imgs/diamante.svg";
 import LinkComponent from "../../components/layout/link/LinkComponent";
