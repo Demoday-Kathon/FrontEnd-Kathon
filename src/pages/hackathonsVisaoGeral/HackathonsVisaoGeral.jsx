@@ -32,8 +32,9 @@ function HackathonVisaoGeral() {
 
 
   return (
-    <div className={Styles.ContentPrincipal}>
+  <>
       {isMobile? <HeaderMobile /> : <Header />}
+    <div className={Styles.ContentPrincipal}>
       <div className={Styles.containerprincipal}>
         <Bann />
         <CardInscricao />
@@ -107,11 +108,12 @@ function HackathonVisaoGeral() {
                     <Button text="Saiba Mais" customClass="buttonAzulHacka" />
                    </LinkComponent>
               }
-            ></Card>
+              ></Card>
         
       </div>
-      <Footer />
     </div>
+    <Footer />
+              </>
   );
 }
 
