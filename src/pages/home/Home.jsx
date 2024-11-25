@@ -20,7 +20,7 @@ import banner from "../../assets/imgs/banner.png";
 import leticia from "../../assets/imgs/Leticia.png";
 import Abel from "../../assets/imgs/Abel.png";
 import accenture from "../../assets/imgs/accenture.png";
-import oracle from "../../assets/imgs/oracle.png";
+import oracle from "../../assets/imgs/Oracle.png";
 import ibm from "../../assets/imgs/ibm.png";
 import adidas from "../../assets/imgs/adidas.png";
 import pagbank from "../../assets/imgs/pagbank.png";
