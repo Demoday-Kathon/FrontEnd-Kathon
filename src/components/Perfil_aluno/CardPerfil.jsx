@@ -2,7 +2,7 @@ import Styles from './CardPerfil.module.css'
 import Recomendacao from './Card_Recomedacao'
 import leticia from '../../assets/imgs/Leticia.png'
 import Abel from '../../assets/imgs/Abel.png'
-import Joana from '../../assets/imgs/joana.png'
+import Joana from '../../assets/imgs/Joana.png'
 import Bloco1 from './Bloco1'
 import Bloco2 from './Bloco2'
 import { useUser } from '../../components/contexts/UserContext';

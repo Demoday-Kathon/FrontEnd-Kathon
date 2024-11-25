@@ -3,7 +3,7 @@ import Header from '../../components/layout/headerInterno/HeaderInterno';
 import Feed from '../../components/layout/componenteFeed/ComponenteFeed';
 import Post from '../../components/layout/componentePost/ComponentePost';
 import Modal from '../../components/modalPublicacao/Publicacao';
-import User from '../../assets/imgs/joana.png';
+import User from '../../assets/imgs/Joana.png';
 import styles from './Feed.module.css';
 import { useUser } from '../../components/contexts/UserContext';
 import HeaderMobile from '../../components/HeaderFeedInterno/HeaderFeedInterno';

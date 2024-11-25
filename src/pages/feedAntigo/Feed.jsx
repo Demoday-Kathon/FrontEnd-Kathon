@@ -1,5 +1,5 @@
 
-import PhotoProfile from '../../assets/imgs/joana.png';
+import PhotoProfile from '../../assets/imgs/Joana.png';
 import PhotoPost from '../../assets/imgs/rocketseat.png';
 import Post from '../../components/layout/componentePost/ComponentePost';
 import FeedComponent from '../../components/layout/componenteFeed/ComponenteFeed'
