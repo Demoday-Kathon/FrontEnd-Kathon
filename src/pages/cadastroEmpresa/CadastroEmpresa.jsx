@@ -8,7 +8,7 @@ import Form from '../../components/Form/Form';
 import Label from '../../components/Form/FormComponents/Label';
 import Input from '../../components/Form/FormComponents/Input';
 import SubmitButton from '../../components/Form/FormComponents/SubmitButton';
-import logoKathon from '../../assets/imgs/logoKathon.png';
+import logoKathon from '../../assets/imgs/LogoKathon.png';
 import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function CadastroEmpresa() {
