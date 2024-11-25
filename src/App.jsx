@@ -23,6 +23,7 @@ import Login from "./pages/login/Login";
 import CadastroEscolha from "./pages/cadastroEscolha/CadastroEscolha";
 import CadastroEstudante from "./pages/cadastroEstudante/CadastroEstudante";
 import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
+import InscricaoHackathon from "./pages/inscricaoHackathon/InscricaoHackathon";
 import Feed from "./pages/Feed/Feed";
 import NivelDesafio from "./pages/nivelDesafio/nivelDesafio";
 import NivelDesafioInterno from "./pages/nivelDesafioInterno/nivelDesafioInterno";
@@ -76,6 +77,7 @@ function App() {
           <Route path="/modalgame" element={<ModalGame />} />
           <Route path="/HeaderFeed" element={<HeaderFeed />} />
           <Route path="/HeaderFeedInterno" element={<HeaderFeedInterno />} />
+          <Route path="/InscricaoHackathon" element={<InscricaoHackathon />} />
         </Routes>
       </Router>
     </main>

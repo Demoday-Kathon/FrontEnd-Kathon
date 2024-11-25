@@ -1,0 +1,111 @@
+.tituloCadastro {
+    color: #fff;
+    font-size: 5em;
+}
+
+.linhaInputs {
+    display: flex;
+    width: 75%;
+    margin: auto;
+}
+
+.linhaInputs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5em;
+
+}
+
+.inputMaior {
+    width: 100%;
+}
+
+.inputMenor {
+    width: 30%;
+}
+
+.inputMenor2 {
+    width: 25%;
+}
+
+.option {
+    background: rgba(240, 240, 240, 0.10);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #fff;
+}
+
+.submitbotao {
+    text-decoration: none;
+}
+
+/*Medida Mobile*/
+@media only screen and (max-width:430px) {
+    .logoKathonLogin {
+        height: 7em;
+        width: 7em;
+    }
+    .tituloCadastro {
+        font-size: 3em;
+    }
+
+    .linhaInputs {
+        width: 100%;
+
+    }
+
+    .linhaInputs div {
+        justify-content: space-between;
+        margin: 0.5em;
+
+    }
+
+    .inputMaior {
+        width: 100%;
+        margin-right: 5em;
+    }
+
+    .inputMenor {
+        width: 50%;
+    }
+
+    .inputMenor2 {
+        width: 60%;
+    }
+}
+
+
+/*Medida Tablet*/
+@media only screen and (min-width:431px) {
+    @media only screen and (max-width: 900px) {
+        .logoKathonLogin {
+            height: 10em;
+            width: 10em;
+        }
+
+        .linhaInputs {
+            width: 90%;
+
+        }
+
+        .linhaInputs div {
+            justify-content: space-between;
+            margin: 0.5em;
+
+        }
+
+        .inputMaior {
+            width: 100%;
+            margin-right: 5em;
+        }
+
+        .inputMenor {
+            width: 50%;
+        }
+
+        .inputMenor2 {
+            width: 60%;
+        }
+
+    }
+}
