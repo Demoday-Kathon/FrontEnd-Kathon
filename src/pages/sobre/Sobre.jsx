@@ -8,7 +8,7 @@ import Macbook from "../../assets/imgs/macbook.png";
 import styles from "./Sobre.module.css";
 import blur from "../../assets/imgs/elipseblue.png";
 import BeatrizImage from "../../assets/imgs/imgmembros/beatriz.jpg";
-import LucasImage from "../../assets/imgs/imgmembros/Lucas.png";
+import LucasImage from "../../assets/imgs/imgmembros/lucas.jpg";
 import Gustavo from "../../assets/imgs/imgmembros/gustavo.jpg";
 import Ricardo from "../../assets/imgs/imgmembros/ricardo.jpeg";
 import Weslley from "../../assets/imgs/imgmembros/weslley.jpg";
