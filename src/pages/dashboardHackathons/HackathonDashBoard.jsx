@@ -1,4 +1,4 @@
-import NavBar from "../dashBoardHome/components/navBar"
+import NavBar from "../dashBoardHome/components/NavBar"
 import '../dashboardHackathons/Hackathon.css'
 import GraficoMenor from "./graficos/GraficoMenor"
 
