@@ -37,17 +37,8 @@ function DashBoardHome() {
                         <GraficoPizza />
                     </div>
                     <div className={Styles.percentual}>
-                        <motion.h1
-                            variants={fadein("right", 0.5)}
-                            initial="hidden"
-                            whileInView={"show"}
-                        >  +20K Estudantes
-                        </motion.h1>
-                        <motion.img src={iconAnalytics} alt="icone-de-progresso" className={Styles.iconAnl}
-                            variants={fadein("left", 0.5)}
-                            initial="hidden"
-                            whileInView={"show"}
-                        />
+                        <h1>+20K Estudantes</h1>
+                        <img src={iconAnalytics} alt="icone-de-progresso" className={Styles.iconAnl}/>
                     </div>
                 </div>
             </div>

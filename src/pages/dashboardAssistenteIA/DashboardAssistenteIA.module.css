@@ -148,7 +148,7 @@
 }
 
 .conteudoRight{
-    width: 42%;
+    width: 40%;
     height: 75vh;
     display: flex;
     align-items: center;
@@ -205,4 +205,62 @@ input::placeholder{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+@media (min-width: 375px) and (max-width: 767.98px){
+    .conteudo{
+        height: 180vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .conteudoLeft{
+        width: 90%;
+        height: 90vh;
+    }
+
+    .toppics{
+        height: 35vh;
+    }
+
+    .comentarios{
+        height: 30vh;
+    }
+
+    .perfil{
+        width: 10.5em;
+    }
+
+    .perfil .text p{
+        display: none;
+    }
+
+    .performance img{
+        display: none;
+    }
+
+    .contatar{
+        position: relative;
+        top: 10%;
+    }
+
+    .total{
+        position: relative;
+        bottom: 10%;
+    }
+
+    .conteudoRight{
+        width: 90%;
+        height: 90vh;
+    }
+
+    .todosHackas{
+        width: 100%;
+        height: 80vh;
+    }
+
+    .hackathons{
+        width: 90vw;
+        gap: 20px;
+    }
 }

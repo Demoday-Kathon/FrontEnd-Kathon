@@ -109,7 +109,7 @@
     position: relative;
     right: 1%;
     border-radius: 12px;
-    background-color: black;
+    background-color: #7272722c;
 }
 
 .graficoPizza{
@@ -143,15 +143,65 @@
     height: 5rem;
 }
 
+@media (min-width: 375px) and (max-width: 767.98px){
 
+    .conteudo{
+        flex-direction: column;
+        height: 190vh;
+        width: 100%;
+    }
 
+    .conteudoLeft{
+        width: 100%;
+        height: 100vh;
+        justify-content: space-around;
+        flex-direction: column;
+    }
 
+    .cardMaior{
+        width: 90%;
+        height: 13em;
+        padding: 10px 10px;
+    }
 
+    .cardsMenores{
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    .cardUm{
+        width: 90%;
+    }
 
+    .cardDois{
+        width: 90%;
+    }
 
+    .info{
+        width: 50%;
+        background-color: #7300ff;
+    }
 
+    .cardDois .info h1{
+        font-size: 1.2rem;
+    }
 
+    .info .Arrow{
+        visibility: hidden;
+        display: none;
+    }
 
+    .conteudoRight{
+        height: 80vh;
+        width: 100%;
+        background: none;
+    }
 
+    .graficoPizza{
+        height: 40vh;
+    }
 
+    .percentual h1{
+        font-size: 1.2rem;
+    }
+}
