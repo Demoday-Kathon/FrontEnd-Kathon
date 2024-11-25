@@ -152,6 +152,14 @@
       padding: 0;
     }
 
+    .App{
+      display: none;
+    }
+
+    .blurdovideo{
+      display: none;
+    }
+
     .caixadescricao {
       width: 80%;
       padding: 0.8em;
@@ -194,6 +202,14 @@
         margin-top: 2em;  
         width: 90%;
         padding: 0;
+      }
+
+      .App{
+        display: none;
+      }
+
+      .blurdovideo{
+        display: none;
       }
   
       .caixadescricao {
@@ -240,6 +256,14 @@
         margin-top: 2em;  
         width: 90%;
         padding: 0;
+      }
+
+      .App{
+        display: none;
+      }
+
+      .blurdovideo{
+        display: none;
       }
   
       .caixadescricao {
@@ -288,6 +312,14 @@
         width: 90%;
         padding: 0;
       }
+
+      .App{
+        display: none;
+      }
+
+      .blurdovideo{
+        display: none;
+      }
   
       .caixadescricao {
         width: 80%;
@@ -331,6 +363,14 @@
         width: 90%;
         margin: 2em;
         margin: auto;
+      }
+
+      .App{
+        display: none;
+      }
+
+      .blurdovideo{
+        display: none;
       }
     }
   }

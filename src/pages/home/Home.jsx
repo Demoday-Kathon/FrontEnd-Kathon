@@ -71,7 +71,7 @@ function Home() {
       {isMobile ? <HeaderFeed /> : <Header />}
       <container className={styles.homeTitulo}>
         {/* teste do back */}
-        <div className="App">
+        <div className={styles.App}>
           <div className="video-background">
             <video autoPlay muted loop>
               <source src={VideoBack} type="video/mp4" />
