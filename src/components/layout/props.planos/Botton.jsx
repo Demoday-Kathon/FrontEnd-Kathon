@@ -1,4 +1,4 @@
-import Style from "./botton.module.css"
+import Style from "./Botton.module.css"
 
 function botton({text, customBotton}){
 
