@@ -17,7 +17,7 @@ function Datas({ inicio, dates, termino, expired, subsc, dat }) {
         <div className={Styles.butoesdocard}>
           
         <button className={Styles.butoncard}>
-          <Link className={Styles.butoncardLink} to={""}>Inscreva-se</Link>
+          <Link className={Styles.butoncardLink} to={"/InscricaoHackathon"}>Inscreva-se</Link>
         </button>
         
           <br />
