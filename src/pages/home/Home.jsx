@@ -21,11 +21,8 @@ import leticia from "../../assets/imgs/Leticia.png";
 import Abel from "../../assets/imgs/Abel.png";
 import accenture from "../../assets/imgs/accenture.png";
 import oracle from "../../assets/imgs/Oracle.png";
-import ibm from "../../assets/imgs/ibm.png";
 import adidas from "../../assets/imgs/adidas.png";
 import pagbank from "../../assets/imgs/pagbank.png";
-import cardPlanosHome from "../../assets/imgs/cardPlanosHome.png";
-
 import { IoIosAlarm } from "react-icons/io";
 import { FaDollarSign } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
