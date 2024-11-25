@@ -1,4 +1,4 @@
-import Styles from "../cardinscricao/Cardinscricao.module.css";
+import Styles from "../cardInscricao/Cardinscricao.module.css";
 import Datas from "./Datas";
 
 function CardInscricao() {
