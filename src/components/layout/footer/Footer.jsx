@@ -1,7 +1,7 @@
 
 import styles from './Footer.module.css'
 
-import logoCompletaKathon from '../../../assets/imgs/logokathoncompleta.png'
+import logoCompletaKathon from '../../../assets/imgs/LogoKathonCompleta.png'
 
 import ListLink from '../listlink/ListLinks';
 import LinkComponent from '../link/LinkComponent';

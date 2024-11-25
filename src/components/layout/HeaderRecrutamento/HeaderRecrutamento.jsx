@@ -1,5 +1,5 @@
 import Styles from './HeaderRecrutamento.module.css';
-import LogoKathon from '../../../assets/imgs/LogokathonCompleta.png';
+import LogoKathon from '../../../assets/imgs/LogoKathonCompleta.png';
 import logoDashboard from '../../../assets/imgs/icones/dashboard.png'
 import logoHack from '../../../assets/imgs/icones/hacker.png'
 import logoAnalise from '../../../assets/imgs/icones/chart.png'
