@@ -28,6 +28,8 @@ import Feed from "./pages/feed/Feed";
 import NivelDesafio from "./pages/nivelDesafio/nivelDesafio";
 import NivelDesafioInterno from "./pages/nivelDesafioInterno/nivelDesafioInterno";
 import DesafiosCode from "./pages/DesafiosCode/DesafiosCode";
+import DesafiosCodeAvancado from "./pages/DesafiosCodeAvancado/DesafioCodeAvancado";
+import DesafiosCodeIntermediario from "./pages/DesafiosCodeIntermediario/DesafioCodeIntermediario";
 import ModalGame from "./components/ModalGame/ModalGame";
 import AnaliseGeral from "./pages/dashboardVisaoGeral/AnaliseGeral";
 import HeaderFeed from "./components/HeaderFeed/HeaderFeed";
@@ -52,6 +54,8 @@ function App() {
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
           <Route path="/desafioscode" element={<DesafiosCode />} />
+          <Route path="/desafioscodeintermediario" element={<DesafiosCodeIntermediario />} />
+          <Route path="/desafioscodeavancado" element={<DesafiosCodeAvancado />} />
           <Route path="/feed" element={<Feed />} />
           <Route path="/Perfil_empresa_edit" element={<Perfil_empresa_edit />} />
           <Route path="/HackathonVisaoGeral" element={<HackathonVisaoGeral />} />

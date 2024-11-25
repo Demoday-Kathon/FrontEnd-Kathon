@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Styles from './DesafiosCode.module.css';
-import ImageNivelIniciante from '../../assets/imgs/niveliniciantecode.png';
+import Styles from './DesafioCodeIntermediario.module.css';
+import ImageNivelIniciante from '../../assets/imgs/nivelintermediariocode.png';
 import HeaderInterno from '../../components/layout/headerInterno/HeaderInterno';
 import ModalGame from '../../components/ModalGame/ModalGame';
 import Setawhite from '../../assets/imgs/seta.svg';
@@ -70,7 +70,7 @@ function DesafiosCode() {
     }, [genAI]);
 
     const generateExercise = async (genAIInstance) => {
-        const prompt = "Crie um exercício de programação para o aluno praticar com JavaScript ou Python. O exercício deve ser algo de iniciante. texto curto de no maximo 60 caracteres";
+        const prompt = "Crie um exercício de programação para o aluno praticar com JavaScript ou Python. O exercício deve ser algo intermediário. texto curto de no maximo 60 caracteres";
 
         try {
             const result = await genAIInstance.getGenerativeModel({ model: "gemini-1.5-flash-latest" }).generateContent(prompt);
