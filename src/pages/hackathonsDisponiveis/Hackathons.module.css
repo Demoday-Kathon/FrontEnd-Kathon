@@ -150,6 +150,14 @@
       padding: 0;
     }
 
+    .App{
+      display: none;
+    }
+
+    .blurdovideo{
+      display: none;
+    }
+
     .caixadescricao {
       width: 80%;
       padding: 0.8em;
@@ -193,6 +201,15 @@
         width: 90%;
         padding: 0;
       }
+
+      .App{
+        display: none;
+      }
+
+      .blurdovideo{
+        display: none;
+      }
+  
   
       .caixadescricao {
         width: 80%;
@@ -251,6 +268,14 @@
         font-size:1.2em;
         padding: 0;
       }
+
+      .App{
+        display: none;
+      }
+
+      .blurdovideo{
+        display: none;
+      }
   
       .verificacao {
         font-size: 1.2em;
@@ -291,6 +316,15 @@
         width: 80%;
         padding: 0.8em;
       }
+
+      .App{
+        display: none;
+      }
+
+      .blurdovideo{
+        display: none
+      }
+  
   
       .descricaodohack {
         color: #fff;
@@ -330,5 +364,14 @@
         margin: 2em;
         margin: auto;
       }
+
+      .App{
+        display: none;
+      }
+
+      .blurdovideo{
+        display: none;
+      }
+  
     }
   }

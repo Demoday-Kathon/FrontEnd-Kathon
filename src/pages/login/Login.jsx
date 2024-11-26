@@ -11,7 +11,7 @@ import Footer from '../../components/layout/footer/Footer';
 import LinkComponent from '../../components/layout/link/LinkComponent';
 import { useNavigate } from 'react-router-dom';
 import { useUser } from '../../components/contexts/UserContext';
-import logoKathon from '../../assets/imgs/logoKathon.png';
+import logoKathon from '../../assets/imgs/LogoKathon.png';
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 

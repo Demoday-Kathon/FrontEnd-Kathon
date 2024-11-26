@@ -53,7 +53,7 @@
 }
 
 .logoFooter {
-  background-image: url(../../../assets/imgs/logokathoncompleta.png);
+  background-image: url(../../../assets/imgs/LogoKathonCompleta.png);
   width: 20em;
   height: 3em;
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ li{
 @media only screen and (max-width: 320px) {
 
   .logoFooter {
-    background-image: url(../../../assets/imgs/logokathoncompleta.png);
+    background-image: url(../../../assets/imgs/LogoKathonCompleta.png);
     background-size: contain;
     width: 90%;
     align-self: center;

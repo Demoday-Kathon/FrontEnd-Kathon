@@ -20,12 +20,9 @@ import banner from "../../assets/imgs/banner.png";
 import leticia from "../../assets/imgs/Leticia.png";
 import Abel from "../../assets/imgs/Abel.png";
 import accenture from "../../assets/imgs/accenture.png";
-import oracle from "../../assets/imgs/oracle.png";
-import ibm from "../../assets/imgs/ibm.png";
+import oracle from "../../assets/imgs/Oracle.png";
 import adidas from "../../assets/imgs/adidas.png";
 import pagbank from "../../assets/imgs/pagbank.png";
-import cardPlanosHome from "../../assets/imgs/cardPlanosHome.png";
-
 import { IoIosAlarm } from "react-icons/io";
 import { FaDollarSign } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
@@ -35,7 +32,7 @@ import { MdOutlineLaptopMac } from "react-icons/md";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { GiBrain } from "react-icons/gi";
 import VideoBack from "../../assets/imgs/video_back.mp4";
-import esmeralda from "../../assets/imgs/Esmeralda.svg";
+import esmeralda from "../../assets/imgs/esmeralda.svg";
 import rubi from "../../assets/imgs/rubi.svg";
 import diamante from "../../assets/imgs/diamante.svg";
 import LinkComponent from "../../components/layout/link/LinkComponent";
@@ -74,7 +71,7 @@ function Home() {
       {isMobile ? <HeaderFeed /> : <Header />}
       <container className={styles.homeTitulo}>
         {/* teste do back */}
-        <div className="App">
+        <div className={styles.App}>
           <div className="video-background">
             <video autoPlay muted loop>
               <source src={VideoBack} type="video/mp4" />

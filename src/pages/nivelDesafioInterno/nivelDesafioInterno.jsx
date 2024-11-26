@@ -60,10 +60,10 @@ function NivelDesafio() {
           <Link className={styles.desafio1} to="/desafioscode" onClick={handleLinkClick}>
             <p>Modo Largatixa</p>
           </Link>
-          <Link className={styles.desafio2} to="/desafioscode" onClick={handleLinkClick}>
+          <Link className={styles.desafio2} to="/desafioscodeintermediario" onClick={handleLinkClick}>
             <p>Modo Jacaré</p>
           </Link>
-          <Link className={styles.desafio3} to="/desafioscode" onClick={handleLinkClick}>
+          <Link className={styles.desafio3} to="/desafioscodeavancado" onClick={handleLinkClick}>
             <p>Modo Dinossauro</p>
           </Link>
         </div>

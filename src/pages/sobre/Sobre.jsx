@@ -8,12 +8,12 @@ import Macbook from "../../assets/imgs/macbook.png";
 import styles from "./Sobre.module.css";
 import blur from "../../assets/imgs/elipseblue.png";
 import BeatrizImage from "../../assets/imgs/imgmembros/beatriz.jpg";
-import LucasImage from "../../assets/imgs/imgmembros/Lucas.png";
+import LucasImage from "../../assets/imgs/imgmembros/lucas.jpg";
 import Gustavo from "../../assets/imgs/imgmembros/gustavo.jpg";
 import Ricardo from "../../assets/imgs/imgmembros/ricardo.jpeg";
 import Weslley from "../../assets/imgs/imgmembros/weslley.jpg";
 import Paulo from "../../assets/imgs/imgmembros/paulo.jpg";
-import Raphael from "../../assets/imgs/imgmembros/Raphael.jpg";
+import Raphael from "../../assets/imgs/imgmembros/raphael.jpg";
 import { motion } from "framer-motion";
 import { fadein } from "../../variants";
 import {React, useEffect, useState} from "react";
@@ -149,8 +149,8 @@ function Sobre({ children }) {
             name={"Weslley Campos"}
             description={"Financeiro e Desenvolvedor Full-Stack"}
             photo={Weslley}
-            github={"https://github.com/beatrizimarques"}
-            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+            github={"https://github.com/weslleycamposc2p1"}
+            linkedin={"http://www.linkedin.com/in/weslley-campos-c2p1"}
           />
         </div>
 
@@ -166,15 +166,15 @@ function Sobre({ children }) {
             name={"Raphael Pereira"}
             description={"Desenvolvedor Full-Stack"}
             photo={Raphael}
-            github={"https://github.com/beatrizimarques"}
-            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+            github={"https://github.com/raphaelpereirarps03"}
+            linkedin={"https://www.linkedin.com/in/raphaelrps23/"}
           />
           <CardMembroTime
             name={"Paulo Nalcino"}
-            description={"Desenvolvedor Back-End e Banco de dados"}
+            description={"Desenvolvedor Full-Stack e Banco de dados"}
             photo={Paulo}
-            github={"https://github.com/beatrizimarques"}
-            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+            github={"https://github.com/Nalcino"}
+            linkedin={"https://www.linkedin.com/in/paulo-nalcino/"}
           />
           <CardMembroTime
             name={"Lucas Carvalho"}

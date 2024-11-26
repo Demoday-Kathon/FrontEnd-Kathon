@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import NavBar from '../dashBoardHome/components/NavBar';
 import TtlDash from '../dashBoardHome/components/titulo/TtlDash';
+=======
+import NavBar from "../dashBoardHome/components/NavBar"
+>>>>>>> d28a266311a902837c976ca753a6364d82935c47
 import '../dashboardHackathons/Hackathon.css'
 import GraficoMenor from "./graficos/GraficoMenor"
 import { register } from "swiper/element/bundle"

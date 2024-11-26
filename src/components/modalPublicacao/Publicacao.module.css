@@ -1,7 +1,7 @@
 /* Estilos gerais para desktop */
 .cardPubli {
   border-radius: 40px;
-  border: 3px solid #fff;
+  border: 3px solid #a206fd56;
   background: #000;
   width: 100%;
   height: 30vh;
@@ -67,7 +67,7 @@
 
 .escreva {
   border-radius: 10px;
-  background: #a367eb;
+  background: #7400b7;
   width: 55%;
   margin-top: 3vh;
   display: flex;

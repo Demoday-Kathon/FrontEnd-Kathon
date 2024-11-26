@@ -33,7 +33,7 @@ function Hackathons() {
     <div className={styles.hackathons}>
       {isMobile? <HeaderMobile /> : <Header />}
       {/* TESTE DO VIDEO */}
-      <div className="App">
+      <div className={styles.App}>
         <div className="video-background">
           <video autoPlay muted loop className={styles.video2}>
             <source src={VideoBack2} type="video/mp4" />

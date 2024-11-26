@@ -1,4 +1,4 @@
-import styles from './cardBrancoBase.module.css'
+import styles from './CardBrancoBase.module.css'
 
 function CardBrancoBase({children, customClass}) {
     return (

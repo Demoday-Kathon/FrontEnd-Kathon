@@ -25,10 +25,12 @@ import CadastroEscolha from "./pages/cadastroEscolha/CadastroEscolha";
 import CadastroEstudante from "./pages/cadastroEstudante/CadastroEstudante";
 import CadastroEmpresa from "./pages/cadastroEmpresa/CadastroEmpresa";
 import InscricaoHackathon from "./pages/inscricaoHackathon/InscricaoHackathon";
-import Feed from "./pages/Feed/Feed";
+import Feed from "./pages/feed/Feed";
 import NivelDesafio from "./pages/nivelDesafio/nivelDesafio";
 import NivelDesafioInterno from "./pages/nivelDesafioInterno/nivelDesafioInterno";
 import DesafiosCode from "./pages/DesafiosCode/DesafiosCode";
+import DesafiosCodeAvancado from "./pages/DesafiosCodeAvancado/DesafioCodeAvancado";
+import DesafiosCodeIntermediario from "./pages/DesafiosCodeIntermediario/DesafioCodeIntermediario";
 import ModalGame from "./components/ModalGame/ModalGame";
 import AnaliseGeral from "./pages/dashboardVisaoGeral/AnaliseGeral";
 import HeaderFeed from "./components/HeaderFeed/HeaderFeed";
@@ -39,7 +41,7 @@ import "./App.css";
 function App() {
   return (
     <main>
-      <Router basename="/FrontEnd-Kathon/">
+      <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hackathons" element={<Hackathons />} />
@@ -53,6 +55,8 @@ function App() {
           <Route path="/Perfil_aluno_edit" element={<Perfil_aluno_edit />} />
           <Route path="/Perfil_empresa" element={<Perfil_empresa />} />
           <Route path="/desafioscode" element={<DesafiosCode />} />
+          <Route path="/desafioscodeintermediario" element={<DesafiosCodeIntermediario />} />
+          <Route path="/desafioscodeavancado" element={<DesafiosCodeAvancado />} />
           <Route path="/feed" element={<Feed />} />
           <Route path="/Perfil_empresa_edit" element={<Perfil_empresa_edit />} />
           <Route path="/HackathonVisaoGeral" element={<HackathonVisaoGeral />} />

@@ -57,4 +57,10 @@
   
   }
 
+  @media (max-width: 980px) {
+  
+      .botaohome{
+        width: 100%;
+      }
+  }
 

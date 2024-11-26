@@ -77,11 +77,6 @@ function NivelDesafio() {
             </p>
           </div>
         </div>
-        <div className={styles.abadebotoes}>
-          <Button customClass="botaodesafio1" text="Iniciar" />
-          <Button customClass="botaodesafio2" text="Iniciar" />
-          <Button customClass="botaodesafio3" text="Iniciar" />
-        </div>
       </div>
 
       <Footer />

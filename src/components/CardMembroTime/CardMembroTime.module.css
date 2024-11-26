@@ -83,7 +83,7 @@
 @media (max-width: 440px) {
     .CardMember{
         width: 95%;
-        height: 50vh;
+        height: 52vh;
         margin-top: 3em;
     }
 
@@ -102,7 +102,7 @@
 @media (max-width: 389px) {
     .CardMember{
         width: 95%;
-        height: 75vh;
+        height: 78vh;
         margin-bottom: 7em;
     }
 

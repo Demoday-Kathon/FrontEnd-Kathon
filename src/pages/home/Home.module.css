@@ -996,6 +996,11 @@ video {
   .logos {
     padding: 30px 0;
   }
+
+  .App{
+    display: none;
+  }
+
 }
 @media only screen and (min-width: 321px) {
   @media only screen and (max-width: 360px) {
@@ -1316,6 +1321,11 @@ video {
     .logos {
       padding: 30px 0;
     }
+
+    .App{
+      display: none;
+    }
+
   }
 }
 
@@ -1628,6 +1638,11 @@ video {
         color: var(--Terciria-V, #a367eb);
       }
     }
+
+    .App{
+      display: none;
+    }
+
   }
 }
 
@@ -1946,6 +1961,11 @@ video {
         color: var(--Terciria-V, #a367eb);
       }
     }
+
+    .App{
+      display: none;
+    }
+
   }
 }
 
@@ -1958,7 +1978,7 @@ video {
     }
 
     .botoesHome {
-      width: 98%;
+      width: 100%;
       display: flex;
       justify-content: center;
     }
@@ -2125,6 +2145,10 @@ video {
     .caixaCardsPreta {
       width: 90%;
       height: auto;
+    }
+
+    .App{
+      display: none;
     }
 
     .cardPretoMenor,
