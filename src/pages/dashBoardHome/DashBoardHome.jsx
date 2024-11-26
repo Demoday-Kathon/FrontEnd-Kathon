@@ -8,12 +8,18 @@ import * as FaIcons from 'react-icons/fa'
 import { motion } from "framer-motion";
 import { fadein } from '../../variants'
 import { Link } from 'react-router-dom'
+import TtlDash from './components/titulo/TtlDash'
 
 function DashBoardHome() {
 
     return (
         <div className={Styles.container}>
-            <NavBar />
+            <div className={Styles.navbar}>
+                <NavBar />
+                <TtlDash 
+                texto='Olá, Kathon'
+                />
+            </div>
             <div className={Styles.conteudo}>
                 <div className={Styles.conteudoLeft}>
                     <div className={Styles.cardMaior}>

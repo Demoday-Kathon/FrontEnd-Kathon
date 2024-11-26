@@ -51,3 +51,7 @@
     align-items: center;
 }
 
+.desc p{
+    font-size: 1rem;
+}
+

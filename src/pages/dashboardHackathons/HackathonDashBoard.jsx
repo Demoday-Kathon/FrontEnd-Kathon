@@ -1,11 +1,25 @@
-import NavBar from "../dashBoardHome/components/navBar"
+import NavBar from '../dashBoardHome/components/NavBar';
+import TtlDash from '../dashBoardHome/components/titulo/TtlDash';
 import '../dashboardHackathons/Hackathon.css'
 import GraficoMenor from "./graficos/GraficoMenor"
+import { register } from "swiper/element/bundle"
+
+register();
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 
 function HackathonDashboard(){
     return(
         <div className="content">
-            <NavBar />
+            <div className="nav">
+                <NavBar />
+                <TtlDash 
+                texto='Hackathons'
+                customClass='containerSessão'
+                />
+            </div>
             <div className="conteudo">
                 <div className="top">
                     <div className="hackas">

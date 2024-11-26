@@ -1,5 +1,6 @@
 import Styles from  './DashboardAssistenteIA.module.css';
 import NavBar from '../dashBoardHome/components/NavBar';
+import TtlDash from '../dashBoardHome/components/titulo/TtlDash';
 import imgPerfil from '../../assets/imgs/perfil_menina1.png'
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa'
@@ -7,12 +8,15 @@ import iconAnalytics from '../../assets/imgs/icones/bar-chart.png'
 import Hackas from './Components/Hackas';
 import img from '../../assets/imgs/Leonardo_Phoenix_A_futuristic_hightech_illustration_of_a_citys_2.jpg'
 
-
 function DashboardAssistenteIA() {
   return (
     <div className={Styles.ContainerPrincipal}>
       <div className={Styles.nav}>
         <NavBar />
+        <TtlDash 
+          texto='Recrutamento'
+          customClass='containerSessão'
+        />
       </div>
       <div className={Styles.conteudo}>
         <div className={Styles.conteudoLeft}>
