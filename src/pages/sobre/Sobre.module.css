@@ -524,7 +524,7 @@
   
     .containerCardMembroTime {
       flex-direction: column;
-      height: auto;
+      height: 200vh;
       margin-bottom: 3rem;
       width: 100%;
       gap: 0vh;
@@ -543,7 +543,7 @@
 /*Medidas para dispositivos médios para grandes, com largura entre 361px e 391px (Galaxy S24 ULTRA; iPhone X; iPhone 12P PRO; iPhone 13 PRO; iPhone 14; iPhone 14 PRO)*/
 
 @media only screen and (min-width:361px) {
-  @media only screen and (max-width:391px) {
+  @media only screen and (max-width:389px) {
     .containerPrimary {
       flex-direction: column-reverse;
       justify-content: center;
@@ -703,17 +703,15 @@
   
     .containerNossoTime {
       justify-content: space-between;
-      height: auto;
-      gap: 1em;
-      margin-bottom: 10vh;
+      height: 750vh;
+      margin-bottom: 20vh;
     }
   
     .containerCardMembroTime {
       flex-direction: column;
-      height: auto;
-      margin-bottom: 3rem;
+      height: 400vh;
+      margin-bottom: 1rem;
       width: 100%;
-      gap: 0vh;
     }
   
     .tituloNossoTime {
@@ -728,7 +726,7 @@
 
 /*Medidas para dispositivos médios para grandes, com largura entre 391px 430px (Galaxy Note 20; Google Pixel 8; iPhone XR 2018; Iphone 11; iPhone 11 Pro Max; iPhone 12 Pro Max, iPhone 13 Pro Max, iPhone 14 Plus, iPhone 14 Pro Max, Iphone 15, Iphone 15 Plus, Iphone 15 PRO, Iphone 15 PRO MAX, iPhone 16, Iphone 16 Plus, iPhone 16 PRO, iPhone 16 PRO MAX)*/
 
-@media only screen and (min-width: 392px) {
+@media only screen and (min-width: 389px) {
   @media only screen and (max-width: 440px) {
     .containerPrimary {
       flex-direction: column-reverse;
@@ -860,21 +858,22 @@
     .containerNossoTime {
       justify-content: space-between;
       height: auto;
-      gap: 20vh;
+      gap: 2vh;
       margin-bottom: 10vh;
     }
 
+    .containerNossoTime {
+      justify-content: space-between;
+      height: 670vh;
+      margin-bottom: 20vh;
+    }
+  
     .containerCardMembroTime {
       flex-direction: column;
-      height: auto;
-      margin-bottom: 5rem;
+      height: 350vh;
+      margin-bottom: 1rem;
       width: 100%;
-      gap: 15em;
-    }
-
-    .tituloNossoTime {
-      font-size: 3rem;
-      text-align: center;
+      gap: 35vh;
     }
 
     
@@ -1020,17 +1019,18 @@
       margin-bottom: 10vh;
     }
 
+    .containerNossoTime {
+      justify-content: space-between;
+      height: 670vh;
+      margin-bottom: 20vh;
+    }
+  
     .containerCardMembroTime {
       flex-direction: column;
-      height: auto;
-      margin-bottom: 3rem;
+      height: 350vh;
+      margin-bottom: 1rem;
       width: 100%;
-      gap: 15vh;
-    }
-
-    .tituloNossoTime {
-      font-size: 3rem;
-      text-align: center;
+      gap: 35vh;
     }
   }
 }
