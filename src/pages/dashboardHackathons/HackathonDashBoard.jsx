@@ -3,9 +3,6 @@ import TtlDash from '../dashBoardHome/components/titulo/TtlDash';
 import '../dashboardHackathons/Hackathon.css'
 import GraficoMenor from "./graficos/GraficoMenor"
 import { register } from "swiper/element/bundle"
-import "../dashboardHackathons/Hackathon.css";
-import GraficoMenor from "./graficos/GraficoMenor";
-import { register } from "swiper/element/bundle";
 
 register();
 import "swiper/css";
