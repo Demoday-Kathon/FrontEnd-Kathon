@@ -87,7 +87,7 @@ function Home() {
         >
           <Typewriter
             options={{
-              strings: ["Desafios que revelam <br/> soluções que inovam."],
+              strings: ["Desafios que revelam <br/> soluções que inovam"],
               autoStart: true,
               loop: true, // Para digitar apenas uma vez
               delay: 100, // Velocidade da digitação
@@ -98,7 +98,7 @@ function Home() {
         </motion.h1>
         <div className={styles.botoesHome}>
           <LinkComponent customClass="botaohome" linkTo={"/CadastroEscolha"}>
-            <Button customClass="buttonBaixo" text="Cadastre-se" />
+            <Button customClass="buttonBaixo" text="Cadastre" />
           </LinkComponent>
 
           <LinkComponent customClass="botaohome" linkTo={"/CadastroEmpresa"}>
