@@ -1,0 +1,35 @@
+.caixa{
+    width: 85%;
+    height: 45vh;
+    background-color: #5404b6;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 50px;
+    gap: 20px;
+}
+
+.caixa .nome{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    gap: 20px;
+    color: aqua;
+}
+
+.nome h1{
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+.caixa .sobre{
+    color: aqua;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.sobre p{
+    font-size: 1.5rem;
+}
+

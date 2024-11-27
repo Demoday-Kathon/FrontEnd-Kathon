@@ -1,0 +1,72 @@
+.container{
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+p{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.containerSessão{
+    width: 45vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 20px;
+    position: relative;
+    left: 30%;
+    z-index: 10;
+}
+
+.containerSessão p{
+    color: #A367EB;
+}
+
+.containerKia{
+    width: 60vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 20px;
+    position: relative;
+    left: 27%;
+    z-index: 10;
+}
+
+.containerKia p{
+    color: #A367EB;
+}
+
+
+
+.kia{
+    width: 8vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    left: 60%;
+}
+
+@media (min-width: 375px) and (max-width: 767.98px){
+    .containerSessão{
+        left: 10%;
+        position: relative;
+    }
+
+    .containerKia{
+        position: relative;
+        left: 4%;
+    }
+}

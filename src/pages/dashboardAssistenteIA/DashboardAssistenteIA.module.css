@@ -6,6 +6,9 @@
 .nav{
     height: 16vh;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.416);
+    display: flex;
+    align-items: center;
 }
 
 .conteudo{
@@ -114,11 +117,14 @@
     font-weight: bold;
     font-size: 1.2rem;
     position: relative;
-    right: 11%;
+    right: 10%;
 }
 
 .text p{
     color: #fff;
+    font-size: 1rem;
+    position: relative;
+    right: 11%;
 }
 
 .performance{
@@ -229,6 +235,10 @@ input::placeholder{
 
     .perfil{
         width: 10.5em;
+    }
+    .perfil .text span{
+        position: relative;
+        left: 1%;
     }
 
     .perfil .text p{

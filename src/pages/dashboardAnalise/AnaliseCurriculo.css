@@ -1,0 +1,131 @@
+.conteudo{
+    width: 100%;
+    height: 100vh;
+}
+
+.nav{
+    width: 100%;
+    height: 16vh;
+    background-color: rgba(0, 0, 0, 0.416);
+}
+
+.content{
+    width: 100%;
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ladoEsq{
+    width: 30%;
+    height: 50vh;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.281);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topLeft{
+    width:  100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nome-vaga{
+    outline: none;
+    width: 80%;
+    height: 5vh;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 0 15px;
+    background-color: rgb(49, 0, 128);
+}
+
+.nome-vaga::placeholder{
+    color: #fff;
+}
+
+.diretorio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 15vh;
+    gap: 5px;
+    border: 2px solid rgb(70, 0, 128);
+    border-radius: 20px;
+    padding: 0 15px;
+}
+
+.diretorio label{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input{
+    color: #fff;
+}
+
+.lowLeft{
+    width: 80%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.iniciar{
+    width: 10vw;
+    height: 8vh;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: rgb(70, 0, 128);
+    transition: 0.5s ease-in-out;
+}
+
+.iniciar:hover{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.adicionar{
+    width: 10vw;
+    height: 8vh;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: rgb(70, 0, 128);
+    transition: 0.5s ease-in-out;
+}
+
+.adicionar:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.ladoDir{
+    width: 60%;
+    height: 75vh;
+    background-color: black;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    gap: 40px;
+    border-radius: 12px;
+}
+
+

@@ -1,14 +1,27 @@
 import Styles from '../dashboardVisaoGeral/AnaliseGeral.module.css'
-import NavBar from '../dashBoardHome/components/NavBar'
+import NavBar from '../dashBoardHome/components/navBar';
 import { motion } from "framer-motion";
 import { fadein } from "../../variants";
 import GraficoAnalise from './graficos/GraficoAnalise'
 import GraficoPizzaAnalise from './graficos/GraficoPizzaAnalise'
+import TtlDash from '../dashBoardHome/components/titulo/TtlDash';
+import iconeIA from '../../assets/imgs/icones/oculos-de-realidade-virtual.png'
+import { Link } from 'react-router-dom';
 
 function AnaliseGeral(){
     return(
         <div className={Styles.container}>
-            <NavBar />
+            <div className={Styles.nav}>
+                <NavBar />
+                <TtlDash 
+                    texto='Recrutamento'
+                    customClass='containerSessão'
+                />
+                 <Link to='/analisecurriculo' className={Styles.kia}>
+                    <img src={iconeIA} alt="icone-IA"/>
+                    KIA
+                 </Link>
+            </div>
             <div className={Styles.conteudo}>
                 <div className={Styles.ladoEsquerdo}>
                     <div className={Styles.pizzaGrafico}>
