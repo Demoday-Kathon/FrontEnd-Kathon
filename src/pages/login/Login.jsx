@@ -46,8 +46,8 @@ function Login() {
         
         const emailDomain = email.split('@')[1];
         const endpoint = emailDomain === 'empresa.com' 
-            ? 'http://localhost:8080/api/empresas/login' 
-            : 'http://localhost:8080/api/jovens/login'; 
+            ? 'https://backend.kathon.tech/api/empresas/login' 
+            : 'https://backend.kathon.tech/api/jovens/login'; 
     
         
 

@@ -41,7 +41,7 @@ function Publicacao({ closeModal, refreshFeed }) {
             formData.append("imagemPost", file);
         }
 
-        fetch("http://localhost:8080/api/posts/criar", {
+        fetch("https://backend.kathon.tech/api/posts/criar", {
             method: "POST",
             body: formData,
         })

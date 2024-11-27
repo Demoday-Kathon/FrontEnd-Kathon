@@ -68,7 +68,7 @@ function CadastroEmpresa() {
         formData.append("fotoPerfil", logoEmpresa);
 
         try {
-            const response = await fetch("http://localhost:8080/api/empresas/cadastrar", {
+            const response = await fetch("https://backend.kathon.tech/api/empresas/cadastrar", {
                 method: "POST",
                 body: formData,
             });
