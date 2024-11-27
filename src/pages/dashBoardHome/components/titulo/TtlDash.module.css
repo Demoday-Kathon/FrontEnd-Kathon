@@ -28,6 +28,25 @@ p{
     color: #A367EB;
 }
 
+.containerKia{
+    width: 60vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 20px;
+    position: relative;
+    left: 27%;
+    z-index: 10;
+}
+
+.containerKia p{
+    color: #A367EB;
+}
+
+
+
 .kia{
     width: 8vw;
     height: 10vh;
@@ -44,5 +63,10 @@ p{
     .containerSessão{
         left: 10%;
         position: relative;
+    }
+
+    .containerKia{
+        position: relative;
+        left: 4%;
     }
 }
