@@ -1,5 +1,5 @@
 import Styles from '../dashboardVisaoGeral/AnaliseGeral.module.css'
-import NavBar from '../dashBoardHome/components/navBar';
+import NavBar from '../dashBoardHome/components/NavBar';
 import { motion } from "framer-motion";
 import { fadein } from "../../variants";
 import GraficoAnalise from './graficos/GraficoAnalise'
