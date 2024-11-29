@@ -26,7 +26,7 @@ function Feeds() {
     }, []);
 
     const fetchPosts = () => {
-        fetch('https://backend.kathon.tech/api/posts/listar')
+        fetch('https://apibackend.kathon.tech/api/posts/listar')
             .then(response => response.json())
             .then(data => setPosts(data.reverse()))
             .catch(error => console.error('Error fetching posts:', error));
