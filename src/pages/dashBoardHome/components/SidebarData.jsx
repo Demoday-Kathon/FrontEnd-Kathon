@@ -12,7 +12,7 @@ export const SidebarData = [
     },
     {
         title: 'Hackathons',
-        path: '/dashboardhackathon',
+        path: '/dashboardanalisegeral',
         icon: <AiIcons.AiFillBug />,
         cName: 'nav-text'
     },

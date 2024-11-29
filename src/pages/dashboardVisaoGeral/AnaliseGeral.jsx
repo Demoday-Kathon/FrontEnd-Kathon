@@ -14,7 +14,7 @@ function AnaliseGeral(){
             <div className={Styles.nav}>
                 <NavBar />
                 <TtlDash 
-                    texto='Recrutamento'
+                    texto='Análise Geral'
                     customClass='containerSessão'
                 />
                  <Link to='/analisecurriculo' className={Styles.kia}>
