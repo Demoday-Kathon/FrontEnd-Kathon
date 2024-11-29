@@ -18,7 +18,7 @@ export const SidebarData = [
     },
     {
         title: 'Recrutamento',
-        path: '/dashboardassistenteia',
+        path: '/analisecurriculo',
         icon: <AiIcons.AiOutlineTeam />,
         cName: 'nav-text'
     },
