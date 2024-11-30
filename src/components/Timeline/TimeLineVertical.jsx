@@ -61,12 +61,8 @@ const TimelineVertical = () => {
 
         <div className="event">
           <div className="event-content">
-            <motion.div 
+            <div 
             className="caixa-info"
-            variants={fadein("left", 0.9)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.9 }}
             >
               <h3>Confirmação dos times</h3>
               <div className="icon-content">
@@ -77,18 +73,14 @@ const TimelineVertical = () => {
                 <img src={iconClock} alt="" srcset="" />
                 <p>09:00hrs ás 22:00hrs</p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
 
         <div className="event">
           <div className="event-content">
-            <motion.div 
+            <div 
             className="caixa-info"
-            variants={fadein("left", 0.9)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.9 }}
             >
               <h3>Inicio do Hackathon</h3>
               <div className="icon-content">
@@ -99,18 +91,14 @@ const TimelineVertical = () => {
                 <img src={iconClock} alt="" srcset="" />
                 <p>09:00hrs ás 22:00hrs</p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
 
         <div className="event">
           <div className="event-content">
-            <motion.div 
+            <div 
             className="caixa-info"
-            variants={fadein("left", 0.9)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.9 }}
             >
               <h3>Liberação do tema</h3>
               <div className="icon-content">
@@ -121,18 +109,14 @@ const TimelineVertical = () => {
                 <img src={iconClock} alt="" srcset="" />
                 <p>09:00hrs ás 22:00hrs</p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
 
         <div className="event">
           <div className="event-content">
-            <motion.div 
+            <div 
               className="caixa-info"
-              variants={fadein("left", 0.9)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.9 }}
             >
               <h3>Desenvolvimento</h3>
               <div className="icon-content">
@@ -143,18 +127,14 @@ const TimelineVertical = () => {
                 <img src={iconClock} alt="" srcset="" />
                 <p>09:00hrs ás 22:00hrs</p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
 
         <div className="event">
           <div className="event-content">
-            <motion.div 
+            <div 
             className="caixa-info"
-            variants={fadein("left", 0.9)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.9 }}
             >
               <h3>Prazo para envio</h3>
               <div className="icon-content">
@@ -165,13 +145,13 @@ const TimelineVertical = () => {
                 <img src={iconClock} alt="" srcset="" />
                 <p>09:00hrs ás 22:00hrs</p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
 
         <div className="event">
           <div className="event-content">
-            <motion.div 
+            <div 
             className="caixa-info"
             variants={fadein("left", 0.9)}
             initial="hidden"
@@ -187,7 +167,7 @@ const TimelineVertical = () => {
                 <img src={iconClock} alt="" srcset="" />
                 <p>09:00hrs ás 22:00hrs</p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

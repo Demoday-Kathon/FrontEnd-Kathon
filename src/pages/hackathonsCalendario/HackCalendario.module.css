@@ -46,20 +46,51 @@
 
 @media (min-width: 375px) and (max-width: 767.98px){
     .container{
-        width: 100%;
+        width: 90%;
+        left: 5%;
+        position: relative;
     }
 
     .content{
-        width: 90%;
+        width: 100%;
+        height: 410vh;
     }
 
     .titulo{
        position: relative;
-       left: 15%;
+       left: 12%;
     }
 
     .titulo h1{
        font-size: 2rem;
+    }
+
+    .timeline{
+        width: 90%;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    @media only screen and (max-width: 930px) {
+
+      .container{
+        width: 90%;
+        padding-top: 4rem;
+      }
+
+      .content{
+        width: 100%;
+        position: relative;
+        left: 6%;
+        height: 310vh;
+      }
+
+      .timeline{
+        padding-top: 5rem;
+        left: 1.2%;
+        position: relative;
+      }
     }
 }
 

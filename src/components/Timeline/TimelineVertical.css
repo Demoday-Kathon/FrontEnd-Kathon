@@ -91,33 +91,59 @@
 @media (min-width: 375px) and (max-width: 767.98px){
 
   .timeline-container{
+    width: 88vw;
+    height: 370vh;
     position: relative;
-    display: flex;
-    width: 20%;
-    padding-top: 10%;
   }
 
-  .event{
-    width: 70vw;
-    height: 38vh;
-    left: -38px;
-    display: flex;
-    align-items: center;
-  }
-
-  .event-content h3{
-    font-size: 1.2rem;
+  .timeline{
     width: 100%;
   }
 
-  .event-content .icon-content{
-    position: relative;
-    top: 1%;
-    gap: 10px;
-    padding-top: 10px;
+  .event{
+    left: -2.9rem;
+    width: 88vw;
+  }
+
+  .event-content .caixa-info{
+    display: flex;
+    width: 74vw;
+  }
+
+  .caixa-info h3{
+    font-size: 1.8rem;
+  }
+
+  .progress-bar{
+    display: none;
   }
 
   .event-content::before{
     display: none;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  @media only screen and (max-width: 930px) {
+
+    .timeline-container{
+      height: 340vh;
+      width: 100%;
+    }
+
+    .timeline{
+      gap: 140px;
+      width: 100%;
+    }
+
+    .event-content{
+      height: 38vh;
+    }
+
+    .progress-bar{
+      left: 2.8rem;
+      top: 3%;
+    }
+    
   }
 }
