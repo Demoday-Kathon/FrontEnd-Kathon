@@ -9,6 +9,7 @@
 
 .content{
     width: 50%;
+    height: 390vh;
     border-radius: 36px;
     border: 3px solid #fff;
     background-color: black;
@@ -41,5 +42,24 @@
     width: 90%;
     height: 300vh;
     padding-left: 6%;
+}
+
+@media (min-width: 375px) and (max-width: 767.98px){
+    .container{
+        width: 100%;
+    }
+
+    .content{
+        width: 90%;
+    }
+
+    .titulo{
+       position: relative;
+       left: 15%;
+    }
+
+    .titulo h1{
+       font-size: 2rem;
+    }
 }
 
