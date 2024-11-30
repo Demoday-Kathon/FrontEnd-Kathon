@@ -5,9 +5,6 @@ import GraficoMenor from "./graficos/GraficoMenor"
 import { register } from "swiper/element/bundle"
 
 
-
-
-
 register();
 import "swiper/css";
 import "swiper/css/navigation";

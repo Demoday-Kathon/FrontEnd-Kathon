@@ -8,6 +8,7 @@
     padding: 0;
     height: auto;
     width: 25%;
+    padding-bottom: 2vh;
 }
 
 .ImageMember{
@@ -54,6 +55,7 @@
     align-items: center;
     justify-content: space-between;
     width: 50%;
+    /* margin-bottom: 2vh; */
 }
 
 .ImageLogo{
@@ -93,6 +95,7 @@
 
     .ContainerImageLogo {
         margin-top: 1em;
+        /* margin-bottom: 2vh; */
     }
 
     .ImageMember {
@@ -112,6 +115,7 @@
 
     .ContainerImageLogo {
         margin-top: 1em;
+        /* margin-bottom: 2vh; */
     }
 
     .ImageMember {

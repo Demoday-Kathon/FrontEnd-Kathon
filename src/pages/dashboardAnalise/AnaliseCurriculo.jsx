@@ -1,5 +1,5 @@
 import Styles from './AnaliseCurriculo.module.css'
-import NavBar from '../dashBoardHome/components/navBar'
+import NavBar from '../dashBoardHome/components/NavBar'
 import TtlDash from '../dashBoardHome/components/titulo/TtlDash'
 import Perfil from './components/Perfil'
 
