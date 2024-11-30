@@ -13,9 +13,9 @@ function AnaliseGeral(){
         <div className={Styles.container}>
             <div className={Styles.nav}>
                 <NavBar />
-                <TtlDash 
+                <TtlDash
                     texto='Análise Geral'
-                    customClass='containerSessão'
+                    customClass='containerSessão2'
                 />
                  <Link to='/analisecurriculo' className={Styles.kia}>
                     <img src={iconeIA} alt="icone-IA"/>
@@ -33,7 +33,7 @@ function AnaliseGeral(){
                 </div>
                 <div className={Styles.ladoDireito}>
                     <motion.div 
-                        variants={fadein("left", 0.2)}
+                        variants={fadein("left", 0.9)}
                         initial="hidden"
                         whileInView={"show"}
                         className={Styles.equipes}
@@ -48,7 +48,7 @@ function AnaliseGeral(){
                         </div>
                     </motion.div>
                     <motion.div 
-                        variants={fadein("left", 0.2)}
+                        variants={fadein("left", 0.1)}
                         initial="hidden"
                         whileInView={"show"}
                         className={Styles.projetos}>

@@ -14,7 +14,7 @@
     font-weight: bold;
 }
 
-.containerSessão{
+.containerSessão1{
     width: 45vh;
     height: 10vh;
     display: flex;
@@ -27,7 +27,24 @@
     z-index: 0;
 }
 
-.containerSessão p{
+.containerSessão1 p{
+    color: #A367EB;
+}
+
+.containerSessão2{
+    width: 45vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 20px;
+    position: relative;
+    left: 30%;
+    z-index: 0;
+}
+
+.containerSessão2 p{
     color: #A367EB;
 }
 
@@ -49,19 +66,6 @@
 }
 
 
-
-.kia{
-    width: 8vw;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    border-radius: 20px;
-    position: relative;
-    left: 60%;
-}
-
 @media (min-width: 375px) and (max-width: 767.98px){
 
     .container{
@@ -73,10 +77,14 @@
         font-size: 2rem;
     }
 
-    .containerSessão{
+    .containerSessão1{
         top: 1%;
         left: 7%;
         position: relative;
+    }
+
+    .containerSessão2{
+        display: none;
     }
 
     .containerKia{
@@ -88,4 +96,5 @@
     .containerKia p{
         font-size: 1.5rem;
     }
+
 }

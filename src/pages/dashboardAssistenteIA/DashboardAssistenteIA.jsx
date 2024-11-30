@@ -15,7 +15,7 @@ function DashboardAssistenteIA() {
         <NavBar />
         <TtlDash 
           texto='Recrutamento'
-          customClass='containerSessão'
+          customClass='containerSessão1'
         />
       </div>
       <div className={Styles.conteudo}>

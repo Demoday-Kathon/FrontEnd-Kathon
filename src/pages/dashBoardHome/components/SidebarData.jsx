@@ -12,13 +12,13 @@ export const SidebarData = [
     },
     {
         title: 'Hackathons',
-        path: '/dashboardanalisegeral',
+        path: '/dashboardhackathon',
         icon: <AiIcons.AiFillBug />,
         cName: 'nav-text'
     },
     {
         title: 'Recrutamento',
-        path: '/analisecurriculo',
+        path: '/dashboardassistenteia',
         icon: <AiIcons.AiOutlineTeam />,
         cName: 'nav-text'
     },

@@ -1,4 +1,4 @@
-import NavBar from '../dashBoardHome/components/navBar';
+import NavBar from '../dashBoardHome/components/NavBar';
 import TtlDash from '../dashBoardHome/components/titulo/TtlDash';
 import Styles from '../dashboardHackathons/Hackathon.module.css'
 import GraficoMenor from "./graficos/GraficoMenor"
@@ -16,7 +16,10 @@ function HackathonDashboard() {
     <div className={Styles.content}>
       <div className={Styles.nav}>
         <NavBar />
-        <TtlDash texto="Hackathons" customClass="containerSessão" />
+        <TtlDash 
+        texto="Hackathons" 
+        customClass="containerSessão1" 
+        />
       </div>
       <div className={Styles.conteudo}>
         <div className={Styles.top}>
