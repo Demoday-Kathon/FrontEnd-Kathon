@@ -1,7 +1,7 @@
 .timeline-container {
   display: flex;
   position: relative;
-  height: 385vh;
+  height: 384vh;
   width: 100%;
   right: 4%;
 }
@@ -50,8 +50,6 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 10%;
-  position: relative;
-  z-index: 10;
 }
 
 .event-content::before {
@@ -63,7 +61,7 @@
   background-color: #06f8fa;
   border-radius: 50%;
   border: #fff 3px solid;
-  top: 9.5rem;
+  top: 10rem;
 }
 
 .event-content h3 {
@@ -99,12 +97,24 @@
     padding-top: 10%;
   }
 
-  .event-content{
-    width: 80vw;
-    height: 30vh;
-    background-color: #06f8fa;
+  .event{
+    width: 70vw;
+    height: 38vh;
+    left: -38px;
     display: flex;
     align-items: center;
+  }
+
+  .event-content h3{
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .event-content .icon-content{
+    position: relative;
+    top: 1%;
+    gap: 10px;
+    padding-top: 10px;
   }
 
   .event-content::before{
