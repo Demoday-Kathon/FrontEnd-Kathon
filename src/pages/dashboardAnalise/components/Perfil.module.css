@@ -30,8 +30,8 @@
 }
 
 .justificativa{
+    height: 18vh;
     width: 100%;
-    height: 15vh;
     background-color: black;
     border-radius: 12px;
     padding: 10px 10px;
@@ -40,11 +40,13 @@
 
 .justificativa .texto_just{
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    word-break: break-all;
 }
 
 .sobre .score{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: #fff;
 }
 
 
@@ -52,11 +54,13 @@
 
 @media (min-width: 375px) and (max-width: 767.98px){
 
-    .caixa{
-        height: 100vh;
+    .caixaPerfilAnalise{
+        height: 200vh;
+        gap: 35px;
+        text-align: center;
     }
 
-    .caixa .nome{
+    .caixaPerfilAnalise .nome{
         flex-direction: column;
         font-size: 1.8rem;
     }
@@ -74,5 +78,21 @@
     .sobre p{
         font-size: 1.2rem;
         max-width: 100%;
+    }
+
+    .justificativa{
+        width: 120%;
+        height: 20vh;
+        top: 5%;
+        position: relative;
+        right: 6%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 20px 20px;
+    }
+
+    .justificativa .texto_just{
+        font-size: 1rem;
+        word-wrap: break-word;
     }
 }

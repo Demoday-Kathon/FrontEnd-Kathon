@@ -134,13 +134,14 @@ input{
 @media (min-width: 375px) and (max-width: 767.98px){
     .content{
         flex-direction: column;
-        height: 150vh;
+        height: 240vh;
         padding: 30px 0;
         gap: 50px;
     }
 
     .ladoEsq{
         width: 85%;
+        height: 50vh;
     }
 
     .diretorio label{
@@ -159,7 +160,7 @@ input{
 
     .ladoDir{
         width: 85%;
-        height: 200vh;
+        height: 170vh;
     }
 }
 

@@ -31,8 +31,8 @@ function AnaliseCurriculo(){
                <div className={Styles.ladoDir}>
                 <Perfil 
                     nome='Lucas Carvalho'
-                    justificativa='iakhjdiadahndakudhasssssssss'
-                    score='Pontuação'
+                    justificativa='iakhjdiadahndakudhasssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss'
+                    score='20'
                 />
                 <Perfil 
                     nome='Nome do Candidato'
