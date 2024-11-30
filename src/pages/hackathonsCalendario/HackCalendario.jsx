@@ -25,10 +25,8 @@ function HackCalendario(){
             {isMobile? <HeaderMobile /> : <Header />}
                 <div className={Styles.container}>
                     <div className={Styles.content}>
-                        <div className="navBar">
-                        </div>
                         <div className={Styles.titulo}>
-                            < img src={IconTempo} alt="icone de ampulheta"/>
+                            <img src={IconTempo} alt="icone de ampulheta"/>
                             <h1>Linha do tempo</h1>
                         </div>
                         <div className={Styles.timeline}>

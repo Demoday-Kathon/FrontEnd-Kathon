@@ -7,6 +7,8 @@
     width: 100%;
     height: 16vh;
     background-color: rgba(0, 0, 0, 0.416);
+    display: flex;
+    align-items: center;
 }
 
 .content{
@@ -38,7 +40,7 @@
     gap: 20px;
 }
 
-.nome-vaga{
+.nome_vaga{
     outline: none;
     width: 80%;
     height: 5vh;
@@ -48,7 +50,7 @@
     background-color: rgb(49, 0, 128);
 }
 
-.nome-vaga::placeholder{
+.nome_vaga::placeholder{
     color: #fff;
 }
 
@@ -126,6 +128,39 @@ input{
     padding: 50px 0;
     gap: 40px;
     border-radius: 12px;
+}
+
+
+@media (min-width: 375px) and (max-width: 767.98px){
+    .content{
+        flex-direction: column;
+        height: 150vh;
+        padding: 30px 0;
+        gap: 50px;
+    }
+
+    .ladoEsq{
+        width: 85%;
+    }
+
+    .diretorio label{
+        font-size: 1.2rem;
+    }
+
+    .adicionar{
+        width: 40%;
+        font-size: 1rem;
+    }
+
+    .iniciar{
+        width: 40%;
+        font-size: 1rem;
+    }
+
+    .ladoDir{
+        width: 85%;
+        height: 200vh;
+    }
 }
 
 

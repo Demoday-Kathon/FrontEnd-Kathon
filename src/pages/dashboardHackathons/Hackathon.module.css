@@ -49,7 +49,7 @@
     cursor: pointer;
 }
 
-.btn-criar{
+.btn_criar{
     width: 7rem;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@
     cursor: pointer;
 }
 
-.btn-criar span{
+.btn_criar span{
     color: black;
     display: flex;
     align-items: center;
@@ -69,7 +69,7 @@
     justify-content: center;
 }
 
-.btn-criar:hover{
+.btn_criar:hover{
     background-color: #9900ff;
 }
 
@@ -84,7 +84,7 @@
     padding-bottom: 2px;
 }
 
-.low-content{
+.low_content{
     width: 100%;
     height: 28vh;
     display: flex;
@@ -164,7 +164,7 @@
         font-size: 1.6rem;
     }
 
-    .low-content{
+    .low_content{
         flex-direction: column;
         position: relative;
         top: 10%;

@@ -1,14 +1,12 @@
-<<<<<<< HEAD
 import NavBar from '../dashBoardHome/components/navBar';
 import TtlDash from '../dashBoardHome/components/titulo/TtlDash';
-import '../dashboardHackathons/Hackathon.css'
+import Styles from '../dashboardHackathons/Hackathon.module.css'
 import GraficoMenor from "./graficos/GraficoMenor"
 import { register } from "swiper/element/bundle"
-=======
-import "../dashboardHackathons/Hackathon.css";
-import GraficoMenor from "./graficos/GraficoMenor";
-import { register } from "swiper/element/bundle";
->>>>>>> b76b757fb43e960c0bff3886a39065a413e5d40e
+
+
+
+
 
 register();
 import "swiper/css";
@@ -18,31 +16,31 @@ import "swiper/css/scrollbar";
 
 function HackathonDashboard() {
   return (
-    <div className="content">
-      <div className="nav">
+    <div className={Styles.content}>
+      <div className={Styles.nav}>
         <NavBar />
         <TtlDash texto="Hackathons" customClass="containerSessão" />
       </div>
-      <div className="conteudo">
-        <div className="top">
-          <div className="hackas"></div>
-          <div className="criar">
-            <div className="btn-criar">
+      <div className={Styles.conteudo}>
+        <div className={Styles.top}>
+          <div className={Styles.hackas}></div>
+          <div className={Styles.criar}>
+            <div className={Styles.btn_criar}>
               <span>Criar</span>
             </div>
           </div>
         </div>
-        <div className="low">
+        <div className={Styles.low}>
           <h2>Ultimos Hackathons</h2>
-          <div className="low-content">
-            <div className="ultimos">
+          <div className={Styles.low_content}>
+            <div className={Styles.ultimos}>
               <h2>Imersão Back-End</h2>
               <p>Uma explanação em tópicos</p>
             </div>
-            <div className="grafico">
+            <div className={Styles.grafico}>
               <GraficoMenor />
             </div>
-            <div className="calendario"></div>
+            <div className={Styles.calendario}></div>
           </div>
         </div>
       </div>

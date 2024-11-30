@@ -1,11 +1,15 @@
-import './Perfil.css'
+import Styles from '../components/Perfil.module.css'
 
 function Perfil( {nome, justificativa, score} ){
     return(
-        <div className="caixa">
-            <span className='nome'>Candidato: <h1>{nome}</h1></span>
-            <span className='sobre'>Justificativa: <p>{justificativa}</p></span>
-            <span className='sobre'>Pontuação: <p>{score}</p></span>
+        <div className={Styles.caixaPerfilAnalise}>
+            <span className={Styles.nome}>Candidato: <h1>{nome}</h1></span>
+            <span className={Styles.sobre}>Justificativa: 
+                <div className={Styles.justificativa}>
+                    <p className={Styles.texto_just}>{justificativa}</p>
+                </div>
+            </span>
+            <span className={Styles.sobre}>Pontuação: <p className={Styles.score}>{score}</p></span>
         </div>
     )
 }

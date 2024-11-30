@@ -1,8 +1,6 @@
 .container{
-    padding: 100px 0px;
+    padding: 50px 0px;
     width: 100%;
-    background-position: center;
-    background-size: cover;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10,30 +8,38 @@
 }
 
 .content{
-    width: 65%;
+    width: 50%;
     border-radius: 36px;
     border: 3px solid #fff;
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.timeline{
-    width: 70%;
-    height: 300vh;
+    padding: 0 0 40px 0;
 }
 
 .titulo{
     display: flex;
-    width: 75%;
-    align-items: center;
-    padding: 120px 0px;
+    width: 100%;
+    padding: 50px 0;
     color: #fff;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.titulo img{
+    width: 100px;
+    height: 100px;
 }
 
 .titulo h1{
-    font-family: "DM Sans";
     font-size: 3.5rem;
 }
+
+.timeline{
+    width: 90%;
+    height: 300vh;
+    padding-left: 6%;
+}
+
