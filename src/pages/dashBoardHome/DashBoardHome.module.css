@@ -151,6 +151,116 @@
     height: 5rem;
 }
 
+@media only screen and (max-width: 320px){
+    .conteudo{
+        flex-direction: column;
+        width: 90%;
+        height: 280vh;
+        align-items: center;
+    }
+
+    .conteudoLeft{
+        width: 100%;
+        height: 120vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cardsMenores{
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .cardUm{
+        width: 100%;
+    }
+
+    .cardDois{
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .cardDois h1{
+        font-size: 1.2rem;
+    }
+
+    .conteudoRight{
+        width: 100%;
+        height: 120vh;
+        position: relative;
+        left: 5%;
+    }
+
+    .graficoPizza{
+        width: 100%;
+        height: 55vh;
+    }
+
+    .percentual{
+        width: 90%;
+        height: 30vh;
+        gap: 6.5rem;
+    }
+
+    .percentual h1{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 360px){
+    .conteudo{
+        flex-direction: column;
+        height: 220vh;
+        width: 100%;
+    }
+
+    .conteudoLeft{
+        width: 90%;
+        height: 120vh;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .cardsMenores{
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .cardUm{
+        width: 100%;
+    }
+
+    .cardDois{
+        width: 100%;
+    }
+
+    .conteudoRight{
+        height: 75vh;
+        width: 90%;
+        left: 5%;
+        bottom: 3%;
+    }
+
+    .graficoPizza{
+        height: 40vh;
+        width: 100%;
+    }
+
+    .percentual{
+        height: 20vh;
+        width: 80%;
+        gap: 6rem;
+    }
+
+    .percentual h1{
+        font-size: 1.2rem;
+    }
+}
+
 @media (min-width: 375px) and (max-width: 767.98px){
 
     .conteudo{

@@ -65,6 +65,28 @@
     color: #A367EB;
 }
 
+@media only screen and (max-width: 320px){
+    .container{
+        position: relative;
+        left: 5%;
+    }
+
+    .container p{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .container{
+        position: relative;
+        left: 8%;
+    }
+
+    .container p{
+        font-size: 1.8rem;
+    }
+}
+
 
 @media (min-width: 375px) and (max-width: 767.98px){
 
