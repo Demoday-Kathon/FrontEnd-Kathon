@@ -54,11 +54,11 @@ function DashboardAssistenteIA() {
             <div className={Styles.hackathons}>
               <Hackas 
               logo={img}
-              desc='Testando testando pipipipipipipipipipipipi'
+              desc='Nome do Hackathon'
               />
               <Hackas 
               logo={img}
-              desc='Testando testando pipipipipipipipipipipipi'
+              desc='Nome do Hackathon'
               />
             </div>
           </div>

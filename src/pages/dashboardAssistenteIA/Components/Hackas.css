@@ -53,5 +53,8 @@
 
 .desc p{
     font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    left: 5%;
 }
 

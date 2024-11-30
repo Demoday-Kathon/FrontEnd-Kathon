@@ -45,11 +45,9 @@
 }
 
 .sobre .score{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #fff;
 }
-
-
 
 
 @media (min-width: 375px) and (max-width: 767.98px){

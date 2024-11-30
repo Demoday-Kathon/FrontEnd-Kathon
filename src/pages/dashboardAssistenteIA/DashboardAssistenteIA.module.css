@@ -257,6 +257,7 @@ input::placeholder{
     .total{
         position: relative;
         bottom: 10%;
+        left: 12%;
     }
 
     .conteudoRight{
