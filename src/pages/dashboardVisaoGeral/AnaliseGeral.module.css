@@ -182,5 +182,15 @@
         width: 42vw;
         left: 45%;
     }
+}
 
+@media (min-width: 768px) and (max-width: 1024px){
+    .kia{
+        left: 10%;
+        width: 20vw;
+    }
+
+    .btnEquipe{
+        left: -40%;
+    }
 }
