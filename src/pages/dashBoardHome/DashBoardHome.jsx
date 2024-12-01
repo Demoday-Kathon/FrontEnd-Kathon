@@ -9,15 +9,18 @@ import { motion } from "framer-motion";
 import { fadein } from '../../variants'
 import { Link } from 'react-router-dom'
 import TtlDash from './components/titulo/TtlDash'
+import { useUser } from '../../components/contexts/UserContext';
 
 function DashBoardHome() {
+
+    const { user } = useUser;
 
     return (
         <div className={Styles.container}>
             <div className={Styles.navbar}>
                 <NavBar />
                 <TtlDash 
-                texto='Olá, Kathon'
+                texto={`Olá, ${user.nomeCompleto}`}
                 />
             </div>
             <div className={Styles.conteudo}>

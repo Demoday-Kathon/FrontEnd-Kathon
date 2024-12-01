@@ -18,8 +18,14 @@ export const SidebarData = [
     },
     {
         title: 'Recrutamento',
-        path: '/dashboardassistenteia',
+        path: '/analisecurriculo',
         icon: <AiIcons.AiOutlineTeam />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Sair',
+        path: '/',
+        icon: <AiIcons.AiOutlineLogout />,
         cName: 'nav-text'
     },
 ]

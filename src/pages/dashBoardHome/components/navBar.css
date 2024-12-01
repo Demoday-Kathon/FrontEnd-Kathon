@@ -70,6 +70,14 @@
     width: 100%;
 }
 
+.last-item {
+    background-color: red;
+}
+
+.last-item:hover {
+    background-color: rgb(253, 45, 45);
+}
+
 span{
     margin-left: 16px;
     color: #fff;

@@ -27,9 +27,10 @@ function NavBar(){
                         </Link>
                     </li>
                     {SidebarData.map((item, index) => {
+                        const isLastItem = index === SidebarData.length - 1;
                         return(
                             <Link to={item.path} className='a'>
-                                <li key={index} className='item-cName'>
+                                <li key={index} className={`item-cName ${isLastItem ? 'last-item' : ''}`}>
                                     {item.icon}
                                     <span>{item.title}</span>
                                 </li>

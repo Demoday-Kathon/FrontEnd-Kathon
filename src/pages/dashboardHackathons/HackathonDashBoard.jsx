@@ -3,6 +3,7 @@ import TtlDash from '../dashBoardHome/components/titulo/TtlDash';
 import Styles from '../dashboardHackathons/Hackathon.module.css'
 import GraficoMenor from "./graficos/GraficoMenor"
 import { register } from "swiper/element/bundle"
+import GraficoAnalise from '../../pages/dashboardVisaoGeral/graficos/GraficoAnalise'
 
 
 register();
@@ -23,7 +24,9 @@ function HackathonDashboard() {
       </div>
       <div className={Styles.conteudo}>
         <div className={Styles.top}>
-          <div className={Styles.hackas}></div>
+          <div className={Styles.hackas}>
+            <GraficoAnalise />
+          </div>
           <div className={Styles.criar}>
             <div className={Styles.btn_criar}>
               <span>Criar</span>
@@ -40,7 +43,9 @@ function HackathonDashboard() {
             <div className={Styles.grafico}>
               <GraficoMenor />
             </div>
-            <div className={Styles.calendario}></div>
+            <div className={Styles.grafico}>
+            <GraficoMenor />
+            </div>
           </div>
         </div>
       </div>
