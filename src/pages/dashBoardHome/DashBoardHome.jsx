@@ -20,7 +20,7 @@ function DashBoardHome() {
             <div className={Styles.navbar}>
                 <NavBar />
                 <TtlDash 
-                texto={`Olá, ${user.nomeEmpresa}` || 'empresa'}
+                texto={`Olá, ${user.nomeEmpresa}`}
                 />
             </div>
             <div className={Styles.conteudo}>
