@@ -189,3 +189,54 @@
         background: none;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .conteudo{
+        width: 90%;
+        left: 5%;
+    }
+
+    .top{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .hackas{
+        width: 50%;
+        height: 32vh;
+    }
+
+    .criar{
+        height: 25vh;
+        width: 40%;
+    }
+
+    .low{
+        width: 100%;
+    }
+
+    .low h2{
+        font-size: 2rem;
+        bottom: 5%;
+        position: relative;
+    }
+
+    .low_content{
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .ultimos{
+        width: 45vw;
+    }
+
+    .grafico{
+        height: 20vh;
+        width: 40vw;
+    }
+
+    .calendario{
+        display: none;
+    }
+}
