@@ -323,3 +323,52 @@
         font-size: 1.2rem;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .conteudo{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .conteudoLeft{
+        width: 90%;
+        height: 65vh;
+        flex-direction: column;
+    }
+    
+    .cardsMenores{
+        position: relative;
+        bottom: 8%;
+    }
+
+    .cardMaior{
+        height: 25vh;
+        padding: 15px 10px;
+    }
+
+    .cardUm{
+        height: 20vh;
+    }
+
+    .cardDois{
+        height: 20vh;
+    }
+
+    .conteudoRight{
+        width: 90%;
+        height: 35vh;
+        display: flex;
+        flex-direction: row;
+        left: 5%;
+        padding: 10px 0px;
+    }
+
+    .graficoPizza{
+        width: 35vw;
+        height: 28vh;
+    }
+
+    .percentual{
+        width: 45%;
+    }
+}
