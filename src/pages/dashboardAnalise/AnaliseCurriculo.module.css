@@ -164,4 +164,32 @@ input{
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px){
+    .content{
+        flex-direction: column;
+        height: 140vh;
+        width: 90%;
+        left: 5%;
+        position: relative;
+        justify-content: space-around;
+    }
+
+    .ladoEsq{
+        width: 80%;
+    }
+
+    .adicionar{
+        width: 20vw;
+    }
+
+    .iniciar{
+        width: 20vw;
+    }
+
+    .ladoDir{
+        width: 100%;
+    }
+
+
+}
 

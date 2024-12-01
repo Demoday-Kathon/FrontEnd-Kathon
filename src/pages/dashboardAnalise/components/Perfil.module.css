@@ -94,3 +94,9 @@
         word-wrap: break-word;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .nome h1{
+        font-size: 2rem;
+    }
+}
