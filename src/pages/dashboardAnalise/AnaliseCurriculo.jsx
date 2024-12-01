@@ -6,7 +6,7 @@ import Perfil from './components/Perfil';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import * as pdfjsLib from 'pdfjs-dist';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = './node_modules/pdfjs-dist/build/pdf.worker.mjs';
+pdfjsLib.GlobalWorkerOptions.workerSrc = './node_modules/pdfjs-dist/build/pdf.worker.js';
 
 function AnaliseCurriculo() {
     const [curriculoCount, setCurriculoCount] = useState(0);
