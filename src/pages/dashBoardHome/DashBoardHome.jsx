@@ -13,14 +13,14 @@ import { useUser } from '../../components/contexts/UserContext';
 
 function DashBoardHome() {
 
-    const { user } = useUser;
+    const { user } = useUser();
 
     return (
         <div className={Styles.container}>
             <div className={Styles.navbar}>
                 <NavBar />
                 <TtlDash 
-                texto={`Olá, ${user.nomeEmpresa}`}
+                texto={`Olá , ${user?.nomeCompleto}`}
                 />
             </div>
             <div className={Styles.conteudo}>
