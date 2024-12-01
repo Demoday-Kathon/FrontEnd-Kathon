@@ -275,3 +275,36 @@ input::placeholder{
         gap: 20px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+   .conteudo{
+    width: 100%;
+    position: relative;
+    gap: 5%;
+   }
+
+   .conteudoLeft{
+    width: 45%;
+   }
+
+   .conteudoRight{
+    width: 45%;
+   }
+
+   .todosHackas{
+    width: 100%;
+   }
+
+   .perfil{
+    width: 20vw;
+    height: 15vh;
+   }
+
+   .text p{
+    display: none;
+   }
+
+   .performance img{
+    display: none;
+   }
+}
