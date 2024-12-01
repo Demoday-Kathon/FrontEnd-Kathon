@@ -43,15 +43,16 @@
 .nome_vaga{
     outline: none;
     width: 80%;
-    height: 5vh;
+    height: 14vh;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0 15px;
     background-color: rgb(49, 0, 128);
 }
 
 .nome_vaga::placeholder{
     color: #fff;
+    font-size: 1.4rem;
 }
 
 .diretorio{
@@ -86,9 +87,9 @@ input{
 }
 
 .iniciar{
-    width: 10vw;
+    width: 20vw;
     height: 8vh;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     cursor: pointer;
     border-radius: 12px;
