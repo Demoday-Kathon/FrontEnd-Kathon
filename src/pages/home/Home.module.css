@@ -31,11 +31,13 @@
 .botoesHome {
   display: flex;
   margin-bottom: 100px;
-  width: 50%;
+  width: 70%;
   position: relative;
   z-index: 1;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3em;
   margin: auto;
+  margin-top: 130px;
 }
 
 .cadastrarBtn {
@@ -83,7 +85,7 @@
   width: 100%;
   justify-content: space-evenly;
   margin: auto;
-  margin-top: 1em;
+  margin-top: em;
 }
 
 .areaBotao {
@@ -297,6 +299,7 @@
   color: white;
   text-align: center;
   padding: 20px;
+  height: 190px;
 }
 
 .video-background {
@@ -644,9 +647,7 @@ video {
 
 .logos {
   overflow: hidden;
-  /* Isto está correto */
   padding: 60px 0;
-  /* Corrigido para 'padding' ao invés de 'pad' */
   white-space: nowrap;
   position: relative;
 }
@@ -666,14 +667,14 @@ video {
   animation: 35s slide infinite linear;
 }
 
+.logos:hover .logos_slide {
+  animation-play-state: paused;
+}
+
 .logos_slide img {
   width: 150px;
   height: 150px;
   margin: 0 40px;
-}
-
-.logos:hover .logos_slide {
-  animation-play-state: paused;
 }
 
 @keyframes slide {
@@ -859,7 +860,7 @@ video {
   .coments {
     display: flex;
     margin: auto;
-    flex-direction: column;
+    flex-direction: row;
     width: 80%;
     justify-content: center;
     gap: 8vh;

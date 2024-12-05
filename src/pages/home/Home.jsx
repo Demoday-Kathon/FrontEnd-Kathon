@@ -98,11 +98,11 @@ function Home() {
         </motion.h1>
         <div className={styles.botoesHome}>
           <LinkComponent customClass="botaohome" linkTo={"/CadastroEscolha"}>
-            <Button customClass="buttonBaixo" text="Cadastre" />
+            <Button customClass="buttonBaixo" text="Comece sua jornada" />
           </LinkComponent>
 
           <LinkComponent customClass="botaohome" linkTo={"/CadastroEmpresa"}>
-            <Button customClass="buttonBaixo2" text="Seja parceiro" />
+            <Button customClass="buttonBaixo2" text="Invista em Talentos" />
           </LinkComponent>
         </div>
         <hr
@@ -274,10 +274,10 @@ function Home() {
 
             <Card
               bannerHacka={banner}
-              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
-              locationHacka="São Paulo, SP"
-              qtdparticipants="+150 participantes"
-              timeline="20 dias restantes"
+              titleHacka="EcoHack: Sustentabilidade e o cuidado com o planeta"
+              locationHacka="Recife, PE"
+              qtdparticipants="+200 participantes"
+              timeline="4 dias restantes"
               children1={
                 <div className={styles.tagsHacka}>
                   <Tag text="Presencial" customClass="roxoHome" />
@@ -350,7 +350,7 @@ function Home() {
                 icon={
                   <IoStatsChart
                     size={20}
-                    style={{ color: "#A367EB", marginRight: "0.5em" }}
+                    style={{ color: "#ffff", marginRight: "0.5em" }}
                   />
                 }
                 alt="icone de sifrão"
@@ -377,7 +377,7 @@ function Home() {
                 icon={
                   <TbWorld
                     size={20}
-                    style={{ color: "#A367EB", marginRight: "0.5em" }}
+                    style={{ color: "#ffff", marginRight: "0.5em" }}
                   />
                 }
                 alt="icone de alarme"
@@ -406,7 +406,7 @@ function Home() {
                 icon={
                   <MdOutlineLaptopMac
                     size={20}
-                    style={{ color: "#A367EB", marginRight: "0.5em" }}
+                    style={{ color: "#ffff", marginRight: "0.5em" }}
                   />
                 }
                 alt="icone de sifrão"
@@ -433,7 +433,7 @@ function Home() {
               <BotaoHome
                 customClass="iconCardPreto"
                 icon={
-                  <GiBrain style={{ color: "#A367EB", marginRight: "0.5em" }} />
+                  <GiBrain style={{ color: "#ffff", marginRight: "0.5em" }} />
                 }
                 alt="icone de sifrão"
                 text="Resolução"

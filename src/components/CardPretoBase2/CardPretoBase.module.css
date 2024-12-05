@@ -26,11 +26,13 @@
  .menor {
    width: 100%;
    margin-bottom: 10px;
+   margin: 12px;
  }
 
  .maior {
    width: 100%;
    margin: 0%;
+   margin: 12px;
  }
 
  /* .menor:hover,
@@ -60,7 +62,7 @@
    color: white;
    cursor: pointer;
    transition: 1s;
-
+   margin: 12px;
  }
 
  .cardPretoForms {
