@@ -499,7 +499,7 @@ function Home() {
         <Link className={styles.LinksPlanos} to="/planos">
           <Button text="Conheça os planos" customClass="buttonPlaninhos" />
         </Link>
-        <motion.h1
+        {/* <motion.h1
           className={styles.homeTitulo7}
           variants={fadein("up", 0.9)}
           initial="hidden"
@@ -531,7 +531,7 @@ function Home() {
             <img src={oracle} />
             <img src={pagbank} />
           </div>
-        </div>
+        </div> */}
       </container>
       <Footer />
     </div>
