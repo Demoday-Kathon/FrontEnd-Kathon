@@ -31,11 +31,13 @@
 .botoesHome {
   display: flex;
   margin-bottom: 100px;
-  width: 50%;
+  width: 70%;
   position: relative;
   z-index: 1;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3em;
   margin: auto;
+  margin-top: 130px;
 }
 
 .cadastrarBtn {
@@ -83,7 +85,7 @@
   width: 100%;
   justify-content: space-evenly;
   margin: auto;
-  margin-top: 1em;
+  margin-top: em;
 }
 
 .areaBotao {
@@ -297,6 +299,7 @@
   color: white;
   text-align: center;
   padding: 20px;
+  height: 190px;
 }
 
 .video-background {
