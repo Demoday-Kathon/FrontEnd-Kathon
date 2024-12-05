@@ -63,16 +63,16 @@ function Hackathons() {
             <Card
               customClass="cardHackathonDisponiveis"
               bannerHacka={banner}
-              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
-              locationHacka="São Paulo, SP"
-              qtdparticipants="+150 participantes"
-              timeline="20 dias restantes"
+              titleHacka="Ideathon CREA-SP 2024"
+              locationHacka="Coworking Crea-SP, São Paulo - SP"
+              qtdparticipants="+620 participantes"
+              timeline="Finalizado"
               children1={
                 <div className={styles.tagsHacka}>
                   <Tag text="Presencial" customClass="roxoHacka" />
-                  <Tag text="Inscrições Abertas" customClass="azulHacka" />
-                  <Tag text="Impacto Social" customClass="verdeAguaHacka" />
-                  <Tag text="Sustentabilidade" customClass="azulClaroHacka" />
+                  <Tag text="Inscrições Encerradas" customClass="azulHacka" />
+                  <Tag text="Impacto Empresarial" customClass="verdeAguaHacka" />
+                  <Tag text="Engajamento" customClass="azulClaroHacka" />
                 </div>
               }
               children3={
