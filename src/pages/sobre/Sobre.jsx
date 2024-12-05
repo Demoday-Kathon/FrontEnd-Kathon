@@ -159,8 +159,8 @@ function Sobre({ children }) {
             name={"Ricardo Matos"}
             description={"Desenvolvedor Full-Stack"}
             photo={Ricardo}
-            github={"https://github.com/beatrizimarques"}
-            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+            github={"https://github.com/MatosRicardo"}
+            linkedin={"https://www.linkedin.com/in/ricardomatos-developer/"}
           />
           <CardMembroTime
             name={"Raphael Pereira"}
@@ -180,8 +180,8 @@ function Sobre({ children }) {
             name={"Lucas Carvalho"}
             description={"UI/UX Designer e Desenvolvedor Full-Stack"}
             photo={LucasImage}
-            github={"https://github.com/beatrizimarques"}
-            linkedin={"https://www.linkedin.com/in/beatriz-imarques/"}
+            github={"https://github.com/l4raujo/"}
+            linkedin={"https://www.linkedin.com/in/lcsdev/"}
           />
         </div>
       </div>
