@@ -350,7 +350,7 @@ function Home() {
                 icon={
                   <IoStatsChart
                     size={20}
-                    style={{ color: "#A367EB", marginRight: "0.5em" }}
+                    style={{ color: "#ffff", marginRight: "0.5em" }}
                   />
                 }
                 alt="icone de sifrão"
@@ -377,7 +377,7 @@ function Home() {
                 icon={
                   <TbWorld
                     size={20}
-                    style={{ color: "#A367EB", marginRight: "0.5em" }}
+                    style={{ color: "#ffff", marginRight: "0.5em" }}
                   />
                 }
                 alt="icone de alarme"
@@ -406,7 +406,7 @@ function Home() {
                 icon={
                   <MdOutlineLaptopMac
                     size={20}
-                    style={{ color: "#A367EB", marginRight: "0.5em" }}
+                    style={{ color: "#ffff", marginRight: "0.5em" }}
                   />
                 }
                 alt="icone de sifrão"
@@ -433,7 +433,7 @@ function Home() {
               <BotaoHome
                 customClass="iconCardPreto"
                 icon={
-                  <GiBrain style={{ color: "#A367EB", marginRight: "0.5em" }} />
+                  <GiBrain style={{ color: "#ffff", marginRight: "0.5em" }} />
                 }
                 alt="icone de sifrão"
                 text="Resolução"
