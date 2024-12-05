@@ -8,7 +8,7 @@ import Macbook from "../../assets/imgs/macbook.png";
 import styles from "./Sobre.module.css";
 import blur from "../../assets/imgs/elipseblue.png";
 import BeatrizImage from "../../assets/imgs/imgmembros/beatriz.jpg";
-import LucasImage from "../../assets/imgs/imgmembros/lucas.jpg";
+import Lucas_PROA from "../../assets/imgs/Lucas_PROA.jpg";
 import Gustavo from "../../assets/imgs/imgmembros/gustavo.jpg";
 import Ricardo from "../../assets/imgs/imgmembros/ricardo.jpeg";
 import Weslley from "../../assets/imgs/imgmembros/weslley.jpg";
@@ -179,7 +179,7 @@ function Sobre({ children }) {
           <CardMembroTime
             name={"Lucas Carvalho"}
             description={"UI/UX Designer e Desenvolvedor Full-Stack"}
-            photo={LucasImage}
+            photo={Lucas_PROA}
             github={"https://github.com/l4raujo/"}
             linkedin={"https://www.linkedin.com/in/lcsdev/"}
           />
