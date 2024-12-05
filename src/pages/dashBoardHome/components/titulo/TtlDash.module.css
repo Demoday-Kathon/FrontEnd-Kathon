@@ -28,7 +28,7 @@
 }
 
 .containerSessão1 p{
-    color: #A367EB;
+    color: #fff;
 }
 
 .containerSessão2{
@@ -45,7 +45,7 @@
 }
 
 .containerSessão2 p{
-    color: #A367EB;
+    color: #fff;
 }
 
 .containerKia{
@@ -62,7 +62,7 @@
 }
 
 .containerKia p{
-    color: #A367EB;
+    color: #fff;
 }
 
 @media only screen and (max-width: 320px){

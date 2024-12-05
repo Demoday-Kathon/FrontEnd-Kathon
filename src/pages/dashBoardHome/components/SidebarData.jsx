@@ -23,6 +23,12 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
+        title: 'Planos',
+        path: '/PlanosInternos',
+        icon: <AiIcons.AiTwotoneCreditCard />,
+        cName: 'nav-text'
+    },
+    {
         title: 'Sair',
         path: '/',
         icon: <AiIcons.AiOutlineLogout />,

@@ -102,14 +102,14 @@ function AnaliseCurriculo() {
             <div className={Styles.content}>
                 <div className={Styles.ladoEsq}>
                     <div className={Styles.topLeft}>
-                        <div id="candidateCount" className={Styles.candidateCount}>
-                            Candidatos cadastrados: {curriculosPreCadastrados.length}
-                        </div>
                         <input type="text" className={Styles.nome_vaga} placeholder='Digite a descrição da sua vaga' ref={jobDescriptionRef} />
                     </div>
                     <div className={Styles.lowLeft}>
                         <button className={Styles.iniciar} onClick={handleAnalyzeCurriculos}>Iniciar Análise</button>
                     </div>
+                        <div id="candidateCount" className={Styles.candidateCount}>
+                            Candidatos: {curriculosPreCadastrados.length}
+                        </div>
                 </div>
                 <div className={Styles.ladoDir}>
                     {results.map((result, index) => (
