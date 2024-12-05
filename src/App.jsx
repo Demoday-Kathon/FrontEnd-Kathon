@@ -13,6 +13,7 @@ import HackathonVisaoGeralInterno from "./pages/hackathonsVisaoGeralInterno/Hack
 import HackathonCalendario from "./pages/hackathonsCalendario/HackCalendario";
 import HackathonCalendarioInterno from "./pages/hackathonsCalendarioInterno/HackCalendarioInterno";
 import Planos from "./pages/planos/Planos";
+import PlanosInternos from "./pages/planosInterno/PlanosInternos";
 import HackathonsPremios from "./pages/hackathonsPremios/HackathonsPremios";
 import HackathonsPremiosInterno from "./pages/hackathonsPremiosInterno/HackathonsPremiosInterno";
 import DashBoardHome from "./pages/dashBoardHome/DashBoardHome";
@@ -63,6 +64,7 @@ function App() {
           <Route path="/HackathonVisaoGeralInterno" element={<HackathonVisaoGeralInterno />} />
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
           <Route path="/Planos" element={<Planos />} />
+          <Route path="/PlanosInternos" element={<PlanosInternos />} />
           <Route path="/dashboardhome" element={<DashBoardHome />} />
           <Route path="/dashboardhackathon" element={<HackathonDashboard />} />
           <Route path="/dashboardassistenteia" element={<DashboardAssistenteIA />}/>
