@@ -90,8 +90,8 @@ function Home() {
               strings: ["Desafios que revelam <br/> soluções que inovam"],
               autoStart: true,
               loop: true, // Para digitar apenas uma vez
-              delay: 100, // Velocidade da digitação
-              deleteSpeed: 0, // Não apagar o texto
+              delay: 120, // Velocidade da digitação
+              deleteSpeed: 50, // Não apagar o texto
               cursor: "",
             }}
           />
