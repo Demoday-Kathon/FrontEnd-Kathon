@@ -1,6 +1,10 @@
 import {React, useEffect, useState} from "react";
 import styles from "./Hackathons.module.css";
 import banner from "../../assets/imgs/banner.png";
+import brasil from "../../assets/imgs/hack_brasil.png";
+import ideathon from "../../assets/imgs/ideathon.png";
+import gov from "../../assets/imgs/gov.png";
+import start from "../../assets/imgs/start.png";
 import accenture from "../../assets/imgs/accenture.png";
 import Card from "../../components/layout/card/card";
 import Button from "../../components/layout/button/button";
@@ -62,7 +66,7 @@ function Hackathons() {
           <div className={styles.rowHackathonsDisp}>
             <Card
               customClass="cardHackathonDisponiveis"
-              bannerHacka={banner}
+              bannerHacka={ideathon}
               titleHacka="Ideathon CREA-SP 2024"
               locationHacka="Coworking Crea-SP, São Paulo - SP"
               qtdparticipants="+620 participantes"
@@ -91,7 +95,7 @@ function Hackathons() {
 
             <Card
               customClass="cardHackathonDisponiveis"
-              bannerHacka={banner}
+              bannerHacka={gov}
               titleHacka="Hackathon Compras Gorvenamentais"
               locationHacka="São Paulo, SP"
               qtdparticipants="+200 participantes"
@@ -124,7 +128,7 @@ function Hackathons() {
           <div className={styles.rowHackathonsDisp}>
             <Card
               customClass="cardHackathonDisponiveis"
-              bannerHacka={banner}
+              bannerHacka={brasil}
               titleHacka="Hackathon Rede +Brasil"
               locationHacka="Brasil"
               qtdparticipants="+200 participantes"
@@ -153,17 +157,17 @@ function Hackathons() {
 
             <Card
               customClass="cardHackathonDisponiveis"
-              bannerHacka={banner}
-              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
-              locationHacka="São Paulo, SP"
-              qtdparticipants="+150 participantes"
-              timeline="20 dias restantes"
+              bannerHacka={start}
+              titleHacka="START Hack 2025"
+              locationHacka="St. Gallen, Suiça"
+              qtdparticipants="+600 participantes"
+              timeline="3 meses restantes"
               children1={
                 <div className={styles.tagsHacka}>
-                  <Tag text="Presencial" customClass="roxoHacka" />
+                  <Tag text="Online" customClass="roxoHacka" />
                   <Tag text="Inscrições Abertas" customClass="azulHacka" />
-                  <Tag text="Impacto Social" customClass="verdeAguaHacka" />
-                  <Tag text="Sustentabilidade" customClass="azulClaroHacka" />
+                  <Tag text="Inovação" customClass="verdeAguaHacka" />
+                  <Tag text="Tecnologia" customClass="azulClaroHacka" />
                 </div>
               }
               children3={
@@ -187,16 +191,16 @@ function Hackathons() {
             <Card
               customClass="cardHackathonDisponiveis"
               bannerHacka={banner}
-              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
+              titleHacka="Boostlab Batch 2025"
               locationHacka="São Paulo, SP"
-              qtdparticipants="+150 participantes"
-              timeline="20 dias restantes"
+              qtdparticipants="+330 participantes"
+              timeline="1 mês restante"
               children1={
                 <div className={styles.tagsHacka}>
-                  <Tag text="Presencial" customClass="roxoHacka" />
+                  <Tag text="Online" customClass="roxoHacka" />
                   <Tag text="Inscrições Abertas" customClass="azulHacka" />
-                  <Tag text="Impacto Social" customClass="verdeAguaHacka" />
-                  <Tag text="Sustentabilidade" customClass="azulClaroHacka" />
+                  <Tag text="Segurança" customClass="verdeAguaHacka" />
+                  <Tag text="Startups" customClass="azulClaroHacka" />
                 </div>
               }
               children3={
@@ -216,7 +220,7 @@ function Hackathons() {
             <Card
               customClass="cardHackathonDisponiveis"
               bannerHacka={banner}
-              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
+              titleHacka="Hackathon: Uma Explanação em Tópicos"
               locationHacka="São Paulo, SP"
               qtdparticipants="+150 participantes"
               timeline="20 dias restantes"
