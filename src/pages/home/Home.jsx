@@ -315,12 +315,12 @@ function Home() {
           <Card_Recomendacao
             Perfil_foto={leticia}
             Nome="Leticia Silva"
-            Sub_titulo="“KATHON nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva que já estamos planejando o próximo hackathon.”"
+            Sub_titulo="“A Kathon nos surpreendeu com a qualidade das soluções apresentadas pelos jovens. A experiência foi tão positiva que já estamos planejando o próximo hackathon.”"
           />
           <Card_Recomendacao
             Perfil_foto={Abel}
             Nome="João Carlos Pereira"
-            Sub_titulo="“Participar do hackathon com a KATHON foi uma experiência incrível! Trabalhei com uma equipe talentosa, aprendi muito e me senti desafiado. Mal posso esperar pelo próximo!”"
+            Sub_titulo="“Participar do hackathon com a Kathon foi uma experiência incrível! Trabalhei com uma equipe talentosa, aprendi muito e me senti desafiado. Mal posso esperar pelo próximo!”"
           />
           {/* Adicione mais Cards aqui, se necessário */}
         </div>

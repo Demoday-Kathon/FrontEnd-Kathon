@@ -187,8 +187,6 @@
   color: #a55aff;
 }
 
-
-
 /*Disp Mobile*/
 /*Medidas para dispositivos pequenos, com a largura de no máximo 320px (iPhone 5; iPhone SE 2016.)*/
 
@@ -212,7 +210,6 @@
     height: 10vh;
   }
 
-
   .containerTerciary {
     display: flex;
     justify-content: center;
@@ -220,7 +217,6 @@
     width: 100%;
     height: auto;
   }
-
 
   .ContainerTitleSobre {
     width: 95%;
@@ -236,8 +232,6 @@
   .titulosSection {
     font-size: 3rem;
   }
-
-
 
   .images {
     display: none;
@@ -260,7 +254,6 @@
     bottom: 50%;
     padding-left: 1vh;
   }
-
 
   .containerSecondary {
     display: none;
@@ -309,7 +302,7 @@
     margin-bottom: 20vh;
   }
 
-  .containerDesenvolvedores .titulodesenvolvedores{
+  .containerDesenvolvedores .titulodesenvolvedores {
     font-size: 2.5em;
     text-align: center;
   }
@@ -356,12 +349,10 @@
   }
 }
 
-
 /*Medidas para dispositivos médios, com a largura entre 321px e 360px (Samsung Galaxy S5; Xiaomi Mi 11i; Huawei P30; Galaxy Z Flip3; OPPO Find X3 PRO; Galaxy A12; Galaxy S21 Ultra; Google Pixel 6 PRO; Xiaomi 12; Galaxy S22; Galaxy S22 +; Galaxy S22 ULTRA; Samsung Galaxy S24; iPhone 12 Mini)*/
 
-@media only screen and (min-width:321px) {
-  @media only screen and (max-width:360px) {
-
+@media only screen and (min-width: 321px) {
+  @media only screen and (max-width: 360px) {
     .containerPrimary {
       flex-direction: column-reverse;
       justify-content: center;
@@ -371,7 +362,7 @@
       margin-top: 5vh;
       margin-bottom: 5vh;
     }
-  
+
     .containerSecondary,
     .containerTerciary {
       flex-direction: column;
@@ -380,8 +371,7 @@
       gap: 1em;
       height: auto;
     }
-  
-  
+
     .containerTerciary {
       display: flex;
       justify-content: center;
@@ -389,25 +379,22 @@
       width: 100%;
       height: auto;
     }
-  
-  
+
     .ContainerTitleSobre {
       width: 95%;
       bottom: 0;
       text-align: center;
       gap: 1.5rem;
     }
-  
+
     .ContainerTitleSobre p {
       font-size: 1.8rem;
     }
-  
+
     .titulosSection {
       font-size: 3rem;
     }
-  
-  
-  
+
     .images {
       display: none;
       justify-content: center;
@@ -415,11 +402,11 @@
       width: 100%;
       height: auto;
     }
-  
+
     .elipseBlur {
       display: none;
     }
-  
+
     .images .ImageGlass {
       display: flex;
       justify-content: center;
@@ -429,8 +416,7 @@
       bottom: 10%;
       padding-left: 1vh;
     }
-  
-  
+
     .containerSecondary {
       display: none;
       flex-direction: row;
@@ -439,14 +425,14 @@
       width: 100%;
       height: auto;
     }
-  
+
     .containerSecondary .textDescription {
       width: 90%;
       font-size: 2.5rem;
       text-align: center;
       margin: 0 auto;
     }
-  
+
     .containerTerciary {
       display: none;
       flex-direction: column-reverse;
@@ -457,7 +443,7 @@
       gap: 0vh;
       margin-bottom: 5vh;
     }
-  
+
     .containerTerciary .textDescription {
       display: flex;
       justify-content: center;
@@ -467,7 +453,7 @@
       text-align: left;
       margin: 0 auto;
     }
-  
+
     .equipeContainer {
       display: flex;
       flex-direction: column;
@@ -485,17 +471,17 @@
       justify-content: center;
       align-items: center;
     }
-  
-    .containerDesenvolvedores .titulodesenvolvedores{
+
+    .containerDesenvolvedores .titulodesenvolvedores {
       font-size: 2.5em;
       text-align: center;
     }
-  
+
     .containerNossoTime .tituloNossoTime {
       margin-top: 2.5em;
       margin-bottom: 0em;
     }
-  
+
     .descDesenvolvedores {
       flex-direction: row;
       justify-content: center;
@@ -504,24 +490,24 @@
       padding: 0;
       margin: 0;
     }
-  
+
     .descDesenvolvedores .textDescription {
       font-size: 2.5rem;
       text-align: center;
     }
-  
+
     .imgEquipe {
       width: 90vw;
       height: auto;
     }
-  
+
     .containerNossoTime {
       justify-content: space-between;
       height: auto;
       gap: 1em;
       margin-bottom: 10vh;
     }
-  
+
     .containerCardMembroTime {
       flex-direction: column;
       height: 200vh;
@@ -529,21 +515,18 @@
       width: 100%;
       gap: 0vh;
     }
-  
+
     .tituloNossoTime {
       font-size: 3rem;
       text-align: center;
     }
-
-
   }
 }
 
-
 /*Medidas para dispositivos médios para grandes, com largura entre 361px e 391px (Galaxy S24 ULTRA; iPhone X; iPhone 12P PRO; iPhone 13 PRO; iPhone 14; iPhone 14 PRO)*/
 
-@media only screen and (min-width:361px) {
-  @media only screen and (max-width:389px) {
+@media only screen and (min-width: 361px) {
+  @media only screen and (max-width: 389px) {
     .containerPrimary {
       flex-direction: column-reverse;
       justify-content: center;
@@ -553,7 +536,7 @@
       margin-top: 5vh;
       margin-bottom: 5vh;
     }
-  
+
     .containerSecondary,
     .containerTerciary {
       flex-direction: column;
@@ -562,8 +545,7 @@
       gap: 1em;
       height: auto;
     }
-  
-  
+
     .containerTerciary {
       display: flex;
       justify-content: center;
@@ -571,25 +553,22 @@
       width: 100%;
       height: auto;
     }
-  
-  
+
     .ContainerTitleSobre {
       width: 95%;
       bottom: 0;
       text-align: center;
       gap: 1.5rem;
     }
-  
+
     .ContainerTitleSobre p {
       font-size: 1.8rem;
     }
-  
+
     .titulosSection {
       font-size: 3rem;
     }
-  
-  
-  
+
     .images {
       display: none;
       justify-content: center;
@@ -597,11 +576,11 @@
       width: 100%;
       height: auto;
     }
-  
+
     .elipseBlur {
       display: none;
     }
-  
+
     .images .ImageGlass {
       display: flex;
       justify-content: center;
@@ -611,8 +590,7 @@
       bottom: 10%;
       padding-left: 1vh;
     }
-  
-  
+
     .containerSecondary {
       display: none;
       flex-direction: row;
@@ -621,14 +599,14 @@
       width: 100%;
       height: auto;
     }
-  
+
     .containerSecondary .textDescription {
       width: 90%;
       font-size: 2.5rem;
       text-align: center;
       margin: 0 auto;
     }
-  
+
     .containerTerciary {
       display: none;
       flex-direction: column-reverse;
@@ -639,7 +617,7 @@
       gap: 0vh;
       margin-bottom: 5em;
     }
-  
+
     .containerTerciary .textDescription {
       display: flex;
       justify-content: center;
@@ -649,7 +627,7 @@
       text-align: left;
       margin: 0 auto;
     }
-  
+
     .equipeContainer {
       display: flex;
       flex-direction: column;
@@ -667,12 +645,12 @@
       justify-content: center;
       align-items: center;
     }
-  
-    .containerDesenvolvedores .titulodesenvolvedores{
+
+    .containerDesenvolvedores .titulodesenvolvedores {
       font-size: 2.5em;
       text-align: center;
     }
-  
+
     .containerNossoTime .tituloNossoTime {
       margin-top: 2.5em;
       margin-bottom: 0em;
@@ -681,7 +659,7 @@
     .equipeContainer .containerDesenvolvedores .titulodesenvolvedores {
       margin-top: 2em;
     }
-  
+
     .descDesenvolvedores {
       flex-direction: row;
       justify-content: center;
@@ -690,39 +668,36 @@
       padding: 0;
       margin: 0;
     }
-  
+
     .descDesenvolvedores .textDescription {
       font-size: 2.5rem;
       text-align: center;
     }
-  
+
     .imgEquipe {
       width: 90vw;
       height: auto;
     }
-  
+
     .containerNossoTime {
       justify-content: space-between;
       height: 750vh;
       margin-bottom: 20vh;
     }
-  
+
     .containerCardMembroTime {
       flex-direction: column;
       height: 400vh;
       margin-bottom: 1rem;
       width: 100%;
     }
-  
+
     .tituloNossoTime {
       font-size: 3rem;
       text-align: center;
     }
-
   }
 }
-
-
 
 /*Medidas para dispositivos médios para grandes, com largura entre 391px 430px (Galaxy Note 20; Google Pixel 8; iPhone XR 2018; Iphone 11; iPhone 11 Pro Max; iPhone 12 Pro Max, iPhone 13 Pro Max, iPhone 14 Plus, iPhone 14 Pro Max, Iphone 15, Iphone 15 Plus, Iphone 15 PRO, Iphone 15 PRO MAX, iPhone 16, Iphone 16 Plus, iPhone 16 PRO, iPhone 16 PRO MAX)*/
 
@@ -746,7 +721,6 @@
       gap: 1vh;
       height: 10vh;
     }
-
 
     .ContainerTitleSobre {
       width: 95%;
@@ -784,7 +758,6 @@
       bottom: 50%;
       padding-left: 1vh;
     }
-
 
     .containerSecondary {
       display: none;
@@ -867,7 +840,7 @@
       height: 670vh;
       margin-bottom: 20vh;
     }
-  
+
     .containerCardMembroTime {
       flex-direction: column;
       height: 350vh;
@@ -875,12 +848,8 @@
       width: 100%;
       gap: 35vh;
     }
-
-    
   }
 }
-
-
 
 /*Medidas para Tablets: */
 @media only screen and (min-width: 441px) {
@@ -903,7 +872,6 @@
       gap: 1vh;
       height: 10vh;
     }
-
 
     .ContainerTitleSobre {
       width: 95%;
@@ -941,7 +909,6 @@
       bottom: 50%;
       padding-left: 1vh;
     }
-
 
     .containerSecondary {
       display: none;
@@ -1024,7 +991,7 @@
       height: 670vh;
       margin-bottom: 20vh;
     }
-  
+
     .containerCardMembroTime {
       flex-direction: column;
       height: 350vh;
@@ -1056,7 +1023,6 @@
       gap: 1vh;
       height: 10vh;
     }
-
 
     .ContainerTitleSobre {
       width: 95%;
@@ -1094,7 +1060,6 @@
       bottom: 50%;
       padding-left: 1vh;
     }
-
 
     .containerSecondary {
       display: none;
@@ -1186,9 +1151,6 @@
     }
   }
 }
-
-
-
 
 /* @media screen and (max-width: 968px){
   .containerPrimary {

@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from "react";
+import { React, useEffect, useState } from "react";
 import styles from "./Hackathons.module.css";
 import banner from "../../assets/imgs/banner.png";
 import brasil from "../../assets/imgs/hack_brasil.png";
@@ -20,7 +20,6 @@ import person2 from "../../assets/imgs/pessoa2.png";
 import person3 from "../../assets/imgs/pessoa3.png";
 
 function Hackathons() {
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -30,12 +29,13 @@ function Hackathons() {
     handleMediaQueryChange(mediaQuery);
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    return () =>
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
   }, []);
 
   return (
     <div className={styles.hackathons}>
-      {isMobile? <HeaderMobile /> : <Header />}
+      {isMobile ? <HeaderMobile /> : <Header />}
       {/* TESTE DO VIDEO */}
       <div className={styles.App}>
         <div className="video-background">
@@ -75,7 +75,10 @@ function Hackathons() {
                 <div className={styles.tagsHacka}>
                   <Tag text="Presencial" customClass="roxoHacka" />
                   <Tag text="Inscrições Encerradas" customClass="azulHacka" />
-                  <Tag text="Impacto Empresarial" customClass="verdeAguaHacka" />
+                  <Tag
+                    text="Impacto Empresarial"
+                    customClass="verdeAguaHacka"
+                  />
                   <Tag text="Engajamento" customClass="azulClaroHacka" />
                 </div>
               }
@@ -88,15 +91,15 @@ function Hackathons() {
               }
               children2={
                 <LinkComponent linkTo={"/HackathonVisaoGeral"}>
-                    <Button text="Saiba Mais" customClass="buttonAzulHacka" />
-                   </LinkComponent>
+                  <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                </LinkComponent>
               }
             ></Card>
 
             <Card
               customClass="cardHackathonDisponiveis"
               bannerHacka={gov}
-              titleHacka="Hackathon Compras Gorvenamentais"
+              titleHacka="Hackathon Compras Governamentais"
               locationHacka="São Paulo, SP"
               qtdparticipants="+200 participantes"
               timeline="Finalizado"
@@ -117,8 +120,8 @@ function Hackathons() {
               }
               children2={
                 <LinkComponent linkTo={"/HackathonVisaoGeral"}>
-                    <Button text="Saiba Mais" customClass="buttonAzulHacka" />
-                   </LinkComponent>
+                  <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                </LinkComponent>
               }
             ></Card>
           </div>
@@ -150,8 +153,8 @@ function Hackathons() {
               }
               children2={
                 <LinkComponent linkTo={"/HackathonVisaoGeral"}>
-                    <Button text="Saiba Mais" customClass="buttonAzulHacka" />
-                   </LinkComponent>
+                  <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                </LinkComponent>
               }
             ></Card>
 
@@ -179,8 +182,8 @@ function Hackathons() {
               }
               children2={
                 <LinkComponent linkTo={"/HackathonVisaoGeral"}>
-                    <Button text="Saiba Mais" customClass="buttonAzulHacka" />
-                   </LinkComponent>
+                  <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                </LinkComponent>
               }
             ></Card>
           </div>
@@ -212,8 +215,8 @@ function Hackathons() {
               }
               children2={
                 <LinkComponent linkTo={"/HackathonVisaoGeral"}>
-                    <Button text="Saiba Mais" customClass="buttonAzulHacka" />
-                   </LinkComponent>
+                  <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                </LinkComponent>
               }
             ></Card>
 
@@ -241,8 +244,8 @@ function Hackathons() {
               }
               children2={
                 <LinkComponent linkTo={"/HackathonVisaoGeral"}>
-                    <Button text="Saiba Mais" customClass="buttonAzulHacka" />
-                   </LinkComponent>
+                  <Button text="Saiba Mais" customClass="buttonAzulHacka" />
+                </LinkComponent>
               }
             ></Card>
           </div>

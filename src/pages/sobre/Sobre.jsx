@@ -16,11 +16,10 @@ import Paulo from "../../assets/imgs/imgmembros/paulo.jpg";
 import Raphael from "../../assets/imgs/imgmembros/raphael.jpg";
 import { motion } from "framer-motion";
 import { fadein } from "../../variants";
-import {React, useEffect, useState} from "react";
+import { React, useEffect, useState } from "react";
 import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function Sobre({ children }) {
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -30,12 +29,13 @@ function Sobre({ children }) {
     handleMediaQueryChange(mediaQuery);
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    return () =>
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
   }, []);
 
   return (
     <div className={styles.container}>
-      {isMobile? <HeaderMobile /> : <Header />}
+      {isMobile ? <HeaderMobile /> : <Header />}
       <div className={styles.containerPrimary}>
         <div className={styles.images}>
           <img className={styles.elipseBlur} src={blur} alt="blur roxo" />

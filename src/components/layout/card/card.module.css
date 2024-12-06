@@ -35,9 +35,6 @@
   margin-bottom: 0.5em;
 }
 
-
-
-
 .rowPeople {
   display: flex;
   flex-direction: row;
@@ -47,19 +44,16 @@
   width: 90%;
 }
 
-
 .people {
   display: flex;
   flex-direction: row;
   width: 100%;
-
 }
 
 .participants {
   font-size: 0.25em;
   width: 100%;
 }
-
 
 .container2 {
   margin-top: 20px;
@@ -105,16 +99,13 @@
 
 .cardHackathonDisponiveis {
   width: 40%;
-
 }
-
 
 .cardHackathonDisponiveis .bannerHacka {
   width: 100%;
   height: 8em;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-
 }
 
 .cardHackathonDisponiveis .titleHacka {
@@ -122,9 +113,7 @@
   text-align: left;
   margin-top: 1em;
   width: 90%;
-
 }
-
 
 .cardHackathonDisponiveis .locationHacka {
   width: 90%;
@@ -140,14 +129,11 @@
 .cardHackathonDisponiveis .participants {
   font-size: 0.5em;
   width: 100%;
-
 }
-
 
 .cardHackathonDisponiveis .participants {
   font-size: 0.5em;
   width: 100%;
-
 }
 
 /*Medida Mobile */
@@ -191,7 +177,6 @@
 
   .diasRestantes {
     font-size: 0.18em;
-
   }
 
   /*Card de Hackathon para a PÁGINA de Hackathons*/
@@ -203,9 +188,7 @@
   }
 
   .cardHackathonDisponiveis .locationHacka {
-
     font-size: 0.4em;
-
   }
 
   .cardHackathonDisponiveis .rowPeople {
@@ -225,13 +208,11 @@
 
   .cardHackathonDisponiveis .diasRestantes {
     font-size: 0.4em;
-
   }
-  
 }
 
-@media only screen and (min-width:321px) {
-  @media only screen and (max-width:360px) {
+@media only screen and (min-width: 321px) {
+  @media only screen and (max-width: 360px) {
     .cardHacka {
       width: 100%;
       height: 100%;
@@ -244,9 +225,7 @@
     }
 
     .locationHacka {
-
       font-size: 0.2em;
-  
     }
 
     .rowPeople {
@@ -255,20 +234,19 @@
       align-items: center;
       justify-content: center;
     }
-  
+
     .participants {
       font-size: 0.18em;
     }
-  
+
     .button_hackathon {
       justify-content: center;
     }
-  
+
     .diasRestantes {
       font-size: 0.18em;
-  
     }
-      /*Card de Hackathon para a PÁGINA de Hackathons*/
+    /*Card de Hackathon para a PÁGINA de Hackathons*/
     .cardHackathonDisponiveis .titleHacka {
       font-size: 0.5em;
       width: 90%;
@@ -277,7 +255,6 @@
 
     .cardHackathonDisponiveis .locationHacka {
       font-size: 0.4em;
-
     }
 
     .cardHackathonDisponiveis .rowPeople {
@@ -286,27 +263,23 @@
       align-items: center;
       justify-content: center;
     }
-  
+
     .cardHackathonDisponiveis .participants {
       font-size: 0.4em;
     }
-  
+
     .cardHackathonDisponiveis .button_hackathon {
       justify-content: center;
     }
-  
+
     .cardHackathonDisponiveis .diasRestantes {
       font-size: 0.4em;
-  
     }
-
-
   }
 }
 
-
-@media only screen and (min-width:361px) {
-  @media only screen and (max-width:391px) {
+@media only screen and (min-width: 361px) {
+  @media only screen and (max-width: 391px) {
     .cardHacka {
       width: 100%;
       height: 100%;
@@ -319,9 +292,7 @@
     }
 
     .locationHacka {
-
       font-size: 0.2em;
-  
     }
 
     .rowPeople {
@@ -330,20 +301,19 @@
       align-items: center;
       justify-content: center;
     }
-  
+
     .participants {
       font-size: 0.18em;
     }
-  
+
     .button_hackathon {
       justify-content: center;
     }
-  
+
     .diasRestantes {
       font-size: 0.18em;
-  
     }
-      /*Card de Hackathon para a PÁGINA de Hackathons*/
+    /*Card de Hackathon para a PÁGINA de Hackathons*/
     .cardHackathonDisponiveis .titleHacka {
       font-size: 0.5em;
       width: 90%;
@@ -352,7 +322,6 @@
 
     .cardHackathonDisponiveis .locationHacka {
       font-size: 0.4em;
-
     }
 
     .cardHackathonDisponiveis .rowPeople {
@@ -361,23 +330,20 @@
       align-items: center;
       justify-content: center;
     }
-  
+
     .cardHackathonDisponiveis .participants {
       font-size: 0.4em;
     }
-  
+
     .cardHackathonDisponiveis .button_hackathon {
       justify-content: center;
     }
-  
+
     .cardHackathonDisponiveis .diasRestantes {
       font-size: 0.4em;
-  
     }
   }
 }
-
-
 
 @media only screen and (min-width: 392px) {
   @media only screen and (max-width: 440px) {
@@ -408,7 +374,7 @@
     .button_hackathon {
       justify-content: center;
     }
-      /*Card de Hackathon para a PÁGINA de Hackathons*/
+    /*Card de Hackathon para a PÁGINA de Hackathons*/
     .cardHackathonDisponiveis .titleHacka {
       font-size: 0.6em;
       width: 100%;
@@ -436,11 +402,10 @@
 }
 
 /*Medidas Tablet*/
-@media only screen and (min-width:441px) {
+@media only screen and (min-width: 441px) {
   @media only screen and (max-width: 930px) {
     .cardHacka {
       width: 100%;
     }
-    
   }
 }

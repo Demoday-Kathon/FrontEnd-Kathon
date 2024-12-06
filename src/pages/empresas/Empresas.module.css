@@ -1,721 +1,674 @@
 .fundoempresa {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .empresapai {
-    width: 90%;
-    margin: auto;
-    height: auto;
-    margin-bottom: 200px;
+  width: 90%;
+  margin: auto;
+  height: auto;
+  margin-bottom: 200px;
 }
 
-
-
 .textempresa {
-    text-align: center;
-    margin-top: 80px;
-    color: white;
-    font-size: 45px;
+  text-align: center;
+  margin-top: 80px;
+  color: white;
+  font-size: 45px;
 }
 
 .empresa1 {
-    width: 100%;
-    height: 600px;
-    border-radius: 80px;
-    margin: auto;
-    margin-top: 80px;
-    background-image: url("../../assets/imgs/pessoas_empresas.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  border-radius: 80px;
+  margin: auto;
+  margin-top: 80px;
+  background-image: url("../../assets/imgs/pessoas_empresas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .empresa1 h1 {
-    color: #A367EB;
-    font-family: "DM Sans";
-    font-size: 3.9em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-top: 100px;
-    padding-left: 200px;
+  color: #a367eb;
+  font-family: "DM Sans";
+  font-size: 3.9em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 100px;
+  padding-left: 200px;
 }
 
 .empresa1 p {
-    color: white;
-    font-family: "DM Sans";
-    font-size: 45px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    padding-top: 60px;
-    padding-left: 200px;
+  color: white;
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  padding-top: 60px;
+  padding-left: 200px;
 }
 
 .boxtextpai {
-    position: relative;
-    width: 100%;
-    height: 30%;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  height: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .boxtext {
-    width: 55%;
-    height: auto;
-    background: rgba(20, 19, 1, 0.8);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    margin: 1em;
-    margin-top: 50px;
-    margin-bottom: 80px;
-    border-radius: 36px;
-    border: 2px solid #5AC8E4;
-    padding: 3.5em;
-    padding-top: 1em;
+  width: 55%;
+  height: auto;
+  background: rgba(20, 19, 1, 0.8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  margin: 1em;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  border-radius: 36px;
+  border: 2px solid #5ac8e4;
+  padding: 3.5em;
+  padding-top: 1em;
 }
 
 .boxtext h5 {
-    color: #A367EB;
-    font-size: 45px;
-    margin-top: 20px;
-    font-weight: bold;
+  color: #a367eb;
+  font-size: 45px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
-.boxtextp1{
-    color: white;
-    margin-top:-20px;
-    font-size: 30px;
+.boxtextp1 {
+  color: white;
+  margin-top: -20px;
+  font-size: 30px;
 }
 
-.boxtexth5{
-    position: relative;
-    
+.boxtexth5 {
+  position: relative;
 }
 
-
-.boxtextp2{
-    position: relative;
-    color: white;
-    font-size: 30px;
-    margin-top:-20px;
+.boxtextp2 {
+  position: relative;
+  color: white;
+  font-size: 30px;
+  margin-top: -20px;
 }
 
 .boxfinal {
-    position: relative;
-    width: 98%;
-    height: auto;
-    border-radius: 80px;
-    border: 2px solid #FFF;
-    margin: auto;
-    background: rgba(20, 19, 1, 0.8);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  position: relative;
+  width: 98%;
+  height: auto;
+  border-radius: 80px;
+  border: 2px solid #fff;
+  margin: auto;
+  background: rgba(20, 19, 1, 0.8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 .boxfinal h4 {
-    position: relative;
-    color: white;
-    font-size: 68px;
-    margin-left: 80px;
-    top: 40px;
+  position: relative;
+  color: white;
+  font-size: 68px;
+  margin-left: 80px;
+  top: 40px;
 }
 
 .boxfinalfilho {
-    width: 100%;
-    display: flex;
-    margin-top: 60px;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .filho1 {
-    width: 50%;
+  width: 50%;
 }
 
 .filho2 {
-    width: 45%;
-    border: #A367EB;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
+  width: 45%;
+  border: #a367eb;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
 }
 
-
 .filhoimg {
-    width: 370px;
-    height: 330px;
-    cursor: pointer;
-    transition: 0.5s;
+  width: 370px;
+  height: 330px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .filhoimg:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-span{
-    color:#A367EB;
+span {
+  color: #a367eb;
 }
 
 /*Disp Mobile*/
 /*Medidas para dispositivos pequenos, com a largura de no máximo 320px (iPhone 5; iPhone SE 2016.)*/
 
-  @media only screen and (max-width: 320px) {
-    .empresapai{
-        height:auto;
-        padding:0;
+@media only screen and (max-width: 320px) {
+  .empresapai {
+    height: auto;
+    padding: 0;
+  }
+
+  .textempresa {
+    font-size: 1.2em;
+  }
+
+  .textempresa span {
+    margin: 0;
+    color: #a367eb;
+  }
+
+  .empresa1 {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    padding: 1.5em;
+  }
+
+  .empresa1 h1 {
+    font-size: 1.6em;
+    padding: 0;
+  }
+
+  .empresa1 p {
+    font-size: 1.2em;
+    padding-top: 0;
+    padding-left: 0;
+
+    width: 100%;
+  }
+
+  .boxtextpai {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .boxtext {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+
+  .boxtext h5 {
+    font-size: 1.5em;
+    text-align: left;
+  }
+
+  .boxtext p {
+    font-size: 1em;
+    text-align: left;
+    width: 100%;
+  }
+
+  .boxfinal {
+    width: 100%;
+    margin-top: 5em;
+    height: auto;
+    padding: 0.8em;
+  }
+
+  .boxfinal h4 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .boxfinal h4 span {
+    margin: 0;
+  }
+  .boxfinalfilho {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+  }
+
+  .filho1 {
+    width: 100%;
+
+    padding: 0;
+  }
+
+  .filhoimg {
+    width: 170px;
+    height: 170px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 1em;
+    margin-left: 0;
+  }
+}
+
+/*Medidas para dispositivos médios, com a largura entre 321px e 360px (Samsung Galaxy S5; Xiaomi Mi 11i; Huawei P30; Galaxy Z Flip3; OPPO Find X3 PRO; Galaxy A12; Galaxy S21 Ultra; Google Pixel 6 PRO; Xiaomi 12; Galaxy S22; Galaxy S22 +; Galaxy S22 ULTRA; Samsung Galaxy S24; iPhone 12 Mini)*/
+
+@media only screen and (min-width: 321px) {
+  @media only screen and (max-width: 360px) {
+    .empresapai {
+      height: auto;
+      padding: 0;
     }
-   
 
-
-    .textempresa{
-        font-size:1.2em;
+    .textempresa {
+      font-size: 1.2em;
     }
 
     .textempresa span {
-        margin: 0;
-        color: #A367EB;
+      margin: 0;
+      color: #a367eb;
     }
-
 
     .empresa1 {
-        width:100%;
-        height:auto;
-        margin-top: 100px;
-        padding: 1.5em;
-
+      width: 100%;
+      height: auto;
+      margin-top: 100px;
+      padding: 1.5em;
     }
-
 
     .empresa1 h1 {
-        font-size: 1.6em;
-        padding: 0;
+      font-size: 1.6em;
+      padding: 0;
     }
-    
+
     .empresa1 p {
-        font-size: 1.2em;
-        padding-top:0;
-        padding-left: 0;
+      font-size: 1.2em;
+      padding-top: 0;
+      padding-left: 0;
 
-        width: 100%;
+      width: 100%;
     }
 
-    .boxtextpai{
-        width:100%;
-        flex-direction: column;
-        margin-top:30px;
-        display: flex;
-        justify-content: space-between;
-        height: auto;
+    .boxtextpai {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      height: auto;
     }
 
     .boxtext {
-        position: relative;
-        width:100%;
-        height:100%;
-        margin:auto;
-        padding: 1em;
-        margin-bottom: 2em;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      padding: 1em;
+      margin-bottom: 2em;
     }
 
-    .boxtext h5{
-        font-size:1.5em;
-        text-align: left;
+    .boxtext h5 {
+      font-size: 1.5em;
+      text-align: left;
     }
 
-    .boxtext p{
-        font-size:1em;
-        text-align: left;
-        width: 100%;
+    .boxtext p {
+      font-size: 1em;
+      text-align: left;
+      width: 100%;
     }
 
-    
-    .boxfinal{
-        width:100%;
-        margin-top:5em;
-        height:auto;
-        padding: 0.8em;
+    .boxfinal {
+      width: 100%;
+      margin-top: 5em;
+      height: auto;
+      padding: 0.8em;
     }
-    
-    .boxfinal h4{
-        font-size:2em;
-        text-align: center;
-        margin:0;
-        width: 100%;
-        
+
+    .boxfinal h4 {
+      font-size: 2em;
+      text-align: center;
+      margin: 0;
+      width: 100%;
     }
-    
-    .boxfinal h4 span{
-        margin:0;
+
+    .boxfinal h4 span {
+      margin: 0;
     }
     .boxfinalfilho {
-        width: 100%;
-        display: flex;
-        margin-top: 60px;
-        flex-direction: column;
+      width: 100%;
+      display: flex;
+      margin-top: 60px;
+      flex-direction: column;
     }
-    
+
     .filho1 {
-        width: 100%;
+      width: 100%;
 
-        padding: 0;
+      padding: 0;
     }
-    
+
     .filhoimg {
-        width: 170px;
-        height: 170px;
-        cursor: pointer;
-        transition: 0.5s;
-        margin-top: 1em;
-        margin-left:0;
-    }
-} 
-
-
-/*Medidas para dispositivos médios, com a largura entre 321px e 360px (Samsung Galaxy S5; Xiaomi Mi 11i; Huawei P30; Galaxy Z Flip3; OPPO Find X3 PRO; Galaxy A12; Galaxy S21 Ultra; Google Pixel 6 PRO; Xiaomi 12; Galaxy S22; Galaxy S22 +; Galaxy S22 ULTRA; Samsung Galaxy S24; iPhone 12 Mini)*/
- 
-@media only screen and (min-width:321px) {
-    @media only screen and (max-width:360px) { 
-        .empresapai{
-            height:auto;
-            padding:0;
-        }
-       
-    
-    
-        .textempresa{
-            font-size:1.2em;
-        }
-    
-        .textempresa span {
-            margin: 0;
-            color: #A367EB;
-        }
-    
-    
-        .empresa1 {
-            width:100%;
-            height:auto;
-            margin-top: 100px;
-            padding: 1.5em;
-    
-        }
-    
-    
-        .empresa1 h1 {
-            font-size: 1.6em;
-            padding: 0;
-        }
-        
-        .empresa1 p {
-            font-size: 1.2em;
-            padding-top:0;
-            padding-left: 0;
-    
-            width: 100%;
-        }
-    
-        .boxtextpai{
-            width:100%;
-            flex-direction: column;
-            margin-top:30px;
-            display: flex;
-            justify-content: space-between;
-            height: auto;
-        }
-    
-        .boxtext {
-            position: relative;
-            width:100%;
-            height:100%;
-            margin:auto;
-            padding: 1em;
-            margin-bottom: 2em;
-        }
-    
-        .boxtext h5{
-            font-size:1.5em;
-            text-align: left;
-        }
-    
-        .boxtext p{
-            font-size:1em;
-            text-align: left;
-            width: 100%;
-        }
-    
-        
-        .boxfinal{
-            width:100%;
-            margin-top:5em;
-            height:auto;
-            padding: 0.8em;
-        }
-        
-        .boxfinal h4{
-            font-size:2em;
-            text-align: center;
-            margin:0;
-            width: 100%;
-            
-        }
-        
-        .boxfinal h4 span{
-            margin:0;
-        }
-        .boxfinalfilho {
-            width: 100%;
-            display: flex;
-            margin-top: 60px;
-            flex-direction: column;
-        }
-        
-        .filho1 {
-            width: 100%;
-    
-            padding: 0;
-        }
-        
-        .filhoimg {
-            width: 170px;
-            height: 170px;
-            cursor: pointer;
-            transition: 0.5s;
-            margin-top: 1em;
-            margin-left:0;
-        }
+      width: 170px;
+      height: 170px;
+      cursor: pointer;
+      transition: 0.5s;
+      margin-top: 1em;
+      margin-left: 0;
     }
   }
-
+}
 
 /*Medidas para dispositivos médios para grandes, com largura entre 361px e 391px (Galaxy S24 ULTRA; iPhone X; iPhone 12P PRO; iPhone 13 PRO; iPhone 14; iPhone 14 PRO)*/
 
-  @media only screen and (min-width:361px) {
-    @media only screen and (max-width:391px) {
-        .empresapai{
-            height:420vh;
-            padding-bottom:2em;
-        }
-       
-    
-    
-        .textempresa{
-            font-size:25px;
-        }
-    
-    
-        .empresa1 {
-            width:100%;
-            height:90vh;
-            border-radius: 80px;
-            margin-top: 100px;
-            
-        }
-    
-    
-        .empresa1 h1 {
-            color: #A367EB;
-            font-family: "DM Sans";
-            font-size: 2.9em;
-            text-align: left;
-            margin-left:-150px;
-            padding-top:40px;
-        }
-        
-        .empresa1 p {
-            color: white;
-            font-family: "DM Sans";
-            font-size: 25px;
-            margin-top:20px;
-            margin-left:-150px;
-            padding-top:0px;
-            padding-left: 200px;
-        }
-    
-        .boxtextpai{
-            width:100%;
-            flex-direction: column;
-            margin-top:30px;
-            gap:100px;
-        }
-    
-        .boxtext{
-            position: relative;
-            width:100%;
-            height:100vh;
-            margin:auto;
-        }
-    
-        .boxtext h5{
-            font-size:32px;
-            text-align: left;
-        }
-    
-        .boxtext p{
-            font-size:23px;
-            text-align: left;
-        }
-    
-        .boxfinal{
-            width:100%;
-            margin-top:300px;
-            height:auto;
-        }
-    
-        .boxfinal h4{
-            font-size:36px;
-            text-align: left;
-            margin-left:50px;
-        }
-    
-    
-        .filhoimg {
-            width: 170px;
-            height: 170px;
-            cursor: pointer;
-            transition: 0.5s;
-            margin-top: 360px;
-            margin-left:-100px;
-            margin-bottom: 1em;
-        }
+@media only screen and (min-width: 361px) {
+  @media only screen and (max-width: 391px) {
+    .empresapai {
+      height: 420vh;
+      padding-bottom: 2em;
+    }
+
+    .textempresa {
+      font-size: 25px;
+    }
+
+    .empresa1 {
+      width: 100%;
+      height: 90vh;
+      border-radius: 80px;
+      margin-top: 100px;
+    }
+
+    .empresa1 h1 {
+      color: #a367eb;
+      font-family: "DM Sans";
+      font-size: 2.9em;
+      text-align: left;
+      margin-left: -150px;
+      padding-top: 40px;
+    }
+
+    .empresa1 p {
+      color: white;
+      font-family: "DM Sans";
+      font-size: 25px;
+      margin-top: 20px;
+      margin-left: -150px;
+      padding-top: 0px;
+      padding-left: 200px;
+    }
+
+    .boxtextpai {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 30px;
+      gap: 100px;
+    }
+
+    .boxtext {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      margin: auto;
+    }
+
+    .boxtext h5 {
+      font-size: 32px;
+      text-align: left;
+    }
+
+    .boxtext p {
+      font-size: 23px;
+      text-align: left;
+    }
+
+    .boxfinal {
+      width: 100%;
+      margin-top: 300px;
+      height: auto;
+    }
+
+    .boxfinal h4 {
+      font-size: 36px;
+      text-align: left;
+      margin-left: 50px;
+    }
+
+    .filhoimg {
+      width: 170px;
+      height: 170px;
+      cursor: pointer;
+      transition: 0.5s;
+      margin-top: 360px;
+      margin-left: -100px;
+      margin-bottom: 1em;
     }
   }
-
-
+}
 
 /*Medidas para dispositivos médios para grandes, com largura entre 391px 430px (Galaxy Note 20; Google Pixel 8; iPhone XR 2018; Iphone 11; iPhone 11 Pro Max; iPhone 12 Pro Max, iPhone 13 Pro Max, iPhone 14 Plus, iPhone 14 Pro Max, Iphone 15, Iphone 15 Plus, Iphone 15 PRO, Iphone 15 PRO MAX, iPhone 16, Iphone 16 Plus, iPhone 16 PRO, iPhone 16 PRO MAX)*/
 
-  @media only screen and (min-width: 392px) {
-    @media only screen and (max-width: 440px) {
-        .empresapai{
-            height:auto;
-            padding:0;
-        }
-       
-    
-    
-        .textempresa{
-            font-size:1.2em;
-        }
-    
-        .textempresa span {
-            margin: 0;
-            color: #A367EB;
-        }
-    
-    
-        .empresa1 {
-            width:100%;
-            height:auto;
-            margin-top: 100px;
-            padding: 1.5em;
-    
-        }
-    
-    
-        .empresa1 h1 {
-            font-size: 1.6em;
-            padding: 0;
-        }
-        
-        .empresa1 p {
-            font-size: 1.2em;
-            padding-top:0;
-            padding-left: 0;
-    
-            width: 100%;
-        }
-    
-        .boxtextpai{
-            width:100%;
-            flex-direction: column;
-            margin-top:30px;
-            display: flex;
-            justify-content: space-between;
-            height: auto;
-        }
-    
-        .boxtext {
-            position: relative;
-            width:100%;
-            height:100%;
-            margin:auto;
-            padding: 1em;
-            margin-bottom: 2em;
-        }
-    
-        .boxtext h5{
-            font-size:1.5em;
-            text-align: left;
-        }
-    
-        .boxtext p{
-            font-size:1em;
-            text-align: left;
-            width: 100%;
-        }
-    
-        
-        .boxfinal{
-            width:100%;
-            margin-top:5em;
-            height:auto;
-            padding: 0.8em;
-        }
-        
-        .boxfinal h4{
-            font-size:2em;
-            text-align: center;
-            margin:0;
-            width: 100%;
-            
-        }
-        
-        .boxfinal h4 span{
-            margin:0;
-        }
-        .boxfinalfilho {
-            width: 100%;
-            display: flex;
-            margin-top: 60px;
-            flex-direction: column;
-        }
-        
-        .filho1 {
-            width: 100%;
-    
-            padding: 0;
-        }
-        
-        .filhoimg {
-            width: 170px;
-            height: 170px;
-            cursor: pointer;
-            transition: 0.5s;
-            margin-top: 1em;
-            margin-left:0;
-        }
+@media only screen and (min-width: 392px) {
+  @media only screen and (max-width: 440px) {
+    .empresapai {
+      height: auto;
+      padding: 0;
     }
-  } 
 
+    .textempresa {
+      font-size: 1.2em;
+    }
 
+    .textempresa span {
+      margin: 0;
+      color: #a367eb;
+    }
+
+    .empresa1 {
+      width: 100%;
+      height: auto;
+      margin-top: 100px;
+      padding: 1.5em;
+    }
+
+    .empresa1 h1 {
+      font-size: 1.6em;
+      padding: 0;
+    }
+
+    .empresa1 p {
+      font-size: 1.2em;
+      padding-top: 0;
+      padding-left: 0;
+
+      width: 100%;
+    }
+
+    .boxtextpai {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      height: auto;
+    }
+
+    .boxtext {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      padding: 1em;
+      margin-bottom: 2em;
+    }
+
+    .boxtext h5 {
+      font-size: 1.5em;
+      text-align: left;
+    }
+
+    .boxtext p {
+      font-size: 1em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .boxfinal {
+      width: 100%;
+      margin-top: 5em;
+      height: auto;
+      padding: 0.8em;
+    }
+
+    .boxfinal h4 {
+      font-size: 2em;
+      text-align: center;
+      margin: 0;
+      width: 100%;
+    }
+
+    .boxfinal h4 span {
+      margin: 0;
+    }
+    .boxfinalfilho {
+      width: 100%;
+      display: flex;
+      margin-top: 60px;
+      flex-direction: column;
+    }
+
+    .filho1 {
+      width: 100%;
+
+      padding: 0;
+    }
+
+    .filhoimg {
+      width: 170px;
+      height: 170px;
+      cursor: pointer;
+      transition: 0.5s;
+      margin-top: 1em;
+      margin-left: 0;
+    }
+  }
+}
 
 /*Medidas para Tablets: */
 @media only screen and (min-width: 441px) {
-    @media only screen and (max-width: 800px) {
-        
-        .empresapai{
-            height:auto;
-            padding:0;
-        }
-       
-    
-    
-        .textempresa{
-            font-size:2em;
-        }
-    
-        .textempresa span {
-            margin: 0;
-            color: #A367EB;
-        }
-    
-    
-        .empresa1 {
-            width:100%;
-            height:auto;
-            margin-top: 100px;
-            padding: 2em;
-    
-        }
-    
-    
-        .empresa1 h1 {
-            font-size: 2em;
-            padding: 0;
-        }
-        
-        .empresa1 p {
-            font-size: 1.5em;
-            padding-top:0;
-            padding-left: 0;
-    
-            width: 100%;
-        }
-    
-        .boxtextpai{
-            width:100%;
-            flex-direction: column;
-            margin-top:30px;
-            display: flex;
-            justify-content: space-between;
-            height: auto;
-        }
-    
-        .boxtext {
-            position: relative;
-            width:100%;
-            height:100%;
-            margin:auto;
-            padding: 1em;
-            margin-bottom: 2em;
-        }
-    
-        .boxtext h5{
-            font-size:2em;
-            text-align: left;
-        }
-    
-        .boxtext p{
-            font-size:1.5em;
-            text-align: left;
-            width: 100%;
-        }
-    
-        
-        .boxfinal{
-            width:100%;
-            margin-top:5em;
-            height:auto;
-            padding: 0.8em;
-        }
-        
-        .boxfinal h4{
-            font-size:2em;
-            text-align: center;
-            margin:0;
-            width: 100%;
-            
-        }
-        
-        .boxfinal h4 span{
-            margin:0;
-        }
-        .boxfinalfilho {
-            width: 100%;
-            display: flex;
-            margin-top: 60px;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        
-        .filho1 {
-            width: 100%;
-    
-            padding: 0;
-        }
-        
-        .filhoimg {
-            width: 230px;
-            height: 230px;
-            cursor: pointer;
-            transition: 0.5s;
-            margin-top: 1em;
-            margin-left:0;
-        }
-        
-        
-        /* .empresa1 h1 {
+  @media only screen and (max-width: 800px) {
+    .empresapai {
+      height: auto;
+      padding: 0;
+    }
+
+    .textempresa {
+      font-size: 2em;
+    }
+
+    .textempresa span {
+      margin: 0;
+      color: #a367eb;
+    }
+
+    .empresa1 {
+      width: 100%;
+      height: auto;
+      margin-top: 100px;
+      padding: 2em;
+    }
+
+    .empresa1 h1 {
+      font-size: 2em;
+      padding: 0;
+    }
+
+    .empresa1 p {
+      font-size: 1.5em;
+      padding-top: 0;
+      padding-left: 0;
+
+      width: 100%;
+    }
+
+    .boxtextpai {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      height: auto;
+    }
+
+    .boxtext {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      padding: 1em;
+      margin-bottom: 2em;
+    }
+
+    .boxtext h5 {
+      font-size: 2em;
+      text-align: left;
+    }
+
+    .boxtext p {
+      font-size: 1.5em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .boxfinal {
+      width: 100%;
+      margin-top: 5em;
+      height: auto;
+      padding: 0.8em;
+    }
+
+    .boxfinal h4 {
+      font-size: 2em;
+      text-align: center;
+      margin: 0;
+      width: 100%;
+    }
+
+    .boxfinal h4 span {
+      margin: 0;
+    }
+    .boxfinalfilho {
+      width: 100%;
+      display: flex;
+      margin-top: 60px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .filho1 {
+      width: 100%;
+
+      padding: 0;
+    }
+
+    .filhoimg {
+      width: 230px;
+      height: 230px;
+      cursor: pointer;
+      transition: 0.5s;
+      margin-top: 1em;
+      margin-left: 0;
+    }
+
+    /* .empresa1 h1 {
             color: #A367EB;
             font-family: "DM Sans";
             font-size: 3.2em;
@@ -782,127 +735,116 @@ span{
             margin-top: 450px;
             margin-left:-100px;
         } */
-    }
   }
+}
 
 /*Medidas para Tablets: */
 @media only screen and (min-width: 801px) {
-    @media only screen and (max-width: 930px) {
-        .empresapai{
-            height:auto;
-            padding:0;
-        }
-       
-    
-    
-        .textempresa{
-            font-size:2em;
-        }
-    
-        .textempresa span {
-            margin: 0;
-            color: #A367EB;
-        }
-    
-    
-        .empresa1 {
-            width:100%;
-            height:auto;
-            margin-top: 100px;
-            padding: 2em;
-    
-        }
-    
-    
-        .empresa1 h1 {
-            font-size: 2em;
-            padding: 0;
-        }
-        
-        .empresa1 p {
-            font-size: 1.5em;
-            padding-top:0;
-            padding-left: 0;
-    
-            width: 100%;
-        }
-    
-        .boxtextpai{
-            width:100%;
-            flex-direction: column;
-            margin-top:30px;
-            display: flex;
-            justify-content: space-between;
-            height: auto;
-        }
-    
-        .boxtext {
-            position: relative;
-            width:100%;
-            height:100%;
-            margin:auto;
-            padding: 1em;
-            margin-bottom: 2em;
-        }
-    
-        .boxtext h5{
-            font-size:2em;
-            text-align: left;
-        }
-    
-        .boxtext p{
-            font-size:1.5em;
-            text-align: left;
-            width: 100%;
-        }
-    
-        
-        .boxfinal{
-            width:100%;
-            margin-top:5em;
-            height:auto;
-            padding: 0.8em;
-        }
-        
-        .boxfinal h4{
-            font-size:2em;
-            text-align: center;
-            margin:0;
-            width: 100%;
-            
-        }
-        
-        .boxfinal h4 span{
-            margin:0;
-        }
-        .boxfinalfilho {
-            width: 100%;
-            display: flex;
-            margin-top: 60px;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        
-        .filho1 {
-            width: 100%;
-    
-            padding: 0;
-        }
-        
-        .filhoimg {
-            width: 230px;
-            height: 230px;
-            cursor: pointer;
-            transition: 0.5s;
-            margin-top: 1em;
-            margin-left:0;
-        }
+  @media only screen and (max-width: 930px) {
+    .empresapai {
+      height: auto;
+      padding: 0;
+    }
+
+    .textempresa {
+      font-size: 2em;
+    }
+
+    .textempresa span {
+      margin: 0;
+      color: #a367eb;
+    }
+
+    .empresa1 {
+      width: 100%;
+      height: auto;
+      margin-top: 100px;
+      padding: 2em;
+    }
+
+    .empresa1 h1 {
+      font-size: 2em;
+      padding: 0;
+    }
+
+    .empresa1 p {
+      font-size: 1.5em;
+      padding-top: 0;
+      padding-left: 0;
+
+      width: 100%;
+    }
+
+    .boxtextpai {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      height: auto;
+    }
+
+    .boxtext {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      padding: 1em;
+      margin-bottom: 2em;
+    }
+
+    .boxtext h5 {
+      font-size: 2em;
+      text-align: left;
+    }
+
+    .boxtext p {
+      font-size: 1.5em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .boxfinal {
+      width: 100%;
+      margin-top: 5em;
+      height: auto;
+      padding: 0.8em;
+    }
+
+    .boxfinal h4 {
+      font-size: 2em;
+      text-align: center;
+      margin: 0;
+      width: 100%;
+    }
+
+    .boxfinal h4 span {
+      margin: 0;
+    }
+    .boxfinalfilho {
+      width: 100%;
+      display: flex;
+      margin-top: 60px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .filho1 {
+      width: 100%;
+
+      padding: 0;
+    }
+
+    .filhoimg {
+      width: 230px;
+      height: 230px;
+      cursor: pointer;
+      transition: 0.5s;
+      margin-top: 1em;
+      margin-left: 0;
     }
   }
-
-
-
-
+}
 
 /* Celulares */
 
