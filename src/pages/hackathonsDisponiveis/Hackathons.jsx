@@ -92,14 +92,14 @@ function Hackathons() {
             <Card
               customClass="cardHackathonDisponiveis"
               bannerHacka={banner}
-              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
+              titleHacka="Hackathon Compras Gorvenamentais"
               locationHacka="São Paulo, SP"
-              qtdparticipants="+150 participantes"
-              timeline="20 dias restantes"
+              qtdparticipants="+200 participantes"
+              timeline="Finalizado"
               children1={
                 <div className={styles.tagsHacka}>
-                  <Tag text="Presencial" customClass="roxoHacka" />
-                  <Tag text="Inscrições Abertas" customClass="azulHacka" />
+                  <Tag text="Online" customClass="roxoHacka" />
+                  <Tag text="Inscrições Encerradas" customClass="azulHacka" />
                   <Tag text="Impacto Social" customClass="verdeAguaHacka" />
                   <Tag text="Sustentabilidade" customClass="azulClaroHacka" />
                 </div>
@@ -125,16 +125,16 @@ function Hackathons() {
             <Card
               customClass="cardHackathonDisponiveis"
               bannerHacka={banner}
-              titleHacka="Hackathon Desvendado: Uma Explanação em Tópicos"
-              locationHacka="São Paulo, SP"
-              qtdparticipants="+150 participantes"
-              timeline="20 dias restantes"
+              titleHacka="Hackathon Rede +Brasil"
+              locationHacka="Brasil"
+              qtdparticipants="+200 participantes"
+              timeline="Finalizado"
               children1={
                 <div className={styles.tagsHacka}>
-                  <Tag text="Presencial" customClass="roxoHacka" />
-                  <Tag text="Inscrições Abertas" customClass="azulHacka" />
-                  <Tag text="Impacto Social" customClass="verdeAguaHacka" />
-                  <Tag text="Sustentabilidade" customClass="azulClaroHacka" />
+                  <Tag text="Online" customClass="roxoHacka" />
+                  <Tag text="Inscrições Encerradas" customClass="azulHacka" />
+                  <Tag text="Setor Público" customClass="verdeAguaHacka" />
+                  <Tag text="Tecnologia" customClass="azulClaroHacka" />
                 </div>
               }
               children3={
