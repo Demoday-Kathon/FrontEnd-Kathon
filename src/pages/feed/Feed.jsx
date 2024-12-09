@@ -14,6 +14,7 @@ function Feeds() {
     const { user } = useUser();
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [posts, setPosts] = useState([]);
+    const [isLoading, setIsLoading] = useState(true); // Estado para controlar o carregamento
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 868px)");
@@ -26,10 +27,17 @@ function Feeds() {
     }, []);
 
     const fetchPosts = () => {
+        setIsLoading(true); // Inicia o carregamento
         fetch('https://apibackend.kathon.tech/api/posts/listar')
             .then(response => response.json())
-            .then(data => setPosts(data.reverse()))
-            .catch(error => console.error('Error fetching posts:', error));
+            .then(data => {
+                setPosts(data.reverse());
+                setIsLoading(false); // Finaliza o carregamento
+            })
+            .catch(error => {
+                console.error('Error fetching posts:', error);
+                setIsLoading(false); // Finaliza o carregamento mesmo em caso de erro
+            });
     };
 
     useEffect(() => {
@@ -41,27 +49,31 @@ function Feeds() {
 
     return (
     <>
-            {isMobile? <HeaderMobile /> : <Header />}
+        {isMobile ? <HeaderMobile /> : <Header />}
         <div className={styles.feedContainer}>
             <div className={styles.feedContent}>
                 <div className={styles.ContainerNewPost}>
-                <Modal closeModal={closeModal} refreshFeed={fetchPosts} />
+                    <Modal closeModal={closeModal} refreshFeed={fetchPosts} />
                 </div>
                 <Feed>
-                    {posts.map((post, index) => (
-                        <Post
-                            key={index}
-                            nameUser={post.jovem.nomeCompleto}
-                            profile={post.jovem.fotoPerfil ? `data:image/jpeg;base64,${post.jovem.fotoPerfil}` : User}
-                            hours="Há algumas horas"
-                            description={post.descricao}
-                            photoPost={post.imagemPost ? `data:image/jpeg;base64,${post.imagemPost}` : null}
-                        />
-                    ))}
+                    {isLoading ? (
+                        <p className={styles.loadingMessage}>Carregando as postagens...</p> // Mensagem de carregamento
+                    ) : (
+                        posts.map((post, index) => (
+                            <Post
+                                key={index}
+                                nameUser={post.jovem.nomeCompleto}
+                                profile={post.jovem.fotoPerfil ? `data:image/jpeg;base64,${post.jovem.fotoPerfil}` : User}
+                                hours="Há algumas horas"
+                                description={post.descricao}
+                                photoPost={post.imagemPost ? `data:image/jpeg;base64,${post.imagemPost}` : null}
+                            />
+                        ))
+                    )}
                 </Feed>
             </div>
         </div>
-            <Footer />
+        <Footer />
     </>
     );
 }

@@ -50,3 +50,11 @@
     align-items: center;
     width: 100%;
 }
+
+.loadingMessage {
+    font-size: 3vh;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
