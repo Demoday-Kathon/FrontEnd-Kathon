@@ -54,7 +54,7 @@ function CadastroEstudante() {
         formData.append("documentoHistorico", new Blob([""], { type: "application/pdf" }));
 
         try {
-            const response = await fetch("https://apibackend.kathon.tech/api/jovens/cadastrar", {
+            const response = await fetch("http://localhost:8080/api/jovens/cadastrar", {
                 method: "POST",
                 body: formData,
             });

@@ -1,10 +1,10 @@
 import Banner from "../Banner/BannerHack";
 import bannerimg from "../../assets/imgs/banner_hack.png";
 
-function Bann() {
+function Bann({ fotobanner }) {
   return (
     <>
-      <Banner foto={bannerimg} />
+      <Banner foto={fotobanner} />
     </>
   );
 }
