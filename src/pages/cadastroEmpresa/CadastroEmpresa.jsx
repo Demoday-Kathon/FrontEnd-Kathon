@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom'; // Import useHistory
 import styles from '../cadastroEmpresa/CadastroEmpresa.module.css';
 import styles1 from './CadastroEmpresa.module.css';
-import { Link } from 'react-router-dom';
 import Header from '../../components/layout/header/Header';
 import CardPretoBase from '../../components/CardPretoBase2/CardPretoBase';
 import Form from '../../components/Form/Form';
@@ -12,8 +12,8 @@ import logoKathon from '../../assets/imgs/LogoKathon.png';
 import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function CadastroEmpresa() {
-
     const [isMobile, setIsMobile] = useState(false);
+    const history = useHistory(); // Initialize useHistory
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 868px)");
@@ -25,7 +25,6 @@ function CadastroEmpresa() {
         return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
     }, []);
 
-    // Estados para armazenar os dados do formulário
     const [nomeEmpresa, setNomeEmpresa] = useState('');
     const [cnpj, setCnpj] = useState('');
     const [emailEmpresa, setEmailEmpresa] = useState('');
@@ -33,11 +32,9 @@ function CadastroEmpresa() {
     const [senha, setSenha] = useState('');
     const [logoEmpresa, setLogoEmpresa] = useState(null);
 
-    // Função para lidar com o envio do formulário
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        // Validação do arquivo de logo (somente imagens PNG, JPEG e JPG)
         if (logoEmpresa) {
             const validImageTypes = ['image/jpeg', 'image/png', 'image/jpg'];
             if (!validImageTypes.includes(logoEmpresa.type)) {
@@ -46,7 +43,6 @@ function CadastroEmpresa() {
             }
         }
 
-        // Criando um FormData para enviar os dados com arquivos
         const formData = new FormData();
         formData.append("nomeEmpresa", nomeEmpresa);
         formData.append("cnpj", cnpj);
@@ -55,7 +51,6 @@ function CadastroEmpresa() {
         formData.append("senha", senha);
         formData.append("fotoPerfil", logoEmpresa);
 
-        // Adicionando valores estáticos
         formData.append("cep", "12345-678");
         formData.append("rua", "Rua Exemplo");
         formData.append("numero", "123");
@@ -71,6 +66,9 @@ function CadastroEmpresa() {
 
             if (response.ok) {
                 alert("Empresa cadastrada com sucesso!");
+                setTimeout(() => {
+                    history.push('/Login'); // Redirect to login page after 1.5 seconds
+                }, 1500);
             } else {
                 alert("Erro ao cadastrar a empresa.");
             }

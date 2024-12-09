@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom'; // Import useHistory
 import styles from '../cadastroEmpresa/CadastroEmpresa.module.css';
 import styles1 from './CadastroEstudante.module.css';
-import { Link } from 'react-router-dom';
 import Header from '../../components/layout/header/Header';
 import CardPretoBase from '../../components/CardPretoBase2/CardPretoBase';
 import Form from '../../components/Form/Form';
@@ -12,8 +12,8 @@ import logoKathon from '../../assets/imgs/LogoKathon.png';
 import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function CadastroEstudante() {
-
     const [isMobile, setIsMobile] = useState(false);
+    const history = useHistory(); // Initialize useHistory
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 868px)");
@@ -25,7 +25,6 @@ function CadastroEstudante() {
         return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
     }, []);
 
-    // Estados para armazenar os dados do formulário
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [cpf, setCpf] = useState('');
@@ -34,11 +33,9 @@ function CadastroEstudante() {
     const [senha, setSenha] = useState('');
     const [fotoPerfil, setFotoPerfil] = useState(null);
 
-    // Função para lidar com o envio do formulário
     const handleSubmit = async (event) => {
         event.preventDefault();
         
-        // Criando um FormData para enviar os dados com arquivos
         const formData = new FormData();
         formData.append("nomeCompleto", nome);
         formData.append("email", email);
@@ -48,14 +45,13 @@ function CadastroEstudante() {
         formData.append("senha", senha);
         formData.append("fotoPerfil", fotoPerfil);
 
-        // Adicionando valores estáticos
         formData.append("cep", "12345-678");
         formData.append("rua", "Rua Exemplo");
         formData.append("numero", "123");
         formData.append("cidade", "Cidade Exemplo");
         formData.append("bairro", "Bairro Exemplo");
         formData.append("estado", "Estado Exemplo");
-        formData.append("documentoHistorico", new Blob([""], { type: "application/pdf" })); // Exemplo de documento vazio
+        formData.append("documentoHistorico", new Blob([""], { type: "application/pdf" }));
 
         try {
             const response = await fetch("https://apibackend.kathon.tech/api/jovens/cadastrar", {
@@ -65,6 +61,9 @@ function CadastroEstudante() {
 
             if (response.ok) {
                 alert("Jovem cadastrado com sucesso!");
+                setTimeout(() => {
+                    history.push('/Login'); // Redirect to login page after 1.5 seconds
+                }, 1500);
             } else {
                 alert("Erro ao cadastrar o jovem.");
             }
