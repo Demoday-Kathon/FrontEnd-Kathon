@@ -1,29 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import styles from './CadastroEstudante.module.css';
-import { Link } from 'react-router-dom';
+import styles from '../cadastroEmpresa/CadastroEmpresa.module.css';
+import styles1 from './CadastroEstudante.module.css';
 import Header from '../../components/layout/header/Header';
 import CardPretoBase from '../../components/CardPretoBase2/CardPretoBase';
 import Form from '../../components/Form/Form';
+import Label from '../../components/Form/FormComponents/Label';
+import Input from '../../components/Form/FormComponents/Input';
+import SubmitButton from '../../components/Form/FormComponents/SubmitButton';
+import logoKathon from '../../assets/imgs/LogoKathon.png';
 import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function CadastroEstudante() {
     const [isMobile, setIsMobile] = useState(false);
-    const [formData, setFormData] = useState({
-        nome: '',
-        email: '',
-        cpf: '',
-        dataNascimento: '',
-        celular: '',
-        cep: '',
-        rua: '',
-        numero: '',
-        cidade: '',
-        bairro: '',
-        estado: '',
-        senha: '',
-        historicoEscolar: null,
-        fotoPerfil: null,
-    });
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 868px)");
@@ -35,26 +23,42 @@ function CadastroEstudante() {
         return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
     }, []);
 
-    const handleChange = (e) => {
-        const { name, value, files } = e.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: files ? files[0] : value,
-        }));
-    };
+    // Estados para armazenar os dados do formulário
+    const [nome, setNome] = useState('');
+    const [email, setEmail] = useState('');
+    const [cpf, setCpf] = useState('');
+    const [dataNascimento, setDataNascimento] = useState('');
+    const [celular, setCelular] = useState('');
+    const [senha, setSenha] = useState('');
+    const [fotoPerfil, setFotoPerfil] = useState(null);
 
     // Função para lidar com o envio do formulário
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const formDataToSend = new FormData();
-        Object.entries(formData).forEach(([key, value]) => {
-            formDataToSend.append(key, value);
-        });
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        
+        // Criando um FormData para enviar os dados com arquivos
+        const formData = new FormData();
+        formData.append("nomeCompleto", nome);
+        formData.append("email", email);
+        formData.append("cpf", cpf);
+        formData.append("dataNascimento", dataNascimento);
+        formData.append("celular", celular);
+        formData.append("senha", senha);
+        formData.append("fotoPerfil", fotoPerfil);
 
         try {
-            // Enviar formDataToSend para o servidor
+            const response = await fetch("https://apibackend.kathon.tech/api/jovens/cadastrar", {
+                method: "POST",
+                body: formData,
+            });
+
+            if (response.ok) {
+                alert("Jovem cadastrado com sucesso!");
+            } else {
+                alert("Erro ao cadastrar o jovem.");
+            }
         } catch (error) {
-            console.error("Erro ao enviar o formulário:", error);
+            alert("Erro ao comunicar com o servidor.");
         }
     };
 
@@ -62,19 +66,31 @@ function CadastroEstudante() {
         <>
             {isMobile ? <HeaderMobile /> : <Header />}
             <CardPretoBase customClass="cardPretoForms">
+                <img className={styles.logoKathonLogin} src={logoKathon} alt="logoKathon" />
                 <h1 className={styles.tituloCadastro}>Cadastro Estudante</h1>
-                <Form onSubmit={handleSubmit}>
-                    <Label customClass="labelFormsCadastro" text="Nome Completo" />
-                    <Input name="nome" type="text" value={formData.nome} onChange={handleChange} />
 
-                    <Label customClass="labelFormsCadastro" text="Documento - Histórico Escolar (PDF)" />
-                    <Input name="historicoEscolar" type="file" onChange={handleChange} />
+                <Form customClass="formsLogin" onSubmit={handleSubmit}>
+                    <Label customClass="labelFormsCadastro" text="Nome Completo" />
+                    <Input text="" type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
 
                     <Label customClass="labelFormsCadastro" text="Digite seu email" />
-                    <Input name="email" type="email" value={formData.email} onChange={handleChange} />
+                    <Input text="" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
-                    {/* Add other input fields similarly */}
-                    
+                    <Label customClass="labelFormsCadastro" text="CPF" />
+                    <Input text="" type="text" value={cpf} maxLength="11" onChange={(e) => setCpf(e.target.value)} />
+
+                    <Label customClass="labelFormsCadastro" text="Data de Nascimento" />
+                    <Input text="" type="date" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} />
+
+                    <Label customClass="labelFormsCadastro" text="Celular" />
+                    <Input text="" type="text" value={celular} maxLength="11" onChange={(e) => setCelular(e.target.value)} />
+
+                    <Label customClass="labelFormsCadastro" text="Foto de perfil" />
+                    <Input text="" type="file" onChange={(e) => setFotoPerfil(e.target.files[0])} />
+
+                    <Label customClass="labelFormsCadastro" text="Senha" />
+                    <Input text="" type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
+
                     <SubmitButton text="Cadastrar Jovem" />
                 </Form>
             </CardPretoBase>
