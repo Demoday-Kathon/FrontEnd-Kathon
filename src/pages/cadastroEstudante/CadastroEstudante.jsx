@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../cadastroEmpresa/CadastroEmpresa.module.css';
 import styles1 from './CadastroEstudante.module.css';
-import { Link } from 'react-router-dom';
 import Header from '../../components/layout/header/Header';
 import CardPretoBase from '../../components/CardPretoBase2/CardPretoBase';
 import Form from '../../components/Form/Form';
@@ -12,18 +11,17 @@ import logoKathon from '../../assets/imgs/LogoKathon.png';
 import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function CadastroEstudante() {
-
     const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 868px)");
-    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(max-width: 868px)");
+        const handleMediaQueryChange = (e) => setIsMobile(e.matches);
 
-    handleMediaQueryChange(mediaQuery);
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
+        handleMediaQueryChange(mediaQuery);
+        mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
-  }, []);
+        return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    }, []);
 
     // Estados para armazenar os dados do formulário
     const [nome, setNome] = useState('');
@@ -31,14 +29,7 @@ function CadastroEstudante() {
     const [cpf, setCpf] = useState('');
     const [dataNascimento, setDataNascimento] = useState('');
     const [celular, setCelular] = useState('');
-    const [cep, setCep] = useState('');
-    const [rua, setRua] = useState('');
-    const [numero, setNumero] = useState('');
-    const [cidade, setCidade] = useState('');
-    const [bairro, setBairro] = useState('');
-    const [estado, setEstado] = useState('');
     const [senha, setSenha] = useState('');
-    const [historicoEscolar, setHistoricoEscolar] = useState(null);
     const [fotoPerfil, setFotoPerfil] = useState(null);
 
     // Função para lidar com o envio do formulário
@@ -52,14 +43,7 @@ function CadastroEstudante() {
         formData.append("cpf", cpf);
         formData.append("dataNascimento", dataNascimento);
         formData.append("celular", celular);
-        formData.append("cep", cep);
-        formData.append("rua", rua);
-        formData.append("numero", numero);
-        formData.append("cidade", cidade);
-        formData.append("bairro", bairro);
-        formData.append("estado", estado);
         formData.append("senha", senha);
-        formData.append("documentoHistorico", historicoEscolar);
         formData.append("fotoPerfil", fotoPerfil);
 
         try {
@@ -80,7 +64,7 @@ function CadastroEstudante() {
 
     return (
         <>
-            {isMobile? <HeaderMobile /> : <Header />}
+            {isMobile ? <HeaderMobile /> : <Header />}
             <CardPretoBase customClass="cardPretoForms">
                 <img className={styles.logoKathonLogin} src={logoKathon} alt="logoKathon" />
                 <h1 className={styles.tituloCadastro}>Cadastro Estudante</h1>
@@ -89,65 +73,20 @@ function CadastroEstudante() {
                     <Label customClass="labelFormsCadastro" text="Nome Completo" />
                     <Input text="" type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
 
-                    <Label customClass="labelFormsCadastro" text="Documento - Histórico Escolar (PDF)" />
-                    <Input text="" type="file" onChange={(e) => setHistoricoEscolar(e.target.files[0])} />
-
                     <Label customClass="labelFormsCadastro" text="Digite seu email" />
                     <Input text="" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
+                    <Label customClass="labelFormsCadastro" text="CPF" />
+                    <Input text="" type="text" value={cpf} maxLength="11" onChange={(e) => setCpf(e.target.value)} />
+
+                    <Label customClass="labelFormsCadastro" text="Data de Nascimento" />
+                    <Input text="" type="date" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} />
+
+                    <Label customClass="labelFormsCadastro" text="Celular" />
+                    <Input text="" type="text" value={celular} maxLength="11" onChange={(e) => setCelular(e.target.value)} />
+
                     <Label customClass="labelFormsCadastro" text="Foto de perfil" />
                     <Input text="" type="file" onChange={(e) => setFotoPerfil(e.target.files[0])} />
-
-                    <Label customClass="labelFormsCadastro" text="CPF" />
-                    <Input text="" type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} />
-
-                    <div className={styles.linhaInputs}>
-                        <div className={styles.inputMaior}>
-                            <Label customClass="labelFormsCadastro" text="Data de Nascimento" />
-                            <Input text="" type="date" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} />
-                        </div>
-
-                        <div className={styles.inputMaior}>
-                            <Label customClass="labelFormsCadastro" text="Celular" />
-                            <Input text="" type="text" value={celular} onChange={(e) => setCelular(e.target.value)} />
-                        </div>
-                    </div>
-
-                    <div className={styles.linhaInputs}>
-                        <div className={styles.inputMenor}>
-                            <Label customClass="labelFormsCadastro" text="CEP" />
-                            <Input text="" type="text" value={cep} onChange={(e) => setCep(e.target.value)} />
-                        </div>
-
-                        <div className={styles.inputMaior}>
-                            <Label customClass="labelFormsCadastro" text="Rua" />
-                            <Input text="" type="text" value={rua} onChange={(e) => setRua(e.target.value)} />
-                        </div>
-                    </div>
-
-                    <div className={styles.linhaInputs}>
-                        <div className={styles.inputMenor2}>
-                            <Label customClass="labelFormsCadastro" text="Número" />
-                            <Input text="" type="text" value={numero} onChange={(e) => setNumero(e.target.value)} />
-                        </div>
-
-                        <div className={styles.inputMaior}>
-                            <Label customClass="labelFormsCadastro" text="Cidade" />
-                            <Input text="" type="text" value={cidade} onChange={(e) => setCidade(e.target.value)} />
-                        </div>
-                    </div>
-
-                    <div className={styles.linhaInputs}>
-                        <div className={styles.inputMaior}>
-                            <Label customClass="labelFormsCadastro" text="Bairro" />
-                            <Input text="" type="text" value={bairro} onChange={(e) => setBairro(e.target.value)} />
-                        </div>
-
-                        <div className={styles.inputMaior}>
-                            <Label customClass="labelFormsCadastro" text="Estado" />
-                            <Input text="" type="text" value={estado} onChange={(e) => setEstado(e.target.value)} />
-                        </div>
-                    </div>
 
                     <Label customClass="labelFormsCadastro" text="Senha" />
                     <Input text="" type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />

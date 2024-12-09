@@ -6,7 +6,7 @@
     background: none; 
     padding: 20px 0; 
     width: 100%;
-    height: auto;
+    min-height: 15vh;
     gap: 4vh;
     border-radius: 10px; 
 }
