@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom'; // Import useHistory
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import styles from '../cadastroEmpresa/CadastroEmpresa.module.css';
 import styles1 from './CadastroEstudante.module.css';
 import Header from '../../components/layout/header/Header';
@@ -13,7 +13,7 @@ import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
 
 function CadastroEstudante() {
     const [isMobile, setIsMobile] = useState(false);
-    const history = useHistory(); // Initialize useHistory
+    const navigate = useNavigate(); // Initialize useNavigate
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 868px)");
@@ -62,7 +62,7 @@ function CadastroEstudante() {
             if (response.ok) {
                 alert("Jovem cadastrado com sucesso!");
                 setTimeout(() => {
-                    history.push('/Login'); // Redirect to login page after 1.5 seconds
+                    navigate('/Login'); // Redirect to login page after 1.5 seconds
                 }, 1500);
             } else {
                 alert("Erro ao cadastrar o jovem.");
