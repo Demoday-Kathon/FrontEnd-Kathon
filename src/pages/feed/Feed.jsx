@@ -28,7 +28,7 @@ function Feeds() {
 
     const fetchPosts = () => {
         setIsLoading(true); // Inicia o carregamento
-        fetch('http://localhost:8080/api/posts/listar')
+        fetch('https://apibackend.kathon.tech/api/posts/listar')
             .then(response => response.json())
             .then(data => {
                 setPosts(data.reverse());
