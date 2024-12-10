@@ -9,26 +9,6 @@ function Publicacao({ closeModal, refreshFeed }) {
     const [file, setFile] = useState(null);
     const [imagePreview, setImagePreview] = useState(null);
 
-    // Função para verificar se uma string Base64 é válida
-    const isValidBase64 = (str) => {
-        try {
-            return btoa(atob(str)) === str;
-        } catch (err) {
-            return false;
-        }
-    };
-
-    // Função para converter Base64 para Blob
-    const base64ToBlob = (base64, mimeType) => {
-        const byteString = atob(base64.split(',')[1]); // Remover o cabeçalho data:image/jpeg;base64,
-        const ab = new ArrayBuffer(byteString.length);
-        const ua = new Uint8Array(ab);
-        for (let i = 0; i < byteString.length; i++) {
-            ua[i] = byteString.charCodeAt(i);
-        }
-        return new Blob([ab], { type: mimeType });
-    };
-
     const handleTextChange = (event) => {
         setText(event.target.value);
     };
@@ -54,11 +34,11 @@ function Publicacao({ closeModal, refreshFeed }) {
             return;
         }
 
-        // Convertendo a imagem do usuário (Base64 para Blob)
+        // Preparando a imagem do perfil do usuário para o envio
         let userImageFile = null;
-        if (user?.fotoPerfil && isValidBase64(user.fotoPerfil)) {
-            // A imagem do usuário está em Base64 válida
-            userImageFile = base64ToBlob(user.fotoPerfil, 'image/jpeg');
+        if (user?.fotoPerfil instanceof Blob) {
+            // Se a imagem do perfil for um Blob
+            userImageFile = user.fotoPerfil;
         }
 
         // Cria o FormData para enviar a imagem do usuário e a imagem do post
@@ -96,7 +76,10 @@ function Publicacao({ closeModal, refreshFeed }) {
     return (
         <section className={Styles.cardPubli}>
             <div className={Styles.posthead}>
-                <img className={Styles.imgUser} src={user?.fotoPerfil && isValidBase64(user.fotoPerfil) ? "data:image/jpeg;base64," + user.fotoPerfil : menina} alt="Foto de perfil" />
+                <img className={Styles.imgUser} 
+                     src={user?.fotoPerfil ? URL.createObjectURL(user.fotoPerfil) : menina} 
+                     alt="Foto de perfil" 
+                />
                 <div className={Styles.publis}>
                     <input 
                         className={Styles.entradatxt} 
