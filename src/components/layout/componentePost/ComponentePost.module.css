@@ -74,7 +74,7 @@
 
 @media (max-width: 968px) {
     .ContainerPost {
-        height: auto;
+        min-height: auto;
         padding: 5px;
         border-radius: 8px;
         padding-bottom: 1vh;

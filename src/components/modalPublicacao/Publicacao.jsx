@@ -5,9 +5,11 @@ import menina from "../../assets/imgs/Joana.png";
 
 function Publicacao({ closeModal, refreshFeed }) {
     const { user } = useUser();
-    const [text, setText] = useState("");  
+    const [text, setText] = useState("");
     const [file, setFile] = useState(null);
     const [imagePreview, setImagePreview] = useState(null);
+
+    const MAX_FILE_SIZE = 5 * 1024 * 1024; // Limite de 5MB, ajuste conforme necessário
 
     const handleTextChange = (event) => {
         setText(event.target.value);
@@ -15,6 +17,12 @@ function Publicacao({ closeModal, refreshFeed }) {
 
     const handleFileChange = (event) => {
         const selectedFile = event.target.files[0];
+
+        if (selectedFile.size > MAX_FILE_SIZE) {
+            alert("O arquivo é muito grande. Tente enviar uma imagem de até 5MB.");
+            return;
+        }
+
         setFile(selectedFile);
         if (selectedFile) {
             setImagePreview(URL.createObjectURL(selectedFile));
@@ -23,26 +31,71 @@ function Publicacao({ closeModal, refreshFeed }) {
         }
     };
 
-    function handlePublishClick() {
+    // Função para redimensionar a imagem antes de enviar
+    const resizeImage = (file, maxWidth = 1024, maxHeight = 1024) => {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                img.src = e.target.result;
+            };
+
+            reader.readAsDataURL(file);
+
+            img.onload = function () {
+                const canvas = document.createElement("canvas");
+                const ctx = canvas.getContext("2d");
+
+                let width = img.width;
+                let height = img.height;
+
+                // Calcula a proporção da imagem
+                if (width > height) {
+                    if (width > maxWidth) {
+                        height = Math.round(height * (maxWidth / width));
+                        width = maxWidth;
+                    }
+                } else {
+                    if (height > maxHeight) {
+                        width = Math.round(width * (maxHeight / height));
+                        height = maxHeight;
+                    }
+                }
+
+                canvas.width = width;
+                canvas.height = height;
+                ctx.drawImage(img, 0, 0, width, height);
+
+                canvas.toBlob((blob) => {
+                    resolve(blob);
+                }, "image/jpeg", 0.7); // Compressão de 70% (ajuste conforme necessário)
+            };
+
+            img.onerror = function (err) {
+                reject(err);
+            };
+        });
+    };
+
+    const handlePublishClick = async () => {
         if (!text) {
             alert("Por favor, escreva algo antes de publicar.");
             return;
         }
-    
+
         if (!file) {
             alert("Por favor, selecione uma imagem antes de publicar.");
             return;
         }
-    
+
         // Preparando a imagem do perfil do usuário para o envio
         let userImageFile = null;
         if (user?.fotoPerfil) {
-            // Convertendo a string base64 em um Blob
             const base64Data = user.fotoPerfil;
             const byteCharacters = atob(base64Data);
             const byteArrays = [];
-    
-            // Converte cada caracter da base64 para byte
+
             for (let offset = 0; offset < byteCharacters.length; offset += 512) {
                 const slice = byteCharacters.slice(offset, offset + 512);
                 const byteNumbers = new Array(slice.length);
@@ -52,73 +105,79 @@ function Publicacao({ closeModal, refreshFeed }) {
                 const byteArray = new Uint8Array(byteNumbers);
                 byteArrays.push(byteArray);
             }
-    
-            // Criando o Blob a partir dos bytes
-            userImageFile = new Blob(byteArrays, { type: 'image/jpeg' }); // Ajuste o tipo conforme necessário
+
+            userImageFile = new Blob(byteArrays, { type: 'image/jpeg' });
         }
-    
-        // Cria o FormData para enviar a imagem do usuário e a imagem do post
-        const formData = new FormData();
-        formData.append("name", user?.name || "Usuário");
-        formData.append("descricao", text);  // Salve a descrição como "descricao" no back-end
-        if (file) {
-            formData.append("imagemPost", file);
-        }
-        if (userImageFile) {
-            formData.append("imagemPerfil", userImageFile, "userProfile.jpg");
-        }
-    
-        fetch("https://backendfeed.kathon.tech/api/posts/criar", {
-            method: "POST",
-            body: formData,
-        })
-        .then(response => response.json())
-        .then(newPost => {
-            console.log("Publicação realizada com sucesso:", newPost);
-            setText("");
-            setFile(null);
-            setImagePreview(null);
-            closeModal();
-            if (refreshFeed) {
-                refreshFeed(); 
+
+        // Redimensionar a imagem do post antes de enviar
+        try {
+            const resizedFile = await resizeImage(file);
+            const formData = new FormData();
+            formData.append("name", user?.name || "Usuário");
+            formData.append("descricao", text);
+            formData.append("imagemPost", resizedFile);  // Envia a imagem redimensionada
+
+            if (userImageFile) {
+                formData.append("imagemPerfil", userImageFile, "userProfile.jpg");
             }
-        })
-        .catch(error => {
-            console.error("Erro ao publicar:", error);
-            alert("Erro ao publicar a postagem. Tente novamente.");
-        });
-    }    
+
+            // Enviar os dados para o servidor
+            fetch("https://backendfeed.kathon.tech/api/posts/criar", {
+                method: "POST",
+                body: formData,
+            })
+                .then((response) => response.json())
+                .then((newPost) => {
+                    console.log("Publicação realizada com sucesso:", newPost);
+                    setText("");
+                    setFile(null);
+                    setImagePreview(null);
+                    closeModal();
+                    if (refreshFeed) {
+                        refreshFeed();
+                    }
+                })
+                .catch((error) => {
+                    console.error("Erro ao publicar:", error);
+                    alert("Erro ao publicar a postagem. Tente novamente.");
+                });
+        } catch (err) {
+            console.error("Erro ao redimensionar a imagem:", err);
+            alert("Erro ao processar a imagem. Tente novamente.");
+        }
+    };
 
     return (
         <section className={Styles.cardPubli}>
             <div className={Styles.posthead}>
-                <img className={Styles.imgUser} 
-                     src={user?.fotoPerfil ? `data:image/jpeg;base64,${user.fotoPerfil}` : menina} 
-                     alt="Foto de perfil" 
+                <img
+                    className={Styles.imgUser}
+                    src={user?.fotoPerfil ? `data:image/jpeg;base64,${user.fotoPerfil}` : menina}
+                    alt="Foto de perfil"
                 />
                 <div className={Styles.publis}>
-                    <input 
-                        className={Styles.entradatxt} 
-                        type="text" 
-                        placeholder="Escreva algo..." 
-                        maxLength={35} 
+                    <input
+                        className={Styles.entradatxt}
+                        type="text"
+                        placeholder="Escreva algo..."
+                        maxLength={35}
                         value={text}
                         onChange={handleTextChange}
                     />
                 </div>
-                <img 
+                <img
                     className={Styles.imgPreview}
-                    src={imagePreview || "data:image/jpeg;base64,defaultImageBase64"} 
-                    alt={imagePreview ? "Imagem do post" : "Nenhuma imagem selecionada"} 
+                    src={imagePreview || "data:image/jpeg;base64,defaultImageBase64"}
+                    alt={imagePreview ? "Imagem do post" : "Nenhuma imagem selecionada"}
                 />
             </div>
             <div className={Styles.containerEscreva}>
                 <div className={Styles.escreva}>
-                    <input 
-                        id="file" 
-                        type="file" 
-                        style={{ display: "none" }} 
-                        onChange={handleFileChange} 
+                    <input
+                        id="file"
+                        type="file"
+                        style={{ display: "none" }}
+                        onChange={handleFileChange}
                     />
                     <label className={Styles.labelfileinput} htmlFor="file">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -135,8 +194,8 @@ function Publicacao({ closeModal, refreshFeed }) {
                             </defs>
                         </svg>
                     </label>
-                    <button 
-                        className={Styles.botaoo} 
+                    <button
+                        className={Styles.botaoo}
                         onClick={handlePublishClick}
                     >
                         Publicar
