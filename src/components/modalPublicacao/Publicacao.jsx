@@ -113,7 +113,7 @@ function Publicacao({ closeModal, refreshFeed }) {
         try {
             const resizedFile = await resizeImage(file);
             const formData = new FormData();
-            formData.append("name", user?.name || "Usuário");
+            formData.append("name", user?.nomeCompleto || "Usuário");
             formData.append("descricao", text);
             formData.append("imagemPost", resizedFile);  // Envia a imagem redimensionada
 
