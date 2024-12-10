@@ -38,13 +38,23 @@ function HackathonVisaoGeralSESI() {
     <div className={Styles.ContentPrincipal}>
       <div className={Styles.containerprincipal}>
         <Bann fotobanner = {sesi} />
-        <CardInscricao />
+        <CardInscricao 
+        
+          inicio="Início"
+          dates="13 dez, 2024"
+          termino="Vencedor"
+          expired="15 dez, 2024"
+          subsc="Inscrições acabam em:"
+          dat="14 dias | 15h:13m"
+        
+        
+        />
       </div>
 
       <div className={Styles.containersubprincipal}>
         <CardPreto
-          title="Rede ou Aplicativo para Conectar Fornecedores Locais"
-          context="Como parte de nossa visão de promover a economia local e garantir sustentabilidade, desenvolvemos um aplicativo que conecta diretamente o Terra Vermelha a fornecedores locais de materiais de construção, móveis e serviços relacionados. Esse aplicativo cria uma plataforma de mercado eficiente, reduzindo custos logísticos e fortalecendo a economia regional, ao mesmo tempo em que assegura uma cadeia de suprimentos mais sustentável e personalizada.
+          title="Soluções inovadoras para cidades satélites do DF"
+          context="A competição visa trazer oportunidades e incentivos para jovens em vulnerabilidade social - tanto aqueles em idade escolar como aqueles que já estejam no momento pós ensino médio. O critério para seleção das cidades escolhidas para participar da competição foi os de regiões de renda média-baixa ou baixa do DF que menos visitaram o museu no ano.
 "
           mentors="Mentores"
           sponsors="Patrocinadores"

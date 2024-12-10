@@ -38,7 +38,17 @@ function HackathonVisaoGeralSTART() {
     <div className={Styles.ContentPrincipal}>
       <div className={Styles.containerprincipal}>
         <Bann fotobanner = {start} />
-        <CardInscricao />
+        <CardInscricao 
+        
+        inicio="Inicio"
+        dates="19 mar,2024"
+        termino="Vencedor"
+        expired="21 mar, 2024"
+        subsc="Inscrições acabam em:"
+        dat="17 mar,2025"
+        
+        />
+
       </div>
 
       <div className={Styles.containersubprincipal}>
