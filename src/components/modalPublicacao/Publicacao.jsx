@@ -28,19 +28,35 @@ function Publicacao({ closeModal, refreshFeed }) {
             alert("Por favor, escreva algo antes de publicar.");
             return;
         }
-
+    
         if (!file) {
             alert("Por favor, selecione uma imagem antes de publicar.");
             return;
         }
-
+    
         // Preparando a imagem do perfil do usuário para o envio
         let userImageFile = null;
         if (user?.fotoPerfil) {
-            // Se a fotoPerfil for uma string base64, usamos diretamente no src
-            userImageFile = `data:image/jpeg;base64,${user.fotoPerfil}`;
+            // Convertendo a string base64 em um Blob
+            const base64Data = user.fotoPerfil;
+            const byteCharacters = atob(base64Data);
+            const byteArrays = [];
+    
+            // Converte cada caracter da base64 para byte
+            for (let offset = 0; offset < byteCharacters.length; offset += 512) {
+                const slice = byteCharacters.slice(offset, offset + 512);
+                const byteNumbers = new Array(slice.length);
+                for (let i = 0; i < slice.length; i++) {
+                    byteNumbers[i] = slice.charCodeAt(i);
+                }
+                const byteArray = new Uint8Array(byteNumbers);
+                byteArrays.push(byteArray);
+            }
+    
+            // Criando o Blob a partir dos bytes
+            userImageFile = new Blob(byteArrays, { type: 'image/jpeg' }); // Ajuste o tipo conforme necessário
         }
-
+    
         // Cria o FormData para enviar a imagem do usuário e a imagem do post
         const formData = new FormData();
         formData.append("name", user?.name || "Usuário");
@@ -51,7 +67,7 @@ function Publicacao({ closeModal, refreshFeed }) {
         if (userImageFile) {
             formData.append("imagemPerfil", userImageFile, "userProfile.jpg");
         }
-
+    
         fetch("https://backendfeed.kathon.tech/api/posts/criar", {
             method: "POST",
             body: formData,
@@ -71,7 +87,7 @@ function Publicacao({ closeModal, refreshFeed }) {
             console.error("Erro ao publicar:", error);
             alert("Erro ao publicar a postagem. Tente novamente.");
         });
-    }
+    }    
 
     return (
         <section className={Styles.cardPubli}>
