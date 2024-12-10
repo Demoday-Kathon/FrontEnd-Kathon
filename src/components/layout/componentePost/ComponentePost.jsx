@@ -5,6 +5,7 @@ import { FaThumbsUp, FaComment, FaShare } from 'react-icons/fa';
 function ComponentePost({profile, nameUser, hours, description, photoPost}){
 
     const [liked, setLiked] = useState(false);
+    const [likeCount, setLikeCount] = useState(0);
 
     function formatDescription(description) {
         return description.replace (/^.*?:\s*/, "");
@@ -15,6 +16,7 @@ function ComponentePost({profile, nameUser, hours, description, photoPost}){
 
     const handleLikeClick = () => {
         setLiked(!liked);
+        setLikeCount(prevCount => liked ? prevCount - 1 : prevCount + 1);
     };
 
     return(
@@ -40,6 +42,7 @@ function ComponentePost({profile, nameUser, hours, description, photoPost}){
                     onClick={handleLikeClick} 
                     style={{ color: liked ? 'red' : 'white' }} 
                 />
+                <span>{likeCount}</span>
                 <FaComment />
                 <FaShare />
             </div>
