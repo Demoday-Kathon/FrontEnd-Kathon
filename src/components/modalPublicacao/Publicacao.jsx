@@ -9,6 +9,17 @@ function Publicacao({ closeModal, refreshFeed }) {
     const [file, setFile] = useState(null);
     const [imagePreview, setImagePreview] = useState(null);
 
+    // Função para converter Base64 para Blob
+    const base64ToBlob = (base64, mimeType) => {
+        const byteString = atob(base64.split(',')[1]);
+        const ab = new ArrayBuffer(byteString.length);
+        const ua = new Uint8Array(ab);
+        for (let i = 0; i < byteString.length; i++) {
+            ua[i] = byteString.charCodeAt(i);
+        }
+        return new Blob([ab], { type: mimeType });
+    };
+
     const handleTextChange = (event) => {
         setText(event.target.value);
     };
@@ -34,14 +45,24 @@ function Publicacao({ closeModal, refreshFeed }) {
             return;
         }
 
+        // Convertendo a imagem do usuário (Base64 para Blob)
+        let userImageFile = null;
+        if (user?.fotoPerfil) {
+            userImageFile = base64ToBlob(user.fotoPerfil, 'image/jpeg');
+        }
+
+        // Cria o FormData para enviar a imagem do usuário e a imagem do post
         const formData = new FormData();
-        formData.append("idJovem", user.id);
-        formData.append("descricao", text);
+        formData.append("name", user?.name || "Usuário");
+        formData.append("descricao", text);  // Salve a descrição como "descricao" no back-end
         if (file) {
             formData.append("imagemPost", file);
         }
+        if (userImageFile) {
+            formData.append("imagemPerfil", userImageFile, "userProfile.jpg");
+        }
 
-        fetch("https://apibackend.kathon.tech/api/posts/criar", {
+        fetch("https://backendfeed.kathon.tech/api/posts/criar", {
             method: "POST",
             body: formData,
         })

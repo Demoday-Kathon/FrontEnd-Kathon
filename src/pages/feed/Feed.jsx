@@ -3,7 +3,7 @@ import Header from '../../components/layout/headerInterno/HeaderInterno';
 import Feed from '../../components/layout/componenteFeed/ComponenteFeed';
 import Post from '../../components/layout/componentePost/ComponentePost';
 import Modal from '../../components/modalPublicacao/Publicacao';
-import User from '../../assets/imgs/Joana.png';
+import User from '../../assets/imgs/Joana.png'; // Imagem padrão para o perfil
 import styles from './Feed.module.css';
 import { useUser } from '../../components/contexts/UserContext';
 import HeaderMobile from '../../components/HeaderFeedInterno/HeaderFeedInterno';
@@ -28,7 +28,7 @@ function Feeds() {
 
     const fetchPosts = () => {
         setIsLoading(true); // Inicia o carregamento
-        fetch('https://apibackend.kathon.tech/api/posts/listar')
+        fetch('https://backendfeed.kathon.tech/feed')
             .then(response => response.json())
             .then(data => {
                 setPosts(data.reverse());
@@ -48,33 +48,33 @@ function Feeds() {
     const closeModal = () => setIsModalVisible(false);
 
     return (
-    <>
-        {isMobile ? <HeaderMobile /> : <Header />}
-        <div className={styles.feedContainer}>
-            <div className={styles.feedContent}>
-                <div className={styles.ContainerNewPost}>
-                    <Modal closeModal={closeModal} refreshFeed={fetchPosts} />
+        <>
+            {isMobile ? <HeaderMobile /> : <Header />}
+            <div className={styles.feedContainer}>
+                <div className={styles.feedContent}>
+                    <div className={styles.ContainerNewPost}>
+                        <Modal closeModal={closeModal} refreshFeed={fetchPosts} />
+                    </div>
+                    <Feed>
+                        {isLoading ? (
+                            <p className={styles.loadingMessage}>Carregando as postagens...</p> // Mensagem de carregamento
+                        ) : (
+                            posts.map((post, index) => (
+                                <Post
+                                    key={index}
+                                    nameUser={post.name} // O nome do usuário
+                                    profile={post.imagemPerfil || User} // Caso não tenha foto, usa a imagem padrão
+                                    hours="Há algumas horas" // Exemplo de hora, pode ser ajustado conforme necessário
+                                    description={post.descricao} // Descrição do post
+                                    photoPost={post.imagemPost} // Foto do post
+                                />
+                            ))
+                        )}
+                    </Feed>
                 </div>
-                <Feed>
-                    {isLoading ? (
-                        <p className={styles.loadingMessage}>Carregando as postagens...</p> // Mensagem de carregamento
-                    ) : (
-                        posts.map((post, index) => (
-                            <Post
-                                key={index}
-                                nameUser={post.jovem.nomeCompleto}
-                                profile={post.jovem.fotoPerfil ? `data:image/jpeg;base64,${post.jovem.fotoPerfil}` : User}
-                                hours="Há algumas horas"
-                                description={post.descricao}
-                                photoPost={post.imagemPost ? `data:image/jpeg;base64,${post.imagemPost}` : null}
-                            />
-                        ))
-                    )}
-                </Feed>
             </div>
-        </div>
-        <Footer />
-    </>
+            <Footer />
+        </>
     );
 }
 
