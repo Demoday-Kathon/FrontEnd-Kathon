@@ -36,9 +36,9 @@ function Publicacao({ closeModal, refreshFeed }) {
 
         // Preparando a imagem do perfil do usuário para o envio
         let userImageFile = null;
-        if (user?.fotoPerfil instanceof Blob) {
-            // Se a imagem do perfil for um Blob
-            userImageFile = user.fotoPerfil;
+        if (user?.fotoPerfil) {
+            // Se a fotoPerfil for uma string base64, usamos diretamente no src
+            userImageFile = `data:image/jpeg;base64,${user.fotoPerfil}`;
         }
 
         // Cria o FormData para enviar a imagem do usuário e a imagem do post
@@ -77,7 +77,7 @@ function Publicacao({ closeModal, refreshFeed }) {
         <section className={Styles.cardPubli}>
             <div className={Styles.posthead}>
                 <img className={Styles.imgUser} 
-                     src={user?.fotoPerfil ? URL.createObjectURL(user.fotoPerfil) : menina} 
+                     src={user?.fotoPerfil ? `data:image/jpeg;base64,${user.fotoPerfil}` : menina} 
                      alt="Foto de perfil" 
                 />
                 <div className={Styles.publis}>
