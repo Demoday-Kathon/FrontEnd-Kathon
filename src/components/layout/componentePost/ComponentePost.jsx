@@ -1,15 +1,21 @@
+import React, { useState } from 'react';
 import Styles from './ComponentePost.module.css';
 import { FaThumbsUp, FaComment, FaShare } from 'react-icons/fa';
 
 function ComponentePost({profile, nameUser, hours, description, photoPost}){
 
+    const [liked, setLiked] = useState(false);
+
     function formatDescription(description) {
         return description.replace (/^.*?:\s*/, "");
     }
 
-
     const originalDescription = {description};
     const formattedDescription = formatDescription(originalDescription.description);
+
+    const handleLikeClick = () => {
+        setLiked(!liked);
+    };
 
     return(
         <div className={Styles.ContainerPost}>
@@ -30,7 +36,10 @@ function ComponentePost({profile, nameUser, hours, description, photoPost}){
             </div>
 
             <div className={Styles.ActionIcons}>
-                <FaThumbsUp />
+                <FaThumbsUp 
+                    onClick={handleLikeClick} 
+                    style={{ color: liked ? 'red' : 'white' }} 
+                />
                 <FaComment />
                 <FaShare />
             </div>
