@@ -55,7 +55,7 @@
 }
 
 .ActionIcons {
-    background-color: #7400b7; 
+    /* background-color: #7400b7;  */
     display: flex;
     justify-content: space-around;
     padding: 10px;

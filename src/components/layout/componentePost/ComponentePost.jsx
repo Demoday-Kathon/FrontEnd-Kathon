@@ -44,7 +44,7 @@ function ComponentePost({profile, nameUser, hours, description, photoPost}){
                     </div>
                 <FaThumbsUp 
                     onClick={handleLikeClick} 
-                    style={{ color: liked ? '#314CE7' : 'white' }} 
+                    style={{ color: liked ? '#66C2FA' : 'white' }} 
                 />
                 </div>
                 <FaComment />
