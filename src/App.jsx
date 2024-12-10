@@ -9,6 +9,11 @@ import Perfil_aluno_edit from "./pages/perfilAluno/Perfil_aluno_edit";
 import Perfil_empresa from "./pages/perfilEmpresa/Perfil_empresa";
 import Perfil_empresa_edit from "./pages/perfilEmpresa/Perfil_empresa_edit";
 import HackathonVisaoGeral from "./pages/hackathonsVisaoGeral/HackathonsVisaoGeral";
+import HackathonVisaoGeralCREA from "./pages/hackathonsVisaoGeralCREA/HackathonsVisaoGeralCREA";
+import HackathonVisaoGeralHCG from "./pages/hackathonsVisaoGeralHCG/HackathonsVisaoGeralHCG";
+import HackathonVisaoGeralBRASIL from "./pages/hackathonsVisaoGeralBRASIL/HackathonsVisaoGeralBRASIL";
+import HackathonVisaoGeralSTART from "./pages/hackathonsVisaoGeralSTART/HackathonsVisaoGeralSTART";
+import HackathonVisaoGeralSESI from "./pages/hackathonsVisaoGeralSESI/HackathonsVisaoGeralSESI";
 import HackathonVisaoGeralInterno from "./pages/hackathonsVisaoGeralInterno/HackathonsVisaoGeralInterno";
 import HackathonCalendario from "./pages/hackathonsCalendario/HackCalendario";
 import HackathonCalendarioInterno from "./pages/hackathonsCalendarioInterno/HackCalendarioInterno";
@@ -35,6 +40,7 @@ import ModalGame from "./components/ModalGame/ModalGame";
 import AnaliseGeral from "./pages/dashboardVisaoGeral/AnaliseGeral";
 import HeaderFeed from "./components/HeaderFeed/HeaderFeed";
 import HeaderFeedInterno from "./components/HeaderFeedInterno/HeaderFeedInterno";
+
 import "./App.css";
 
 
@@ -61,6 +67,11 @@ function App() {
           <Route path="/feed" element={<Feed />} />
           <Route path="/Perfil_empresa_edit" element={<Perfil_empresa_edit />} />
           <Route path="/HackathonVisaoGeral" element={<HackathonVisaoGeral />} />
+          <Route path="/HackathonVisaoGeralCREA" element={<HackathonVisaoGeralCREA />} />
+          <Route path="/HackathonVisaoGeralHCG" element={<HackathonVisaoGeralHCG />} />
+          <Route path="/HackathonVisaoGeralBRASIL" element={<HackathonVisaoGeralBRASIL />} />
+          <Route path="/HackathonVisaoGeralSTART" element={<HackathonVisaoGeralSTART />} />
+          <Route path="/HackathonVisaoGeralSESI" element={<HackathonVisaoGeralSESI />} />
           <Route path="/HackathonVisaoGeralInterno" element={<HackathonVisaoGeralInterno />} />
           <Route path="/HackathonsPremios" element={<HackathonsPremios />} />
           <Route path="/Planos" element={<Planos />} />

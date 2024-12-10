@@ -4,6 +4,7 @@ import banner from "../../assets/imgs/banner.png";
 import brasil from "../../assets/imgs/hack_brasil.png";
 import ideathon from "../../assets/imgs/ideathon.png";
 import gov from "../../assets/imgs/gov.png";
+import sesi from "../../assets/imgs/sesi.png";
 import start from "../../assets/imgs/start.png";
 import accenture from "../../assets/imgs/accenture.png";
 import Card from "../../components/layout/card/card";
@@ -90,7 +91,7 @@ function Hackathons() {
                 </div>
               }
               children2={
-                <LinkComponent linkTo={"/HackathonVisaoGeral"}>
+                <LinkComponent linkTo={"/HackathonVisaoGeralCREA"}>
                   <Button text="Saiba Mais" customClass="buttonAzulHacka" />
                 </LinkComponent>
               }
@@ -119,7 +120,7 @@ function Hackathons() {
                 </div>
               }
               children2={
-                <LinkComponent linkTo={"/HackathonVisaoGeral"}>
+                <LinkComponent linkTo={"/HackathonVisaoGeralHCG"}>
                   <Button text="Saiba Mais" customClass="buttonAzulHacka" />
                 </LinkComponent>
               }
@@ -152,7 +153,7 @@ function Hackathons() {
                 </div>
               }
               children2={
-                <LinkComponent linkTo={"/HackathonVisaoGeral"}>
+                <LinkComponent linkTo={"/HackathonVisaoGeralBRASIL"}>
                   <Button text="Saiba Mais" customClass="buttonAzulHacka" />
                 </LinkComponent>
               }
@@ -181,7 +182,7 @@ function Hackathons() {
                 </div>
               }
               children2={
-                <LinkComponent linkTo={"/HackathonVisaoGeral"}>
+                <LinkComponent linkTo={"/HackathonVisaoGeralSTART"}>
                   <Button text="Saiba Mais" customClass="buttonAzulHacka" />
                 </LinkComponent>
               }
@@ -193,17 +194,17 @@ function Hackathons() {
           <div className={styles.rowHackathonsDisp}>
             <Card
               customClass="cardHackathonDisponiveis"
-              bannerHacka={banner}
-              titleHacka="Boostlab Batch 2025"
-              locationHacka="São Paulo, SP"
+              bannerHacka={sesi}
+              titleHacka="Hackathon SESI Lab"
+              locationHacka="SESI Lab, Brasília"
               qtdparticipants="+330 participantes"
-              timeline="1 mês restante"
+              timeline="5 dias restantes"
               children1={
                 <div className={styles.tagsHacka}>
                   <Tag text="Online" customClass="roxoHacka" />
                   <Tag text="Inscrições Abertas" customClass="azulHacka" />
-                  <Tag text="Segurança" customClass="verdeAguaHacka" />
-                  <Tag text="Startups" customClass="azulClaroHacka" />
+                  <Tag text="Inovação" customClass="verdeAguaHacka" />
+                  <Tag text="Sustentabilidade" customClass="azulClaroHacka" />
                 </div>
               }
               children3={
@@ -214,7 +215,7 @@ function Hackathons() {
                 </div>
               }
               children2={
-                <LinkComponent linkTo={"/HackathonVisaoGeral"}>
+                <LinkComponent linkTo={"/HackathonVisaoGeralSESI"}>
                   <Button text="Saiba Mais" customClass="buttonAzulHacka" />
                 </LinkComponent>
               }

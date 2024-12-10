@@ -2,7 +2,7 @@ import {React, useEffect, useState} from "react";
 import CardInscricao from "../../components/cardInscricao/CardInscricao";
 import CardPreto from "../../components/layout/cardPreto/CardPreto";
 import Bann from "../../components/Banner/Bann";
-import Styles from "../hackathonsVisaoGeralCREA/HackathonVisaoGeralCREA.module.css";
+import Styles from "../hackathonsVisaoGeralHCG/HackathonVisaoGeralHCG.module.css";
 import Card from "../../components/layout/card/card";
 import Header from "../../components/layout/header/Header";
 import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
@@ -15,9 +15,9 @@ import Tag from "../../components/layout/card/tag";
 import Button from "../../components/layout/button/button";
 import Banner from "../../assets/imgs/banner.png";
 import LinkComponent from "../../components/layout/link/LinkComponent";
-import ideathon from "../../assets/imgs/ideathon.png";
+import gov from "../../assets/imgs/gov.png";
 
-function HackathonVisaoGeralCREA() {
+function HackathonVisaoGeralHCG() {
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -37,24 +37,26 @@ function HackathonVisaoGeralCREA() {
       {isMobile? <HeaderMobile /> : <Header />}
     <div className={Styles.ContentPrincipal}>
       <div className={Styles.containerprincipal}>
-        <Bann fotobanner = {ideathon} />
+        <Bann fotobanner = {gov} />
         <CardInscricao 
         
         inicio="Inicio"
-        dates="06 out,2024"
+        dates="20 jul,2022"
         termino="Vencedor"
-        expired="7 dez, 2024"
+        expired="25 jul, 2022"
         subsc="Inscrições acabam em:"
         dat="Encerrado"
+        
+        
         
         />
       </div>
 
       <div className={Styles.containersubprincipal}>
         <CardPreto
-          title="Como podemos aumentar a interação e o engajamento dos profissionais"
-          context="Um Ideathon é uma maratona de ideias, onde mentes brilhantes se juntam para solucionar desafios e gerar soluções inovadoras! É um evento imersivo e colaborativo que reúne profissionais de diversas áreas, com o objetivo de estimular a criatividade, o trabalho em equipe e a geração de ideias disruptivas. No Ideathon do CREA-SP, vocês irão mergulhar em uma proposta imersiva e colaborativa, com o objetivo de gerar e desenvolver ideias inovadoras em torno de desafios específicos do CREA SP"
-
+          title="Racionalizar recursos, desburocratizar processos, dar mais autonomia e transparência à sociedade"
+          context="Buscamos soluções tecnológicas que contribuam com o desafio do governo federal de digitalização de seus serviços, visando facilitar a vida do cidadão, dos gestores públicos e de empresas prestadoras de serviço. Esse Hackathon visa tornar mais ágil o acesso às contratações governamentais, o credenciamento e a participação efetiva das empresas, evoluindo os serviços prestados
+"
           mentors="Mentores"
           sponsors="Patrocinadores"
         />
@@ -127,4 +129,4 @@ function HackathonVisaoGeralCREA() {
   );
 }
 
-export default HackathonVisaoGeralCREA;
+export default HackathonVisaoGeralHCG;

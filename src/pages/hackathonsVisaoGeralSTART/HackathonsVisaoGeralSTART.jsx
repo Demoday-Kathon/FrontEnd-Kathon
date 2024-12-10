@@ -2,7 +2,7 @@ import {React, useEffect, useState} from "react";
 import CardInscricao from "../../components/cardInscricao/CardInscricao";
 import CardPreto from "../../components/layout/cardPreto/CardPreto";
 import Bann from "../../components/Banner/Bann";
-import Styles from "../hackathonsVisaoGeralCREA/HackathonVisaoGeralCREA.module.css";
+import Styles from "../hackathonsVisaoGeralSTART/HackathonVisaoGeralSTART.module.css";
 import Card from "../../components/layout/card/card";
 import Header from "../../components/layout/header/Header";
 import HeaderMobile from "../../components/HeaderFeed/HeaderFeed";
@@ -15,9 +15,9 @@ import Tag from "../../components/layout/card/tag";
 import Button from "../../components/layout/button/button";
 import Banner from "../../assets/imgs/banner.png";
 import LinkComponent from "../../components/layout/link/LinkComponent";
-import ideathon from "../../assets/imgs/ideathon.png";
+import start from "../../assets/imgs/start.png";
 
-function HackathonVisaoGeralCREA() {
+function HackathonVisaoGeralSTART() {
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -37,24 +37,15 @@ function HackathonVisaoGeralCREA() {
       {isMobile? <HeaderMobile /> : <Header />}
     <div className={Styles.ContentPrincipal}>
       <div className={Styles.containerprincipal}>
-        <Bann fotobanner = {ideathon} />
-        <CardInscricao 
-        
-        inicio="Inicio"
-        dates="06 out,2024"
-        termino="Vencedor"
-        expired="7 dez, 2024"
-        subsc="Inscrições acabam em:"
-        dat="Encerrado"
-        
-        />
+        <Bann fotobanner = {start} />
+        <CardInscricao />
       </div>
 
       <div className={Styles.containersubprincipal}>
         <CardPreto
-          title="Como podemos aumentar a interação e o engajamento dos profissionais"
-          context="Um Ideathon é uma maratona de ideias, onde mentes brilhantes se juntam para solucionar desafios e gerar soluções inovadoras! É um evento imersivo e colaborativo que reúne profissionais de diversas áreas, com o objetivo de estimular a criatividade, o trabalho em equipe e a geração de ideias disruptivas. No Ideathon do CREA-SP, vocês irão mergulhar em uma proposta imersiva e colaborativa, com o objetivo de gerar e desenvolver ideias inovadoras em torno de desafios específicos do CREA SP"
-
+          title="Rede ou Aplicativo para Conectar Fornecedores Locais"
+          context="Como parte de nossa visão de promover a economia local e garantir sustentabilidade, desenvolvemos um aplicativo que conecta diretamente o Terra Vermelha a fornecedores locais de materiais de construção, móveis e serviços relacionados. Esse aplicativo cria uma plataforma de mercado eficiente, reduzindo custos logísticos e fortalecendo a economia regional, ao mesmo tempo em que assegura uma cadeia de suprimentos mais sustentável e personalizada.
+"
           mentors="Mentores"
           sponsors="Patrocinadores"
         />
@@ -127,4 +118,4 @@ function HackathonVisaoGeralCREA() {
   );
 }
 
-export default HackathonVisaoGeralCREA;
+export default HackathonVisaoGeralSTART;

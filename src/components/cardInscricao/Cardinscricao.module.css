@@ -1,0 +1,135 @@
+.cardData {
+    border-radius: 36px;
+    border: 2px solid #fff;
+    background: rgba(20, 19, 1, 0.8);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    margin-top: 50px;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title_inicio {
+    color: rgba(240, 240, 240, 0.8);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  .winner {
+    color: rgba(240, 240, 240, 0.6);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .minicards {
+    border-radius: 30px;
+    background: rgba(240, 240, 240, 0.1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(20px);
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    padding: 25px;
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+  
+  .infos {
+    color: rgba(240, 240, 240, 0.8);
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px; /* 100% */
+  }
+  .hours {
+    color: var(--Terciria, #06f8fa);
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 75% */
+  }
+  
+  .butoesdocard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .butoncard {
+    width: 80%;
+    height: 2em;
+    border-radius: 36px;
+    background: var(--Terciria-II, #f0f0f0);
+    backdrop-filter: blur(20px);
+    font-family: "DM Sans";
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: var(--Terciria-III, #141301);
+    font-style: normal;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .butoncard:hover {
+    background-color: var(--Terciria, #06f8fa);
+  }
+  
+  .butoncardLink {
+    text-decoration: none;
+    color: #141301;
+  }
+  
+  .LinksHackaPremiosELinhaTempo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+  }
+  @media only screen and (min-width: 320px) {
+    @media only screen and (max-width: 359px) {
+      .cardData {
+        height: 110vh;
+      }
+      .butoncard {
+        margin-top: -20px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  @media (min-width: 360px) {
+    @media (max-width: 450px) {
+      .cardData {
+        height: 78vh;
+      }
+      .butoncard {
+        margin-top: -20px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  
+  @media (min-width: 451px) {
+    @media (max-width: 840px) {
+      .cardData {
+        width: 50%;
+        margin: auto;
+        height: 60vh;
+      }
+    }
+  }

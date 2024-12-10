@@ -15,6 +15,7 @@ import Tag from "../../components/layout/card/tag";
 import Button from "../../components/layout/button/button";
 import Banner from "../../assets/imgs/banner.png";
 import LinkComponent from "../../components/layout/link/LinkComponent";
+import bannerimg from "../../assets/imgs/banner_hack.png";
 
 function HackathonVisaoGeral() {
 
@@ -36,7 +37,7 @@ function HackathonVisaoGeral() {
       {isMobile? <HeaderMobile /> : <Header />}
     <div className={Styles.ContentPrincipal}>
       <div className={Styles.containerprincipal}>
-        <Bann />
+        <Bann fotobanner = {bannerimg} />
         <CardInscricao />
       </div>
 
