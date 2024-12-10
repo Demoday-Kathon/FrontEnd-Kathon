@@ -39,10 +39,12 @@ function ComponentePost({profile, nameUser, hours, description, photoPost}){
 
             <div className={Styles.ActionIcons}>
                 <div className={Styles.containerLikes}>
-                <span>{likeCount}</span>
+                    <div>
+                        <span>{likeCount}</span>
+                    </div>
                 <FaThumbsUp 
                     onClick={handleLikeClick} 
-                    style={{ color: liked ? 'red' : 'white' }} 
+                    style={{ color: liked ? '#314CE7' : 'white' }} 
                 />
                 </div>
                 <FaComment />
