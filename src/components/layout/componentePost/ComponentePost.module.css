@@ -46,11 +46,17 @@
     object-fit: contain;
 }
 
+.containerLikes{
+    display: flex;
+    gap: 1vh;
+}
+
 .ActionIcons {
     background-color: #7400b7; 
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    margin-top: 4vh;
 }
 
 .ActionIcons svg {
