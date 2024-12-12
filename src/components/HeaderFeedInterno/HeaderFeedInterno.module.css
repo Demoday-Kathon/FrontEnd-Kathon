@@ -11,7 +11,7 @@
   z-index: 100;
 }
 
-.containerButtonHamburguer{
+.containerButtonHamburguer {
   align-items: center;
   display: flex;
   width: 100%;
@@ -55,17 +55,15 @@
 }
 
 .logo {
-  width: 15vh;
+  width: 20vh;
   height: 4vh;
 }
-
 
 @media screen and (min-width: 568px) {
   .logo {
     width: 35vh;
     height: 6vh;
   }
-  
 }
 
 .navLinks {
