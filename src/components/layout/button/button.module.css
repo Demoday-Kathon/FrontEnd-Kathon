@@ -182,8 +182,6 @@
   font-size: 0.3em;
   margin-bottom: 1em;
   padding: 1em;
-
-  
 }
 
 .buttonAzulHome:hover {
@@ -298,25 +296,24 @@
   transition: 1s;
 }
 
-
 @media only screen and (max-width: 320px) {
   .buttonBaixo {
     width: 100%;
     font-size: 0.4em;
-
+    height: auto;
   }
-  
-  .buttonBaixo2{
+
+  .buttonBaixo2 {
     width: 100%;
     font-size: 0.4em;
+    height: auto;
   }
 
   .buttonBaixo:hover {
     width: 100%;
     font-size: 0.4em;
-
   }
-  
+
   .buttonBaixo2:hover {
     width: 100%;
     font-size: 0.4em;
@@ -352,86 +349,30 @@
     margin-bottom: 1em;
     padding: 1em;
   }
-  
+
   .buttonAzulHacka:hover {
     width: 100%;
     font-size: 0.4em;
     background: rgb(86, 3, 134);
     color: #fff;
   }
-
 }
-@media only screen and (min-width:321px) {
-  @media only screen and (max-width:360px) {
-    .buttonBaixo {
-    width: 100%;
-    font-size: 0.4em;
-  }
-  
-  .buttonBaixo2{
-    width: 100%;
-    font-size: 0.4em;
-  } 
-
-  .buttonBaixo:hover , .buttonBaixo2:hover {
-    font-size: 0.4em;
-    border-radius: 36px;
-  }
-
-  .buttonAzulHome {
-    width: 100%;
-    font-size: 0.2em;
-    margin-bottom: 1em;
-    padding: 1em;
-  }
-
-  .buttonAzulHome:hover {
-    width: 60%;
-    font-size: 0.2em;
-    background: rgb(86, 3, 134);
-    color: #fff;
-  }
-
-  .buttonPlaninhos {
-    width: 70%;
-    font-size: 0.5em;
-  }
-
-  .buttonPlaninhos:hover {
-    width: 70%;
-    font-size: 0.5em;
-  }
-
-  .buttonAzulHacka {
-    width: 100%;
-    font-size: 0.4em;
-    margin-bottom: 1em;
-    padding: 1em;
-  }
-  
-  .buttonAzulHacka:hover {
-    width: 100%;
-    font-size: 0.4em;
-    background: rgb(86, 3, 134);
-    color: #fff;
-    }
-  }
-}
-
-@media only screen and (min-width:361px) {
-  @media only screen and (max-width:391px) {
-
+@media only screen and (min-width: 321px) {
+  @media only screen and (max-width: 360px) {
     .buttonBaixo {
       width: 100%;
       font-size: 0.4em;
-    }
-    
-    .buttonBaixo2{
-      width: 100%;
-      font-size: 0.4em;
+      height: auto;
     }
 
-    .buttonBaixo:hover , .buttonBaixo2:hover {
+    .buttonBaixo2 {
+      width: 100%;
+      font-size: 0.4em;
+      height: auto;
+    }
+
+    .buttonBaixo:hover,
+    .buttonBaixo2:hover {
       font-size: 0.4em;
       border-radius: 36px;
     }
@@ -442,14 +383,73 @@
       margin-bottom: 1em;
       padding: 1em;
     }
-  
+
+    .buttonAzulHome:hover {
+      width: 60%;
+      font-size: 0.2em;
+      background: rgb(86, 3, 134);
+      color: #fff;
+    }
+
+    .buttonPlaninhos {
+      width: 70%;
+      font-size: 0.5em;
+    }
+
+    .buttonPlaninhos:hover {
+      width: 70%;
+      font-size: 0.5em;
+    }
+
+    .buttonAzulHacka {
+      width: 100%;
+      font-size: 0.4em;
+      margin-bottom: 1em;
+      padding: 1em;
+    }
+
+    .buttonAzulHacka:hover {
+      width: 100%;
+      font-size: 0.4em;
+      background: rgb(86, 3, 134);
+      color: #fff;
+    }
+  }
+}
+
+@media only screen and (min-width: 361px) {
+  @media only screen and (max-width: 391px) {
+    .buttonBaixo {
+      width: 100%;
+      font-size: 0.4em;
+      height: auto;
+    }
+
+    .buttonBaixo2 {
+      width: 100%;
+      font-size: 0.4em;
+      height: auto;
+    }
+
+    .buttonBaixo:hover,
+    .buttonBaixo2:hover {
+      font-size: 0.4em;
+      border-radius: 36px;
+    }
+
+    .buttonAzulHome {
+      width: 100%;
+      font-size: 0.2em;
+      margin-bottom: 1em;
+      padding: 1em;
+    }
+
     .buttonAzulHome:hover {
       width: 100%;
       font-size: 0.2em;
       background: rgb(86, 3, 134);
       color: #fff;
     }
-
 
     .buttonPlaninhos {
       width: 65%;
@@ -462,112 +462,116 @@
       font-size: 0.5em;
     }
 
-
     .buttonAzulHacka {
       width: 100%;
       font-size: 0.4em;
       margin-bottom: 1em;
       padding: 1em;
     }
-    
+
     .buttonAzulHacka:hover {
       width: 100%;
       font-size: 0.4em;
       background: rgb(86, 3, 134);
       color: #fff;
-      }
+    }
   }
 }
 
 /*Medida Mobile*/
 @media only screen and (min-width: 391px) {
   @media only screen and (max-width: 440px) {
-  .buttonBaixo {
-    width: 100%;
-    font-size: 0.4em;
-  }
-  
-  .buttonBaixo2{
-    width: 100%;
-    font-size: 0.4em;
-  } 
-
-  .buttonBaixo:hover , .buttonBaixo2:hover {
-    
-    font-size: 0.4em;
-    border-radius: 36px;
-  }
-
-  .buttonBaixo, .buttonBaixo2 {
-    margin: 0.5em;
-    font-size: 0.4em;
-   
-  }
-
-  .buttonAzulHome {
-    width: 100%;
-    font-size: 0.2em;
-    margin-bottom: 1em;
-    padding: 1em;
-  }
-
-  .buttonAzulHome:hover {
-    width: 100%;
-    font-size: 0.2em;
-    background: rgb(86, 3, 134);
-    color: #fff;
-  }
-
-  .buttonPlaninhos {
-    width: 55%;
-    margin-top: 40px;
-    font-size: 0.5em;
-  }
-  .buttonPlaninhos:hover {
-    width: 55%;
-    margin-top: 40px;
-    font-size: 0.5em;
-  }
-
-  .buttonAzulHacka {
-    width: 100%;
-    font-size: 0.5em;
-    margin-bottom: 1em;
-    padding: 1em;
-  }
-  
-  .buttonAzulHacka:hover {
-    width: 100%;
-    font-size: 0.5em;
-    background: rgb(86, 3, 134);
-    color: #fff;
+    .buttonBaixo {
+      width: 100%;
+      font-size: 0.4em;
+      height: auto;
     }
-}
+
+    .buttonBaixo2 {
+      width: 100%;
+      font-size: 0.4em;
+      height: auto;
+    }
+
+    .buttonBaixo:hover,
+    .buttonBaixo2:hover {
+      font-size: 0.4em;
+      border-radius: 36px;
+    }
+
+    .buttonBaixo,
+    .buttonBaixo2 {
+      margin: 0.5em;
+      font-size: 0.4em;
+    }
+
+    .buttonAzulHome {
+      width: 100%;
+      font-size: 0.2em;
+      margin-bottom: 1em;
+      padding: 1em;
+    }
+
+    .buttonAzulHome:hover {
+      width: 100%;
+      font-size: 0.2em;
+      background: rgb(86, 3, 134);
+      color: #fff;
+    }
+
+    .buttonPlaninhos {
+      width: 55%;
+      margin-top: 40px;
+      font-size: 0.5em;
+    }
+    .buttonPlaninhos:hover {
+      width: 55%;
+      margin-top: 40px;
+      font-size: 0.5em;
+    }
+
+    .buttonAzulHacka {
+      width: 100%;
+      font-size: 0.5em;
+      margin-bottom: 1em;
+      padding: 1em;
+    }
+
+    .buttonAzulHacka:hover {
+      width: 100%;
+      font-size: 0.5em;
+      background: rgb(86, 3, 134);
+      color: #fff;
+    }
+  }
 }
 
 /*Medida Tablet*/
-@media only screen and (min-width:441px) {
+@media only screen and (min-width: 441px) {
   @media only screen and (max-width: 930px) {
     .buttonBaixo {
       width: 100%;
       font-size: 0.8em;
       margin: 0.5em;
+      height: auto;
     }
     .buttonBaixo:hover {
       font-size: 0.8em;
       border-radius: 36px;
+      height: auto;
     }
 
     .buttonBaixo2 {
       width: 100%;
       font-size: 0.8em;
       margin: 0.5em;
-      
+      height: auto;
     }
     .buttonBaixo2:hover {
-      width: 45%;
+      width: 100%;
       font-size: 0.8em;
       border-radius: 36px;
+      height: auto;
     }
 
     .buttonAzulHome {
@@ -576,7 +580,7 @@
       margin-bottom: 1em;
       padding: 1em;
     }
-  
+
     .buttonAzulHome:hover {
       width: 50%;
       font-size: 0.4em;

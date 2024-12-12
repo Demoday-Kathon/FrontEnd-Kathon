@@ -998,10 +998,9 @@ video {
     padding: 30px 0;
   }
 
-  .App{
+  .App {
     display: none;
   }
-
 }
 @media only screen and (min-width: 321px) {
   @media only screen and (max-width: 360px) {
@@ -1012,7 +1011,7 @@ video {
     }
 
     .botoesHome {
-      width: 80%;
+      width: 85%;
       display: flex;
       justify-content: space-between;
     }
@@ -1323,10 +1322,9 @@ video {
       padding: 30px 0;
     }
 
-    .App{
+    .App {
       display: none;
     }
-
   }
 }
 
@@ -1640,10 +1638,9 @@ video {
       }
     }
 
-    .App{
+    .App {
       display: none;
     }
-
   }
 }
 
@@ -1963,10 +1960,9 @@ video {
       }
     }
 
-    .App{
+    .App {
       display: none;
     }
-
   }
 }
 
@@ -2148,7 +2144,7 @@ video {
       height: auto;
     }
 
-    .App{
+    .App {
       display: none;
     }
 
@@ -2205,7 +2201,6 @@ video {
   }
 }
 
-
-.LinksPlanos{
+.LinksPlanos {
   text-decoration: none;
 }
