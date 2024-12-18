@@ -37,7 +37,7 @@ function NivelDesafio() {
         <div className={styles.sumariodesafio}>
           <p>
             Pensando em você que quer colocar em prática suas habilidades,
-            criamos a IAthon, uma Inteligência Artificial que cria desafios
+            criamos a KIA, uma Inteligência Artificial que cria desafios
             práticos baseado no seu nível de conhecimento. Clique, explore e
             pratique!
           </p>
