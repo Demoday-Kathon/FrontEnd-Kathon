@@ -5,7 +5,7 @@ import HeaderInterno from '../../components/layout/headerInterno/HeaderInterno';
 import ModalGame from '../../components/ModalGame/ModalGame';
 import Setawhite from '../../assets/imgs/seta.svg';
 
-const API_KEY = "AIzaSyDAHoBgttyRPpF3THz5sET7ub6qURsqQrw";
+const API_KEY = " ";
 
 function DesafiosCode() {
     const editorRef = useRef(null);
